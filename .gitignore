@@ -44,6 +44,8 @@ node_modules/
 # Ignore local Lando files
 .lando.yml
 .lando.local.yml
+.lando/config/
+.lando/private
 
 # Misc tooling files to ingore.
 .swp
@@ -56,3 +58,7 @@ web/sites/default/redis.services.yml
 
 # Ignore local logs
 log
+
+# Ignore Wraith screenshots
+/wraith_project/shots
+/wraith_project/output.txt
