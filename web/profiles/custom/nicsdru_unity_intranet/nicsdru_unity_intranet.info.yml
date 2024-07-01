@@ -6,38 +6,49 @@ distribution:
   name: Unity Intranet
   langcode: en
 install:
-  - node
-  - history
+  - address
+  - admin_toolbar
+  - admin_toolbar_links_access_filter
+  - admin_toolbar_tools
+  - allowed_formats
+  - automated_cron
+  - blazy
   - block
+  - block_content
   - breakpoint
   - ckeditor5
+  - ckeditor5_allowed_html
+  - ckeditor5_premium_features
+  - ckeditor5_premium_features_fullscreen
+  - ckeditor5_premium_features_import_word
+  - automated_cron
+  - announcements_feed
+  - big_pipe
   - config
   - comment
   - contextual
   - contact
-  - menu_link_content
   - datetime
-  - block_content
+  - dblog
+  - dynamic_page_cache
   - editor
+  - field_ui
+  - file
   - help
+  - history
   - image
+  - menu_link_content
   - menu_ui
+  - node
   - options
   - path
   - page_cache
-  - dynamic_page_cache
-  - big_pipe
-  - taxonomy
-  - dblog
   - search
   - shortcut
+  - taxonomy
   - toolbar
-  - field_ui
-  - file
   - views
   - views_ui
-  - automated_cron
-  - announcements_feed
 themes:
   - nicsdru_unity_theme
   - claro
