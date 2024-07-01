@@ -36,15 +36,55 @@ install:
   - datetime
   - datetime_range
   - dblog
+  - diff
+  - dynamic_entity_reference
   - dynamic_page_cache
+  - easy_install
   - editor
+  - embed
+  - entity_browser
+  - entity_browser_entity_form
+  - entity_embed
+  - entity_reference_revisions
+  - eu_cookie_compliance
+  - facets
+  - facets_pretty_paths
+  - field
+  - field_group
   - field_ui
   - file
+  - file_delete_ui
+  - filelog
+  - filter
+  - flag
+  - google_tag
+  - handy_cache_tags
   - help
   - history
+  - honeypot
+  - http_cache_control
   - image
-  - menu_link_content
+  - inline_entity_form
+  - inline_form_errors
+  - language
+  - layout_builder
+  - layout_discovery
+  - link
+  - link_fix_absolute_urls
+  - linkit
+  - media
+  - media_file_delete
+  - media_library
+  - media_library_edit
+  - menu_admin_per_menu
+  - menu_breadcrumb
   - menu_ui
+  - metatag
+  - metatag_open_graph
+  - metatag_twitter_cards
+  - metatag_verification
+  - metatag_views
+  - migrate
   - node
   - options
   - path
