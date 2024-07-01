@@ -129,6 +129,14 @@ install:
   - unity_internal_link_checker
   - user
   - views_custom_cache_tag
+  - webform
+  - webform_access
+  - webform_node
+  - webform_ui
+  - whatlinkshere
+  - workflows
+  - menu_link_content
+  - pathauto
   - views
   - views_ui
 themes:
