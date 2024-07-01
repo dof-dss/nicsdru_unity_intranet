@@ -85,8 +85,23 @@ install:
   - metatag_verification
   - metatag_views
   - migrate
+  - migrate_drupal
+  - migrate_plus
+  - migrate_tools
+  - migrate_upgrade
+  - moderation_sidebar
   - node
+  - node_edit_protection
+  - noreferrer
   - options
+  - origins_ckeditor_enhancements
+  - origins_common
+  - origins_media
+  - origins_metatag
+  - origins_qa
+  - origins_toc
+  - origins_unique_title
+  - origins_workflow
   - path
   - page_cache
   - search
