@@ -39,5 +39,5 @@ install:
   - automated_cron
   - announcements_feed
 themes:
-  - olivero
+  - nicsdru_unity_theme
   - claro
