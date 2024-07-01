@@ -119,6 +119,16 @@ install:
   - taxonomy
   - text
   - token
+  - token_filter
+  - toolbar
+  - twig_tweak
+  - ultimate_cron
+  - unity_common
+  - unity_frontpage
+  - unity_image_styles
+  - unity_internal_link_checker
+  - user
+  - views_custom_cache_tag
   - views
   - views_ui
 themes:
