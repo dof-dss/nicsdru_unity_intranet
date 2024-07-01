@@ -10,6 +10,11 @@
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
+'https://niaomi.intranet.gov.uk/':
+    type: upstream
+    upstream: 'unity_intranet:http'
+    cache:
+        enabled: 'false'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_intranet:http'

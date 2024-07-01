@@ -11,11 +11,16 @@ db:
     configuration:
         schemas:
             - uregnidb
+            - niaomidb
         endpoints:
             uregni:
                 default_schema: uregnidb
                 privileges:
                     uregnidb: admin
+            niaomi:
+                default_schema: niaomidb
+                privileges:
+                    niaomidb: admin
 solr_8_11:
     type: 'solr:8.11'
     disk: 1024
@@ -23,8 +28,12 @@ solr_8_11:
         cores:
             uregni_index:
                 conf_dir: !archive solr_config/
+            niaomi_index:
+                conf_dir: !archive solr_config/
         endpoints:
             uregni:
                 core: uregni_index
+            niaomi:
+                core: niaomi_index
 redis:
     type: 'redis:6.0'
