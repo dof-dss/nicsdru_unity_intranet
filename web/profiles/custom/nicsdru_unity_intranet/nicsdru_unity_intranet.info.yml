@@ -102,12 +102,23 @@ install:
   - origins_toc
   - origins_unique_title
   - origins_workflow
-  - path
   - page_cache
+  - paragraphs
+  - path
+  - path_alias
+  - readonlymode
+  - rdf
+  - redirect
+  - redis
+  - responsive_image
+  - scheduled_transitions
   - search
-  - shortcut
+  - simplei
+  - structure_sync
+  - system
   - taxonomy
-  - toolbar
+  - text
+  - token
   - views
   - views_ui
 themes:
