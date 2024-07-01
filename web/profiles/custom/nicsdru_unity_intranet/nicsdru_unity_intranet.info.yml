@@ -21,14 +21,20 @@ install:
   - ckeditor5_premium_features
   - ckeditor5_premium_features_fullscreen
   - ckeditor5_premium_features_import_word
-  - automated_cron
-  - announcements_feed
-  - big_pipe
+  - clientside_validation
+  - clientside_validation_jquery
+  - clone_nodes
   - config
-  - comment
+  - config_filter
+  - content_lock
+  - content_lock_timeout
+  - content_moderation
   - contextual
-  - contact
+  - cookie_content_blocker
+  - csp
+  - ctools
   - datetime
+  - datetime_range
   - dblog
   - dynamic_page_cache
   - editor
