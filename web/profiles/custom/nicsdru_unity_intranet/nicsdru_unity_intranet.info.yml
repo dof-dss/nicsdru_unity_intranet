@@ -141,4 +141,5 @@ install:
   - views_ui
 themes:
   - nicsdru_unity_theme
+  - stark
   - claro
