@@ -140,6 +140,6 @@ install:
   - views
   - views_ui
 themes:
-  - nicsdru_unity_theme
+  - olivero
   - stark
   - claro
