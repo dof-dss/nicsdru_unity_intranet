@@ -81,9 +81,9 @@ web:
 relationships:
     redis: 'redis:redis'
     uregni: 'db:uregni'
-    uregni_solr: 'solr_8_11:uregni'
+    uregni_intranet_solr: 'solr_8_11:uregni'
     niaomi: 'db:niaomi'
-    niaomi_solr: 'solr_8_11:niaomi'
+    niaomi_intranet_solr: 'solr_8_11:niaomi'
 crons:
     uregni:
         spec: '10 * * * *'
