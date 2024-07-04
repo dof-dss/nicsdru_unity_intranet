@@ -24,3 +24,13 @@ sites:
         database: niaomi
         status: development
         default: false
+    pps:
+        name: PPS
+        url: pps.intranet.nigov.net
+        solr: pps
+        www: false
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/pps ; drush core-cron'
+        database: pps
+        status: development
+        default: false
