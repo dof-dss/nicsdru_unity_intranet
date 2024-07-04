@@ -9,8 +9,15 @@ name: unity_intranet
 proxy:
     appserver:
         - uregni.intranet.nigov.net.lndo.site
+        - niaomi.intranet.gov.uk.lndo.site
 services:
     uregni_intranet_solr:
+        type: 'solr:8.11'
+        portforward: true
+        core: default
+        config:
+            dir: .lando/config/solr/
+    niaomi_intranet_solr:
         type: 'solr:8.11'
         portforward: true
         core: default
