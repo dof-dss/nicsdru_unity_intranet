@@ -42,7 +42,6 @@ node_modules/
 *.sql.gz
 
 # Ignore local Lando files
-.lando/config/
 .lando/private
 
 # Misc tooling files to ingore.
