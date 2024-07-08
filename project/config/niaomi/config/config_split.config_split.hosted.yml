@@ -1,0 +1,15 @@
+uuid: df715ee7-ae70-4485-addf-4cd6f1e48298
+langcode: en
+status: true
+dependencies: {  }
+id: hosted
+label: hosted
+description: "Use for any sites that are 'hosted' and not running locally, whether development, QA or production."
+weight: 0
+folder: ../project/config/niaomi/hosted
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
