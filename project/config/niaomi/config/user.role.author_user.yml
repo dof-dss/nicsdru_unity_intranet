@@ -2,7 +2,10 @@ uuid: d2661af9-d554-44c2-bffb-fa4bee18eeec
 langcode: en
 status: true
 dependencies:
+  config:
+    - filter.format.basic_html
   module:
+    - filter
     - toolbar
 _core:
   default_config_hash: A4oGlMqGInHsU8idSQP1u1HkLeT2gmd7OO26vQcY1xM
@@ -12,3 +15,4 @@ weight: 3
 is_admin: null
 permissions:
   - 'access toolbar'
+  - 'use text format basic_html'
