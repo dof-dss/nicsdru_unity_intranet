@@ -1,0 +1,13 @@
+uuid: 3e4a85b4-45b5-408d-8af7-a3d531704bf9
+langcode: en
+status: true
+dependencies:
+  module:
+    - clone_nodes
+_core:
+  default_config_hash: iWpJXsOU5S0G8yu-dV3KyAaH9Q7vK11j5HEVy18E5xk
+id: clone_nodes
+label: 'Clone Nodes'
+type: node
+plugin: clone_nodes
+configuration: {  }
