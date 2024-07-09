@@ -14,16 +14,6 @@ sites:
         database: uregni
         status: development
         default: false
-    niaomi:
-        name: NIAO
-        url: niaomi.intranet.gov.uk
-        solr: niaomi
-        www: false
-        cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/niaomi ; drush core-cron'
-        database: niaomi
-        status: development
-        default: false
     pps:
         name: PPS
         url: pps.intranet.nigov.net
@@ -34,3 +24,12 @@ sites:
         database: pps
         status: development
         default: false
+    niaomi:
+        name: NIAO
+        url: niaomi.intranet.nigov.net
+        solr: niaomi
+        www: false
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/niaomi ; drush core-cron'
+        database: niaomi
+        status: development

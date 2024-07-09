@@ -10,12 +10,12 @@
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
-'https://niaomi.intranet.gov.uk/':
+'https://pps.intranet.nigov.net/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
-'https://pps.intranet.nigov.net/':
+'https://niaomi.intranet.nigov.net/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:
