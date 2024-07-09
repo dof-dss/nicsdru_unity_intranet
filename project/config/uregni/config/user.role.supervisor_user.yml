@@ -8,7 +8,7 @@ _core:
   default_config_hash: 1Kamaqzxh16bKRQH-TcCpEwel6wTxNY5iYV0nRTfEOo
 id: supervisor_user
 label: 'supervisor user'
-weight: 5
+weight: -6
 is_admin: null
 permissions:
   - 'access toolbar'
