@@ -155,7 +155,10 @@ filters:
         portrait_float: portrait_float
         portrait_float_xp: portrait_float_xp
         portrait_full: portrait_full
-      allowed_media_types: {  }
+      allowed_media_types:
+        audio: audio
+        image: image
+        remote_video: remote_video
   noreferrer:
     id: noreferrer
     provider: noreferrer
