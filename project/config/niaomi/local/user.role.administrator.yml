@@ -7,6 +7,11 @@ dependencies:
     - filter.format.full_html
     - filter.format.restricted_html
     - filter.format.webform_default
+    - media.type.audio
+    - media.type.document
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
     - node.type.webform
     - workflows.workflow.nics_editorial_workflow
   module:
@@ -40,6 +45,7 @@ dependencies:
     - media_file_delete
     - menu_admin_per_menu
     - metatag
+    - migrate_tools
     - moderation_sidebar
     - node
     - origins_metatag
@@ -128,6 +134,7 @@ permissions:
   - 'administer media types'
   - 'administer menu'
   - 'administer meta tags'
+  - 'administer migrations'
   - 'administer moderation sidebar'
   - 'administer modules'
   - 'administer node display'
@@ -173,19 +180,39 @@ permissions:
   - 'change own username'
   - 'configure any layout'
   - 'create and edit custom blocks'
+  - 'create audio media'
+  - 'create document media'
+  - 'create file media'
+  - 'create image media'
   - 'create media'
+  - 'create remote_video media'
   - 'create url aliases'
   - 'create webform'
   - 'create webform content'
   - 'delete all revisions'
+  - 'delete any audio media'
+  - 'delete any audio media revisions'
+  - 'delete any document media'
+  - 'delete any document media revisions'
   - 'delete any file'
+  - 'delete any file media'
+  - 'delete any file media revisions'
+  - 'delete any image media'
+  - 'delete any image media revisions'
   - 'delete any media'
+  - 'delete any remote_video media'
+  - 'delete any remote_video media revisions'
   - 'delete any webform'
   - 'delete any webform content'
   - 'delete any webform submission'
   - 'delete media'
   - 'delete orphan revisions'
+  - 'delete own audio media'
+  - 'delete own document media'
+  - 'delete own file media'
   - 'delete own files'
+  - 'delete own image media'
+  - 'delete own remote_video media'
   - 'delete own webform'
   - 'delete own webform content'
   - 'delete own webform submission'
@@ -193,11 +220,21 @@ permissions:
   - 'delete webform submissions any node'
   - 'delete webform submissions own node'
   - 'display eu cookie compliance popup'
+  - 'edit any audio media'
+  - 'edit any document media'
+  - 'edit any file media'
+  - 'edit any image media'
+  - 'edit any remote_video media'
   - 'edit any webform'
   - 'edit any webform content'
   - 'edit any webform submission'
   - 'edit basic meta tags'
   - 'edit behavior plugin settings'
+  - 'edit own audio media'
+  - 'edit own document media'
+  - 'edit own file media'
+  - 'edit own image media'
+  - 'edit own remote_video media'
   - 'edit own webform'
   - 'edit own webform content'
   - 'edit own webform submission'
@@ -215,6 +252,11 @@ permissions:
   - 'notify of path changes'
   - 'readonlymode access forms'
   - 'revert all revisions'
+  - 'revert any audio media revisions'
+  - 'revert any document media revisions'
+  - 'revert any file media revisions'
+  - 'revert any image media revisions'
+  - 'revert any remote_video media revisions'
   - 'revert webform revisions'
   - 'run cron jobs'
   - 'search content'
@@ -243,6 +285,11 @@ permissions:
   - 'view all media revisions'
   - 'view all revisions'
   - 'view all scheduled transitions'
+  - 'view any audio media revisions'
+  - 'view any document media revisions'
+  - 'view any file media revisions'
+  - 'view any image media revisions'
+  - 'view any remote_video media revisions'
   - 'view any unpublished content'
   - 'view any webform submission'
   - 'view content references'
