@@ -1,0 +1,14 @@
+uuid: 9f310430-06f6-4fc6-8799-4eafa860d52b
+langcode: en
+status: true
+dependencies: {  }
+id: file
+label: File
+description: 'Use local files for reusable media.'
+source: file
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_file
+field_map:
+  name: name

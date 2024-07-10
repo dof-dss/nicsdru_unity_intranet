@@ -69,7 +69,10 @@ filters:
         article_float_expandable: article_float_expandable
         article_full: article_full
         article_full_expandable: article_full_expandable
-      allowed_media_types: {  }
+      allowed_media_types:
+        audio: audio
+        image: image
+        remote_video: remote_video
   noreferrer:
     id: noreferrer
     provider: noreferrer
