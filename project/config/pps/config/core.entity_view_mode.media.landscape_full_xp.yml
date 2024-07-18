@@ -1,0 +1,13 @@
+uuid: 34942b35-68d2-4b5e-a24b-c8d030d6c6b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: LkLiUexgUuQmCFLrxb-zCgDDsh7886PIA3FaohIHOLc
+id: media.landscape_full_xp
+label: 'Landscape full XP'
+description: ''
+targetEntityType: media
+cache: true
