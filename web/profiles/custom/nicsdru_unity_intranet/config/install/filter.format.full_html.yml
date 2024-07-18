@@ -1,3 +1,4 @@
+uuid: 99f08800-6af8-433a-8707-cdc80a809964
 langcode: en
 status: true
 dependencies:
@@ -154,7 +155,10 @@ filters:
         portrait_float: portrait_float
         portrait_float_xp: portrait_float_xp
         portrait_full: portrait_full
-      allowed_media_types: {  }
+      allowed_media_types:
+        audio: audio
+        image: image
+        remote_video: remote_video
   noreferrer:
     id: noreferrer
     provider: noreferrer
