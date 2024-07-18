@@ -1,9 +1,9 @@
 _core:
   default_config_hash: l58O_yEXSo-SeJi19LXdzTU1tNJG3lmnIhCitRkM1tk
 langcode: en
-uuid: 86c0dddc-ae98-4ff8-856a-89058df9b251
-name: PPS
-mail: a@a.com
+uuid: 21701583-d596-4480-9a3c-2315a9bc7bec
+name: 'Public prosecution service intranet'
+mail: webdev@webdev-finance.gov.uk
 slogan: ''
 page:
   403: ''
@@ -12,4 +12,5 @@ page:
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
-frontpage_title: 'Welcome to Drupal site'
+frontpage_title: 'Welcome to Public prosecution service intranet'
+frontpage_show_title: 0
