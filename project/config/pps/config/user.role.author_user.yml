@@ -3,12 +3,13 @@ langcode: en
 status: true
 dependencies:
   module:
-    - toolbar
+    - system
 _core:
   default_config_hash: A4oGlMqGInHsU8idSQP1u1HkLeT2gmd7OO26vQcY1xM
 id: author_user
 label: 'author user'
-weight: 3
+weight: 2
 is_admin: null
 permissions:
-  - 'access toolbar'
+  - 'access administration pages'
+  - 'view the administration theme'
