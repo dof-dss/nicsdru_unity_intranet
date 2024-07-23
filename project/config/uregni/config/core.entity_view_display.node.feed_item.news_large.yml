@@ -1,0 +1,34 @@
+uuid: 9c1a86fc-2225-47da-9cd2-a4d369a38a40
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.news_large
+    - field.field.node.feed_item.field_description
+    - field.field.node.feed_item.field_publication_date
+    - node.type.feed_item
+  module:
+    - datetime
+    - user
+id: node.feed_item.news_large
+targetEntityType: node
+bundle: feed_item
+mode: news_large
+content:
+  field_publication_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_description: true
+  langcode: true

@@ -1,17 +1,17 @@
-uuid: f1d8752c-4068-44bb-9972-e5f922060927
+uuid: 3a46079f-e1eb-4fec-a4c1-04caa9e57c58
 langcode: en
 status: true
 dependencies:
   module:
+    - node
     - redirect
     - system
-_core:
-  default_config_hash: 1Kamaqzxh16bKRQH-TcCpEwel6wTxNY5iYV0nRTfEOo
-id: supervisor_user
-label: 'supervisor user'
-weight: 3
+id: editor_user
+label: 'editor user'
+weight: 5
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'administer nodes'
   - 'administer redirects'
   - 'view the administration theme'

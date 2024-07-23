@@ -1,0 +1,25 @@
+uuid: b780fbe3-618e-4a53-ae2c-83008d13326e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.noticeboard
+id: node.noticeboard.field_type
+field_name: field_type
+entity_type: node
+bundle: noticeboard
+label: Type
+description: 'Please choose to type of noticeboard content this content relates to.'
+required: false
+translatable: false
+default_value:
+  -
+    tid: '2'
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    sort:
+      field: _none
+field_type: entity_reference

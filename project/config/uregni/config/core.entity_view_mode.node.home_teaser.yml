@@ -1,0 +1,11 @@
+uuid: 5cf3582b-20d5-4743-8221-a65b66e71e67
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.home_teaser
+label: home_teaser
+description: ''
+targetEntityType: node
+cache: true

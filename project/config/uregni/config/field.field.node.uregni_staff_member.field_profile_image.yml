@@ -1,0 +1,33 @@
+uuid: 01998195-be1c-4b78-9ebe-d1885165e740
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_profile_image
+    - node.type.uregni_staff_member
+  module:
+    - image
+id: node.uregni_staff_member.field_profile_image
+field_name: field_profile_image
+entity_type: node
+bundle: uregni_staff_member
+label: 'Profile image'
+description: 'Please add a profile image of the staff member.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: staff-member
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image: 0
+field_type: image

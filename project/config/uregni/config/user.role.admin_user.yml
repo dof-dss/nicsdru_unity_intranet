@@ -1,0 +1,35 @@
+uuid: 0c83dbc5-d9a4-4301-b3f2-becb465a62e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - block
+    - node
+    - path
+    - pathauto
+    - redirect
+    - system
+id: admin_user
+label: 'admin user'
+weight: 6
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access user profiles'
+  - 'administer blocks'
+  - 'administer content types'
+  - 'administer modules'
+  - 'administer nodes'
+  - 'administer pathauto'
+  - 'administer permissions'
+  - 'administer redirects'
+  - 'administer site configuration'
+  - 'administer software updates'
+  - 'administer themes'
+  - 'administer url aliases'
+  - 'administer users'
+  - 'bypass node access'
+  - 'view the administration theme'

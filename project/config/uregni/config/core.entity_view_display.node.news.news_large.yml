@@ -1,0 +1,27 @@
+uuid: 3242b890-0bf8-460f-b614-d23302477e22
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.news_large
+    - field.field.node.news.body
+    - field.field.node.news.field_published_date
+    - field.field.node.news.field_teaser
+    - node.type.news
+  module:
+    - user
+id: node.news.news_large
+targetEntityType: node
+bundle: news
+mode: news_large
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_published_date: true
+  field_teaser: true
+  langcode: true

@@ -1,0 +1,11 @@
+uuid: 6c99cd8e-f59c-4f87-9eb4-033ccef2c268
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.jennys_blog
+label: jennys_blog
+description: ''
+targetEntityType: node
+cache: true

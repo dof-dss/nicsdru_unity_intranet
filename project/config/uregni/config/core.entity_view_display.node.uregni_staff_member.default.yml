@@ -1,0 +1,94 @@
+uuid: 46d22276-e5e4-4ce7-9d83-6f278edecb04
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.uregni_staff_member.field_about_me
+    - field.field.node.uregni_staff_member.field_directorate
+    - field.field.node.uregni_staff_member.field_extension
+    - field.field.node.uregni_staff_member.field_find_me
+    - field.field.node.uregni_staff_member.field_first_name
+    - field.field.node.uregni_staff_member.field_mobile
+    - field.field.node.uregni_staff_member.field_profile_image
+    - field.field.node.uregni_staff_member.field_title
+    - field.field.node.uregni_staff_member.field_work_pattern
+    - node.type.uregni_staff_member
+  module:
+    - user
+id: node.uregni_staff_member.default
+targetEntityType: node
+bundle: uregni_staff_member
+mode: default
+content:
+  field_about_me:
+    type: basic_string
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_directorate:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_extension:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_find_me:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_first_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_mobile:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_work_pattern:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_profile_image: true
+  langcode: true

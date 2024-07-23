@@ -1,0 +1,27 @@
+uuid: 29d33c7d-e45e-497a-94fc-f718f07ed237
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.news_small
+    - field.field.node.news.body
+    - field.field.node.news.field_published_date
+    - field.field.node.news.field_teaser
+    - node.type.news
+  module:
+    - user
+id: node.news.news_small
+targetEntityType: node
+bundle: news
+mode: news_small
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_published_date: true
+  field_teaser: true
+  langcode: true
