@@ -76,11 +76,11 @@ process:
     -
       plugin: get
       source: comment
-  field_feed_item_description:
+  field_description:
     -
       plugin: get
       source: field_feed_item_description
-  field_feed_pubdate:
+  field_publication_date:
     -
       plugin: sub_process
       source: field_feed_pubdate
@@ -88,7 +88,7 @@ process:
         value:
           plugin: format_date
           from_format: 'Y-m-d H:i:s'
-          to_format: 'Y-m-d\TH:i:s'
+          to_format: Y-m-d
           source: value
   field_metatag:
     -

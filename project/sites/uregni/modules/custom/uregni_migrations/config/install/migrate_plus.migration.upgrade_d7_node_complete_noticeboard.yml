@@ -80,7 +80,7 @@ process:
     -
       plugin: get
       source: body
-  field_ureni_teaser:
+  field_teaser:
     -
       plugin: get
       source: field_ureni_teaser

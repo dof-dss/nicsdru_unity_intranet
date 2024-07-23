@@ -90,7 +90,7 @@ process:
           from_format: 'Y-m-d H:i:s'
           to_format: Y-m-d
           source: value
-  field_ureni_teaser:
+  field_teaser:
     -
       plugin: get
       source: field_ureni_teaser
