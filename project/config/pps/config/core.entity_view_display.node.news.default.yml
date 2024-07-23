@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
+    - field.field.node.news.field_meta_tags
+    - field.field.node.news.field_news_type
     - field.field.node.news.field_photo
     - field.field.node.news.field_published_date
     - field.field.node.news.field_teaser
-    - field.field.node.news.field_type
     - node.type.news
   module:
+    - metatag
     - text
     - user
 id: node.news.default
@@ -24,14 +26,36 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_news_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_photo:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 100
     region: content
 hidden:
-  field_photo: true
   field_published_date: true
   field_teaser: true
-  field_type: true
   langcode: true

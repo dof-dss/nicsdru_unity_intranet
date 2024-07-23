@@ -1,17 +1,17 @@
-uuid: e108bc40-fa07-4ab3-bcd9-8913aa93fd39
+uuid: 585679c8-3b58-485b-8c0c-201b1685d703
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_link_type
-    - node.type.link
-    - taxonomy.vocabulary.link_type
-id: node.link.field_link_type
-field_name: field_link_type
+    - field.storage.node.field_publication_type
+    - node.type.publication_page
+    - taxonomy.vocabulary.publication_type
+id: node.publication_page.field_publication_type
+field_name: field_publication_type
 entity_type: node
-bundle: link
+bundle: publication_page
 label: Type
-description: 'Please choose the link type.'
+description: 'Please choose a type for this document.'
 required: true
 translatable: false
 default_value: {  }
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      link_type: link_type
+      publication_type: publication_type
     sort:
       field: name
       direction: asc

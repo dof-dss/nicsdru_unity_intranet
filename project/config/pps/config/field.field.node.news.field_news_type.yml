@@ -1,18 +1,18 @@
-uuid: e108bc40-fa07-4ab3-bcd9-8913aa93fd39
+uuid: 82011470-a641-4149-bcc5-9f802772a1f0
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_link_type
-    - node.type.link
-    - taxonomy.vocabulary.link_type
-id: node.link.field_link_type
-field_name: field_link_type
+    - field.storage.node.field_news_type
+    - node.type.news
+    - taxonomy.vocabulary.news_type
+id: node.news.field_news_type
+field_name: field_news_type
 entity_type: node
-bundle: link
+bundle: news
 label: Type
-description: 'Please choose the link type.'
-required: true
+description: 'Please select a news type.'
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      link_type: link_type
+      news_type: news_type
     sort:
       field: name
       direction: asc

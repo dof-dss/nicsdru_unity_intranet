@@ -5,6 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.legal_guidance.body
+    - field.field.node.legal_guidance.field_attachment
+    - field.field.node.legal_guidance.field_legal_type
+    - field.field.node.legal_guidance.field_meta_tags
     - node.type.legal_guidance
   module:
     - text
@@ -28,4 +31,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_attachment: true
+  field_legal_type: true
+  field_meta_tags: true
   langcode: true

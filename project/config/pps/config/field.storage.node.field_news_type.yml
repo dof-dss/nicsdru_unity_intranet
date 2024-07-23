@@ -1,12 +1,12 @@
-uuid: 9f69c14c-509d-420c-a71a-31acb263fcab
+uuid: 9d7e1465-303d-4ed2-b8a8-19ab3ef02bab
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - taxonomy
-id: node.field_link_type
-field_name: field_link_type
+id: node.field_news_type
+field_name: field_news_type
 entity_type: node
 type: entity_reference
 settings:

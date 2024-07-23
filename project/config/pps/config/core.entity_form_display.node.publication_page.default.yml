@@ -4,8 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.node.publication_page.body
+    - field.field.node.publication_page.field_attachment
+    - field.field.node.publication_page.field_meta_tags
+    - field.field.node.publication_page.field_publication_type
+    - field.field.node.publication_page.field_published_date
     - node.type.publication_page
   module:
+    - datetime
+    - media_library
+    - metatag
     - path
     - text
 id: node.publication_page.default
@@ -26,6 +33,37 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_attachment:
+    type: media_library_widget
+    weight: 122
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 123
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
+  field_publication_type:
+    type: entity_reference_autocomplete
+    weight: 124
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_published_date:
+    type: datetime_default
+    weight: 123
     region: content
     settings: {  }
     third_party_settings: {  }
