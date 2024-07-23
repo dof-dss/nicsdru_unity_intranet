@@ -1,7 +1,7 @@
 uuid: 5861d737-536d-4439-bb99-093a4028263a
 langcode: en
 status: true
-dependencies: {  }
+dependencies: { }
 id: upgrade_d7_node_complete_legal_guidance
 class: Drupal\node\Plugin\migrate\D7NodeTranslation
 field_plugin_method: null
@@ -16,73 +16,79 @@ source:
   node_type: legal_guidance
 process:
   nid:
-    -
-      plugin: get
+    - plugin: get
       source: tnid
   vid:
-    -
-      plugin: get
+    - plugin: get
       source: vid
   langcode:
-    -
-      plugin: default_value
+    - plugin: default_value
       source: language
       default_value: und
   title:
-    -
-      plugin: get
+    - plugin: get
       source: title
   uid:
-    -
-      plugin: get
+    - plugin: get
       source: node_uid
   status:
-    -
-      plugin: get
+    - plugin: get
       source: status
   created:
-    -
-      plugin: get
+    - plugin: get
       source: created
   changed:
-    -
-      plugin: get
+    - plugin: get
       source: timestamp
   promote:
-    -
-      plugin: get
+    - plugin: get
       source: promote
   sticky:
-    -
-      plugin: get
+    - plugin: get
       source: sticky
   revision_uid:
-    -
-      plugin: get
+    - plugin: get
       source: revision_uid
   revision_log:
-    -
-      plugin: get
+    - plugin: get
       source: log
   revision_timestamp:
-    -
-      plugin: get
+    - plugin: get
       source: timestamp
   content_translation_source:
-    -
-      plugin: get
+    - plugin: get
       source: source_langcode
   comment_node_legal_guidance/0/status:
-    -
-      plugin: get
+    - plugin: get
       source: comment
   body:
-    -
-      plugin: get
+    - plugin: get
       source: body
+    - plugin: media_wysiwyg_filter
+    - plugin: filter_absolute_links
+
+      replace_urls:
+        http://pps.intranet.nigov.net
+        https://pps.intranet.nigov.net
+    - plugin: site_files_filter
+      from_ref: sites/pps-intranet/files
+      to_ref: files/pps
+    - plugin: str_replace
+      regex: true
+      search: /(<ul>)?(<li>)?(<div[^>]*>)?<a href="(\S+?files\/\S+)".*?>\s*[^<]*(\([^<]*\))?<\/a>(<\/div>)?(<\/li>)?(<\/ul>)?/
+      replace: ''
+  body/0/format:
+    - plugin: static_map
+      bypass: true
+      source: body/0/format
+      map:
+        filtered_html: basic_html
+        filtered_html_with_no_images: basic_html
+        filtered_html_with_tokens: basic_html
+        restricted_html: basic_html
+        plain_text: plain_text
   field_publication_date:
-    -
-      plugin: sub_process
+    - plugin: sub_process
       source: field_publication_date
       process:
         value:
@@ -90,25 +96,28 @@ process:
           from_format: 'Y-m-d H:i:s'
           to_format: Y-m-d
           source: value
-  field_pps_attachment:
-    -
-      plugin: sub_process
+  field_attachment:
+    - plugin: sub_process
       source: field_pps_attachment
       process:
         target_id: fid
         display: display
         description: description
-  field_lg_type:
-    -
-      plugin: get
+  field_legal_type:
+    - plugin: get
       source: field_lg_type
+    - plugin: callback
+      callable:
+        - '\Drupal\unity_file_migrations\PublicationLinkProcessor'
+        - publicationLinks
+      source:
+        - nid
+        - body
   field_index_under_a_z:
-    -
-      plugin: get
+    - plugin: get
       source: field_index_under_a_z
   field_metatag:
-    -
-      plugin: d7_metatag_entities
+    - plugin: d7_metatag_entities
       source: pseudo_metatag_entities
 destination:
   plugin: 'entity_complete:node'
