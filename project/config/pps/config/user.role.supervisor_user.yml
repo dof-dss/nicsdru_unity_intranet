@@ -3,12 +3,15 @@ langcode: en
 status: true
 dependencies:
   module:
-    - toolbar
+    - redirect
+    - system
 _core:
   default_config_hash: 1Kamaqzxh16bKRQH-TcCpEwel6wTxNY5iYV0nRTfEOo
 id: supervisor_user
 label: 'supervisor user'
-weight: 5
+weight: 3
 is_admin: null
 permissions:
-  - 'access toolbar'
+  - 'access administration pages'
+  - 'administer redirects'
+  - 'view the administration theme'

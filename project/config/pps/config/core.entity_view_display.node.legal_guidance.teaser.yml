@@ -1,0 +1,31 @@
+uuid: b872cd3e-a387-4c3f-8012-73f4299c4b4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.legal_guidance.body
+    - node.type.legal_guidance
+  module:
+    - text
+    - user
+id: node.legal_guidance.teaser
+targetEntityType: node
+bundle: legal_guidance
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,16 @@
+uuid: 8df10751-c498-4e25-8325-d00bb65bad55
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main:'
+name: Document
+type: publication_page
+description: 'Content type designed for documents'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,29 @@
+uuid: 1745b645-e804-4eb0-8115-c1e836d033a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.legal_guidance.body
+    - node.type.legal_guidance
+  module:
+    - text
+    - user
+id: node.legal_guidance.default
+targetEntityType: node
+bundle: legal_guidance
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

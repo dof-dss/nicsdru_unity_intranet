@@ -1,0 +1,29 @@
+uuid: c4f5f335-9089-4336-a596-62d70e0605f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.publication_page.body
+    - node.type.publication_page
+  module:
+    - text
+    - user
+id: node.publication_page.default
+targetEntityType: node
+bundle: publication_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
