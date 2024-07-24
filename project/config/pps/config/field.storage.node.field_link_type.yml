@@ -1,24 +1,17 @@
-uuid: d4f6a82d-cb3f-4e98-9079-cf272adc4fd5
-langcode: und
+uuid: 9f69c14c-509d-420c-a71a-31acb263fcab
+langcode: en
 status: true
 dependencies:
   module:
     - node
-    - options
+    - taxonomy
 id: node.field_link_type
 field_name: field_link_type
 entity_type: node
-type: list_string
+type: entity_reference
 settings:
-  allowed_values:
-    -
-      value: quick
-      label: 'Quick Link'
-    -
-      value: featured
-      label: 'Featured Link'
-  allowed_values_function: ''
-module: options
+  target_type: taxonomy_term
+module: core
 locked: false
 cardinality: 1
 translatable: true

@@ -1,0 +1,22 @@
+uuid: adb8d67d-515b-4ba9-8186-f94a48f12c62
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: legal_guidance_pattern
+label: 'Legal guidance pattern'
+type: 'canonical_entities:node'
+pattern: 'legal-guidance/[node:title]'
+selection_criteria:
+  7cad1a1c-0b09-4b41-90fb-f83e2991875e:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 7cad1a1c-0b09-4b41-90fb-f83e2991875e
+    context_mapping:
+      node: node
+    bundles:
+      legal_guidance: legal_guidance
+selection_logic: and
+weight: -5
+relationships: {  }
