@@ -1,0 +1,11 @@
+uuid: a5f8ff87-49ca-48dd-88a4-31acd463a44b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.landing_page_banner
+label: landing_page_banner
+description: ''
+targetEntityType: node
+cache: true

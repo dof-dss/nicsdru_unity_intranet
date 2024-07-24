@@ -1,0 +1,11 @@
+uuid: 6058bcab-8ec0-4c1e-9638-e9bc0416a759
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.noticeboard_small
+label: noticeboard_small
+description: ''
+targetEntityType: node
+cache: true

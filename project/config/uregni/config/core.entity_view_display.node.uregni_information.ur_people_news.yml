@@ -1,0 +1,25 @@
+uuid: 06b2ecd2-81e3-4151-a751-d978ee3e4e22
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.ur_people_news
+    - field.field.node.uregni_information.field_jennys_blog_image
+    - field.field.node.uregni_information.field_ur_people_news_image
+    - node.type.uregni_information
+  module:
+    - user
+id: node.uregni_information.ur_people_news
+targetEntityType: node
+bundle: uregni_information
+mode: ur_people_news
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_jennys_blog_image: true
+  field_ur_people_news_image: true
+  langcode: true

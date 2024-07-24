@@ -1,0 +1,77 @@
+uuid: 540bd8df-985d-4495-9d62-754b2d627fd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.uregni_staff_member.field_about_me
+    - field.field.node.uregni_staff_member.field_directorate
+    - field.field.node.uregni_staff_member.field_extension
+    - field.field.node.uregni_staff_member.field_find_me
+    - field.field.node.uregni_staff_member.field_first_name
+    - field.field.node.uregni_staff_member.field_mobile
+    - field.field.node.uregni_staff_member.field_profile_image
+    - field.field.node.uregni_staff_member.field_title
+    - field.field.node.uregni_staff_member.field_work_pattern
+    - node.type.uregni_staff_member
+  module:
+    - image
+    - user
+id: node.uregni_staff_member.teaser
+targetEntityType: node
+bundle: uregni_staff_member
+mode: teaser
+content:
+  field_directorate:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_extension:
+    type: number_unformatted
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_first_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_profile_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: member_small_image
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_about_me: true
+  field_find_me: true
+  field_mobile: true
+  field_work_pattern: true
+  langcode: true

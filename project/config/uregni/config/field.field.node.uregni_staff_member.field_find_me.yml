@@ -1,0 +1,19 @@
+uuid: 2fd1d72e-761a-46e0-9d0c-cb5f642a6dfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_find_me
+    - node.type.uregni_staff_member
+id: node.uregni_staff_member.field_find_me
+field_name: field_find_me
+entity_type: node
+bundle: uregni_staff_member
+label: 'Find me'
+description: 'Please add where to find the staff member.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

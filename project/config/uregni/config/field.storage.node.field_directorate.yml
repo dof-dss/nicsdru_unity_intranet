@@ -1,0 +1,21 @@
+uuid: 04359b69-8ac6-48df-ba81-915839fee919
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_directorate
+field_name: field_directorate
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
