@@ -12,7 +12,7 @@ entity_type: node
 bundle: legal_guidance
 label: Attachment
 description: 'Upload files for documents using the media browser.'
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

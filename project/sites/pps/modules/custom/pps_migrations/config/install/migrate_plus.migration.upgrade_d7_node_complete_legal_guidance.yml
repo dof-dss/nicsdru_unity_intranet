@@ -87,7 +87,7 @@ process:
         filtered_html_with_tokens: basic_html
         restricted_html: basic_html
         plain_text: plain_text
-  field_publication_date:
+  field_published_date:
     - plugin: sub_process
       source: field_publication_date
       process:
@@ -96,6 +96,9 @@ process:
           from_format: 'Y-m-d H:i:s'
           to_format: Y-m-d
           source: value
+  field_legal_type:
+    - plugin: get
+      source: field_lg_type
   field_attachment:
     - plugin: sub_process
       source: field_pps_attachment
@@ -103,9 +106,6 @@ process:
         target_id: fid
         display: display
         description: description
-  field_legal_type:
-    - plugin: get
-      source: field_lg_type
     - plugin: callback
       callable:
         - '\Drupal\unity_file_migrations\PublicationLinkProcessor'
@@ -113,9 +113,9 @@ process:
       source:
         - nid
         - body
-  field_index_under_a_z:
-    - plugin: get
-      source: field_index_under_a_z
+#  field_index_under_a_z:
+#    - plugin: get
+#      source: field_index_under_a_z
   field_metatag:
     - plugin: d7_metatag_entities
       source: pseudo_metatag_entities
