@@ -9,7 +9,6 @@ dependencies:
     - node.type.link
     - node.type.news
     - node.type.publication
-    - node.type.webform
   module:
     - content_moderation
 _core:
@@ -108,5 +107,4 @@ type_settings:
       - link
       - news
       - publication
-      - webform
   default_moderation_state: draft

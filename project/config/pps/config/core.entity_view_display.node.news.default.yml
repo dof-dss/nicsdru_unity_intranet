@@ -11,7 +11,7 @@ dependencies:
     - field.field.node.news.field_teaser
     - node.type.news
   module:
-    - metatag
+    - datetime
     - text
     - user
 id: node.news.default
@@ -24,38 +24,30 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
-    region: content
-  field_meta_tags:
-    type: metatag_empty_formatter
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 103
-    region: content
-  field_news_type:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 103
+    weight: 2
     region: content
   field_photo:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: landscape_float
       link: false
     third_party_settings: {  }
-    weight: 102
+    weight: 1
     region: content
-  links:
-    settings: {  }
+  field_published_date:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: unity_format
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
-  field_published_date: true
+  content_moderation_control: true
+  field_meta_tags: true
+  field_news_type: true
   field_teaser: true
   langcode: true
+  links: true

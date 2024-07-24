@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.basic_page.field_next_audit_due
     - node.type.basic_page
   module:
-    - metatag
     - text
     - user
 id: node.basic_page.default
@@ -21,29 +20,11 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
-    region: content
-  field_meta_tags:
-    type: metatag_empty_formatter
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 103
-    region: content
-  field_next_audit_due:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 104
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
+  content_moderation_control: true
+  field_meta_tags: true
+  field_next_audit_due: true
   langcode: true
+  links: true

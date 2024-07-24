@@ -11,7 +11,6 @@ dependencies:
     - node.type.legal_guidance
   module:
     - datetime
-    - metatag
     - text
     - user
 id: node.legal_guidance.default
@@ -24,50 +23,29 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
-    region: content
-  content_moderation_control:
-    settings: {  }
-    third_party_settings: {  }
-    weight: -20
+    weight: 1
     region: content
   field_attachment:
     type: entity_reference_entity_view
-    label: above
+    label: inline
     settings:
-      view_mode: default
+      view_mode: embed
       link: false
     third_party_settings: {  }
-    weight: 102
-    region: content
-  field_legal_type:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 102
-    region: content
-  field_meta_tags:
-    type: metatag_empty_formatter
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 103
+    weight: 2
     region: content
   field_published_date:
     type: datetime_default
-    label: above
+    label: hidden
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: unity_format
     third_party_settings: {  }
-    weight: 104
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
+  content_moderation_control: true
+  field_legal_type: true
+  field_meta_tags: true
   langcode: true
+  links: true
