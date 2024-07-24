@@ -1,0 +1,17 @@
+uuid: 199adb65-c5ca-4d6b-92a4-9123393b8a8e
+langcode: en
+status: true
+dependencies:
+  module:
+    - redirect
+    - system
+_core:
+  default_config_hash: 1Kamaqzxh16bKRQH-TcCpEwel6wTxNY5iYV0nRTfEOo
+id: supervisor_user
+label: 'supervisor user'
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'administer redirects'
+  - 'view the administration theme'

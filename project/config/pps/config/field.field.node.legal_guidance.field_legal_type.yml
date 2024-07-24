@@ -1,0 +1,29 @@
+uuid: b05dd933-5fa0-4022-ad25-4802e1532273
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legal_type
+    - node.type.legal_guidance
+    - taxonomy.vocabulary.legal_guidance_type
+id: node.legal_guidance.field_legal_type
+field_name: field_legal_type
+entity_type: node
+bundle: legal_guidance
+label: Type
+description: 'Please choose the type of legal guidance content.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      legal_guidance_type: legal_guidance_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,15 @@
+uuid: 0eca5584-8ef9-41a1-a56a-3c9d4f4404ea
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: production
+description: ''
+weight: 0
+folder: ../project/config/pps/production
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

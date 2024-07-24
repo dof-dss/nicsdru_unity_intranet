@@ -1,0 +1,18 @@
+uuid: f04f9817-b0d8-4f89-863e-c8fac86a13d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_next_audit_due
+field_name: field_next_audit_due
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
