@@ -1,0 +1,8 @@
+uuid: 5cc51bc5-9d66-44a2-8885-fcaccf0bb75d
+langcode: en
+status: true
+dependencies: {  }
+name: Noticeboard
+vid: noticeboard
+description: ''
+weight: 0

@@ -1,0 +1,11 @@
+uuid: 589a20c8-c390-46e3-93c3-c544dba807f8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Feed item'
+type: feed_item
+description: 'This content type is being used for automatically aggregated content from feeds.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

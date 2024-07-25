@@ -1,0 +1,19 @@
+uuid: 6441f443-1909-4a4b-8258-db7ba375cebb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_work_pattern
+    - node.type.uregni_staff_member
+id: node.uregni_staff_member.field_work_pattern
+field_name: field_work_pattern
+entity_type: node
+bundle: uregni_staff_member
+label: 'Work pattern'
+description: 'Please add the work pattern of the staff member.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

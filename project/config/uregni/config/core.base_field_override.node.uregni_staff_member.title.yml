@@ -1,0 +1,18 @@
+uuid: 6de5f733-8544-4541-ae68-b75e00e98b61
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.uregni_staff_member
+id: node.uregni_staff_member.title
+field_name: title
+entity_type: node
+bundle: uregni_staff_member
+label: Surname
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
