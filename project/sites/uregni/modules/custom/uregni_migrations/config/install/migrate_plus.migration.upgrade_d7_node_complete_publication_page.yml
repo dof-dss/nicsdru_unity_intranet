@@ -80,6 +80,33 @@ process:
     -
       plugin: get
       source: body
+    -
+      plugin: media_wysiwyg_filter
+    -
+      plugin: filter_absolute_links
+
+      replace_urls:
+        http://uregni.intranet.nigov.net
+        https://uregni.intranet.nigov.net
+    -
+      plugin: site_files_filter
+      from_ref: sites/uregni/files
+      to_ref: files/uregni
+    -
+      plugin: site_files_filter
+      from_ref: sites/uregni.intranet.nigov.net/files
+      to_ref: files/uregni
+  body/0/format:
+    -
+      plugin: static_map
+      bypass: true
+      source: body/0/format
+      map:
+        filtered_html: basic_html
+        filtered_html_with_no_images: basic_html
+        filtered_html_with_tokens: basic_html
+        restricted_html: basic_html
+        plain_text: plain_text
   field_publication_date:
     -
       plugin: sub_process
@@ -92,8 +119,28 @@ process:
           source: value
   field_publication_type:
     -
-      plugin: get
+      plugin: static_map
       source: field_publication_type
+      default_value: null
+      map:
+        boardmins: 3
+        covid19: 4
+        doctempslogo: 5
+        financeform: 6
+        gdpr: 7
+        goodtoknow: 8
+        governancemanual: 9
+        hrform: 10
+        hrpolicy: 11
+        infomanagement: 12
+        internalcomms: 13
+        nipsa: 14
+        procurement: 15
+        publicaffairs: 16
+        smtminutes: 17
+        training: 18
+        urpeople: 19
+        ceo: 20
   field_attachment:
     -
       plugin: sub_process
@@ -109,7 +156,7 @@ process:
 destination:
   plugin: 'entity_complete:node'
   translations: true
-  default_bundle: publication_page
+  default_bundle: publication
 migration_dependencies:
   required:
     - upgrade_d7_user
