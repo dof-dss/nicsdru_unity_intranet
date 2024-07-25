@@ -1,0 +1,22 @@
+uuid: f59557cf-b745-44ab-8afa-c1e1318610d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pps_theme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: pps_theme_content
+theme: pps_theme
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
