@@ -2,10 +2,13 @@ uuid: 2ad3790a-0860-4624-8d94-8f58334f6f99
 langcode: en
 status: true
 dependencies:
+  config:
+    - filter.format.basic_html
   module:
+    - file
+    - filter
+    - media
     - node
-    - path
-    - pathauto
     - search
     - system
 _core:
@@ -17,8 +20,10 @@ is_admin: false
 permissions:
   - 'access administration pages'
   - 'access content'
-  - 'create url aliases'
-  - 'notify of path changes'
+  - 'delete own files'
   - 'search content'
+  - 'use text format basic_html'
+  - 'view all revisions'
+  - 'view media'
   - 'view own unpublished content'
   - 'view the administration theme'
