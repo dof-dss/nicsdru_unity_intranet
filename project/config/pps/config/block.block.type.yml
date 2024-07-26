@@ -1,0 +1,29 @@
+uuid: 3542d83f-c9ba-41d6-8cf2-c04f6188ae9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.legal_type
+  module:
+    - facets
+    - system
+  theme:
+    - pps_theme
+id: type
+theme: pps_theme
+region: search_facets
+weight: -3
+provider: null
+plugin: 'facet_block:legal_type'
+settings:
+  id: 'facet_block:legal_type'
+  label: Type
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: type
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/legal-guidance\r\n/legal-guidance/date/*\r\n/legal-guidance/type/*"

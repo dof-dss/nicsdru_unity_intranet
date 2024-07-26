@@ -1,8 +1,9 @@
-uuid: 1745b645-e804-4eb0-8115-c1e836d033a2
+uuid: e812299d-47a5-4f4b-bb54-819b5444bb2e
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.search_index
     - field.field.node.legal_guidance.body
     - field.field.node.legal_guidance.field_attachment
     - field.field.node.legal_guidance.field_legal_type
@@ -11,29 +12,17 @@ dependencies:
     - node.type.legal_guidance
   module:
     - datetime
-    - text
+    - layout_builder
     - user
-id: node.legal_guidance.default
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.legal_guidance.search_index
 targetEntityType: node
 bundle: legal_guidance
-mode: default
+mode: search_index
 content:
-  body:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_attachment:
-    type: entity_reference_entity_view
-    label: inline
-    settings:
-      view_mode: embed
-      link: false
-    third_party_settings: {  }
-    weight: 2
-    region: content
   field_published_date:
     type: datetime_default
     label: hidden
@@ -44,7 +33,9 @@ content:
     weight: 0
     region: content
 hidden:
+  body: true
   content_moderation_control: true
+  field_attachment: true
   field_legal_type: true
   field_meta_tags: true
   langcode: true
