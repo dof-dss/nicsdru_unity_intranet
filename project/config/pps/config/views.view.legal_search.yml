@@ -22,7 +22,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Legal search'
+      title: 'Legal guidance'
       fields:
         body:
           id: body
