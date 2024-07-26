@@ -1,0 +1,22 @@
+uuid: 8039ea7d-13e6-42a3-a8ac-ab25e05539dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - uregni_theme
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: uregni_theme_breadcrumbs
+theme: uregni_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }
