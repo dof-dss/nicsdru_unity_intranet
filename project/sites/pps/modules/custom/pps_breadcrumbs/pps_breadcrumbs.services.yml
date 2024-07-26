@@ -1,0 +1,11 @@
+services:
+  pps_breadcrumbs.breadcrumb.board:
+    class: Drupal\pps_breadcrumbs\DocumentBreadcrumb
+    arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
+    tags:
+      - { name: breadcrumb_builder, priority: 105 }
+  pps_breadcrumbs.breadcrumb.event:
+    class: Drupal\pps_breadcrumbs\LegalBreadcrumb
+    arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
+    tags:
+      - { name: breadcrumb_builder, priority: 105 }
