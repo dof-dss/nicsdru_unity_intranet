@@ -1,4 +1,4 @@
-uuid: 8c3458a5-aa46-47a0-8307-b6454c6d248b
+uuid: a56fea4e-0685-4a02-93ba-af1272101361
 langcode: en
 status: true
 dependencies:
@@ -8,8 +8,8 @@ dependencies:
   module:
     - search_api
     - text
-id: publications_search
-label: 'Document search'
+id: documents_search
+label: 'Documents search'
 module: views
 description: ''
 tag: ''
@@ -22,7 +22,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Document
+      title: Documents
       fields:
         body:
           id: body
@@ -246,8 +246,8 @@ display:
         - 'config:field.storage.node.body'
         - 'config:search_api.index.document_index'
         - 'search_api_list:document_index'
-  publication_search_page:
-    id: publication_search_page
+  documents_search_page:
+    id: documents_search_page
     display_title: Page
     display_plugin: page
     position: 1

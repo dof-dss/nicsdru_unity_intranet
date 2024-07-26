@@ -1,27 +1,27 @@
-uuid: ec1f9583-09ad-4844-9248-d2b08e99cb44
+uuid: 363f367f-de4f-4924-ad00-1008d195f4c6
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.document_date
+    - facets.facet.document_type
   module:
     - facets
     - system
   theme:
     - pps_theme
-id: document_date
+id: pps_theme_type
 theme: pps_theme
 region: search_facets
-weight: 0
+weight: -1
 provider: null
-plugin: 'facet_block:document_date'
+plugin: 'facet_block:document_type'
 settings:
-  id: 'facet_block:document_date'
-  label: Date
+  id: 'facet_block:document_type'
+  label: Type
   label_display: visible
   provider: facets
   context_mapping: {  }
-  block_id: document_date
+  block_id: pps_theme_type
 visibility:
   request_path:
     id: request_path

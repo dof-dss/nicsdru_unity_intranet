@@ -1,24 +1,24 @@
-uuid: 6338863c-6bfe-476d-8735-be9ffc4facab
+uuid: ab3e46f4-773c-46c4-860d-2169c7169c95
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.publications_search
+    - views.view.documents_search
   module:
     - system
     - views
   theme:
     - pps_theme
-id: pps_theme_exposedformpublications_searchpublication_search_page
+id: pps_theme_exposedformdocuments_searchdocuments_search_page
 theme: pps_theme
 region: search_facets
-weight: 0
+weight: -6
 provider: null
-plugin: 'views_exposed_filter_block:publications_search-publication_search_page'
+plugin: 'views_exposed_filter_block:documents_search-documents_search_page'
 settings:
-  id: 'views_exposed_filter_block:publications_search-publication_search_page'
+  id: 'views_exposed_filter_block:documents_search-documents_search_page'
   label: ''
-  label_display: '0'
+  label_display: visible
   provider: views
   views_label: ''
 visibility:

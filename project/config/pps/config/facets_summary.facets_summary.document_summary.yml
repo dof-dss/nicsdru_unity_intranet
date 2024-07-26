@@ -1,15 +1,15 @@
-uuid: 37f6ba41-ffac-404a-af87-bad93221aea3
+uuid: 52c274bf-7b84-4457-b8a2-d91ee66765c2
 langcode: en
 status: true
 dependencies:
   config:
     - search_api.index.document_index
-    - views.view.publications_search
+    - views.view.documents_search
   module:
     - search_api
 id: document_summary
 name: 'Document summary'
-facet_source_id: 'search_api:views_page__publications_search__publication_search_page'
+facet_source_id: 'search_api:views_page__documents_search__documents_search_page'
 processor_configs:
   hide_when_not_rendered:
     processor_id: hide_when_not_rendered
@@ -17,15 +17,15 @@ processor_configs:
       build: '45'
     settings: {  }
 facets:
-  document_date:
-    checked: true
-    label: Date
-    separator: ', '
-    show_count: false
-    weight: 0
   document_type:
     checked: true
     label: Type
+    separator: ', '
+    show_count: false
+    weight: 0
+  doument_date:
+    checked: true
+    label: Date
     separator: ', '
     show_count: false
     weight: 0
