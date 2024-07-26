@@ -5,8 +5,8 @@ dependencies:
   config:
     - field.field.node.noticeboard.body
     - field.field.node.noticeboard.field_date_published
+    - field.field.node.noticeboard.field_teaser
     - field.field.node.noticeboard.field_type
-    - field.field.node.noticeboard.field_ureni_teaser
     - node.type.noticeboard
   module:
     - datetime
@@ -39,19 +39,19 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_teaser:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_type:
     type: options_select
     weight: 4
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_ureni_teaser:
-    type: string_textfield
-    weight: 7
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
   flag:
     weight: 10

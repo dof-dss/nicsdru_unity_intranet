@@ -1,0 +1,19 @@
+uuid: 0e1edccc-6068-4ed1-aff0-f841af26fc4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.noticeboard
+id: node.noticeboard.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: noticeboard
+label: Teaser
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
