@@ -1,25 +1,25 @@
-uuid: 298c5a44-e50b-48f4-a1ac-5fa00d5b9323
+uuid: bdf4d33a-d2de-485d-8816-d00865c3f193
 langcode: en
 status: true
 dependencies:
   config:
-    - search_api.index.legal_index
-    - views.view.legal_search
+    - search_api.index.document_index
+    - views.view.publications_search
   module:
     - facets_pretty_paths
     - search_api
 third_party_settings:
   facets_pretty_paths:
     coder: taxonomy_term_coder
-id: legal_type
+id: document_type
 name: Type
 weight: 0
 min_count: 1
 missing: false
 missing_label: others
 url_alias: type
-facet_source_id: 'search_api:views_page__legal_search__legal_search_page'
-field_identifier: field_legal_type
+facet_source_id: 'search_api:views_page__publications_search__publication_search_page'
+field_identifier: field_publication_type
 query_operator: and
 hard_limit: 0
 exclude: false

@@ -1,0 +1,29 @@
+uuid: ec1f9583-09ad-4844-9248-d2b08e99cb44
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.document_date
+  module:
+    - facets
+    - system
+  theme:
+    - pps_theme
+id: document_date
+theme: pps_theme
+region: search_facets
+weight: 0
+provider: null
+plugin: 'facet_block:document_date'
+settings:
+  id: 'facet_block:document_date'
+  label: Date
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: document_date
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/documents\r\n/documents/date/*\r\n/documents/type/*"
