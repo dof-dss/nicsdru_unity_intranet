@@ -1,0 +1,17 @@
+uuid: 91143ccb-5477-4782-ab8d-010fd409422a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - redirect
+    - system
+id: editor_user
+label: 'editor user'
+weight: 5
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'administer nodes'
+  - 'administer redirects'
+  - 'view the administration theme'

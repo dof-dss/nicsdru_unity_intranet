@@ -1,0 +1,19 @@
+uuid: 156cb0aa-f4dd-4d15-b87b-fa032418b7f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_title
+    - node.type.niao_staff_member
+id: node.niao_staff_member.field_job_title
+field_name: field_job_title
+entity_type: node
+bundle: niao_staff_member
+label: 'Job title'
+description: 'Please add the job title of the staff member.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
