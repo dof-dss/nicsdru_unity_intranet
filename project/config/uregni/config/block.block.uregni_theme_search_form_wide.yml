@@ -1,0 +1,23 @@
+uuid: 59421d22-ac4a-4f51-8fd0-b1bc71715d8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - uregni_theme
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: uregni_theme_search_form_wide
+theme: uregni_theme
+region: header
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }
