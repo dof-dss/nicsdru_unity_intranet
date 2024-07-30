@@ -1,0 +1,36 @@
+uuid: 85763ef1-f1ac-478c-9add-163ad4f46022
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.feed_item.field_description
+    - field.field.node.feed_item.field_publication_date
+    - node.type.feed_item
+  module:
+    - datetime
+    - text
+    - user
+id: node.feed_item.default
+targetEntityType: node
+bundle: feed_item
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_publication_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  links: true

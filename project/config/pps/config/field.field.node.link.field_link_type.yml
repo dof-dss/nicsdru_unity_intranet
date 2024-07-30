@@ -1,0 +1,29 @@
+uuid: e108bc40-fa07-4ab3-bcd9-8913aa93fd39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_type
+    - node.type.link
+    - taxonomy.vocabulary.link_type
+id: node.link.field_link_type
+field_name: field_link_type
+entity_type: node
+bundle: link
+label: Type
+description: 'Please choose the link type.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      link_type: link_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: b16922cb-fb73-4277-87ef-a42a07232d82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachment
+    - media.type.document
+    - node.type.legal_guidance
+id: node.legal_guidance.field_attachment
+field_name: field_attachment
+entity_type: node
+bundle: legal_guidance
+label: Attachment
+description: 'Upload files for documents using the media browser.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

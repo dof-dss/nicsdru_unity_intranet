@@ -1,0 +1,23 @@
+uuid: 8112e95a-e1f5-4ab6-a7ea-50c0176f65dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_extension
+    - node.type.uregni_staff_member
+id: node.uregni_staff_member.field_extension
+field_name: field_extension
+entity_type: node
+bundle: uregni_staff_member
+label: Extension
+description: 'Please add the extension number of the staff member.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

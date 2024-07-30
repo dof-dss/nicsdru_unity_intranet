@@ -1,0 +1,21 @@
+uuid: cafc299d-6b43-4ec9-9339-a3bc1df786f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.legal_guidance
+  module:
+    - metatag
+id: node.legal_guidance.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: legal_guidance
+label: 'Meta tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

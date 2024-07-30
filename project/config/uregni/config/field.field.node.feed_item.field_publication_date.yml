@@ -1,0 +1,24 @@
+uuid: 7f760332-7a1e-4c22-b475-39ae6496bbbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_date
+    - node.type.feed_item
+  module:
+    - datetime
+id: node.feed_item.field_publication_date
+field_name: field_publication_date
+entity_type: node
+bundle: feed_item
+label: 'Feed Item Publication date'
+description: 'Choose the publication date of this publication item.'
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

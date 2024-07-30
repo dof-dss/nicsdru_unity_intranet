@@ -1,0 +1,16 @@
+uuid: b79ee423-57ad-45ee-95d8-e252753afba6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main:'
+name: 'Staff member'
+type: uregni_staff_member
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

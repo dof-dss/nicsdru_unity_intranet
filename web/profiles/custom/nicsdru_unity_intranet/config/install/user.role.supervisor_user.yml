@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - filter
+    - toolbar
+id: supervisor_user
+label: 'supervisor user'
+weight: 5
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'use text format basic_html'

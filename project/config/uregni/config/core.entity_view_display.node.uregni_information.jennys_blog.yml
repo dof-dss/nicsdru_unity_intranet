@@ -1,0 +1,36 @@
+uuid: 32c11916-44e4-4757-bec2-53f097694eb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.jennys_blog
+    - field.field.node.uregni_information.field_jennys_blog_image
+    - field.field.node.uregni_information.field_ur_people_news_image
+    - node.type.uregni_information
+  module:
+    - image
+    - user
+id: node.uregni_information.jennys_blog
+targetEntityType: node
+bundle: uregni_information
+mode: jennys_blog
+content:
+  field_jennys_blog_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_ur_people_news_image: true
+  langcode: true

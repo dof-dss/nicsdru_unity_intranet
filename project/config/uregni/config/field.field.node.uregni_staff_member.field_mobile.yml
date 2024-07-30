@@ -1,0 +1,19 @@
+uuid: 3c2da920-41de-480e-be70-03882cb62e4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mobile
+    - node.type.uregni_staff_member
+id: node.uregni_staff_member.field_mobile
+field_name: field_mobile
+entity_type: node
+bundle: uregni_staff_member
+label: 'Work mobile'
+description: 'Please add the staff member mobile number. This is restricted to 11 characters.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
