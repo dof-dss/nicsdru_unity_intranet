@@ -1,0 +1,21 @@
+uuid: 74903c4b-df09-4a37-b4be-8f0dbe181eb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_index_under_a_z
+    - node.type.legal_guidance
+  module:
+    - options
+id: node.legal_guidance.field_index_under_a_z
+field_name: field_index_under_a_z
+entity_type: node
+bundle: legal_guidance
+label: field_index_under_a_z
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
