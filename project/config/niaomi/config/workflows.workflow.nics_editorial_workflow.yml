@@ -2,6 +2,14 @@ uuid: c6d9ac38-f48d-47cb-8005-8f91dca863df
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.basic_page
+    - node.type.featured_links
+    - node.type.feed
+    - node.type.feed_item
+    - node.type.news
+    - node.type.niao_staff_member
+    - node.type.publication
   module:
     - content_moderation
 _core:
@@ -93,5 +101,12 @@ type_settings:
       to: needs_review
       weight: 2
   entity_types:
-    node: null
+    node:
+      - basic_page
+      - featured_links
+      - feed
+      - feed_item
+      - news
+      - niao_staff_member
+      - publication
   default_moderation_state: draft

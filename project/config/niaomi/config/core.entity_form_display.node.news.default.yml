@@ -9,7 +9,9 @@ dependencies:
     - field.field.node.news.field_published_date
     - field.field.node.news.field_teaser
     - node.type.news
+    - workflows.workflow.nics_editorial_workflow
   module:
+    - content_moderation
     - datetime
     - entity_browser
     - path
@@ -21,7 +23,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 7
+    weight: 5
     region: content
     settings:
       rows: 9
@@ -37,13 +39,13 @@ content:
     third_party_settings: {  }
   field_news_type:
     type: options_select
-    weight: 3
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_photo:
     type: entity_browser_file
-    weight: 6
+    weight: 4
     region: content
     settings:
       entity_browser: null
@@ -57,13 +59,13 @@ content:
     third_party_settings: {  }
   field_published_date:
     type: datetime_default
-    weight: 2
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
   field_teaser:
     type: string_textfield
-    weight: 5
+    weight: 3
     region: content
     settings:
       size: 120
@@ -76,10 +78,16 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 1
+    weight: 7
     region: content
     settings:
       include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 14
+    region: content
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path
@@ -96,7 +104,7 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 13
+    weight: 12
     region: content
     settings:
       display_label: true
@@ -118,7 +126,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 6
     region: content
     settings:
       match_operator: CONTAINS
@@ -127,7 +135,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 12
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
