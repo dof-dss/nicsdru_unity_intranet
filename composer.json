@@ -48,10 +48,12 @@
         "cweagans/composer-patches": "^1.7",
         "dof-dss/nicsdru_origins_modules": "^10.3",
         "dof-dss/nicsdru_unity_modules": "^10.1",
+        "dof-dss/nicsdru_unity_profile": "^10.1",
         "dof-dss/nicsdru_unity_theme": "^10.1",
         "drupal/address": "^1.12",
         "drupal/admin_toolbar": "^3.4",
         "drupal/allowed_formats": "^2.0",
+        "drupal/antibot": "^2.0",
         "drupal/auto_entityqueue": "^2.1",
         "drupal/blazy": "2.16.0",
         "drupal/block_content_permissions": "^1.11",
@@ -127,6 +129,7 @@
         "drupal/schema_metatag": "^3.0",
         "drupal/search_api": "^1.26",
         "drupal/search_api_autocomplete": "^1.4",
+        "drupal/search_api_glossary": "^4.2",
         "drupal/search_api_location": "^1.0@alpha",
         "drupal/search_api_solr": "4.3.0",
         "drupal/search_api_spellcheck": "^4.0",
@@ -210,7 +213,8 @@
             },
             "drupal/facets": {
                 "Pass facet object onto child items": "https://www.drupal.org/files/issues/2019-11-13/child_item-3094143-2.patch",
-                "Fix to deprecated function $transliterateDisplayValue": "https://www.drupal.org/files/issues/2024-02-21/facets-php82-3406085-18.patch"
+                "Fix to deprecated function $transliterateDisplayValue": "https://www.drupal.org/files/issues/2024-02-21/facets-php82-3406085-18.patch",
+                "Fatal errors on config import": "https://www.drupal.org/files/issues/2023-10-20/3395567.patch"
             },
             "drupal/facets_pretty_paths": {
                 "facet pretty paths doubling up": "https://www.drupal.org/files/issues/2023-01-12/url_duplication-3254600-45.patch"
