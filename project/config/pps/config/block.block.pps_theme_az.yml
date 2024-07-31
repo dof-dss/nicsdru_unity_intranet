@@ -1,26 +1,27 @@
-uuid: ab4c7650-ee72-4b39-a6b1-e9278d31a741
+uuid: 63cd77bb-cefc-4a77-a357-f80224932614
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.legal_search
+    - facets.facet.a_z
   module:
+    - facets
     - system
-    - views
   theme:
     - pps_theme
-id: pps_theme_exposedformlegal_searchlegal_search_page
+id: pps_theme_az
 theme: pps_theme
 region: search_facets
-weight: -5
+weight: 0
 provider: null
-plugin: 'views_exposed_filter_block:legal_search-legal_search_page'
+plugin: 'facet_block:a_z'
 settings:
-  id: 'views_exposed_filter_block:legal_search-legal_search_page'
-  label: ''
+  id: 'facet_block:a_z'
+  label: 'A - Z'
   label_display: '0'
-  provider: views
-  views_label: ''
+  provider: facets
+  context_mapping: {  }
+  block_id: pps_theme_az
 visibility:
   request_path:
     id: request_path
