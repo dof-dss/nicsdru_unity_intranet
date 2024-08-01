@@ -13,13 +13,11 @@
 $link-az-menu: (
   color: (
     default: $link,
-    hover: #fff,
-    active: $charcoal
+    hover: #fff
   ),
   background-color: (
     default: transparent,
-    hover:  #076cba,
-    active: #cee4f6
+    hover:  #076cba
   ),
   text-decoration: 'none',
   border: '1px solid #0a78cd',
@@ -38,10 +36,15 @@ $link-az-menu: (
 
 #content #bottom-area,
 #content #search-facets {
-  .block-facet--glossaryaz {
+  .block-facet--glossaryaz ul:not(.contextual-links) {
+    li.no-results {
+      border: 1px solid #0a78cd;
+    }
+    
     a,
     .link__self,
-    .active {
+    .active,
+    li.no-results {
       @include adjust-font-size-to(21px, 7.3334);
       display: inline-block;
       width: 4.4rem;
@@ -60,10 +63,22 @@ $link-az-menu: (
     a,
     span {
       @include link-state-style($link-az-menu);
-    }
 
-    a:hover {
-      border-color: $link;
+      &:hover {
+        border-color: $link;
+      }
+
+      &.is-active {
+        color: $charcoal;
+        background-color: #cee4f6;
+        text-decoration: none;
+        border: 1px solid $link;
+        outline: 0 solid transparent;
+        outline-offset: -3px;
+        transition: background-color .25s,outline-color .25s;
+        z-index: 0;
+        position: relative;
+      }
     }
   }
 }
