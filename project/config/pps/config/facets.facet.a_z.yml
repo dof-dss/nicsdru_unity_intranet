@@ -34,7 +34,7 @@ widget:
   type: glossaryaz
   config:
     show_count: 0
-    enable_default_theme: 1
+    enable_default_theme: 0
 empty_behavior:
   behavior: none
 only_visible_when_facet_source_is_visible: false
@@ -49,15 +49,10 @@ processor_configs:
       exclude: '0,1,2,3,4,5,6,7,8,9'
       regex: false
       invert: false
-  glossaryaz_all_items_processor:
-    processor_id: glossaryaz_all_items_processor
-    weights:
-      build: -4
-    settings: {  }
   glossaryaz_pad_items_processor:
     processor_id: glossaryaz_pad_items_processor
     weights:
-      build: 10
+      build: -7
     settings: {  }
   glossaryaz_widget_order:
     processor_id: glossaryaz_widget_order
@@ -88,11 +83,11 @@ processor_configs:
   hierarchy_processor:
     processor_id: hierarchy_processor
     weights:
-      build: 7
+      build: -2
     settings: {  }
   url_processor_handler:
     processor_id: url_processor_handler
     weights:
       pre_query: 50
-      build: -5
+      build: -10
     settings: {  }
