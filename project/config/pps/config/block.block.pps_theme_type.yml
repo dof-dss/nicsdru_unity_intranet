@@ -12,7 +12,7 @@ dependencies:
 id: pps_theme_type
 theme: pps_theme
 region: search_facets
-weight: -1
+weight: -3
 provider: null
 plugin: 'facet_block:document_type'
 settings:

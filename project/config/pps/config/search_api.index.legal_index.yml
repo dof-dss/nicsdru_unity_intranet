@@ -12,6 +12,7 @@ dependencies:
     - node
     - taxonomy
     - search_api
+    - search_api_glossary
 third_party_settings:
   search_api_solr:
     finalize: false
@@ -87,6 +88,13 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_published_date
+  glossaryaz_title:
+    label: 'Glossary AZ - Content » Title'
+    property_path: glossaryaz_title
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
   langcode:
     label: Language
     datasource_id: 'entity:node'
@@ -138,6 +146,15 @@ processor_settings:
   custom_value: {  }
   entity_status: {  }
   entity_type: {  }
+  glossary:
+    weights:
+      preprocess_index: -20
+    glossarytable: 'a:1:{s:13:"glossarytable";a:5:{s:4:"body";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:16:"field_legal_type";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:8:"langcode";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:4:"name";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:5:"title";a:2:{s:8:"glossary";s:1:"1";s:8:"grouping";a:3:{s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;s:14:"grouping_other";i:0;}}}}'
+    field_enabled: 0
+    grouping_defaults:
+      grouping_other: grouping_other
+      grouping_az: 0
+      grouping_09: 0
   html_filter:
     weights:
       preprocess_index: -15
@@ -145,6 +162,7 @@ processor_settings:
     all_fields: true
     fields:
       - body
+      - glossaryaz_title
       - langcode
       - name
       - title

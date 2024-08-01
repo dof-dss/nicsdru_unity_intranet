@@ -1,0 +1,24 @@
+uuid: 19f5e2e3-1156-4e57-bdfb-6d5988e44187
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.a_z
+  module:
+    - facets
+  theme:
+    - pps_theme
+id: pps_theme_az_home
+theme: pps_theme
+region: bottom_widget_1
+weight: -7
+provider: null
+plugin: 'facet_block:a_z'
+settings:
+  id: 'facet_block:a_z'
+  label: 'A - Z'
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: pps_theme_az_home
+visibility: {  }

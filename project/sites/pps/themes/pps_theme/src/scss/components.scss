@@ -4,3 +4,85 @@
  */
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+// Facet A-Z List
+//
+// .
+//
+// Style guide: components.block.az-list
+$link-az-menu: (
+  color: (
+    default: $link,
+    hover: #fff,
+    active: $charcoal
+  ),
+  background-color: (
+    default: transparent,
+    hover:  #076cba,
+    active: #cee4f6
+  ),
+  text-decoration: 'none',
+  border: '1px solid #0a78cd',
+  outline: (
+    default: '0 solid transparent',
+    focus: '3px solid #{$link}',
+  ),
+  outline-offset: -3px,
+  transition: 'background-color .25s, outline-color .25s',
+  z-index: (
+    default: 0,
+    focus: 1
+  ),
+  position: relative
+);
+
+#content #bottom-area,
+#content #search-facets {
+  .block-facet--glossaryaz {
+    a,
+    .link__self,
+    .active {
+      @include adjust-font-size-to(21px, 7.3334);
+      display: inline-block;
+      width: 4.4rem;
+      height: 4.4rem;
+      margin: -1px 0 0 -1px;
+      text-align: center;
+      text-decoration: none;
+
+      @include breakpoint($tab) {
+        @include adjust-font-size-to(24px, 7.5);
+        width: 4.5rem;
+        height: 4.5rem;
+      }
+    }
+
+    a,
+    span {
+      @include link-state-style($link-az-menu);
+    }
+
+    a:hover {
+      border-color: $link;
+    }
+  }
+}
+
+#search-facets,
+#content {
+  .block-facet--glossaryaz ul:not(.contextual-links) {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: .5em -1px .5em 1px;
+    padding: 0;
+    max-width: 60rem;
+
+    li {
+      font-size: 0; // Safari inline-block white space fix
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

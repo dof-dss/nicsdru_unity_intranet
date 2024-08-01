@@ -12,7 +12,7 @@ dependencies:
 id: pps_theme_exposedformlegal_searchlegal_search_page
 theme: pps_theme
 region: search_facets
-weight: -5
+weight: -7
 provider: null
 plugin: 'views_exposed_filter_block:legal_search-legal_search_page'
 settings:
@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/legal-guidance\r\n/legal-guidance/date/*\r\n/legal-guidance/type/*"
+    pages: "/legal-guidance\r\n/legal-guidance/date/*\r\n/legal-guidance/type/*\r\n/legal-guidance/letter/*"
