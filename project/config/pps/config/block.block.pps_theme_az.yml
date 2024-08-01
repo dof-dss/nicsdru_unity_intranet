@@ -12,7 +12,7 @@ dependencies:
 id: pps_theme_az
 theme: pps_theme
 region: search_facets
-weight: 0
+weight: -1
 provider: null
 plugin: 'facet_block:a_z'
 settings:

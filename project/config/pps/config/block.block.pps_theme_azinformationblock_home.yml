@@ -1,0 +1,25 @@
+uuid: 2e07a964-25c5-4481-a94d-040308a5609c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:text:9517faa8-143d-4232-b6e8-4da32e5d9928'
+  module:
+    - block_content
+  theme:
+    - pps_theme
+id: pps_theme_azinformationblock_home
+theme: pps_theme
+region: bottom_widget_1
+weight: -8
+provider: null
+plugin: 'block_content:9517faa8-143d-4232-b6e8-4da32e5d9928'
+settings:
+  id: 'block_content:9517faa8-143d-4232-b6e8-4da32e5d9928'
+  label: 'A - Z information'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
