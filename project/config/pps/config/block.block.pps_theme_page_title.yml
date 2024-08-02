@@ -23,4 +23,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "/legal-guidance\r\n/legal-guidance/date/*\r\n/legal-guidance/type/*\r\n/search\r\n/search*\r\n/documents\r\n/documents/date/*\r\n/documents/type/*"
+    pages: "/legal-guidance\r\n/legal-guidance/date/*\r\n/legal-guidance/type/*\r\n/legal-guidance/letter/*\r\n/search\r\n/search*\r\n/documents\r\n/documents/date/*\r\n/documents/type/*\r\n/news\r\n/news/date/*"
