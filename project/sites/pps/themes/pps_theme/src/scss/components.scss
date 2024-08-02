@@ -157,7 +157,7 @@ $link-az-menu: (
   }
 }
 
-#content #block-pps-theme-views-block-news-latest-news article.news-card a {
+#content #block-pps-theme-views-block-news-latest-news-home article.news-card a {
   border: none;
   margin: 0;
   padding: 0 1rem 1rem;
@@ -177,5 +177,35 @@ $link-az-menu: (
   &:focus {
     outline: 2px solid $black;
     outline-offset: -2px;
+  }
+}
+
+.sidebar-second-layout {
+  .rel-menu--latest-news {
+    margin-bottom: 2rem;
+
+    ul {
+      margin-bottom: 1rem;
+
+      li {
+        padding: 0 0 .6rem 1rem;
+        list-style: none;
+        margin: 0 0 .2rem;
+        position: relative;
+
+        &::before {
+          content: "-";
+          left: 0;
+          position: absolute;
+          top: 0;
+        }
+
+        .date-published {
+          display: block;
+          font-size: 1.4rem;
+          line-height: 1.8rem;
+        }
+      }
+    }
   }
 }
