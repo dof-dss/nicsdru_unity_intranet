@@ -1,0 +1,24 @@
+uuid: 3de7256a-2a22-4074-8251-0ec2549ea0d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - views
+  theme:
+    - pps_theme
+id: pps_theme_views_block__news_latest_news
+theme: pps_theme
+region: top_first
+weight: 0
+provider: null
+plugin: 'views_block:news-latest_news'
+settings:
+  id: 'views_block:news-latest_news'
+  label: News
+  label_display: visible
+  provider: views
+  views_label: News
+  items_per_page: none
+visibility: {  }
