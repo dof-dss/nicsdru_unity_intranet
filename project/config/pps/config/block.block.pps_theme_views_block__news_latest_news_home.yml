@@ -1,4 +1,4 @@
-uuid: 3de7256a-2a22-4074-8251-0ec2549ea0d2
+uuid: 110c8ee8-420a-4a2f-a4a1-3177de0a522d
 langcode: en
 status: true
 dependencies:
@@ -8,14 +8,14 @@ dependencies:
     - views
   theme:
     - pps_theme
-id: pps_theme_views_block__news_latest_news
+id: pps_theme_views_block__news_latest_news_home
 theme: pps_theme
 region: top_first
 weight: 0
 provider: null
-plugin: 'views_block:news-latest_news'
+plugin: 'views_block:news-latest_news_home'
 settings:
-  id: 'views_block:news-latest_news'
+  id: 'views_block:news-latest_news_home'
   label: News
   label_display: visible
   provider: views
