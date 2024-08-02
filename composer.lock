@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "34eb6907483c0eaf92b871e5086fdf2a",
+    "content-hash": "a7aec0881f5785fc4a10d1531673a109",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1526,16 +1526,16 @@
         },
         {
             "name": "dof-dss/nicsdru_origins_modules",
-            "version": "10.3.6",
+            "version": "10.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_origins_modules.git",
-                "reference": "f81e01fa981740aecd459c1fbeb16c4a63698f41"
+                "reference": "77c841da01f3415a4c42f12ac48ac42767284eeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/f81e01fa981740aecd459c1fbeb16c4a63698f41",
-                "reference": "f81e01fa981740aecd459c1fbeb16c4a63698f41",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/77c841da01f3415a4c42f12ac48ac42767284eeb",
+                "reference": "77c841da01f3415a4c42f12ac48ac42767284eeb",
                 "shasum": ""
             },
             "require": {
@@ -1550,22 +1550,22 @@
             "description": "Generic modules for DOF-DSS Drupal sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_origins_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/10.3.6"
+                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/10.3.9"
             },
-            "time": "2024-05-28T14:42:52+00:00"
+            "time": "2024-07-09T09:35:25+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
-            "version": "10.1.12",
+            "version": "10.1.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_modules.git",
-                "reference": "9789a72c7ac078326ba9ec3543f225e5fdd7e43e"
+                "reference": "934d29277c1e6376aa6331bdab4342964e3a241c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/9789a72c7ac078326ba9ec3543f225e5fdd7e43e",
-                "reference": "9789a72c7ac078326ba9ec3543f225e5fdd7e43e",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/934d29277c1e6376aa6331bdab4342964e3a241c",
+                "reference": "934d29277c1e6376aa6331bdab4342964e3a241c",
                 "shasum": ""
             },
             "require": {
@@ -1579,22 +1579,51 @@
             "description": "Custom modules available to all Unity sites.",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/10.1.12"
+                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/10.1.13"
             },
-            "time": "2024-05-16T11:17:36+00:00"
+            "time": "2024-07-09T09:34:56+00:00"
         },
         {
-            "name": "dof-dss/nicsdru_unity_theme",
-            "version": "v10.1.15",
+            "name": "dof-dss/nicsdru_unity_profile",
+            "version": "10.1.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/dof-dss/nicsdru_unity_theme.git",
-                "reference": "a59b3b8a2aa9ae8fcda2161f95ce3851c060bc51"
+                "url": "https://github.com/dof-dss/nicsdru_unity_profile.git",
+                "reference": "2e2000c459ff5bfc164f1d87490f718a772b8470"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/a59b3b8a2aa9ae8fcda2161f95ce3851c060bc51",
-                "reference": "a59b3b8a2aa9ae8fcda2161f95ce3851c060bc51",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/2e2000c459ff5bfc164f1d87490f718a772b8470",
+                "reference": "2e2000c459ff5bfc164f1d87490f718a772b8470",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^2.0"
+            },
+            "type": "drupal-profile",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Custom install profile used by all Unity sites",
+            "support": {
+                "issues": "https://github.com/dof-dss/nicsdru_unity_profile/issues",
+                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/10.1.4"
+            },
+            "time": "2024-07-09T09:35:10+00:00"
+        },
+        {
+            "name": "dof-dss/nicsdru_unity_theme",
+            "version": "10.1.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dof-dss/nicsdru_unity_theme.git",
+                "reference": "f0137e603cd7d927c8953e69e5ce42946913ad4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/f0137e603cd7d927c8953e69e5ce42946913ad4b",
+                "reference": "f0137e603cd7d927c8953e69e5ce42946913ad4b",
                 "shasum": ""
             },
             "require": {
@@ -1618,9 +1647,9 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/v10.1.15"
+                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/10.1.16"
             },
-            "time": "2024-05-16T12:12:58+00:00"
+            "time": "2024-07-10T13:34:56+00:00"
         },
         {
             "name": "drupal/address",
@@ -1827,6 +1856,58 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/allowed_formats",
                 "issues": "https://www.drupal.org/project/issues/allowed_formats"
+            }
+        },
+        {
+            "name": "drupal/antibot",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/antibot.git",
+                "reference": "2.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/antibot-2.0.3.zip",
+                "reference": "2.0.3",
+                "shasum": "b26b603299ee3067e0aa3875ff752815f21d2f0b"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.3",
+                    "datestamp": "1708358087",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "danrod",
+                    "homepage": "https://www.drupal.org/user/19150"
+                },
+                {
+                    "name": "gaurav.kapoor",
+                    "homepage": "https://www.drupal.org/user/3495331"
+                },
+                {
+                    "name": "mstef",
+                    "homepage": "https://www.drupal.org/user/107190"
+                }
+            ],
+            "description": "Prevent forms from being submitted without JavaScript enabled.",
+            "homepage": "https://www.drupal.org/project/antibot",
+            "support": {
+                "source": "https://git.drupalcode.org/project/antibot"
             }
         },
         {
@@ -7318,6 +7399,61 @@
                 "source": "http://git.drupal.org/project/search_api_autocomplete.git",
                 "issues": "https://www.drupal.org/project/issues/search_api_autocomplete",
                 "irc": "irc://irc.freenode.org/drupal-search-api"
+            }
+        },
+        {
+            "name": "drupal/search_api_glossary",
+            "version": "4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/search_api_glossary.git",
+                "reference": "8.x-4.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/search_api_glossary-8.x-4.2.zip",
+                "reference": "8.x-4.2",
+                "shasum": "242e6c1385f7e6fcd716e8d8ebe6177088d6ae4d"
+            },
+            "require": {
+                "drupal/core": ">=8",
+                "drupal/facets": "*",
+                "drupal/search_api": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-4.2",
+                    "datestamp": "1690495212",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "dakku",
+                    "homepage": "https://www.drupal.org/user/151868",
+                    "email": "dakku@example.com"
+                },
+                {
+                    "name": "dakku",
+                    "homepage": "https://www.drupal.org/user/97634"
+                },
+                {
+                    "name": "Kristen Pol",
+                    "homepage": "https://www.drupal.org/user/8389"
+                }
+            ],
+            "description": "Creates a glossary fields (A B C ...) based on node titles and user names",
+            "homepage": "https://www.drupal.org/project/search_api_glossary",
+            "support": {
+                "source": "https://git.drupalcode.org/project/search_api_glossary"
             }
         },
         {

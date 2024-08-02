@@ -1,0 +1,93 @@
+uuid: c5f55881-6f1e-4bbe-a018-191307b75f2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.legal_index
+    - views.view.legal_search
+  module:
+    - facets_pretty_paths
+    - search_api
+third_party_settings:
+  facets_pretty_paths:
+    coder: default_coder
+id: a_z
+name: 'A - Z'
+weight: 0
+min_count: 1
+missing: false
+missing_label: others
+url_alias: letter
+facet_source_id: 'search_api:views_page__legal_search__legal_search_page'
+field_identifier: glossaryaz_title
+query_operator: or
+hard_limit: 0
+exclude: false
+use_hierarchy: false
+keep_hierarchy_parents_active: false
+hierarchy:
+  type: taxonomy
+  config: {  }
+expand_hierarchy: false
+enable_parent_when_child_gets_disabled: true
+widget:
+  type: glossaryaz
+  config:
+    show_count: 0
+    enable_default_theme: 0
+empty_behavior:
+  behavior: none
+only_visible_when_facet_source_is_visible: false
+show_only_one_result: true
+show_title: false
+processor_configs:
+  exclude_specified_items:
+    processor_id: exclude_specified_items
+    weights:
+      build: 50
+    settings:
+      exclude: '0,1,2,3,4,5,6,7,8,9'
+      regex: false
+      invert: false
+  glossaryaz_pad_items_processor:
+    processor_id: glossaryaz_pad_items_processor
+    weights:
+      build: -7
+    settings: {  }
+  glossaryaz_widget_order:
+    processor_id: glossaryaz_widget_order
+    weights:
+      sort: 100
+    settings:
+      sort:
+        glossaryaz_sort_all:
+          weight: '-1'
+        glossaryaz_sort_az:
+          weight: '1'
+        glossaryaz_sort_09:
+          weight: '2'
+        glossaryaz_sort_other:
+          weight: '3'
+      glossaryaz_sort_az:
+        weight: 1
+        name: 'Alpha (A-Z)'
+      glossaryaz_sort_09:
+        weight: 2
+        name: 'Numeric (0-9)'
+      glossaryaz_sort_other:
+        weight: 3
+        name: 'Other (#)'
+      glossaryaz_sort_all:
+        weight: -1
+        name: All
+  hierarchy_processor:
+    processor_id: hierarchy_processor
+    weights:
+      build: -2
+    settings: {  }
+  url_processor_handler:
+    processor_id: url_processor_handler
+    weights:
+      pre_query: 50
+      build: -10
+    settings: {  }

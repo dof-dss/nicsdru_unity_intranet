@@ -1,0 +1,30 @@
+uuid: b985d767-549e-4d36-9cc2-16234675dbcf
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:text:9517faa8-143d-4232-b6e8-4da32e5d9928'
+  module:
+    - block_content
+    - system
+  theme:
+    - pps_theme
+id: pps_theme_azinformationblock
+theme: pps_theme
+region: search_facets
+weight: -2
+provider: null
+plugin: 'block_content:9517faa8-143d-4232-b6e8-4da32e5d9928'
+settings:
+  id: 'block_content:9517faa8-143d-4232-b6e8-4da32e5d9928'
+  label: 'A - Z information block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/legal-guidance\r\n/legal-guidance/date/*\r\n/legal-guidance/type/*\r\n/legal-guidance/letter/*"
