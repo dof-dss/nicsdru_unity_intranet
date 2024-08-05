@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
+    - field.storage.node.field_published_date
     - search_api.index.news
     - system.menu.main
   module:
+    - datetime
     - search_api
     - text
 id: news_search
