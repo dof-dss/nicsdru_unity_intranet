@@ -1,4 +1,4 @@
-uuid: f59557cf-b745-44ab-8afa-c1e1318610d9
+uuid: e430e343-9db3-4fae-b4a0-d5d79bab7380
 langcode: en
 status: true
 dependencies:
@@ -6,12 +6,10 @@ dependencies:
     - system
   theme:
     - pps_theme
-_core:
-  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
-id: pps_theme_content
+id: mainpagecontent
 theme: pps_theme
 region: content
-weight: -1
+weight: 0
 provider: null
 plugin: system_main_block
 settings:
