@@ -27,7 +27,7 @@ third_party_settings:
       label: 'Additional content details'
       parent_name: ''
       region: content
-      weight: 5
+      weight: 1
       format_type: html_element
       format_settings:
         classes: field-collection
@@ -69,5 +69,7 @@ content:
     weight: 1
     region: content
 hidden:
+  content_moderation_control: true
   langcode: true
   links: true
+  search_api_excerpt: true

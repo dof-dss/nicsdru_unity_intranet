@@ -1,0 +1,34 @@
+uuid: cc60a8a9-c922-451a-a13e-2db89fd2ac57
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.niao_staff_member.field_email
+    - field.field.node.niao_staff_member.field_extension
+    - field.field.node.niao_staff_member.field_first_name
+    - field.field.node.niao_staff_member.field_job_title
+    - field.field.node.niao_staff_member.field_profile_image
+    - node.type.niao_staff_member
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.niao_staff_member.teaser
+targetEntityType: node
+bundle: niao_staff_member
+mode: teaser
+content: {  }
+hidden:
+  content_moderation_control: true
+  field_email: true
+  field_extension: true
+  field_first_name: true
+  field_job_title: true
+  field_profile_image: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

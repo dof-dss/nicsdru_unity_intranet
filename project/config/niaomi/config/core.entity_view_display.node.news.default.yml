@@ -10,6 +10,8 @@ dependencies:
     - field.field.node.news.field_teaser
     - node.type.news
   module:
+    - datetime
+    - image
     - text
     - user
 id: node.news.default
@@ -22,24 +24,32 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 2
     region: content
-  field_news_type:
-    type: entity_reference_label
-    label: above
+  field_photo:
+    type: image
+    label: hidden
     settings:
-      link: true
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    weight: 102
+    weight: 1
     region: content
-  links:
-    settings: {  }
+  field_published_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: unity_date
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
-  field_photo: true
-  field_published_date: true
+  content_moderation_control: true
+  field_news_type: true
   field_teaser: true
   langcode: true
+  links: true
   search_api_excerpt: true

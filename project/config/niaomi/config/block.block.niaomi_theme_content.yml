@@ -1,0 +1,22 @@
+uuid: 8eb4d329-b64d-4d56-9bfc-ab346d3dddcc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - niaomi_theme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: niaomi_theme_content
+theme: niaomi_theme
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
