@@ -1,0 +1,26 @@
+uuid: 5dcd3c57-99a2-4b9f-a0c6-0949f55b3cbf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: quick_links_queue
+label: 'Quick links queue'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      link: link
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 6
+  act_as_queue: false
+  reverse: false
