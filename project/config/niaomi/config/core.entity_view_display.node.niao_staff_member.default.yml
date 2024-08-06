@@ -1,0 +1,67 @@
+uuid: 3de65434-1d21-41fd-9cff-f47b5a11930c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.niao_staff_member.field_email
+    - field.field.node.niao_staff_member.field_extension
+    - field.field.node.niao_staff_member.field_first_name
+    - field.field.node.niao_staff_member.field_job_title
+    - field.field.node.niao_staff_member.field_profile_image
+    - node.type.niao_staff_member
+  module:
+    - image
+    - user
+id: node.niao_staff_member.default
+targetEntityType: node
+bundle: niao_staff_member
+mode: default
+content:
+  field_email:
+    type: email_mailto
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_extension:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_first_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_job_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_profile_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  content_moderation_control: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

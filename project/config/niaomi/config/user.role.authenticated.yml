@@ -14,9 +14,7 @@ label: 'authenticated user'
 weight: 1
 is_admin: false
 permissions:
-  - 'access administration pages'
   - 'access content'
   - 'create url aliases'
   - 'notify of path changes'
   - 'view own unpublished content'
-  - 'view the administration theme'

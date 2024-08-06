@@ -19,6 +19,7 @@ bundle: featured_links
 mode: teaser
 content: {  }
 hidden:
+  content_moderation_control: true
   field_featured_link: true
   langcode: true
   links: true

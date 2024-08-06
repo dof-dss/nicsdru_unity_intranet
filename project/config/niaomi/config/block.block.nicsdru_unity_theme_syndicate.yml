@@ -1,0 +1,23 @@
+uuid: 8ecdc877-e2ec-4671-958f-f29fdc409108
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - nicsdru_unity_theme
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: nicsdru_unity_theme_syndicate
+theme: nicsdru_unity_theme
+region: header
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }
