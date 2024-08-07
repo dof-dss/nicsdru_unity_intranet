@@ -11,7 +11,7 @@ dependencies:
 id: pps_theme_az_home
 theme: pps_theme
 region: bottom_widget_1
-weight: -7
+weight: -10
 provider: null
 plugin: 'facet_block:a_z'
 settings:

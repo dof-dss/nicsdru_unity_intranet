@@ -1,9 +1,9 @@
-uuid: b985d767-549e-4d36-9cc2-16234675dbcf
+uuid: 735b78eb-a19e-4c25-9598-85c485469359
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:text:9517faa8-143d-4232-b6e8-4da32e5d9928'
+    - 'block_content:text:dc35fbd6-1b87-4c14-b825-a416255ae5f5'
   module:
     - block_content
     - system
@@ -12,11 +12,11 @@ dependencies:
 id: pps_theme_azinformationblock
 theme: pps_theme
 region: search_facets
-weight: -2
+weight: -3
 provider: null
-plugin: 'block_content:9517faa8-143d-4232-b6e8-4da32e5d9928'
+plugin: 'block_content:dc35fbd6-1b87-4c14-b825-a416255ae5f5'
 settings:
-  id: 'block_content:9517faa8-143d-4232-b6e8-4da32e5d9928'
+  id: 'block_content:dc35fbd6-1b87-4c14-b825-a416255ae5f5'
   label: 'A - Z information block'
   label_display: '0'
   provider: block_content

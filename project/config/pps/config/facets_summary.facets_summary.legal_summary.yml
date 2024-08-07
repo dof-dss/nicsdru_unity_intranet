@@ -29,3 +29,9 @@ facets:
     separator: ', '
     show_count: false
     weight: 0
+  a_z:
+    checked: true
+    label: 'A - Z'
+    separator: ', '
+    show_count: false
+    weight: 0
