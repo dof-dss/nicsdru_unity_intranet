@@ -96,9 +96,6 @@ process:
           from_format: 'Y-m-d H:i:s'
           to_format: Y-m-d
           source: value
-  field_index_under_a_z:
-    - plugin: get
-      source: field_index_under_a_z
   field_legal_type:
     - plugin: get
       source: field_lg_type
