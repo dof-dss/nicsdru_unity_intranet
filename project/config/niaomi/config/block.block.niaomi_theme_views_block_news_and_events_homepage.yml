@@ -1,0 +1,29 @@
+uuid: 1c8d39cd-7ed2-4fe3-aab3-789b28d44e53
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_and_events
+  module:
+    - system
+    - views
+  theme:
+    - niaomi_theme
+id: niaomi_theme_views_block_news_and_events_homepage
+theme: niaomi_theme
+region: top_first
+weight: 0
+provider: null
+plugin: 'views_block:news_and_events-news_and_events_homepage'
+settings:
+  id: 'views_block:news_and_events-news_and_events_homepage'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
