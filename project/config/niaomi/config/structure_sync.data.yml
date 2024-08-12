@@ -243,8 +243,8 @@ menus:
     menu_name: main
     title: 'Events Calendar'
     parent: null
-    uri: 'http://niaomi.intranet.nigov.net/node/172948'
-    link_title: null
+    uri: 'internal:/events-calendar-24-25'
+    link_title: ''
     description: null
     enabled: true
     expanded: false
