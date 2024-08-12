@@ -1,0 +1,28 @@
+uuid: de8e4d03-374d-4d92-8c65-608740548645
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.diff
+    - field.field.node.feature.field_feature_photo
+    - field.field.node.feature.field_link_url
+    - field.field.node.feature.field_teaser
+    - node.type.feature
+  module:
+    - user
+id: node.feature.diff
+targetEntityType: node
+bundle: feature
+mode: diff
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_feature_photo: true
+  field_link_url: true
+  field_teaser: true
+  langcode: true
+  search_api_excerpt: true
