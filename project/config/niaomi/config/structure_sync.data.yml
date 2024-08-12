@@ -205,18 +205,6 @@ menus:
     uuid: 13a4803f-6615-487b-a0fe-f450c31bb643
   -
     menu_name: main
-    title: 'Staff Directory'
-    parent: null
-    uri: 'http://niaomi.intranet.nigov.net/staff-profiles'
-    link_title: null
-    description: null
-    enabled: true
-    expanded: false
-    weight: 0
-    langcode: und
-    uuid: 7d8dd916-3cc7-4f79-93fd-5d8b0c2b434f
-  -
-    menu_name: main
     title: 'Future Working'
     parent: null
     uri: 'http://niaomi.intranet.nigov.net/future-working'
