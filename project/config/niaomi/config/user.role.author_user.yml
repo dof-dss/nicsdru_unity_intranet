@@ -2,7 +2,10 @@ uuid: d2661af9-d554-44c2-bffb-fa4bee18eeec
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.feature
   module:
+    - node
     - system
 _core:
   default_config_hash: A4oGlMqGInHsU8idSQP1u1HkLeT2gmd7OO26vQcY1xM
@@ -12,4 +15,10 @@ weight: 2
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'create feature content'
+  - 'delete own feature content'
+  - 'edit any feature content'
+  - 'edit own feature content'
+  - 'revert feature revisions'
+  - 'view feature revisions'
   - 'view the administration theme'

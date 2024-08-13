@@ -2,7 +2,10 @@ uuid: 5f43435f-aa5d-4e13-a92e-d01600e97a50
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.feature
   module:
+    - node
     - redirect
     - system
 _core:
@@ -14,4 +17,12 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'administer redirects'
+  - 'create feature content'
+  - 'delete any feature content'
+  - 'delete feature revisions'
+  - 'delete own feature content'
+  - 'edit any feature content'
+  - 'edit own feature content'
+  - 'revert feature revisions'
+  - 'view feature revisions'
   - 'view the administration theme'

@@ -13,6 +13,7 @@ dependencies:
     - media.type.image
     - media.type.remote_video
     - node.type.basic_page
+    - node.type.feature
     - node.type.featured_links
     - node.type.feed
     - node.type.feed_item
@@ -37,6 +38,7 @@ dependencies:
     - embed
     - entity_browser
     - entity_reference_revisions
+    - entityqueue
     - eu_cookie_compliance
     - facets
     - field_ui
@@ -70,6 +72,7 @@ dependencies:
     - search
     - search_api
     - search_api_autocomplete
+    - slick_ui
     - system
     - taxonomy
     - toolbar
@@ -121,6 +124,7 @@ permissions:
   - 'administer display modes'
   - 'administer embed buttons'
   - 'administer entity browsers'
+  - 'administer entityqueue'
   - 'administer eu cookie compliance categories'
   - 'administer eu cookie compliance popup'
   - 'administer facets'
@@ -167,6 +171,7 @@ permissions:
   - 'administer search_api'
   - 'administer search_api_autocomplete'
   - 'administer site configuration'
+  - 'administer slick'
   - 'administer software updates'
   - 'administer taxonomy'
   - 'administer taxonomy_term display'
@@ -196,6 +201,7 @@ permissions:
   - 'create audio media'
   - 'create basic_page content'
   - 'create document media'
+  - 'create feature content'
   - 'create featured_links content'
   - 'create feed content'
   - 'create feed_item content'
@@ -217,6 +223,7 @@ permissions:
   - 'delete any basic_page content'
   - 'delete any document media'
   - 'delete any document media revisions'
+  - 'delete any feature content'
   - 'delete any featured_links content'
   - 'delete any feed content'
   - 'delete any feed_item content'
@@ -235,6 +242,7 @@ permissions:
   - 'delete any webform content'
   - 'delete any webform submission'
   - 'delete basic_page revisions'
+  - 'delete feature revisions'
   - 'delete featured_links revisions'
   - 'delete feed revisions'
   - 'delete feed_item revisions'
@@ -245,6 +253,7 @@ permissions:
   - 'delete own audio media'
   - 'delete own basic_page content'
   - 'delete own document media'
+  - 'delete own feature content'
   - 'delete own featured_links content'
   - 'delete own feed content'
   - 'delete own feed_item content'
@@ -268,6 +277,7 @@ permissions:
   - 'edit any audio media'
   - 'edit any basic_page content'
   - 'edit any document media'
+  - 'edit any feature content'
   - 'edit any featured_links content'
   - 'edit any feed content'
   - 'edit any feed_item content'
@@ -285,6 +295,7 @@ permissions:
   - 'edit own audio media'
   - 'edit own basic_page content'
   - 'edit own document media'
+  - 'edit own feature content'
   - 'edit own featured_links content'
   - 'edit own feed content'
   - 'edit own feed_item content'
@@ -310,6 +321,8 @@ permissions:
   - 'import configuration'
   - 'link to any page'
   - 'manage qa accounts'
+  - 'manipulate all entityqueues'
+  - 'manipulate entityqueues'
   - 'notify of path changes'
   - 'readonlymode access forms'
   - 'revert all revisions'
@@ -319,6 +332,7 @@ permissions:
   - 'revert any image media revisions'
   - 'revert any remote_video media revisions'
   - 'revert basic_page revisions'
+  - 'revert feature revisions'
   - 'revert featured_links revisions'
   - 'revert feed revisions'
   - 'revert feed_item revisions'
@@ -363,6 +377,7 @@ permissions:
   - 'view basic_page revisions'
   - 'view content references'
   - 'view cron jobs'
+  - 'view feature revisions'
   - 'view featured_links revisions'
   - 'view feed revisions'
   - 'view feed_item revisions'
