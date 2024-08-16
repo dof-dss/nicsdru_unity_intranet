@@ -4,3 +4,53 @@
  */
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+.staff-members {
+
+  .attachment-before {
+    margin-bottom: 2.4rem;
+
+    .view-content {
+      display: flex;
+      flex-flow: row wrap;
+
+      span a {
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  .view-content {
+    display: flex;
+    flex-flow: row wrap;
+
+    .staff-member {
+      margin: 0 5% 5% 0;
+      flex-basis: 45%;
+      padding: 2.5rem 2rem 0 2.5rem;
+      border: 1px solid #233857;
+      border-bottom-width: 1rem;
+      min-height: 22rem;
+
+
+    h2 {
+      display: inline;
+    }
+
+    p{
+      display: inline-block;
+      margin: 2rem 0 0;
+    }
+
+    div:nth-child(3) {
+      display: inline;
+    }
+    }
+  }
+
+    .staff-profile-image img{
+      float: right;
+    }
+}
+
+
