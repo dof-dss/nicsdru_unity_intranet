@@ -1,4 +1,4 @@
-uuid: d8e8000f-d0b0-4253-8adc-069e18690701
+uuid: 4b8d7380-8c1d-4d44-a465-309dce712854
 langcode: en
 status: true
 dependencies:
@@ -8,15 +8,16 @@ dependencies:
     - field.storage.node.field_first_name
     - field.storage.node.field_job_title
     - field.storage.node.field_profile_image
-    - image.style.member_small_image_x1
+    - image.style.staff_directory_profile
     - node.type.niao_staff_member
     - system.menu.main
   module:
     - image
     - node
     - user
-id: staff_member
-label: 'Staff member'
+    - views_custom_cache_tag
+id: glossary_of_staff
+label: 'Glossary of staff'
 module: views
 description: ''
 tag: ''
@@ -29,7 +30,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: People
+      title: 'Glossary of staff'
       fields:
         field_profile_image:
           id: field_profile_image
@@ -68,8 +69,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: '0'
-          element_class: ''
+          element_type: div
+          element_class: staff-profile-image
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -84,7 +85,7 @@ display:
           type: image
           settings:
             image_link: ''
-            image_style: member_small_image_x1
+            image_style: staff_directory_profile
             image_loading:
               attribute: lazy
           group_column: ''
@@ -134,14 +135,14 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: h2
           element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -160,8 +161,8 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        title_1:
-          id: title_1
+        title:
+          id: title
           table: node_field_data
           field: title
           relationship: none
@@ -190,8 +191,8 @@ display:
             target: ''
             nl2br: false
             max_length: 0
-            word_boundary: true
-            ellipsis: true
+            word_boundary: false
+            ellipsis: false
             more_link: false
             more_link_text: ''
             more_link_path: ''
@@ -199,14 +200,14 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: h2
           element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -262,14 +263,14 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: p
           element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -296,7 +297,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: ''
+          label: Ext
           exclude: false
           alter:
             alter_text: false
@@ -329,10 +330,10 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
+          element_label_colon: true
+          element_wrapper_type: p
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -341,7 +342,7 @@ display:
           type: number_integer
           settings:
             thousand_separator: ''
-            prefix_suffix: false
+            prefix_suffix: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -389,20 +390,20 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: p
           element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: basic_string
+          type: email_mailto
           settings: {  }
           group_column: value
           group_columns: {  }
@@ -433,17 +434,20 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
-        options: {  }
+        type: custom_tag
+        options:
+          custom_tag: 'handy_cache_tags:node:niao_staff_member'
       empty: {  }
       sorts:
-        field_first_name_value:
-          id: field_first_name_value
-          table: node__field_first_name
-          field: field_first_name_value
+        title:
+          id: title
+          table: node_field_data
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
           plugin_id: standard
           order: ASC
           expose:
@@ -451,15 +455,17 @@ display:
             field_identifier: ''
           exposed: false
       arguments:
-        field_first_name_value:
-          id: field_first_name_value
-          table: node__field_first_name
-          field: field_first_name_value
+        title:
+          id: title
+          table: node_field_data
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
           plugin_id: string
-          default_action: ignore
+          default_action: default
           exception:
             value: all
             title_enable: false
@@ -468,7 +474,7 @@ display:
           title: ''
           default_argument_type: fixed
           default_argument_options:
-            argument: ''
+            argument: a
           summary_options:
             base_path: ''
             count: true
@@ -485,8 +491,8 @@ display:
           validate_options: {  }
           glossary: true
           limit: 1
-          case: none
-          path_case: none
+          case: upper
+          path_case: lower
           transform_dash: false
           break_phrase: false
       filters:
@@ -514,7 +520,7 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: staff-member
+          row_class: ''
           default_row_class: false
       row:
         type: fields
@@ -531,7 +537,19 @@ display:
           distinct: false
           replica: false
           query_tags: {  }
-      relationships: {  }
+      relationships:
+        uid:
+          id: uid
+          table: node_field_data
+          field: uid
+          relationship: none
+          group_type: group
+          admin_label: User
+          entity_type: node
+          entity_field: uid
+          plugin_id: standard
+          required: false
+      css_class: staff-members
       header:
         area:
           id: area
@@ -543,11 +561,14 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "Alphabetically order by first name\r\nHere you will find useful information about your colleagues."
+            value: "<h2>Alphabetically order by first name</h2>\r\n<p>Here you will find useful information about your colleagues.</p>"
             format: basic_html
           tokenize: false
       footer: {  }
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -562,12 +583,174 @@ display:
         - 'config:field.storage.node.field_first_name'
         - 'config:field.storage.node.field_job_title'
         - 'config:field.storage.node.field_profile_image'
-  staff_directory:
-    id: staff_directory
+  glossary_attachment:
+    id: glossary_attachment
+    display_title: Attachment
+    display_plugin: attachment
+    position: 2
+    display_options:
+      pager:
+        type: none
+        options:
+          offset: 0
+      cache:
+        type: custom_tag
+        options:
+          custom_tag: 'handy_cache_tags:node:niao_staff_member'
+      arguments:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+          default_action: summary
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: fixed
+          default_argument_options:
+            argument: a
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+            inline: true
+            separator: ''
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: unformatted_summary
+          specify_validation: true
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          glossary: true
+          limit: 1
+          case: upper
+          path_case: lower
+          transform_dash: false
+          break_phrase: false
+      defaults:
+        cache: false
+        style: true
+        row: true
+        arguments: false
+        header: false
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: "<h2>Alphabetically order by first name</h2>\r\n<p>Here you will find useful information about your colleagues.</p>"
+            format: basic_html
+          tokenize: false
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+      displays:
+        default: default
+        glossary_page: glossary_page
+      inherit_arguments: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_email'
+        - 'config:field.storage.node.field_extension'
+        - 'config:field.storage.node.field_first_name'
+        - 'config:field.storage.node.field_job_title'
+        - 'config:field.storage.node.field_profile_image'
+  glossary_page:
+    id: glossary_page
     display_title: Page
     display_plugin: page
     position: 1
     display_options:
+      arguments:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+          default_action: ignore
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: fixed
+          default_argument_options:
+            argument: a
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: true
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          glossary: true
+          limit: 1
+          case: upper
+          path_case: lower
+          transform_dash: false
+          break_phrase: false
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: staff-member
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline:
+            field_first_name: field_first_name
+            title: title
+          separator: ''
+          hide_empty: false
+      defaults:
+        style: false
+        row: false
+        fields: true
+        arguments: false
+        header: false
+      header: {  }
       display_extenders:
         metatag_display_extender:
           metatags: {  }

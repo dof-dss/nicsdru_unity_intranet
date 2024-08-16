@@ -1,0 +1,29 @@
+uuid: d1862b2d-42d1-4533-9480-16d9eb1c63f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.publication_date
+  module:
+    - facets
+    - system
+  theme:
+    - niaomi_theme
+id: news_date
+theme: niaomi_theme
+region: search_facets
+weight: -4
+provider: null
+plugin: 'facet_block:publication_date'
+settings:
+  id: 'facet_block:publication_date'
+  label: Date
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: news_date
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/news\r\n/news/date/*\r\n/news/type/*"
