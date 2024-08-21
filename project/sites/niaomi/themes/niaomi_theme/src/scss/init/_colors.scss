@@ -25,13 +25,15 @@ $chroma: add-colors((
   grey-medium:            #cdcdcd,
   white:                  #fff,
   offwhite:               #ff4dff,
+  light-blue:             #ecf4f8,
+  grey-blue:              #e9edf6,
   dark-red:               #b63a1b, // 4.53:1 with light-pink
   hc-red:                 #d1431f, // 4.63:1 with white
   light-pink:             #ffdae0, // 4.53:1 with dark-red
 
   brand-primary:          #0756a3, //#0f3d0f,
 
-  brand-secondary:        #606,
+  brand-secondary:        #49ade5,
 
   brand-tertiary:         #002e62,
 ));
@@ -56,7 +58,7 @@ $chroma: add-colors('functional', (
   error-bg:               'light-pink',
 
   menu-background:        'brand-primary',
-  menu-item-hover:        'brand-secondary',
+  menu-item-hover:        'brand-primary',
   menu-separator:         #fff,
   menu-sub-item-background: lighten(#606, 10),
   menu-sub-item-hover:    'brand-primary',
@@ -89,6 +91,8 @@ $grey-lightest: color(grey-lightest);
 $grey-medium: color(grey-medium);
 $white: color('white');
 $offwhite: color(offwhite);
+$light-blue: color(light-blue);
+$grey-blue: color(grey-blue);
 $hc-red: color(hc-red);
 $info-notice: color(info-notice);
 
