@@ -1,0 +1,25 @@
+uuid: d004d84c-7229-4d49-8304-095e26189e3e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:32e1dda8-17d6-467b-9074-52e72524b72b'
+  module:
+    - block_content
+  theme:
+    - niaomi_theme
+id: niaomi_theme_footertext
+theme: niaomi_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:32e1dda8-17d6-467b-9074-52e72524b72b'
+settings:
+  id: 'block_content:32e1dda8-17d6-467b-9074-52e72524b72b'
+  label: 'Footer text'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
