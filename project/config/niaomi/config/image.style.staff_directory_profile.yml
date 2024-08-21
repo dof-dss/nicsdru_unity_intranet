@@ -1,0 +1,14 @@
+uuid: 036a1bfe-d676-47a9-b529-465edfd072e6
+langcode: en
+status: true
+dependencies: {  }
+name: staff_directory_profile
+label: 'Staff directory profile (120 x 160)'
+effects:
+  cee3245e-e781-4c14-9d10-2ee57afe4b7e:
+    uuid: cee3245e-e781-4c14-9d10-2ee57afe4b7e
+    id: image_resize
+    weight: 1
+    data:
+      width: 120
+      height: 160

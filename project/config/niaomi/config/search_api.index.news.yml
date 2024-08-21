@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
+    - field.storage.node.field_news_type
     - field.storage.node.field_published_date
     - field.storage.node.field_teaser
     - search_api.server.solr_default
@@ -70,6 +71,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.body
+  field_news_type:
+    label: 'News type'
+    datasource_id: 'entity:node'
+    property_path: field_news_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_news_type
   field_published_date:
     label: 'Publication date'
     datasource_id: 'entity:node'
@@ -105,6 +114,7 @@ field_settings:
 
 
 
+
       fields:
         - 'entity:node/title'
   title:
@@ -124,6 +134,7 @@ field_settings:
     configuration:
       type: union
       separator: |+
+
 
 
 
