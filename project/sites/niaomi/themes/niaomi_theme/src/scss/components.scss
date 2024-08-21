@@ -33,24 +33,24 @@
       min-height: 22rem;
 
 
-    h2 {
-      display: inline;
+      h2 {
+        display: inline;
+      }
+
+      p {
+        display: inline-block;
+        margin: 2rem 0 0;
+      }
+
+      div:nth-child(3) {
+        display: inline;
+      }
     }
 
-    p{
-      display: inline-block;
-      margin: 2rem 0 0;
-    }
-
-    div:nth-child(3) {
-      display: inline;
-    }
-    }
-  }
-
-    .staff-profile-image img{
+    .staff-profile-image img {
       float: right;
     }
+  }
 }
 
 
