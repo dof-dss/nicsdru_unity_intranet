@@ -5,6 +5,7 @@ dependencies:
   config:
     - node.type.feature
   module:
+    - entityqueue
     - node
     - redirect
     - system
@@ -24,5 +25,6 @@ permissions:
   - 'edit any feature content'
   - 'edit own feature content'
   - 'revert feature revisions'
+  - 'update slideshow entityqueue'
   - 'view feature revisions'
   - 'view the administration theme'
