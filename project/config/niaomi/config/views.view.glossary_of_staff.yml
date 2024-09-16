@@ -30,7 +30,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Glossary of staff'
+      title: People
       fields:
         field_profile_image:
           id: field_profile_image
