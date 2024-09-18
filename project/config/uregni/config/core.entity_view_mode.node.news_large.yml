@@ -1,0 +1,11 @@
+uuid: 6c971d13-d928-4ad9-aac7-c686a4216a88
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.news_large
+label: news_large
+description: ''
+targetEntityType: node
+cache: true

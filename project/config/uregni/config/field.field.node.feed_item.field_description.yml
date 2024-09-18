@@ -1,0 +1,29 @@
+uuid: 8a54dccc-d1dd-4702-af20-1759eb2545f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - filter.format.basic_html
+    - node.type.feed_item
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats:
+      - basic_html
+id: node.feed_item.field_description
+field_name: field_description
+entity_type: node
+bundle: feed_item
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

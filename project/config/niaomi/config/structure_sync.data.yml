@@ -1,0 +1,49 @@
+menus:
+  -
+    menu_name: main
+    title: Home
+    parent: null
+    uri: 'internal:/'
+    link_title: null
+    description: null
+    enabled: true
+    expanded: false
+    weight: -50
+    langcode: und
+    uuid: 2b296a9f-beea-47ce-9c77-457f479c7829
+  -
+    menu_name: main
+    title: Contacts
+    parent: null
+    uri: 'entity:node/23'
+    link_title: null
+    description: null
+    enabled: true
+    expanded: false
+    weight: 50
+    langcode: und
+    uuid: fb4c50e5-2515-439f-ba25-525f5bb8a180
+  -
+    menu_name: main
+    title: 'Corporate Info & Resources'
+    parent: null
+    uri: 'entity:node/430'
+    link_title: null
+    description: null
+    enabled: true
+    expanded: false
+    weight: 6
+    langcode: und
+    uuid: 6cf394ce-da94-4051-9b2b-15cd565990de
+  -
+    menu_name: main
+    title: 'Events Calendar'
+    parent: null
+    uri: 'internal:/events-calendar-24-25'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: 0
+    langcode: und
+    uuid: 7122ec72-e5c3-4d08-b265-74372a4ebe5e

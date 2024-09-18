@@ -1,0 +1,269 @@
+/*
+ * @file
+ * Defines the components for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+// Facet A-Z List
+//
+// .
+//
+// Style guide: components.block.az-list
+$link-az-menu: (
+  color: (
+    default: $link,
+    hover: #fff
+  ),
+  background-color: (
+    default: transparent,
+    hover:  #076cba
+  ),
+  text-decoration: 'none',
+  border: '1px solid #0a78cd',
+  outline: (
+    default: '0 solid transparent',
+    focus: '3px solid #{$link}',
+  ),
+  outline-offset: -3px,
+  transition: 'background-color .25s, outline-color .25s',
+  z-index: (
+    default: 0,
+    focus: 1
+  ),
+  position: relative
+);
+
+#content #bottom-area,
+#content #search-facets {
+  .block-facet--glossaryaz ul:not(.contextual-links) {
+    li.no-results {
+      border: 1px solid #0a78cd;
+    }
+
+    a,
+    .link__self,
+    .active,
+    li.no-results {
+      @include adjust-font-size-to(21px, 7.3334);
+      display: inline-block;
+      width: 4.4rem;
+      height: 4.4rem;
+      margin: -1px 0 0 -1px;
+      text-align: center;
+      text-decoration: none;
+
+      @include breakpoint($tab) {
+        @include adjust-font-size-to(24px, 7.5);
+        width: 4.5rem;
+        height: 4.5rem;
+      }
+    }
+
+    a,
+    span {
+      @include link-state-style($link-az-menu);
+
+      &:hover {
+        border-color: $link;
+      }
+
+      &.is-active {
+        color: $charcoal;
+        background-color: #cee4f6;
+        text-decoration: none;
+        border: 1px solid $link;
+        outline: 0 solid transparent;
+        outline-offset: -3px;
+        transition: background-color .25s,outline-color .25s;
+        z-index: 0;
+        position: relative;
+      }
+    }
+  }
+}
+
+#search-facets,
+#content {
+  .block-facet--glossaryaz ul:not(.contextual-links) {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: .5em -1px .5em 1px;
+    padding: 0;
+    max-width: 60rem;
+
+    li {
+      font-size: 0; // Safari inline-block white space fix
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+#top-area {
+  text-align: left;
+
+  h2 {
+    color: $black;
+  }
+
+  h2.news-title {
+    color: $link;
+  }
+
+  .column {
+    &:first-child {
+      @include breakpoint($tab) {
+        width: 65%;
+      }
+    }
+
+    &:last-child {
+      margin-right: 1rem;
+      @include breakpoint($tab) {
+        margin-top: 6.7rem;
+        margin-right: 0;
+      }
+    }
+  }
+
+  #block-pps-theme-views-block-links-featured-links {
+    background: $grey-light;
+
+    h2 {
+      color: $white;
+      background: $brand-primary;
+      padding: 1rem;
+    }
+
+    @include breakpoint($tab) {
+      .content {
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+.news-card {
+  margin-bottom: 2rem;
+
+  a {
+    display: flex;
+    flex-flow: wrap;
+
+    .news__image {
+      padding-right: 2rem;
+      width: 22rem;
+    }
+
+    .news__body {
+      width: 41rem;
+      position: relative;
+
+      .news-type {
+        margin-left: 2rem;
+        padding: .2rem .7rem;
+        color: $white;
+        background: #0b1951;
+      }
+
+      &:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        bottom: 1.5rem;
+        right: -1.6rem;
+        width: 3rem;
+        height: 3rem;
+        background-image: resolve('arrow_forward_link_blue.svg');
+        background-position: center center;
+        background-size: 2.4rem auto;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+#content #block-pps-theme-views-block-news-latest-news-home article.news-card a {
+  border: none;
+  margin: 0;
+  padding: 0 2rem 1rem 1rem;
+  background: $grey-light;
+
+  @include breakpoint($tab) {
+    padding: 0 1rem 1rem;
+  }
+
+  &:hover,
+  &:focus {
+    background: #e4f0fa;
+
+    .news__body:after {
+      background-color: #333;
+      background-image: resolve('arrow_forward_white.svg');
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:focus {
+    outline: 2px solid $black;
+    outline-offset: -2px;
+  }
+}
+
+.sidebar-second-layout {
+  .rel-menu--latest-news {
+    margin-bottom: 2rem;
+
+    ul {
+      margin-bottom: 1rem;
+
+      li {
+        padding: 0 0 .6rem 1rem;
+        list-style: none;
+        margin: 0 0 .2rem;
+        position: relative;
+
+        &::before {
+          content: "-";
+          left: 0;
+          position: absolute;
+          top: 0;
+        }
+
+        .date-published {
+          display: block;
+          font-size: 1.4rem;
+          line-height: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+.bottom_widget .footer-area .column {
+  width: 97%;
+  border: 2px solid $brand-primary;
+  padding: 2rem;
+
+  @include breakpoint($tab) {
+    width: 49%;
+    min-height: 47rem;
+  }
+
+  .block > h2 {
+    font-size: 2.8rem;
+    padding: 0;
+  }
+
+  h2,
+  .block > h2 {
+    margin: 0 0 2rem 0;
+  }
+}
+
+#footer {
+  margin-top: 3rem;
+}

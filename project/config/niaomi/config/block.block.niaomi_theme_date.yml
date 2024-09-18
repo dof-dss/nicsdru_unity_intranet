@@ -1,0 +1,29 @@
+uuid: b7d3dc17-5d8d-40e2-b2c2-bb1749fbe773
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.date
+  module:
+    - facets
+    - system
+  theme:
+    - niaomi_theme
+id: niaomi_theme_date
+theme: niaomi_theme
+region: search_facets
+weight: -3
+provider: null
+plugin: 'facet_block:date'
+settings:
+  id: 'facet_block:date'
+  label: Date
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: niaomi_theme_date
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/publications\r\n/publications/date/*\r\n/publications/type/*"

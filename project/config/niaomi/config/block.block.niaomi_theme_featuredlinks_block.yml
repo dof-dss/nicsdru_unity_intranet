@@ -1,0 +1,30 @@
+uuid: fe84ca5e-7e4c-4cc4-92d2-082f76d011a8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:5f95badb-db6a-437b-86d4-58f257e7dc07'
+  module:
+    - block_content
+    - system
+  theme:
+    - niaomi_theme
+id: niaomi_theme_featuredlinks_block
+theme: niaomi_theme
+region: top_third
+weight: 0
+provider: null
+plugin: 'block_content:5f95badb-db6a-437b-86d4-58f257e7dc07'
+settings:
+  id: 'block_content:5f95badb-db6a-437b-86d4-58f257e7dc07'
+  label: 'Featured links'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

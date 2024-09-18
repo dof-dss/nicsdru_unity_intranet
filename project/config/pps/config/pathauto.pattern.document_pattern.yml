@@ -1,0 +1,22 @@
+uuid: 0447b7d2-2e48-41f5-b057-a66892b15d33
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: document_pattern
+label: 'Document pattern'
+type: 'canonical_entities:node'
+pattern: 'documents/[node:title]'
+selection_criteria:
+  4b1ecf1d-d71b-433e-aa42-ffe57642a263:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 4b1ecf1d-d71b-433e-aa42-ffe57642a263
+    context_mapping:
+      node: node
+    bundles:
+      publication: publication
+selection_logic: and
+weight: -5
+relationships: {  }

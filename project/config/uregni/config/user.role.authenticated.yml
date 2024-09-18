@@ -1,0 +1,24 @@
+uuid: 4cf312c3-8244-4058-a94b-88c6ef461f2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - path
+    - pathauto
+    - search
+    - system
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'create url aliases'
+  - 'notify of path changes'
+  - 'search content'
+  - 'view own unpublished content'
+  - 'view the administration theme'

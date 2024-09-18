@@ -1,0 +1,25 @@
+uuid: 6e0d67e6-f128-467b-b9bf-6f6dd8b2075f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.feed_item.field_description
+    - field.field.node.feed_item.field_publication_date
+    - node.type.feed_item
+  module:
+    - user
+id: node.feed_item.teaser
+targetEntityType: node
+bundle: feed_item
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_description: true
+  field_publication_date: true
+  langcode: true

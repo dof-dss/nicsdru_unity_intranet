@@ -1,0 +1,18 @@
+uuid: 2d8819b2-5231-4963-a123-ff933997ce18
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'UREGNI information'
+type: uregni_information
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,22 @@
+uuid: 26ff3b90-bd5b-4114-b2ea-bbe3d36ec6c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nicsdru_unity_theme
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: nicsdru_unity_theme_powered
+theme: nicsdru_unity_theme
+region: header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

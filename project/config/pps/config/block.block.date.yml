@@ -1,0 +1,29 @@
+uuid: 925765c5-bf0a-43eb-a855-9212cacef76d
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.legal_date
+  module:
+    - facets
+    - system
+  theme:
+    - pps_theme
+id: date
+theme: pps_theme
+region: search_facets
+weight: -7
+provider: null
+plugin: 'facet_block:legal_date'
+settings:
+  id: 'facet_block:legal_date'
+  label: Date
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: date
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/legal-guidance\r\n/legal-guidance/date/*\r\n/legal-guidance/type/*\r\n/legal-guidance/letter/*"

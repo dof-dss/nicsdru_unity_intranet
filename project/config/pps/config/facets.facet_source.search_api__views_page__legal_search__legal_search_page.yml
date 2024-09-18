@@ -1,0 +1,12 @@
+uuid: 19d4da7c-90b6-4c57-930a-bc8d3a6fccd8
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__legal_search__legal_search_page
+name: 'search_api:views_page__legal_search__legal_search_page'
+filter_key: ''
+url_processor: facets_pretty_paths
+breadcrumb:
+  active: true
+  before: false
+  group: false

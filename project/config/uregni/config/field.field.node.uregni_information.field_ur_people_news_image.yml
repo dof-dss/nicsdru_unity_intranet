@@ -1,0 +1,33 @@
+uuid: 65ce33b7-a453-4ac5-bbc1-511acc103341
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ur_people_news_image
+    - node.type.uregni_information
+  module:
+    - image
+id: node.uregni_information.field_ur_people_news_image
+field_name: field_ur_people_news_image
+entity_type: node
+bundle: uregni_information
+label: 'UR People news image'
+description: 'This is for the UR people homepage news view logo.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: uregni-information
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '5 MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image: 0
+field_type: image

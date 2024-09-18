@@ -1,0 +1,23 @@
+uuid: 7e2835a3-9a86-47ef-a75e-fa02890c0b17
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.legal_search
+  module:
+    - views
+  theme:
+    - pps_theme
+id: pps_theme_exposedformlegal_searchlegal_search_home
+theme: pps_theme
+region: bottom_widget_1
+weight: -12
+provider: null
+plugin: 'views_exposed_filter_block:legal_search-legal_search_page'
+settings:
+  id: 'views_exposed_filter_block:legal_search-legal_search_page'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: 'Legal guidance'
+visibility: {  }

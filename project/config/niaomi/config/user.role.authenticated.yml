@@ -1,0 +1,20 @@
+uuid: 7b5f5205-a778-42af-8b90-0966565bfc50
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - path
+    - pathauto
+    - system
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'create url aliases'
+  - 'notify of path changes'
+  - 'view own unpublished content'

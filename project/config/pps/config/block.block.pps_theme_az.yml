@@ -1,0 +1,29 @@
+uuid: 63cd77bb-cefc-4a77-a357-f80224932614
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.a_z
+  module:
+    - facets
+    - system
+  theme:
+    - pps_theme
+id: pps_theme_az
+theme: pps_theme
+region: search_facets
+weight: -2
+provider: null
+plugin: 'facet_block:a_z'
+settings:
+  id: 'facet_block:a_z'
+  label: 'A - Z'
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: pps_theme_az
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/legal-guidance\r\n/legal-guidance/date/*\r\n/legal-guidance/type/*\r\n/legal-guidance/letter/*"

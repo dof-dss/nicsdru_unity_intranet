@@ -1,0 +1,8 @@
+uuid: 0a76e5dd-a89c-4149-a41e-46765cc34a31
+langcode: en
+status: true
+dependencies: {  }
+id: unity_format
+label: 'Unity format'
+locked: false
+pattern: 'j F Y'

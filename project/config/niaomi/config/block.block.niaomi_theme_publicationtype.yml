@@ -1,0 +1,29 @@
+uuid: c0a1bd4d-46a3-4633-b34f-9f0ba4cd8999
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.publication_type
+  module:
+    - facets
+    - system
+  theme:
+    - niaomi_theme
+id: niaomi_theme_publicationtype
+theme: niaomi_theme
+region: search_facets
+weight: -4
+provider: null
+plugin: 'facet_block:publication_type'
+settings:
+  id: 'facet_block:publication_type'
+  label: Type
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: niaomi_theme_publicationtype
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/publications\r\n/publications/date/*\r\n/publications/type/*"

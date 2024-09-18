@@ -1,0 +1,51 @@
+uuid: 803a31c8-380a-4a72-a664-cc1c82ee0039
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.noticeboard.body
+    - field.field.node.noticeboard.field_date_published
+    - field.field.node.noticeboard.field_teaser
+    - field.field.node.noticeboard.field_type
+    - node.type.noticeboard
+  module:
+    - datetime
+    - text
+    - user
+id: node.noticeboard.default
+targetEntityType: node
+bundle: noticeboard
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_date_published:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_teaser:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_type: true
+  langcode: true

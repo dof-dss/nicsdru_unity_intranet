@@ -1,0 +1,26 @@
+uuid: f4f0d053-9563-4ac9-9220-e7be86de17e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.featured_links.field_featured_link
+    - node.type.featured_links
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.featured_links.teaser
+targetEntityType: node
+bundle: featured_links
+mode: teaser
+content: {  }
+hidden:
+  content_moderation_control: true
+  field_featured_link: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

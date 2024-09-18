@@ -1,0 +1,18 @@
+uuid: 74a1343d-3b0d-4d45-a3fb-939f4d73085e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.news
+id: node.news.title
+field_name: title
+entity_type: node
+bundle: news
+label: 'Title (Main heading)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

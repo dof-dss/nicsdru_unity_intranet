@@ -1,0 +1,103 @@
+/*
+ * @file
+ * Defines the components for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+#main-menu {
+  .menu .menu-item .active {
+    border-bottom-color: $brand-secondary;
+  }
+
+  .menu-link,
+  .menu .active {
+    border-bottom: 5px solid transparent;
+
+    &:hover {
+      border-bottom-color: $brand-secondary;
+    }
+
+    &:focus {
+      border-bottom-color: $brand-secondary;
+    }
+  }
+}
+
+#top-area {
+  padding-bottom: 4rem;
+  border-bottom: 1px solid black;
+  text-align: left;
+  margin-top: 3rem;
+
+  .column {
+    .region-top-first {
+      background: $grey-lightest;
+
+      #block-niaomi-theme-views-block-news-and-events-homepage .content .item-list ul {
+        list-style-type: disc;
+        margin: 1.2rem 0 1.8rem 2.4rem;
+      }
+    }
+
+    .region-top-second {
+      background: $light-blue;
+
+      #block-niaomi-theme-views-block-policies-and-guidance-homepage .content .item-list ul {
+        list-style-type: disc;
+        margin: 1.2rem 0 1.8rem 2.4rem;
+      }
+    }
+
+    .region-top-third {
+      background: $grey-blue;
+    }
+  }
+}
+
+.staff-members {
+  .attachment-before {
+    margin-bottom: 2.4rem;
+
+    .view-content {
+      display: flex;
+      flex-flow: row wrap;
+
+      span a {
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  .view-content {
+    display: flex;
+    flex-flow: row wrap;
+
+    .staff-member {
+      margin: 0 5% 5% 0;
+      flex-basis: 45%;
+      padding: 2.5rem 2rem 0 2.5rem;
+      border: 1px solid #233857;
+      border-bottom-width: 1rem;
+      min-height: 22rem;
+
+
+      h2 {
+        display: inline;
+      }
+
+      p {
+        display: inline-block;
+        margin: 2rem 0 0;
+      }
+
+      div:nth-child(3) {
+        display: inline;
+      }
+    }
+
+    .staff-profile-image img {
+      float: right;
+    }
+  }
+}
