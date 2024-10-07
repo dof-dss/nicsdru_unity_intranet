@@ -91,7 +91,7 @@
         "drupal/fastly": "^4.0",
         "drupal/field_group": "^3.4",
         "drupal/file_delete_ui": "^1.0@beta",
-        "drupal/filelog": "^3.0",
+        "drupal/filelog": "2.1.1",
         "drupal/flag": "^4.0@beta",
         "drupal/flood_control": "^2.3",
         "drupal/geocoder": "^4.9",
@@ -220,6 +220,9 @@
             },
             "drupal/fastly": {
                 "Allow disabling of logging": "https://git.drupalcode.org/project/fastly/-/merge_requests/6.patch"
+            },
+            "drupal/filelog": {
+                "Avoid circular reference": "https://www.drupal.org/files/issues/2024-01-25/filelog_with_tests.patch"
             },
             "drupal/hms_field": {
                 "Drupal 9 compatability": "https://www.drupal.org/files/issues/2020-06-06/hms_field.1.x-dev.rector.patch"
