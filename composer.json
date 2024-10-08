@@ -236,6 +236,9 @@
             "drupal/redirect": {
                 "Add URL Redirects tab to taxonomy term edit form": "https://www.drupal.org/files/issues/2021-03-26/redirect_provide_redirect_tab_on_taxonomy_terms_3205896.patch"
             },
+            "drupal/search_api": {
+                "Declaration of sleep() array must be compatible": "https://www.drupal.org/files/issues/2024-06-18/type_declaration.patch"
+            },
             "drupal/slick": {
                 "PHP 8.2 compatibility": "https://git.drupalcode.org/issue/slick-3373261/-/commit/4035fef4eb48df2a2859d6c2785357d6071f9e72.patch"
             },
