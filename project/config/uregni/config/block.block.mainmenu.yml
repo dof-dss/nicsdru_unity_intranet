@@ -1,4 +1,4 @@
-uuid: 727b7986-2d56-4a03-8a6c-86ffea1927d6
+uuid: 6be925a8-621a-4114-b326-b4cb295ccbaa
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,7 @@ dependencies:
     - system
   theme:
     - uregni_theme
-_core:
-  default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
-id: uregni_theme_main_menu
+id: mainmenu
 theme: uregni_theme
 region: primary_menu
 weight: 0
@@ -18,10 +16,10 @@ provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
-  label: 'Main navigation'
+  label: 'Main Menu'
   label_display: '0'
   provider: system
   level: 1
   depth: 2
-  expand_all_items: true
+  expand_all_items: false
 visibility: {  }
