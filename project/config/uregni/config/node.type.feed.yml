@@ -5,7 +5,7 @@ dependencies: {  }
 name: Feed
 type: feed
 description: 'Subscribe to RSS or Atom feeds. Creates nodes of the content type "Feed item" from feed content.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: true
