@@ -1,8 +1,9 @@
-uuid: 46d22276-e5e4-4ce7-9d83-6f278edecb04
+uuid: 047ddc82-0bc2-4ab0-93f3-db4913f9316c
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.diff
     - field.field.node.uregni_staff_member.field_about_me
     - field.field.node.uregni_staff_member.field_directorate
     - field.field.node.uregni_staff_member.field_extension
@@ -15,12 +16,40 @@ dependencies:
     - field.field.node.uregni_staff_member.field_work_pattern
     - node.type.uregni_staff_member
   module:
+    - field_group
     - image
+    - layout_builder
+    - metatag
     - user
-id: node.uregni_staff_member.default
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  field_group:
+    group_additional_content_details:
+      children:
+        - field_meta_tags
+      label: 'Additional content details'
+      parent_name: ''
+      region: content
+      weight: 9
+      format_type: html_element
+      format_settings:
+        classes: field-collection
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.uregni_staff_member.diff
 targetEntityType: node
 bundle: uregni_staff_member
-mode: default
+mode: diff
 content:
   field_about_me:
     type: basic_string
@@ -62,6 +91,13 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
   field_mobile:
     type: string
     label: inline
@@ -99,7 +135,6 @@ content:
     region: content
 hidden:
   content_moderation_control: true
-  field_meta_tags: true
   langcode: true
   links: true
   search_api_excerpt: true
