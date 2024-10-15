@@ -1,12 +1,12 @@
-uuid: 82a52675-c1e4-4322-a840-77b74ab8c7ef
+uuid: 9871538e-f539-49ba-bd63-76bfdfe86762
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - uregni_theme
-_core:
-  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
-id: uregni_theme_page_title
+id: pagetitle
 theme: uregni_theme
 region: content
 weight: -2
@@ -17,4 +17,8 @@ settings:
   label: 'Page title'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "<front>\r\n/search\r\n/publications\r\n/publications/date/*\r\n/news\r\n/news/date/*"

@@ -1,4 +1,4 @@
-uuid: de78aa23-0f78-4746-9c9b-5bbb71bf2943
+uuid: e6ee6595-60d2-42ab-94e1-decd3ae5deb9
 langcode: en
 status: true
 dependencies:
@@ -6,12 +6,10 @@ dependencies:
     - system
   theme:
     - uregni_theme
-_core:
-  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
-id: uregni_theme_content
+id: mainpagecontent
 theme: uregni_theme
 region: content
-weight: -1
+weight: 0
 provider: null
 plugin: system_main_block
 settings:
