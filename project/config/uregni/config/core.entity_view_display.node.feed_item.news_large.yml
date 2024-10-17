@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.news_large
     - field.field.node.feed_item.field_description
+    - field.field.node.feed_item.field_meta_tags
     - field.field.node.feed_item.field_publication_date
     - node.type.feed_item
   module:
@@ -15,6 +16,11 @@ targetEntityType: node
 bundle: feed_item
 mode: news_large
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   field_publication_date:
     type: datetime_default
     label: hidden
@@ -31,4 +37,6 @@ content:
     region: content
 hidden:
   field_description: true
+  field_meta_tags: true
   langcode: true
+  search_api_excerpt: true

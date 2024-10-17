@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.uregni_staff_member.field_extension
     - field.field.node.uregni_staff_member.field_find_me
     - field.field.node.uregni_staff_member.field_first_name
+    - field.field.node.uregni_staff_member.field_meta_tags
     - field.field.node.uregni_staff_member.field_mobile
     - field.field.node.uregni_staff_member.field_profile_image
     - field.field.node.uregni_staff_member.field_title
@@ -28,14 +29,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_extension:
     type: number_unformatted
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 3
     region: content
   field_first_name:
     type: string
@@ -54,7 +55,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 5
+    weight: 4
     region: content
   field_title:
     type: string
@@ -62,16 +63,15 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 2
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
+  content_moderation_control: true
   field_about_me: true
   field_find_me: true
+  field_meta_tags: true
   field_mobile: true
   field_work_pattern: true
   langcode: true
+  links: true
+  search_api_excerpt: true

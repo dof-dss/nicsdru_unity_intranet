@@ -1,0 +1,22 @@
+uuid: 9bdebbaf-68a8-41b9-ad2b-9020620a4f05
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.uregni_staff_member
+id: node.uregni_staff_member.status
+field_name: status
+entity_type: node
+bundle: uregni_staff_member
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

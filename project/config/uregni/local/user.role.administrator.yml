@@ -53,7 +53,6 @@ dependencies:
     - redirect
     - responsive_image
     - scheduled_transitions
-    - search
     - system
     - taxonomy
     - toolbar
@@ -146,7 +145,6 @@ permissions:
   - 'administer redirects'
   - 'administer responsive images'
   - 'administer scheduled transitions'
-  - 'administer search'
   - 'administer site configuration'
   - 'administer software updates'
   - 'administer taxonomy'
@@ -218,13 +216,11 @@ permissions:
   - 'revert all revisions'
   - 'revert webform revisions'
   - 'run cron jobs'
-  - 'search content'
   - 'select account cancellation method'
   - 'synchronize configuration'
   - 'unflag disable_toc'
   - 'update any media'
   - 'update media'
-  - 'use advanced search'
   - 'use ckeditor5 access token'
   - 'use moderation sidebar'
   - 'use nics_editorial_workflow transition archive'

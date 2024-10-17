@@ -1,0 +1,11 @@
+uuid: c6abf7a5-7aea-4659-9cf9-fea5dfe44b03
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.noticeboard
+id: node.noticeboard
+target_entity_type_id: node
+target_bundle: noticeboard
+default_langcode: site_default
+language_alterable: false

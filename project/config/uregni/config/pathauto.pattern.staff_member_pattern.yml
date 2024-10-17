@@ -1,0 +1,22 @@
+uuid: 252cf1c9-2757-4275-aa23-63104ea4ee97
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: staff_member_pattern
+label: 'Staff member pattern'
+type: 'canonical_entities:node'
+pattern: 'people/[node:title]'
+selection_criteria:
+  e38accd1-9bb1-4f72-b616-cd451d0f536d:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: e38accd1-9bb1-4f72-b616-cd451d0f536d
+    context_mapping:
+      node: node
+    bundles:
+      uregni_staff_member: uregni_staff_member
+selection_logic: and
+weight: -5
+relationships: {  }

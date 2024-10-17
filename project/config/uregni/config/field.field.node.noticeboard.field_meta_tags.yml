@@ -1,0 +1,21 @@
+uuid: 363d6c8f-eb35-4e54-9da3-d88931dbea45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.noticeboard
+  module:
+    - metatag
+id: node.noticeboard.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: noticeboard
+label: 'Meta tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

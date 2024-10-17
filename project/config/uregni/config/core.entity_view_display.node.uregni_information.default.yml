@@ -7,18 +7,37 @@ dependencies:
     - field.field.node.uregni_information.field_ur_people_news_image
     - node.type.uregni_information
   module:
+    - image
     - user
 id: node.uregni_information.default
 targetEntityType: node
 bundle: uregni_information
 mode: default
 content:
-  links:
-    settings: {  }
+  field_jennys_blog_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    weight: 100
+    weight: 0
+    region: content
+  field_ur_people_news_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
-  field_jennys_blog_image: true
-  field_ur_people_news_image: true
+  content_moderation_control: true
   langcode: true
+  links: true
+  search_api_excerpt: true
