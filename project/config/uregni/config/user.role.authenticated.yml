@@ -6,7 +6,6 @@ dependencies:
     - node
     - path
     - pathauto
-    - search
     - system
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
@@ -19,6 +18,5 @@ permissions:
   - 'access content'
   - 'create url aliases'
   - 'notify of path changes'
-  - 'search content'
   - 'view own unpublished content'
   - 'view the administration theme'

@@ -1,0 +1,8 @@
+uuid: 1d77c968-2b43-4657-a826-eca5ac6fd8ed
+langcode: en
+status: true
+dependencies: {  }
+id: intranet_date
+label: 'Intranet date'
+locked: false
+pattern: 'd F Y'

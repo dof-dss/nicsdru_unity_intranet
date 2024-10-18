@@ -1,0 +1,22 @@
+uuid: 86da32cb-a026-4e56-a563-070f9e2a25e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.noticeboard
+id: node.noticeboard.status
+field_name: status
+entity_type: node
+bundle: noticeboard
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
