@@ -1,0 +1,11 @@
+uuid: ccfa5cdc-d884-47a1-af03-db5967119eb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.uregni_information
+id: node.uregni_information
+target_entity_type_id: node
+target_bundle: uregni_information
+default_langcode: site_default
+language_alterable: false

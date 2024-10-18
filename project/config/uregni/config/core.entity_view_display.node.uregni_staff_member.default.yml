@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.uregni_staff_member.field_extension
     - field.field.node.uregni_staff_member.field_find_me
     - field.field.node.uregni_staff_member.field_first_name
+    - field.field.node.uregni_staff_member.field_meta_tags
     - field.field.node.uregni_staff_member.field_mobile
     - field.field.node.uregni_staff_member.field_profile_image
     - field.field.node.uregni_staff_member.field_title
@@ -96,10 +97,9 @@ content:
     third_party_settings: {  }
     weight: 6
     region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 9
-    region: content
 hidden:
+  content_moderation_control: true
+  field_meta_tags: true
   langcode: true
+  links: true
+  search_api_excerpt: true
