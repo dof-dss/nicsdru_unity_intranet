@@ -4,6 +4,6 @@ status: true
 dependencies: {  }
 id: qa
 label: 'Quality Assurance'
-weight: 2
+weight: -5
 is_admin: null
 permissions: {  }

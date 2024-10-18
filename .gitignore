@@ -21,6 +21,7 @@ node_modules/
 
 # Ignore sensitive information
 /project/sites/*/settings.local.php
+/setup-lando.sh
 
 # Ignore Drupal's file directory
 /project/sites/*/files/
