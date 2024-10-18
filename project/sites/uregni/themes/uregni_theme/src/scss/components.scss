@@ -4,3 +4,65 @@
  */
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+.staff-members {
+  .attachment-before {
+    margin-bottom: 2.4rem;
+
+    .view-content {
+      display: flex;
+      flex-flow: row wrap;
+
+      span {
+        padding: 1rem;
+
+        a {
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+
+  .view-content {
+    display: flex;
+    flex-flow: row wrap;
+
+    .staff-member {
+      margin: 0 5% 5% 0;
+      flex-basis: 47%;
+      padding: 2.5rem 2rem 2rem 2.5rem;
+      border: 1px solid #233857;
+      border-bottom-width: 1rem;
+      min-height: 22rem;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      div:nth-child(3), div:nth-child(4)  {
+        margin: 1.2rem 0 0;
+      }
+
+      h3 {
+        margin: 0;
+        padding-bottom: 1rem;
+      }
+
+      p {
+        display: inline-block;
+      }
+
+      p[data-once="emptyTags"] {
+        display: inline;
+        margin-bottom: 0;
+      }
+    }
+
+    .staff-member img {
+      float: right;
+      border: 1px solid $black;
+      margin: 2%;
+    }
+  }
+}
+
