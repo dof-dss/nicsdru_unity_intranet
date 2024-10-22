@@ -5,6 +5,17 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
+#top-area {
+  h3 {
+    @include adjust-font-size-to(18px);
+    margin: 1.6rem 0 1.2rem;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
 .staff-members {
   .attachment-before {
     margin-bottom: 2.4rem;

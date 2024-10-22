@@ -1,9 +1,9 @@
-uuid: a3702f6c-d38a-421a-8472-a1049329dd71
+uuid: f1949457-94e9-4c7e-a448-e2d1786769f9
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.search_index
     - field.field.node.noticeboard.body
     - field.field.node.noticeboard.field_date_published
     - field.field.node.noticeboard.field_meta_tags
@@ -12,11 +12,16 @@ dependencies:
     - node.type.noticeboard
   module:
     - datetime
+    - layout_builder
     - user
-id: node.noticeboard.teaser
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.noticeboard.search_index
 targetEntityType: node
 bundle: noticeboard
-mode: teaser
+mode: search_index
 content:
   field_date_published:
     type: datetime_default
