@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6d9b5c628ab84ee05b63c887a757c993",
+    "content-hash": "c00a17530f2573c84b0ab060e432992c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1679,16 +1679,16 @@
         },
         {
             "name": "dof-dss/nicsdru_origins_modules",
-            "version": "10.4.1",
+            "version": "10.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_origins_modules.git",
-                "reference": "906059f4af77c3f727a6f1b4b766b085342d838b"
+                "reference": "7953d556d521cf1728b99089ff5e4b1023f662b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/906059f4af77c3f727a6f1b4b766b085342d838b",
-                "reference": "906059f4af77c3f727a6f1b4b766b085342d838b",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/7953d556d521cf1728b99089ff5e4b1023f662b3",
+                "reference": "7953d556d521cf1728b99089ff5e4b1023f662b3",
                 "shasum": ""
             },
             "require": {
@@ -1703,9 +1703,9 @@
             "description": "Generic modules for DOF-DSS Drupal sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_origins_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/10.4.1"
+                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/10.4.2"
             },
-            "time": "2024-09-05T10:39:36+00:00"
+            "time": "2024-10-21T08:37:27+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
@@ -2512,11 +2512,11 @@
         },
         {
             "name": "drupal/ckeditor5_allowed_html",
-            "version": "dev-1.2.x",
+            "version": "dev-1.5.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ckeditor5_allowed_html.git",
-                "reference": "66db8fef57d6b4ccfa42bbea3039482f1282cde2"
+                "reference": "1ac530b30f4a07b17e14e2e520c1f722357bf5b4"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10 || ^11"
@@ -2524,11 +2524,11 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.2.x": "1.2.x-dev"
+                    "dev-1.5.x": "1.5.x-dev"
                 },
                 "drupal": {
-                    "version": "1.2.x-dev",
-                    "datestamp": "1711446853",
+                    "version": "1.5.x-dev",
+                    "datestamp": "1729178881",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -2541,7 +2541,7 @@
             ],
             "authors": [
                 {
-                    "name": "DuttonMa",
+                    "name": "duttonma",
                     "homepage": "https://www.drupal.org/user/2250396"
                 }
             ],
@@ -10203,16 +10203,16 @@
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8"
+                "reference": "f9c436286ab2892c7db7be8c8da4ef61ccf7b455"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8",
-                "reference": "6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/f9c436286ab2892c7db7be8c8da4ef61ccf7b455",
+                "reference": "f9c436286ab2892c7db7be8c8da4ef61ccf7b455",
                 "shasum": ""
             },
             "require": {
@@ -10266,7 +10266,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/2.0.3"
+                "source": "https://github.com/guzzle/promises/tree/2.0.4"
             },
             "funding": [
                 {
@@ -10282,7 +10282,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-07-18T10:29:17+00:00"
+            "time": "2024-10-17T10:06:22+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -11016,16 +11016,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v5.3.0",
+            "version": "v5.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "3abf7425cd284141dc5d8d14a9ee444de3345d1a"
+                "reference": "8eea230464783aa9671db8eea6f8c6ac5285794b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/3abf7425cd284141dc5d8d14a9ee444de3345d1a",
-                "reference": "3abf7425cd284141dc5d8d14a9ee444de3345d1a",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/8eea230464783aa9671db8eea6f8c6ac5285794b",
+                "reference": "8eea230464783aa9671db8eea6f8c6ac5285794b",
                 "shasum": ""
             },
             "require": {
@@ -11068,9 +11068,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v5.3.0"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v5.3.1"
             },
-            "time": "2024-09-29T13:56:26+00:00"
+            "time": "2024-10-08T18:51:32+00:00"
         },
         {
             "name": "oomphinc/composer-installers-extender",
@@ -16902,16 +16902,16 @@
         },
         {
             "name": "doctrine/common",
-            "version": "3.4.4",
+            "version": "3.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common.git",
-                "reference": "0aad4b7ab7ce8c6602dfbb1e1a24581275fb9d1a"
+                "reference": "6c8fef961f67b8bc802ce3e32e3ebd1022907286"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/0aad4b7ab7ce8c6602dfbb1e1a24581275fb9d1a",
-                "reference": "0aad4b7ab7ce8c6602dfbb1e1a24581275fb9d1a",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/6c8fef961f67b8bc802ce3e32e3ebd1022907286",
+                "reference": "6c8fef961f67b8bc802ce3e32e3ebd1022907286",
                 "shasum": ""
             },
             "require": {
@@ -16973,7 +16973,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/common/issues",
-                "source": "https://github.com/doctrine/common/tree/3.4.4"
+                "source": "https://github.com/doctrine/common/tree/3.4.5"
             },
             "funding": [
                 {
@@ -16989,7 +16989,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-04-16T13:35:33+00:00"
+            "time": "2024-10-08T15:53:43+00:00"
         },
         {
             "name": "doctrine/event-manager",
@@ -18701,16 +18701,16 @@
         },
         {
             "name": "open-telemetry/api",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentelemetry-php/api.git",
-                "reference": "62f2abc4c6d4ef6ea897256520052f9c29a0241f"
+                "reference": "542064815d38a6df55af7957cd6f1d7d967c99c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opentelemetry-php/api/zipball/62f2abc4c6d4ef6ea897256520052f9c29a0241f",
-                "reference": "62f2abc4c6d4ef6ea897256520052f9c29a0241f",
+                "url": "https://api.github.com/repos/opentelemetry-php/api/zipball/542064815d38a6df55af7957cd6f1d7d967c99c6",
+                "reference": "542064815d38a6df55af7957cd6f1d7d967c99c6",
                 "shasum": ""
             },
             "require": {
@@ -18726,6 +18726,11 @@
             "extra": {
                 "branch-alias": {
                     "dev-main": "1.1.x-dev"
+                },
+                "spi": {
+                    "OpenTelemetry\\API\\Instrumentation\\AutoInstrumentation\\HookManagerInterface": [
+                        "OpenTelemetry\\API\\Instrumentation\\AutoInstrumentation\\ExtensionHookManager"
+                    ]
                 }
             },
             "autoload": {
@@ -18762,7 +18767,7 @@
                 "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
                 "source": "https://github.com/open-telemetry/opentelemetry-php"
             },
-            "time": "2024-09-24T23:58:09+00:00"
+            "time": "2024-10-15T22:42:37+00:00"
         },
         {
             "name": "open-telemetry/context",
@@ -18952,16 +18957,16 @@
         },
         {
             "name": "open-telemetry/sdk",
-            "version": "1.1.0",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentelemetry-php/sdk.git",
-                "reference": "be2bb8de6db9eeb11d964b3b1949f6e0f6b08e9b"
+                "reference": "fb0ff8d8279a3776bd604791e2531dd0cc147e8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opentelemetry-php/sdk/zipball/be2bb8de6db9eeb11d964b3b1949f6e0f6b08e9b",
-                "reference": "be2bb8de6db9eeb11d964b3b1949f6e0f6b08e9b",
+                "url": "https://api.github.com/repos/opentelemetry-php/sdk/zipball/fb0ff8d8279a3776bd604791e2531dd0cc147e8b",
+                "reference": "fb0ff8d8279a3776bd604791e2531dd0cc147e8b",
                 "shasum": ""
             },
             "require": {
@@ -19038,7 +19043,7 @@
                 "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
                 "source": "https://github.com/open-telemetry/opentelemetry-php"
             },
-            "time": "2024-09-25T11:54:21+00:00"
+            "time": "2024-10-18T21:01:35+00:00"
         },
         {
             "name": "open-telemetry/sem-conv",
@@ -19561,16 +19566,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.32.0",
+            "version": "1.33.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "6ca22b154efdd9e3c68c56f5d94670920a1c19a4"
+                "reference": "82a311fd3690fb2bf7b64d5c98f912b3dd746140"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/6ca22b154efdd9e3c68c56f5d94670920a1c19a4",
-                "reference": "6ca22b154efdd9e3c68c56f5d94670920a1c19a4",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/82a311fd3690fb2bf7b64d5c98f912b3dd746140",
+                "reference": "82a311fd3690fb2bf7b64d5c98f912b3dd746140",
                 "shasum": ""
             },
             "require": {
@@ -19602,22 +19607,22 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.32.0"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.33.0"
             },
-            "time": "2024-09-26T07:23:32+00:00"
+            "time": "2024-10-13T11:25:22+00:00"
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.12.5",
+            "version": "1.12.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "7e6c6cb7cecb0a6254009a1a8a7d54ec99812b17"
+                "reference": "dc2b9976bd8b0f84ec9b0e50cc35378551de7af0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/7e6c6cb7cecb0a6254009a1a8a7d54ec99812b17",
-                "reference": "7e6c6cb7cecb0a6254009a1a8a7d54ec99812b17",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/dc2b9976bd8b0f84ec9b0e50cc35378551de7af0",
+                "reference": "dc2b9976bd8b0f84ec9b0e50cc35378551de7af0",
                 "shasum": ""
             },
             "require": {
@@ -19662,7 +19667,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-09-26T12:45:22+00:00"
+            "time": "2024-10-18T11:12:07+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -22614,16 +22619,16 @@
         },
         {
             "name": "tbachert/spi",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Nevay/spi.git",
-                "reference": "840351ad0a5e9269150fa6c5e4a6b5745fa5ade6"
+                "reference": "2ddfaf815dafb45791a61b08170de8d583c16062"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Nevay/spi/zipball/840351ad0a5e9269150fa6c5e4a6b5745fa5ade6",
-                "reference": "840351ad0a5e9269150fa6c5e4a6b5745fa5ade6",
+                "url": "https://api.github.com/repos/Nevay/spi/zipball/2ddfaf815dafb45791a61b08170de8d583c16062",
+                "reference": "2ddfaf815dafb45791a61b08170de8d583c16062",
                 "shasum": ""
             },
             "require": {
@@ -22660,9 +22665,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Nevay/spi/issues",
-                "source": "https://github.com/Nevay/spi/tree/v1.0.1"
+                "source": "https://github.com/Nevay/spi/tree/v1.0.2"
             },
-            "time": "2024-09-13T20:09:27+00:00"
+            "time": "2024-10-04T16:36:12+00:00"
         },
         {
             "name": "theseer/tokenizer",
@@ -22800,6 +22805,6 @@
     "platform": {
         "composer-runtime-api": "*"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }

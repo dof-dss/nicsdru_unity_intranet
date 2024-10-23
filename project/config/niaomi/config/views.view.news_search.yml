@@ -100,6 +100,7 @@ display:
         type: full
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 20
           total_pages: null
           id: 0
@@ -270,7 +271,8 @@ display:
     position: 1
     display_options:
       cache:
-        type: none
+        type: search_api_tag
+        options: {  }
       defaults:
         cache: false
       exposed_block: true
@@ -289,7 +291,7 @@ display:
         parent: ''
         context: '0'
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -297,6 +299,8 @@ display:
         - url.query_args
         - 'user.node_grants:view'
       tags:
+        - 'config:facets.facet.news_type'
+        - 'config:facets.facet.publication_date'
         - 'config:field.storage.node.body'
         - 'config:search_api.index.news'
         - 'search_api_list:news'

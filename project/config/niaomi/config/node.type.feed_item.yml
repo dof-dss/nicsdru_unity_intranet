@@ -5,7 +5,7 @@ dependencies: {  }
 name: 'Feed item'
 type: feed_item
 description: 'This content type is being used for automatically aggregated content from feeds.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: true

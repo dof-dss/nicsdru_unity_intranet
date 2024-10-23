@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.basic_block
+    - entityqueue.entity_queue.slideshow
     - filter.format.basic_html
     - filter.format.full_html
     - filter.format.restricted_html
@@ -56,6 +58,7 @@ dependencies:
     - media_file_delete
     - menu_admin_per_menu
     - metatag
+    - migrate
     - migrate_tools
     - moderation_sidebar
     - node
@@ -67,6 +70,7 @@ dependencies:
     - pathauto
     - readonlymode
     - redirect
+    - redis
     - responsive_image
     - scheduled_transitions
     - search
@@ -85,7 +89,7 @@ dependencies:
     - workflows
 id: administrator
 label: Administrator
-weight: 6
+weight: -8
 is_admin: null
 permissions:
   - 'access administration pages'
@@ -98,6 +102,7 @@ permissions:
   - 'access help pages'
   - 'access media overview'
   - 'access own webform configuration'
+  - 'access redis report'
   - 'access site in maintenance mode'
   - 'access site reports'
   - 'access taxonomy overview'
@@ -108,6 +113,7 @@ permissions:
   - 'access webform submission user'
   - 'administer account menu items'
   - 'administer account settings'
+  - 'administer actions'
   - 'administer admin menu items'
   - 'administer block content'
   - 'administer block types'
@@ -124,6 +130,9 @@ permissions:
   - 'administer display modes'
   - 'administer embed buttons'
   - 'administer entity browsers'
+  - 'administer entity_subqueue display'
+  - 'administer entity_subqueue fields'
+  - 'administer entity_subqueue form display'
   - 'administer entityqueue'
   - 'administer eu cookie compliance categories'
   - 'administer eu cookie compliance popup'
@@ -192,6 +201,8 @@ permissions:
   - 'administer workflows'
   - 'audit content'
   - 'break content lock'
+  - 'bulk delete aliases'
+  - 'bulk update aliases'
   - 'bypass honeypot protection'
   - 'bypass node access'
   - 'cancel account'
@@ -199,6 +210,7 @@ permissions:
   - 'configure any layout'
   - 'create and edit custom blocks'
   - 'create audio media'
+  - 'create basic_block block content'
   - 'create basic_page content'
   - 'create document media'
   - 'create feature content'
@@ -218,8 +230,11 @@ permissions:
   - 'create webform'
   - 'create webform content'
   - 'delete all revisions'
+  - 'delete all taxonomy revisions'
   - 'delete any audio media'
   - 'delete any audio media revisions'
+  - 'delete any basic_block block content'
+  - 'delete any basic_block block content revisions'
   - 'delete any basic_page content'
   - 'delete any document media'
   - 'delete any document media revisions'
@@ -268,6 +283,8 @@ permissions:
   - 'delete own webform content'
   - 'delete own webform submission'
   - 'delete publication revisions'
+  - 'delete term revisions in news_type'
+  - 'delete term revisions in publication_type'
   - 'delete terms in news_type'
   - 'delete terms in publication_type'
   - 'delete webform revisions'
@@ -275,6 +292,7 @@ permissions:
   - 'delete webform submissions own node'
   - 'display eu cookie compliance popup'
   - 'edit any audio media'
+  - 'edit any basic_block block content'
   - 'edit any basic_page content'
   - 'edit any document media'
   - 'edit any feature content'
@@ -326,7 +344,9 @@ permissions:
   - 'notify of path changes'
   - 'readonlymode access forms'
   - 'revert all revisions'
+  - 'revert all taxonomy revisions'
   - 'revert any audio media revisions'
+  - 'revert any basic_block block content revisions'
   - 'revert any document media revisions'
   - 'revert any file media revisions'
   - 'revert any image media revisions'
@@ -339,6 +359,8 @@ permissions:
   - 'revert news revisions'
   - 'revert niao_staff_member revisions'
   - 'revert publication revisions'
+  - 'revert term revisions in news_type'
+  - 'revert term revisions in publication_type'
   - 'revert webform revisions'
   - 'run cron jobs'
   - 'search content'
@@ -347,6 +369,7 @@ permissions:
   - 'unflag disable_toc'
   - 'update any media'
   - 'update media'
+  - 'update slideshow entityqueue'
   - 'use advanced search'
   - 'use ckeditor5 access token'
   - 'use moderation sidebar'
@@ -367,7 +390,9 @@ permissions:
   - 'view all media revisions'
   - 'view all revisions'
   - 'view all scheduled transitions'
+  - 'view all taxonomy revisions'
   - 'view any audio media revisions'
+  - 'view any basic_block block content history'
   - 'view any document media revisions'
   - 'view any file media revisions'
   - 'view any image media revisions'
@@ -383,16 +408,20 @@ permissions:
   - 'view feed_item revisions'
   - 'view latest version'
   - 'view media'
+  - 'view migration messages'
   - 'view news revisions'
   - 'view niao_staff_member revisions'
   - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view own webform submission'
   - 'view publication revisions'
+  - 'view term revisions in news_type'
+  - 'view term revisions in publication_type'
   - 'view the administration theme'
   - 'view unpublished paragraphs'
   - 'view update notifications'
   - 'view user email addresses'
+  - 'view vocabulary labels'
   - 'view webform revisions'
   - 'view webform submissions any node'
   - 'view webform submissions own node'

@@ -3,22 +3,106 @@ langcode: en
 status: true
 dependencies:
   config:
+    - media.type.audio
+    - media.type.document
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
+    - node.type.basic_page
     - node.type.feature
+    - node.type.featured_links
+    - node.type.feed
+    - node.type.feed_item
+    - node.type.news
+    - node.type.niao_staff_member
+    - node.type.publication
+    - workflows.workflow.nics_editorial_workflow
   module:
+    - content_moderation
+    - media
+    - menu_admin_per_menu
+    - moderation_sidebar
     - node
+    - path
     - system
+    - toolbar
 _core:
   default_config_hash: A4oGlMqGInHsU8idSQP1u1HkLeT2gmd7OO26vQcY1xM
 id: author_user
 label: 'author user'
-weight: 2
+weight: -7
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access content overview'
+  - 'access media overview'
+  - 'access toolbar'
+  - 'administer main menu items'
+  - 'create audio media'
+  - 'create basic_page content'
+  - 'create document media'
   - 'create feature content'
+  - 'create featured_links content'
+  - 'create feed content'
+  - 'create feed_item content'
+  - 'create file media'
+  - 'create image media'
+  - 'create news content'
+  - 'create publication content'
+  - 'create remote_video media'
+  - 'create url aliases'
+  - 'delete own audio media'
+  - 'delete own basic_page content'
+  - 'delete own document media'
   - 'delete own feature content'
+  - 'delete own featured_links content'
+  - 'delete own feed content'
+  - 'delete own feed_item content'
+  - 'delete own file media'
+  - 'delete own image media'
+  - 'delete own news content'
+  - 'delete own publication content'
+  - 'delete own remote_video media'
+  - 'edit any basic_page content'
   - 'edit any feature content'
+  - 'edit any featured_links content'
+  - 'edit any feed content'
+  - 'edit any feed_item content'
+  - 'edit any news content'
+  - 'edit any publication content'
+  - 'edit own audio media'
+  - 'edit own basic_page content'
+  - 'edit own document media'
   - 'edit own feature content'
+  - 'edit own featured_links content'
+  - 'edit own feed content'
+  - 'edit own feed_item content'
+  - 'edit own file media'
+  - 'edit own image media'
+  - 'edit own news content'
+  - 'edit own niao_staff_member content'
+  - 'edit own publication content'
+  - 'edit own remote_video media'
+  - 'revert basic_page revisions'
   - 'revert feature revisions'
+  - 'revert featured_links revisions'
+  - 'revert feed revisions'
+  - 'revert feed_item revisions'
+  - 'revert news revisions'
+  - 'revert publication revisions'
+  - 'use moderation sidebar'
+  - 'use nics_editorial_workflow transition create_new_draft'
+  - 'use nics_editorial_workflow transition draft_of_published'
+  - 'use nics_editorial_workflow transition reject'
+  - 'use nics_editorial_workflow transition submit_for_review'
+  - 'view any unpublished content'
+  - 'view basic_page revisions'
   - 'view feature revisions'
+  - 'view featured_links revisions'
+  - 'view feed revisions'
+  - 'view feed_item revisions'
+  - 'view latest version'
+  - 'view news revisions'
+  - 'view own unpublished media'
+  - 'view publication revisions'
   - 'view the administration theme'
