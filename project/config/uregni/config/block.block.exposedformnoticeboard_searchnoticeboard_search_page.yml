@@ -1,0 +1,28 @@
+uuid: 4ed9218d-ddfe-4b56-b3d0-6b887982e53c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.noticeboard_search
+  module:
+    - system
+    - views
+  theme:
+    - uregni_theme
+id: exposedformnoticeboard_searchnoticeboard_search_page
+theme: uregni_theme
+region: search_facets
+weight: -6
+provider: null
+plugin: 'views_exposed_filter_block:noticeboard_search-noticeboard_search_page'
+settings:
+  id: 'views_exposed_filter_block:noticeboard_search-noticeboard_search_page'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/noticeboard\r\n/noticeboard/type/*\r\n/noticeboard/date/*"

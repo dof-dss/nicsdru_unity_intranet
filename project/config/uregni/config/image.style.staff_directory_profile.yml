@@ -1,0 +1,15 @@
+uuid: 0f74e0d6-33f3-4e15-a837-6a9f4df2e3a5
+langcode: en
+status: true
+dependencies: {  }
+name: staff_directory_profile
+label: 'Staff directory profile'
+effects:
+  d300af49-18ec-4180-8b07-d499a82d35d5:
+    uuid: d300af49-18ec-4180-8b07-d499a82d35d5
+    id: image_crop
+    weight: 1
+    data:
+      width: 120
+      height: 160
+      anchor: center-center

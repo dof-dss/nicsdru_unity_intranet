@@ -1,0 +1,29 @@
+uuid: 6b4b3b2e-d472-4ce1-9a3b-843a4a5cb0c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_news
+  module:
+    - system
+    - views
+  theme:
+    - uregni_theme
+id: views_block__latest_news_home_latest_news
+theme: uregni_theme
+region: top_third
+weight: 0
+provider: null
+plugin: 'views_block:latest_news-home_latest_news'
+settings:
+  id: 'views_block:latest_news-home_latest_news'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
