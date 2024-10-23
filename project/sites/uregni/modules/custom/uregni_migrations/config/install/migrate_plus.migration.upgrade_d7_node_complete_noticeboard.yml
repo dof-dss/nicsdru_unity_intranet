@@ -90,7 +90,7 @@ process:
         https://uregni.intranet.nigov.net
     -
       plugin: site_files_filter
-      from_ref: sites/uregni/files
+      from_ref: sites/uregni-intranet/files
       to_ref: files/uregni
     -
       plugin: site_files_filter

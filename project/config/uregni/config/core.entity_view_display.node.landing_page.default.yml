@@ -1,0 +1,20 @@
+uuid: 61b2c738-6113-48cb-b4dc-a2048e3f94ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing_page.layout_builder__layout
+    - node.type.landing_page
+  module:
+    - user
+id: node.landing_page.default
+targetEntityType: node
+bundle: landing_page
+mode: default
+content: {  }
+hidden:
+  content_moderation_control: true
+  langcode: true
+  layout_builder__layout: true
+  links: true
+  search_api_excerpt: true
