@@ -3,15 +3,33 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.accordion_menu
+    - block_content.type.banner_deep
+    - block_content.type.card_contact
+    - block_content.type.card_nested_standard
+    - block_content.type.card_nested_wide
+    - block_content.type.card_standard
+    - block_content.type.card_wide
+    - block_content.type.information_notice
+    - block_content.type.plain_cards
+    - block_content.type.text
+    - block_content.type.video
+    - block_content.type.video_and_caption
     - filter.format.basic_html
     - filter.format.full_html
     - filter.format.restricted_html
     - filter.format.webform_default
+    - media.type.audio
+    - media.type.document
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
     - node.type.webform
     - workflows.workflow.nics_editorial_workflow
   module:
     - block
     - block_content
+    - block_content_permissions
     - ckeditor5_premium_features
     - config
     - config_split
@@ -35,6 +53,8 @@ dependencies:
     - image
     - language
     - layout_builder
+    - layout_builder_modal
+    - layout_builder_restrictions
     - linkit
     - media
     - media_file_delete
@@ -65,7 +85,7 @@ dependencies:
 id: administrator
 label: Administrator
 weight: -8
-is_admin: null
+is_admin: true
 permissions:
   - 'access administration pages'
   - 'access any webform configuration'
@@ -89,6 +109,7 @@ permissions:
   - 'administer account settings'
   - 'administer admin menu items'
   - 'administer block content'
+  - 'administer block content types'
   - 'administer block types'
   - 'administer block_content display'
   - 'administer block_content fields'
@@ -117,6 +138,7 @@ permissions:
   - 'administer honeypot'
   - 'administer image styles'
   - 'administer languages'
+  - 'administer layout builder modal'
   - 'administer linkit profiles'
   - 'administer main menu items'
   - 'administer media'
@@ -171,20 +193,72 @@ permissions:
   - 'cancel account'
   - 'change own username'
   - 'configure any layout'
+  - 'configure layout builder restrictions'
+  - 'create accordion_menu block content'
   - 'create and edit custom blocks'
+  - 'create audio media'
+  - 'create banner_deep block content'
+  - 'create card_contact block content'
+  - 'create card_nested_standard block content'
+  - 'create card_nested_wide block content'
+  - 'create card_standard block content'
+  - 'create card_wide block content'
+  - 'create document media'
+  - 'create file media'
+  - 'create image media'
+  - 'create information_notice block content'
   - 'create media'
+  - 'create plain_cards block content'
+  - 'create remote_video media'
+  - 'create text block content'
   - 'create url aliases'
+  - 'create video block content'
+  - 'create video_and_caption block content'
   - 'create webform'
   - 'create webform content'
   - 'delete all revisions'
+  - 'delete any accordion_menu block content'
+  - 'delete any accordion_menu block content revisions'
+  - 'delete any audio media'
+  - 'delete any banner_deep block content'
+  - 'delete any banner_deep block content revisions'
+  - 'delete any card_contact block content'
+  - 'delete any card_contact block content revisions'
+  - 'delete any card_nested_standard block content'
+  - 'delete any card_nested_standard block content revisions'
+  - 'delete any card_nested_wide block content'
+  - 'delete any card_nested_wide block content revisions'
+  - 'delete any card_standard block content'
+  - 'delete any card_standard block content revisions'
+  - 'delete any card_wide block content'
+  - 'delete any card_wide block content revisions'
+  - 'delete any document media'
   - 'delete any file'
+  - 'delete any file media'
+  - 'delete any image media'
+  - 'delete any information_notice block content'
+  - 'delete any information_notice block content revisions'
   - 'delete any media'
+  - 'delete any plain_cards block content'
+  - 'delete any plain_cards block content revisions'
+  - 'delete any remote_video media'
+  - 'delete any text block content'
+  - 'delete any text block content revisions'
+  - 'delete any video block content'
+  - 'delete any video block content revisions'
+  - 'delete any video_and_caption block content'
+  - 'delete any video_and_caption block content revisions'
   - 'delete any webform'
   - 'delete any webform content'
   - 'delete any webform submission'
   - 'delete media'
   - 'delete orphan revisions'
+  - 'delete own audio media'
+  - 'delete own document media'
+  - 'delete own file media'
   - 'delete own files'
+  - 'delete own image media'
+  - 'delete own remote_video media'
   - 'delete own webform'
   - 'delete own webform content'
   - 'delete own webform submission'
@@ -192,6 +266,20 @@ permissions:
   - 'delete webform submissions any node'
   - 'delete webform submissions own node'
   - 'display eu cookie compliance popup'
+  - 'edit any accordion_menu block content'
+  - 'edit any audio media'
+  - 'edit any banner_deep block content'
+  - 'edit any card_contact block content'
+  - 'edit any card_nested_standard block content'
+  - 'edit any card_nested_wide block content'
+  - 'edit any card_standard block content'
+  - 'edit any card_wide block content'
+  - 'edit any document media'
+  - 'edit any information_notice block content'
+  - 'edit any plain_cards block content'
+  - 'edit any text block content'
+  - 'edit any video block content'
+  - 'edit any video_and_caption block content'
   - 'edit any webform'
   - 'edit any webform content'
   - 'edit any webform submission'
@@ -214,12 +302,36 @@ permissions:
   - 'notify of path changes'
   - 'readonlymode access forms'
   - 'revert all revisions'
+  - 'revert any accordion_menu block content revisions'
+  - 'revert any banner_deep block content revisions'
+  - 'revert any card_contact block content revisions'
+  - 'revert any card_nested_standard block content revisions'
+  - 'revert any card_nested_wide block content revisions'
+  - 'revert any card_standard block content revisions'
+  - 'revert any card_wide block content revisions'
+  - 'revert any information_notice block content revisions'
+  - 'revert any plain_cards block content revisions'
+  - 'revert any text block content revisions'
+  - 'revert any video block content revisions'
+  - 'revert any video_and_caption block content revisions'
   - 'revert webform revisions'
   - 'run cron jobs'
   - 'select account cancellation method'
   - 'synchronize configuration'
   - 'unflag disable_toc'
+  - 'update any accordion_menu block content'
+  - 'update any banner_deep block content'
+  - 'update any card_contact block content'
+  - 'update any card_nested_standard block content'
+  - 'update any card_nested_wide block content'
+  - 'update any card_standard block content'
+  - 'update any card_wide block content'
+  - 'update any information_notice block content'
   - 'update any media'
+  - 'update any plain_cards block content'
+  - 'update any text block content'
+  - 'update any video block content'
+  - 'update any video_and_caption block content'
   - 'update media'
   - 'use ckeditor5 access token'
   - 'use moderation sidebar'
@@ -240,7 +352,19 @@ permissions:
   - 'view all media revisions'
   - 'view all revisions'
   - 'view all scheduled transitions'
+  - 'view any accordion_menu block content history'
+  - 'view any banner_deep block content history'
+  - 'view any card_contact block content history'
+  - 'view any card_nested_standard block content history'
+  - 'view any card_nested_wide block content history'
+  - 'view any card_standard block content history'
+  - 'view any card_wide block content history'
+  - 'view any information_notice block content history'
+  - 'view any plain_cards block content history'
+  - 'view any text block content history'
   - 'view any unpublished content'
+  - 'view any video block content history'
+  - 'view any video_and_caption block content history'
   - 'view any webform submission'
   - 'view content references'
   - 'view cron jobs'
@@ -249,6 +373,7 @@ permissions:
   - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view own webform submission'
+  - 'view restricted block content'
   - 'view the administration theme'
   - 'view unpublished paragraphs'
   - 'view user email addresses'
