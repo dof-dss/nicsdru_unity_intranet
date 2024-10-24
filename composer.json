@@ -128,12 +128,12 @@
         "drupal/scheduler": "^2.0",
         "drupal/scheduler_content_moderation_integration": "^2.0@beta",
         "drupal/schema_metatag": "^3.0",
-        "drupal/search_api": "1.35.0",
-        "drupal/search_api_autocomplete": "1.9.0",
+        "drupal/search_api": "1.30.0",
+        "drupal/search_api_autocomplete": "1.8.0",
         "drupal/search_api_glossary": "4.2.0",
-        "drupal/search_api_location": "1.0.0-alpha4",
+        "drupal/search_api_location": "1.0.0-alpha3",
         "drupal/search_api_solr": "4.3.0",
-        "drupal/search_api_spellcheck": "4.0.1",
+        "drupal/search_api_spellcheck": "4.0.0",
         "drupal/seven": "^1.0",
         "drupal/shs": "^2.0@RC",
         "drupal/simplei": "^2.1",
@@ -162,6 +162,7 @@
         "oomphinc/composer-installers-extender": "^2.0",
         "php-http/message-factory": "^1.1",
         "platformsh/config-reader": "^2.4",
+        "solarium/solarium": "6.3.3",
         "symfony/http-client": "^5.4",
         "vlucas/phpdotenv": "^5.5",
         "webflo/drupal-finder": "^1.3"
@@ -234,9 +235,6 @@
             },
             "drupal/redirect": {
                 "Add URL Redirects tab to taxonomy term edit form": "https://www.drupal.org/files/issues/2021-03-26/redirect_provide_redirect_tab_on_taxonomy_terms_3205896.patch"
-            },
-            "drupal/search_api": {
-                "Declaration of sleep() array must be compatible": "https://www.drupal.org/files/issues/2024-06-18/type_declaration.patch"
             },
             "drupal/slick": {
                 "PHP 8.2 compatibility": "https://git.drupalcode.org/issue/slick-3373261/-/commit/4035fef4eb48df2a2859d6c2785357d6071f9e72.patch"
