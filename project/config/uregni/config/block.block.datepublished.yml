@@ -1,29 +1,29 @@
-uuid: cfa06df3-a0ce-452d-a3d7-6b8011a0eaf0
+uuid: 1afe6ab9-56bc-4342-9481-1aab634a977c
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.type
+    - facets.facet.date_published
   module:
     - facets
     - system
   theme:
     - uregni_theme
-id: type
+id: datepublished
 theme: uregni_theme
 region: search_facets
-weight: -3
+weight: -2
 provider: null
-plugin: 'facet_block:type'
+plugin: 'facet_block:date_published'
 settings:
-  id: 'facet_block:type'
-  label: Type
+  id: 'facet_block:date_published'
+  label: 'Date published'
   label_display: visible
   provider: facets
   context_mapping: {  }
-  block_id: type
+  block_id: datepublished
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/noticeboard\r\n/noticeboard/type/*\r\n/noticeboard/date/*"
+    pages: "/blog\r\n/blog/date/*"
