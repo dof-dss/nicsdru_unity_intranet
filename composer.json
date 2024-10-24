@@ -162,6 +162,7 @@
         "oomphinc/composer-installers-extender": "^2.0",
         "php-http/message-factory": "^1.1",
         "platformsh/config-reader": "^2.4",
+        "solarium/solarium": "6.3.3",
         "symfony/http-client": "^5.4",
         "vlucas/phpdotenv": "^5.5",
         "webflo/drupal-finder": "^1.3"
