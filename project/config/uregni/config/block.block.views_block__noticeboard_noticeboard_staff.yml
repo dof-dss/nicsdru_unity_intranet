@@ -1,0 +1,29 @@
+uuid: 98705cae-e458-4a78-adcb-b8f9ac016f12
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.noticeboard
+  module:
+    - system
+    - views
+  theme:
+    - uregni_theme
+id: views_block__noticeboard_noticeboard_staff
+theme: uregni_theme
+region: top_second
+weight: 0
+provider: null
+plugin: 'views_block:noticeboard-noticeboard_staff'
+settings:
+  id: 'views_block:noticeboard-noticeboard_staff'
+  label: 'Noticeboard (Staff)'
+  label_display: visible
+  provider: views
+  views_label: 'Noticeboard (Staff)'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

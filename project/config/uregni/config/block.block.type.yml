@@ -1,29 +1,29 @@
-uuid: 51282380-7fe5-4b41-ba1f-b19fd46178ff
+uuid: cfa06df3-a0ce-452d-a3d7-6b8011a0eaf0
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.published_date
+    - facets.facet.type
   module:
     - facets
     - system
   theme:
     - uregni_theme
-id: publisheddate
+id: type
 theme: uregni_theme
 region: search_facets
-weight: -2
+weight: 0
 provider: null
-plugin: 'facet_block:published_date'
+plugin: 'facet_block:type'
 settings:
-  id: 'facet_block:published_date'
-  label: 'Published Date'
+  id: 'facet_block:type'
+  label: Type
   label_display: visible
   provider: facets
   context_mapping: {  }
-  block_id: publisheddate
+  block_id: type
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/news\r\n/news/*"
+    pages: "/noticeboard\r\n/noticeboard/type/*\r\n/noticeboard/date/*"

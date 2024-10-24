@@ -1,0 +1,12 @@
+uuid: 1a18ac7b-6bf9-44eb-af60-6ae0a6319336
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__noticeboard_search__noticeboard_search_page
+name: 'search_api:views_page__noticeboard_search__noticeboard_search_page'
+filter_key: ''
+url_processor: facets_pretty_paths
+breadcrumb:
+  active: true
+  before: false
+  group: false

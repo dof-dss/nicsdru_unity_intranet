@@ -1,0 +1,29 @@
+uuid: 70d64097-2dd3-41a0-b555-ef975dce2fc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.noticeboard
+  module:
+    - system
+    - views
+  theme:
+    - uregni_theme
+id: views_block__noticeboard_noticeboard_work
+theme: uregni_theme
+region: top_first
+weight: 0
+provider: null
+plugin: 'views_block:noticeboard-noticeboard_work'
+settings:
+  id: 'views_block:noticeboard-noticeboard_work'
+  label: 'Noticeboard (Work)'
+  label_display: visible
+  provider: views
+  views_label: 'Noticeboard (Work)'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
