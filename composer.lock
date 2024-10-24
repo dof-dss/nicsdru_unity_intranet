@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "36a7bc5182619416570712f094255017",
+    "content-hash": "f93f94424d597a09f076cbb2be7ff5ad",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7533,20 +7533,20 @@
         },
         {
             "name": "drupal/search_api",
-            "version": "1.35.0",
+            "version": "1.30.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api.git",
-                "reference": "8.x-1.35"
+                "reference": "8.x-1.30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.35.zip",
-                "reference": "8.x-1.35",
-                "shasum": "d119726e870f793c6470d2a4fa9286662c5eb45d"
+                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.30.zip",
+                "reference": "8.x-1.30",
+                "shasum": "25bd2cfab6a6332c595fbc8be1c4cfff33a85ce8"
             },
             "require": {
-                "drupal/core": "^10.1 || ^11"
+                "drupal/core": "^9.3 || ^10.0"
             },
             "conflict": {
                 "drupal/search_api_solr": "2.* || 3.0 || 3.1"
@@ -7564,8 +7564,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.35",
-                    "datestamp": "1718551025",
+                    "version": "8.x-1.30",
+                    "datestamp": "1700925904",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7605,20 +7605,20 @@
         },
         {
             "name": "drupal/search_api_autocomplete",
-            "version": "1.9.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api_autocomplete.git",
-                "reference": "8.x-1.9"
+                "reference": "8.x-1.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/search_api_autocomplete-8.x-1.9.zip",
-                "reference": "8.x-1.9",
-                "shasum": "5cb2d1a09dbd54facba82d6d88907e3a184c1539"
+                "url": "https://ftp.drupal.org/files/projects/search_api_autocomplete-8.x-1.8.zip",
+                "reference": "8.x-1.8",
+                "shasum": "80f75774776cee193624fe5731906e35bff160f6"
             },
             "require": {
-                "drupal/core": "^9.3 || ^10 || ^11",
+                "drupal/core": "^9.2 || ^10",
                 "drupal/search_api": "^1.0"
             },
             "require-dev": {
@@ -7627,8 +7627,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.9",
-                    "datestamp": "1718551474",
+                    "version": "8.x-1.8",
+                    "datestamp": "1697366383",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7714,20 +7714,20 @@
         },
         {
             "name": "drupal/search_api_location",
-            "version": "1.0.0-alpha4",
+            "version": "1.0.0-alpha3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api_location.git",
-                "reference": "8.x-1.0-alpha4"
+                "reference": "8.x-1.0-alpha3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/search_api_location-8.x-1.0-alpha4.zip",
-                "reference": "8.x-1.0-alpha4",
-                "shasum": "782313b945328e0c7bab3e51f748cddbb82649a2"
+                "url": "https://ftp.drupal.org/files/projects/search_api_location-8.x-1.0-alpha3.zip",
+                "reference": "8.x-1.0-alpha3",
+                "shasum": "feed01b73c60ba2f9512909861ed0a205e030563"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9 || ^10 || ^11",
+                "drupal/core": "^8.8 || ^9 || ^10",
                 "drupal/search_api": "^1.28",
                 "itamair/geophp": "^1.2"
             },
@@ -7739,8 +7739,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-alpha4",
-                    "datestamp": "1726238587",
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1677057556",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -7889,27 +7889,27 @@
         },
         {
             "name": "drupal/search_api_spellcheck",
-            "version": "4.0.1",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api_spellcheck.git",
-                "reference": "4.0.1"
+                "reference": "4.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/search_api_spellcheck-4.0.1.zip",
-                "reference": "4.0.1",
-                "shasum": "71c8dd4641c161ede730860b57f79a9b025f5c55"
+                "url": "https://ftp.drupal.org/files/projects/search_api_spellcheck-4.0.0.zip",
+                "reference": "4.0.0",
+                "shasum": "a1dfd60994f9bbee407e3ca68f4ff9b797b103a7"
             },
             "require": {
-                "drupal/core": "^10.1 || ^11.0",
-                "drupal/search_api": "~1.35"
+                "drupal/core": "^9.2 || ^10.0",
+                "drupal/search_api": "~1.21"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.1",
-                    "datestamp": "1718897462",
+                    "version": "4.0.0",
+                    "datestamp": "1640512135",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
