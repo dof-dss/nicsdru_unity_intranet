@@ -33,3 +33,4 @@ sites:
         cron_cmd: 'cd web/sites/niaomi ; drush core-cron'
         database: niaomi
         status: development
+        default: true
