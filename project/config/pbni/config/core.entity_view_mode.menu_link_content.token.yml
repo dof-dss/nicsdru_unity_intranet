@@ -1,0 +1,13 @@
+uuid: 4b4ad334-521f-4a32-842e-a8eb5ec86e14
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_link_content
+_core:
+  default_config_hash: rCIalmIVN-8sHPUbTz9wPaYKdy9N4KKsxClENxSPLwo
+id: menu_link_content.token
+label: Token
+description: ''
+targetEntityType: menu_link_content
+cache: true
