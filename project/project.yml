@@ -33,3 +33,13 @@ sites:
         cron_cmd: 'cd web/sites/niaomi ; drush core-cron'
         database: niaomi
         status: development
+    pbni:
+        name: pbni
+        url: pbni.intranet.nigov.net
+        solr: pbni
+        www: false
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/pbni ; drush core-cron'
+        database: pbni
+        status: development
+        default: false
