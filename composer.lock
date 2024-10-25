@@ -12766,16 +12766,16 @@
         },
         {
             "name": "solarium/solarium",
-            "version": "6.3.5",
+            "version": "6.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solariumphp/solarium.git",
-                "reference": "ae4ea592dc92d2be4dfd0a329f1ffbe3cbd01cf3"
+                "reference": "90e42bf322217cc1f26439e61b0c7d17fedb3a9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solariumphp/solarium/zipball/ae4ea592dc92d2be4dfd0a329f1ffbe3cbd01cf3",
-                "reference": "ae4ea592dc92d2be4dfd0a329f1ffbe3cbd01cf3",
+                "url": "https://api.github.com/repos/solariumphp/solarium/zipball/90e42bf322217cc1f26439e61b0c7d17fedb3a9c",
+                "reference": "90e42bf322217cc1f26439e61b0c7d17fedb3a9c",
                 "shasum": ""
             },
             "require": {
@@ -12799,7 +12799,6 @@
                 "phpstan/phpstan-deprecation-rules": "^1.0",
                 "phpstan/phpstan-phpunit": "^1.0",
                 "phpunit/phpunit": "^9.6",
-                "rawr/phpunit-data-provider": "^3.3",
                 "roave/security-advisories": "dev-master",
                 "symfony/event-dispatcher": "^5.0 || ^6.0"
             },
@@ -12828,9 +12827,9 @@
             ],
             "support": {
                 "issues": "https://github.com/solariumphp/solarium/issues",
-                "source": "https://github.com/solariumphp/solarium/tree/6.3.5"
+                "source": "https://github.com/solariumphp/solarium/tree/6.3.3"
             },
-            "time": "2024-01-10T08:36:53+00:00"
+            "time": "2023-10-14T14:46:33+00:00"
         },
         {
             "name": "symfony/console",
