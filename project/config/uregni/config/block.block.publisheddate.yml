@@ -12,7 +12,7 @@ dependencies:
 id: publisheddate
 theme: uregni_theme
 region: search_facets
-weight: -5
+weight: -3
 provider: null
 plugin: 'facet_block:published_date'
 settings:

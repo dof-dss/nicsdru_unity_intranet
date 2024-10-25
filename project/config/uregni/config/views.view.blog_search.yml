@@ -244,8 +244,8 @@ display:
         - 'config:field.storage.node.body'
         - 'config:search_api.index.blog'
         - 'search_api_list:blog'
-  blog_search:
-    id: blog_search
+  blog_search_page:
+    id: blog_search_page
     display_title: Page
     display_plugin: page
     position: 1

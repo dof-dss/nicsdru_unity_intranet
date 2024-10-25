@@ -1,4 +1,4 @@
-uuid: 5adbcdf2-e650-4726-952f-ff0cc0fca16c
+uuid: a0a642f0-b9f7-40db-9aee-c2ce2947d9bf
 langcode: en
 status: true
 dependencies:
@@ -9,14 +9,14 @@ dependencies:
     - views
   theme:
     - uregni_theme
-id: exposedformblog_searchblog_search
+id: exposedformblog_searchblog_search_page
 theme: uregni_theme
 region: search_facets
-weight: -8
+weight: -6
 provider: null
-plugin: 'views_exposed_filter_block:blog_search-blog_search'
+plugin: 'views_exposed_filter_block:blog_search-blog_search_page'
 settings:
-  id: 'views_exposed_filter_block:blog_search-blog_search'
+  id: 'views_exposed_filter_block:blog_search-blog_search_page'
   label: ''
   label_display: '0'
   provider: views

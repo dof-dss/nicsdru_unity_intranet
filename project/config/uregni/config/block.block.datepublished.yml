@@ -1,4 +1,4 @@
-uuid: 1afe6ab9-56bc-4342-9481-1aab634a977c
+uuid: 534c3ede-bf6a-4bcb-bee5-0f98a0dee3ea
 langcode: en
 status: true
 dependencies:
@@ -12,12 +12,12 @@ dependencies:
 id: datepublished
 theme: uregni_theme
 region: search_facets
-weight: -2
+weight: 0
 provider: null
 plugin: 'facet_block:date_published'
 settings:
   id: 'facet_block:date_published'
-  label: 'Date published'
+  label: 'Date Published'
   label_display: visible
   provider: facets
   context_mapping: {  }
