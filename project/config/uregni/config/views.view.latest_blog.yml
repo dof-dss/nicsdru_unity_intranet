@@ -134,6 +134,13 @@ display:
             blog: blog
       style:
         type: html_list
+        options:
+          row_class: item
+          default_row_class: false
+          uses_fields: false
+          type: ul
+          wrapper_class: item-list
+          class: ''
       row:
         type: 'entity:node'
         options:
