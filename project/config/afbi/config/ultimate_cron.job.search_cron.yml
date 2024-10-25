@@ -1,0 +1,19 @@
+uuid: c6ab65de-a429-4d05-a370-3a21382e4a87
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+_core:
+  default_config_hash: 7Xe5sxpGFVnXul69vjsuqDhRBQbEIVNIkwI_jwEYaRc
+title: 'Updates indexable active search pages'
+id: search_cron
+weight: 0
+module: search
+callback: search_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

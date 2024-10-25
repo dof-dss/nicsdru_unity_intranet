@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: 6SRqhVdje-gEz9pzyMu3GhH-kMazpJ5CUm2GbngChdA
+langcode: en
+name: 'AFBI Intranet'
+mail: contact@afbi.intranet.nigov.net
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+frontpage_title: 'Welcome to PPS site'
+uuid: 034ac0ec-9dda-44d8-9d4b-0ad3cb726ac2
