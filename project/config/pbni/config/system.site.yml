@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: 6SRqhVdje-gEz9pzyMu3GhH-kMazpJ5CUm2GbngChdA
+langcode: en
+uuid: 4b3e17da-c7db-4ea7-a06a-ad671369c31e
+name: 'Probation Board Northern Ireland'
+mail: webdev@webdev-finance.gov.uk
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+frontpage_title: 'Welcome to PPS site'
+frontpage_show_title: 0

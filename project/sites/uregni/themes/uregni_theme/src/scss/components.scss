@@ -77,3 +77,67 @@
   }
 }
 
+.homepage--pull-quote {
+  background: resolve('uregni-welcome.png') no-repeat 100%;
+  height: 20rem;
+  background-size: 37rem;
+  background-color: #f6f6f6;
+  @media screen and (max-width: $tab) {
+    background: #f6f6f6;
+  }
+
+  .container-wrap {
+    padding: 3rem 0;
+
+    @media screen and (max-width: $max-grid-width) {
+      padding: 4rem 0;
+    }
+    @media screen and (max-width: $mob) {
+      padding: 5rem 0;
+    }
+  }
+
+  blockquote {
+
+    font-weight: bold;
+    margin-left: 2rem;
+    text-align: left;
+    max-width: 55%;
+    @media screen and (max-width: $tab) {
+      max-width: 100%;
+    }
+
+    p {
+      color: $black;
+      @include adjust-font-size-to(24px);
+      @media screen and (max-width: $tab) {
+        @include adjust-font-size-to(30px);
+      }
+    }
+
+    h2 {
+      color: $brand-primary;
+      @include adjust-font-size-to(40px);
+      @media screen and (max-width: $tab) {
+        @include adjust-font-size-to(38px);
+      }
+    }
+
+    &::before,
+    &::after {
+      background: none;
+      padding: 0;
+    }
+  }
+}
+
+#bottom-area {
+  h3 {
+    @include adjust-font-size-to(18px);
+    margin: 1.6rem 0 1.2rem;
+  }
+
+  p {
+    margin: 0;
+  }
+}

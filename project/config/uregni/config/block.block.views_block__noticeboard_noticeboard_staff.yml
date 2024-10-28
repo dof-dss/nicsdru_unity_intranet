@@ -12,7 +12,7 @@ dependencies:
 id: views_block__noticeboard_noticeboard_staff
 theme: uregni_theme
 region: top_second
-weight: 0
+weight: -10
 provider: null
 plugin: 'views_block:noticeboard-noticeboard_staff'
 settings:

@@ -1,0 +1,13 @@
+uuid: d1a34f70-915d-4606-9314-7e00ddd57541
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: lIfoiAUNeT6gXqVYgUzf0Xki5znfqXwdxjaABoFCCEQ
+id: media.portrait_float
+label: 'Portrait float'
+description: ''
+targetEntityType: media
+cache: true

@@ -12,7 +12,7 @@ dependencies:
 id: type
 theme: uregni_theme
 region: search_facets
-weight: 0
+weight: -1
 provider: null
 plugin: 'facet_block:type'
 settings:

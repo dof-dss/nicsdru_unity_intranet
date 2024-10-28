@@ -1,0 +1,25 @@
+uuid: 66945a9b-212a-4727-b386-79089385c2ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.blog
+    - views.view.blog_search
+  module:
+    - search_api
+id: blogs_summary
+name: 'Blog Summary'
+facet_source_id: 'search_api:views_page__blog_search__blog_search_page'
+processor_configs:
+  hide_when_not_rendered:
+    processor_id: hide_when_not_rendered
+    weights:
+      build: '45'
+    settings: {  }
+facets:
+  date_published:
+    checked: true
+    label: 'Date published'
+    separator: ', '
+    show_count: false
+    weight: 0

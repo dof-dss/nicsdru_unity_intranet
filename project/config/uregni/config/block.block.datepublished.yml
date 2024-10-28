@@ -1,0 +1,29 @@
+uuid: 534c3ede-bf6a-4bcb-bee5-0f98a0dee3ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.date_published
+  module:
+    - facets
+    - system
+  theme:
+    - uregni_theme
+id: datepublished
+theme: uregni_theme
+region: search_facets
+weight: 0
+provider: null
+plugin: 'facet_block:date_published'
+settings:
+  id: 'facet_block:date_published'
+  label: 'Date Published'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: datepublished
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/blog\r\n/blog/date/*"

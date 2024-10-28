@@ -1,0 +1,22 @@
+uuid: 89de2108-d82c-43ee-b325-3c6df862c3f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - stark
+_core:
+  default_config_hash: UXY-QpI0esj6r_EjHc7V68j2KIys_ISVsTLs2jBcmn8
+id: stark_messages
+theme: stark
+region: highlighted
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

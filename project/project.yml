@@ -1,6 +1,6 @@
 project_type: unity
 project_name: 'Unity Intranet'
-project_id: xxxxxxxxx
+project_id: 6gl4nbwlja4u4
 project_disk_size: 51200
 db_disk_size: 22000
 sites:
@@ -41,5 +41,14 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/afbi ; drush core-cron'
         database: afbi
+        default: true
+    pbni:
+        name: pbni
+        url: pbni.intranet.nigov.net
+        solr: pbni
+        www: false
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/pbni ; drush core-cron'
+        database: pbni
         status: development
         default: false
