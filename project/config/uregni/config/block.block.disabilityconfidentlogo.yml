@@ -1,0 +1,25 @@
+uuid: cec090fd-00f6-49d7-9d95-298affd647d8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:027c6d0c-f209-4d10-8f45-648adfe2a584'
+  module:
+    - block_content
+  theme:
+    - uregni_theme
+id: disabilityconfidentlogo
+theme: uregni_theme
+region: footer_second
+weight: 0
+provider: null
+plugin: 'block_content:027c6d0c-f209-4d10-8f45-648adfe2a584'
+settings:
+  id: 'block_content:027c6d0c-f209-4d10-8f45-648adfe2a584'
+  label: 'Disability Confident Logo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
