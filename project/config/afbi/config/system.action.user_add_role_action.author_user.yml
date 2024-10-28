@@ -1,0 +1,16 @@
+uuid: ba709bd4-71ae-482e-ba65-0a09f597375d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.author_user
+  module:
+    - user
+_core:
+  default_config_hash: VQNnIH0OlOSp7XkP3b-aCcDAndicGsyGAbZ3PvB2S6Y
+id: user_add_role_action.author_user
+label: 'Add the author user role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: author_user

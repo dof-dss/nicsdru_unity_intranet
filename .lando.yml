@@ -11,6 +11,7 @@ proxy:
         - uregni.intranet.nigov.net.lndo.site
         - pps.intranet.nigov.net.lndo.site
         - niaomi.intranet.nigov.net.lndo.site
+        - afbi.intranet.nigov.net.lndo.site
 services:
     uregni_intranet_solr:
         type: 'solr:8.11'
@@ -25,6 +26,12 @@ services:
         config:
             dir: .lando/config/solr/
     niaomi_intranet_solr:
+        type: 'solr:8.11'
+        portforward: true
+        core: default
+        config:
+            dir: .lando/config/solr/
+    afbi_intranet_solr:
         type: 'solr:8.11'
         portforward: true
         core: default

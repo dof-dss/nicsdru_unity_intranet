@@ -13,6 +13,7 @@ db:
             - uregnidb
             - ppsdb
             - niaomidb
+            - afbidb
             - pbnidb
         endpoints:
             uregni:
@@ -27,6 +28,10 @@ db:
                 default_schema: niaomidb
                 privileges:
                     niaomidb: admin
+            afbi:
+                default_schema: afbidb
+                privileges:
+                    afbidb: admin
             pbni:
                 default_schema: pbnidb
                 privileges:
@@ -42,6 +47,8 @@ solr_8_11:
                 conf_dir: !archive solr_config/
             niaomi_index:
                 conf_dir: !archive solr_config/
+            afbi_index:
+                conf_dir: !archive solr_config/
             pbni_index:
                 conf_dir: !archive solr_config/
         endpoints:
@@ -51,6 +58,8 @@ solr_8_11:
                 core: pps_index
             niaomi:
                 core: niaomi_index
+            afbi:
+                core: afbi_index
             pbni:
                 core: pbni_index
 redis:
