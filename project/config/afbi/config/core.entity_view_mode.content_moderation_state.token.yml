@@ -1,0 +1,13 @@
+uuid: 49a769ff-c9af-438c-9839-cb9194262571
+langcode: en
+status: true
+dependencies:
+  module:
+    - content_moderation
+_core:
+  default_config_hash: wp12CpuWCtZXNXED_UsHAQ83D43oiHtY4GcYjieNA10
+id: content_moderation_state.token
+label: Token
+description: ''
+targetEntityType: content_moderation_state
+cache: true

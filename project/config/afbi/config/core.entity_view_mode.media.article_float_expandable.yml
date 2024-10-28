@@ -1,0 +1,13 @@
+uuid: 2aa17ea3-0dca-4c21-99a2-deedc6b233de
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: kylpjaU9hzcKKH06pDRrdL8FO79G_rcgigZ2L_5S-OY
+id: media.article_float_expandable
+label: 'Article float expandable'
+description: ''
+targetEntityType: media
+cache: true

@@ -1,0 +1,18 @@
+uuid: 33d55ba4-2d78-48a7-a01b-8d9b42ee80b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - filter
+    - toolbar
+_core:
+  default_config_hash: TI9T1OpRZu2s9XuQcXbfHl_QQPkQy1UOWjUK8Akrdyk
+id: supervisor_user
+label: 'supervisor user'
+weight: -6
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'use text format basic_html'
