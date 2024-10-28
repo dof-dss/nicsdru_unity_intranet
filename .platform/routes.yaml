@@ -15,17 +15,17 @@
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
-'https://niaomi.intranet.nigov.net.{default}/':
+'https://niaomi.intranet.nigov.net/':
+    type: upstream
+    upstream: 'unity_intranet:http'
+    cache:
+        enabled: 'false'
+'https://afbi.intranet.nigov.net.{default}/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
 'https://pbni.intranet.nigov.net/':
-    type: upstream
-    upstream: 'unity_intranet:http'
-    cache:
-        enabled: 'false'
-'https://afbi.intranet.nigov.net/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:
