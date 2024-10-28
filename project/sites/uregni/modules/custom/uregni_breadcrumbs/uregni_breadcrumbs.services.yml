@@ -1,0 +1,16 @@
+services:
+  uregni_breadcrumbs.breadcrumb.staffprofile:
+    class: Drupal\uregni_breadcrumbs\StaffProfileBreadcrumb
+    arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
+    tags:
+      - { name: breadcrumb_builder, priority: 105 }
+  uregni_breadcrumbs.breadcrumb.noticeboard:
+    class: Drupal\uregni_breadcrumbs\NoticeboardBreadcrumb
+    arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
+    tags:
+      - { name: breadcrumb_builder, priority: 105 }
+  uregni_breadcrumbs.breadcrumb.blog:
+    class: Drupal\uregni_breadcrumbs\BlogBreadcrumb
+    arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
+    tags:
+      - { name: breadcrumb_builder, priority: 105 }

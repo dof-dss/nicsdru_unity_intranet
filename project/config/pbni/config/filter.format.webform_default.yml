@@ -1,0 +1,13 @@
+uuid: 2f4234f8-df1b-4706-b50f-a715e35b7981
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: JN2HIfGmnkam41HcConwBtcga9J34D0Mx7lp1To7sKg
+name: 'Webform (Default) - DO NOT EDIT'
+format: webform_default
+weight: 100
+filters: {  }

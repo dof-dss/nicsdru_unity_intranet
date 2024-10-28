@@ -1,0 +1,29 @@
+uuid: 59d0e5a2-398c-453d-b2b7-66513c26135c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_blog
+  module:
+    - system
+    - views
+  theme:
+    - uregni_theme
+id: views_block__latest_blog_home_latest_blog
+theme: uregni_theme
+region: bottom_widget_1
+weight: -10
+provider: null
+plugin: 'views_block:latest_blog-home_latest_blog'
+settings:
+  id: 'views_block:latest_blog-home_latest_blog'
+  label: 'Latest Blog Posts'
+  label_display: visible
+  provider: views
+  views_label: 'Latest Blog Posts'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

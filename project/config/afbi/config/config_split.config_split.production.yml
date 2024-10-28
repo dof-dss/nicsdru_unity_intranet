@@ -1,0 +1,17 @@
+uuid: 82812808-958c-407b-86ae-b8cf1f156e5d
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: production
+description: 'Used for production site.'
+weight: 0
+folder: ../project/config/afbi/production
+module:
+  fastly: 0
+theme: {  }
+blacklist:
+  - fastly.settings
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

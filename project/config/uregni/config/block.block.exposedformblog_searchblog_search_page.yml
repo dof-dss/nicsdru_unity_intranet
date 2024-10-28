@@ -1,0 +1,28 @@
+uuid: a0a642f0-b9f7-40db-9aee-c2ce2947d9bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog_search
+  module:
+    - system
+    - views
+  theme:
+    - uregni_theme
+id: exposedformblog_searchblog_search_page
+theme: uregni_theme
+region: search_facets
+weight: -6
+provider: null
+plugin: 'views_exposed_filter_block:blog_search-blog_search_page'
+settings:
+  id: 'views_exposed_filter_block:blog_search-blog_search_page'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/blog\r\n/blog/date/*"
