@@ -1,22 +1,22 @@
-uuid: ba64c0ba-ca6d-47b3-84b2-76811b81c3c9
+uuid: a0a642f0-b9f7-40db-9aee-c2ce2947d9bf
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.news_search
+    - views.view.blog_search
   module:
     - system
     - views
   theme:
     - uregni_theme
-id: exposedformnews_searchnews_search_page
+id: exposedformblog_searchblog_search_page
 theme: uregni_theme
 region: search_facets
-weight: -9
+weight: -6
 provider: null
-plugin: 'views_exposed_filter_block:news_search-news_search_page'
+plugin: 'views_exposed_filter_block:blog_search-blog_search_page'
 settings:
-  id: 'views_exposed_filter_block:news_search-news_search_page'
+  id: 'views_exposed_filter_block:blog_search-blog_search_page'
   label: ''
   label_display: '0'
   provider: views
@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/news\r\n/news/date/*"
+    pages: "/blog\r\n/blog/date/*"

@@ -15,7 +15,7 @@
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
-'https://niaomi.intranet.nigov.net/':
+'https://niaomi.intranet.nigov.net.{default}/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:

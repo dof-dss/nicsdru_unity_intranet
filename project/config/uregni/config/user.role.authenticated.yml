@@ -2,21 +2,28 @@ uuid: 4cf312c3-8244-4058-a94b-88c6ef461f2d
 langcode: en
 status: true
 dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.webform_default
   module:
+    - file
+    - filter
+    - media
     - node
-    - path
     - pathauto
     - system
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
 label: 'authenticated user'
-weight: 1
+weight: -9
 is_admin: false
 permissions:
-  - 'access administration pages'
   - 'access content'
-  - 'create url aliases'
+  - 'delete own files'
   - 'notify of path changes'
+  - 'use text format basic_html'
+  - 'use text format webform_default'
+  - 'view all revisions'
+  - 'view media'
   - 'view own unpublished content'
-  - 'view the administration theme'
