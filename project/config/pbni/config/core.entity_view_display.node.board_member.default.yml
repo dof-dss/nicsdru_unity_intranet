@@ -1,0 +1,102 @@
+uuid: 851e27cb-fe25-48c0-ac0d-e006d9d0ec39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.board_member.body
+    - field.field.node.board_member.field_directorate
+    - field.field.node.board_member.field_extension
+    - field.field.node.board_member.field_find_me
+    - field.field.node.board_member.field_first_name
+    - field.field.node.board_member.field_meta_tags
+    - field.field.node.board_member.field_mobile
+    - field.field.node.board_member.field_photo
+    - field.field.node.board_member.field_title
+    - field.field.node.board_member.field_work_pattern
+    - node.type.board_member
+  module:
+    - text
+    - user
+id: node.board_member.default
+targetEntityType: node
+bundle: board_member
+mode: default
+content:
+  body:
+    type: text_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_directorate:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_extension:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_find_me:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_first_name:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_mobile:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_photo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_work_pattern:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+hidden:
+  field_meta_tags: true
+  langcode: true
+  links: true

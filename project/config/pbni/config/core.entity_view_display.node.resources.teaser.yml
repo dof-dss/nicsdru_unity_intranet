@@ -7,6 +7,9 @@ dependencies:
     - field.field.node.resources.body
     - field.field.node.resources.field_attachment
     - field.field.node.resources.field_external_url
+    - field.field.node.resources.field_meta_tags
+    - field.field.node.resources.field_published_date
+    - field.field.node.resources.field_type
     - node.type.resources
   module:
     - text
@@ -32,4 +35,7 @@ content:
 hidden:
   field_attachment: true
   field_external_url: true
+  field_meta_tags: true
+  field_published_date: true
+  field_type: true
   langcode: true

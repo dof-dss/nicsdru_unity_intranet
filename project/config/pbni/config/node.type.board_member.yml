@@ -1,4 +1,4 @@
-uuid: dbd6a1b0-cbe0-4010-a644-522ee2d9e6ac
+uuid: 5acb576d-e54b-4a15-85c5-dcbf70dc185a
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,10 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    parent: 'main:'
-name: 'Staff member'
-type: pbni_staff_member
+    available_menus: {  }
+    parent: ''
+name: 'Board member'
+type: board_member
 description: null
 help: null
 new_revision: true

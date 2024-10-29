@@ -1,16 +1,16 @@
-uuid: 31812185-0fad-4dd4-ba92-afd94c6eb582
+uuid: 11f23b4e-8b98-43da-859c-b8be3f9918f6
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.pbni_staff_member
-id: node.pbni_staff_member.title
+    - node.type.board_member
+id: node.board_member.title
 field_name: title
 entity_type: node
-bundle: pbni_staff_member
+bundle: board_member
 label: Surname
 description: ''
-required: false
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''

@@ -1,5 +1,5 @@
-uuid: cfe55cfb-4c27-40c4-bce4-4342c19a1078
-langcode: und
+uuid: 12fab67e-2231-48cc-b380-bb542c14d724
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,11 +7,10 @@ dependencies:
 id: node.field_mobile
 field_name: field_mobile
 entity_type: node
-type: string
+type: integer
 settings:
-  max_length: 11
-  case_sensitive: false
-  is_ascii: false
+  unsigned: false
+  size: normal
 module: core
 locked: false
 cardinality: 1

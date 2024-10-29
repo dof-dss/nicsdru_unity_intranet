@@ -1,0 +1,19 @@
+uuid: 2f1e9afc-9483-4199-a5ab-2a0df8a9454d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_directorate
+    - node.type.board_member
+id: node.board_member.field_directorate
+field_name: field_directorate
+entity_type: node
+bundle: board_member
+label: Directorate
+description: 'Please add the directorate of the staff member.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
