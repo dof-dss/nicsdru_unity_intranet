@@ -1,0 +1,16 @@
+uuid: bfd20cd5-8b53-456c-9e49-99ef66cb6a56
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main:'
+name: Feature
+type: feature
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

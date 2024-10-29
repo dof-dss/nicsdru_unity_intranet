@@ -1,0 +1,29 @@
+uuid: 4f58f2da-ac5b-4b5a-b272-37ce8131c86e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachment
+    - media.type.document
+    - node.type.resources
+id: node.resources.field_attachment
+field_name: field_attachment
+entity_type: node
+bundle: resources
+label: Attachment
+description: 'Please choose a file from the media browser.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

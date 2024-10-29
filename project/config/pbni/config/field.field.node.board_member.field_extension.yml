@@ -1,0 +1,23 @@
+uuid: 713d10db-ccfb-4805-ad31-fff7fe5ee0fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_extension
+    - node.type.board_member
+id: node.board_member.field_extension
+field_name: field_extension
+entity_type: node
+bundle: board_member
+label: Extension
+description: 'Please add the extension number of the staff member.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: 5
+  prefix: ''
+  suffix: ''
+field_type: integer
