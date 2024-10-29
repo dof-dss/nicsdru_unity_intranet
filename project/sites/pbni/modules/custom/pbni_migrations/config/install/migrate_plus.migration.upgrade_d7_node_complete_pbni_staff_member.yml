@@ -1,7 +1,7 @@
 uuid: 2934a7d9-fe8e-4414-bc67-464eda56e887
 langcode: en
 status: true
-dependencies: {  }
+dependencies: { }
 id: upgrade_d7_node_complete_pbni_staff_member
 class: Drupal\node\Plugin\migrate\D7NodeTranslation
 field_plugin_method: null
@@ -16,93 +16,71 @@ source:
   node_type: pbni_staff_member
 process:
   nid:
-    -
-      plugin: get
+    - plugin: get
       source: tnid
   vid:
-    -
-      plugin: get
+    - plugin: get
       source: vid
   langcode:
-    -
-      plugin: default_value
+    - plugin: default_value
       source: language
       default_value: und
   title:
-    -
-      plugin: get
+    - plugin: get
       source: title
   uid:
-    -
-      plugin: get
+    - plugin: get
       source: node_uid
   status:
-    -
-      plugin: get
+    - plugin: get
       source: status
   created:
-    -
-      plugin: get
+    - plugin: get
       source: created
   changed:
-    -
-      plugin: get
+    - plugin: get
       source: timestamp
   promote:
-    -
-      plugin: get
+    - plugin: get
       source: promote
   sticky:
-    -
-      plugin: get
+    - plugin: get
       source: sticky
   revision_uid:
-    -
-      plugin: get
+    - plugin: get
       source: revision_uid
   revision_log:
-    -
-      plugin: get
+    - plugin: get
       source: log
   revision_timestamp:
-    -
-      plugin: get
+    - plugin: get
       source: timestamp
   content_translation_source:
-    -
-      plugin: get
+    - plugin: get
       source: source_langcode
   comment_node_pbni_staff_member/0/status:
-    -
-      plugin: get
+    - plugin: get
       source: comment
   field_about_me:
-    -
-      plugin: get
+    - plugin: get
       source: field_about_me
   field_directorate:
-    -
-      plugin: get
+    - plugin: get
       source: field_directorate
   field_extension:
-    -
-      plugin: get
+    - plugin: get
       source: field_extension
   field_find_me:
-    -
-      plugin: get
+    - plugin: get
       source: field_find_me
   field_first_name:
-    -
-      plugin: get
+    - plugin: get
       source: field_first_name
   field_mobile:
-    -
-      plugin: get
+    - plugin: get
       source: field_mobile
   field_profile_image:
-    -
-      plugin: sub_process
+    - plugin: sub_process
       source: field_profile_image
       process:
         target_id: fid
@@ -111,21 +89,18 @@ process:
         width: width
         height: height
   field_title:
-    -
-      plugin: get
+    - plugin: get
       source: field_title
   field_work_pattern:
-    -
-      plugin: get
+    - plugin: get
       source: field_work_pattern
   field_metatag:
-    -
-      plugin: d7_metatag_entities
+    - plugin: d7_metatag_entities
       source: pseudo_metatag_entities
 destination:
   plugin: 'entity_complete:node'
   translations: true
-  default_bundle: pbni_staff_member
+  default_bundle: board_member
 migration_dependencies:
   required:
     - upgrade_d7_user

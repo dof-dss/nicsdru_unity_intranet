@@ -1,0 +1,18 @@
+uuid: 31812185-0fad-4dd4-ba92-afd94c6eb582
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pbni_staff_member
+id: node.pbni_staff_member.title
+field_name: title
+entity_type: node
+bundle: pbni_staff_member
+label: Surname
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

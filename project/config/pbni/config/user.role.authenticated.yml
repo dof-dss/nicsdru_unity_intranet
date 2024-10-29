@@ -2,23 +2,21 @@ uuid: 46b0bc06-86c3-4875-95ea-ea854d7a4124
 langcode: en
 status: true
 dependencies:
-  config:
-    - filter.format.basic_html
-    - filter.format.webform_default
   module:
-    - eu_cookie_compliance
-    - filter
-    - media
+    - node
+    - path
+    - pathauto
     - system
 _core:
   default_config_hash: Ff0Y8IxrFn0hb5D-Y6VCG31b-aGmN892WRowTmwPaLg
 id: authenticated
-label: 'Authenticated user'
+label: 'authenticated user'
 weight: 1
 is_admin: false
 permissions:
+  - 'access administration pages'
   - 'access content'
-  - 'display eu cookie compliance popup'
-  - 'use text format basic_html'
-  - 'use text format webform_default'
-  - 'view media'
+  - 'create url aliases'
+  - 'notify of path changes'
+  - 'view own unpublished content'
+  - 'view the administration theme'
