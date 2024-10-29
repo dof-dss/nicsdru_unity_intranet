@@ -17327,16 +17327,16 @@
         },
         {
             "name": "dof-dss/maestro-shell",
-            "version": "10.1.2",
+            "version": "10.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/maestro-shell.git",
-                "reference": "e89f2c12d7744e92b44a920c0c0a5a8f3d1138df"
+                "reference": "dea5f7b4ec12d346baa1b6fe026db77e4fb04922"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/maestro-shell/zipball/e89f2c12d7744e92b44a920c0c0a5a8f3d1138df",
-                "reference": "e89f2c12d7744e92b44a920c0c0a5a8f3d1138df",
+                "url": "https://api.github.com/repos/dof-dss/maestro-shell/zipball/dea5f7b4ec12d346baa1b6fe026db77e4fb04922",
+                "reference": "dea5f7b4ec12d346baa1b6fe026db77e4fb04922",
                 "shasum": ""
             },
             "require": {
@@ -17379,9 +17379,9 @@
             "description": "Shell for working with Maestro projects.",
             "support": {
                 "issues": "https://github.com/dof-dss/maestro-shell/issues",
-                "source": "https://github.com/dof-dss/maestro-shell/tree/10.1.2"
+                "source": "https://github.com/dof-dss/maestro-shell/tree/10.1.3"
             },
-            "time": "2024-03-20T16:06:13+00:00"
+            "time": "2024-10-29T12:09:09+00:00"
         },
         {
             "name": "drupal/coder",
@@ -22803,6 +22803,6 @@
     "platform": {
         "composer-runtime-api": "*"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
