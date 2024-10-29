@@ -1,15 +1,15 @@
-uuid: 4aebe8ba-4137-409a-b94e-98687024286d
+uuid: a94a211e-292c-4889-a45e-962060f23917
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_photo
     - media.type.image
-    - node.type.news
-id: node.news.field_photo
+    - node.type.feature
+id: node.feature.field_photo
 field_name: field_photo
 entity_type: node
-bundle: news
+bundle: feature
 label: Photo
 description: 'Please add a supporting image from the media browser.'
 required: true

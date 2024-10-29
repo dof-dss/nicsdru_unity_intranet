@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.resources.body
+    - field.field.node.resources.field_attachment
+    - field.field.node.resources.field_external_url
     - node.type.resources
   module:
     - text
@@ -28,4 +30,6 @@ content:
     weight: 100
     region: content
 hidden:
+  field_attachment: true
+  field_external_url: true
   langcode: true

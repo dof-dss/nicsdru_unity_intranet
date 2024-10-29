@@ -1,12 +1,12 @@
-uuid: 02d6784e-d163-4049-bb14-f83113d053eb
+uuid: ad42c8ca-d6ee-47ca-b124-0f736faf4766
 langcode: en
 status: true
 dependencies:
   module:
     - media
     - node
-id: node.field_photo
-field_name: field_photo
+id: node.field_attachment
+field_name: field_attachment
 entity_type: node
 type: entity_reference
 settings:

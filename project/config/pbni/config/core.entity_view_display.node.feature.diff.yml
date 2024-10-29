@@ -1,33 +1,28 @@
-uuid: d21f7dd3-ee28-4a68-98f8-e30519b3f923
+uuid: de9f8dbb-cf4a-4984-9eaf-31443e07fc3e
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.diff
-    - field.field.node.basic_page.body
-    - field.field.node.basic_page.field_meta_tags
-    - field.field.node.basic_page.field_next_audit_due
-    - node.type.basic_page
+    - field.field.node.feature.field_link
+    - field.field.node.feature.field_meta_tags
+    - field.field.node.feature.field_photo
+    - node.type.feature
   module:
-    - datetime
     - field_group
     - layout_builder
+    - link
     - metatag
-    - text
     - user
 third_party_settings:
-  layout_builder:
-    enabled: false
-    allow_custom: false
   field_group:
     group_additional_content_details:
       children:
-        - field_next_audit_due
         - field_meta_tags
       label: 'Additional content details'
       parent_name: ''
       region: content
-      weight: 1
+      weight: 2
       format_type: html_element
       format_settings:
         classes: field-collection
@@ -41,33 +36,41 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-id: node.basic_page.diff
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.feature.diff
 targetEntityType: node
-bundle: basic_page
+bundle: feature
 mode: diff
 content:
-  body:
-    type: text_default
+  field_link:
+    type: link
     label: hidden
-    settings: {  }
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_meta_tags:
     type: metatag_empty_formatter
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 5
-    region: content
-  field_next_audit_due:
-    type: datetime_default
-    label: inline
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
     weight: 4
+    region: content
+  field_photo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   langcode: true

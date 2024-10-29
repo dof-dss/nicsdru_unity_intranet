@@ -1,18 +1,18 @@
-uuid: 4aebe8ba-4137-409a-b94e-98687024286d
+uuid: 4f58f2da-ac5b-4b5a-b272-37ce8131c86e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_photo
-    - media.type.image
-    - node.type.news
-id: node.news.field_photo
-field_name: field_photo
+    - field.storage.node.field_attachment
+    - media.type.document
+    - node.type.resources
+id: node.resources.field_attachment
+field_name: field_attachment
 entity_type: node
-bundle: news
-label: Photo
-description: 'Please add a supporting image from the media browser.'
-required: true
+bundle: resources
+label: Attachment
+description: 'Please choose a file from the media browser.'
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -20,7 +20,7 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      document: document
     sort:
       field: _none
       direction: ASC

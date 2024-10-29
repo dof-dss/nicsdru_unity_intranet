@@ -4,8 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.resources.body
+    - field.field.node.resources.field_attachment
+    - field.field.node.resources.field_external_url
     - node.type.resources
   module:
+    - link
+    - media_library
     - path
     - text
 id: node.resources.default
@@ -28,6 +32,21 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_attachment:
+    type: media_library_widget
+    weight: 122
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_external_url:
+    type: link_default
+    weight: 123
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   flag:
     weight: 10

@@ -11,7 +11,7 @@ id: node.basic_page.field_next_audit_due
 field_name: field_next_audit_due
 entity_type: node
 bundle: basic_page
-label: field_next_audit_due
+label: 'Next audit due'
 description: ''
 required: false
 translatable: false
