@@ -1,0 +1,25 @@
+uuid: 5e728340-3aa3-47e5-8c5b-b95d5e8af37c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:24af9157-50b3-46d7-8b6c-799e8dc46088'
+  module:
+    - block_content
+  theme:
+    - uregni_theme
+id: bronzelogo
+theme: uregni_theme
+region: footer_third
+weight: 0
+provider: null
+plugin: 'block_content:24af9157-50b3-46d7-8b6c-799e8dc46088'
+settings:
+  id: 'block_content:24af9157-50b3-46d7-8b6c-799e8dc46088'
+  label: 'Bronze logo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

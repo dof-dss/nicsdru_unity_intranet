@@ -141,3 +141,22 @@
     margin: 0;
   }
 }
+
+.block {
+  h2 {
+    padding: 1rem 0;
+    color: $black;
+  }
+}
+
+.footer-area {
+  .column {
+    @media screen and (max-width: $tab) {
+      width: 50%;
+
+      &:last-child {
+        float: none;
+      }
+    }
+  }
+}

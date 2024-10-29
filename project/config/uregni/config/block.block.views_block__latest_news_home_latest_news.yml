@@ -11,8 +11,8 @@ dependencies:
     - uregni_theme
 id: views_block__latest_news_home_latest_news
 theme: uregni_theme
-region: top_third
-weight: 0
+region: bottom_widget_2
+weight: -10
 provider: null
 plugin: 'views_block:latest_news-home_latest_news'
 settings:

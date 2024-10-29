@@ -1,0 +1,25 @@
+uuid: c8ff8ace-3e58-4105-bad6-9627a166352a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:f8332f8e-0d45-4284-9f72-1eb3c177653e'
+  module:
+    - block_content
+  theme:
+    - uregni_theme
+id: rniblogo
+theme: uregni_theme
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'block_content:f8332f8e-0d45-4284-9f72-1eb3c177653e'
+settings:
+  id: 'block_content:f8332f8e-0d45-4284-9f72-1eb3c177653e'
+  label: 'RNIB Logo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
