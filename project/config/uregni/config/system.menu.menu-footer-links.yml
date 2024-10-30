@@ -1,0 +1,8 @@
+uuid: ea2ccc31-ca07-47b6-b5a8-472e5190c529
+langcode: en
+status: true
+dependencies: {  }
+id: menu-footer-links
+label: 'Footer links'
+description: ''
+locked: false

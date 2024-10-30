@@ -1,0 +1,10 @@
+uuid: ac458840-0e20-450d-be6e-3782beb23e8e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: YsHjzgGms0cW21s7D42IbKNJLgl7K-mdIf_auEH8OCE
+id: video_and_caption
+label: 'Video and caption'
+revision: 1
+description: ''

@@ -1,0 +1,25 @@
+uuid: 2ee86826-f5cb-4988-8474-38f5e219a2a8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:380ae700-3db6-4423-959b-6e155028b957'
+  module:
+    - block_content
+  theme:
+    - uregni_theme
+id: investorslogo
+theme: uregni_theme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:380ae700-3db6-4423-959b-6e155028b957'
+settings:
+  id: 'block_content:380ae700-3db6-4423-959b-6e155028b957'
+  label: 'Investors logo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

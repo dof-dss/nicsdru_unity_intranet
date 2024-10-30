@@ -1,0 +1,21 @@
+uuid: c5e58a34-30d7-4b07-a945-0aa2a8af2412
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_lp_teaser
+field_name: field_lp_teaser
+entity_type: node
+type: string
+settings:
+  max_length: 120
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

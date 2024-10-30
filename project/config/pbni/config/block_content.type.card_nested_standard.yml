@@ -1,0 +1,10 @@
+uuid: e7d3b52c-0a0e-47b9-b098-f65b27c34fc6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: uV_Q2uB6yDyZAdR4K7hubR5EchIi956IdJHOY_3FKFE
+id: card_nested_standard
+label: 'Card nested - standard'
+revision: 1
+description: 'Provides a block with nested block elements.'
