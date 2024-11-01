@@ -52,3 +52,13 @@ sites:
         database: pbni
         status: development
         default: false
+    nipb:
+        name: 'NI Policing Board Intranet'
+        url: nipb.intranet.nigov.net
+        solr: nipb
+        www: false
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/nipb ; drush core-cron'
+        database: nipb
+        status: development
+        default: false

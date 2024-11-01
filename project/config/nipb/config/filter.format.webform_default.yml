@@ -1,0 +1,13 @@
+uuid: 4d98241e-0a7b-4751-adab-bbd6af9c7c67
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: JN2HIfGmnkam41HcConwBtcga9J34D0Mx7lp1To7sKg
+name: 'Webform (Default) - DO NOT EDIT'
+format: webform_default
+weight: 100
+filters: {  }

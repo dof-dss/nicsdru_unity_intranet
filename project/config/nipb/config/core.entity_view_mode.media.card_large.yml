@@ -1,0 +1,13 @@
+uuid: 4b1cce40-db3e-49b5-ba4e-1783df1de5b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: SLqCStFd4X8mGAyx_TPLiY2Rqd71pvmcChhP5S-_zRU
+id: media.card_large
+label: 'Card large'
+description: ''
+targetEntityType: media
+cache: true

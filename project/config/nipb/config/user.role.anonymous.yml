@@ -1,0 +1,22 @@
+uuid: 006c45dc-30a5-40bd-8394-2e44108e1d1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - eu_cookie_compliance
+    - filter
+    - media
+    - system
+_core:
+  default_config_hash: wlkdihxdVRIjy7aADCAaN3tU7EMrIYfqQkYY-EHzpLg
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'display eu cookie compliance popup'
+  - 'use text format restricted_html'
+  - 'view media'
