@@ -1,0 +1,22 @@
+uuid: bde97500-5375-4c6d-bc26-f757941f9bdb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: board_member_pattern
+label: 'Board member pattern'
+type: 'canonical_entities:node'
+pattern: 'people/[node:title]'
+selection_criteria:
+  fdd9a6e2-6c04-4273-9fa2-370634f1b84f:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: fdd9a6e2-6c04-4273-9fa2-370634f1b84f
+    context_mapping:
+      node: node
+    bundles:
+      board_member: board_member
+selection_logic: and
+weight: -5
+relationships: {  }

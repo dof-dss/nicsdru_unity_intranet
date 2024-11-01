@@ -2,6 +2,14 @@ uuid: 733061ad-1479-4231-8c35-7d0c086a523f
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.basic_page
+    - node.type.board_member
+    - node.type.feature
+    - node.type.landing_page
+    - node.type.news
+    - node.type.resources
+    - node.type.webform
   module:
     - content_moderation
 _core:
@@ -93,5 +101,12 @@ type_settings:
       to: needs_review
       weight: 2
   entity_types:
-    node: null
+    node:
+      - basic_page
+      - board_member
+      - feature
+      - landing_page
+      - news
+      - resources
+      - webform
   default_moderation_state: draft

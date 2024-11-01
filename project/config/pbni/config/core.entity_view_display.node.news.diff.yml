@@ -85,5 +85,6 @@ content:
     weight: 0
     region: content
 hidden:
+  content_moderation_control: true
   langcode: true
   links: true
