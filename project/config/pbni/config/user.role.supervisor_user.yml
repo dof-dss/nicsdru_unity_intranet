@@ -1,17 +1,199 @@
-uuid: 2077643e-484b-4155-8702-ac5fec087144
+uuid: 0729c27a-722f-44b7-99f5-ef52894066bc
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_display.node.landing_page.default
+    - media.type.audio
+    - media.type.document
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
+    - node.type.basic_page
+    - node.type.board_member
+    - node.type.feature
+    - node.type.landing_page
+    - node.type.news
+    - node.type.resources
+    - workflows.workflow.nics_editorial_workflow
   module:
+    - block_content_permissions
+    - content_moderation
+    - contextual
+    - file
+    - layout_builder
+    - media
+    - media_file_delete
+    - menu_admin_per_menu
+    - moderation_sidebar
+    - node
+    - origins_workflow
+    - path
     - redirect
-    - system
-_core:
-  default_config_hash: TI9T1OpRZu2s9XuQcXbfHl_QQPkQy1UOWjUK8Akrdyk
+    - scheduled_transitions
+    - toolbar
+    - whatlinkshere
 id: supervisor_user
-label: 'supervisor user'
-weight: 3
+label: supervisor_user
+weight: -7
 is_admin: null
 permissions:
-  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'add scheduled transitions node basic_page'
+  - 'add scheduled transitions node board_member'
+  - 'add scheduled transitions node feature'
+  - 'add scheduled transitions node landing_page'
+  - 'add scheduled transitions node news'
+  - 'add scheduled transitions node resources'
+  - 'administer main menu items'
+  - 'administer media file delete'
   - 'administer redirects'
-  - 'view the administration theme'
+  - 'audit content'
+  - 'configure editable landing_page node layout overrides'
+  - 'create accordion_menu block content'
+  - 'create and edit custom blocks'
+  - 'create audio media'
+  - 'create banner_deep block content'
+  - 'create card_contact block content'
+  - 'create card_nested_standard block content'
+  - 'create card_nested_wide block content'
+  - 'create card_standard block content'
+  - 'create card_wide block content'
+  - 'create document media'
+  - 'create feature content'
+  - 'create file media'
+  - 'create image media'
+  - 'create information_notice block content'
+  - 'create landing_page content'
+  - 'create news content'
+  - 'create plain_cards block content'
+  - 'create remote_video media'
+  - 'create resources content'
+  - 'create text block content'
+  - 'create url aliases'
+  - 'create video block content'
+  - 'create video_and_caption block content'
+  - 'delete all revisions'
+  - 'delete any accordion_menu block content'
+  - 'delete any audio media'
+  - 'delete any banner_deep block content'
+  - 'delete any basic_page content'
+  - 'delete any board_member content'
+  - 'delete any card_contact block content'
+  - 'delete any card_nested_standard block content'
+  - 'delete any card_nested_wide block content'
+  - 'delete any card_standard block content'
+  - 'delete any card_wide block content'
+  - 'delete any document media'
+  - 'delete any feature content'
+  - 'delete any file'
+  - 'delete any file media'
+  - 'delete any image media'
+  - 'delete any information_notice block content'
+  - 'delete any landing_page content'
+  - 'delete any news content'
+  - 'delete any plain_cards block content'
+  - 'delete any remote_video media'
+  - 'delete any resources content'
+  - 'delete any text block content'
+  - 'delete any video block content'
+  - 'delete any video_and_caption block content'
+  - 'delete basic_page revisions'
+  - 'delete board_member revisions'
+  - 'delete feature revisions'
+  - 'delete landing_page revisions'
+  - 'delete news revisions'
+  - 'delete own audio media'
+  - 'delete own basic_page content'
+  - 'delete own board_member content'
+  - 'delete own document media'
+  - 'delete own feature content'
+  - 'delete own file media'
+  - 'delete own image media'
+  - 'delete own landing_page content'
+  - 'delete own news content'
+  - 'delete own remote_video media'
+  - 'delete own resources content'
+  - 'delete resources revisions'
+  - 'edit any audio media'
+  - 'edit any basic_page content'
+  - 'edit any board_member content'
+  - 'edit any document media'
+  - 'edit any feature content'
+  - 'edit any file media'
+  - 'edit any image media'
+  - 'edit any landing_page content'
+  - 'edit any news content'
+  - 'edit any remote_video media'
+  - 'edit any resources content'
+  - 'edit own audio media'
+  - 'edit own basic_page content'
+  - 'edit own board_member content'
+  - 'edit own document media'
+  - 'edit own feature content'
+  - 'edit own file media'
+  - 'edit own image media'
+  - 'edit own landing_page content'
+  - 'edit own news content'
+  - 'edit own remote_video media'
+  - 'edit own resources content'
+  - 'reschedule scheduled transitions node basic_page'
+  - 'reschedule scheduled transitions node board_member'
+  - 'reschedule scheduled transitions node feature'
+  - 'reschedule scheduled transitions node landing_page'
+  - 'reschedule scheduled transitions node news'
+  - 'reschedule scheduled transitions node resources'
+  - 'revert all revisions'
+  - 'revert basic_page revisions'
+  - 'revert board_member revisions'
+  - 'revert feature revisions'
+  - 'revert landing_page revisions'
+  - 'revert news revisions'
+  - 'revert resources revisions'
+  - 'update any accordion_menu block content'
+  - 'update any banner_deep block content'
+  - 'update any card_contact block content'
+  - 'update any card_nested_standard block content'
+  - 'update any card_nested_wide block content'
+  - 'update any card_standard block content'
+  - 'update any card_wide block content'
+  - 'update any information_notice block content'
+  - 'update any plain_cards block content'
+  - 'update any text block content'
+  - 'update any video block content'
+  - 'update any video_and_caption block content'
+  - 'use moderation sidebar'
+  - 'use nics_editorial_workflow transition archive'
+  - 'use nics_editorial_workflow transition create_new_draft'
+  - 'use nics_editorial_workflow transition draft_of_published'
+  - 'use nics_editorial_workflow transition publish'
+  - 'use nics_editorial_workflow transition reject'
+  - 'use nics_editorial_workflow transition restore'
+  - 'use nics_editorial_workflow transition restore_to_draft'
+  - 'use nics_editorial_workflow transition submit_for_review'
+  - 'use nics_editorial_workflow transition unpublish'
+  - 'view all scheduled transitions'
+  - 'view any audio media revisions'
+  - 'view any document media revisions'
+  - 'view any file media revisions'
+  - 'view any image media revisions'
+  - 'view any remote_video media revisions'
+  - 'view any unpublished content'
+  - 'view basic_page revisions'
+  - 'view board_member revisions'
+  - 'view content references'
+  - 'view feature revisions'
+  - 'view landing_page revisions'
+  - 'view latest version'
+  - 'view news revisions'
+  - 'view resources revisions'
+  - 'view scheduled transitions node basic_page'
+  - 'view scheduled transitions node board_member'
+  - 'view scheduled transitions node feature'
+  - 'view scheduled transitions node landing_page'
+  - 'view scheduled transitions node news'
+  - 'view scheduled transitions node resources'
+  - 'view scheduled transitions node webform'
