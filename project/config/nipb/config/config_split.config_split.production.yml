@@ -1,0 +1,16 @@
+uuid: 868c4da1-0bb1-4047-a361-9f395e2eb479
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: Production
+description: 'Used for the production site only.'
+weight: 0
+folder: ../project/config/nipb/production
+module:
+  fastly: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
