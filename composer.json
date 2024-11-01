@@ -189,6 +189,9 @@
     },
     "extra": {
         "patches": {
+            "drupal/admin_toolbar": {
+                "WSOD when deleting unused user role": "https://www.drupal.org/files/issues/2024-10-18/3465604-26.patch"
+            },
             "drupal/content_lock": {
                 "fix 10.2 $time deprecation message": "https://www.drupal.org/files/issues/2023-05-22/3343964-5.patch"
             },
