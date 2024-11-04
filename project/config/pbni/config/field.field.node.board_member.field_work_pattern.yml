@@ -1,0 +1,19 @@
+uuid: 72ad1785-9bcd-444e-aaa3-c6304ac62ec1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_work_pattern
+    - node.type.board_member
+id: node.board_member.field_work_pattern
+field_name: field_work_pattern
+entity_type: node
+bundle: board_member
+label: 'Work pattern'
+description: 'Please add the work pattern of the staff member.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

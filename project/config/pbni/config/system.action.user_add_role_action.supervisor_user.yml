@@ -1,4 +1,4 @@
-uuid: 2ecea7a4-884d-44ad-a620-7296e7a5624f
+uuid: ba34f747-06a4-4fe4-9fb9-93c9cd2c7cfc
 langcode: en
 status: true
 dependencies:
@@ -6,10 +6,8 @@ dependencies:
     - user.role.supervisor_user
   module:
     - user
-_core:
-  default_config_hash: l7vETIN0VFYMaiV1bNuJnB5EWAFd376oIrnAxBqbbEU
 id: user_add_role_action.supervisor_user
-label: 'Add the supervisor user role to the selected user(s)'
+label: 'Add the supervisor_user role to the selected user(s)'
 type: user
 plugin: user_add_role_action
 configuration:

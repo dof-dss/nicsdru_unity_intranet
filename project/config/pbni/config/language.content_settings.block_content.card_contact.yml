@@ -1,0 +1,13 @@
+uuid: 2f55e102-5282-449d-84e4-996572e6017f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_contact
+_core:
+  default_config_hash: zciJoTvDjlBLEU6MA-TbtFBfJGtbfWi07Gqru173BLw
+id: block_content.card_contact
+target_entity_type_id: block_content
+target_bundle: card_contact
+default_langcode: site_default
+language_alterable: false
