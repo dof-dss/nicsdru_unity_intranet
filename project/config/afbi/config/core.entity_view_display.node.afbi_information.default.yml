@@ -1,0 +1,45 @@
+uuid: 6cbfc4a7-1a60-4c10-a30a-e46c5213a0c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.afbi_information.field_featured_image
+    - field.field.node.afbi_information.field_photo
+    - node.type.afbi_information
+  module:
+    - image
+    - user
+id: node.afbi_information.default
+targetEntityType: node
+bundle: afbi_information
+mode: default
+content:
+  field_featured_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_photo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
