@@ -7,6 +7,7 @@ default_docker_image: &docker_image
       environment:
         PLATFORM_REGION: "uk-1.platform.sh"
         PLATFORM_PROJECT: "6gl4nbwlja4u4"
+        PLATFORMSH_CLI_NO_INTERACTION: 1
         PROJECT_ROOT: "/home/docker/project"
         PHP_EXTENSION_GD: 1
         PHP_EXTENSIONS: "gd"
@@ -151,6 +152,7 @@ jobs:
       EDGE_BUILD_BRANCH: "edge"
       PLATFORM_REGION: "uk-1.platform.sh"
       PLATFORM_PROJECT: "6gl4nbwlja4u4"
+      PLATFORMSH_CLI_NO_INTERACTION: 1
       CPPFLAGS: "-DPNG_ARM_NEON_OPT=0"
       NODE_VERSION: 14.21.3
     steps:
