@@ -6,7 +6,7 @@ dependencies:
     - facets.facet.publication_date
   module:
     - facets
-    - google_tag
+    - system
   theme:
     - pbni_theme
 id: pbni_theme_news_date
@@ -23,9 +23,7 @@ settings:
   context_mapping: {  }
   block_id: pbni_theme_news_date
 visibility:
-  response_code:
-    id: response_code
+  request_path:
+    id: request_path
     negate: false
-    response_codes: |-
-      /news
-      /news/date/*
+    pages: "/news\r\n/news/date/*"
