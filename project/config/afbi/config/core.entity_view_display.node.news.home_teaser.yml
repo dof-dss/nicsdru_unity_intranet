@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.news.field_photo
     - field.field.node.news.field_published_date
     - field.field.node.news.field_teaser
+    - image.style.unity_3_col_desktop_retina
     - node.type.news
   module:
     - image
@@ -23,16 +24,11 @@ content:
     label: hidden
     settings:
       image_link: content
-      image_style: page_image_3col
+      image_style: unity_3_col_desktop_retina
       image_loading:
         attribute: lazy
     third_party_settings: {  }
     weight: 0
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
     region: content
 hidden:
   body: true
@@ -40,3 +36,4 @@ hidden:
   field_published_date: true
   field_teaser: true
   langcode: true
+  links: true

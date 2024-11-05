@@ -1,0 +1,11 @@
+uuid: 59130550-a9cd-467b-ade4-016405af897c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.afbi_information
+id: node.afbi_information
+target_entity_type_id: node
+target_bundle: afbi_information
+default_langcode: site_default
+language_alterable: false
