@@ -1,8 +1,9 @@
-uuid: de6b80e3-4e4c-4550-a160-82d2e871eea2
+uuid: 0c13009a-583e-4f2d-a75c-9722a063af5f
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.search_index
     - field.field.node.resources.body
     - field.field.node.resources.field_attachment
     - field.field.node.resources.field_external_url
@@ -12,42 +13,17 @@ dependencies:
     - node.type.resources
   module:
     - datetime
-    - link
-    - text
+    - layout_builder
     - user
-id: node.resources.default
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.resources.search_index
 targetEntityType: node
 bundle: resources
-mode: default
+mode: search_index
 content:
-  body:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_attachment:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_external_url:
-    type: link
-    label: hidden
-    settings:
-      trim_length: null
-      url_only: false
-      url_plain: false
-      rel: '0'
-      target: '0'
-    third_party_settings: {  }
-    weight: 3
-    region: content
   field_published_date:
     type: datetime_default
     label: hidden
@@ -58,7 +34,10 @@ content:
     weight: 0
     region: content
 hidden:
+  body: true
   content_moderation_control: true
+  field_attachment: true
+  field_external_url: true
   field_meta_tags: true
   field_type: true
   langcode: true

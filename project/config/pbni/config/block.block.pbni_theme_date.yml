@@ -1,0 +1,29 @@
+uuid: 9f3878a2-942d-4c58-b88b-e80ba5c85836
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.document_date
+  module:
+    - facets
+    - system
+  theme:
+    - pbni_theme
+id: pbni_theme_date
+theme: pbni_theme
+region: search_facets
+weight: -2
+provider: null
+plugin: 'facet_block:document_date'
+settings:
+  id: 'facet_block:document_date'
+  label: Date
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: pbni_theme_date
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/resources\r\n/resources/date/*\r\n/resources/type/*\r\n"

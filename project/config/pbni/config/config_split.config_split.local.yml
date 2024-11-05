@@ -18,6 +18,7 @@ module:
   migrate_plus: 0
   migrate_tools: 0
   migrate_upgrade: 0
+  pbni_migrations: 0
   unity_file_migrations: 0
   update: 0
   views_ui: 0

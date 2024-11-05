@@ -6,7 +6,7 @@ id: production
 label: production
 description: ''
 weight: 0
-folder: ../project/config/pbn/production
+folder: ../project/config/pbni/production
 module: {  }
 theme: {  }
 blacklist: {  }
