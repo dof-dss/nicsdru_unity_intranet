@@ -1,0 +1,17 @@
+uuid: 4439c97f-c8e4-42d2-aa92-592c1138f41f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Publication
+type: publication
+description: 'Use this content type for generic non-HTML content such as PDF documents.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

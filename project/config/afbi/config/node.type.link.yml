@@ -1,0 +1,16 @@
+uuid: 569581a1-54c3-4587-9a03-80276141cb4d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main:'
+name: Link
+type: link
+description: 'Use this content type to create links for Applications'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

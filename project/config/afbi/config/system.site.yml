@@ -3,7 +3,7 @@ _core:
 langcode: en
 uuid: 034ac0ec-9dda-44d8-9d4b-0ad3cb726ac2
 name: 'AFBI Intranet'
-mail: contact@afbi.intranet.nigov.net
+mail: test@afbini.gov.uk
 slogan: ''
 page:
   403: ''

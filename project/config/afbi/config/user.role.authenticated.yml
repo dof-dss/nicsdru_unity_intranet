@@ -4,21 +4,37 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
-    - filter.format.webform_default
+    - filter.format.filtered_html
+    - filter.format.filtered_html_with_no_images
+    - node.type.news
+    - node.type.page
   module:
-    - eu_cookie_compliance
     - filter
-    - media
+    - node
+    - path
+    - pathauto
     - system
 _core:
   default_config_hash: Ff0Y8IxrFn0hb5D-Y6VCG31b-aGmN892WRowTmwPaLg
 id: authenticated
-label: 'Authenticated user'
-weight: -9
+label: 'authenticated user'
+weight: 1
 is_admin: false
 permissions:
+  - 'access administration pages'
   - 'access content'
-  - 'display eu cookie compliance popup'
+  - 'create news content'
+  - 'create page content'
+  - 'create url aliases'
+  - 'delete own news content'
+  - 'delete own page content'
+  - 'edit any news content'
+  - 'edit any page content'
+  - 'edit own news content'
+  - 'edit own page content'
+  - 'notify of path changes'
   - 'use text format basic_html'
-  - 'use text format webform_default'
-  - 'view media'
+  - 'use text format filtered_html'
+  - 'use text format filtered_html_with_no_images'
+  - 'view own unpublished content'
+  - 'view the administration theme'
