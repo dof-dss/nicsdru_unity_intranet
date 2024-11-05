@@ -1,0 +1,99 @@
+uuid: ee71343f-6ec4-41aa-b531-2efb61719024
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.afbi_information.field_featured_image
+    - field.field.node.afbi_information.field_photo
+    - node.type.afbi_information
+  module:
+    - file
+    - path
+id: node.afbi_information.default
+targetEntityType: node
+bundle: afbi_information
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_featured_image:
+    type: file_generic
+    weight: 43
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_photo:
+    type: file_generic
+    weight: 42
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  flag:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

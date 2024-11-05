@@ -1,0 +1,29 @@
+uuid: 033629bf-ba99-4fc6-9e4a-1a67b040eac9
+langcode: en
+status: true
+dependencies:
+  module:
+    - token_filter
+name: 'Filtered HTML with tokens'
+format: filtered_html_with_tokens
+weight: 0
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: -46
+    settings: {  }
+  filter_null:
+    id: filter_null
+    provider: filter
+    status: true
+    weight: -45
+    settings: {  }
+  token_filter:
+    id: token_filter
+    provider: token_filter
+    status: true
+    weight: -42
+    settings:
+      replace_empty: false
