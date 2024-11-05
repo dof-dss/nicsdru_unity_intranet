@@ -1,0 +1,25 @@
+uuid: 99c9d181-460f-4582-8445-ea2e4478cba7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.feed_item.field_feed_item_description
+    - field.field.node.feed_item.field_feed_pubdate
+    - node.type.feed_item
+  module:
+    - user
+id: node.feed_item.rss
+targetEntityType: node
+bundle: feed_item
+mode: rss
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_feed_item_description: true
+  field_feed_pubdate: true
+  langcode: true

@@ -1,0 +1,11 @@
+uuid: cb85bddf-f15f-4745-bf59-d6d434592962
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.corporate_news
+label: corporate_news
+description: ''
+targetEntityType: node
+cache: true

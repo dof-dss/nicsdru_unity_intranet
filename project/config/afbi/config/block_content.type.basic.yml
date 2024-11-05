@@ -1,0 +1,8 @@
+uuid: 61a3e48a-9f8c-4957-85fa-be88de44e9e3
+langcode: en
+status: true
+dependencies: {  }
+id: basic
+label: Basic
+revision: false
+description: null

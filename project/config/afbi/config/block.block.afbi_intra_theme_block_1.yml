@@ -1,0 +1,25 @@
+uuid: 5d7533ac-8804-4597-b447-46c0ecd8eaef
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4cdd7f47-e042-476e-ab17-efda212d3c8f'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: afbi_intra_theme_block_1
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:4cdd7f47-e042-476e-ab17-efda212d3c8f'
+settings:
+  id: 'block_content:4cdd7f47-e042-476e-ab17-efda212d3c8f'
+  label: '<none>'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

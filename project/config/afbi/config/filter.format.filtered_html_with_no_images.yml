@@ -1,0 +1,20 @@
+uuid: 748a18af-793d-43df-9f9c-0e224380681f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Filtered HTML with no images'
+format: filtered_html_with_no_images
+weight: 0
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_null:
+    id: filter_null
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }

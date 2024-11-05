@@ -1,0 +1,9 @@
+uuid: 41e02acc-a053-401f-8778-f1853f439011
+langcode: en
+status: true
+dependencies: {  }
+name: 'News categories'
+vid: site_structure
+description: 'Enables news items to be structured into areas of work'
+weight: 0
+new_revision: false
