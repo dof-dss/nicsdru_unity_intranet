@@ -1,0 +1,8 @@
+uuid: 1415f936-a0b8-4213-a362-cc2abe618942
+langcode: en
+status: true
+dependencies: {  }
+id: menu-footer-links
+label: 'footer links'
+description: 'Creates a menu of links in the middle column of the footer'
+locked: false

@@ -1,4 +1,4 @@
-uuid: b5fd032f-6404-4a35-bf92-735cfebcf4db
+uuid: 36fbc26f-890a-4d6f-af1f-2c847c1bf04c
 langcode: en
 status: true
 dependencies:
@@ -6,10 +6,8 @@ dependencies:
     - user.role.supervisor_user
   module:
     - user
-_core:
-  default_config_hash: _dk6bZ-o-iAP9zGQs_4DztneFj-IOP1NfrcjthEQnSE
 id: user_remove_role_action.supervisor_user
-label: 'Remove the supervisor user role from the selected user(s)'
+label: 'Remove the supervisor_user role from the selected user(s)'
 type: user
 plugin: user_remove_role_action
 configuration:

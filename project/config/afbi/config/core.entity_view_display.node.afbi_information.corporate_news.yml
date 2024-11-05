@@ -1,0 +1,36 @@
+uuid: 9334ad98-c8c8-4ce6-9a05-15bff1d59597
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.corporate_news
+    - field.field.node.afbi_information.field_featured_image
+    - field.field.node.afbi_information.field_photo
+    - node.type.afbi_information
+  module:
+    - image
+    - user
+id: node.afbi_information.corporate_news
+targetEntityType: node
+bundle: afbi_information
+mode: corporate_news
+content:
+  field_photo:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: page_image_3col
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_featured_image: true
+  langcode: true

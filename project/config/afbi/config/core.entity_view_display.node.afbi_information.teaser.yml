@@ -1,0 +1,25 @@
+uuid: fcf62c64-2c43-4d99-908d-dbcb0c195173
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.afbi_information.field_featured_image
+    - field.field.node.afbi_information.field_photo
+    - node.type.afbi_information
+  module:
+    - user
+id: node.afbi_information.teaser
+targetEntityType: node
+bundle: afbi_information
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_featured_image: true
+  field_photo: true
+  langcode: true

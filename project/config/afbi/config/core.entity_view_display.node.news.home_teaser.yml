@@ -1,0 +1,39 @@
+uuid: 9ab3b63b-d2e5-413e-b91c-c861aa174e5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.home_teaser
+    - field.field.node.news.body
+    - field.field.node.news.field_news_type
+    - field.field.node.news.field_photo
+    - field.field.node.news.field_published_date
+    - field.field.node.news.field_teaser
+    - image.style.unity_3_col_desktop_retina
+    - node.type.news
+  module:
+    - image
+    - user
+id: node.news.home_teaser
+targetEntityType: node
+bundle: news
+mode: home_teaser
+content:
+  field_photo:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: unity_3_col_desktop_retina
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_news_type: true
+  field_published_date: true
+  field_teaser: true
+  langcode: true
+  links: true

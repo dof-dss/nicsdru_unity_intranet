@@ -2,14 +2,85 @@ uuid: a8ed9edb-850a-4731-b407-de3f04879d60
 langcode: en
 status: true
 dependencies:
+  config:
+    - media.type.audio
+    - media.type.document
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
+    - node.type.basic_page
+    - node.type.board_member
+    - node.type.news
+    - node.type.resources
+    - workflows.workflow.nics_editorial_workflow
   module:
+    - content_moderation
+    - media
+    - media_file_delete
+    - menu_admin_per_menu
+    - moderation_sidebar
+    - node
+    - path
     - system
+    - toolbar
 _core:
   default_config_hash: 5C31b4Vwl4Jf5GP87kQetWI35E9W6rqJUsTl4v2D4xw
 id: author_user
 label: 'author user'
-weight: 2
+weight: -8
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'administer main menu items'
+  - 'administer media file delete'
+  - 'create audio media'
+  - 'create basic_page content'
+  - 'create board_member content'
+  - 'create document media'
+  - 'create file media'
+  - 'create image media'
+  - 'create news content'
+  - 'create remote_video media'
+  - 'create resources content'
+  - 'create url aliases'
+  - 'delete own audio media'
+  - 'delete own basic_page content'
+  - 'delete own board_member content'
+  - 'delete own document media'
+  - 'delete own file media'
+  - 'delete own image media'
+  - 'delete own news content'
+  - 'delete own remote_video media'
+  - 'delete own resources content'
+  - 'edit any basic_page content'
+  - 'edit any board_member content'
+  - 'edit any news content'
+  - 'edit any resources content'
+  - 'edit own audio media'
+  - 'edit own basic_page content'
+  - 'edit own board_member content'
+  - 'edit own document media'
+  - 'edit own file media'
+  - 'edit own image media'
+  - 'edit own news content'
+  - 'edit own remote_video media'
+  - 'edit own resources content'
+  - 'revert basic_page revisions'
+  - 'revert board_member revisions'
+  - 'revert news revisions'
+  - 'revert resources revisions'
+  - 'use moderation sidebar'
+  - 'use nics_editorial_workflow transition create_new_draft'
+  - 'use nics_editorial_workflow transition draft_of_published'
+  - 'use nics_editorial_workflow transition reject'
+  - 'use nics_editorial_workflow transition submit_for_review'
+  - 'use nics_editorial_workflow transition unpublish'
+  - 'view any unpublished content'
+  - 'view basic_page revisions'
+  - 'view board_member revisions'
+  - 'view latest version'
+  - 'view news revisions'
+  - 'view resources revisions'
   - 'view the administration theme'
