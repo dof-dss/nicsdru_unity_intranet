@@ -1,0 +1,22 @@
+uuid: 95c5310c-efe7-4d2e-a3c5-6deaa7a7f078
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.afbi_information
+id: node.afbi_information.promote
+field_name: promote
+entity_type: node
+bundle: afbi_information
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
