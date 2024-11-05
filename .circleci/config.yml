@@ -6,6 +6,7 @@ default_docker_image: &docker_image
     - image: thecodingmachine/php:8.1-v4-apache
       environment:
         PLATFORM_REGION: "uk-1.platform.sh"
+        PLATFORM_PROJECT: "6gl4nbwlja4u4"
         PROJECT_ROOT: "/home/docker/project"
         PHP_EXTENSION_GD: 1
         PHP_EXTENSIONS: "gd"
@@ -149,6 +150,7 @@ jobs:
       GIT_AUTHOR_NAME: "Circle CI"
       EDGE_BUILD_BRANCH: "edge"
       PLATFORM_REGION: "uk-1.platform.sh"
+      PLATFORM_PROJECT: "6gl4nbwlja4u4"
       CPPFLAGS: "-DPNG_ARM_NEON_OPT=0"
       NODE_VERSION: 14.21.3
     steps:
