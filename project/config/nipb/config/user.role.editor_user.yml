@@ -1,4 +1,4 @@
-uuid: 859f53bc-7848-4373-9bd7-498905536970
+uuid: 7404d42d-349c-4b5a-b2f6-910be5bf0916
 langcode: en
 status: true
 dependencies:
@@ -9,14 +9,13 @@ dependencies:
     - node
     - redirect
     - system
-_core:
-  default_config_hash: TI9T1OpRZu2s9XuQcXbfHl_QQPkQy1UOWjUK8Akrdyk
-id: supervisor_user
-label: 'supervisor user'
-weight: 3
+id: editor_user
+label: 'editor user'
+weight: 5
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'administer nodes'
   - 'administer redirects'
   - 'create gallery content'
   - 'create link content'

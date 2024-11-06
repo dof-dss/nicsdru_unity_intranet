@@ -1,0 +1,21 @@
+uuid: b15d772b-15d5-4381-864a-2f2ed05fa1ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_feed_pubdate
+    - node.type.feed_item
+  module:
+    - datetime
+id: node.feed_item.field_feed_pubdate
+field_name: field_feed_pubdate
+entity_type: node
+bundle: feed_item
+label: 'Feed item publication date'
+description: 'The publication date for the feed item.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

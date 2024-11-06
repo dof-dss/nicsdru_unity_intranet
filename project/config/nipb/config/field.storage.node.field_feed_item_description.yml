@@ -1,14 +1,12 @@
-uuid: d9d8e826-ec73-4c21-bdb7-4889f6875c5e
+uuid: b735754b-1693-4237-9f26-8062d2867512
 langcode: und
 status: true
 dependencies:
   module:
     - node
     - text
-_core:
-  default_config_hash: EBUo7qOWqaiZaQ_RC9sLY5IoDKphS34v77VIHSACmVY
-id: node.body
-field_name: body
+id: node.field_feed_item_description
+field_name: field_feed_item_description
 entity_type: node
 type: text_with_summary
 settings: {  }
@@ -17,5 +15,5 @@ locked: false
 cardinality: 1
 translatable: true
 indexes: {  }
-persist_with_no_fields: true
+persist_with_no_fields: false
 custom_storage: false

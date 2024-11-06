@@ -1,0 +1,16 @@
+uuid: ea6b9250-c100-48c8-a24a-1d7ceecd3db7
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main:'
+name: Link
+type: link
+description: 'Use this content type to create links which can be featured on the homepage.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false
