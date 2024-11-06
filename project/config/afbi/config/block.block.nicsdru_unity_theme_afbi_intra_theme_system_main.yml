@@ -1,0 +1,22 @@
+uuid: acd15719-9a24-4a35-97e9-ad9233177305
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nicsdru_unity_theme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: nicsdru_unity_theme_afbi_intra_theme_system_main
+theme: nicsdru_unity_theme
+region: content
+weight: -16
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  label_display: '0'
+  provider: system
+visibility: {  }
