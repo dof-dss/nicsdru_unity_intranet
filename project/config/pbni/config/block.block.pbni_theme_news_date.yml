@@ -1,0 +1,29 @@
+uuid: a1f28c50-41b5-4594-b61d-ba282666c39c
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.publication_date
+  module:
+    - facets
+    - system
+  theme:
+    - pbni_theme
+id: pbni_theme_news_date
+theme: pbni_theme
+region: search_facets
+weight: -1
+provider: null
+plugin: 'facet_block:publication_date'
+settings:
+  id: 'facet_block:publication_date'
+  label: Date
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: pbni_theme_news_date
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/news\r\n/news/date/*"

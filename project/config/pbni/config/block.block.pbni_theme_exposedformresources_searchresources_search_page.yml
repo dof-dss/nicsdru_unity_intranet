@@ -1,0 +1,28 @@
+uuid: 721810aa-2b71-414e-bcd3-91d0a35580d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.resources_search
+  module:
+    - system
+    - views
+  theme:
+    - pbni_theme
+id: pbni_theme_exposedformresources_searchresources_search_page
+theme: pbni_theme
+region: search_facets
+weight: -3
+provider: null
+plugin: 'views_exposed_filter_block:resources_search-resources_search_page'
+settings:
+  id: 'views_exposed_filter_block:resources_search-resources_search_page'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/resources\r\n/resources/date/*\r\n/resources/type/*"

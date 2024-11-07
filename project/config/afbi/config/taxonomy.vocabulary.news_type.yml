@@ -1,0 +1,9 @@
+uuid: 400c6924-b1dc-4f68-9cfb-0a600c1ea134
+langcode: en
+status: true
+dependencies: {  }
+name: 'News type'
+vid: news_type
+description: 'Enables news items to be structured into areas of work'
+weight: 0
+new_revision: false

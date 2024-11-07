@@ -1,0 +1,22 @@
+uuid: b33a991c-6761-41b2-942f-82bb558179e2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - afbi_theme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: afbi_theme_afbi_intra_theme_system_main
+theme: afbi_theme
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  label_display: '0'
+  provider: system
+visibility: {  }

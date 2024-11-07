@@ -1,0 +1,43 @@
+uuid: 8e97c15e-fccc-4c5b-8a16-7af8f40db8cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.news.body
+    - field.field.node.news.field_meta_tags
+    - field.field.node.news.field_photo
+    - field.field.node.news.field_published_date
+    - field.field.node.news.field_teaser
+    - node.type.news
+  module:
+    - datetime
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.news.search_index
+targetEntityType: node
+bundle: news
+mode: search_index
+content:
+  field_published_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: unity_format
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  content_moderation_control: true
+  field_meta_tags: true
+  field_photo: true
+  field_teaser: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

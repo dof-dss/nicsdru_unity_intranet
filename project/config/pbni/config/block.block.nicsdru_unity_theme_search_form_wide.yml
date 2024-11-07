@@ -1,0 +1,23 @@
+uuid: fac8280a-66f5-4b29-a445-01626343c0a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - nicsdru_unity_theme
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: nicsdru_unity_theme_search_form_wide
+theme: nicsdru_unity_theme
+region: header
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

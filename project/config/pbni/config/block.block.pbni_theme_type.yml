@@ -1,0 +1,29 @@
+uuid: 7ae1edcc-76fd-42e0-bf02-df86794933b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.resources_type
+  module:
+    - facets
+    - system
+  theme:
+    - pbni_theme
+id: pbni_theme_type
+theme: pbni_theme
+region: search_facets
+weight: 0
+provider: null
+plugin: 'facet_block:resources_type'
+settings:
+  id: 'facet_block:resources_type'
+  label: Type
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: pbni_theme_type
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/resources\r\n/resources/date/*\r\n/resources/type/*"

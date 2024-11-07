@@ -1,0 +1,25 @@
+uuid: ca1ce23a-93e3-44ec-81ec-ee29740a9288
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-footer-links
+  module:
+    - system
+  theme:
+    - nicsdru_unity_theme
+id: nicsdru_unity_theme_afbi_intra_theme_menu_menu_footer_links
+theme: nicsdru_unity_theme
+region: content
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-footer-links'
+settings:
+  id: broken
+  label: '<none>'
+  label_display: '0'
+  provider: core
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

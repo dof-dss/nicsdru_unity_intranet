@@ -1,0 +1,29 @@
+uuid: a64cbf3f-5453-4f9d-94f3-3f3b12dcc0ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - origins_toc
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  origins_toc:
+    toc_enable: 0
+    toc_title: 'Table of contents'
+    toc_location: ''
+    toc_insert: after
+    toc_source_container: ''
+    toc_element: h2
+    toc_exclusions: ''
+    toc_screen_depth: '1'
+    toc_debug: 0
+name: 'Feed item'
+type: feed_item
+description: 'This content type is being used for automatically aggregated content from feeds.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: true

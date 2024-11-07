@@ -1,0 +1,22 @@
+uuid: 76be827f-4285-4019-afbe-769073548426
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - olivero
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: afbi_intra_theme_system_main
+theme: olivero
+region: content
+weight: -16
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  label_display: '0'
+  provider: system
+visibility: {  }
