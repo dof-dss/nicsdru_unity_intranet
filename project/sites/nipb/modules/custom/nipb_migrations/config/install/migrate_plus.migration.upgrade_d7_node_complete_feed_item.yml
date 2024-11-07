@@ -80,7 +80,18 @@ process:
     -
       plugin: get
       source: field_feed_item_description
-  field_feed_pubdate:
+  field_feed_item_description/0/format:
+    -
+      plugin: static_map
+      bypass: true
+      source: field_feed_item_description/0/format
+      map:
+        filtered_html: basic_html
+        filtered_html_with_no_images: basic_html
+        filtered_html_with_tokens: basic_html
+        restricted_html: basic_html
+        plain_text: plain_text
+  field_publication_date:
     -
       plugin: sub_process
       source: field_feed_pubdate
@@ -88,7 +99,7 @@ process:
         value:
           plugin: format_date
           from_format: 'Y-m-d H:i:s'
-          to_format: 'Y-m-d\TH:i:s'
+          to_format: 'Y-m-d'
           source: value
   field_metatag:
     -

@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.gallery.field_gallery_images
     - node.type.gallery
   module:
+    - image
     - text
     - user
 id: node.gallery.default
@@ -19,14 +20,20 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 0
     region: content
-  links:
-    settings: {  }
+  field_gallery_images:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
-  field_gallery_images: true
   langcode: true
+  links: true
   search_api_excerpt: true

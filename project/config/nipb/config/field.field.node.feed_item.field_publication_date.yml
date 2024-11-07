@@ -1,18 +1,18 @@
-uuid: b15d772b-15d5-4381-864a-2f2ed05fa1ac
+uuid: 64a42fc0-3504-4dba-9471-6f414f5f4595
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_feed_pubdate
+    - field.storage.node.field_publication_date
     - node.type.feed_item
   module:
     - datetime
-id: node.feed_item.field_feed_pubdate
-field_name: field_feed_pubdate
+id: node.feed_item.field_publication_date
+field_name: field_publication_date
 entity_type: node
 bundle: feed_item
-label: 'Feed item publication date'
-description: 'The publication date for the feed item.'
+label: 'Publication Date'
+description: ''
 required: false
 translatable: false
 default_value: {  }
