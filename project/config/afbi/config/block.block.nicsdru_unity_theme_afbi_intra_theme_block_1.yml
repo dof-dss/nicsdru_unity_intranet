@@ -1,0 +1,21 @@
+uuid: ccd4175f-8413-4cb7-8715-2429add24d18
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nicsdru_unity_theme
+id: nicsdru_unity_theme_afbi_intra_theme_block_1
+theme: nicsdru_unity_theme
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:4cdd7f47-e042-476e-ab17-efda212d3c8f'
+settings:
+  id: 'block_content:4cdd7f47-e042-476e-ab17-efda212d3c8f'
+  label: '<none>'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
