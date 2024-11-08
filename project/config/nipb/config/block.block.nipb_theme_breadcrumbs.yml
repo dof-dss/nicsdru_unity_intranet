@@ -1,0 +1,22 @@
+uuid: 857a0f42-bb0d-4d18-8cf2-d95d9d1fb753
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nipb_theme
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: nipb_theme_breadcrumbs
+theme: nipb_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

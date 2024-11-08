@@ -1,0 +1,20 @@
+uuid: a5b6cf65-b0a5-43b9-a92c-fe9b48f8c9b1
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nipb_theme
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: nipb_theme_page_title
+theme: nipb_theme
+region: header
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

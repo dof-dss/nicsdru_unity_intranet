@@ -1,0 +1,22 @@
+uuid: c5ae76fc-3713-471c-9abe-86328a6de465
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nipb_theme
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: nipb_theme_powered
+theme: nipb_theme
+region: header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: cec274d1-d692-4ffa-8288-1ad51b5c3816
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nipb_theme
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: nipb_theme_primary_local_tasks
+theme: nipb_theme
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

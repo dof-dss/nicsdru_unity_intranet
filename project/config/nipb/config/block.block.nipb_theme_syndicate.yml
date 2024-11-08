@@ -1,0 +1,23 @@
+uuid: 6d49b4e4-7beb-473a-97f9-8c59a4a9cf3c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - nipb_theme
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: nipb_theme_syndicate
+theme: nipb_theme
+region: header
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }
