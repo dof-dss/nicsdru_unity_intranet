@@ -1,0 +1,13 @@
+uuid: ae22a670-6beb-465d-a0ff-c269d8178819
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: sHN63mMNMVljrUfS_4xXs9UysTXv29KmVoTlSNmQIE4
+id: media.landscape_float
+label: 'Landscape float'
+description: ''
+targetEntityType: media
+cache: true

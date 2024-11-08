@@ -1,0 +1,15 @@
+uuid: d63f95cd-e574-49ca-94de-069be134316d
+langcode: en
+status: true
+dependencies: {  }
+id: hosted
+label: Hosted
+description: ''
+weight: 0
+folder: ../project/config/nipb/hosted
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

@@ -1,0 +1,31 @@
+uuid: 859f53bc-7848-4373-9bd7-498905536970
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gallery
+    - node.type.link
+  module:
+    - node
+    - redirect
+    - system
+_core:
+  default_config_hash: TI9T1OpRZu2s9XuQcXbfHl_QQPkQy1UOWjUK8Akrdyk
+id: supervisor_user
+label: 'supervisor user'
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'administer redirects'
+  - 'create gallery content'
+  - 'create link content'
+  - 'delete any gallery content'
+  - 'delete any link content'
+  - 'delete own gallery content'
+  - 'delete own link content'
+  - 'edit any gallery content'
+  - 'edit any link content'
+  - 'edit own gallery content'
+  - 'edit own link content'
+  - 'view the administration theme'
