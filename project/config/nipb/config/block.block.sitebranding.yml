@@ -1,4 +1,4 @@
-uuid: 3dfa2954-4873-428d-a31f-23691fdeb6c5
+uuid: 202523da-e390-41da-b592-80814af8f335
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,7 @@ dependencies:
     - system
   theme:
     - nipb_theme
-_core:
-  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
-id: nipb_theme_site_branding
+id: sitebranding
 theme: nipb_theme
 region: header
 weight: 0

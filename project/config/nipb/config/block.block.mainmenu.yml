@@ -1,4 +1,4 @@
-uuid: a196d794-d65c-41cd-b430-45e890a44cb6
+uuid: 1e42c1f5-f7b4-4f83-8d55-9ddd901d6b94
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,7 @@ dependencies:
     - system
   theme:
     - nipb_theme
-_core:
-  default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
-id: nipb_theme_main_menu
+id: mainmenu
 theme: nipb_theme
 region: primary_menu
 weight: 0
@@ -18,7 +16,7 @@ provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
-  label: 'Main navigation'
+  label: 'Main menu'
   label_display: '0'
   provider: system
   level: 1
