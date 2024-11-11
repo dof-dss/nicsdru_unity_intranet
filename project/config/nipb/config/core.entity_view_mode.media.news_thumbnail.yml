@@ -1,0 +1,13 @@
+uuid: 30e7a204-ec58-4792-853d-b7aecaa1e838
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: Sx89fViRRoxdzGOjBP9soV1PX2WZHVECSw-QNYqg4Z0
+id: media.news_thumbnail
+label: 'News thumbnail'
+description: ''
+targetEntityType: media
+cache: true

@@ -1,0 +1,35 @@
+uuid: 30a920fc-3150-44fd-9840-d4a20f0c1669
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.basic_page.body
+    - field.field.node.basic_page.field_meta_tags
+    - node.type.basic_page
+  module:
+    - metatag
+    - text
+    - user
+id: node.basic_page.default
+targetEntityType: node
+bundle: basic_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  links: true
+  search_api_excerpt: true

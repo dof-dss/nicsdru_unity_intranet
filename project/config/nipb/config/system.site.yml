@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: 6SRqhVdje-gEz9pzyMu3GhH-kMazpJ5CUm2GbngChdA
+langcode: en
+name: 'NI Policing Board Intranet'
+mail: test@test.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+frontpage_title: 'Welcome to PPS site'
+uuid: fff7f46f-347d-4f21-ba80-6bbba3b04125

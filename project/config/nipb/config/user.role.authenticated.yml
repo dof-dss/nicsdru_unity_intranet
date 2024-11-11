@@ -1,0 +1,22 @@
+uuid: d1b8d146-7f3c-46f7-902e-7e1c604ba54e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - path
+    - pathauto
+    - system
+_core:
+  default_config_hash: Ff0Y8IxrFn0hb5D-Y6VCG31b-aGmN892WRowTmwPaLg
+id: authenticated
+label: 'authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'create url aliases'
+  - 'notify of path changes'
+  - 'view own unpublished content'
+  - 'view the administration theme'
