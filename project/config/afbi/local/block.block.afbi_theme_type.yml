@@ -1,0 +1,29 @@
+uuid: 3a567cd0-7bb7-4e43-8487-12146907f5f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.type
+  module:
+    - facets
+    - system
+  theme:
+    - afbi_theme
+id: afbi_theme_type
+theme: afbi_theme
+region: search_facets
+weight: -2
+provider: null
+plugin: 'facet_block:type'
+settings:
+  id: 'facet_block:type'
+  label: Type
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: afbi_theme_type
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/news\r\n/news/date/*\r\n/news/type/*"
