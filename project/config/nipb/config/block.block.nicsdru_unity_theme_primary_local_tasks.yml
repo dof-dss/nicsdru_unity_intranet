@@ -1,0 +1,22 @@
+uuid: 69aae297-1f58-420e-9d37-4e2f12c47022
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nicsdru_unity_theme
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: nicsdru_unity_theme_primary_local_tasks
+theme: nicsdru_unity_theme
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

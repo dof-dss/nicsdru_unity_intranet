@@ -1,0 +1,24 @@
+uuid: cbc002ca-92a2-48ae-940f-557f1a3674eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nipb_theme
+id: breadcrumbs
+theme: nipb_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'
