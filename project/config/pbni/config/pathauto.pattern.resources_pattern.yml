@@ -1,4 +1,4 @@
-uuid: 93e355a3-f8f8-4542-bb09-72e835f49939
+uuid: 4e9a4d43-b61a-41e7-82a6-c8e771270774
 langcode: en
 status: true
 dependencies:
@@ -9,10 +9,10 @@ label: 'Resources pattern'
 type: 'canonical_entities:node'
 pattern: 'resources/[node:title]'
 selection_criteria:
-  bfce4244-58aa-4658-a34c-564810b2256a:
+  6771f22e-0342-4bd6-adf6-7d6d9bdfc083:
     id: 'entity_bundle:node'
     negate: false
-    uuid: bfce4244-58aa-4658-a34c-564810b2256a
+    uuid: 6771f22e-0342-4bd6-adf6-7d6d9bdfc083
     context_mapping:
       node: node
     bundles:
