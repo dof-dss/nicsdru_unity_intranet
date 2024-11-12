@@ -1,0 +1,25 @@
+uuid: b1a72485-8f89-4c51-b8e2-c7498c4707db
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - unity_search_pages
+  theme:
+    - nipb_theme
+id: sitesearchblock
+theme: nipb_theme
+region: search
+weight: 0
+provider: null
+plugin: site_search_block
+settings:
+  id: site_search_block
+  label: 'Site search block'
+  label_display: '0'
+  provider: unity_search_pages
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/search*'
