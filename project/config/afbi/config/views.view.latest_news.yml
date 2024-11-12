@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.home_teaser
     - field.storage.node.field_published_date
     - node.type.news
   module:
@@ -284,7 +284,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: home_teaser
       defaults:
         style: false
         row: false
@@ -323,7 +323,20 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      defaults:
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        link_display: false
+        link_url: false
+        footer: false
       display_description: ''
+      use_more: true
+      use_more_always: true
+      use_more_text: 'More news ...'
+      link_display: custom_url
+      link_url: /news
+      footer: {  }
       display_extenders:
         metatag_display_extender:
           metatags: {  }
