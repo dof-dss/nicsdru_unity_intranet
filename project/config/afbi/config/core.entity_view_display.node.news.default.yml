@@ -24,7 +24,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_photo:
     type: image
@@ -35,30 +35,20 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_published_date:
     type: datetime_default
-    label: hidden
+    label: above
     settings:
       timezone_override: ''
-      format_type: long
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_teaser:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
+      format_type: unity_date
     third_party_settings: {  }
     weight: 0
     region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
-    region: content
 hidden:
   field_news_type: true
+  field_teaser: true
   langcode: true
+  links: true
+  search_api_excerpt: true

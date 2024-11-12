@@ -11,32 +11,18 @@ dependencies:
     - field.field.node.news.field_teaser
     - node.type.news
   module:
-    - image
     - user
 id: node.news.home_teaser
 targetEntityType: node
 bundle: news
 mode: home_teaser
-content:
-  field_photo:
-    type: image
-    label: hidden
-    settings:
-      image_link: content
-      image_style: page_image_3col
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
-    region: content
+content: {  }
 hidden:
   body: true
   field_news_type: true
+  field_photo: true
   field_published_date: true
   field_teaser: true
   langcode: true
+  links: true
+  search_api_excerpt: true

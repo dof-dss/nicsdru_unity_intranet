@@ -1,0 +1,23 @@
+uuid: d817ab72-8fdd-4b50-a807-cc951b473d5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.nigov_portrait_300_x1
+    - image.style.nigov_portrait_600_x2
+_core:
+  default_config_hash: HjS2woohcT1Ac59rjEXWjay5IhYsVDLSzxx_QjNp8uc
+id: portrait_float
+label: 'Portrait float'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - nigov_portrait_300_x1
+        - nigov_portrait_600_x2
+breakpoint_group: responsive_image
+fallback_image_style: nigov_portrait_300_x1
