@@ -1,0 +1,49 @@
+uuid: a81cb9f3-ee03-4198-8984-bc16f8ae21e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gallery
+    - node.type.link
+  module:
+    - block
+    - node
+    - path
+    - pathauto
+    - redirect
+    - system
+id: admin_user
+label: 'admin user'
+weight: 6
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access user profiles'
+  - 'administer actions'
+  - 'administer blocks'
+  - 'administer content types'
+  - 'administer modules'
+  - 'administer nodes'
+  - 'administer pathauto'
+  - 'administer permissions'
+  - 'administer redirects'
+  - 'administer site configuration'
+  - 'administer software updates'
+  - 'administer themes'
+  - 'administer url aliases'
+  - 'administer users'
+  - 'bypass node access'
+  - 'create gallery content'
+  - 'create link content'
+  - 'delete any gallery content'
+  - 'delete any link content'
+  - 'delete own gallery content'
+  - 'delete own link content'
+  - 'edit any gallery content'
+  - 'edit any link content'
+  - 'edit own gallery content'
+  - 'edit own link content'
+  - 'view the administration theme'

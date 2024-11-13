@@ -1,0 +1,21 @@
+uuid: 91c6c3c9-b8dc-4e5d-a38d-a214ec2ce6ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gallery
+  module:
+    - node
+    - system
+_core:
+  default_config_hash: 5C31b4Vwl4Jf5GP87kQetWI35E9W6rqJUsTl4v2D4xw
+id: author_user
+label: 'author user'
+weight: 2
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'create gallery content'
+  - 'edit any gallery content'
+  - 'edit own gallery content'
+  - 'view the administration theme'

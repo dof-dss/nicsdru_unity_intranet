@@ -21,7 +21,7 @@ mode: teaser
 content:
   field_photo:
     type: image
-    label: hidden
+    label: above
     settings:
       image_link: ''
       image_style: ''
@@ -52,3 +52,4 @@ hidden:
   field_news_type: true
   langcode: true
   links: true
+  search_api_excerpt: true

@@ -8,7 +8,15 @@ id: content_default
 label: 'Content - default'
 type: 'canonical_entities:node'
 pattern: '[node:title]'
-selection_criteria: {  }
+selection_criteria:
+  10a7de88-6c16-403c-a93b-b746c9b3b8b6:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 10a7de88-6c16-403c-a93b-b746c9b3b8b6
+    context_mapping:
+      node: node
+    bundles:
+      basic_page: basic_page
 selection_logic: and
 weight: -5
 relationships: {  }

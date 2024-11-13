@@ -1,0 +1,47 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_alter().
+ */
+function pbni_common_form_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  /** @var \Drupal\Core\Entity\EntityFormInterface $form_object */
+  $form_object = $form_state->getFormObject();
+  /** @var \Drupal\node\NodeInterface $node */
+  $node = $form_object->getEntity();
+
+  if ($node->bundle() === 'resources') {
+    $form['#validate'][] = 'pbni_common_validate_resources';
+  }
+}
+
+/**
+ * Form validation callback.
+ */
+function pbni_common_validate_resources(&$form, FormStateInterface $form_state) {
+  $values = $form_state->getValues();
+
+  // Validate file attachments and external links.
+  if (empty($values['field_attachment']["selection"][0]) && empty($values['field_external_url'][0]['uri'])) {
+    $form_state->setErrorByName('field_attachment', t('You must provide an attachment or external link'));
+    $form_state->setErrorByName('field_external_url', t('You must provide an attachment or external link'));
+  }
+
+  // Remove the last add more array from the list of external publications as this is just the add another item button.
+  $remove_last_element = array_pop($values['field_external_url']);
+
+  // If the parsed URL host has any reference to the current Judiciary site then add an error message.
+  foreach ($values['field_external_url'] as $value) {
+    if (!empty($value['uri'])) {
+      $ext_url = parse_url($value['uri']);
+      $ext_host = $ext_url['host'];
+
+      if (str_contains($ext_host, 'pbni.intranet.nigov.net')) {
+        // Set the error name to be used by using the _weight as the array position the error occurs in.
+        $error_name = 'field_external_url]' . '[' . $value['_weight'] . ']' . '[uri';
+        $form_state->setErrorByName($error_name, t('URL must not be to the PBNI website, use the attachment field for documents on the PBNI website.'));
+      }
+    }
+  }
+}
