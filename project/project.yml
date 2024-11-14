@@ -32,8 +32,8 @@ sites:
         cron_cmd: 'cd web/sites/afbi ; drush core-cron'
         database: afbi
         default: true
-    pbni:
-        name: pbni
+    pbniintranet:
+        name: 'PBNI Intranet'
         url: pbni.intranet.nigov.net
         solr: pbni
         www: false
@@ -53,7 +53,7 @@ sites:
         status: development
         default: false
     uregniintranet:
-        name: UregniIntranet
+        name: 'Uregni Intranet'
         url: uregni.intranet.nigov.net
         www: false
         cron_spec: '10 * * * *'
