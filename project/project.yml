@@ -54,7 +54,7 @@ sites:
         default: false
     uregniintranet:
         name: 'Uregni Intranet'
-        url: uregniintranet.intranet.nigov.net
+        url: uregni.intranet.nigov.net
         solr: uregniintranet
         www: false
         cron_spec: '10 * * * *'
