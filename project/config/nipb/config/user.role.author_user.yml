@@ -11,7 +11,7 @@ _core:
   default_config_hash: 5C31b4Vwl4Jf5GP87kQetWI35E9W6rqJUsTl4v2D4xw
 id: author_user
 label: 'author user'
-weight: 2
+weight: -8
 is_admin: null
 permissions:
   - 'access administration pages'

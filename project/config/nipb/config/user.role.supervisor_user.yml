@@ -13,7 +13,7 @@ _core:
   default_config_hash: TI9T1OpRZu2s9XuQcXbfHl_QQPkQy1UOWjUK8Akrdyk
 id: supervisor_user
 label: 'supervisor user'
-weight: 3
+weight: -7
 is_admin: null
 permissions:
   - 'access administration pages'

@@ -11,7 +11,7 @@ _core:
   default_config_hash: Ff0Y8IxrFn0hb5D-Y6VCG31b-aGmN892WRowTmwPaLg
 id: authenticated
 label: 'authenticated user'
-weight: 1
+weight: -9
 is_admin: false
 permissions:
   - 'access administration pages'
