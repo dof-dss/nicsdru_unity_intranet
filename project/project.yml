@@ -4,16 +4,6 @@ project_id: 6gl4nbwlja4u4
 project_disk_size: 51200
 db_disk_size: 22000
 sites:
-    uregni:
-        name: Uregni
-        url: uregni.intranet.nigov.net
-        solr: uregni
-        www: false
-        cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/uregni ; drush core-cron'
-        database: uregni
-        status: development
-        default: false
     pps:
         name: PPS
         url: pps.intranet.nigov.net
@@ -60,5 +50,14 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/nipb ; drush core-cron'
         database: nipb
+        status: development
+        default: false
+    uregniintranet:
+        name: UregniIntra
+        url: uregni.intranet.nigov.net
+        www: false
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/uregnintranet ; drush core-cron'
+        database: uregnintranet
         status: development
         default: false
