@@ -11,6 +11,5 @@ services:
             - './solr-cores/pps:/solr-pps-conf'
             - './solr-cores/niaomi:/solr-niaomi-conf'
             - './solr-cores/afbi:/solr-afbi-conf'
-            - './solr-cores/pbniintranet:/solr-pbniintranet-conf'
             - './solr-cores/nipb:/solr-nipb-conf'
-        entrypoint: 'bash -c "VERBOSE=yes docker-entrypoint.sh precreate-core pps /solr-pps-conf; precreate-core niaomi /solr-niaomi-conf; precreate-core afbi /solr-afbi-conf; precreate-core pbniintranet /solr-pbniintranet-conf; precreate-core nipb /solr-nipb-conf; exec solr -f"'
+        entrypoint: 'bash -c "VERBOSE=yes docker-entrypoint.sh precreate-core pps /solr-pps-conf; precreate-core niaomi /solr-niaomi-conf; precreate-core afbi /solr-afbi-conf; precreate-core nipb /solr-nipb-conf; exec solr -f"'

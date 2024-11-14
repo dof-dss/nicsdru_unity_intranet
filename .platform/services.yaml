@@ -13,9 +13,9 @@ db:
             - ppsdb
             - niaomidb
             - afbidb
-            - pbniintranetdb
             - nipbdb
             - uregniintranetdb
+            - pbniintranetdb
         endpoints:
             pps:
                 default_schema: ppsdb
@@ -29,10 +29,6 @@ db:
                 default_schema: afbidb
                 privileges:
                     afbidb: admin
-            pbniintranet:
-                default_schema: pbniintranetdb
-                privileges:
-                    pbniintranetdb: admin
             nipb:
                 default_schema: nipbdb
                 privileges:
@@ -41,6 +37,10 @@ db:
                 default_schema: uregniintranetdb
                 privileges:
                     uregniintranetdb: admin
+            pbniintranet:
+                default_schema: pbniintranetdb
+                privileges:
+                    pbniintranetdb: admin
 solr_8_11:
     type: 'solr:8.11'
     disk: 1024
@@ -52,8 +52,6 @@ solr_8_11:
                 conf_dir: !archive solr_config/
             afbi_index:
                 conf_dir: !archive solr_config/
-            pbniintranet_index:
-                conf_dir: !archive solr_config/
             nipb_index:
                 conf_dir: !archive solr_config/
         endpoints:
@@ -63,8 +61,6 @@ solr_8_11:
                 core: niaomi_index
             afbi:
                 core: afbi_index
-            pbniintranet:
-                core: pbniintranet_index
             nipb:
                 core: nipb_index
 redis:

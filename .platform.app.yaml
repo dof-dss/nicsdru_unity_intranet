@@ -60,7 +60,7 @@ hooks:
         export FASTLY_API_SERVICE=dummyservice
 
         # For each multi site - run db-updates and import config.
-        for site in pps niaomi afbi pbniintranet nipb uregniintranet
+        for site in pps niaomi afbi nipb uregniintranet pbniintranet
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -107,7 +107,7 @@ hooks:
         export FASTLY_API_SERVICE=$temp
 
         # For each multi site - clear cache (including Fastly cache)
-        for site in pps niaomi afbi pbniintranet nipb uregniintranet
+        for site in pps niaomi afbi nipb uregniintranet pbniintranet
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -162,11 +162,10 @@ relationships:
     niaomi_intranet_solr: 'solr_8_11:niaomi'
     afbi: 'db:afbi'
     afbi_intranet_solr: 'solr_8_11:afbi'
-    pbniintranet: 'db:pbni'
-    pbniintranet_intranet_solr: 'solr_8_11:pbni'
     nipb: 'db:nipb'
     nipb_intranet_solr: 'solr_8_11:nipb'
     uregniintranet: 'db:uregnintranet'
+    pbniintranet: 'db:pbniintranet'
 crons:
     pps:
         spec: '10 * * * *'
@@ -182,12 +181,12 @@ crons:
     afbi:
         spec: '10 * * * *'
         cmd: 'cd web/sites/afbi ; drush core-cron'
-    pbniintranet:
-        spec: '10 * * * *'
-        cmd: 'cd web/sites/pbni ; drush core-cron'
     nipb:
         spec: '10 * * * *'
         cmd: 'cd web/sites/nipb ; drush core-cron'
     uregniintranet:
         spec: '10 * * * *'
         cmd: 'cd web/sites/uregnintranet ; drush core-cron'
+    pbniintranet:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/pbniintranet ; drush core-cron'
