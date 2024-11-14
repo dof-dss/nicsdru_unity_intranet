@@ -25,12 +25,12 @@
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
-'https://uregni.intranet.nigov.net/':
+'https://pbni.intranet.nigov.net/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
-'https://pbniintranet.intranet.nigov.net/':
+'https://uregniintranet.intranet.nigov.net/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:

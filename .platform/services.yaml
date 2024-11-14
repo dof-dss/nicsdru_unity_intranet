@@ -14,8 +14,8 @@ db:
             - niaomidb
             - afbidb
             - nipbdb
-            - uregniintranetdb
             - pbniintranetdb
+            - uregniintranetdb
         endpoints:
             pps:
                 default_schema: ppsdb
@@ -33,14 +33,14 @@ db:
                 default_schema: nipbdb
                 privileges:
                     nipbdb: admin
-            uregniintranet:
-                default_schema: uregniintranetdb
-                privileges:
-                    uregniintranetdb: admin
             pbniintranet:
                 default_schema: pbniintranetdb
                 privileges:
                     pbniintranetdb: admin
+            uregniintranet:
+                default_schema: uregniintranetdb
+                privileges:
+                    uregniintranetdb: admin
 solr_8_11:
     type: 'solr:8.11'
     disk: 1024
@@ -54,6 +54,10 @@ solr_8_11:
                 conf_dir: !archive solr_config/
             nipb_index:
                 conf_dir: !archive solr_config/
+            pbniintranet_index:
+                conf_dir: !archive solr_config/
+            uregniintranet_index:
+                conf_dir: !archive solr_config/
         endpoints:
             pps:
                 core: pps_index
@@ -63,5 +67,9 @@ solr_8_11:
                 core: afbi_index
             nipb:
                 core: nipb_index
+            pbniintranet:
+                core: pbniintranet_index
+            uregniintranet:
+                core: uregniintranet_index
 redis:
     type: 'redis:6.0'

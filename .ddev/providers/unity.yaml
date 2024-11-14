@@ -21,8 +21,8 @@ db_pull_command:
         platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=niaomi --gzip --file=/var/www/html/.ddev/.downloads/db_niaomi.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
         platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=afbi --gzip --file=/var/www/html/.ddev/.downloads/db_afbi.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
         platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=nipb --gzip --file=/var/www/html/.ddev/.downloads/db_nipb.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
-        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=uregni --gzip --file=/var/www/html/.ddev/.downloads/db_uregniintranet.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
         platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=pbni --gzip --file=/var/www/html/.ddev/.downloads/db_pbniintranet.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=uregni --gzip --file=/var/www/html/.ddev/.downloads/db_uregniintranet.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
 db_import_command:
     command: |
         set -eu -o pipefail
@@ -31,8 +31,8 @@ db_import_command:
         gzip -dc .ddev/.downloads/db_niaomi.sql.gz | ddev import-db --database=niaomi --skip-hooks 
         gzip -dc .ddev/.downloads/db_afbi.sql.gz | ddev import-db --database=afbi --skip-hooks 
         gzip -dc .ddev/.downloads/db_nipb.sql.gz | ddev import-db --database=nipb --skip-hooks 
-        gzip -dc .ddev/.downloads/db_uregniintranet.sql.gz | ddev import-db --database=uregniintranet --skip-hooks 
         gzip -dc .ddev/.downloads/db_pbniintranet.sql.gz | ddev import-db --database=pbniintranet --skip-hooks 
+        gzip -dc .ddev/.downloads/db_uregniintranet.sql.gz | ddev import-db --database=uregniintranet --skip-hooks 
     service: host
 files_pull_command:
     command: |

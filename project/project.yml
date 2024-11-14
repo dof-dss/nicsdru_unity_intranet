@@ -42,21 +42,23 @@ sites:
         database: nipb
         status: development
         default: false
-    uregniintranet:
-        name: 'Uregni Intranet'
-        url: uregni.intranet.nigov.net
-        www: false
-        cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/uregnintranet ; drush core-cron'
-        database: uregnintranet
-        status: development
-        default: false
     pbniintranet:
         name: 'PBNI Intranet'
         url: pbni.intranet.nigov.net
+        solr: pbniintranet
         www: false
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/pbniintranet ; drush core-cron'
         database: pbniintranet
+        status: development
+        default: false
+    uregniintranet:
+        name: 'Uregni Intranet'
+        url: uregniintranet.intranet.nigov.net
+        solr: uregniintranet
+        www: false
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/uregniintranet ; drush core-cron'
+        database: uregniintranet
         status: development
         default: false
