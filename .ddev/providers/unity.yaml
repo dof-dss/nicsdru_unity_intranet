@@ -27,12 +27,12 @@ db_import_command:
     command: |
         set -eu -o pipefail
         # set -x                                      # You can enable bash debugging output by uncommenting.
-        gzip -dc .ddev/.downloads/db_pps.sql.gz | ddev import-db --database=pps --skip-hooks
-        gzip -dc .ddev/.downloads/db_niaomi.sql.gz | ddev import-db --database=niaomi --skip-hooks
-        gzip -dc .ddev/.downloads/db_afbi.sql.gz | ddev import-db --database=afbi --skip-hooks
-        gzip -dc .ddev/.downloads/db_pbni.sql.gz | ddev import-db --database=pbni --skip-hooks
-        gzip -dc .ddev/.downloads/db_nipb.sql.gz | ddev import-db --database=nipb --skip-hooks
-        gzip -dc .ddev/.downloads/db_uregniintranet.sql.gz | ddev import-db --database=uregniintranet --skip-hooks
+        gzip -dc .ddev/.downloads/db_pps.sql.gz | ddev import-db --database=pps --skip-hooks 
+        gzip -dc .ddev/.downloads/db_niaomi.sql.gz | ddev import-db --database=niaomi --skip-hooks 
+        gzip -dc .ddev/.downloads/db_afbi.sql.gz | ddev import-db --database=afbi --skip-hooks 
+        gzip -dc .ddev/.downloads/db_pbni.sql.gz | ddev import-db --database=pbni --skip-hooks 
+        gzip -dc .ddev/.downloads/db_nipb.sql.gz | ddev import-db --database=nipb --skip-hooks 
+        gzip -dc .ddev/.downloads/db_uregniintranet.sql.gz | ddev import-db --database=uregniintranet --skip-hooks 
     service: host
 files_pull_command:
     command: |

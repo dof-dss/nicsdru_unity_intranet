@@ -53,7 +53,7 @@ sites:
         status: development
         default: false
     uregniintranet:
-        name: UregniIntra
+        name: UregniIntranet
         url: uregni.intranet.nigov.net
         www: false
         cron_spec: '10 * * * *'
