@@ -1,0 +1,42 @@
+#############################################################################
+###                           --== IMPORTANT ==--                         ###
+#############################################################################
+# If you require changes to this file you must edit the file within the     #
+# original repository.Any changes here will be overwritten when the project #
+# is built.                                                                 #
+#############################################################################
+auth_command:
+    command: |
+        set -eu -o pipefail
+        if [ -z "${PLATFORMSH_CLI_TOKEN:-}" ]; then echo "Please make sure you have set PLATFORMSH_CLI_TOKEN." && exit 1; fi
+        if [ -z "${PLATFORM_PROJECT:-}" ]; then echo "Please make sure you have set PLATFORM_PROJECT." && exit 1; fi
+        if [ -z "${PLATFORM_ENVIRONMENT:-}" ]; then echo "Please make sure you have set PLATFORM_ENVIRONMENT." && exit 1; fi
+db_pull_command:
+    command: |
+        # set -x                                      # You can enable bash debugging output by uncommenting.
+        set -eu -o pipefail
+        export PLATFORMSH_CLI_NO_INTERACTION=1
+        ls /var/www/html/.ddev >/dev/null             # This just refreshes stale NFS if possible.
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=uregni --gzip --file=/var/www/html/.ddev/.downloads/db_uregni.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=pps --gzip --file=/var/www/html/.ddev/.downloads/db_pps.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=niaomi --gzip --file=/var/www/html/.ddev/.downloads/db_niaomi.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=afbi --gzip --file=/var/www/html/.ddev/.downloads/db_afbi.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=pbni --gzip --file=/var/www/html/.ddev/.downloads/db_pbni.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=nipb --gzip --file=/var/www/html/.ddev/.downloads/db_nipb.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+db_import_command:
+    command: |
+        set -eu -o pipefail
+        # set -x                                      # You can enable bash debugging output by uncommenting.
+        gzip -dc .ddev/.downloads/db_uregni.sql.gz | ddev import-db --database=uregni --skip-hooks 
+        gzip -dc .ddev/.downloads/db_pps.sql.gz | ddev import-db --database=pps --skip-hooks 
+        gzip -dc .ddev/.downloads/db_niaomi.sql.gz | ddev import-db --database=niaomi --skip-hooks 
+        gzip -dc .ddev/.downloads/db_afbi.sql.gz | ddev import-db --database=afbi --skip-hooks 
+        gzip -dc .ddev/.downloads/db_pbni.sql.gz | ddev import-db --database=pbni --skip-hooks 
+        gzip -dc .ddev/.downloads/db_nipb.sql.gz | ddev import-db --database=nipb --skip-hooks 
+    service: host
+files_pull_command:
+    command: |
+        echo "Files will not be pulled due to filesize."
+files_import_command:
+    command: |
+        echo "Files will not be imported due to filesize."
