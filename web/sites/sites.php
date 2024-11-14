@@ -98,6 +98,9 @@ if (!empty(getenv('PLATFORM_BRANCH'))) {
       elseif (str_contains($newhost, 'uregni.intranet.nigov.net')) {
         $sites[$host] = 'uregniintranet';
       }
+      elseif (str_contains($newhost, 'pbni.intranet.nigov.net')) {
+        $sites[$host] = 'pbniintranet';
+      }
       else {
         $subdomain = substr($newhost, 0, strpos($newhost, '.'));
         // Check for domain names that contain dashes and strip them out.
