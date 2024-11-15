@@ -1,4 +1,4 @@
-uuid: 73a63cf5-a129-4240-a7c4-252890d54d5d
+uuid: 876c7a71-d7dd-4587-8ca7-e28f04acb054
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,7 @@ dependencies:
     - system
   theme:
     - afbi_theme
-_core:
-  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
-id: afbi_theme_breadcrumbs
+id: breadcrumbs
 theme: afbi_theme
 region: breadcrumb
 weight: 0

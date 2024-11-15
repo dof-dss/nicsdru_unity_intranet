@@ -1,0 +1,35 @@
+uuid: 576ce4cc-00da-4d88-96c4-5656ccd5862c
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.feature.field_feature_photo
+    - field.field.node.feature.field_link_url
+    - field.field.node.feature.field_teaser
+    - node.type.feature
+  module:
+    - user
+id: node.feature.search_index
+targetEntityType: node
+bundle: feature
+mode: search_index
+content:
+  field_teaser:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_feature_photo: true
+  field_link_url: true
+  langcode: true
+  search_api_excerpt: true
