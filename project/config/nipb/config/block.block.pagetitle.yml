@@ -1,0 +1,24 @@
+uuid: 1bbb3132-eb32-4db0-b918-d581e2cba638
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nipb_theme
+id: pagetitle
+theme: nipb_theme
+region: content
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "<front>\r\n/search"

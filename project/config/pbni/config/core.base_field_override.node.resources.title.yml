@@ -10,7 +10,7 @@ entity_type: node
 bundle: resources
 label: 'Resource title'
 description: ''
-required: false
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
