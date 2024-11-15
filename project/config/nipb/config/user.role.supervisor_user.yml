@@ -3,29 +3,162 @@ langcode: en
 status: true
 dependencies:
   config:
+    - media.type.audio
+    - media.type.document
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
+    - node.type.basic_page
+    - node.type.feature
+    - node.type.feed
+    - node.type.feed_item
     - node.type.gallery
     - node.type.link
+    - workflows.workflow.nics_editorial_workflow
   module:
+    - content_moderation
+    - contextual
+    - file
+    - layout_builder
+    - media
+    - menu_admin_per_menu
+    - moderation_sidebar
     - node
+    - origins_metatag
+    - origins_workflow
+    - path
     - redirect
+    - scheduled_transitions
     - system
+    - toolbar
+    - whatlinkshere
 _core:
   default_config_hash: TI9T1OpRZu2s9XuQcXbfHl_QQPkQy1UOWjUK8Akrdyk
 id: supervisor_user
 label: 'supervisor user'
-weight: 3
+weight: -6
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access media overview'
+  - 'access toolbar'
+  - 'add scheduled transitions node basic_page'
+  - 'add scheduled transitions node feature'
+  - 'add scheduled transitions node feed'
+  - 'add scheduled transitions node feed_item'
+  - 'add scheduled transitions node gallery'
+  - 'add scheduled transitions node link'
+  - 'administer main menu items'
   - 'administer redirects'
+  - 'audit content'
+  - 'create and edit custom blocks'
+  - 'create audio media'
+  - 'create basic_page content'
+  - 'create document media'
+  - 'create feature content'
+  - 'create feed content'
+  - 'create feed_item content'
+  - 'create file media'
   - 'create gallery content'
+  - 'create image media'
   - 'create link content'
+  - 'create remote_video media'
+  - 'create url aliases'
+  - 'delete all revisions'
+  - 'delete any audio media'
+  - 'delete any basic_page content'
+  - 'delete any document media'
+  - 'delete any feature content'
+  - 'delete any feed content'
+  - 'delete any feed_item content'
+  - 'delete any file'
+  - 'delete any file media'
   - 'delete any gallery content'
+  - 'delete any image media'
   - 'delete any link content'
+  - 'delete any remote_video media'
+  - 'delete basic_page revisions'
+  - 'delete feature revisions'
+  - 'delete feed revisions'
+  - 'delete feed_item revisions'
+  - 'delete gallery revisions'
+  - 'delete link revisions'
+  - 'delete own audio media'
+  - 'delete own basic_page content'
+  - 'delete own document media'
+  - 'delete own feature content'
+  - 'delete own feed content'
+  - 'delete own feed_item content'
+  - 'delete own file media'
   - 'delete own gallery content'
+  - 'delete own image media'
   - 'delete own link content'
+  - 'delete own remote_video media'
+  - 'edit any audio media'
+  - 'edit any basic_page content'
+  - 'edit any document media'
+  - 'edit any feature content'
+  - 'edit any feed content'
+  - 'edit any feed_item content'
+  - 'edit any file media'
   - 'edit any gallery content'
+  - 'edit any image media'
   - 'edit any link content'
+  - 'edit any remote_video media'
+  - 'edit basic meta tags'
+  - 'edit own audio media'
+  - 'edit own basic_page content'
+  - 'edit own document media'
+  - 'edit own feature content'
+  - 'edit own feed content'
+  - 'edit own feed_item content'
+  - 'edit own file media'
   - 'edit own gallery content'
+  - 'edit own image media'
   - 'edit own link content'
+  - 'edit own remote_video media'
+  - 'reschedule scheduled transitions node basic_page'
+  - 'reschedule scheduled transitions node feature'
+  - 'reschedule scheduled transitions node feed'
+  - 'reschedule scheduled transitions node feed_item'
+  - 'reschedule scheduled transitions node gallery'
+  - 'reschedule scheduled transitions node link'
+  - 'revert all revisions'
+  - 'revert basic_page revisions'
+  - 'revert feature revisions'
+  - 'revert feed revisions'
+  - 'revert feed_item revisions'
+  - 'revert gallery revisions'
+  - 'revert link revisions'
+  - 'use moderation sidebar'
+  - 'use nics_editorial_workflow transition archive'
+  - 'use nics_editorial_workflow transition create_new_draft'
+  - 'use nics_editorial_workflow transition draft_of_published'
+  - 'use nics_editorial_workflow transition publish'
+  - 'use nics_editorial_workflow transition reject'
+  - 'use nics_editorial_workflow transition restore'
+  - 'use nics_editorial_workflow transition restore_to_draft'
+  - 'use nics_editorial_workflow transition submit_for_review'
+  - 'use nics_editorial_workflow transition unpublish'
+  - 'view all revisions'
+  - 'view all scheduled transitions'
+  - 'view any unpublished content'
+  - 'view basic_page revisions'
+  - 'view content references'
+  - 'view feature revisions'
+  - 'view feed revisions'
+  - 'view feed_item revisions'
+  - 'view gallery revisions'
+  - 'view latest version'
+  - 'view link revisions'
+  - 'view own unpublished media'
+  - 'view scheduled transitions node basic_page'
+  - 'view scheduled transitions node feature'
+  - 'view scheduled transitions node feed'
+  - 'view scheduled transitions node feed_item'
+  - 'view scheduled transitions node gallery'
+  - 'view scheduled transitions node link'
   - 'view the administration theme'
