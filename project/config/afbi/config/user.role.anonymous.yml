@@ -2,13 +2,21 @@ uuid: 56e1c485-bdc0-4ad2-9956-59f0c4784238
 langcode: en
 status: true
 dependencies:
+  config:
+    - filter.format.restricted_html
   module:
+    - eu_cookie_compliance
+    - filter
+    - media
     - system
 _core:
   default_config_hash: wlkdihxdVRIjy7aADCAaN3tU7EMrIYfqQkYY-EHzpLg
 id: anonymous
 label: 'anonymous user'
-weight: 0
+weight: -10
 is_admin: false
 permissions:
   - 'access content'
+  - 'display eu cookie compliance popup'
+  - 'use text format restricted_html'
+  - 'view media'

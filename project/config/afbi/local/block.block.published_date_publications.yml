@@ -1,27 +1,27 @@
-uuid: 4690a87d-12a8-47ab-9e48-70d026f405a4
+uuid: ac455736-0556-45bd-8b7d-893cd1786768
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.publication_type
+    - facets.facet.published_date_publications
   module:
     - facets
     - system
   theme:
     - afbi_theme
-id: afbi_theme_publicationtype
+id: published_date_publications
 theme: afbi_theme
 region: search_facets
-weight: -4
+weight: -5
 provider: null
-plugin: 'facet_block:publication_type'
+plugin: 'facet_block:published_date_publications'
 settings:
-  id: 'facet_block:publication_type'
-  label: Type
+  id: 'facet_block:published_date_publications'
+  label: Date
   label_display: visible
   provider: facets
   context_mapping: {  }
-  block_id: afbi_theme_publicationtype
+  block_id: published_date_publications
 visibility:
   request_path:
     id: request_path

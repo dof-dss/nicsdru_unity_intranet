@@ -1,4 +1,4 @@
-uuid: b33a991c-6761-41b2-942f-82bb558179e2
+uuid: ad21b497-ec10-4b91-a2b4-45cc35ca2766
 langcode: en
 status: true
 dependencies:
@@ -6,17 +6,15 @@ dependencies:
     - system
   theme:
     - afbi_theme
-_core:
-  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
-id: afbi_theme_afbi_intra_theme_system_main
+id: mainpagecontent
 theme: afbi_theme
 region: content
-weight: -4
+weight: 0
 provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
-  label: ''
+  label: 'Main page content'
   label_display: '0'
   provider: system
 visibility: {  }
