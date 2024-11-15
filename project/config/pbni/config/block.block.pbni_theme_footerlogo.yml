@@ -1,0 +1,25 @@
+uuid: dd27814d-1b2c-43a8-bee1-ffa7fbda829d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:text:49cff98d-8826-4746-9674-ef896a5c66b2'
+  module:
+    - block_content
+  theme:
+    - pbni_theme
+id: pbni_theme_footerlogo
+theme: pbni_theme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:49cff98d-8826-4746-9674-ef896a5c66b2'
+settings:
+  id: 'block_content:49cff98d-8826-4746-9674-ef896a5c66b2'
+  label: 'Footer logo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
