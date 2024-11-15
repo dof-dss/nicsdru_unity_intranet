@@ -96,10 +96,22 @@ if (!empty(getenv('PLATFORM_BRANCH'))) {
         $sites[$host] = 'independentpaneltruthrecoveryni';
       }
       elseif (str_contains($newhost, 'uregni.intranet.nigov.net')) {
-        $sites[$host] = 'uregniintranet';
+        $sites[$host] = 'uregniintra';
+      }
+      elseif (str_contains($newhost, 'pps.intranet.nigov.net')) {
+        $sites[$host] = 'ppsintra';
+      }
+      elseif (str_contains($newhost, 'niaomi.intranet.nigov.net')) {
+        $sites[$host] = 'niaomiintra';
+      }
+      elseif (str_contains($newhost, 'afbi.intranet.nigov.net')) {
+        $sites[$host] = 'afbiintra';
       }
       elseif (str_contains($newhost, 'pbni.intranet.nigov.net')) {
-        $sites[$host] = 'pbniintranet';
+        $sites[$host] = 'pbniintra';
+      }
+      elseif (str_contains($newhost, 'nipb.intranet.nigov.net')) {
+        $sites[$host] = 'nipbintra';
       }
       else {
         $subdomain = substr($newhost, 0, strpos($newhost, '.'));
