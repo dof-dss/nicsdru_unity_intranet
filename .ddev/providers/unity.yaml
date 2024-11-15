@@ -17,22 +17,22 @@ db_pull_command:
         set -eu -o pipefail
         export PLATFORMSH_CLI_NO_INTERACTION=1
         ls /var/www/html/.ddev >/dev/null             # This just refreshes stale NFS if possible.
-        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=niaomi --gzip --file=/var/www/html/.ddev/.downloads/db_niaomi.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
-        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=afbi --gzip --file=/var/www/html/.ddev/.downloads/db_afbi.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
-        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=nipb --gzip --file=/var/www/html/.ddev/.downloads/db_nipb.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
         platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=ppsintra --gzip --file=/var/www/html/.ddev/.downloads/db_ppsintra.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
         platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=uregniintra --gzip --file=/var/www/html/.ddev/.downloads/db_uregniintra.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
         platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=pbniintra --gzip --file=/var/www/html/.ddev/.downloads/db_pbniintra.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=niaomiintra --gzip --file=/var/www/html/.ddev/.downloads/db_niaomiintra.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=nipbintra --gzip --file=/var/www/html/.ddev/.downloads/db_nipbintra.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=afbiintra --gzip --file=/var/www/html/.ddev/.downloads/db_afbiintra.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
 db_import_command:
     command: |
         set -eu -o pipefail
         # set -x                                      # You can enable bash debugging output by uncommenting.
-        gzip -dc .ddev/.downloads/db_niaomi.sql.gz | ddev import-db --database=niaomi --skip-hooks 
-        gzip -dc .ddev/.downloads/db_afbi.sql.gz | ddev import-db --database=afbi --skip-hooks 
-        gzip -dc .ddev/.downloads/db_nipb.sql.gz | ddev import-db --database=nipb --skip-hooks 
         gzip -dc .ddev/.downloads/db_ppsintra.sql.gz | ddev import-db --database=ppsintra --skip-hooks 
         gzip -dc .ddev/.downloads/db_uregniintra.sql.gz | ddev import-db --database=uregniintra --skip-hooks 
         gzip -dc .ddev/.downloads/db_pbniintra.sql.gz | ddev import-db --database=pbniintra --skip-hooks 
+        gzip -dc .ddev/.downloads/db_niaomiintra.sql.gz | ddev import-db --database=niaomiintra --skip-hooks 
+        gzip -dc .ddev/.downloads/db_nipbintra.sql.gz | ddev import-db --database=nipbintra --skip-hooks 
+        gzip -dc .ddev/.downloads/db_afbiintra.sql.gz | ddev import-db --database=afbiintra --skip-hooks 
     service: host
 files_pull_command:
     command: |

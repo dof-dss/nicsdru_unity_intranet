@@ -5,21 +5,6 @@
 # original repository.Any changes here will be overwritten when the project #
 # is built.                                                                 #
 #############################################################################
-'https://niaomi.intranet.nigov.net/':
-    type: upstream
-    upstream: 'unity_intranet:http'
-    cache:
-        enabled: 'false'
-'https://afbi.intranet.nigov.net.{default}/':
-    type: upstream
-    upstream: 'unity_intranet:http'
-    cache:
-        enabled: 'false'
-'https://nipb.intranet.nigov.net/':
-    type: upstream
-    upstream: 'unity_intranet:http'
-    cache:
-        enabled: 'false'
 'https://pps.intranet.nigov.net/':
     type: upstream
     upstream: 'unity_intranet:http'
@@ -30,7 +15,22 @@
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
-'https://pbniintra.intranet.nigov.net/':
+'https://pbni.intranet.nigov.net/':
+    type: upstream
+    upstream: 'unity_intranet:http'
+    cache:
+        enabled: 'false'
+'https://niaomi.intranet.nigov.net/':
+    type: upstream
+    upstream: 'unity_intranet:http'
+    cache:
+        enabled: 'false'
+'https://nipb.intranet.nigov.net/':
+    type: upstream
+    upstream: 'unity_intranet:http'
+    cache:
+        enabled: 'false'
+'https://afbiintra.intranet.nigov.net/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:

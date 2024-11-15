@@ -10,25 +10,13 @@ db:
     disk: 22000
     configuration:
         schemas:
-            - niaomidb
-            - afbidb
-            - nipbdb
             - ppsintradb
             - uregniintradb
             - pbniintradb
+            - niaomiintradb
+            - nipbintradb
+            - afbiintradb
         endpoints:
-            niaomi:
-                default_schema: niaomidb
-                privileges:
-                    niaomidb: admin
-            afbi:
-                default_schema: afbidb
-                privileges:
-                    afbidb: admin
-            nipb:
-                default_schema: nipbdb
-                privileges:
-                    nipbdb: admin
             ppsintra:
                 default_schema: ppsintradb
                 privileges:
@@ -41,35 +29,47 @@ db:
                 default_schema: pbniintradb
                 privileges:
                     pbniintradb: admin
+            niaomiintra:
+                default_schema: niaomiintradb
+                privileges:
+                    niaomiintradb: admin
+            nipbintra:
+                default_schema: nipbintradb
+                privileges:
+                    nipbintradb: admin
+            afbiintra:
+                default_schema: afbiintradb
+                privileges:
+                    afbiintradb: admin
 solr_8_11:
     type: 'solr:8.11'
     disk: 1024
     configuration:
         cores:
-            niaomi_index:
-                conf_dir: !archive solr_config/
-            afbi_index:
-                conf_dir: !archive solr_config/
-            nipb_index:
-                conf_dir: !archive solr_config/
             ppsintra_index:
                 conf_dir: !archive solr_config/
             uregniintra_index:
                 conf_dir: !archive solr_config/
             pbniintra_index:
                 conf_dir: !archive solr_config/
+            niaomiintra_index:
+                conf_dir: !archive solr_config/
+            nipbintra_index:
+                conf_dir: !archive solr_config/
+            afbiintra_index:
+                conf_dir: !archive solr_config/
         endpoints:
-            niaomi:
-                core: niaomi_index
-            afbi:
-                core: afbi_index
-            nipb:
-                core: nipb_index
             ppsintra:
                 core: ppsintra_index
             uregniintra:
                 core: uregniintra_index
             pbniintra:
                 core: pbniintra_index
+            niaomiintra:
+                core: niaomiintra_index
+            nipbintra:
+                core: nipbintra_index
+            afbiintra:
+                core: afbiintra_index
 redis:
     type: 'redis:6.0'

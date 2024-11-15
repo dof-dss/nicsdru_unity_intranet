@@ -4,34 +4,6 @@ project_id: 6gl4nbwlja4u4
 project_disk_size: 51200
 db_disk_size: 22000
 sites:
-    niaomi:
-        name: NIAO
-        url: niaomi.intranet.nigov.net
-        solr: niaomi
-        www: false
-        cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/niaomi ; drush core-cron'
-        database: niaomi
-        status: development
-    afbi:
-        name: AFBI
-        url: afbi.intranet.nigov.net
-        solr: afbi
-        www: false
-        cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/afbi ; drush core-cron'
-        database: afbi
-        default: true
-    nipb:
-        name: 'NI Policing Board Intranet'
-        url: nipb.intranet.nigov.net
-        solr: nipb
-        www: false
-        cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/nipb ; drush core-cron'
-        database: nipb
-        status: development
-        default: false
     ppsintra:
         name: PPS
         url: pps.intranet.nigov.net
@@ -60,5 +32,35 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/pbniintra ; drush core-cron'
         database: pbniintra
+        status: development
+        default: false
+    niaomiintra:
+        name: NIAO
+        url: niaomi.intranet.nigov.net
+        solr: niaomiintra
+        www: false
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/niaomiintra ; drush core-cron'
+        database: niaomiintra
+        status: development
+        default: false
+    nipbintra:
+        name: 'NI Policing Board Intranet'
+        url: nipb.intranet.nigov.net
+        solr: nipbintra
+        www: false
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/nipbintra ; drush core-cron'
+        database: nipbintra
+        status: development
+        default: false
+    afbiintra:
+        name: AFBI
+        url: afbi.intranet.nigov.net
+        solr: afbiintra
+        www: false
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/afbiintra ; drush core-cron'
+        database: afbiintra
         status: development
         default: false

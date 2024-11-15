@@ -60,7 +60,7 @@ hooks:
         export FASTLY_API_SERVICE=dummyservice
 
         # For each multi site - run db-updates and import config.
-        for site in niaomi afbi nipb ppsintra uregniintra pbniintra
+        for site in ppsintra uregniintra pbniintra niaomiintra nipbintra afbiintra
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -107,7 +107,7 @@ hooks:
         export FASTLY_API_SERVICE=$temp
 
         # For each multi site - clear cache (including Fastly cache)
-        for site in niaomi afbi nipb ppsintra uregniintra pbniintra
+        for site in ppsintra uregniintra pbniintra niaomiintra nipbintra afbiintra
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -156,39 +156,39 @@ web:
                     expires: 2w
 relationships:
     redis: 'redis:redis'
-    niaomi: 'db:niaomi'
-    niaomi_intranet_solr: 'solr_8_11:niaomi'
-    afbi: 'db:afbi'
-    afbi_intranet_solr: 'solr_8_11:afbi'
-    nipb: 'db:nipb'
-    nipb_intranet_solr: 'solr_8_11:nipb'
     ppsintra: 'db:ppsintra'
     ppsintra_intranet_solr: 'solr_8_11:ppsintra'
     uregniintra: 'db:uregniintra'
     uregniintra_intranet_solr: 'solr_8_11:uregniintra'
     pbniintra: 'db:pbniintra'
     pbniintra_intranet_solr: 'solr_8_11:pbniintra'
+    niaomiintra: 'db:niaomiintra'
+    niaomiintra_intranet_solr: 'solr_8_11:niaomiintra'
+    nipbintra: 'db:nipbintra'
+    nipbintra_intranet_solr: 'solr_8_11:nipbintra'
+    afbiintra: 'db:afbiintra'
+    afbiintra_intranet_solr: 'solr_8_11:afbiintra'
 crons:
-    niaomi:
+    ppsintra:
         spec: '10 * * * *'
-        cmd: 'cd web/sites/niaomi ; drush core-cron'
+        cmd: 'cd web/sites/ppsintra ; drush core-cron'
     logging:
         spec: '*/5 * * * *'
         commands:
             start: '/bin/bash /app/cronjob.sh'
         shutdown_timeout: 290
-    afbi:
-        spec: '10 * * * *'
-        cmd: 'cd web/sites/afbi ; drush core-cron'
-    nipb:
-        spec: '10 * * * *'
-        cmd: 'cd web/sites/nipb ; drush core-cron'
-    ppsintra:
-        spec: '10 * * * *'
-        cmd: 'cd web/sites/ppsintra ; drush core-cron'
     uregniintra:
         spec: '10 * * * *'
         cmd: 'cd web/sites/uregniintra ; drush core-cron'
     pbniintra:
         spec: '10 * * * *'
         cmd: 'cd web/sites/pbniintra ; drush core-cron'
+    niaomiintra:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/niaomiintra ; drush core-cron'
+    nipbintra:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/nipbintra ; drush core-cron'
+    afbiintra:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/afbiintra ; drush core-cron'
