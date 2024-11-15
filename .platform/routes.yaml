@@ -5,11 +5,6 @@
 # original repository.Any changes here will be overwritten when the project #
 # is built.                                                                 #
 #############################################################################
-'https://pps.intranet.nigov.net/':
-    type: upstream
-    upstream: 'unity_intranet:http'
-    cache:
-        enabled: 'false'
 'https://niaomi.intranet.nigov.net/':
     type: upstream
     upstream: 'unity_intranet:http'
@@ -25,12 +20,17 @@
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
-'https://pbni.intranet.nigov.net/':
+'https://pps.intranet.nigov.net/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
 'https://uregni.intranet.nigov.net/':
+    type: upstream
+    upstream: 'unity_intranet:http'
+    cache:
+        enabled: 'false'
+'https://pbniintra.intranet.nigov.net/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:

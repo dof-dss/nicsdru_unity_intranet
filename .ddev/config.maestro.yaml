@@ -7,9 +7,9 @@
 #############################################################################
 name: unity.intranet
 additional_hostnames:
-    - pps
     - niaomi
     - afbi
     - nipb
-    - pbniintranet
-    - uregniintranet
+    - ppsintra
+    - uregniintra
+    - pbniintra

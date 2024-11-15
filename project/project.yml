@@ -4,16 +4,6 @@ project_id: 6gl4nbwlja4u4
 project_disk_size: 51200
 db_disk_size: 22000
 sites:
-    pps:
-        name: PPS
-        url: pps.intranet.nigov.net
-        solr: pps
-        www: false
-        cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/pps ; drush core-cron'
-        database: pps
-        status: development
-        default: false
     niaomi:
         name: NIAO
         url: niaomi.intranet.nigov.net
@@ -42,23 +32,33 @@ sites:
         database: nipb
         status: development
         default: false
-    pbniintranet:
-        name: 'PBNI Intranet'
-        url: pbni.intranet.nigov.net
-        solr: pbniintranet
+    ppsintra:
+        name: PPS
+        url: pps.intranet.nigov.net
+        solr: ppsintra
         www: false
         cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/pbniintranet ; drush core-cron'
-        database: pbniintranet
+        cron_cmd: 'cd web/sites/ppsintra ; drush core-cron'
+        database: ppsintra
         status: development
         default: false
-    uregniintranet:
-        name: 'Uregni Intranet'
+    uregniintra:
+        name: Uregni
         url: uregni.intranet.nigov.net
-        solr: uregniintranet
+        solr: uregniintra
         www: false
         cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/uregniintranet ; drush core-cron'
-        database: uregniintranet
+        cron_cmd: 'cd web/sites/uregniintra ; drush core-cron'
+        database: uregniintra
+        status: development
+        default: false
+    pbniintra:
+        name: PBNI
+        url: pbni.intranet.nigov.net
+        solr: pbniintra
+        www: false
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/pbniintra ; drush core-cron'
+        database: pbniintra
         status: development
         default: false

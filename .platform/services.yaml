@@ -10,17 +10,13 @@ db:
     disk: 22000
     configuration:
         schemas:
-            - ppsdb
             - niaomidb
             - afbidb
             - nipbdb
-            - pbniintranetdb
-            - uregniintranetdb
+            - ppsintradb
+            - uregniintradb
+            - pbniintradb
         endpoints:
-            pps:
-                default_schema: ppsdb
-                privileges:
-                    ppsdb: admin
             niaomi:
                 default_schema: niaomidb
                 privileges:
@@ -33,43 +29,47 @@ db:
                 default_schema: nipbdb
                 privileges:
                     nipbdb: admin
-            pbniintranet:
-                default_schema: pbniintranetdb
+            ppsintra:
+                default_schema: ppsintradb
                 privileges:
-                    pbniintranetdb: admin
-            uregniintranet:
-                default_schema: uregniintranetdb
+                    ppsintradb: admin
+            uregniintra:
+                default_schema: uregniintradb
                 privileges:
-                    uregniintranetdb: admin
+                    uregniintradb: admin
+            pbniintra:
+                default_schema: pbniintradb
+                privileges:
+                    pbniintradb: admin
 solr_8_11:
     type: 'solr:8.11'
     disk: 1024
     configuration:
         cores:
-            pps_index:
-                conf_dir: !archive solr_config/
             niaomi_index:
                 conf_dir: !archive solr_config/
             afbi_index:
                 conf_dir: !archive solr_config/
             nipb_index:
                 conf_dir: !archive solr_config/
-            pbniintranet_index:
+            ppsintra_index:
                 conf_dir: !archive solr_config/
-            uregniintranet_index:
+            uregniintra_index:
+                conf_dir: !archive solr_config/
+            pbniintra_index:
                 conf_dir: !archive solr_config/
         endpoints:
-            pps:
-                core: pps_index
             niaomi:
                 core: niaomi_index
             afbi:
                 core: afbi_index
             nipb:
                 core: nipb_index
-            pbniintranet:
-                core: pbniintranet_index
-            uregniintranet:
-                core: uregniintranet_index
+            ppsintra:
+                core: ppsintra_index
+            uregniintra:
+                core: uregniintra_index
+            pbniintra:
+                core: pbniintra_index
 redis:
     type: 'redis:6.0'

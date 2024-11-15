@@ -8,10 +8,10 @@
 services:
     solr:
         volumes:
-            - './solr-cores/pps:/solr-pps-conf'
             - './solr-cores/niaomi:/solr-niaomi-conf'
             - './solr-cores/afbi:/solr-afbi-conf'
             - './solr-cores/nipb:/solr-nipb-conf'
-            - './solr-cores/pbniintranet:/solr-pbniintranet-conf'
-            - './solr-cores/uregniintranet:/solr-uregniintranet-conf'
-        entrypoint: 'bash -c "VERBOSE=yes docker-entrypoint.sh precreate-core pps /solr-pps-conf; precreate-core niaomi /solr-niaomi-conf; precreate-core afbi /solr-afbi-conf; precreate-core nipb /solr-nipb-conf; precreate-core pbniintranet /solr-pbniintranet-conf; precreate-core uregniintranet /solr-uregniintranet-conf; exec solr -f"'
+            - './solr-cores/ppsintra:/solr-ppsintra-conf'
+            - './solr-cores/uregniintra:/solr-uregniintra-conf'
+            - './solr-cores/pbniintra:/solr-pbniintra-conf'
+        entrypoint: 'bash -c "VERBOSE=yes docker-entrypoint.sh precreate-core niaomi /solr-niaomi-conf; precreate-core afbi /solr-afbi-conf; precreate-core nipb /solr-nipb-conf; precreate-core ppsintra /solr-ppsintra-conf; precreate-core uregniintra /solr-uregniintra-conf; precreate-core pbniintra /solr-pbniintra-conf; exec solr -f"'
