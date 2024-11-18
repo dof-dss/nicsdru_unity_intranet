@@ -6,7 +6,7 @@ id: local
 label: local
 description: 'Local development split. Enables debugging and development modules.'
 weight: 0
-folder: ../project/config/pbni/local
+folder: ../project/config/pbniintra/local
 module:
   clone_nodes: 0
   dblog: 0
