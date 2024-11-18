@@ -30,7 +30,7 @@
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
-'https://afbiintra.intranet.nigov.net/':
+'https://afbi.intranet.nigov.net/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:

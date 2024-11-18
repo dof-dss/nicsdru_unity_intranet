@@ -7,5 +7,5 @@
 | PBNI | pbniintra | pbni.intranet.nigov.net | ![#fff3e0](https://placehold.co/140x30/ffe0b2/e65100.png?text=Development&font=source-sans-pro) |   | 
 | NIAO | niaomiintra | niaomi.intranet.nigov.net | ![#fff3e0](https://placehold.co/140x30/ffe0b2/e65100.png?text=Development&font=source-sans-pro) |   | 
 | NI Policing Board Intranet | nipbintra | nipb.intranet.nigov.net | ![#fff3e0](https://placehold.co/140x30/ffe0b2/e65100.png?text=Development&font=source-sans-pro) |   | 
-| AFBI | afbiintra | afbiintra.intranet.nigov.net | ![#fff3e0](https://placehold.co/140x30/ffe0b2/e65100.png?text=Development&font=source-sans-pro) |   | 
-Last updated: 15/11/2024 15:12
+| AFBI | afbiintra | afbi.intranet.nigov.net | ![#fff3e0](https://placehold.co/140x30/ffe0b2/e65100.png?text=Development&font=source-sans-pro) |   | 
+Last updated: 18/11/2024 15:30
