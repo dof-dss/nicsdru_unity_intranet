@@ -1,0 +1,20 @@
+uuid: ad21b497-ec10-4b91-a2b4-45cc35ca2766
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - afbi_theme
+id: mainpagecontent
+theme: afbi_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
