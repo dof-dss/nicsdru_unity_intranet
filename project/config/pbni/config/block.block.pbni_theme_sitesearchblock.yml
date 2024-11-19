@@ -9,7 +9,7 @@ dependencies:
 id: pbni_theme_sitesearchblock
 theme: pbni_theme
 region: search
-weight: 0
+weight: -7
 provider: null
 plugin: site_search_block
 settings:
