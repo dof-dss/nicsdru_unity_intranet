@@ -1,16 +1,15 @@
-uuid: 56b22c36-e6b2-423f-a5ae-6dc830f56e49
+uuid: 91e6d1ad-f926-4e9c-9e92-6e2e7f1cd727
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_extension
-field_name: field_extension
+id: node.field_about_me
+field_name: field_about_me
 entity_type: node
-type: integer
+type: string_long
 settings:
-  unsigned: false
-  size: normal
+  case_sensitive: false
 module: core
 locked: false
 cardinality: 1
