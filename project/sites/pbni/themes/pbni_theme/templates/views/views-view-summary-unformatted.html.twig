@@ -1,0 +1,41 @@
+{#
+/**
+ * @file
+ * Theme override for unformatted summary links.
+ *
+ * Available variables:
+ * - rows: The rows contained in this view.
+ *   - url: The URL to this row's content.
+ *   - count: The number of items this summary item represents.
+ *   - separator: A separator between each row.
+ *   - attributes: HTML attributes for a row.
+ *   - active: A flag indicating whether the row is active.
+ * - options: Flags indicating how each row should be displayed. This contains:
+ *   - count: A flag indicating whether the row's 'count' should be displayed.
+ *   - inline: A flag indicating whether the item should be wrapped in an inline
+ *     or block level HTML element.
+ *   - is_active_status: See pbni_theme.theme, if the path is /staff-profiles set
+ *     the is-active class on the All link.
+ *
+ * @see template_preprocess_views_view_summary_unformatted()
+ */
+#}
+{%
+  set classes = [
+  is_active_status ? 'is-active',
+]
+%}
+<div class="staff-profiles-glossary">
+<span><a href="/staff-profiles" {{ attributes.addClass(classes) }}>All</a></span>
+{% for row in rows  %}
+  {{ options.inline ? '<span' : '<div' }} >
+  {% if row.separator -%}
+    {{ row.separator }}
+  {%- endif %}
+  <a href="{{ row.url }}"{{ row.attributes.addClass(row.active ? 'is-active')|without('href') }}>{{ row.link }}</a>
+  {% if options.count %}
+    ({{ row.count }})
+  {% endif %}
+  {{ options.inline ? '</span>' : '</div>' }}
+{% endfor %}
+</div>
