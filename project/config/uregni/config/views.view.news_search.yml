@@ -268,7 +268,7 @@ display:
     position: 1
     display_options:
       cache:
-        type: search_api_none
+        type: null
       defaults:
         cache: false
       exposed_block: true
