@@ -6,6 +6,16 @@
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
 #top-area {
+  .column:first-child {
+    border: 1px solid #7aa221;
+    border-top: 5rem solid #7aa221;
+  }
+
+  .column:last-child {
+    border: 1px solid #0084cb;
+    border-top: 5rem solid #0084cb;
+    }
+
   h3 {
     @include adjust-font-size-to(18px);
     margin: 1.6rem 0 1.2rem;
@@ -42,7 +52,7 @@
       margin: 0 5% 5% 0;
       flex-basis: 47%;
       padding: 2.5rem 2rem 2rem 2.5rem;
-      border: 1px solid #233857;
+      border: 1px solid #0c5e22;
       border-bottom-width: 1rem;
       min-height: 22rem;
 
@@ -132,6 +142,16 @@
 }
 
 #bottom-area {
+  .column:first-child {
+    border: 1px solid #fab403;
+    border-top: 5rem solid #fab403;
+  }
+
+  .column:last-child {
+    border: 1px solid #834a90;
+    border-top: 5rem solid #834a90;
+  }
+
   h3 {
     @include adjust-font-size-to(18px);
     margin: 1.6rem 0 1.2rem;
@@ -146,6 +166,60 @@
   h2 {
     padding: 1rem 0;
     color: $black;
+  }
+}
+
+.node-type-uregni-staff-member {
+  .staff-profile-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media screen and (max-width: $phab) {
+      flex-direction: column;
+    }
+  }
+
+  .name-title {
+    display: flex;
+    align-items: center;
+  }
+
+  .staff-name {
+    margin-right: 10px;
+  }
+
+  .staff-surname {
+    font-style: normal;
+  }
+
+  .staff-job-title {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .profile-image {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .profile-details {
+    margin-top: 20px;
+  }
+
+  .field-about-me,
+  .field-directorate,
+  .field-extension,
+  .field-find-me,
+  .field-mobile,
+  .field-work-pattern {
+    margin-bottom: 15px;
   }
 }
 
