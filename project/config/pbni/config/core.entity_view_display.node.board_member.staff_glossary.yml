@@ -1,9 +1,9 @@
-uuid: a4a04cbd-2c8a-4cea-b55d-b5063322da4c
+uuid: e6c5a993-1ea3-4dfb-8a11-a54394e061e3
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.staff_glossary
     - field.field.node.board_member.field_about_me
     - field.field.node.board_member.field_directorate
     - field.field.node.board_member.field_extension
@@ -16,11 +16,16 @@ dependencies:
     - field.field.node.board_member.field_work_pattern
     - node.type.board_member
   module:
+    - layout_builder
     - user
-id: node.board_member.teaser
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.board_member.staff_glossary
 targetEntityType: node
 bundle: board_member
-mode: teaser
+mode: staff_glossary
 content:
   field_directorate:
     type: string
@@ -35,7 +40,7 @@ content:
     label: hidden
     settings:
       thousand_separator: ''
-      prefix_suffix: true
+      prefix_suffix: false
     third_party_settings: {  }
     weight: 4
     region: content
@@ -51,7 +56,7 @@ content:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: portrait_float
+      view_mode: portrait_full
       link: false
     third_party_settings: {  }
     weight: 0

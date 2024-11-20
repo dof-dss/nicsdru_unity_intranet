@@ -1,4 +1,4 @@
-uuid: 42d4fc5f-0536-426f-8a3c-e99bfa59785e
+uuid: 2b38c93d-f2d5-41b8-bc90-7e274abf2e81
 langcode: en
 status: true
 dependencies:
@@ -6,12 +6,10 @@ dependencies:
     - system
   theme:
     - pbni_theme
-_core:
-  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
-id: pbni_theme_content
+id: mainpagecontent
 theme: pbni_theme
 region: content
-weight: -1
+weight: 0
 provider: null
 plugin: system_main_block
 settings:

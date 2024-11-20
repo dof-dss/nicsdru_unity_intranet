@@ -1,4 +1,4 @@
-uuid: b9079f03-cf41-4b7f-a49b-bd932eb61cec
+uuid: ac07e3c9-c625-468e-a33d-6e912d5ca901
 langcode: en
 status: true
 dependencies:
@@ -9,15 +9,11 @@ id: node.board_member.field_mobile
 field_name: field_mobile
 entity_type: node
 bundle: board_member
-label: Mobile
-description: 'Please add a mobile number'
+label: 'Work mobile'
+description: 'Please add a work mobile number.'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings:
-  min: 11
-  max: 11
-  prefix: ''
-  suffix: ''
-field_type: integer
+settings: {  }
+field_type: string
