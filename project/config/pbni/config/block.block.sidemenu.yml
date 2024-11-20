@@ -1,28 +1,28 @@
-uuid: 53e95bb9-fdca-4b43-87ae-df5c1e215e8f
+uuid: 711aec72-f174-4ecc-af63-8ff66f472793
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.news
+    - system.menu.main
   module:
     - node
-    - views
+    - system
   theme:
     - pbni_theme
-id: pbni_theme_views_block__news_latest_news
+id: sidemenu
 theme: pbni_theme
 region: sidebar_second
 weight: 0
 provider: null
-plugin: 'views_block:news-latest_news'
+plugin: 'system_menu_block:main'
 settings:
-  id: 'views_block:news-latest_news'
-  label: 'Latest news'
+  id: 'system_menu_block:main'
+  label: 'In this section'
   label_display: visible
-  provider: views
-  context_mapping: {  }
-  views_label: 'Latest news'
-  items_per_page: none
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
@@ -30,4 +30,4 @@ visibility:
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
-      news: news
+      basic_page: basic_page

@@ -23,4 +23,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "/resources\r\n/resources/date/*\r\n/resources/type/*\r\n/news\r\n/news/date/*"
+    pages: "/resources\r\n/resources/date/*\r\n/resources/type/*\r\n/news\r\n/news/date/*\r\n/people/*"
