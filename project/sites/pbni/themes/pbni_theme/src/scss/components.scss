@@ -102,6 +102,7 @@ article.block-link {
 
 #content #top-area .column article.block-link a {
   min-height: 25.1rem;
+  background: $grey-lightest;
 }
 
 #content #top-area .column article.block-link a,
@@ -131,6 +132,7 @@ article.block-link {
 
 #content .region-front-welcome #block-pbni-theme-views-block-news-latest-news-home article.block-link a {
   padding: 3.2rem 3.2rem 0;
+  background: #10393d;
 
   &:hover,
   &:focus {
@@ -183,8 +185,6 @@ article.block-link {
 #block-pbni-theme-views-block-news-latest-news-home {
 
   .content {
-    //background: #10393d;
-
     @include breakpoint($tab) {
       width: 40rem;
     }
@@ -195,7 +195,6 @@ article.block-link {
       a {
         display: block;
         min-height: 38rem;
-        background: #10393d;
       }
 
       h2 {
@@ -343,7 +342,7 @@ footer li:nth-child(odd) {
   border: none;
   padding: 1rem;
   margin: 0;
-  background: #e8e7e7;
+  background: $grey-lightest;
   display: block;
   position: relative;
 
