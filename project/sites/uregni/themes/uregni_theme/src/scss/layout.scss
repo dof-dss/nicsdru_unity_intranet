@@ -17,6 +17,7 @@
     background: $grey-light;
     padding: 2rem;
     width: 50%;
+    position: relative;
 
     .item {
       list-style: none;
@@ -32,6 +33,7 @@
     color: $black;
   }
 }
+
 
 #bottom-area {
   text-align: left;
