@@ -1,12 +1,14 @@
-uuid: 5ba42a3a-8e8c-4217-853d-40277244451f
+uuid: 1a17a995-c1a4-46a8-955e-918c9b06cf72
 langcode: en
 status: true
 dependencies:
   module:
     - system
+_core:
+  default_config_hash: T7nUzYtsruuY5aLcUjyn9EVFs4bZGIzpbhwGld9oAqU
 title: 'Cleanup (caches, batch, flood, temp-files, etc.)'
 id: system_cron
-weight: 0
+weight: -10
 module: system
 callback: system_cron
 scheduler:
