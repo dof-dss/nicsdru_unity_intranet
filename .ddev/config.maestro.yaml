@@ -1,0 +1,15 @@
+#############################################################################
+###                           --== IMPORTANT ==--                         ###
+#############################################################################
+# If you require changes to this file you must edit the file within the     #
+# original repository.Any changes here will be overwritten when the project #
+# is built.                                                                 #
+#############################################################################
+name: unity.intranet
+additional_hostnames:
+    - ppsintra
+    - uregniintra
+    - pbniintra
+    - niaomiintra
+    - nipbintra
+    - afbiintra

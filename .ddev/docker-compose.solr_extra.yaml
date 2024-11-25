@@ -1,0 +1,17 @@
+#############################################################################
+###                           --== IMPORTANT ==--                         ###
+#############################################################################
+# If you require changes to this file you must edit the file within the     #
+# original repository.Any changes here will be overwritten when the project #
+# is built.                                                                 #
+#############################################################################
+services:
+    solr:
+        volumes:
+            - './solr-cores/ppsintra:/solr-ppsintra-conf'
+            - './solr-cores/uregniintra:/solr-uregniintra-conf'
+            - './solr-cores/pbniintra:/solr-pbniintra-conf'
+            - './solr-cores/niaomiintra:/solr-niaomiintra-conf'
+            - './solr-cores/nipbintra:/solr-nipbintra-conf'
+            - './solr-cores/afbiintra:/solr-afbiintra-conf'
+        entrypoint: 'bash -c "VERBOSE=yes docker-entrypoint.sh precreate-core ppsintra /solr-ppsintra-conf; precreate-core uregniintra /solr-uregniintra-conf; precreate-core pbniintra /solr-pbniintra-conf; precreate-core niaomiintra /solr-niaomiintra-conf; precreate-core nipbintra /solr-nipbintra-conf; precreate-core afbiintra /solr-afbiintra-conf; exec solr -f"'

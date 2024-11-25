@@ -1,0 +1,12 @@
+corp.lite:
+    approot: /Users/martindutton/apps/corp-lite
+dept:
+    approot: /Users/martindutton/nicsdru_dept
+unity.1:
+    approot: /Users/martindutton/apps/unity/app
+unity.intranet:
+    approot: /Users/martindutton/apps/nicsdru_unity_intranet
+unity.svr.2:
+    approot: /Users/martindutton/apps/unity_2/Unity_svr_2
+unity.svr.3:
+    approot: /Users/martindutton/apps/unity_3/Unity_svr_3
