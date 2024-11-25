@@ -1,12 +1,14 @@
-uuid: 9298d262-5ab0-4bc7-9742-dd254122b326
+uuid: b2add8ef-d219-4d15-a04b-59a9ddad6a2e
 langcode: en
 status: true
 dependencies:
   module:
     - honeypot
+_core:
+  default_config_hash: fIFVpTBIbgRyIvU_wLRsGG6LdTRGa2aXvyW6AvY3QFQ
 title: 'Default cron handler'
 id: honeypot_cron
-weight: 0
+weight: -3
 module: honeypot
 callback: honeypot_cron
 scheduler:
