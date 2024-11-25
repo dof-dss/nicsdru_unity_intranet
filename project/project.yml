@@ -4,61 +4,63 @@ project_id: 6gl4nbwlja4u4
 project_disk_size: 51200
 db_disk_size: 22000
 sites:
-    uregni:
-        name: Uregni
-        url: uregni.intranet.nigov.net
-        solr: uregni
-        www: false
-        cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/uregni ; drush core-cron'
-        database: uregni
-        status: development
-        default: false
-    pps:
+    ppsintra:
         name: PPS
         url: pps.intranet.nigov.net
-        solr: pps
+        solr: ppsintra
         www: false
         cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/pps ; drush core-cron'
-        database: pps
+        cron_cmd: 'cd web/sites/ppsintra ; drush core-cron'
+        database: ppsintra
         status: development
         default: false
-    niaomi:
+    uregniintra:
+        name: Uregni
+        url: uregni.intranet.nigov.net
+        solr: uregniintra
+        www: false
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/uregniintra ; drush core-cron'
+        database: uregniintra
+        status: development
+        default: false
+    pbniintra:
+        name: PBNI
+        url: pbni.intranet.nigov.net
+        solr: pbniintra
+        www: false
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/pbniintra ; drush core-cron'
+        database: pbniintra
+        status: development
+        default: false
+    niaomiintra:
         name: NIAO
         url: niaomi.intranet.nigov.net
-        solr: niaomi
+        solr: niaomiintra
         www: false
         cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/niaomi ; drush core-cron'
-        database: niaomi
-        status: development
-    afbi:
-        name: AFBI
-        url: afbi.intranet.nigov.net
-        solr: afbi
-        www: false
-        cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/afbi ; drush core-cron'
-        database: afbi
-        default: true
-    pbni:
-        name: pbni
-        url: pbni.intranet.nigov.net
-        solr: pbni
-        www: false
-        cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/pbni ; drush core-cron'
-        database: pbni
+        cron_cmd: 'cd web/sites/niaomiintra ; drush core-cron'
+        database: niaomiintra
         status: development
         default: false
-    nipb:
+    nipbintra:
         name: 'NI Policing Board Intranet'
         url: nipb.intranet.nigov.net
-        solr: nipb
+        solr: nipbintra
         www: false
         cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/nipb ; drush core-cron'
-        database: nipb
+        cron_cmd: 'cd web/sites/nipbintra ; drush core-cron'
+        database: nipbintra
+        status: development
+        default: false
+    afbiintra:
+        name: AFBI
+        url: afbi.intranet.nigov.net
+        solr: afbiintra
+        www: false
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/afbiintra ; drush core-cron'
+        database: afbiintra
         status: development
         default: false
