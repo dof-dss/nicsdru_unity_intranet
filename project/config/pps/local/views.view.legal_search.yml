@@ -1,19 +1,19 @@
-uuid: a56fea4e-0685-4a02-93ba-af1272101361
+uuid: b4bbaece-ad28-4d32-a124-7225d26fd03c
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - search_api.index.document_index
+    - search_api.index.legal_index
   module:
     - search_api
     - text
-id: documents_search
-label: 'Documents search'
+id: legal_search
+label: 'Legal search'
 module: views
 description: ''
 tag: ''
-base_table: search_api_index_document_index
+base_table: search_api_index_legal_index
 base_field: search_api_id
 display:
   default:
@@ -22,11 +22,11 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Documents
+      title: 'Legal guidance'
       fields:
         body:
           id: body
-          table: search_api_index_document_index
+          table: search_api_index_legal_index
           field: body
           relationship: none
           group_type: group
@@ -99,6 +99,7 @@ display:
         type: full
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 20
           total_pages: null
           id: 0
@@ -143,13 +144,13 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: 'No results found.'
+            value: 'There were no results found.'
             format: basic_html
           tokenize: false
       sorts:
         field_published_date:
           id: field_published_date
-          table: search_api_index_document_index
+          table: search_api_index_legal_index
           field: field_published_date
           relationship: none
           group_type: group
@@ -164,7 +165,7 @@ display:
       filters:
         search_api_fulltext:
           id: search_api_fulltext
-          table: search_api_index_document_index
+          table: search_api_index_legal_index
           field: search_api_fulltext
           relationship: none
           group_type: group
@@ -176,7 +177,7 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: 'Search publications'
+            label: 'Search legal guidance'
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
@@ -222,7 +223,7 @@ display:
         options:
           view_modes:
             'entity:node':
-              publication: search_index
+              legal_guidance: search_index
       query:
         type: search_api_query
         options:
@@ -244,10 +245,10 @@ display:
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.node.body'
-        - 'config:search_api.index.document_index'
-        - 'search_api_list:document_index'
-  documents_search_page:
-    id: documents_search_page
+        - 'config:search_api.index.legal_index'
+        - 'search_api_list:legal_index'
+  legal_search_page:
+    id: legal_search_page
     display_title: Page
     display_plugin: page
     position: 1
@@ -261,7 +262,7 @@ display:
         metatag_display_extender:
           metatags: {  }
           tokenize: false
-      path: documents
+      path: legal-guidance
     cache_metadata:
       max-age: -1
       contexts:
@@ -272,5 +273,5 @@ display:
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.node.body'
-        - 'config:search_api.index.document_index'
-        - 'search_api_list:document_index'
+        - 'config:search_api.index.legal_index'
+        - 'search_api_list:legal_index'
