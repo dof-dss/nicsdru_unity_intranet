@@ -8,7 +8,7 @@ _core:
   default_config_hash: XvGRm_DkeKO9Y4QNvZH5lSYEpqpipkdAeAYOu2uzj8A
 title: 'Deletes history'
 id: history_cron
-weight: 0
+weight: 2
 module: history
 callback: history_cron
 scheduler:
