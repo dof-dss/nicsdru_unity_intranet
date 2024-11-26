@@ -1,0 +1,16 @@
+uuid: 396f9b04-cef8-494b-ac6a-b2c0e806079e
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: production
+description: ''
+weight: 0
+folder: ../project/config/pbni/production
+module: {  }
+theme: {  }
+blacklist:
+  - search_api.server.solr_default
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

@@ -1,0 +1,19 @@
+uuid: ac07e3c9-c625-468e-a33d-6e912d5ca901
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mobile
+    - node.type.board_member
+id: node.board_member.field_mobile
+field_name: field_mobile
+entity_type: node
+bundle: board_member
+label: 'Work mobile'
+description: 'Please add a work mobile number.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

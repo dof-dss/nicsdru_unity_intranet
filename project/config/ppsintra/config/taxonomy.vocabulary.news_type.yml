@@ -1,0 +1,9 @@
+uuid: 861e9160-dc48-4dd9-8b5f-007b782404ad
+langcode: en
+status: true
+dependencies: {  }
+name: 'News type'
+vid: news_type
+description: null
+weight: 0
+new_revision: false

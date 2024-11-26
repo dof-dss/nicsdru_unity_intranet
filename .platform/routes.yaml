@@ -5,22 +5,12 @@
 # original repository.Any changes here will be overwritten when the project #
 # is built.                                                                 #
 #############################################################################
-'https://uregni.intranet.nigov.net/':
-    type: upstream
-    upstream: 'unity_intranet:http'
-    cache:
-        enabled: 'false'
 'https://pps.intranet.nigov.net/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
-'https://niaomi.intranet.nigov.net/':
-    type: upstream
-    upstream: 'unity_intranet:http'
-    cache:
-        enabled: 'false'
-'https://afbi.intranet.nigov.net.{default}/':
+'https://uregni.intranet.nigov.net/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:
@@ -30,7 +20,17 @@
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
+'https://niaomi.intranet.nigov.net/':
+    type: upstream
+    upstream: 'unity_intranet:http'
+    cache:
+        enabled: 'false'
 'https://nipb.intranet.nigov.net/':
+    type: upstream
+    upstream: 'unity_intranet:http'
+    cache:
+        enabled: 'false'
+'https://afbi.intranet.nigov.net/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:

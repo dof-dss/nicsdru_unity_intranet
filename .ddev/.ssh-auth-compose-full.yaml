@@ -1,0 +1,43 @@
+name: ddev-unity1
+services:
+  ddev-ssh-agent:
+    build:
+      context: /Users/martindutton/.ddev/.sshimageBuild
+      dockerfile: Dockerfile
+      args:
+        BASE_IMAGE: ddev/ddev-ssh-agent:v1.23.4
+        gid: "20"
+        uid: "501"
+        username: martindutton
+    container_name: ddev-ssh-agent
+    environment:
+      SSH_AUTH_SOCK: /tmp/.ssh-agent/socket
+    hostname: ddev-ssh-agent
+    healthcheck:
+      timeout: 1m2s
+      interval: 1s
+      retries: 2
+      start_period: 10s
+    image: ddev/ddev-ssh-agent:v1.23.4-built
+    networks:
+      ddev_default: null
+    restart: "no"
+    user: "501:20"
+    volumes:
+      - type: volume
+        source: dot_ssh
+        target: /tmp/.ssh
+        volume: {}
+      - type: volume
+        source: socket_dir
+        target: /tmp/.ssh-agent
+        volume: {}
+networks:
+  ddev_default:
+    name: ddev_default
+    external: true
+volumes:
+  dot_ssh:
+    name: ddev-ssh-agent_dot_ssh
+  socket_dir:
+    name: ddev-ssh-agent_socket_dir

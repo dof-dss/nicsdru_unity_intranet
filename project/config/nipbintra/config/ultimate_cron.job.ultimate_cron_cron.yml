@@ -1,0 +1,17 @@
+uuid: a4e5c833-cd07-47e2-98a4-5b8baf9af615
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: NY964rMCwSs-Su_WqwM3TXdQNWWQAVLmTh42CsTsjK4
+title: 'Runs internal cleanup operations'
+id: ultimate_cron_cron
+weight: 5
+module: ultimate_cron
+callback: ultimate_cron_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

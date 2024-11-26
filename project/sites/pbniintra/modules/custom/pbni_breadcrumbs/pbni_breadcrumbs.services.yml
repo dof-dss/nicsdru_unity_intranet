@@ -1,0 +1,11 @@
+services:
+  pbni_breadcrumbs.breadcrumb.resources:
+    class: Drupal\pbni_breadcrumbs\ResourcesBreadcrumb
+    arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
+    tags:
+      - { name: breadcrumb_builder, priority: 105 }
+  pbni_breadcrumbs.breadcrumb.staff:
+    class: Drupal\pbni_breadcrumbs\StaffMemberBreadcrumb
+    arguments: [ '@entity_type.manager', '@title_resolver', '@request_stack' ]
+    tags:
+      - { name: breadcrumb_builder, priority: 105 }

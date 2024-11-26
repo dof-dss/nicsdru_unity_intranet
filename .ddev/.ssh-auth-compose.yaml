@@ -1,0 +1,36 @@
+volumes:
+  dot_ssh:
+    name: "ddev-ssh-agent_dot_ssh"
+  socket_dir:
+    name: "ddev-ssh-agent_socket_dir"
+
+services:
+  ddev-ssh-agent:
+    container_name: ddev-ssh-agent
+    hostname: ddev-ssh-agent
+    build:
+      context: './.sshimageBuild'
+      args:
+        BASE_IMAGE: 'ddev/ddev-ssh-agent:v1.23.4'
+        username: 'martindutton'
+        uid: '501'
+        gid: '20'
+    image: 'ddev/ddev-ssh-agent:v1.23.4-built'
+    networks:
+      - ddev_default
+    restart: "no"
+    user: '$DDEV_UID:$DDEV_GID'
+    volumes:
+      - "dot_ssh:/tmp/.ssh"
+      - "socket_dir:/tmp/.ssh-agent"
+    environment:
+      - SSH_AUTH_SOCK=/tmp/.ssh-agent/socket
+    healthcheck:
+      interval: 1s
+      retries: 2
+      start_period: 10s
+      timeout: 62s
+networks:
+  ddev_default:
+    name: ddev_default
+    external: true

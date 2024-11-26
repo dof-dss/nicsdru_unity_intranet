@@ -1,0 +1,384 @@
+/*
+ * @file
+ * Defines the components for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+#header {
+  @include breakpoint($tab) {
+    margin: 0 auto;
+    background: $white resolve('header-bg.png');
+    padding: 2rem 2rem 0 0;
+  }
+}
+
+.search-form input[type="submit"] {
+  background-color: $black;
+
+  &:hover,
+  &:focus {
+    background-color: #2ea4cc;
+    opacity: 1;
+  }
+}
+
+#main-menu .hamburger {
+  top: -13.9rem;
+}
+
+#block-pbni-theme-intranettext p {
+  @include breakpoint($tab) {
+    text-align: right;
+  }
+
+  @include adjust-font-size-to(30px);
+  padding-left: 1rem;
+  color: $white;
+}
+
+.sidebar-second-layout {
+  .rel-menu--latest-news {
+    margin-bottom: 2rem;
+
+    ul {
+      margin-bottom: 1rem;
+
+      li {
+        padding: 0 0 .6rem 1rem;
+        list-style: none;
+        margin: 0 0 .2rem;
+        position: relative;
+
+        &::before {
+          content: "-";
+          left: 0;
+          position: absolute;
+          top: 0;
+        }
+
+        .date-published {
+          display: block;
+          font-size: 1.4rem;
+          line-height: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+article.block-link {
+  position: relative;
+  flex-basis: 30rem;
+  margin-bottom: 4rem;
+
+  h2 {
+    margin: 0;
+    padding-bottom: 1.8rem;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      bottom: 2.3rem;
+      right: 1rem;
+      width: 3rem;
+      height: 3rem;
+      background-image: resolve('arrow_forward_link_blue.svg');
+      background-position: center center;
+      background-size: 2.4rem auto;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .block-link__body {
+    padding: 2rem;
+  }
+
+  .media-image {
+    margin: 0;
+  }
+}
+
+#content #top-area .column article.block-link a {
+  min-height: 25.1rem;
+  background: $grey-lightest;
+}
+
+#content #top-area .column article.block-link a,
+#content .region-front-welcome #block-pbni-theme-views-block-news-latest-news-home article.block-link a {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+
+  &:hover,
+  &:focus {
+    background: #e4f0fa;
+  }
+
+  &:focus {
+    outline: 2px solid #000;
+    outline-offset: -2px;
+  }
+
+  &:hover h2:after,
+  &:focus h2:after {
+    background-color: $charcoal;
+    background-image: resolve('arrow_forward_white.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+#content .region-front-welcome #block-pbni-theme-views-block-news-latest-news-home article.block-link a {
+  padding: 3.2rem 3.2rem 0;
+  background: #10393d;
+
+  &:hover,
+  &:focus {
+    background: $brand-secondary;
+  }
+}
+
+#top-area {
+  text-align: left;
+  margin-top: 2rem;
+
+  h2 {
+    color: $link;
+    padding: 0;
+  }
+
+  .column:first-child {
+    width: 100%;
+    float: none;
+
+    .feature-card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+
+.region-front-welcome {
+  margin-top: 0;
+
+  @media screen and (max-width: $tab) {
+    margin: 0;
+    padding: 0;
+  }
+
+  @include breakpoint($tab) {
+    background: $brand-secondary resolve('slideshow-bg.png');
+  }
+
+  position: relative;
+  height: 38rem;
+
+  .block h2 {
+    text-align: left;
+    margin-bottom: 4rem;
+  }
+}
+
+#block-pbni-theme-views-block-news-latest-news-home {
+
+  .content {
+    @include breakpoint($tab) {
+      width: 40rem;
+    }
+
+    article.block-link {
+      margin-bottom: 0;
+
+      a {
+        display: block;
+        min-height: 38rem;
+      }
+
+      h2 {
+        color: $white;
+
+        &:after {
+          background-image: resolve('arrow_forward_white.svg');
+        }
+      }
+    }
+
+    h2 {
+      color: $white;
+    }
+  }
+}
+
+#footer-area {
+  @include breakpoint($tab) {
+    display: flex;
+  }
+
+  #block-pbni-theme-footerlogo {
+    width: 30rem;
+  }
+
+  @media screen and (max-width: $tab) {
+    .column:last-child {
+      float: none;
+    }
+  }
+
+  @include breakpoint($phab) {
+    .column {
+      flex: 1;
+    }
+  }
+}
+
+footer ul {
+  box-sizing: border-box;
+  width: 100%;
+  clear: both;
+  float: left;
+}
+
+#footer {
+  .block > h2 {
+    color: $text;
+  }
+
+  .column li {
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    padding-right: 1em;
+    display: list-item;
+    border: none;
+  }
+}
+
+footer li:nth-child(odd) {
+  clear: left;
+}
+
+.staff-members-all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-top: 4rem;
+
+  .staff-glossary {
+    flex-basis: 30%;
+
+    h2 {
+      @include adjust-font-size-to(20px);
+      color: $link;
+    }
+
+    p:last-of-type {
+      margin-bottom: 0;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        bottom: .8rem;
+        right: .5rem;
+        width: 2.7rem;
+        height: 2.7rem;
+        background-image: resolve('arrow_forward_link_blue.svg');
+        background-position: center center;
+        background-size: 2.4rem auto;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .media-image {
+      margin: 0;
+    }
+
+    &:nth-child(3n+1) {
+      border: 1px solid #153e10;
+      border-bottom-width: 1rem;
+    }
+
+    &:nth-child(3n+2) {
+      border: 1px solid #799f14;
+      border-bottom-width: 1rem;
+    }
+
+    &:nth-child(3n+3) {
+      border: 1px solid #afce21;
+      border-bottom-width: 1rem;
+    }
+  }
+}
+
+.staff-member {
+  display: flex;
+  border: 1px solid $black;
+  padding: 2rem;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .label-bold {
+    font-weight: bold;
+  }
+
+  @include breakpoint($phab) {
+    .media-image {
+      margin: 0;
+
+      &[data-picture-mapping="portrait_float"] > img {
+        width: 60%;
+      }
+    }
+  }
+}
+
+#content #block-mainpagecontent .staff-members-all a {
+  border: none;
+  padding: 1rem;
+  margin: 0;
+  background: $grey-lightest;
+  display: block;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    background: #e4f0fa;
+    border: none;
+
+    p:last-of-type:after {
+      background-color: $charcoal;
+      background-image: resolve('arrow_forward_white.svg');
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:focus {
+    outline: 2px solid $black;
+    outline-offset: -2px;
+  }
+}
+
+#content #block-mainpagecontent .staff-profiles-glossary a {
+  border: none;
+  padding: .5rem 1.5rem;
+  margin: 0;
+
+  &.is-active,
+  &:hover {
+    background: $brand-secondary;
+    color: $white;
+  }
+
+  &:focus {
+  background: $link;
+    color: $white;
+    outline: 2px solid $black;
+    outline-offset: -2px;
+}
+}

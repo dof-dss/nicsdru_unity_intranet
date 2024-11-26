@@ -1,0 +1,81 @@
+uuid: e6c5a993-1ea3-4dfb-8a11-a54394e061e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.staff_glossary
+    - field.field.node.board_member.field_about_me
+    - field.field.node.board_member.field_directorate
+    - field.field.node.board_member.field_extension
+    - field.field.node.board_member.field_find_me
+    - field.field.node.board_member.field_first_name
+    - field.field.node.board_member.field_meta_tags
+    - field.field.node.board_member.field_mobile
+    - field.field.node.board_member.field_photo
+    - field.field.node.board_member.field_title
+    - field.field.node.board_member.field_work_pattern
+    - node.type.board_member
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.board_member.staff_glossary
+targetEntityType: node
+bundle: board_member
+mode: staff_glossary
+content:
+  field_directorate:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_extension:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_first_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_photo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: portrait_full
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  content_moderation_control: true
+  field_about_me: true
+  field_find_me: true
+  field_meta_tags: true
+  field_mobile: true
+  field_work_pattern: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

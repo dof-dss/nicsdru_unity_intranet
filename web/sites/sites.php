@@ -95,6 +95,24 @@ if (!empty(getenv('PLATFORM_BRANCH'))) {
       elseif (str_contains($newhost, 'independentpanel.truthrecoveryni.co.uk')) {
         $sites[$host] = 'independentpaneltruthrecoveryni';
       }
+      elseif (str_contains($newhost, 'uregni.intranet.nigov.net')) {
+        $sites[$host] = 'uregniintra';
+      }
+      elseif (str_contains($newhost, 'pps.intranet.nigov.net')) {
+        $sites[$host] = 'ppsintra';
+      }
+      elseif (str_contains($newhost, 'niaomi.intranet.nigov.net')) {
+        $sites[$host] = 'niaomiintra';
+      }
+      elseif (str_contains($newhost, 'afbi.intranet.nigov.net')) {
+        $sites[$host] = 'afbiintra';
+      }
+      elseif (str_contains($newhost, 'pbni.intranet.nigov.net')) {
+        $sites[$host] = 'pbniintra';
+      }
+      elseif (str_contains($newhost, 'nipb.intranet.nigov.net')) {
+        $sites[$host] = 'nipbintra';
+      }
       else {
         $subdomain = substr($newhost, 0, strpos($newhost, '.'));
         // Check for domain names that contain dashes and strip them out.
@@ -129,6 +147,15 @@ if (getenv('LANDO')) {
     else {
       $sites[$site['url'] . '.lndo.site'] = $site_id;
     }
+  }
+}
+
+// Running in DDev locally, include appropriate sites file.
+if (getenv('IS_DDEV_PROJECT')) {
+  $project = Yaml::parseFile('/var/www/html/project/project.yml');
+
+  foreach ($project['sites'] as $site_id => $site) {
+    $sites[$site_id . '.ddev.site'] = $site_id;
   }
 }
 

@@ -1,0 +1,29 @@
+uuid: 9b0be6bd-0bcb-41be-9bdb-c62573730ee6
+langcode: en
+status: true
+dependencies:
+  module:
+    - webform
+title: 'Default cron handler'
+id: webform_cron
+weight: -3
+module: webform
+callback: webform_cron
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '0+@ * * * *'
+launcher:
+  id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
+logger:
+  id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

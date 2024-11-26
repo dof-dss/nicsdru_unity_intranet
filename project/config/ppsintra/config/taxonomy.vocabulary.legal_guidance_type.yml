@@ -1,0 +1,9 @@
+uuid: c58098e1-4334-4e13-aadf-97d35ed3a2f6
+langcode: en
+status: true
+dependencies: {  }
+name: 'Legal Guidance Type'
+vid: legal_guidance_type
+description: null
+weight: 0
+new_revision: false

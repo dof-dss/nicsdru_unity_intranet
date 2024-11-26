@@ -1,0 +1,17 @@
+uuid: 1aa39284-3939-4c81-9594-8dcf5c104b2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - noreferrer
+title: 'Default cron handler'
+id: noreferrer_cron
+weight: -8
+module: noreferrer
+callback: noreferrer_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

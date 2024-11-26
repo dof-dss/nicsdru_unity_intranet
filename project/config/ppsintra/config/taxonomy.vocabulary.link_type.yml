@@ -1,0 +1,9 @@
+uuid: 73394fa9-e6b3-4725-8334-459875f44ff7
+langcode: en
+status: true
+dependencies: {  }
+name: 'Link Type'
+vid: link_type
+description: null
+weight: 0
+new_revision: false

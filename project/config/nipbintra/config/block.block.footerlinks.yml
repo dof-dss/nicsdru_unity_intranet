@@ -1,0 +1,25 @@
+uuid: 903b7d79-db57-4768-bdcc-5660d4f092ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-footer-links
+  module:
+    - system
+  theme:
+    - nipb_theme
+id: footerlinks
+theme: nipb_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-footer-links'
+settings:
+  id: 'system_menu_block:menu-footer-links'
+  label: 'footer links'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

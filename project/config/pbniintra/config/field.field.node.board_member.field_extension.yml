@@ -1,0 +1,23 @@
+uuid: baaa7769-ef7a-44d0-ab13-35653d80a298
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_extension
+    - node.type.board_member
+id: node.board_member.field_extension
+field_name: field_extension
+entity_type: node
+bundle: board_member
+label: Extension
+description: 'Please add an extension number.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: 99999
+  prefix: ''
+  suffix: ''
+field_type: integer
