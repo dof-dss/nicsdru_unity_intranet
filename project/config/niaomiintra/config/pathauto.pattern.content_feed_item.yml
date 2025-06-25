@@ -1,0 +1,22 @@
+uuid: e15357d5-8137-442d-86d6-d164baa47536
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_feed_item
+label: 'Content - Feed item'
+type: 'canonical_entities:node'
+pattern: 'feed_item/[node:title]'
+selection_criteria:
+  86356c74-e41d-4917-bcf3-75a04150969d:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 86356c74-e41d-4917-bcf3-75a04150969d
+    context_mapping:
+      node: node
+    bundles:
+      feed_item: feed_item
+selection_logic: and
+weight: -5
+relationships: {  }
