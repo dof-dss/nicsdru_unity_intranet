@@ -6,7 +6,7 @@ id: local
 label: local
 description: "Local development split. \r\nEnables debugging and development modules"
 weight: 0
-folder: ../project/config/afbi/local
+folder: ../project/config/afbiintra/local
 module:
   clone_nodes: 0
   dblog: 0

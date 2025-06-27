@@ -6,7 +6,7 @@ id: production
 label: production
 description: 'Used for production site.'
 weight: 0
-folder: ../project/config/afbi/production
+folder: ../project/config/afbiintra/production
 module:
   fastly: 0
 theme: {  }

@@ -6,7 +6,7 @@ id: production
 label: production
 description: ''
 weight: 0
-folder: ../project/config/pps/production
+folder: ../project/config/ppsintra/production
 module: {  }
 theme: {  }
 blacklist:
