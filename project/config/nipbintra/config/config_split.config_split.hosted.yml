@@ -6,7 +6,7 @@ id: hosted
 label: Hosted
 description: ''
 weight: 0
-folder: ../project/config/nipb/hosted
+folder: ../project/config/nipbintra/hosted
 module: {  }
 theme: {  }
 blacklist: {  }
