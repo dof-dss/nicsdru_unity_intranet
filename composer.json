@@ -46,10 +46,10 @@
         "composer-runtime-api": "*",
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
-        "dof-dss/nicsdru_origins_modules": "^10.4",
+        "dof-dss/nicsdru_origins_modules": "^10.5",
         "dof-dss/nicsdru_unity_modules": "^10.1",
         "dof-dss/nicsdru_unity_profile": "^10.1",
-        "dof-dss/nicsdru_unity_theme": "^10.1",
+        "dof-dss/nicsdru_unity_theme": "^10.2",
         "drupal/address": "^1.12",
         "drupal/admin_toolbar": "^3.4",
         "drupal/allowed_formats": "^3.0",
@@ -91,7 +91,7 @@
         "drupal/fastly": "^4.0",
         "drupal/field_group": "^3.4",
         "drupal/file_delete_ui": "^1.0@beta",
-        "drupal/filelog": "2.1.1",
+        "drupal/filelog": "^3.0.x-dev@dev",
         "drupal/flag": "^4.0@beta",
         "drupal/flood_control": "^2.3",
         "drupal/geocoder": "^4.9",
@@ -128,11 +128,11 @@
         "drupal/scheduler": "^2.0",
         "drupal/scheduler_content_moderation_integration": "^2.0@beta",
         "drupal/schema_metatag": "^3.0",
-        "drupal/search_api": "1.30.0",
+        "drupal/search_api": "^1.38",
         "drupal/search_api_autocomplete": "1.8.0",
         "drupal/search_api_glossary": "4.2.0",
         "drupal/search_api_location": "1.0.0-alpha3",
-        "drupal/search_api_solr": "4.3.0",
+        "drupal/search_api_solr": "^4.3",
         "drupal/search_api_spellcheck": "4.0.0",
         "drupal/seven": "^1.0",
         "drupal/shs": "^2.0@RC",
@@ -224,9 +224,6 @@
             "drupal/fastly": {
                 "Allow disabling of logging": "https://git.drupalcode.org/project/fastly/-/merge_requests/6.patch"
             },
-            "drupal/filelog": {
-                "Avoid circular reference": "https://www.drupal.org/files/issues/2024-01-25/filelog_with_tests.patch"
-            },
             "drupal/hms_field": {
                 "Drupal 9 compatability": "https://www.drupal.org/files/issues/2020-06-06/hms_field.1.x-dev.rector.patch"
             },
@@ -241,6 +238,9 @@
             },
             "drupal/slick": {
                 "PHP 8.2 compatibility": "https://git.drupalcode.org/issue/slick-3373261/-/commit/4035fef4eb48df2a2859d6c2785357d6071f9e72.patch"
+            },
+            "drupal/search_api": {
+                "Declaration of Drupal\\search_api_solr\\Plugin\\search_api\\backend\\SearchApiSolrBackend::__sleep() must be compatible": "https://www.drupal.org/files/issues/2024-06-18/type_declaration.patch"
             },
             "drupal/ultimate_cron": {
                 "Fix $last_ran deprecation error": "https://www.drupal.org/files/issues/2023-04-03/3351276-4.patch"
