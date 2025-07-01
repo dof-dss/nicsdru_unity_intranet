@@ -1,9 +1,9 @@
 uuid: e50d8e75-697e-4570-944d-dd911b92daa2
 langcode: en
 status: true
-dependencies: { }
+dependencies: {  }
 id: administrator
 label: Administrator
 weight: -8
 is_admin: true
-permissions: { }
+permissions: {  }
