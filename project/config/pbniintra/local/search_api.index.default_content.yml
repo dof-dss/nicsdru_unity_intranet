@@ -1,4 +1,4 @@
-uuid: d57fbc06-4e93-40e0-b32e-1b4f07d5d1b0
+uuid: 46079c17-9329-4a6c-98db-4dd72044b242
 langcode: en
 status: true
 dependencies:
@@ -10,6 +10,7 @@ dependencies:
   module:
     - node
     - search_api_solr
+    - user
 third_party_settings:
   search_api_solr:
     finalize: false
@@ -56,8 +57,8 @@ third_party_settings:
       specific_languages:
         en: '0'
       use_universal_collation: false
-id: news
-name: News
+id: default_content
+name: 'Default content'
 description: ''
 read_only: false
 field_settings:
@@ -66,9 +67,18 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: body
     type: text
+    boost: 0.5
     dependencies:
       config:
         - field.storage.node.body
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - node
   field_published_date:
     label: 'Publication date'
     datasource_id: 'entity:node'
@@ -82,7 +92,6 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: field_teaser
     type: text
-    boost: 3.0
     dependencies:
       config:
         - field.storage.node.field_teaser
@@ -94,6 +103,15 @@ field_settings:
     dependencies:
       module:
         - node
+  name:
+    label: 'Authored by » User » Name'
+    datasource_id: 'entity:node'
+    property_path: 'uid:entity:name'
+    type: string
+    dependencies:
+      module:
+        - node
+        - user
   spelling:
     label: Spelling
     property_path: aggregated_field
@@ -114,8 +132,18 @@ field_settings:
 
 
 
+
       fields:
+        - 'entity:node/body'
         - 'entity:node/title'
+  status:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - node
   title:
     label: Title
     datasource_id: 'entity:node'
@@ -146,15 +174,24 @@ field_settings:
 
 
 
+
       fields:
-        - 'entity:node/body'
         - 'entity:node/title'
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
 datasource_settings:
   'entity:node':
     bundles:
-      default: false
+      default: true
       selected:
-        - news
+        - feature
+        - webform
     languages:
       default: true
       selected: {  }
@@ -165,15 +202,31 @@ processor_settings:
   custom_value: {  }
   entity_status: {  }
   entity_type: {  }
+  highlight:
+    weights:
+      postprocess_query: 0
+    prefix: '<strong>'
+    suffix: '</strong>'
+    excerpt: true
+    excerpt_always: false
+    excerpt_length: 256
+    exclude_fields: {  }
+    highlight: always
+    highlight_partial: false
   html_filter:
     weights:
       preprocess_index: -15
       preprocess_query: -15
-    all_fields: false
+    all_fields: true
     fields:
       - body
       - field_teaser
+      - langcode
+      - name
+      - spelling
       - title
+      - title_fulltext
+      - type
     title: false
     alt: true
     tags:
