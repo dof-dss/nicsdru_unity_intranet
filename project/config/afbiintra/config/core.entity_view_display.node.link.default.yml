@@ -15,6 +15,11 @@ targetEntityType: node
 bundle: link
 mode: default
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   field_link_type:
     type: list_default
     label: above
@@ -41,3 +46,4 @@ content:
     region: content
 hidden:
   langcode: true
+  search_api_excerpt: true

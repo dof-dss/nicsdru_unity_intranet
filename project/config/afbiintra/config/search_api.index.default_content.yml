@@ -1,16 +1,19 @@
-uuid: 8daa6af5-839d-4d0e-9784-f61b20e2c2ec
+uuid: 83ec9120-28f5-475c-8773-1a5f1f07ba23
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_published_date
+    - field.storage.node.field_publication_type
     - field.storage.node.field_teaser
     - field.storage.node.field_news_type
     - search_api.server.solr_default
   module:
     - search_api_solr
     - node
+    - user
+    - taxonomy
     - search_api
 third_party_settings:
   search_api_solr:
@@ -58,8 +61,8 @@ third_party_settings:
       specific_languages:
         en: '0'
       use_universal_collation: false
-id: news
-name: News
+id: default_content
+name: 'Default content'
 description: ''
 read_only: false
 field_settings:
@@ -68,9 +71,18 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: body
     type: text
+    boost: 0.5
     dependencies:
       config:
         - field.storage.node.body
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - node
   field_news_type:
     label: Type
     datasource_id: 'entity:node'
@@ -92,7 +104,6 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: field_teaser
     type: text
-    boost: 3.0
     dependencies:
       config:
         - field.storage.node.field_teaser
@@ -104,6 +115,25 @@ field_settings:
     dependencies:
       module:
         - node
+  name:
+    label: 'Authored by » User » Name'
+    datasource_id: 'entity:node'
+    property_path: 'uid:entity:name'
+    type: string
+    dependencies:
+      module:
+        - node
+        - user
+  name_1:
+    label: 'Publication type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_publication_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_publication_type
+      module:
+        - taxonomy
   spelling:
     label: Spelling
     property_path: aggregated_field
@@ -113,14 +143,23 @@ field_settings:
       separator: |+
 
 
+
       fields:
         - 'entity:node/title'
+  status:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - node
   title:
     label: Title
     datasource_id: 'entity:node'
     property_path: title
     type: text
-    boost: 5.0
+    boost: 21.0
     dependencies:
       module:
         - node
@@ -134,15 +173,24 @@ field_settings:
       separator: |+
 
 
+
       fields:
         - 'entity:node/body'
         - 'entity:node/title'
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
 datasource_settings:
   'entity:node':
     bundles:
-      default: false
+      default: true
       selected:
-        - news
+        - webform
     languages:
       default: true
       selected: {  }
@@ -151,46 +199,15 @@ processor_settings:
   aggregated_field: {  }
   auto_aggregated_fulltext_field: {  }
   custom_value: {  }
-  entity_status: {  }
   entity_type: {  }
-  highlight:
-    weights:
-      postprocess_query: 0
-    prefix: '<strong>'
-    suffix: '</strong>'
-    excerpt: true
-    excerpt_always: false
-    excerpt_length: 256
-    exclude_fields: {  }
-    highlight: always
-    highlight_partial: false
-  html_filter:
-    weights:
-      preprocess_index: -15
-      preprocess_query: -15
-    all_fields: false
-    fields:
-      - body
-      - field_teaser
-      - title
-    title: false
-    alt: true
-    tags:
-      b: 2
-      h1: 5
-      h2: 3
-      h3: 2
-      strong: 2
   language_with_fallback: {  }
   rendered_item: {  }
-  solr_date_range:
-    weights:
-      preprocess_index: 0
+  solr_date_range: {  }
 tracker_settings:
   default:
     indexing_order: fifo
 options:
   cron_limit: 50
   index_directly: true
-  track_changes_in_references: true
+  track_changes_in_references: false
 server: solr_default
