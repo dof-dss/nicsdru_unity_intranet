@@ -24,6 +24,11 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   field_attachment:
     type: entity_reference_entity_view
     label: hidden
@@ -46,3 +51,4 @@ hidden:
   field_publication_type: true
   langcode: true
   links: true
+  search_api_excerpt: true

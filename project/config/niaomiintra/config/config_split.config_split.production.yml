@@ -6,13 +6,12 @@ id: production
 label: production
 description: 'Used for production site.'
 weight: 0
+stackable: false
+no_patching: false
+storage: null
 folder: ../project/config/niaomiintra/production
 module:
   fastly: 0
 theme: {  }
-blacklist:
-  - search_api.server.solr_default
-  - fastly.settings
-graylist: {  }
-graylist_dependents: true
-graylist_skip_equal: true
+complete_list: {  }
+partial_list: {  }
