@@ -6,11 +6,11 @@ id: production
 label: production
 description: ''
 weight: 0
-folder: ../project/config/pps/production
+stackable: false
+no_patching: false
+storage: null
+folder: ../project/config/ppsintra/production
 module: {  }
 theme: {  }
-blacklist:
-  - search_api.server.solr_default
-graylist: {  }
-graylist_dependents: true
-graylist_skip_equal: true
+complete_list: {  }
+partial_list: {  }

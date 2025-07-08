@@ -8,9 +8,8 @@ dependencies:
     - field.storage.node.field_teaser
     - search_api.server.solr_default
   module:
-    - search_api_solr
     - node
-    - search_api
+    - search_api_solr
 third_party_settings:
   search_api_solr:
     finalize: false
@@ -114,6 +113,9 @@ field_settings:
 
 
 
+
+
+
       fields:
         - 'entity:node/title'
   title:
@@ -133,6 +135,9 @@ field_settings:
     configuration:
       type: union
       separator: |+
+
+
+
 
 
 

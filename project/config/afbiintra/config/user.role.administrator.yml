@@ -63,8 +63,6 @@ dependencies:
     - media_file_delete
     - menu_admin_per_menu
     - metatag
-    - migrate
-    - migrate_tools
     - moderation_sidebar
     - node
     - origins_metatag
@@ -86,7 +84,6 @@ dependencies:
     - toolbar
     - ultimate_cron
     - update
-    - views_ui
     - webform
     - webform_node
     - whatlinkshere
@@ -163,7 +160,6 @@ permissions:
   - 'administer menu'
   - 'administer menu-footer-links menu items'
   - 'administer meta tags'
-  - 'administer migrations'
   - 'administer moderation sidebar'
   - 'administer modules'
   - 'administer node display'
@@ -198,7 +194,6 @@ permissions:
   - 'administer user fields'
   - 'administer user form display'
   - 'administer users'
-  - 'administer views'
   - 'administer webform'
   - 'administer webform element access'
   - 'administer webform submission'
@@ -426,7 +421,6 @@ permissions:
   - 'view latest version'
   - 'view link revisions'
   - 'view media'
-  - 'view migration messages'
   - 'view news revisions'
   - 'view own unpublished content'
   - 'view own unpublished media'

@@ -15,6 +15,11 @@ targetEntityType: node
 bundle: afbi_information
 mode: featured_application
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   field_featured_image:
     type: image
     label: hidden
@@ -34,3 +39,4 @@ content:
 hidden:
   field_photo: true
   langcode: true
+  search_api_excerpt: true
