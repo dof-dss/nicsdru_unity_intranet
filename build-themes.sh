@@ -44,7 +44,8 @@ for site_name in "${site_names[@]}"; do
     fi
 
     site_path="$sites_dir/$site_name"
-    themes_dir="$site_path/themes/${site_name}_theme"
+    short_site_name=${site_name//intra/}
+    themes_dir="$site_path/themes/${short_site_name}_theme"
 
     if [ -d "$themes_dir" ]; then
         echo "Running npm install in $themes_dir"
