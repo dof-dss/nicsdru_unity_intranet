@@ -1,4 +1,4 @@
-uuid: d622ce4c-961d-4d90-af4b-45fac29573f0
+uuid: 8e6754c5-6efe-49e7-86bd-210a681773b8
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,7 @@ dependencies:
     - system
   theme:
     - niaomi_theme
-_core:
-  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
-id: niaomi_theme_breadcrumbs
+id: breadcrumbs
 theme: niaomi_theme
 region: breadcrumb
 weight: 0
@@ -19,4 +17,8 @@ settings:
   label: Breadcrumbs
   label_display: '0'
   provider: system
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'
