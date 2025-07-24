@@ -30,7 +30,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: People
+      title: 'Glossary of staff'
       fields:
         field_profile_image:
           id: field_profile_image
@@ -434,9 +434,8 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: custom_tag
-        options:
-          custom_tag: 'handy_cache_tags:node:niao_staff_member'
+        type: tag
+        options: {  }
       empty: {  }
       sorts:
         title:
@@ -1207,9 +1206,10 @@ display:
       path: staff-profiles
       menu:
         type: normal
-        title: 'Staff Directory'
+        title: 'Staff Profiles'
         description: ''
         weight: 0
+        enabled: true
         expanded: false
         menu_name: main
         parent: ''
