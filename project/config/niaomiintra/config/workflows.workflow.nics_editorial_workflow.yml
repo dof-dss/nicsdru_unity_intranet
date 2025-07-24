@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - node.type.basic_page
+    - node.type.feature
     - node.type.featured_links
     - node.type.feed
     - node.type.feed_item
@@ -103,6 +104,7 @@ type_settings:
   entity_types:
     node:
       - basic_page
+      - feature
       - featured_links
       - feed
       - feed_item
