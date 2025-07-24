@@ -1,0 +1,22 @@
+uuid: 12283fb0-f7cd-455d-9fcb-e522751581f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_featured_links
+label: 'Content - Featured links'
+type: 'canonical_entities:node'
+pattern: 'featured_link/[node:title]'
+selection_criteria:
+  6d87b660-17b0-432d-ab5e-a932d344d40f:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 6d87b660-17b0-432d-ab5e-a932d344d40f
+    context_mapping:
+      node: node
+    bundles:
+      featured_links: featured_links
+selection_logic: and
+weight: -5
+relationships: {  }

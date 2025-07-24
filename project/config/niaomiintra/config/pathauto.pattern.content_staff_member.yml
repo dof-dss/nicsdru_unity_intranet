@@ -1,0 +1,22 @@
+uuid: 5ebaa5c0-579a-42b6-b0fb-5097ce409b7e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_staff_member
+label: 'Content - Staff member'
+type: 'canonical_entities:node'
+pattern: 'staff_member/[node:title]'
+selection_criteria:
+  c8d1f63c-47d1-4ccc-99e7-9141a15fba7c:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: c8d1f63c-47d1-4ccc-99e7-9141a15fba7c
+    context_mapping:
+      node: node
+    bundles:
+      niao_staff_member: niao_staff_member
+selection_logic: and
+weight: -5
+relationships: {  }
