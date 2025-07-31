@@ -10,7 +10,6 @@ dependencies:
     - field.storage.node.field_profile_image
     - image.style.staff_directory_profile
     - node.type.niao_staff_member
-    - system.menu.main
   module:
     - image
     - node
@@ -1205,11 +1204,10 @@ display:
           tokenize: false
       path: staff-profiles
       menu:
-        type: normal
+        type: none
         title: 'Staff Profiles'
         description: ''
         weight: 0
-        enabled: true
         expanded: false
         menu_name: main
         parent: ''
