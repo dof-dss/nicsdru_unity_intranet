@@ -135,6 +135,7 @@ field_settings:
 
 
 
+
       fields:
         - 'entity:node/body'
         - 'entity:node/title'
@@ -163,6 +164,7 @@ field_settings:
     configuration:
       type: union
       separator: |+
+
 
 
 
@@ -248,6 +250,7 @@ tracker_settings:
     indexing_order: fifo
 options:
   cron_limit: 50
+  delete_on_fail: true
   index_directly: true
   track_changes_in_references: false
 server: solr_default
