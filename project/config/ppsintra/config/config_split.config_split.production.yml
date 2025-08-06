@@ -12,5 +12,7 @@ storage: null
 folder: ../project/config/ppsintra/production
 module: {  }
 theme: {  }
-complete_list: {  }
+complete_list:
+  - search_api.server.solr_default
+  - fastly.settings
 partial_list: {  }
