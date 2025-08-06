@@ -8,7 +8,7 @@ description: "Local development split. \r\nEnables debugging and development mod
 weight: 0
 stackable: false
 no_patching: false
-storage: null
+storage: folder
 folder: ../project/config/uregniintra/local
 module:
   clone_nodes: 0
