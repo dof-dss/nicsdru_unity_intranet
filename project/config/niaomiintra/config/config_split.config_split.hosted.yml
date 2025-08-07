@@ -6,11 +6,11 @@ id: hosted
 label: hosted
 description: "Use for any sites that are 'hosted' and not running locally, whether development, QA or production."
 weight: 0
-folder: ../project/config/niaomi/hosted
+stackable: false
+no_patching: false
+storage: null
+folder: ../project/config/niaomiintra/hosted
 module: {  }
 theme: {  }
-blacklist:
-  - search_api.server.solr_default
-graylist: {  }
-graylist_dependents: true
-graylist_skip_equal: true
+complete_list: {  }
+partial_list: {  }

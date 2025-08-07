@@ -6,13 +6,12 @@ id: production
 label: production
 description: 'Used for production site.'
 weight: 0
-folder: ../project/config/afbi/production
+stackable: false
+no_patching: false
+storage: null
+folder: ../project/config/afbiintra/production
 module:
   fastly: 0
 theme: {  }
-blacklist:
-  - fastly.settings
-  - search_api.server.solr_default
-graylist: {  }
-graylist_dependents: true
-graylist_skip_equal: true
+complete_list: {  }
+partial_list: {  }

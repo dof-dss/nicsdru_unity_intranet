@@ -61,10 +61,11 @@ if (!empty($subsite_id)) {
   $settings['subsite_id'] = $site_id;
 
   // Geolocation module API keys.
-  $config['geolocation_google_maps.settings']['google_map_api_key'] = getenv($site_id . '_' . 'GOOGLE_MAP_API_KEY');
-  $config['geolocation_google_maps.settings']['google_map_api_server_key'] = getenv($site_id . '_' . 'GOOGLE_MAP_API_SERVER_KEY');
+  // Geolocation module API keys.
+  $config['geolocation_google_maps.settings']['google_map_api_key'] = getenv($site_id . '_GOOGLE_MAP_API_KEY');
+  $config['geolocation_google_maps.settings']['google_map_api_server_key'] = getenv($site_id . '_GOOGLE_MAP_API_SERVER_KEY');
   // Geocoder module API key.
-  $config['geocoder.settings']['plugins_options']['googlemaps']['apikey'] = getenv($site_id . '_' . 'GOOGLE_MAP_API_KEY');
+  $config['geocoder.settings']['plugins_options']['googlemaps']['apikey'] = getenv($site_id . '_GOOGLE_MAP_API_KEY');
 }
 
 // Environment indicator defaults.
@@ -113,8 +114,8 @@ if (getenv('LANDO') && file_exists($app_root . '/sites/settings.lando.php')) {
   include $app_root . '/sites/settings.lando.php';
 }
 
-if (getenv('IS_DDEV_PROJECT') && file_exists($app_root . '/sites/default/settings.ddev.php')) {
-  include $app_root . '/sites/default/settings.ddev.php';
+if (getenv('IS_DDEV_PROJECT') && file_exists($app_root . '/sites/settings.ddev.php')) {
+  include $app_root . '/sites/settings.ddev.php';
 }
 
 // Configure file paths.

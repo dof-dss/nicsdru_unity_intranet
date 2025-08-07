@@ -6,12 +6,13 @@ id: production
 label: Production
 description: 'Used for the production site only.'
 weight: 0
-folder: ../project/config/uregni/production
+stackable: false
+no_patching: false
+storage: null
+folder: ../project/config/uregniintra/production
 module:
   fastly: 0
 theme: {  }
-blacklist:
+complete_list:
   - search_api.server.solr_default
-graylist: {  }
-graylist_dependents: true
-graylist_skip_equal: true
+partial_list: {  }
