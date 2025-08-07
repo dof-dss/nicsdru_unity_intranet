@@ -1,4 +1,4 @@
-uuid: b54c2ddd-9e37-4a43-b729-603493cbf23a
+uuid: c5aba1e3-2df1-4ba3-9b66-c78d9a3ba0f5
 langcode: en
 status: true
 dependencies:
@@ -41,10 +41,10 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: pbni_intranet_solr
-    port: 8983
+    host: pbni_intranet_solr.internal
+    port: 8080
     path: /
-    core: default
+    core: pbni_index
     timeout: 5
     index_timeout: 5
     optimize_timeout: 10

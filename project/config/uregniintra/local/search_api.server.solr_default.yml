@@ -1,4 +1,4 @@
-uuid: c5aba1e3-2df1-4ba3-9b66-c78d9a3ba0f5
+uuid: 59a692df-370c-42a4-a262-572ce0b613e1
 langcode: en
 status: true
 dependencies:
@@ -41,10 +41,10 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: pps_intranet_solr
+    host: solr
     port: 8983
     path: /
-    core: default
+    core: uregniintra
     timeout: 5
     index_timeout: 5
     optimize_timeout: 10
