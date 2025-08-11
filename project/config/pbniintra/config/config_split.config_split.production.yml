@@ -6,12 +6,11 @@ id: production
 label: production
 description: ''
 weight: 0
-stackable: false
-no_patching: false
-storage: null
-folder: ../project/config/pbniintra/production
+folder: ../project/config/pbni/production
 module: {  }
 theme: {  }
-complete_list:
+blacklist:
   - search_api.server.solr_default
-partial_list: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

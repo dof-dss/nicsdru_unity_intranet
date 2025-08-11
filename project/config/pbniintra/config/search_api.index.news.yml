@@ -6,9 +6,11 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_published_date
     - field.storage.node.field_teaser
+    - search_api.server.solr_default
   module:
-    - node
     - search_api_solr
+    - node
+    - search_api
 third_party_settings:
   search_api_solr:
     finalize: false
@@ -119,23 +121,6 @@ field_settings:
     configuration:
       type: union
       separator: |+
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       fields:
         - 'entity:node/body'
         - 'entity:node/title'
@@ -182,7 +167,6 @@ tracker_settings:
     indexing_order: fifo
 options:
   cron_limit: 50
-  delete_on_fail: true
   index_directly: true
   track_changes_in_references: true
 server: solr_default
