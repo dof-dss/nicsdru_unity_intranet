@@ -102,7 +102,7 @@ process:
         target_id: fid
         display: display
         description: description
-  field_link:
+  field_external_url:
     - plugin: field_link
       source: field_link
   field_metatag:

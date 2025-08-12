@@ -1,21 +1,21 @@
-uuid: b280aafb-8ad9-4d68-990d-3f77007da6a1
+uuid: d29525b8-79db-4032-8b7a-f3cc0946e61c
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:text:23b05756-82ec-4797-98c5-b72d0201fe85'
+    - 'block_content:basic:9f4853e2-9f78-4f9f-8d51-abaac7027e18'
   module:
     - block_content
   theme:
     - pbni_theme
-id: pbni_theme_intranettext
+id: intranettext
 theme: pbni_theme
 region: search
 weight: -6
 provider: null
-plugin: 'block_content:23b05756-82ec-4797-98c5-b72d0201fe85'
+plugin: 'block_content:9f4853e2-9f78-4f9f-8d51-abaac7027e18'
 settings:
-  id: 'block_content:23b05756-82ec-4797-98c5-b72d0201fe85'
+  id: 'block_content:9f4853e2-9f78-4f9f-8d51-abaac7027e18'
   label: 'Intranet text'
   label_display: '0'
   provider: block_content
