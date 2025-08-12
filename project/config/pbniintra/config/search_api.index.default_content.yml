@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_published_date
     - field.storage.node.field_teaser
+    - search_api.server.solr_default
   module:
     - node
     - search_api_solr
@@ -117,22 +118,7 @@ field_settings:
     type: solr_text_spellcheck
     configuration:
       type: union
-      separator: |+
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      separator: |
 
 
       fields:
@@ -162,22 +148,7 @@ field_settings:
     boost: 13.0
     configuration:
       type: union
-      separator: |+
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      separator: |
 
 
       fields:

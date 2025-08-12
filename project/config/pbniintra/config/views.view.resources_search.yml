@@ -254,8 +254,7 @@ display:
     position: 1
     display_options:
       cache:
-        type: search_api_tag
-        options: {  }
+        type: none
       defaults:
         cache: false
       display_description: ''
@@ -266,7 +265,7 @@ display:
           tokenize: false
       path: resources
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -274,8 +273,6 @@ display:
         - url.query_args
         - 'user.node_grants:view'
       tags:
-        - 'config:facets.facet.document_date'
-        - 'config:facets.facet.resources_type'
         - 'config:field.storage.node.body'
         - 'config:search_api.index.resources_index'
         - 'search_api_list:resources_index'
