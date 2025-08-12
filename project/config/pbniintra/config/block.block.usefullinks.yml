@@ -1,21 +1,21 @@
-uuid: 52dfbb96-0158-453c-9f36-dd972a9d4744
+uuid: f52acc7e-0653-41ef-871e-6f90b57caaed
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:text:783cd7ff-743e-44f7-8c24-f4ce1c06cd25'
+    - 'block_content:basic:84f44c65-1062-485c-b5a3-6dd439c97f63'
   module:
     - block_content
   theme:
     - pbni_theme
-id: pbni_theme_usefullinks
+id: usefullinks
 theme: pbni_theme
 region: footer_second
 weight: 0
 provider: null
-plugin: 'block_content:783cd7ff-743e-44f7-8c24-f4ce1c06cd25'
+plugin: 'block_content:84f44c65-1062-485c-b5a3-6dd439c97f63'
 settings:
-  id: 'block_content:783cd7ff-743e-44f7-8c24-f4ce1c06cd25'
+  id: 'block_content:84f44c65-1062-485c-b5a3-6dd439c97f63'
   label: 'Useful links'
   label_display: visible
   provider: block_content
