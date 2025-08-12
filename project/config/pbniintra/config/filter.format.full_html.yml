@@ -141,6 +141,7 @@ filters:
     weight: -40
     settings:
       title: true
+      media_substitution: metadata
   media_embed:
     id: media_embed
     provider: media
