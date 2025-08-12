@@ -33,9 +33,11 @@ module:
   date_facet_drilldown: 0
   datetime: 0
   datetime_range: 0
+  dblog: 0
   diff: 0
   dynamic_entity_reference: 0
   dynamic_page_cache: 0
+  easy_install: 0
   editor: 0
   embed: 0
   entity_browser: 0
@@ -83,6 +85,13 @@ module:
   metatag_twitter_cards: 0
   metatag_verification: 0
   metatag_views: 0
+  migrate: 0
+  migrate_absolute_links: 0
+  migrate_drupal: 0
+  migrate_drupal_ui: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  migrate_upgrade: 0
   moderation_sidebar: 0
   mysql: 0
   node: 0
@@ -101,6 +110,7 @@ module:
   path_alias: 0
   pbni_breadcrumbs: 0
   pbni_common: 0
+  pbni_migrations: 0
   phpass: 0
   rdf: 0
   redirect: 0
@@ -127,6 +137,7 @@ module:
   ultimate_cron: 0
   unity_breadcrumbs: 0
   unity_common: 0
+  unity_file_migrations: 0
   unity_frontpage: 0
   unity_image_styles: 0
   unity_internal_link_checker: 0
@@ -134,6 +145,7 @@ module:
   unity_search_pages: 0
   user: 0
   views_custom_cache_tag: 0
+  views_ui: 0
   webform: 0
   webform_access: 0
   webform_node: 0
