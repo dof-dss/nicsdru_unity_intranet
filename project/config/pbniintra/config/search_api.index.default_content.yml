@@ -118,23 +118,7 @@ field_settings:
     type: solr_text_spellcheck
     configuration:
       type: union
-      separator: |+
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      separator: |
 
 
       fields:
@@ -164,23 +148,7 @@ field_settings:
     boost: 13.0
     configuration:
       type: union
-      separator: |+
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      separator: |
 
 
       fields:
