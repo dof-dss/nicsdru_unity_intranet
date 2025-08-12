@@ -11,7 +11,6 @@ dependencies:
     - node.type.news
   module:
     - datetime
-    - image
     - text
     - user
 id: node.news.default
@@ -24,18 +23,24 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 1
+    region: content
+  field_news_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_photo:
-    type: image
-    label: hidden
+    type: entity_reference_entity_view
+    label: above
     settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_published_date:
     type: datetime_default
@@ -47,7 +52,7 @@ content:
     weight: 0
     region: content
 hidden:
-  field_news_type: true
+  content_moderation_control: true
   field_teaser: true
   langcode: true
   links: true

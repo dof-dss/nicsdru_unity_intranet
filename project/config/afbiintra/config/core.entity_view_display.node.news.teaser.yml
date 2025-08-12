@@ -12,24 +12,12 @@ dependencies:
     - node.type.news
   module:
     - datetime
-    - image
     - user
 id: node.news.teaser
 targetEntityType: node
 bundle: news
 mode: teaser
 content:
-  field_photo:
-    type: image
-    label: above
-    settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
-    weight: 0
-    region: content
   field_published_date:
     type: datetime_default
     label: inline
@@ -37,7 +25,7 @@ content:
       timezone_override: ''
       format_type: unity_date
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_teaser:
     type: string
@@ -45,11 +33,13 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
 hidden:
   body: true
+  content_moderation_control: true
   field_news_type: true
+  field_photo: true
   langcode: true
   links: true
   search_api_excerpt: true

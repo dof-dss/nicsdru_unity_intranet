@@ -3,23 +3,36 @@ langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.webform_default
+    - filter.format.filtered_html
+    - filter.format.filtered_html_with_no_images
+    - node.type.news
+    - node.type.page
   module:
-    - file
     - filter
-    - media
     - node
+    - path
+    - pathauto
     - system
 _core:
   default_config_hash: Ff0Y8IxrFn0hb5D-Y6VCG31b-aGmN892WRowTmwPaLg
 id: authenticated
 label: 'authenticated user'
-weight: -9
+weight: 1
 is_admin: false
 permissions:
+  - 'access administration pages'
   - 'access content'
-  - 'delete own files'
-  - 'use text format webform_default'
-  - 'view all revisions'
-  - 'view media'
+  - 'create news content'
+  - 'create page content'
+  - 'create url aliases'
+  - 'delete own news content'
+  - 'delete own page content'
+  - 'edit any news content'
+  - 'edit any page content'
+  - 'edit own news content'
+  - 'edit own page content'
+  - 'notify of path changes'
+  - 'use text format filtered_html'
+  - 'use text format filtered_html_with_no_images'
   - 'view own unpublished content'
+  - 'view the administration theme'

@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.diff
     - field.field.node.page.body
-    - field.field.node.page.field_enable_toc
     - node.type.page
   module:
     - layout_builder
@@ -27,13 +26,8 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  content_moderation_control:
-    settings: {  }
-    third_party_settings: {  }
-    weight: -20
-    region: content
 hidden:
-  field_enable_toc: true
+  content_moderation_control: true
   langcode: true
   links: true
   search_api_excerpt: true

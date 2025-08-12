@@ -55,7 +55,7 @@ content:
   content_moderation_control:
     settings: {  }
     third_party_settings: {  }
-    weight: -20
+    weight: 6
     region: content
   field_attachment:
     type: entity_reference_entity_view

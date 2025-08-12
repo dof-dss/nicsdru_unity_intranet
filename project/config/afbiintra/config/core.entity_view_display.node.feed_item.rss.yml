@@ -14,17 +14,13 @@ targetEntityType: node
 bundle: feed_item
 mode: rss
 content:
-  content_moderation_control:
-    settings: {  }
-    third_party_settings: {  }
-    weight: -20
-    region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
+  content_moderation_control: true
   field_feed_item_description: true
   field_feed_pubdate: true
   langcode: true

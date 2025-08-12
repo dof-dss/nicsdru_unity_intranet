@@ -1,4 +1,4 @@
-uuid: 4dee4a63-0e26-4f11-ba4d-b1a48a7af3d8
+uuid: 0b68a8b6-6a1a-4d0b-b316-bb09ebb50a36
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ id: node.news.field_news_type
 field_name: field_news_type
 entity_type: node
 bundle: news
-label: Type
+label: 'News type'
 description: ''
 required: true
 translatable: false
@@ -22,7 +22,7 @@ settings:
     target_bundles:
       site_structure: site_structure
     sort:
-      field: _none
+      field: name
       direction: asc
     auto_create: false
     auto_create_bundle: ''

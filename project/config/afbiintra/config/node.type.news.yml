@@ -20,7 +20,7 @@ third_party_settings:
     toc_exclusions: ''
     toc_screen_depth: '1'
     toc_debug: 0
-name: 'News page'
+name: News
 type: news
 description: 'Use <em>news pages</em> for your news items, press releases and announcements.'
 help: null

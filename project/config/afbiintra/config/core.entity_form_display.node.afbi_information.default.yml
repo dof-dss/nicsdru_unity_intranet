@@ -3,11 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.afbi_information.field_corporate_image
     - field.field.node.afbi_information.field_featured_image
-    - field.field.node.afbi_information.field_photo
     - node.type.afbi_information
+    - workflows.workflow.nics_editorial_workflow
   module:
-    - file
+    - content_moderation
+    - media_library
     - path
 id: node.afbi_information.default
 targetEntityType: node
@@ -20,19 +22,19 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_featured_image:
-    type: file_generic
-    weight: 43
+  field_corporate_image:
+    type: media_library_widget
+    weight: 121
     region: content
     settings:
-      progress_indicator: throbber
+      media_types: {  }
     third_party_settings: {  }
-  field_photo:
-    type: file_generic
-    weight: 42
+  field_featured_image:
+    type: media_library_widget
+    weight: 122
     region: content
     settings:
-      progress_indicator: throbber
+      media_types: {  }
     third_party_settings: {  }
   flag:
     weight: 10
@@ -45,6 +47,12 @@ content:
     region: content
     settings:
       include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    region: content
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path
