@@ -86,7 +86,7 @@ process:
         title: title
         width: width
         height: height
-  field_photo:
+  field_corporate_image:
     -
       plugin: sub_process
       source: field_photo
