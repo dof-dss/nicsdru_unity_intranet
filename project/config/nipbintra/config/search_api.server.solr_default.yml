@@ -41,7 +41,7 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: nipb_intranet_solr
+    host: nipbintra_intranet_solr
     port: 8983
     path: /
     core: default
