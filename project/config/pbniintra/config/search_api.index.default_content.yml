@@ -118,20 +118,7 @@ field_settings:
     type: solr_text_spellcheck
     configuration:
       type: union
-      separator: |+
-
-
-
-
-
-
-
-
-
-
-
-
-
+      separator: |
 
 
       fields:
@@ -161,20 +148,7 @@ field_settings:
     boost: 13.0
     configuration:
       type: union
-      separator: |+
-
-
-
-
-
-
-
-
-
-
-
-
-
+      separator: |
 
 
       fields:
@@ -247,6 +221,7 @@ tracker_settings:
     indexing_order: fifo
 options:
   cron_limit: 50
+  delete_on_fail: true
   index_directly: true
   track_changes_in_references: true
 server: solr_default
