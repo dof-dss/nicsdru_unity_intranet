@@ -6,7 +6,6 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_published_date
     - field.storage.node.field_teaser
-    - search_api.server.solr_default
   module:
     - node
     - search_api_solr
@@ -120,7 +119,6 @@ field_settings:
       type: union
       separator: |
 
-
       fields:
         - 'entity:node/body'
         - 'entity:node/title'
@@ -149,7 +147,6 @@ field_settings:
     configuration:
       type: union
       separator: |
-
 
       fields:
         - 'entity:node/title'
