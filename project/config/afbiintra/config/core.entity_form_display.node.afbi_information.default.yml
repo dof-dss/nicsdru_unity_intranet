@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.afbi_information.field_corporate_image
     - field.field.node.afbi_information.field_featured_image
+    - field.field.node.afbi_information.field_photo
     - node.type.afbi_information
     - workflows.workflow.nics_editorial_workflow
   module:
@@ -22,16 +22,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_corporate_image:
+  field_featured_image:
     type: media_library_widget
-    weight: 121
+    weight: 122
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-  field_featured_image:
+  field_photo:
     type: media_library_widget
-    weight: 122
+    weight: 6
     region: content
     settings:
       media_types: {  }

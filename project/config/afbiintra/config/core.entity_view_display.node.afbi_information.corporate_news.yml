@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.corporate_news
-    - field.field.node.afbi_information.field_corporate_image
     - field.field.node.afbi_information.field_featured_image
+    - field.field.node.afbi_information.field_photo
     - node.type.afbi_information
   module:
     - user
@@ -14,14 +14,17 @@ targetEntityType: node
 bundle: afbi_information
 mode: corporate_news
 content:
-  links:
-    settings: {  }
+  field_photo:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   content_moderation_control: true
-  field_corporate_image: true
   field_featured_image: true
   langcode: true
+  links: true
   search_api_excerpt: true

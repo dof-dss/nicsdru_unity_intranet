@@ -1,13 +1,13 @@
-uuid: 0a7f2ac3-cfda-45a4-b105-42da7514abbe
+uuid: 6c3cbf4a-f5e0-489e-b614-db26ee042e78
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_corporate_image
+    - field.storage.node.field_photo
     - media.type.image
     - node.type.afbi_information
-id: node.afbi_information.field_corporate_image
-field_name: field_corporate_image
+id: node.afbi_information.field_photo
+field_name: field_photo
 entity_type: node
 bundle: afbi_information
 label: 'Corporate Image'
