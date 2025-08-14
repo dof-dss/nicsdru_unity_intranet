@@ -1,11 +1,14 @@
-uuid: 33d55ba4-2d78-48a7-a01b-8d9b42ee80b0
+uuid: 412a368b-8629-420f-a8d5-6be65e00c3e1
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.filtered_html
     - filter.format.filtered_html_with_no_images
+    - filter.format.filtered_html_with_tokens
+    - node.type.afbi_information
     - node.type.gallery
+    - node.type.link
     - node.type.news
     - node.type.page
   module:
@@ -13,22 +16,32 @@ dependencies:
     - node
     - redirect
     - system
-_core:
-  default_config_hash: TI9T1OpRZu2s9XuQcXbfHl_QQPkQy1UOWjUK8Akrdyk
-id: supervisor_user
-label: 'supervisor user'
-weight: 3
+id: editor_user
+label: 'editor user'
+weight: 5
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'administer nodes'
   - 'administer redirects'
+  - 'create afbi_information content'
   - 'create gallery content'
+  - 'create link content'
+  - 'delete any afbi_information content'
   - 'delete any gallery content'
+  - 'delete any link content'
   - 'delete any news content'
   - 'delete any page content'
+  - 'delete own afbi_information content'
   - 'delete own gallery content'
+  - 'delete own link content'
+  - 'edit any afbi_information content'
   - 'edit any gallery content'
+  - 'edit any link content'
+  - 'edit own afbi_information content'
   - 'edit own gallery content'
+  - 'edit own link content'
   - 'use text format filtered_html'
   - 'use text format filtered_html_with_no_images'
+  - 'use text format filtered_html_with_tokens'
   - 'view the administration theme'

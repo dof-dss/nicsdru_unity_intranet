@@ -96,6 +96,11 @@ process:
       plugin: site_files_filter
       from_ref: sites/afbi.intranet.nigov.net/files
       to_ref: files/afbi
+    -
+      plugin: str_replace
+      regex: true
+      search: /(<ul>)?(<li>)?(<div[^>]*>)?<a href="(\S+?files\/\S+)".*?>\s*[^<]*(\([^<]*\))?<\/a>(<\/div>)?(<\/li>)?(<\/ul>)?/
+      replace: ''
   body/0/format:
     -
       plugin: static_map
@@ -140,17 +145,17 @@ process:
       source: field_publication_type
       default_value: null
       map:
-        policies: 27
-        guidance: 17
-        notices: 18
-        minutes: 19
-        forms: 20
-        hr: 21
-        survey: 22
-        contacts: 23
-        faq: 24
-        reports: 25
-        training: 26
+        policies: 9
+        guidance: 10
+        notices: 11
+        minutes: 12
+        forms: 13
+        hr: 14
+        survey: 15
+        contacts: 16
+        faq: 17
+        reports: 18
+        training: 19
   field_metatag:
     -
       plugin: d7_metatag_entities

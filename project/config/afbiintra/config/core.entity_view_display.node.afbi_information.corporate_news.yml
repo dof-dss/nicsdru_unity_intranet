@@ -8,35 +8,23 @@ dependencies:
     - field.field.node.afbi_information.field_photo
     - node.type.afbi_information
   module:
-    - image
     - user
 id: node.afbi_information.corporate_news
 targetEntityType: node
 bundle: afbi_information
 mode: corporate_news
 content:
-  content_moderation_control:
-    settings: {  }
-    third_party_settings: {  }
-    weight: -20
-    region: content
   field_photo:
-    type: image
+    type: entity_reference_label
     label: hidden
     settings:
-      image_link: ''
-      image_style: page_image_3col
-      image_loading:
-        attribute: lazy
+      link: true
     third_party_settings: {  }
     weight: 0
     region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
-    region: content
 hidden:
+  content_moderation_control: true
   field_featured_image: true
   langcode: true
+  links: true
   search_api_excerpt: true

@@ -3,117 +3,24 @@ langcode: en
 status: true
 dependencies:
   config:
-    - media.type.audio
-    - media.type.document
-    - media.type.file
-    - media.type.image
-    - media.type.remote_video
-    - node.type.afbi_information
-    - node.type.feature
-    - node.type.feed
-    - node.type.feed_item
+    - filter.format.filtered_html
+    - filter.format.filtered_html_with_no_images
     - node.type.gallery
-    - node.type.link
-    - node.type.news
-    - node.type.page
-    - node.type.publication
-    - workflows.workflow.nics_editorial_workflow
   module:
-    - content_moderation
-    - media
-    - menu_admin_per_menu
-    - moderation_sidebar
+    - filter
     - node
-    - path
     - system
-    - toolbar
 _core:
   default_config_hash: 5C31b4Vwl4Jf5GP87kQetWI35E9W6rqJUsTl4v2D4xw
 id: author_user
 label: 'author user'
-weight: -7
+weight: 2
 is_admin: null
 permissions:
   - 'access administration pages'
-  - 'access content overview'
-  - 'access media overview'
-  - 'access toolbar'
-  - 'administer main menu items'
-  - 'create afbi_information content'
-  - 'create audio media'
-  - 'create document media'
-  - 'create feature content'
-  - 'create feed content'
-  - 'create feed_item content'
-  - 'create file media'
   - 'create gallery content'
-  - 'create image media'
-  - 'create link content'
-  - 'create news content'
-  - 'create page content'
-  - 'create publication content'
-  - 'create remote_video media'
-  - 'create url aliases'
-  - 'delete own afbi_information content'
-  - 'delete own audio media'
-  - 'delete own document media'
-  - 'delete own feature content'
-  - 'delete own feed content'
-  - 'delete own feed_item content'
-  - 'delete own file media'
-  - 'delete own gallery content'
-  - 'delete own image media'
-  - 'delete own link content'
-  - 'delete own news content'
-  - 'delete own page content'
-  - 'delete own publication content'
-  - 'delete own remote_video media'
-  - 'edit any feature content'
-  - 'edit any feed content'
-  - 'edit any feed_item content'
   - 'edit any gallery content'
-  - 'edit any link content'
-  - 'edit any news content'
-  - 'edit any page content'
-  - 'edit any publication content'
-  - 'edit own afbi_information content'
-  - 'edit own audio media'
-  - 'edit own document media'
-  - 'edit own feature content'
-  - 'edit own feed content'
-  - 'edit own feed_item content'
-  - 'edit own file media'
   - 'edit own gallery content'
-  - 'edit own image media'
-  - 'edit own link content'
-  - 'edit own news content'
-  - 'edit own page content'
-  - 'edit own publication content'
-  - 'edit own remote_video media'
-  - 'revert afbi_information revisions'
-  - 'revert feature revisions'
-  - 'revert feed revisions'
-  - 'revert feed_item revisions'
-  - 'revert gallery revisions'
-  - 'revert link revisions'
-  - 'revert news revisions'
-  - 'revert page revisions'
-  - 'revert publication revisions'
-  - 'use moderation sidebar'
-  - 'use nics_editorial_workflow transition create_new_draft'
-  - 'use nics_editorial_workflow transition draft_of_published'
-  - 'use nics_editorial_workflow transition reject'
-  - 'use nics_editorial_workflow transition submit_for_review'
-  - 'view afbi_information revisions'
-  - 'view any unpublished content'
-  - 'view feature revisions'
-  - 'view feed revisions'
-  - 'view feed_item revisions'
-  - 'view gallery revisions'
-  - 'view latest version'
-  - 'view link revisions'
-  - 'view news revisions'
-  - 'view own unpublished media'
-  - 'view page revisions'
-  - 'view publication revisions'
+  - 'use text format filtered_html'
+  - 'use text format filtered_html_with_no_images'
   - 'view the administration theme'

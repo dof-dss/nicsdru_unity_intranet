@@ -6,8 +6,10 @@ dependencies:
     - field.field.node.gallery.body
     - field.field.node.gallery.field_gallery_images
     - node.type.gallery
+    - workflows.workflow.nics_editorial_workflow
   module:
-    - file
+    - content_moderation
+    - media_library
     - path
     - text
 id: node.gallery.default
@@ -32,11 +34,11 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_gallery_images:
-    type: file_generic
-    weight: 4
+    type: media_library_widget
+    weight: 121
     region: content
     settings:
-      progress_indicator: throbber
+      media_types: {  }
     third_party_settings: {  }
   flag:
     weight: 10
@@ -49,6 +51,12 @@ content:
     region: content
     settings:
       include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    region: content
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path

@@ -1,4 +1,4 @@
-uuid: ba44e34b-f15d-4113-a809-06ddfe6d1262
+uuid: 6f856130-9361-4fd3-a31f-865254aa8983
 langcode: en
 status: true
 dependencies:
@@ -27,7 +27,6 @@ dependencies:
     - node.type.page
     - node.type.publication
     - node.type.webform
-    - taxonomy.vocabulary.news_type
     - taxonomy.vocabulary.publication_type
     - taxonomy.vocabulary.site_structure
     - workflows.workflow.nics_editorial_workflow
@@ -48,6 +47,7 @@ dependencies:
     - entityqueue
     - eu_cookie_compliance
     - facets
+    - fastly
     - field_ui
     - file
     - filter
@@ -90,7 +90,7 @@ dependencies:
     - workflows
 id: administrator
 label: Administrator
-weight: -8
+weight: 7
 is_admin: null
 permissions:
   - 'access administration pages'
@@ -112,6 +112,16 @@ permissions:
   - 'access webform help'
   - 'access webform overview'
   - 'access webform submission user'
+  - 'add scheduled transitions node afbi_information'
+  - 'add scheduled transitions node feature'
+  - 'add scheduled transitions node feed'
+  - 'add scheduled transitions node feed_item'
+  - 'add scheduled transitions node gallery'
+  - 'add scheduled transitions node link'
+  - 'add scheduled transitions node news'
+  - 'add scheduled transitions node page'
+  - 'add scheduled transitions node publication'
+  - 'add scheduled transitions node webform'
   - 'administer account menu items'
   - 'administer account settings'
   - 'administer actions'
@@ -138,6 +148,7 @@ permissions:
   - 'administer eu cookie compliance categories'
   - 'administer eu cookie compliance popup'
   - 'administer facets'
+  - 'administer fastly'
   - 'administer filters'
   - 'administer flagging display'
   - 'administer flagging fields'
@@ -224,7 +235,6 @@ permissions:
   - 'create page content'
   - 'create publication content'
   - 'create remote_video media'
-  - 'create terms in news_type'
   - 'create terms in publication_type'
   - 'create terms in site_structure'
   - 'create url aliases'
@@ -287,10 +297,8 @@ permissions:
   - 'delete own webform submission'
   - 'delete page revisions'
   - 'delete publication revisions'
-  - 'delete term revisions in news_type'
   - 'delete term revisions in publication_type'
   - 'delete term revisions in site_structure'
-  - 'delete terms in news_type'
   - 'delete terms in publication_type'
   - 'delete terms in site_structure'
   - 'delete webform revisions'
@@ -334,7 +342,6 @@ permissions:
   - 'edit own webform'
   - 'edit own webform content'
   - 'edit own webform submission'
-  - 'edit terms in news_type'
   - 'edit terms in publication_type'
   - 'edit terms in site_structure'
   - 'edit webform assets'
@@ -352,6 +359,16 @@ permissions:
   - 'manipulate entityqueues'
   - 'notify of path changes'
   - 'readonlymode access forms'
+  - 'reschedule scheduled transitions node afbi_information'
+  - 'reschedule scheduled transitions node feature'
+  - 'reschedule scheduled transitions node feed'
+  - 'reschedule scheduled transitions node feed_item'
+  - 'reschedule scheduled transitions node gallery'
+  - 'reschedule scheduled transitions node link'
+  - 'reschedule scheduled transitions node news'
+  - 'reschedule scheduled transitions node page'
+  - 'reschedule scheduled transitions node publication'
+  - 'reschedule scheduled transitions node webform'
   - 'revert afbi_information revisions'
   - 'revert all revisions'
   - 'revert all taxonomy revisions'
@@ -369,7 +386,6 @@ permissions:
   - 'revert news revisions'
   - 'revert page revisions'
   - 'revert publication revisions'
-  - 'revert term revisions in news_type'
   - 'revert term revisions in publication_type'
   - 'revert term revisions in site_structure'
   - 'revert webform revisions'
@@ -437,7 +453,6 @@ permissions:
   - 'view scheduled transitions node page'
   - 'view scheduled transitions node publication'
   - 'view scheduled transitions node webform'
-  - 'view term revisions in news_type'
   - 'view term revisions in publication_type'
   - 'view term revisions in site_structure'
   - 'view the administration theme'
