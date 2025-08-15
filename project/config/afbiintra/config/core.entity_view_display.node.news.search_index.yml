@@ -42,6 +42,7 @@ content:
     region: content
 hidden:
   body: true
+  content_moderation_control: true
   field_news_type: true
   field_photo: true
   langcode: true

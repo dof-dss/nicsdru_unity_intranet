@@ -1,33 +1,29 @@
-uuid: 59bccae8-5f17-41f0-b07b-4642efe30fc2
+uuid: f5dfe2e2-3bf7-4049-b93c-2c02a910bd63
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_gallery_images
+    - media.type.image
     - node.type.gallery
-  module:
-    - image
 id: node.gallery.field_gallery_images
 field_name: field_gallery_images
 entity_type: node
 bundle: gallery
 label: 'Gallery images'
-description: 'Please choose the images to be displayed in this gallery. '
+description: ''
 required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:file'
-  handler_settings: {  }
-  file_directory: images/gallery
-  file_extensions: 'png gif jpg jpeg'
-  max_filesize: '5 MB'
-  max_resolution: ''
-  min_resolution: 600x400
-  alt_field: false
-  alt_field_required: true
-  title_field: false
-  title_field_required: false
-  default_image: 0
-field_type: image
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

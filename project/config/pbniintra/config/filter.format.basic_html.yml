@@ -133,7 +133,7 @@ filters:
   linkit:
     id: linkit
     provider: linkit
-    status: false
+    status: true
     weight: -39
     settings:
       title: true

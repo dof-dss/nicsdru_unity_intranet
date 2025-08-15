@@ -15,11 +15,6 @@ targetEntityType: node
 bundle: feed_item
 mode: teaser
 content:
-  content_moderation_control:
-    settings: {  }
-    third_party_settings: {  }
-    weight: -20
-    region: content
   field_feed_item_description:
     type: text_trimmed
     label: hidden
@@ -31,9 +26,10 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
+  content_moderation_control: true
   field_feed_pubdate: true
   langcode: true
   search_api_excerpt: true

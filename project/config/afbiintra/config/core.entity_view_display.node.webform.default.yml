@@ -22,25 +22,23 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
-    region: content
-  content_moderation_control:
-    settings: {  }
-    third_party_settings: {  }
-    weight: -20
+    weight: 1
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
   webform:
     type: webform_entity_reference_entity_view
     label: hidden
-    settings: {  }
+    settings:
+      source_entity: true
+      lazy: false
     third_party_settings: {  }
-    weight: 102
+    weight: 2
     region: content
 hidden:
+  content_moderation_control: true
   langcode: true
   search_api_excerpt: true
