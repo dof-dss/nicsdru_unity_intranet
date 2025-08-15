@@ -13,5 +13,5 @@ folder: ../project/config/pbniintra/production
 module: {  }
 theme: {  }
 complete_list:
-  - search_api.server.solr_defaultq
+  - search_api.server.solr_default
 partial_list: {  }
