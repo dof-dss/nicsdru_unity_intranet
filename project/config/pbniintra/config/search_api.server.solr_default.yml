@@ -41,7 +41,7 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: pbni_intranet_solr.internal
+    host: pbniintra_intranet_solr.internal
     port: 8080
     path: /
     core: pbniintra_index
