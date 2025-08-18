@@ -1,4 +1,4 @@
-uuid: 04b6d519-0576-4abd-bba5-ba68089179b7
+uuid: e7735a14-2d50-4f3c-90ba-c354cb31772c
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - update
 title: 'Check for updates'
 id: update_cron
-weight: 5
+weight: 0
 module: update
 callback: update_cron
 scheduler:
