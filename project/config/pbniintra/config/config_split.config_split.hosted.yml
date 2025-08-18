@@ -1,14 +1,14 @@
-uuid: f6e7c88c-34a6-4b28-a33b-3f57a9ab6b7c
+uuid: c2b87a9d-781b-4b72-9e35-7d4b646cc050
 langcode: en
 status: true
 dependencies: {  }
 id: hosted
-label: hosted
-description: "Use for any that are 'hosted' and not running locally, apart from production (which has its own split)."
+label: Hosted
+description: 'Use for any that are 'hosted' and not running locally, apart from production (which has its own split).'
 weight: 0
 stackable: false
 no_patching: false
-storage: null
+storage: folder
 folder: ../project/config/pbniintra/hosted
 module: {  }
 theme: {  }
