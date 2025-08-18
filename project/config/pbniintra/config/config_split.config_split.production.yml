@@ -1,0 +1,18 @@
+uuid: 57058107-4f20-49b7-9b67-9839cb061bc5
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: Production
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/pbniintra/production
+module:
+  fastly: 0
+theme: {  }
+complete_list:
+  - search_api.server.solr_default
+partial_list: {  }
