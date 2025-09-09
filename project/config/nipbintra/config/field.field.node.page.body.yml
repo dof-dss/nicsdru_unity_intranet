@@ -1,20 +1,20 @@
-uuid: 11a2888e-28fb-459d-90dc-15a30dd8ecc8
+uuid: bc16ace7-b9f0-4ab0-8543-e73837806300
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.basic_page
+    - node.type.page
   module:
     - text
-id: node.basic_page.body
+id: node.page.body
 field_name: body
 entity_type: node
-bundle: basic_page
+bundle: page
 label: Body
 description: ''
-required: false
-translatable: true
+required: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

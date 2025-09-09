@@ -11,7 +11,6 @@ dependencies:
   module:
     - layout_builder
     - link
-    - options
     - user
 third_party_settings:
   layout_builder:
@@ -22,20 +21,6 @@ targetEntityType: node
 bundle: link
 mode: diff
 content:
-  field_link_language:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_link_type:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
   field_link_url:
     type: link
     label: above
@@ -49,6 +34,9 @@ content:
     weight: 0
     region: content
 hidden:
+  content_moderation_control: true
+  field_link_language: true
+  field_link_type: true
   langcode: true
   links: true
   search_api_excerpt: true

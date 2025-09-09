@@ -81,13 +81,34 @@ process:
       plugin: field_link
       source: field_link_url
   field_link_type:
-    -
-      plugin: get
+    - plugin: static_map
       source: field_link_type
+      default_value: null
+      map:
+        featured: 1
+
   field_link_language:
-    -
-      plugin: get
+    - plugin: static_map
       source: field_link_language
+      default_value: null
+      map:
+        en: 2
+        ga: 3
+        gd: 4
+        zh-yue: 5
+        zh-guoyu: 6
+        cs: 7
+        fr: 8
+        bg: 9
+        lv: 10
+        lt: 11
+        pl: 12
+        pt: 13
+        ro: 14
+        ru: 15
+        sk: 16
+        es: 17
+        tet: 18
   field_metatag:
     -
       plugin: d7_metatag_entities

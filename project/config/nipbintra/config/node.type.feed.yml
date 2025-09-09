@@ -1,11 +1,29 @@
 uuid: c58a06bb-34e6-4806-8600-bcb27b2d7969
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+    - origins_toc
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  origins_toc:
+    toc_enable: 0
+    toc_title: 'Table of contents'
+    toc_location: ''
+    toc_insert: after
+    toc_source_container: ''
+    toc_element: h2
+    toc_exclusions: ''
+    toc_screen_depth: '1'
+    toc_debug: 0
 name: Feed
 type: feed
 description: 'Subscribe to RSS or Atom feeds. Creates nodes of the content type "Feed item" from feed content.'
 help: null
-new_revision: false
+new_revision: true
 preview_mode: 1
-display_submitted: true
+display_submitted: false
