@@ -1,0 +1,11 @@
+uuid: 25cee148-3445-418b-aec1-798aea4244cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.feed
+id: node.feed
+target_entity_type_id: node
+target_bundle: feed
+default_langcode: site_default
+language_alterable: false

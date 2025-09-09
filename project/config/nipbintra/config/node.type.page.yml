@@ -1,4 +1,4 @@
-uuid: c45117a6-be78-4fcb-a094-dbc5dbd7f21f
+uuid: 8fea7396-21e2-4013-9c27-de816a9bd305
 langcode: en
 status: true
 dependencies:
@@ -20,10 +20,10 @@ third_party_settings:
     toc_exclusions: ''
     toc_screen_depth: '1'
     toc_debug: 0
-name: 'Feed item'
-type: feed_item
-description: 'This content type is being used for automatically aggregated content from feeds.'
-help: null
+name: 'Basic page'
+type: page
+description: "Use <em>basic pages</em> for your static content, such as an 'About us' page."
+help: 'Use this content type to create pages on your site'
 new_revision: true
 preview_mode: 1
 display_submitted: false

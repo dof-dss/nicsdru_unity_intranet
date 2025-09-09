@@ -118,7 +118,7 @@ process:
 destination:
   plugin: 'entity_complete:node'
   translations: true
-  default_bundle: basic_page
+  default_bundle: page
 migration_dependencies:
   required:
     - upgrade_d7_user

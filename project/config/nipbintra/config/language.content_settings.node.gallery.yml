@@ -1,11 +1,11 @@
-uuid: 2742e3dc-94bb-4b15-933d-e67ffcc8c884
+uuid: 707270fe-9a9f-4db0-b16b-42a8fd28b9f1
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.basic_page
-id: node.basic_page
+    - node.type.gallery
+id: node.gallery
 target_entity_type_id: node
-target_bundle: basic_page
+target_bundle: gallery
 default_langcode: site_default
 language_alterable: false
