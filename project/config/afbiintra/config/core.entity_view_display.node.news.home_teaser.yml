@@ -11,18 +11,27 @@ dependencies:
     - field.field.node.news.field_teaser
     - node.type.news
   module:
+    - datetime
     - user
 id: node.news.home_teaser
 targetEntityType: node
 bundle: news
 mode: home_teaser
-content: {  }
+content:
+  field_published_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: unity_date
+    third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   body: true
   content_moderation_control: true
   field_news_type: true
   field_photo: true
-  field_published_date: true
   field_teaser: true
   langcode: true
   links: true
