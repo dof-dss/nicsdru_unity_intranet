@@ -1,0 +1,29 @@
+uuid: 208c11b3-17ac-44d1-ae97-61f21b6d4227
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.useful_links
+  module:
+    - system
+    - views
+  theme:
+    - afbi_theme
+id: views_block__useful_links_useful_links
+theme: afbi_theme
+region: top_second
+weight: 0
+provider: null
+plugin: 'views_block:useful_links-useful_links'
+settings:
+  id: 'views_block:useful_links-useful_links'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

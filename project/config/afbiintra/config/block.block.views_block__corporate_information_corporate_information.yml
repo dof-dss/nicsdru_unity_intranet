@@ -1,0 +1,29 @@
+uuid: 8bf0c960-54fa-4fcb-b5f2-56bbb115f5d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.corporate_information
+  module:
+    - system
+    - views
+  theme:
+    - afbi_theme
+id: views_block__corporate_information_corporate_information
+theme: afbi_theme
+region: top_third
+weight: 0
+provider: null
+plugin: 'views_block:corporate_information-corporate_information'
+settings:
+  id: 'views_block:corporate_information-corporate_information'
+  label: 'Corporate Info'
+  label_display: visible
+  provider: views
+  views_label: 'Corporate Info'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

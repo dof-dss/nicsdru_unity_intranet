@@ -1,0 +1,26 @@
+uuid: 654d9a6a-bac0-49a0-a6ed-524be138f3d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: useful_links
+label: 'Useful Links'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      link: link
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 10
+  act_as_queue: false
+  reverse: false
