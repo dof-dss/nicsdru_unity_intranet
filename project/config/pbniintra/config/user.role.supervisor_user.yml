@@ -57,6 +57,8 @@ permissions:
   - 'create and edit custom blocks'
   - 'create audio media'
   - 'create banner_deep block content'
+  - 'create basic_page content'
+  - 'create board_member content'
   - 'create card_contact block content'
   - 'create card_nested_standard block content'
   - 'create card_nested_wide block content'
