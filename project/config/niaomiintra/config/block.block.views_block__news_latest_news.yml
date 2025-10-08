@@ -1,4 +1,4 @@
-uuid: 2f34a671-9e7a-48d6-b42f-daf8a4d9e7b0
+uuid: f64bb8fa-2b3f-4e49-8276-a198db3e9f28
 langcode: en
 status: true
 dependencies:
@@ -9,14 +9,14 @@ dependencies:
     - views
   theme:
     - niaomi_theme
-id: niaomi_theme_views_block__news_news_latest
+id: views_block__news_latest_news
 theme: niaomi_theme
 region: sidebar_second
-weight: 0
+weight: -10
 provider: null
-plugin: 'views_block:news-news_latest'
+plugin: 'views_block:news-latest_news'
 settings:
-  id: 'views_block:news-news_latest'
+  id: 'views_block:news-latest_news'
   label: ''
   label_display: visible
   provider: views
