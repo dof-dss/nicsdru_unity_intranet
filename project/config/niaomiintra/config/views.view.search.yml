@@ -352,12 +352,12 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: search-result
-          default_row_class: false
+          row_class: ''
+          default_row_class: true
       row:
         type: fields
         options:
-          default_field_elements: false
+          default_field_elements: true
           inline: {  }
           separator: ''
           hide_empty: false
