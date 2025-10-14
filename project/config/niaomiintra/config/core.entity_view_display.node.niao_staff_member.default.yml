@@ -19,23 +19,23 @@ mode: default
 content:
   field_email:
     type: email_mailto
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 4
     region: content
   field_extension:
     type: number_integer
-    label: above
+    label: hidden
     settings:
       thousand_separator: ''
-      prefix_suffix: true
+      prefix_suffix: false
     third_party_settings: {  }
     weight: 2
     region: content
   field_first_name:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -43,7 +43,7 @@ content:
     region: content
   field_job_title:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -51,7 +51,7 @@ content:
     region: content
   field_profile_image:
     type: image
-    label: above
+    label: hidden
     settings:
       image_link: ''
       image_style: ''
