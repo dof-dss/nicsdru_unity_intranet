@@ -1,0 +1,69 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+{%
+  set row_classes = [
+  'views-row',
+  'staff-profile-card'
+]
+%}
+
+<a href="/staff-profiles" class="btn btn-primary btn-staff-page">Back to People</a>
+
+<div class="staff-profile-card">
+  <div class="profile-header">
+    <div class="profile-info">
+      <div class="name-title">
+        {% if content.field_first_name['#items'] is not empty %}
+          <h1 class="staff-name">{{ content.field_first_name }}</h1>
+        {% endif %}
+
+        {% if node.title.value is not empty %}
+          <h1 class="staff-surname">{{ node.title.value }}</h1>
+        {% endif %}
+      </div>
+
+      {% if content.field_job_title['#items'] is not empty %}
+        <div class="field-job-title">
+          <h2 class="staff-job-title">{{ content.field_job_title }}</h2>
+        </div>
+      {% endif %}
+
+      <div class="profile-details">
+        {% if content.field_email['#items'] is not empty %}
+          <div class="field-email">
+            <strong>Email:</strong>
+            <div class="field-content">{{ content.field_email }}</div>
+          </div>
+        {% endif %}
+
+        {% if content.field_extension['#items'] is not empty %}
+          <div class="field-extension">
+            <strong>Extension:</strong>
+            <div class="field-content">{{ content.field_extension }}</div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    {% if content.field_profile_image['#items'] is not empty %}
+      <div class="profile-image">
+        {{ content.field_profile_image }}
+      </div>
+    {% endif %}
+  </div>
+</div>
