@@ -94,8 +94,8 @@
     .staff-member {
       margin: 0 5% 5% 0;
       flex-basis: 47%;
-      padding: 2.5rem 2rem 0 2.5rem;
-      border: 1px solid #233857;
+      padding: 2.5rem 2rem 2rem 2.5rem;
+      border: 1px solid $brand-primary;
       border-bottom-width: 1rem;
       min-height: 22rem;
 
@@ -109,6 +109,7 @@
 
       h3 {
         margin: 0;
+        padding-bottom: 1rem;
       }
 
       p {
@@ -121,10 +122,39 @@
       }
     }
 
-    .staff-profile-image img {
+    .staff-member img {
       float: right;
+      border: 1px solid $black;
+      margin: 2%;
     }
   }
+}
+
+
+a.btn.top-right-btn {
+  position: absolute;
+  top: -55px;
+  right: 10px;
+  margin: 10px;
+  width: 10rem;
+  height: 4rem;
+  background: $white;
+  color: $black;
+  border: 1px solid $black;
+
+  &:hover {
+    background: #666;
+    color: $white;
+
+    &:focus {
+      background: #666;
+      border: 3px solid $black;
+    }
+  }
+}
+
+a.btn.btn-staff-page {
+  margin-bottom: 1rem;
 }
 
 .sidebar-second-layout {
@@ -156,3 +186,71 @@
     }
   }
 }
+
+.node-type-niao-staff-member {
+  .staff-profile-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media screen and (max-width: $phab) {
+      flex-direction: column;
+    }
+  }
+
+  .name-title {
+    display: flex;
+    align-items: center;
+  }
+
+  .staff-name {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 28px;
+  }
+
+  .staff-surname {
+    font-style: normal;
+    font-size: 28px;
+  }
+
+  .staff-job-title {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  .profile-image {
+    max-width: 200px;
+    height: auto;
+    border-radius: 6px;
+    margin-left: 20px;
+
+    @media screen and (max-width: $phab) {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+
+  .profile-details {
+    margin-top: 20px;
+
+    .field-email,
+    .field-extension {
+      margin-bottom: 15px;
+
+      strong {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+
