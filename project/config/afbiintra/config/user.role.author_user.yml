@@ -79,6 +79,7 @@ permissions:
   - 'delete own remote_video media'
   - 'delete page revisions'
   - 'delete publication revisions'
+  - 'edit any afbi_information content'
   - 'edit any feature content'
   - 'edit any feed content'
   - 'edit any feed_item content'

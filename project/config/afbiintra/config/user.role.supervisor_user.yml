@@ -3,6 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entityqueue.entity_queue.corporate_information
+    - entityqueue.entity_queue.slideshow
+    - entityqueue.entity_queue.useful_links
     - filter.format.full_html
     - media.type.audio
     - media.type.document
@@ -22,6 +25,7 @@ dependencies:
   module:
     - content_moderation
     - contextual
+    - entityqueue
     - file
     - filter
     - layout_builder
@@ -30,6 +34,7 @@ dependencies:
     - moderation_sidebar
     - node
     - origins_metatag
+    - origins_workflow
     - path
     - redirect
     - scheduled_transitions
@@ -60,6 +65,7 @@ permissions:
   - 'add scheduled transitions node publication'
   - 'administer main menu items'
   - 'administer redirects'
+  - 'audit content'
   - 'create afbi_information content'
   - 'create and edit custom blocks'
   - 'create audio media'
@@ -115,6 +121,7 @@ permissions:
   - 'delete own remote_video media'
   - 'delete page revisions'
   - 'delete publication revisions'
+  - 'edit any afbi_information content'
   - 'edit any audio media'
   - 'edit any document media'
   - 'edit any feature content'
@@ -143,6 +150,7 @@ permissions:
   - 'edit own page content'
   - 'edit own publication content'
   - 'edit own remote_video media'
+  - 'manipulate entityqueues'
   - 'reschedule scheduled transitions node afbi_information'
   - 'reschedule scheduled transitions node feature'
   - 'reschedule scheduled transitions node feed'
@@ -162,6 +170,9 @@ permissions:
   - 'revert news revisions'
   - 'revert page revisions'
   - 'revert publication revisions'
+  - 'update corporate_information entityqueue'
+  - 'update slideshow entityqueue'
+  - 'update useful_links entityqueue'
   - 'use moderation sidebar'
   - 'use nics_editorial_workflow transition archive'
   - 'use nics_editorial_workflow transition create_new_draft'
