@@ -84,11 +84,12 @@
         "drupal/diff": "^1.1",
         "drupal/draggableviews": "^2.1",
         "drupal/dynamic_entity_reference": "^3.2",
+        "drupal/embed": "^1.10",
         "drupal/entity_browser": "^2.9",
         "drupal/entity_embed": "^1.4",
         "drupal/entity_reference_revisions": "^1.10",
         "drupal/entityqueue": "^1.6",
-        "drupal/eu_cookie_compliance": "^1.27",
+        "drupal/eu_cookie_compliance": "^1.28",
         "drupal/facets": "^2.0",
         "drupal/facets_pretty_paths": "^2.0",
         "drupal/fastly": "^4.0",
@@ -214,9 +215,6 @@
             "drupal/easy_install": {
                 "Handle missing core version": "https://www.drupal.org/files/issues/2019-12-19/easy_install_core_version-3101883-0.patch",
                 "non-existent service entity.manager": "https://www.drupal.org/files/issues/2020-12-08/3162621-4.patch"
-            },
-            "drupal/entity_browser": {
-                "TypeError: key(): Argument #1 ($array) must be of type array": "https://www.drupal.org/files/issues/2024-06-12/2914385-35.patch"
             },
             "drupal/entityqueue": {
                 "Allow unique records only": "https://www.drupal.org/files/issues/2021-02-07/entity_queue_unique_records-1240856-3197148.patch"
