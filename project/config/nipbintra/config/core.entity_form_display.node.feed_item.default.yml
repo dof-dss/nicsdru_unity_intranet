@@ -6,7 +6,9 @@ dependencies:
     - field.field.node.feed_item.field_feed_item_description
     - field.field.node.feed_item.field_publication_date
     - node.type.feed_item
+    - workflows.workflow.nics_editorial_workflow
   module:
+    - content_moderation
     - datetime
     - path
     - text
@@ -48,6 +50,12 @@ content:
     region: content
     settings:
       include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 12
+    region: content
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path

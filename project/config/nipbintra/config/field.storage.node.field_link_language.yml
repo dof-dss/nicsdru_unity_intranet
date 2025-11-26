@@ -1,69 +1,17 @@
-uuid: 775aa80b-e35a-4765-92e5-f405994bbf28
-langcode: und
+uuid: 50a59ccd-2f19-46b0-be34-f48b83d850c3
+langcode: en
 status: true
 dependencies:
   module:
     - node
-    - options
+    - taxonomy
 id: node.field_link_language
 field_name: field_link_language
 entity_type: node
-type: list_string
+type: entity_reference
 settings:
-  allowed_values:
-    -
-      value: en
-      label: English
-    -
-      value: ga
-      label: Irish
-    -
-      value: gd
-      label: 'Ulster Scots'
-    -
-      value: zh-yue
-      label: 'Chinese Full / Cantonese'
-    -
-      value: zh-guoyu
-      label: 'Chinese Simple / Mandarin'
-    -
-      value: cs
-      label: Czech
-    -
-      value: fr
-      label: French
-    -
-      value: bg
-      label: Bulgarian
-    -
-      value: lv
-      label: Latvian
-    -
-      value: lt
-      label: Lithuanian
-    -
-      value: pl
-      label: Polish
-    -
-      value: pt
-      label: Portuguese
-    -
-      value: ro
-      label: Romanian
-    -
-      value: ru
-      label: Russian
-    -
-      value: sk
-      label: Slovak
-    -
-      value: es
-      label: Spanish
-    -
-      value: tet
-      label: Tetum
-  allowed_values_function: ''
-module: options
+  target_type: taxonomy_term
+module: core
 locked: false
 cardinality: 1
 translatable: true
