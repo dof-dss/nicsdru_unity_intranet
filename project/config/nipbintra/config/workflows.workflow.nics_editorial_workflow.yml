@@ -3,12 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.basic_page
     - node.type.feature
     - node.type.feed
     - node.type.feed_item
     - node.type.gallery
     - node.type.link
+    - node.type.page
   module:
     - content_moderation
 _core:
@@ -101,10 +101,10 @@ type_settings:
       weight: 2
   entity_types:
     node:
-      - basic_page
       - feature
       - feed
       - feed_item
       - gallery
       - link
+      - page
   default_moderation_state: draft

@@ -1,7 +1,7 @@
 _core:
   default_config_hash: C9_7ISEphRfV6e2q4N7kp5I8GYyxNCP8hKeU2JZxowM
 enabled: true
-location: /app/log/pbni
+location: /app/log/pbniintra
 rotation:
   schedule: daily
   delete: true

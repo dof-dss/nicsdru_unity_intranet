@@ -1,0 +1,25 @@
+uuid: 8a719071-3dd8-4058-8fd9-0166ba060844
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e4bbe11a-04a7-45b0-8e92-779df01ec7e9'
+  module:
+    - block_content
+  theme:
+    - afbi_theme
+id: footerlogo
+theme: afbi_theme
+region: footer_first
+weight: -9
+provider: null
+plugin: 'block_content:e4bbe11a-04a7-45b0-8e92-779df01ec7e9'
+settings:
+  id: 'block_content:e4bbe11a-04a7-45b0-8e92-779df01ec7e9'
+  label: 'Footer logo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

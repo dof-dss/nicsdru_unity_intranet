@@ -10,6 +10,7 @@ dependencies:
     - field.storage.node.field_profile_image
     - image.style.staff_directory_profile
     - node.type.niao_staff_member
+    - system.menu.main
   module:
     - image
     - node
@@ -895,7 +896,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{{ field_first_name }} {{ title }}\r\n"
+            text: '<a href="/staff_member/{{ title }}">{{ field_first_name }} {{ title }}</a>'
             make_link: false
             path: ''
             absolute: false
@@ -1204,7 +1205,7 @@ display:
           tokenize: false
       path: staff-profiles
       menu:
-        type: none
+        type: normal
         title: 'Staff Profiles'
         description: ''
         weight: 0
