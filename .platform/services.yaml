@@ -7,7 +7,7 @@
 #############################################################################
 db:
     type: 'mariadb:10.4'
-    disk: 22000
+    disk: 12288
     configuration:
         schemas:
             - ppsintradb
