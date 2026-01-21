@@ -1,8 +1,8 @@
 project_type: unity
 project_name: 'Unity Intranet'
 project_id: 6gl4nbwlja4u4
-project_disk_size: 51200
-db_disk_size: 22000
+project_disk_size: 36864
+db_disk_size: 12288
 sites:
     ppsintra:
         name: PPS
