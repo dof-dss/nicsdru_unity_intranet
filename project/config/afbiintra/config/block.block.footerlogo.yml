@@ -2,10 +2,6 @@ uuid: 8a719071-3dd8-4058-8fd9-0166ba060844
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:e4bbe11a-04a7-45b0-8e92-779df01ec7e9'
-  module:
-    - block_content
   theme:
     - afbi_theme
 id: footerlogo

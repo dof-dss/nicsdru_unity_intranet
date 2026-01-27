@@ -1,0 +1,25 @@
+uuid: 738f717e-07e8-4e27-b829-ded5d4eb9ac4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feed_block:d80a6c47-e362-4e4a-b3b1-72788895aece'
+  module:
+    - block_content
+  theme:
+    - afbi_theme
+id: trafficwatchfeed
+theme: afbi_theme
+region: bottom_widget_2
+weight: -10
+provider: null
+plugin: 'block_content:d80a6c47-e362-4e4a-b3b1-72788895aece'
+settings:
+  id: 'block_content:d80a6c47-e362-4e4a-b3b1-72788895aece'
+  label: 'Trafficwatch NI'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
