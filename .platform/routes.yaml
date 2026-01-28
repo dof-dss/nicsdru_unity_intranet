@@ -35,6 +35,11 @@
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
+'https://poni.intranet.nigov.net/':
+    type: upstream
+    upstream: 'unity_intranet:http'
+    cache:
+        enabled: 'false'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_intranet:http'

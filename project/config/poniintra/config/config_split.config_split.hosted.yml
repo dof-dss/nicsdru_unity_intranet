@@ -1,0 +1,16 @@
+uuid: bcb8bff3-30ee-4187-9fd7-7950766d2809
+langcode: en
+status: true
+dependencies: {  }
+id: hosted
+label: hosted
+description: "Use for any that are 'hosted' and not running locally, apart from production (which has its own split)."
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/poniintra/hosted
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }
