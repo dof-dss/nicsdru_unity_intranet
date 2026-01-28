@@ -9,18 +9,12 @@ use Drupal\block_content\BlockContentInterface;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 
 /**
-* Implements hook_ENTITY_TYPE_view_alter().
-*/
+ * Implements hook_ENTITY_TYPE_view_alter().
+ */
 function afbiintra_common_block_content_view_alter(array &$build, BlockContentInterface $entity, EntityViewDisplayInterface $display) {
-if ($entity->bundle() == 'feed_block') {
-$cache_expiration = \Drupal::config('feed_block')->get('cache_expiration');
-if (!$cache_expiration) {
-// Default to 1 day feed cache if not specified in settings.
-$cache_expiration = 60;
-}
-// Add 'max age' to bubble up expiration via custom event subscriber.
-$build['#cache']['max-age'] = $cache_expiration;
-// Add feed_block cache tag; only pages with this block are affected.
-$build['#cache']['tags'][] = 'feed_block';
-}
+  if ($entity->bundle() == 'feed_block') {
+    // Default to 1 hour feed cache if not specified and add 'max age' to bubble up expiration via custom event subscriber.
+    $build['#cache']['max-age'] = \Drupal::config('feed_block')
+      ->get('cache_expiration') ?: 3600;
+  }
 }
