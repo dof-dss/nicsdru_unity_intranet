@@ -60,7 +60,7 @@ hooks:
         export FASTLY_API_SERVICE=dummyservice
 
         # For each multi site - run db-updates and import config.
-        for site in ppsintra uregniintra pbniintra niaomiintra nipbintra afbiintra
+        for site in ppsintra uregniintra pbniintra niaomiintra nipbintra afbiintra poniintra
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -107,7 +107,7 @@ hooks:
         export FASTLY_API_SERVICE=$temp
 
         # For each multi site - clear cache (including Fastly cache)
-        for site in ppsintra uregniintra pbniintra niaomiintra nipbintra afbiintra
+        for site in ppsintra uregniintra pbniintra niaomiintra nipbintra afbiintra poniintra
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -168,6 +168,8 @@ relationships:
     nipbintra_intranet_solr: 'solr_8_11:nipbintra'
     afbiintra: 'db:afbiintra'
     afbiintra_intranet_solr: 'solr_8_11:afbiintra'
+    poniintra: 'db:poniintra'
+    poniintra_intranet_solr: 'solr_8_11:poniintra'
 crons:
     ppsintra:
         spec: '10 * * * *'
@@ -192,3 +194,6 @@ crons:
     afbiintra:
         spec: '10 * * * *'
         cmd: 'cd web/sites/afbiintra ; drush core-cron'
+    poniintra:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/poniintra ; drush core-cron'

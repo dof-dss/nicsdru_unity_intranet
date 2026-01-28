@@ -16,6 +16,7 @@ db:
             - niaomiintradb
             - nipbintradb
             - afbiintradb
+            - poniintradb
         endpoints:
             ppsintra:
                 default_schema: ppsintradb
@@ -41,6 +42,10 @@ db:
                 default_schema: afbiintradb
                 privileges:
                     afbiintradb: admin
+            poniintra:
+                default_schema: poniintradb
+                privileges:
+                    poniintradb: admin
 solr_8_11:
     type: 'solr:8.11'
     disk: 1024
@@ -58,6 +63,8 @@ solr_8_11:
                 conf_dir: !archive solr_config/
             afbiintra_index:
                 conf_dir: !archive solr_config/
+            poniintra_index:
+                conf_dir: !archive solr_config/
         endpoints:
             ppsintra:
                 core: ppsintra_index
@@ -71,5 +78,7 @@ solr_8_11:
                 core: nipbintra_index
             afbiintra:
                 core: afbiintra_index
+            poniintra:
+                core: poniintra_index
 redis:
     type: 'redis:6.0'

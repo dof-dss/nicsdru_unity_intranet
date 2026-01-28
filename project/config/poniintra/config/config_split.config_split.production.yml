@@ -1,0 +1,16 @@
+uuid: 666d5504-7bc9-44b8-860a-39d2439b86fc
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: Production
+description: 'Used for the production site only.'
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/poniintra/production
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }

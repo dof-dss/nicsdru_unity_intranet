@@ -1,0 +1,18 @@
+uuid: 7a8325c6-5ae6-439c-99f0-ed0445e506b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - filter
+    - toolbar
+_core:
+  default_config_hash: 5C31b4Vwl4Jf5GP87kQetWI35E9W6rqJUsTl4v2D4xw
+id: author_user
+label: 'author user'
+weight: 3
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'use text format basic_html'

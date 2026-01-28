@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: 6SRqhVdje-gEz9pzyMu3GhH-kMazpJ5CUm2GbngChdA
+langcode: en
+uuid: e3d06731-a157-4348-af3d-27f1bb09435e
+name: 'Northern Ireland Police Ombudsman'
+mail: webdev@finance-ni.gov.uk
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+frontpage_title: 'Welcome to PPS site'
