@@ -112,7 +112,6 @@ module:
   twig_tweak: 0
   ultimate_cron: 0
   unity_common: 0
-  unity_frontpage: 0
   unity_image_styles: 0
   unity_internal_link_checker: 0
   update: 0
@@ -137,4 +136,7 @@ theme:
   olivero: 0
   stark: 0
   claro: 0
+  stable: 0
+  nicsdru_unity_theme: 0
+  poniintra_theme: 0
 profile: nicsdru_unity_intranet
