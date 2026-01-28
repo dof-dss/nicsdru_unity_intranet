@@ -1,0 +1,13 @@
+uuid: 34b75a8a-ccb9-4a00-89e0-9b1ea5282ea7
+langcode: en
+status: true
+dependencies:
+  module:
+    - content_moderation
+_core:
+  default_config_hash: wp12CpuWCtZXNXED_UsHAQ83D43oiHtY4GcYjieNA10
+id: content_moderation_state.token
+label: Token
+description: ''
+targetEntityType: content_moderation_state
+cache: true
