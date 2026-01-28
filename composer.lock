@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0ed241a2758ba6036a87f5ebdb5f8628",
+    "content-hash": "e67ae96672f21bf4c21ce9c962a8bc26",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4735,6 +4735,78 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/fastly",
                 "issues": "http://drupal.org/project/issues/fastly"
+            }
+        },
+        {
+            "name": "drupal/feed_block",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/feed_block.git",
+                "reference": "3.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/feed_block-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "45989779703246ccc550f288c4756460d84c5f52"
+            },
+            "require": {
+                "drupal/core": "^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.0",
+                    "datestamp": "1717177740",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bjc2265",
+                    "homepage": "https://www.drupal.org/user/3759740"
+                },
+                {
+                    "name": "daddison",
+                    "homepage": "https://www.drupal.org/user/51447"
+                },
+                {
+                    "name": "gravelpot",
+                    "homepage": "https://www.drupal.org/user/748208"
+                },
+                {
+                    "name": "Jonathan Baltazar",
+                    "homepage": "https://www.drupal.org/user/1188652"
+                },
+                {
+                    "name": "mark_fullmer",
+                    "homepage": "https://www.drupal.org/user/2612816"
+                },
+                {
+                    "name": "mmarler",
+                    "homepage": "https://www.drupal.org/user/500192"
+                },
+                {
+                    "name": "ricksta",
+                    "homepage": "https://www.drupal.org/user/311042"
+                },
+                {
+                    "name": "utexas",
+                    "homepage": "https://www.drupal.org/user/3716409"
+                }
+            ],
+            "description": "Configure & display content from RSS feeds in a block",
+            "homepage": "https://www.drupal.org/project/feed_block",
+            "support": {
+                "source": "https://git.drupalcode.org/project/feed_block"
             }
         },
         {

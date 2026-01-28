@@ -1,0 +1,24 @@
+uuid: 446f3f61-7b3c-4f7e-82e9-c009a394964d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.feed_block
+    - field.storage.block_content.field_intro_text
+  module:
+    - text
+_core:
+  default_config_hash: 9JTgCr_kcrOBwB8sQAPlnWnh4GAGAvFFe6WB6Fl2TX8
+id: block_content.feed_block.field_intro_text
+field_name: field_intro_text
+entity_type: block_content
+bundle: feed_block
+label: 'Intro Text'
+description: 'Optional text to display above the feed items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

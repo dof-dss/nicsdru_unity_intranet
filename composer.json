@@ -93,6 +93,7 @@
         "drupal/facets": "2.0.10",
         "drupal/facets_pretty_paths": "^2.0",
         "drupal/fastly": "^4.0",
+        "drupal/feed_block": "^3.0",
         "drupal/field_group": "^3.4",
         "drupal/file_delete_ui": "^1.0@beta",
         "drupal/filelog": "^3.0.x-dev@dev",
