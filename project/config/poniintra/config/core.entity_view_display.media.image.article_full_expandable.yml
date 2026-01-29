@@ -1,28 +1,35 @@
+uuid: 0e37743a-d207-4ecd-8a8a-31dac9b426a5
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.article_full_expandable
     - field.field.media.image.field_caption
     - field.field.media.image.field_media_image
-    - image.style.large
     - media.type.image
+    - responsive_image.styles.inline_xl_expandable
   module:
-    - image
+    - layout_builder
+    - responsive_image
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
 _core:
   default_config_hash: jbx_I5BcwaxoN3B_Q5uDUKFYPf-cNfy1XrsduhHyYhQ
-id: media.image.default
+id: media.image.article_full_expandable
 targetEntityType: media
 bundle: image
-mode: default
+mode: article_full_expandable
 content:
   field_media_image:
-    type: image
+    type: responsive_image
     label: visually_hidden
     settings:
+      responsive_image_style: inline_xl_expandable
       image_link: ''
-      image_style: large
       image_loading:
-        attribute: lazy
+        attribute: eager
     third_party_settings: {  }
     weight: 0
     region: content
