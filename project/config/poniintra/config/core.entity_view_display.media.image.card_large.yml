@@ -1,29 +1,35 @@
-uuid: 624d3064-f7e7-4705-ae39-fe780b1796ca
+uuid: c08dca8f-945f-496d-8055-4591a50fff09
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.card_large
     - field.field.media.image.field_caption
     - field.field.media.image.field_media_image
-    - image.style.large
     - media.type.image
+    - responsive_image.styles.card_large
   module:
-    - image
+    - layout_builder
+    - responsive_image
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
 _core:
   default_config_hash: jbx_I5BcwaxoN3B_Q5uDUKFYPf-cNfy1XrsduhHyYhQ
-id: media.image.default
+id: media.image.card_large
 targetEntityType: media
 bundle: image
-mode: default
+mode: card_large
 content:
   field_media_image:
-    type: image
+    type: responsive_image
     label: visually_hidden
     settings:
+      responsive_image_style: card_large
       image_link: ''
-      image_style: large
       image_loading:
-        attribute: lazy
+        attribute: eager
     third_party_settings: {  }
     weight: 0
     region: content

@@ -1,29 +1,35 @@
-uuid: 624d3064-f7e7-4705-ae39-fe780b1796ca
+uuid: c2b5ad4a-6bb6-4763-9d5c-8dcfa8f1980e
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.landscape_float_xp
     - field.field.media.image.field_caption
     - field.field.media.image.field_media_image
-    - image.style.large
     - media.type.image
+    - responsive_image.styles.inline_expandable
   module:
-    - image
+    - layout_builder
+    - responsive_image
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
 _core:
   default_config_hash: jbx_I5BcwaxoN3B_Q5uDUKFYPf-cNfy1XrsduhHyYhQ
-id: media.image.default
+id: media.image.landscape_float_xp
 targetEntityType: media
 bundle: image
-mode: default
+mode: landscape_float_xp
 content:
   field_media_image:
-    type: image
+    type: responsive_image
     label: visually_hidden
     settings:
+      responsive_image_style: inline_expandable
       image_link: ''
-      image_style: large
       image_loading:
-        attribute: lazy
+        attribute: eager
     third_party_settings: {  }
     weight: 0
     region: content
