@@ -1,0 +1,26 @@
+uuid: a567c79b-391f-42b1-86bf-bac01621ef1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.webform_default
+  module:
+    - eu_cookie_compliance
+    - filter
+    - media
+    - readonlymode
+    - system
+_core:
+  default_config_hash: Ff0Y8IxrFn0hb5D-Y6VCG31b-aGmN892WRowTmwPaLg
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'display eu cookie compliance popup'
+  - 'readonlymode access messages'
+  - 'use text format basic_html'
+  - 'use text format webform_default'
+  - 'view media'

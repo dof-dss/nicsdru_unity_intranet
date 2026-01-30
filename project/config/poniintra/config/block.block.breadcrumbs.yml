@@ -1,0 +1,20 @@
+uuid: 6df9c58e-c775-4ab8-869b-e925c46cfec3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - poniintra_theme
+id: breadcrumbs
+theme: poniintra_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

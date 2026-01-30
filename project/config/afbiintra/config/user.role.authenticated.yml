@@ -11,6 +11,7 @@ dependencies:
     - media
     - node
     - pathauto
+    - readonlymode
     - system
 _core:
   default_config_hash: Ff0Y8IxrFn0hb5D-Y6VCG31b-aGmN892WRowTmwPaLg
@@ -22,6 +23,7 @@ permissions:
   - 'access content'
   - 'delete own files'
   - 'notify of path changes'
+  - 'readonlymode access messages'
   - 'use text format basic_html'
   - 'use text format webform_default'
   - 'view all revisions'

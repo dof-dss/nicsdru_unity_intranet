@@ -1,0 +1,19 @@
+uuid: 1f4439e3-dc4e-42db-990e-04809cedee84
+langcode: en
+status: true
+dependencies:
+  module:
+    - content_lock_timeout
+_core:
+  default_config_hash: EY9sOC3392ehnckKypRhfJ4KPz-XDZDD1eSOc3fa49M
+title: 'Default cron handler'
+id: content_lock_timeout_cron
+weight: 0
+module: content_lock_timeout
+callback: 'content_lock_timeout#cron'
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

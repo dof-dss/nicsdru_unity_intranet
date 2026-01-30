@@ -1,0 +1,26 @@
+uuid: b5e13e00-1fdd-4a53-a445-429b6e4ac24e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.webform
+  module:
+    - text
+_core:
+  default_config_hash: si_45JBXgCuN2dFEpMkAYMTqUURyDUHeXSrOr_kjbgQ
+id: node.webform.body
+field_name: body
+entity_type: node
+bundle: webform
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

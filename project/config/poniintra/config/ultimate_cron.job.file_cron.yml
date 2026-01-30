@@ -1,0 +1,19 @@
+uuid: aac7024f-9743-45bf-9f66-4a243fd5a7ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+_core:
+  default_config_hash: BEwxpaTLGk0wysHTjm6SKJFxd3K9CEF-x94D8H79j1Y
+title: 'Deletes temporary files'
+id: file_cron
+weight: 0
+module: file
+callback: 'file#cron'
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

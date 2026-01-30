@@ -1,0 +1,34 @@
+uuid: 7a8325c6-5ae6-439c-99f0-ed0445e506b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - node.type.page
+    - workflows.workflow.nics_editorial_workflow
+  module:
+    - content_moderation
+    - filter
+    - node
+    - toolbar
+_core:
+  default_config_hash: 5C31b4Vwl4Jf5GP87kQetWI35E9W6rqJUsTl4v2D4xw
+id: author_user
+label: 'author user'
+weight: 3
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'create page content'
+  - 'delete own page content'
+  - 'edit any page content'
+  - 'edit own page content'
+  - 'revert page revisions'
+  - 'use nics_editorial_workflow transition create_new_draft'
+  - 'use nics_editorial_workflow transition draft_of_published'
+  - 'use nics_editorial_workflow transition reject'
+  - 'use nics_editorial_workflow transition submit_for_review'
+  - 'use text format basic_html'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view page revisions'

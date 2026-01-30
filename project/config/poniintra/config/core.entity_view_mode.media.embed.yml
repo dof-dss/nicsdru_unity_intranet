@@ -1,0 +1,13 @@
+uuid: f59d212d-3b92-4249-8512-5e8f79194cbd
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: qS1T5ApSC0m6tusTnsqRZvkOo-LOnt1G6uR1J0KIC8U
+id: media.embed
+label: Embed
+description: ''
+targetEntityType: media
+cache: true

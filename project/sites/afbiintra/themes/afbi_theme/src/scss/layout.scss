@@ -20,7 +20,8 @@
   margin-bottom: 0;
 }
 
-#top-area {
+#top-area,
+#bottom-area {
   text-align: left;
   margin: 2rem auto;
 
@@ -49,6 +50,19 @@
 
   h3 {
     @include adjust-font-size-to(18px);
+    margin: 0;
+  }
+}
+
+#bottom-area .column {
+  padding-bottom: 5rem;
+  position: relative;
+
+  h2 {
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    color: $headings;
+    padding: 1rem 0;
     margin: 0;
   }
 }
@@ -146,4 +160,11 @@
   }
 }
 
+.feed-block {
+  .read-more {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
 
