@@ -8,6 +8,7 @@ dependencies:
     - eu_cookie_compliance
     - filter
     - media
+    - readonlymode
     - system
 _core:
   default_config_hash: wlkdihxdVRIjy7aADCAaN3tU7EMrIYfqQkYY-EHzpLg
@@ -18,5 +19,6 @@ is_admin: false
 permissions:
   - 'access content'
   - 'display eu cookie compliance popup'
+  - 'readonlymode access messages'
   - 'use text format restricted_html'
   - 'view media'

@@ -49,7 +49,6 @@ dependencies:
     - flag
     - google_tag
     - help
-    - honeypot
     - image
     - language
     - layout_builder
@@ -145,7 +144,6 @@ permissions:
   - 'administer flags'
   - 'administer footer menu items'
   - 'administer google_tag_container'
-  - 'administer honeypot'
   - 'administer image styles'
   - 'administer languages'
   - 'administer linkit profiles'
@@ -203,7 +201,6 @@ permissions:
   - 'break content lock'
   - 'bulk delete aliases'
   - 'bulk update aliases'
-  - 'bypass honeypot protection'
   - 'bypass node access'
   - 'cancel account'
   - 'change own username'

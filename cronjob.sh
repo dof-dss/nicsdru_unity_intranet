@@ -15,4 +15,5 @@
 /bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-niaomi" "/app/log/niaomi/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
 /bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-pps" "/app/log/pps/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
 /bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-pbniintra" "/app/log/pbniintra/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
+/bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-poniintra" "/app/log/poniintra/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
 

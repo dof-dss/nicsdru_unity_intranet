@@ -64,3 +64,13 @@ sites:
         database: afbiintra
         status: development
         default: false
+    poniintra:
+        name: 'Northern Ireland Police Ombudsman'
+        url: poni.intranet.nigov.net
+        solr: poniintra
+        www: false
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/poniintra ; drush core-cron'
+        database: poniintra
+        status: development
+        default: false
