@@ -10,7 +10,7 @@ title: 'Default cron handler'
 id: filelog_cron
 weight: -9
 module: filelog
-callback: filelog_cron
+callback: 'filelog#cron'
 scheduler:
   id: simple
 launcher:
