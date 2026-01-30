@@ -5,7 +5,7 @@
 # original repository.Any changes here will be overwritten when the project #
 # is built.                                                                 #
 #############################################################################
-name: unity_intranet
+name: unity_intranet 
 proxy:
     appserver:
         - uregni.intranet.nigov.net.lndo.site
