@@ -9,6 +9,7 @@ dependencies:
     - filter
     - media
     - node
+    - readonlymode
     - system
 _core:
   default_config_hash: Ff0Y8IxrFn0hb5D-Y6VCG31b-aGmN892WRowTmwPaLg
@@ -20,6 +21,7 @@ permissions:
   - 'access administration pages'
   - 'access content'
   - 'delete own files'
+  - 'readonlymode access messages'
   - 'use text format basic_html'
   - 'view all revisions'
   - 'view media'
