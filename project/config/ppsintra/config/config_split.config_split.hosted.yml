@@ -8,10 +8,9 @@ description: "Use for any that are 'hosted' and not running locally, apart from 
 weight: 0
 stackable: false
 no_patching: false
-storage: null
+storage: folder
 folder: ../project/config/ppsintra/hosted
 module: {  }
 theme: {  }
-complete_list:
-  - search_api.server.solr_default
+complete_list: {  }
 partial_list: {  }
