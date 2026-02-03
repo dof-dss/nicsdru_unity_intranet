@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - node.type.page
+    - node.type.publication
   module:
     - content_moderation
 _core:
@@ -91,4 +92,5 @@ type_settings:
   entity_types:
     node:
       - page
+      - publication
   default_moderation_state: draft
