@@ -9,6 +9,9 @@ automation:
 bundles:
   -
     entity_type: node
+    bundle: news
+  -
+    entity_type: node
     bundle: page
   -
     entity_type: node

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - node.type.news
     - node.type.page
     - node.type.publication
     - workflows.workflow.nics_editorial_workflow
@@ -20,18 +21,25 @@ weight: 5
 is_admin: null
 permissions:
   - 'access toolbar'
+  - 'create news content'
   - 'create page content'
   - 'create publication content'
+  - 'delete any news content'
   - 'delete any page content'
   - 'delete any publication content'
+  - 'delete news revisions'
+  - 'delete own news content'
   - 'delete own page content'
   - 'delete own publication content'
   - 'delete page revisions'
   - 'delete publication revisions'
+  - 'edit any news content'
   - 'edit any page content'
   - 'edit any publication content'
+  - 'edit own news content'
   - 'edit own page content'
   - 'edit own publication content'
+  - 'revert news revisions'
   - 'revert page revisions'
   - 'revert publication revisions'
   - 'use nics_editorial_workflow transition archive'
@@ -45,5 +53,6 @@ permissions:
   - 'use text format basic_html'
   - 'view any unpublished content'
   - 'view latest version'
+  - 'view news revisions'
   - 'view page revisions'
   - 'view publication revisions'

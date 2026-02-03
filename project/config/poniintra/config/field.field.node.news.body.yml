@@ -1,17 +1,16 @@
-uuid: 1c801660-c622-491c-85e3-f76e887141c9
+uuid: 318237d6-9d40-4212-b0e8-fc4a075d5475
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - filter.format.basic_html
-    - node.type.publication
+    - node.type.news
   module:
     - text
-id: node.publication.body
+id: node.news.body
 field_name: body
 entity_type: node
-bundle: publication
+bundle: news
 label: Body
 description: ''
 required: false
@@ -19,8 +18,7 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  display_summary: false
+  display_summary: true
   required_summary: false
-  allowed_formats:
-    - basic_html
+  allowed_formats: {  }
 field_type: text_with_summary
