@@ -1,0 +1,9 @@
+uuid: a4122b05-f893-447f-9d9e-a749d8ddd9c6
+langcode: en
+status: true
+dependencies: {  }
+name: 'Publication topics'
+vid: publication_topics
+description: 'List of topics for publication content types'
+weight: 0
+new_revision: true
