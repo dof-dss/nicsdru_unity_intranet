@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - node.type.events
     - node.type.news
     - node.type.page
     - node.type.publication
@@ -92,6 +93,7 @@ type_settings:
       weight: -2
   entity_types:
     node:
+      - events
       - news
       - page
       - publication

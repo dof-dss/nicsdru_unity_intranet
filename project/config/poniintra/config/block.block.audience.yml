@@ -1,0 +1,29 @@
+uuid: 21b64e99-a91f-4358-9c96-2a7fe547c531
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.audience
+  module:
+    - facets
+    - system
+  theme:
+    - poniintra_theme
+id: audience
+theme: poniintra_theme
+region: search_facets
+weight: -3
+provider: null
+plugin: 'facet_block:audience'
+settings:
+  id: 'facet_block:audience'
+  label: Audience
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: audience
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/events\r\n/events/type/*\r\n/events/audience/*\r\n/events/sector/*\r\n/events/date/*"

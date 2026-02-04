@@ -1,0 +1,29 @@
+uuid: 884db450-85f1-4741-b5c4-533928ef8d00
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.event_date
+  module:
+    - facets
+    - system
+  theme:
+    - poniintra_theme
+id: eventdate
+theme: poniintra_theme
+region: search_facets
+weight: -2
+provider: null
+plugin: 'facet_block:event_date'
+settings:
+  id: 'facet_block:event_date'
+  label: 'Event date'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: eventdate
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/events\r\n/events/type/*\r\n/events/audience/*\r\n/events/sector/*\r\n/events/date/*"
