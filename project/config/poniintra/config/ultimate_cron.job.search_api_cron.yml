@@ -1,0 +1,17 @@
+uuid: 37d95bd4-84cb-4743-ac01-e1bb40e9260c
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api
+title: 'Execute pending server tasks and update indexes'
+id: search_api_cron
+weight: 0
+module: search_api
+callback: 'search_api#cron'
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database
