@@ -1,17 +1,19 @@
-uuid: 6d50fb01-a94c-4b38-99de-68899fde15bc
+uuid: 4b5077e0-ee0d-42fd-8ab7-09e1d28d6ea4
 langcode: en
 status: true
 dependencies:
   config:
-    - search_api.index.events_index
+    - field.storage.node.body
+    - search_api.index.news_index
   module:
     - search_api
-id: events_search
-label: 'Events search'
+    - text
+id: news_search
+label: 'News search'
 module: views
 description: ''
 tag: ''
-base_table: search_api_index_events_index
+base_table: search_api_index_news_index
 base_field: search_api_id
 display:
   default:
@@ -20,12 +22,12 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Events
+      title: News
       fields:
-        audience_name:
-          id: audience_name
-          table: search_api_index_events_index
-          field: audience_name
+        body:
+          id: body
+          table: search_api_index_news_index
+          field: body
           relationship: none
           group_type: group
           admin_label: ''
@@ -74,7 +76,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: string
+          type: text_default
           settings: {  }
           group_column: value
           group_columns: {  }
@@ -87,18 +89,19 @@ display:
           separator: ', '
           field_api_classes: false
           field_rendering: true
-          fallback_handler: search_api
+          fallback_handler: search_api_text
           fallback_options:
             link_to_item: false
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
+            filter_type: xss
       pager:
         type: full
         options:
           offset: 0
           pagination_heading_level: h4
-          items_per_page: 8
+          items_per_page: 20
           total_pages: null
           id: 0
           tags:
@@ -142,19 +145,19 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: 'There are no upcoming events.'
+            value: 'There are no results.'
             format: basic_html
           tokenize: false
       sorts:
-        field_event_date:
-          id: field_event_date
-          table: search_api_index_events_index
-          field: field_event_date
+        field_published_date:
+          id: field_published_date
+          table: search_api_index_news_index
+          field: field_published_date
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: search_api
-          order: ASC
+          order: DESC
           expose:
             label: ''
             field_identifier: ''
@@ -163,7 +166,7 @@ display:
       filters:
         search_api_fulltext:
           id: search_api_fulltext
-          table: search_api_index_events_index
+          table: search_api_index_news_index
           field: search_api_fulltext
           relationship: none
           group_type: group
@@ -175,13 +178,13 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: 'Search events'
+            label: 'Search news'
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: query_events
+            identifier: query_news
             required: false
             remember: false
             multiple: false
@@ -215,16 +218,16 @@ display:
       style:
         type: default
         options:
-          grouping: {  }
           row_class: ''
           default_row_class: false
+          uses_fields: false
       row:
         type: search_api
         options:
           view_modes:
             'entity:node':
               ':default': search_index
-              events: search_index
+              news: search_index
       query:
         type: search_api_query
         options:
@@ -245,10 +248,11 @@ display:
         - url.query_args
         - 'user.node_grants:view'
       tags:
-        - 'config:search_api.index.events_index'
-        - 'search_api_list:events_index'
-  events_search_page:
-    id: events_search_page
+        - 'config:field.storage.node.body'
+        - 'config:search_api.index.news_index'
+        - 'search_api_list:news_index'
+  news_search_page:
+    id: news_search_page
     display_title: Page
     display_plugin: page
     position: 1
@@ -262,7 +266,7 @@ display:
         metatag_display_extender:
           metatags: {  }
           tokenize: false
-      path: events
+      path: news
     cache_metadata:
       max-age: -1
       contexts:
@@ -272,5 +276,6 @@ display:
         - url.query_args
         - 'user.node_grants:view'
       tags:
-        - 'config:search_api.index.events_index'
-        - 'search_api_list:events_index'
+        - 'config:field.storage.node.body'
+        - 'config:search_api.index.news_index'
+        - 'search_api_list:news_index'
