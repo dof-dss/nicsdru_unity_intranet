@@ -12,7 +12,7 @@ dependencies:
 id: event_type
 theme: poniintra_theme
 region: search_facets
-weight: 1
+weight: -1
 provider: null
 plugin: 'facet_block:event_type'
 settings:

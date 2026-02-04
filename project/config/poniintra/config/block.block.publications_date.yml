@@ -1,29 +1,29 @@
-uuid: 45ef5f51-0cd4-4f17-846d-31411d35f900
+uuid: 8108d30d-b754-4aa7-a4bc-13df50045f23
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.sector
+    - facets.facet.publication_date
   module:
     - facets
     - system
   theme:
     - poniintra_theme
-id: sector
+id: publications_date
 theme: poniintra_theme
 region: search_facets
-weight: -2
+weight: 1
 provider: null
-plugin: 'facet_block:sector'
+plugin: 'facet_block:publication_date'
 settings:
-  id: 'facet_block:sector'
-  label: Sector
+  id: 'facet_block:publication_date'
+  label: Date
   label_display: visible
   provider: facets
   context_mapping: {  }
-  block_id: sector
+  block_id: publications_date
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/events\r\n/events/type/*\r\n/events/audience/*\r\n/events/sector/*\r\n/events/date/*"
+    pages: "/publications\r\n/publications/type/*\r\n/publications/date/*\r\n"
