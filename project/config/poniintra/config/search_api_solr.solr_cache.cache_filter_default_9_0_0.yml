@@ -1,16 +1,16 @@
-uuid: 1f67d78c-f558-484b-afe8-a5c4fb59389f
+uuid: becad52f-8afe-4ca6-a8bb-903812913d6f
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: vq3VkGaE2DLoxkODTNhlaM8f4mgCN22b_XvadwGJXG8
-id: cache_filter_default_7_0_0
+  default_config_hash: kPqER5Lz5zFQ-x9Mmadmzp6QuCx8HkqXZaPkTNWoN64
+id: cache_filter_default_9_0_0
 label: 'Filter Cache'
-minimum_solr_version: 7.0.0
+minimum_solr_version: 9.0.0
 environments: {  }
 cache:
   name: filter
-  class: solr.FastLRUCache
+  class: solr.CaffeineCache
   size: 512
   initialSize: 512
   autowarmCount: 0

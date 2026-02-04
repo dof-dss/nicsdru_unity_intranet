@@ -1,9 +1,9 @@
-uuid: 6ace9afe-ee71-4746-8c1b-73f59718426e
+uuid: a3c5ddbb-dd37-4179-8556-ccb827c69f9c
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: edn4g9huIbBonsmj_ZVT_ASjxhb-m9P7qL4zSNgQ_t8
+  default_config_hash: x7hRmmjSQscuuefTJywoyq2xEywr2XojLNHJEgenImc
 id: text_edge_und_7_0_0
 label: 'Edge NGram Text Field'
 minimum_solr_version: 7.0.0
@@ -14,6 +14,7 @@ field_type:
   name: text_edge
   class: solr.TextField
   positionIncrementGap: 100
+  storeOffsetsWithPositions: true
   analyzers:
     -
       type: index
@@ -22,7 +23,7 @@ field_type:
           class: solr.MappingCharFilterFactory
           mapping: accents_und.txt
       tokenizer:
-        class: solr.WhitespaceTokenizerFactory
+        class: solr.StandardTokenizerFactory
       filters:
         -
           class: solr.StopFilterFactory
@@ -59,7 +60,7 @@ field_type:
           class: solr.MappingCharFilterFactory
           mapping: accents_und.txt
       tokenizer:
-        class: solr.WhitespaceTokenizerFactory
+        class: solr.StandardTokenizerFactory
       filters:
         -
           class: solr.LengthFilterFactory
