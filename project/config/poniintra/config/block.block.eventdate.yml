@@ -12,7 +12,7 @@ dependencies:
 id: eventdate
 theme: poniintra_theme
 region: search_facets
-weight: -2
+weight: -4
 provider: null
 plugin: 'facet_block:event_date'
 settings:

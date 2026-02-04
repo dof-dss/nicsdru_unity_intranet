@@ -21,4 +21,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: '/events/*'
+    pages: "/events/*\r\n/publications\r\n/publications/type/*\r\n/publications/date/*\r\n/news\r\n/news/date/*\r\n/search*"
