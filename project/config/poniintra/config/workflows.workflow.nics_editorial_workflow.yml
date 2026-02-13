@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - node.type.events
+    - node.type.feature
     - node.type.news
     - node.type.page
     - node.type.publication
@@ -94,6 +95,7 @@ type_settings:
   entity_types:
     node:
       - events
+      - feature
       - news
       - page
       - publication

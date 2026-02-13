@@ -11,7 +11,7 @@ entity_type: node
 bundle: news
 label: Teaser
 description: 'Enter some short teaser text for this news item. This can be displayed on the site home page.'
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
