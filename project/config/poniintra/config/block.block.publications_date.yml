@@ -1,0 +1,29 @@
+uuid: 8108d30d-b754-4aa7-a4bc-13df50045f23
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.publication_date
+  module:
+    - facets
+    - system
+  theme:
+    - poniintra_theme
+id: publications_date
+theme: poniintra_theme
+region: search_facets
+weight: 1
+provider: null
+plugin: 'facet_block:publication_date'
+settings:
+  id: 'facet_block:publication_date'
+  label: Date
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: publications_date
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/publications\r\n/publications/type/*\r\n/publications/date/*\r\n"

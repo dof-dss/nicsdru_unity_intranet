@@ -2,6 +2,8 @@ uuid: 3b28bbb6-f0a0-4482-92b3-5f459a613bd0
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - poniintra_theme
 id: pagetitle
@@ -15,4 +17,8 @@ settings:
   label: 'Page title'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/events/*\r\n/publications\r\n/publications/type/*\r\n/publications/date/*\r\n/news\r\n/news/date/*\r\n/search*"

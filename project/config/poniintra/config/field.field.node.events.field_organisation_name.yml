@@ -1,0 +1,19 @@
+uuid: fcf56f5f-af8c-46aa-9f53-a7098166d8b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organisation_name
+    - node.type.events
+id: node.events.field_organisation_name
+field_name: field_organisation_name
+entity_type: node
+bundle: events
+label: 'Organisation name'
+description: 'Please enter the organisation hosting the event.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

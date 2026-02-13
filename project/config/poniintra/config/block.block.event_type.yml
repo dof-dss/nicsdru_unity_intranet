@@ -1,0 +1,29 @@
+uuid: 829920f9-8803-4c40-8f4c-b273134d5c87
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.event_type
+  module:
+    - facets
+    - system
+  theme:
+    - poniintra_theme
+id: event_type
+theme: poniintra_theme
+region: search_facets
+weight: -1
+provider: null
+plugin: 'facet_block:event_type'
+settings:
+  id: 'facet_block:event_type'
+  label: Type
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: event_type
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/events\r\n/events/type/*\r\n/events/audience/*\r\n/events/sector/*\r\n/events/date/*"

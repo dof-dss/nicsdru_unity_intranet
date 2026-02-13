@@ -4,7 +4,10 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - node.type.events
+    - node.type.news
     - node.type.page
+    - node.type.publication
     - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
@@ -19,16 +22,34 @@ weight: 3
 is_admin: null
 permissions:
   - 'access toolbar'
+  - 'create events content'
+  - 'create news content'
   - 'create page content'
+  - 'create publication content'
+  - 'delete own events content'
+  - 'delete own news content'
   - 'delete own page content'
+  - 'delete own publication content'
+  - 'edit any events content'
+  - 'edit any news content'
   - 'edit any page content'
+  - 'edit any publication content'
+  - 'edit own events content'
+  - 'edit own news content'
   - 'edit own page content'
+  - 'edit own publication content'
+  - 'revert events revisions'
+  - 'revert news revisions'
   - 'revert page revisions'
+  - 'revert publication revisions'
   - 'use nics_editorial_workflow transition create_new_draft'
   - 'use nics_editorial_workflow transition draft_of_published'
   - 'use nics_editorial_workflow transition reject'
   - 'use nics_editorial_workflow transition submit_for_review'
   - 'use text format basic_html'
   - 'view any unpublished content'
+  - 'view events revisions'
   - 'view latest version'
+  - 'view news revisions'
   - 'view page revisions'
+  - 'view publication revisions'

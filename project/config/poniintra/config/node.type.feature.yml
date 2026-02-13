@@ -1,0 +1,17 @@
+uuid: f6235679-befc-4326-b7ba-2f95287e2f5d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Feature
+type: feature
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

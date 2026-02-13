@@ -1,0 +1,24 @@
+uuid: f01b2551-5e85-4a53-819e-8d2a58b63d49
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.poni_menu
+  module:
+    - views
+  theme:
+    - poniintra_theme
+id: views_block__poni_menu_poni_menu
+theme: poniintra_theme
+region: top_first
+weight: 0
+provider: null
+plugin: 'views_block:poni_menu-poni_menu'
+settings:
+  id: 'views_block:poni_menu-poni_menu'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

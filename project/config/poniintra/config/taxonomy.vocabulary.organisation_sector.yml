@@ -1,0 +1,9 @@
+uuid: 72ea1e0e-a37a-4411-b43f-fb28288578f5
+langcode: en
+status: true
+dependencies: {  }
+name: 'Organisation sector'
+vid: organisation_sector
+description: null
+weight: 0
+new_revision: true
