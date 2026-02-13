@@ -62,57 +62,20 @@
  *   current user is a logged-in member.
  * - is_admin: Flag for admin user status. Will be true when the current user
  *   is an administrator.
- * - is_front: A flag indicating if the current page is the front page.
  *
  * @see template_preprocess_node()
  */
 #}
-<article class="event-content">
-  <div class="event-left">
-    {{ drupal_block('page_title_block', wrapper=false) }}
-    {{ content.field_featured_image }}
-    {{ content.body }}
-    {% if drupal_view_result('related_events', 'related_events_list')|length > 0 %}
-      <h2>{{ node.label ~ ' Events'|t }}</h2>
-      {{ drupal_view('related_events', 'related_events_list') }}
-    {% endif %}
-  </div>
-  <div class="event-right">
-    <div class="event-info">
-      <h2>Event Information</h2>
-      <p>
-        {% apply spaceless %}
-      <p>
-        <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-        <span>
-            <span>{{ 'When'|t }}</span>
-        <span>{{ content.field_event_date.0.start.date.value }}
-          {% if content.field_event_date.0.start.date.value < content.field_event_date.0.end.date.value %}
-            {{ ' - '|t }}{{ content.field_event_date.0.end.date.value }}
-          {% endif %}
-        </span>
-        </span>
-      </p>
 
-      {% if content.field_event_date.0.start.time.value %}
-        <p>
-          <i class="fas fa-clock" aria-hidden="true"></i>
-          <span>
-            <span>{{ 'Time'|t }}</span>
-            <span>{{ content.field_event_date.0.start.time.value }}
-              {% if content.field_event_date.0.end.time.value %}
-              {{ '-'|t }} {{ content.field_event_date.0.end.time.value }}
-            </span>
-          </span>
-          {% endif %}
-        </p>
-      {% endif %}
-      {% endapply %}
-      <p>
-        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-        <span>{{ content.field_event_location }}</span>
-      </p>
-    </div>
-{#    <p><a href="/event-registration" class="btn">Register your event</a></p>#}
-  </div>
+<article class="block-link">
+  <a href="{{ url }}">
+      <div class="block-link__image">
+        {{ content.field_photo }}
+      </div>
+      <div class="block-link__body">
+        <h2>
+          {{ node.label }}
+        </h2>
+      </div>
+  </a>
 </article>
