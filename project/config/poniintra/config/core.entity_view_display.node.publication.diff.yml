@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.diff
     - field.field.node.publication.body
     - field.field.node.publication.field_attachment
+    - field.field.node.publication.field_external_publication
     - field.field.node.publication.field_meta_tags
     - field.field.node.publication.field_publication_type
     - field.field.node.publication.field_published_date
@@ -13,6 +14,7 @@ dependencies:
   module:
     - datetime
     - field_group
+    - link
     - metatag
     - text
     - user
@@ -39,6 +41,27 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
+    group_documents:
+      children:
+        - field_attachment
+        - field_external_publication
+      label: Documents
+      parent_name: ''
+      region: content
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: list--no-bullet
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: ul
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 id: node.publication.diff
 targetEntityType: node
 bundle: publication
@@ -49,7 +72,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_attachment:
     type: entity_reference_entity_view
@@ -58,14 +81,26 @@ content:
       view_mode: embed
       link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 7
+    region: content
+  field_external_publication:
+    type: link
+    label: above
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 8
     region: content
   field_meta_tags:
     type: metatag_empty_formatter
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 22
     region: content
   field_publication_type:
     type: entity_reference_label
@@ -73,7 +108,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 21
     region: content
   field_published_date:
     type: datetime_default

@@ -46,16 +46,23 @@ content:
       time_format: 'g:ia'
       time_hour_format: 'g:ia'
       allday_label: ''
-      date_first: '1'
+      date_first: '0'
       ampm_reduce: '1'
       site_time_toggle: 0
     third_party_settings: {  }
     weight: 1
     region: content
+  field_event_location:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   body: true
   content_moderation_control: true
-  field_event_location: true
   field_event_teaser: true
   field_event_type: true
   field_featured_image: true
