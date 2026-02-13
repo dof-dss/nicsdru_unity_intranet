@@ -5,18 +5,40 @@ dependencies:
   config:
     - field.field.node.publication.body
     - field.field.node.publication.field_attachment
+    - field.field.node.publication.field_external_publication
     - field.field.node.publication.field_meta_tags
     - field.field.node.publication.field_publication_type
     - field.field.node.publication.field_published_date
     - node.type.publication
+    - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
     - datetime
+    - field_group
+    - link
     - media_library
     - media_library_edit
     - metatag
     - path
     - text
+third_party_settings:
+  field_group:
+    group_publications:
+      children:
+        - field_external_publication
+        - field_attachment
+      label: Publications
+      region: content
+      parent_name: ''
+      weight: 15
+      format_type: fieldset
+      format_settings:
+        classes: group-publications
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: 'You must provide an attachment or external link'
+        required_fields: true
 id: node.publication.default
 targetEntityType: node
 bundle: publication
@@ -40,7 +62,7 @@ content:
     third_party_settings: {  }
   field_attachment:
     type: media_library_widget
-    weight: 13
+    weight: 15
     region: content
     settings:
       media_types: {  }
@@ -48,6 +70,14 @@ content:
       media_library_edit:
         show_edit: true
         edit_form_mode: default
+  field_external_publication:
+    type: link_default
+    weight: 14
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
   field_meta_tags:
     type: metatag_firehose
     weight: 14

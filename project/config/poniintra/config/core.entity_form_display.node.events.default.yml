@@ -4,22 +4,22 @@ status: true
 dependencies:
   config:
     - field.field.node.events.body
-    - field.field.node.events.field_banner
     - field.field.node.events.field_event_date
     - field.field.node.events.field_event_location
     - field.field.node.events.field_event_teaser
     - field.field.node.events.field_event_type
+    - field.field.node.events.field_featured_image
     - field.field.node.events.field_meta_tags
     - field.field.node.events.field_organisation_name
     - field.field.node.events.field_organisation_sector
     - field.field.node.events.field_related_events
     - field.field.node.events.field_target_audience
     - node.type.events
+    - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
     - field_group
     - media_library
-    - media_library_edit
     - metatag
     - path
     - smart_date
@@ -62,16 +62,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_banner:
-    type: media_library_widget
-    weight: 10
-    region: content
-    settings:
-      media_types: {  }
-    third_party_settings:
-      media_library_edit:
-        show_edit: true
-        edit_form_mode: default
   field_event_date:
     type: smartdate_default
     weight: 15
@@ -112,6 +102,13 @@ content:
     weight: 18
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_featured_image:
+    type: media_library_widget
+    weight: 10
+    region: content
+    settings:
+      media_types: {  }
     third_party_settings: {  }
   field_meta_tags:
     type: metatag_firehose

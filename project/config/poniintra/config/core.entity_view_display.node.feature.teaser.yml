@@ -1,0 +1,33 @@
+uuid: cdaf1df0-b9af-4cfb-9861-e2e691061247
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.feature.field_link
+    - field.field.node.feature.field_meta_tags
+    - field.field.node.feature.field_photo
+    - node.type.feature
+  module:
+    - user
+id: node.feature.teaser
+targetEntityType: node
+bundle: feature
+mode: teaser
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_link: true
+  field_meta_tags: true
+  field_photo: true
+  langcode: true
+  search_api_excerpt: true

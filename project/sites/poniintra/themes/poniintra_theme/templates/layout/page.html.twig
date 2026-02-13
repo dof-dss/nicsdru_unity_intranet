@@ -53,8 +53,6 @@
  * - basic_page_structure: There is a checkbox in the theme settings UI
  *   to check if a basic page is used in the homepage structure. This template
  *   is set up for a homepage that doesn't use a basic page in it's structure.
- * - child_event_with_image: Comes from nicybersecuritycentre_theme.theme file and is used
- *   to determine if the event has a parent or not.
  *
  * @see template_preprocess_page()
  * @see html.html.twig
@@ -82,9 +80,6 @@
   {% if page.primary_menu %}
     {{ page.primary_menu }}
   {% endif %}
-  {% if page.header_block %}
-    {{ page.header_block }}
-  {% endif %}
 </div>
 
 {% if is_front %}
@@ -102,26 +97,21 @@
 
   {% if page.top_first or page.top_second or page.top_third %}
     <div id="top-area" class="clearfix">
-      <h2 class="advice-head">
-        <a href="/advice-and-guidance">Advice and Guidance</a>
-      </h2>
-      <div class="content">
-        {% if page.top_first %}
-          <div class="column">
-            {{ page.top_first }}
-          </div>
-        {% endif %}
-        {% if page.top_second %}
-          <div class="column">
-            {{ page.top_second }}
-          </div>
-        {% endif %}
-        {% if page.top_third %}
-          <div class="column">
-            {{ page.top_third }}
-          </div>
-        {% endif %}
-      </div>
+      {% if page.top_first %}
+        <div class="column">
+          {{ page.top_first }}
+        </div>
+      {% endif %}
+      {% if page.top_second %}
+        <div class="column">
+          {{ page.top_second }}
+        </div>
+      {% endif %}
+      {% if page.top_third %}
+        <div class="column">
+          {{ page.top_third }}
+        </div>
+      {% endif %}
     </div>
   {% endif %}
   {% endif %}
@@ -129,25 +119,15 @@
   {# If the homepage has a basic page or for every other page apart from the homepage show the basic page structure. #}
   {% if basic_page_structure is not empty or basic_page_structure is empty and not is_front %}
     <div id="container">
-      {% if not is_front %}
-        {{ page.breadcrumb }}
-      {% endif %}
-      {% if page.child_event_with_image %}
-        <div class="event-banner">
-          {{ drupal_view('related_events', 'parent_banner_image') }}
-        </div>
-      {% endif %}
-      {% if page.child_event_with_image is empty and node.field_banner %}
-        <div class="event-banner">
-          {{ node.field_banner|view }}
-        </div>
-      {% endif %}
       <div class="container-wrap">
         {% if search_page %}
         <div class="content-sidebar-wrap search-page">
           {% else %}
           {# If the homepage has basic page or for every other page apart from the homepage then make the content the Main section and add the h1. #}
           <main class="content-sidebar-wrap">
+            {% endif %}
+            {% if not is_front %}
+              {{ page.breadcrumb }}
             {% endif %}
 
             {% if is_front %}
@@ -175,7 +155,7 @@
               {% endif %}
               {% if page.content %}
                 <div id="post-content" {{ page.search_facets ? 'class="main-content" role="main"' : '' }}>
-                  {{ page.content|without('pagetitle') }}
+                  {{ page.content }}
                 </div>
               {% endif %}
             </div>
@@ -202,7 +182,7 @@
     {# An extra area on the homepage to add 1 to 3 blocks. May be twitter widgets or just block content. #}
     {% if page.bottom_widget_1 or page.bottom_widget_2 or page.bottom_widget_3 %}
       <div id="bottom_wrapper" class="footer_block bottom_widget">
-        <div id="bottom-area" class="footer-area container-wrap clearfix">
+        <div id="bottom-area" class="footer-area container-wrap">
           {% if page.bottom_widget_1 %}
             <div class="column">
               {{ page.bottom_widget_1 }}
@@ -228,7 +208,7 @@
 {% endif %}
 
 <footer id="footer">
-  <div id="footer_wrapper" class="container-wrap">
+  <div id="footer_wrapper">
     {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth or page.footer %}
       <div id="footer-area" class="footer-area container-wrap clearfix">
         {% if page.footer_first %}

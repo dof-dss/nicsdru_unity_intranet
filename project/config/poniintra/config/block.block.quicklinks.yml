@@ -1,0 +1,25 @@
+uuid: cf8633ec-7a8e-4845-9fde-fc05a9279726
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:b4616ba2-0e65-4640-a0f1-b3d40881cbe4'
+  module:
+    - block_content
+  theme:
+    - poniintra_theme
+id: quicklinks
+theme: poniintra_theme
+region: bottom_widget_1
+weight: 0
+provider: null
+plugin: 'block_content:b4616ba2-0e65-4640-a0f1-b3d40881cbe4'
+settings:
+  id: 'block_content:b4616ba2-0e65-4640-a0f1-b3d40881cbe4'
+  label: 'Quick links'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
