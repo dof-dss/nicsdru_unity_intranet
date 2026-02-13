@@ -1,0 +1,29 @@
+uuid: 45ef5f51-0cd4-4f17-846d-31411d35f900
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.sector
+  module:
+    - facets
+    - system
+  theme:
+    - poniintra_theme
+id: sector
+theme: poniintra_theme
+region: search_facets
+weight: -2
+provider: null
+plugin: 'facet_block:sector'
+settings:
+  id: 'facet_block:sector'
+  label: Sector
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: sector
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/events\r\n/events/type/*\r\n/events/audience/*\r\n/events/sector/*\r\n/events/date/*"

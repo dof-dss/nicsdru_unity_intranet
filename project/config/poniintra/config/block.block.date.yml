@@ -1,0 +1,29 @@
+uuid: 821e6626-b7f3-4b4c-b1f1-14f67025cf4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.news_date
+  module:
+    - facets
+    - system
+  theme:
+    - poniintra_theme
+id: date
+theme: poniintra_theme
+region: search_facets
+weight: 0
+provider: null
+plugin: 'facet_block:news_date'
+settings:
+  id: 'facet_block:news_date'
+  label: Date
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: date
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/news\r\n/news/date/*"

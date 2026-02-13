@@ -1,0 +1,25 @@
+uuid: bef8270d-c2b1-4de8-9cd7-adb8292ef6d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - unity_search_pages
+  theme:
+    - poniintra_theme
+id: sitesearchblock
+theme: poniintra_theme
+region: search
+weight: 0
+provider: null
+plugin: site_search_block
+settings:
+  id: site_search_block
+  label: 'Site search block'
+  label_display: '0'
+  provider: unity_search_pages
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /search
