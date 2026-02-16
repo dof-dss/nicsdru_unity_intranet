@@ -1,16 +1,16 @@
-uuid: fdc4bfe7-85eb-4ce1-a912-989054996e5f
+uuid: 2ec44811-e427-46ce-a949-90f496cde139
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_banner
+    - field.storage.node.field_featured_image
     - media.type.image
     - node.type.events
-id: node.events.field_banner
-field_name: field_banner
+id: node.events.field_featured_image
+field_name: field_featured_image
 entity_type: node
 bundle: events
-label: Banner
+label: 'Featured image'
 description: ''
 required: true
 translatable: false

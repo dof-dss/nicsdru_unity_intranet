@@ -1,0 +1,22 @@
+uuid: 850e1d20-6a6c-41c3-b8f9-fe29d521a750
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.feature
+id: node.feature.status
+field_name: status
+entity_type: node
+bundle: feature
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

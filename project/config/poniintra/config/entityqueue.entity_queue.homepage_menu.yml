@@ -1,0 +1,26 @@
+uuid: 8cd0c138-3811-4b03-872d-5991036cb0d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: homepage_menu
+label: 'Homepage menu'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      page: page
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 6
+  act_as_queue: false
+  reverse: false

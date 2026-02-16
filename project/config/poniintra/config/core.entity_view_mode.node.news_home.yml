@@ -1,0 +1,11 @@
+uuid: 0708895f-6b2d-4ea5-aab3-7909962c1a22
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.news_home
+label: 'News home'
+description: ''
+targetEntityType: node
+cache: true
