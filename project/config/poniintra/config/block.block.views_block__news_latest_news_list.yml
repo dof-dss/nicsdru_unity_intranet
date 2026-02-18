@@ -1,0 +1,33 @@
+uuid: f037deff-600b-4da3-9e2d-c8f300ed5063
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - node
+    - views
+  theme:
+    - poniintra_theme
+id: views_block__news_latest_news_list
+theme: poniintra_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:news-latest_news_list'
+settings:
+  id: 'views_block:news-latest_news_list'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      news: news
