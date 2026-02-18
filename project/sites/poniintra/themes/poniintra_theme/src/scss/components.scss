@@ -252,7 +252,7 @@ article.block-link {
       content: '';
       display: inline-block;
       position: absolute;
-      bottom: 2.3rem;
+      top: 2.3rem;
       right: 1rem;
       width: 3rem;
       height: 3rem;
@@ -264,7 +264,8 @@ article.block-link {
   }
 
   .block-link__body {
-    padding: 2rem;
+    padding: 2rem 4rem 2rem 2rem;
+    position: relative;
   }
 
   .media-image {
@@ -292,6 +293,7 @@ article.block-link {
   &:hover,
   &:focus {
     background: $ash-grey;
+    text-decoration: underline;
   }
 
   &:focus {
@@ -395,7 +397,7 @@ article.block-link {
 
 #bottom_wrapper {
   background: $grey-light;
-  padding-bottom: 5rem;
+  padding: 2rem 0 5rem;
 
   .block > h2 {
     margin-left: 0;
@@ -419,13 +421,6 @@ article.block-link {
 
 #bottom-area {
   margin-bottom: 0;
-}
-
-#block-quicklinks {
-  ul {
-    list-style: none;
-    margin: 0;
-  }
 }
 
 .bottom_widget .footer-area {
