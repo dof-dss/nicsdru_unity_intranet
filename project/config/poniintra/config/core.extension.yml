@@ -53,10 +53,12 @@ module:
   filelog: 0
   filter: 0
   flag: 0
+  flood_control: 0
   geocoder: 0
   geocoder_address: 0
   geocoder_field: 0
   geolocation: 0
+  geolocation_address: 0
   geolocation_google_maps: 0
   geolocation_google_static_maps: 0
   google_tag: 0
@@ -93,6 +95,7 @@ module:
   node: 0
   node_edit_protection: 0
   noreferrer: 0
+  oembed_providers: 0
   options: 0
   origins_ckeditor_enhancements: 0
   origins_common: 0
@@ -122,6 +125,8 @@ module:
   structure_sync: 0
   system: 0
   taxonomy: 0
+  telephone: 0
+  telephone_plus: 0
   text: 0
   token: 0
   token_filter: 0
