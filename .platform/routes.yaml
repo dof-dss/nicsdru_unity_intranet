@@ -40,11 +40,6 @@
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
-'https://test.co.uk/':
-    type: upstream
-    upstream: 'unity_intranet:http'
-    cache:
-        enabled: 'false'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_intranet:http'

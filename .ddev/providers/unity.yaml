@@ -24,7 +24,6 @@ db_pull_command:
         platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=nipbintra --gzip --file=/var/www/html/.ddev/.downloads/db_nipbintra.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
         platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=afbiintra --gzip --file=/var/www/html/.ddev/.downloads/db_afbiintra.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
         platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=poniintra --gzip --file=/var/www/html/.ddev/.downloads/db_poniintra.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
-        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=test --gzip --file=/var/www/html/.ddev/.downloads/db_test.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
 db_import_command:
     command: |
         set -eu -o pipefail
@@ -36,7 +35,6 @@ db_import_command:
         gzip -dc .ddev/.downloads/db_nipbintra.sql.gz | ddev import-db --database=nipbintra --skip-hooks 
         gzip -dc .ddev/.downloads/db_afbiintra.sql.gz | ddev import-db --database=afbiintra --skip-hooks 
         gzip -dc .ddev/.downloads/db_poniintra.sql.gz | ddev import-db --database=poniintra --skip-hooks 
-        gzip -dc .ddev/.downloads/db_test.sql.gz | ddev import-db --database=test --skip-hooks 
     service: host
 files_pull_command:
     command: |
