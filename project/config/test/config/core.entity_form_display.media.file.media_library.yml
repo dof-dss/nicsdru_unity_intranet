@@ -1,0 +1,30 @@
+uuid: 02520f34-ac02-4245-a910-2d3b45406261
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.file.field_media_file_1
+    - media.type.file
+_core:
+  default_config_hash: HcpGSSEhM0PQKnECHw4Z3Es-VKNwumsjC9ybOUd1NiM
+id: media.file.media_library
+targetEntityType: media
+bundle: file
+mode: media_library
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_file_1: true
+  langcode: true
+  path: true
+  status: true
+  uid: true

@@ -1,0 +1,56 @@
+uuid: 08ce076f-9882-4d2a-a5d2-752c5edf3fb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - node.type.news
+    - node.type.page
+    - node.type.publication
+    - workflows.workflow.nics_editorial_workflow
+  module:
+    - content_moderation
+    - filter
+    - node
+    - toolbar
+_core:
+  default_config_hash: '-zOiwuhc4sw9sBAIv7EhosPt2di9vwuTQ9yYMBUY7rQ'
+id: supervisor_user
+label: 'supervisor user'
+weight: 5
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'create news content'
+  - 'create page content'
+  - 'create publication content'
+  - 'delete any news content'
+  - 'delete any page content'
+  - 'delete any publication content'
+  - 'delete news revisions'
+  - 'delete own news content'
+  - 'delete own page content'
+  - 'delete own publication content'
+  - 'delete page revisions'
+  - 'delete publication revisions'
+  - 'edit any news content'
+  - 'edit any page content'
+  - 'edit any publication content'
+  - 'edit own news content'
+  - 'edit own page content'
+  - 'edit own publication content'
+  - 'revert news revisions'
+  - 'revert page revisions'
+  - 'revert publication revisions'
+  - 'use nics_editorial_workflow transition archive'
+  - 'use nics_editorial_workflow transition create_new_draft'
+  - 'use nics_editorial_workflow transition draft_of_published'
+  - 'use nics_editorial_workflow transition publish'
+  - 'use nics_editorial_workflow transition reject'
+  - 'use nics_editorial_workflow transition restore'
+  - 'use nics_editorial_workflow transition restore_to_draft'
+  - 'use nics_editorial_workflow transition submit_for_review'
+  - 'use text format basic_html'
+  - 'view news revisions'
+  - 'view page revisions'
+  - 'view publication revisions'

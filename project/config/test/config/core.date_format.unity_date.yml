@@ -1,0 +1,10 @@
+uuid: bea8e90b-af76-4896-9030-fb1f2f1315ce
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _tFMI69SsSPe760rqyAjbVUtvAioK-97hQa5RBt55jY
+id: unity_date
+label: 'Unity date'
+locked: false
+pattern: 'j F Y'

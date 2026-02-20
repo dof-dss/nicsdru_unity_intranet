@@ -1,0 +1,11 @@
+uuid: 6ab1c12a-c3e2-437c-9e3d-8523883f5557
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: l2roNHORraLpZj_gbIt0wh2SioF9p3hIy_Ku5hJCFYk
+name: 'Publication types'
+vid: publication_types
+description: null
+weight: 0
+new_revision: true

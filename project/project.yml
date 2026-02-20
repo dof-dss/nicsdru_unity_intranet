@@ -74,3 +74,13 @@ sites:
         database: poniintra
         status: development
         default: false
+    test:
+        name: test
+        url: test.co.uk
+        solr: test
+        www: false
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/test ; drush core-cron'
+        database: test
+        status: development
+        default: false
