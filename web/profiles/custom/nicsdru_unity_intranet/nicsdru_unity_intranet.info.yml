@@ -8,7 +8,6 @@ distribution:
 install:
   - address
   - admin_toolbar
-  - admin_toolbar_links_access_filter
   - admin_toolbar_tools
   - allowed_formats
   - automated_cron
@@ -30,7 +29,6 @@ install:
   - content_lock_timeout
   - content_moderation
   - contextual
-  - cookie_content_blocker
   - csp
   - ctools
   - datetime
@@ -61,7 +59,6 @@ install:
   - handy_cache_tags
   - help
   - history
-  - honeypot
   - http_cache_control
   - image
   - inline_entity_form
@@ -113,6 +110,8 @@ install:
   - responsive_image
   - scheduled_transitions
   - search
+  - search_api
+  - search_api_solr
   - simplei
   - structure_sync
   - system
@@ -124,6 +123,7 @@ install:
   - twig_tweak
   - ultimate_cron
   - unity_common
+  - unity_eu_cookie_compliance
   - unity_frontpage
   - unity_image_styles
   - unity_internal_link_checker
@@ -139,7 +139,11 @@ install:
   - pathauto
   - views
   - views_ui
+dependencies:
+  - admin_toolbar
+  - admin_toolbar_tools
+  - address
 themes:
-  - olivero
+  - nicsdru_unity_theme
   - stark
   - claro
