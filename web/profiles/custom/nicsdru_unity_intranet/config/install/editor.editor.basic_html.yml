@@ -14,6 +14,7 @@ settings:
       - italic
       - blockQuote
       - superscript
+      - removeFormat
       - '|'
       - heading
       - style

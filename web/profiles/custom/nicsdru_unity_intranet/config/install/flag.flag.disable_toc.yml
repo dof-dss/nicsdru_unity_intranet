@@ -3,9 +3,12 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: bk4Od6ZdaE9knDa_a-YbzG3RPABGDy7MB2GaYHBeNAA
 id: disable_toc
 label: 'Disable Table of Contents'
-bundles: {  }
+bundles:
+  - page
 entity_type: node
 global: true
 flag_short: 'Disable ToC'
