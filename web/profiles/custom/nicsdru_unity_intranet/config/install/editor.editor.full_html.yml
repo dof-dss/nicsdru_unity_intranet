@@ -15,6 +15,7 @@ settings:
       - blockQuote
       - superscript
       - removeFormat
+      - removeFormat
       - '|'
       - heading
       - style
