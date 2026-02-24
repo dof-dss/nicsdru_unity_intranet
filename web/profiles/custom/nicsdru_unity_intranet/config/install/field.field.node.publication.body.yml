@@ -1,19 +1,18 @@
-uuid: 318237d6-9d40-4212-b0e8-fc4a075d5475
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.news
+    - node.type.publication
   module:
     - text
-id: node.news.body
+id: node.publication.body
 field_name: body
 entity_type: node
-bundle: news
+bundle: publication
 label: Body
 description: ''
-required: true
+required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
