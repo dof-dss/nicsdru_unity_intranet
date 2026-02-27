@@ -42,3 +42,13 @@ function poni_common_validate_attachment(&$form, FormStateInterface $form_state)
     $form_state->setErrorByName('field_external_publication', t('You must provide an attachment or external link'));
   }
 }
+
+/**
+ * Implements hook_preprocess_HOOK() for fieldset.
+ */
+function poni_common_preprocess_fieldset(&$variables) {
+  $element = &$variables['element'];
+  if ($element['#id'] == 'group-publications') {
+    $variables['legend_span']['attributes']['class'][] = 'js-form-required form-required';
+  }
+}

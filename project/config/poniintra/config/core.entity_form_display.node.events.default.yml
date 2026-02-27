@@ -12,7 +12,6 @@ dependencies:
     - field.field.node.events.field_meta_tags
     - field.field.node.events.field_organisation_name
     - field.field.node.events.field_organisation_sector
-    - field.field.node.events.field_related_events
     - field.field.node.events.field_target_audience
     - node.type.events
     - workflows.workflow.nics_editorial_workflow
@@ -131,16 +130,6 @@ content:
     weight: 15
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_related_events:
-    type: entity_reference_autocomplete
-    weight: 19
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
   field_target_audience:
     type: options_select
