@@ -30,7 +30,7 @@ third_party_settings:
       label: Publications
       region: content
       parent_name: ''
-      weight: 15
+      weight: 13
       format_type: fieldset
       format_settings:
         classes: group-publications
