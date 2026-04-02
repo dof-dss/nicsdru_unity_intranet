@@ -1,11 +1,11 @@
-uuid: 8cd0c138-3811-4b03-872d-5991036cb0d7
+uuid: 21744bf4-4709-4a81-a967-1ac56117f16f
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: homepage_menu
-label: 'Homepage menu'
+id: quicklinks
+label: Quicklinks
 handler: simple
 handler_configuration: {  }
 entity_settings:
@@ -13,7 +13,7 @@ entity_settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      page: page
+      link: link
     sort:
       field: _none
       direction: ASC

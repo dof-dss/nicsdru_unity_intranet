@@ -5,7 +5,7 @@ dependencies:
   module:
     - node
 id: homepage_feature
-label: 'Homepage feature'
+label: 'Homepage 3 features'
 handler: simple
 handler_configuration: {  }
 entity_settings:
@@ -22,5 +22,5 @@ entity_settings:
 queue_settings:
   min_size: 0
   max_size: 3
-  act_as_queue: false
+  act_as_queue: true
   reverse: false

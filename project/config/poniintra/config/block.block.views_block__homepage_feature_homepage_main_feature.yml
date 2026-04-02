@@ -1,21 +1,21 @@
-uuid: 3c26f7de-97f0-460e-9e1e-8d42fc126e67
+uuid: d8e28db3-e54f-423a-b474-2a51d71c6692
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.news
+    - views.view.homepage_feature
   module:
     - views
   theme:
     - poniintra_theme
-id: views_block__news_latest_news_home
+id: views_block__homepage_feature_homepage_main_feature
 theme: poniintra_theme
 region: front_welcome
 weight: 0
 provider: null
-plugin: 'views_block:news-latest_news_home'
+plugin: 'views_block:homepage_feature-homepage_main_feature'
 settings:
-  id: 'views_block:news-latest_news_home'
+  id: 'views_block:homepage_feature-homepage_main_feature'
   label: ''
   label_display: '0'
   provider: views

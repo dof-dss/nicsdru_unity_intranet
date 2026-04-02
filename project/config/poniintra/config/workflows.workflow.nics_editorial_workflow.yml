@@ -5,6 +5,7 @@ dependencies:
   config:
     - node.type.events
     - node.type.feature
+    - node.type.link
     - node.type.news
     - node.type.page
     - node.type.publication
@@ -96,6 +97,7 @@ type_settings:
     node:
       - events
       - feature
+      - link
       - news
       - page
       - publication
