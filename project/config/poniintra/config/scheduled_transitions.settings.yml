@@ -15,6 +15,9 @@ bundles:
     bundle: feature
   -
     entity_type: node
+    bundle: link
+  -
+    entity_type: node
     bundle: news
   -
     entity_type: node
