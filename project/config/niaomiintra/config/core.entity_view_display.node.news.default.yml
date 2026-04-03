@@ -11,7 +11,6 @@ dependencies:
     - node.type.news
   module:
     - datetime
-    - image
     - text
     - user
 id: node.news.default
@@ -27,13 +26,11 @@ content:
     weight: 2
     region: content
   field_photo:
-    type: image
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
+      view_mode: landscape_float
+      link: false
     third_party_settings: {  }
     weight: 1
     region: content
