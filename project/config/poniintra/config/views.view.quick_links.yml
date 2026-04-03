@@ -1,18 +1,19 @@
-uuid: ed757019-fb35-458b-bb46-7048b2366761
+uuid: f9bbf63f-0dba-49af-a6a5-10d154ef2a70
 langcode: en
 status: true
 dependencies:
   config:
-    - entityqueue.entity_queue.homepage_feature
-    - entityqueue.entity_queue.homepage_main_feature
-    - node.type.feature
+    - entityqueue.entity_queue.quicklinks
+    - field.storage.node.field_link_url
+    - node.type.link
   module:
     - entityqueue
+    - link
     - node
     - user
     - views_custom_cache_tag
-id: homepage_feature
-label: 'Homepage feature'
+id: quick_links
+label: 'Quick links'
 module: views
 description: ''
 tag: ''
@@ -25,18 +26,18 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Homepage feature'
+      title: 'Quick links'
       fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
+        field_link_url:
+          id: field_link_url
+          table: node__field_link_url
+          field: field_link_url
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -68,10 +69,77 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: uri
+          type: link
+          settings:
+            trim_length: null
+            url_only: true
+            url_plain: false
+            rel: '0'
+            target: '0'
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: true
+            path: '{{ field_link_url }}'
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -79,7 +147,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -91,9 +159,10 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: none
+        type: some
         options:
           offset: 0
+          items_per_page: 6
       exposed_form:
         type: basic
         options:
@@ -111,7 +180,7 @@ display:
       cache:
         type: custom_tag
         options:
-          custom_tag: "node:list:feature\r\nentity_subqueue:homepage_3_features"
+          custom_tag: "node:list:feature\r\nentity_subqueue:quicklinks"
       empty: {  }
       sorts:
         entityqueue_relationship:
@@ -149,7 +218,7 @@ display:
           entity_field: type
           plugin_id: bundle
           value:
-            feature: feature
+            link: link
         entityqueue_relationship:
           id: entityqueue_relationship
           table: node_field_data
@@ -190,16 +259,21 @@ display:
             default_group_multiple: {  }
             group_items: {  }
       style:
-        type: default
+        type: html_list
         options:
+          grouping: {  }
           row_class: ''
           default_row_class: false
-          uses_fields: false
+          type: ul
+          wrapper_class: ''
+          class: ''
       row:
-        type: 'entity:node'
+        type: fields
         options:
-          relationship: none
-          view_mode: default
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
       query:
         type: views_query
         options:
@@ -219,7 +293,7 @@ display:
           entity_type: node
           plugin_id: entity_queue
           required: true
-          limit_queue: homepage_feature
+          limit_queue: quicklinks
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -231,10 +305,11 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:entityqueue.entity_queue.homepage_feature'
-  homepage_feature:
-    id: homepage_feature
-    display_title: 'Homepage 3 features'
+        - 'config:entityqueue.entity_queue.quicklinks'
+        - 'config:field.storage.node.field_link_url'
+  quick_links:
+    id: quick_links
+    display_title: Quicklinks
     display_plugin: block
     position: 1
     display_options:
@@ -251,38 +326,5 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:entityqueue.entity_queue.homepage_feature'
-  homepage_main_feature:
-    id: homepage_main_feature
-    display_title: 'Homepage main feature'
-    display_plugin: block
-    position: 1
-    display_options:
-      defaults:
-        relationships: false
-      relationships:
-        entityqueue_relationship:
-          id: entityqueue_relationship
-          table: node_field_data
-          field: entityqueue_relationship
-          relationship: none
-          group_type: group
-          admin_label: 'Content queue'
-          entity_type: node
-          plugin_id: entity_queue
-          required: true
-          limit_queue: homepage_main_feature
-      display_description: ''
-      display_extenders:
-        metatag_display_extender:
-          metatags: {  }
-          tokenize: false
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:entityqueue.entity_queue.homepage_main_feature'
+        - 'config:entityqueue.entity_queue.quicklinks'
+        - 'config:field.storage.node.field_link_url'
