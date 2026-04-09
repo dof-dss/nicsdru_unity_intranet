@@ -9,8 +9,11 @@ dependencies:
     - field.field.node.niao_staff_member.field_job_title
     - field.field.node.niao_staff_member.field_profile_image
     - node.type.niao_staff_member
+    - workflows.workflow.nics_editorial_workflow
   module:
-    - file
+    - content_moderation
+    - media_library
+    - media_library_edit
     - path
 id: node.niao_staff_member.default
 targetEntityType: node
@@ -55,12 +58,15 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_profile_image:
-    type: file_generic
-    weight: 5
+    type: media_library_widget
+    weight: 121
     region: content
     settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
+      media_types: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: true
+        edit_form_mode: default
   flag:
     weight: 10
     region: content
@@ -72,6 +78,12 @@ content:
     region: content
     settings:
       include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    region: content
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path

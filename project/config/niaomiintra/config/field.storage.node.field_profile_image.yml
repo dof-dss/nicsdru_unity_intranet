@@ -1,23 +1,17 @@
-uuid: e3f813fb-f48c-43f3-bd83-f7c8e3586206
-langcode: und
+uuid: 284d7b79-ac98-4818-84cf-28f1f3a850e5
+langcode: en
 status: true
 dependencies:
   module:
-    - file
-    - image
+    - media
     - node
 id: node.field_profile_image
 field_name: field_profile_image
 entity_type: node
-type: image
+type: entity_reference
 settings:
-  target_type: file
-  display_field: false
-  display_default: false
-  uri_scheme: public
-  default_image:
-    uuid: ''
-module: image
+  target_type: media
+module: core
 locked: false
 cardinality: 1
 translatable: true
