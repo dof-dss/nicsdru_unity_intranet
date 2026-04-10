@@ -1625,7 +1625,7 @@ display:
         type: normal
         title: 'Staff Profiles'
         description: ''
-        weight: -47
+        weight: -46
         expanded: false
         menu_name: main
         parent: ''
