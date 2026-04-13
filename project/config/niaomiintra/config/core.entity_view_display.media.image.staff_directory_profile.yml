@@ -1,0 +1,41 @@
+uuid: 2a6200ef-4213-4018-8671-952af9a9bf4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.staff_directory_profile
+    - field.field.media.image.field_caption
+    - field.field.media.image.field_media_image
+    - image.style.staff_directory_profile
+    - media.type.image
+  module:
+    - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: media.image.staff_directory_profile
+targetEntityType: media
+bundle: image
+mode: staff_directory_profile
+content:
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: staff_directory_profile
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_caption: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true
