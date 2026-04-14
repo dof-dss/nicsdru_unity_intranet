@@ -1,22 +1,22 @@
-uuid: 51904fd5-eb73-4003-8e40-22bf43181b16
+uuid: 0bb762a2-bd82-4553-8ebb-326b48a7f188
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.news_search
+    - views.view.staff_search
   module:
     - system
     - views
   theme:
     - poniintra_theme
-id: exposedformnews_searchnews_search_page
+id: exposedformstaff_searchstaff_search_page
 theme: poniintra_theme
 region: search_facets
-weight: -12
+weight: -10
 provider: null
-plugin: 'views_exposed_filter_block:news_search-news_search_page'
+plugin: 'views_exposed_filter_block:staff_search-staff_search_page'
 settings:
-  id: 'views_exposed_filter_block:news_search-news_search_page'
+  id: 'views_exposed_filter_block:staff_search-staff_search_page'
   label: ''
   label_display: '0'
   provider: views
@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/news\r\n/news/date/*"
+    pages: "/staff-profiles\r\n/staff-profiles/team/*"

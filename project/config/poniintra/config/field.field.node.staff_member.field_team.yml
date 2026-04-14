@@ -1,0 +1,29 @@
+uuid: fd1f55e6-eacc-4409-999e-b9835a8a199d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_team
+    - node.type.staff_member
+    - taxonomy.vocabulary.staff_profile_teams
+id: node.staff_member.field_team
+field_name: field_team
+entity_type: node
+bundle: staff_member
+label: Team
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      staff_profile_teams: staff_profile_teams
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

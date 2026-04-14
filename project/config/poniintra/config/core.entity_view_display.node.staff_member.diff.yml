@@ -6,10 +6,10 @@ dependencies:
     - core.entity_view_mode.node.diff
     - field.field.node.staff_member.field_email
     - field.field.node.staff_member.field_extension
-    - field.field.node.staff_member.field_first_name
     - field.field.node.staff_member.field_job_title
     - field.field.node.staff_member.field_meta_tags
     - field.field.node.staff_member.field_photo
+    - field.field.node.staff_member.field_team
     - field.field.node.staff_member.field_work_mobile
     - node.type.staff_member
   module:
@@ -49,8 +49,8 @@ content:
 hidden:
   field_email: true
   field_extension: true
-  field_first_name: true
   field_job_title: true
+  field_team: true
   field_work_mobile: true
   langcode: true
   search_api_excerpt: true

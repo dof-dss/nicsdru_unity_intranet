@@ -5,10 +5,10 @@ dependencies:
   config:
     - field.field.node.staff_member.field_email
     - field.field.node.staff_member.field_extension
-    - field.field.node.staff_member.field_first_name
     - field.field.node.staff_member.field_job_title
     - field.field.node.staff_member.field_meta_tags
     - field.field.node.staff_member.field_photo
+    - field.field.node.staff_member.field_team
     - field.field.node.staff_member.field_work_mobile
     - node.type.staff_member
     - workflows.workflow.nics_editorial_workflow
@@ -31,22 +31,15 @@ content:
     third_party_settings: {  }
   field_email:
     type: email_default
-    weight: 14
+    weight: 15
     region: content
     settings:
       placeholder: ''
       size: 60
     third_party_settings: {  }
   field_extension:
-    type: number
-    weight: 13
-    region: content
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-  field_first_name:
     type: string_textfield
-    weight: 11
+    weight: 13
     region: content
     settings:
       size: 60
@@ -78,11 +71,18 @@ content:
       media_library_edit:
         show_edit: true
         edit_form_mode: default
+  field_team:
+    type: options_select
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_work_mobile:
-    type: number
-    weight: 15
+    type: string_textfield
+    weight: 14
     region: content
     settings:
+      size: 60
       placeholder: ''
     third_party_settings: {  }
   langcode:

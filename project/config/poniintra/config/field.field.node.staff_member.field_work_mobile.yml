@@ -1,4 +1,4 @@
-uuid: 14caff35-3657-48be-9038-8f60dc6eb68e
+uuid: 55f238dd-f70e-4c61-be1f-0613b79788ad
 langcode: en
 status: true
 dependencies:
@@ -10,14 +10,10 @@ field_name: field_work_mobile
 entity_type: node
 bundle: staff_member
 label: 'Work mobile'
-description: 'Please add the work mobile number of the staff member.'
+description: 'Please add the staff members work mobile number.'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings:
-  min: null
-  max: null
-  prefix: ''
-  suffix: ''
-field_type: integer
+settings: {  }
+field_type: string

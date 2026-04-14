@@ -1,29 +1,29 @@
-uuid: 884db450-85f1-4741-b5c4-533928ef8d00
+uuid: 992018ea-4189-4373-bcd0-f6f7cc29b6cb
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.event_date
+    - facets.facet.team
   module:
     - facets
     - system
   theme:
     - poniintra_theme
-id: eventdate
+id: team
 theme: poniintra_theme
 region: search_facets
-weight: -9
+weight: 0
 provider: null
-plugin: 'facet_block:event_date'
+plugin: 'facet_block:team'
 settings:
-  id: 'facet_block:event_date'
-  label: 'Event date'
+  id: 'facet_block:team'
+  label: Team
   label_display: visible
   provider: facets
   context_mapping: {  }
-  block_id: eventdate
+  block_id: team
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/events\r\n/events/type/*\r\n/events/audience/*\r\n/events/sector/*\r\n/events/date/*"
+    pages: "/staff-profiles\r\n/staff-profiles/team/*"

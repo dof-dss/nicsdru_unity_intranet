@@ -30,65 +30,42 @@
           <h1 class="staff-name">{{ content.field_first_name }}</h1>
         {% endif %}
 
-        {% if node.title.value %}
-          <h1 class="staff-surname">{{ node.title.value }}</h1>
+        {% if node.surname.value %}
+          <h1 class="staff-surname">{{ node.surname.value }}</h1>
         {% endif %}
       </div>
 
-      {% if content.field_title %}
+      {% if content.field_job_title %}
         <div class="field-job-title">
-          <h2 class="staff-job-title">{{ content.field_title }}</h2>
+          <h2 class="staff-job-title">{{ content.field_job_title }}</h2>
         </div>
       {% endif %}
 
-      <div class="profile-details">
-        {% if content.field_about_me['#items']|length > 0 %}
-          <div class="field-about-me">
-            <strong>About Me:</strong>
-            <div class="field-content">{{ content.field_about_me }}</div>
-          </div>
-        {% endif %}
-
-        {% if content.field_directorate['#items']|length > 0 %}
-          <div class="field-directorate">
-            <strong>Directorate:</strong>
-            <div class="field-content">{{ content.field_directorate }}</div>
-          </div>
-        {% endif %}
 
         {% if content.field_extension['#items']|length > 0 %}
           <div class="field-extension">
-            <strong>Extension:</strong>
             <div class="field-content">{{ content.field_extension }}</div>
           </div>
         {% endif %}
 
-        {% if content.field_find_me['#items']|length > 0 %}
-          <div class="field-find-me">
-            <strong>Find Me:</strong>
-            <div class="field-content">{{ content.field_find_me }}</div>
-          </div>
-        {% endif %}
 
-        {% if content.field_mobile['#items']|length > 0 %}
+        {% if content.field_work_mobile['#items']|length > 0 %}
           <div class="field-mobile">
-            <strong>Mobile:</strong>
-            <div class="field-content">{{ content.field_mobile }}</div>
+            <div class="field-content">{{ content.field_work_mobile }}</div>
           </div>
         {% endif %}
 
-        {% if content.field_work_pattern['#items']|length > 0 %}
-          <div class="field-work-pattern">
-            <strong>Work Pattern:</strong>
-            <div class="field-content">{{ content.field_work_pattern }}</div>
-          </div>
-        {% endif %}
+      {% if content.field_email['#items']|length > 0 %}
+        <div class="field-mobile">
+          <div class="field-content">{{ content.field_email }}</div>
+        </div>
+      {% endif %}
       </div>
     </div>
 
-    {% if content.field_profile_image %}
+    {% if content.field_photo %}
       <div class="profile-image">
-        {{ content.field_profile_image }}
+        {{ content.field_photo }}
       </div>
     {% endif %}
   </div>

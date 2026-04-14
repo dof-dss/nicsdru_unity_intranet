@@ -8,7 +8,7 @@ id: node.staff_member.title
 field_name: title
 entity_type: node
 bundle: staff_member
-label: Surname
+label: Name
 description: ''
 required: true
 translatable: true

@@ -1,4 +1,4 @@
-uuid: adb6f8f5-e203-44c4-b028-9907df215d59
+uuid: 8b49881e-794b-4bf9-a20f-08ed41d6bbb9
 langcode: en
 status: true
 dependencies:
@@ -7,10 +7,11 @@ dependencies:
 id: node.field_work_mobile
 field_name: field_work_mobile
 entity_type: node
-type: integer
+type: string
 settings:
-  unsigned: false
-  size: normal
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
 cardinality: 1

@@ -6,15 +6,20 @@ dependencies:
     - field.storage.node.field_photo
     - media.type.image
     - node.type.staff_member
+  content:
+    - 'media:image:a61a8edf-3045-4680-b4db-3cd4d1ee7b03'
 id: node.staff_member.field_photo
 field_name: field_photo
 entity_type: node
 bundle: staff_member
 label: 'Profile image'
 description: 'Please add a photo of the staff member.'
-required: false
+required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    target_uuid: a61a8edf-3045-4680-b4db-3cd4d1ee7b03
+    weight: 0
 default_value_callback: ''
 settings:
   handler: 'default:media'

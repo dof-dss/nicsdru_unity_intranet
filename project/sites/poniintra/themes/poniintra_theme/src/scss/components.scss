@@ -492,3 +492,39 @@ article.block-link {
     }
   }
 }
+
+.staff-profiles {
+  padding: 3.4rem 0 0;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  display: flex;
+  align-items: flex-start;
+
+
+  .staff-profile-image {
+    flex-shrink: 0;
+    width: 150px;
+    margin-right: 2rem;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .staff-profile-info {
+    flex: 1;
+
+    h3 {
+      margin-top: .5rem;
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+}
