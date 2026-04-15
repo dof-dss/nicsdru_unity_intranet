@@ -1,0 +1,34 @@
+uuid: 7f5e410a-3d77-4d0a-a6df-5b3dcb80192d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_photo
+    - media.type.image
+    - node.type.staff_member
+  content:
+    - 'media:image:a61a8edf-3045-4680-b4db-3cd4d1ee7b03'
+id: node.staff_member.field_photo
+field_name: field_photo
+entity_type: node
+bundle: staff_member
+label: 'Profile image'
+description: 'Please add a photo of the staff member.'
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: a61a8edf-3045-4680-b4db-3cd4d1ee7b03
+    weight: 0
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

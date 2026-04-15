@@ -1,0 +1,19 @@
+uuid: 67551517-7d7f-485e-8f75-5c9aa6d4a397
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_extension
+    - node.type.staff_member
+id: node.staff_member.field_extension
+field_name: field_extension
+entity_type: node
+bundle: staff_member
+label: Extension
+description: 'Please add the work extension number.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

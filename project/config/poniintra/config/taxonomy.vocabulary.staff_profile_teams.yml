@@ -1,0 +1,9 @@
+uuid: f0182179-7ae7-4597-ac2f-a55449209d46
+langcode: en
+status: true
+dependencies: {  }
+name: 'Staff profile teams'
+vid: staff_profile_teams
+description: null
+weight: 0
+new_revision: false
