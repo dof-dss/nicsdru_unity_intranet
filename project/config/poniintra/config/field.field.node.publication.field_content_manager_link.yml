@@ -1,0 +1,19 @@
+uuid: 4c416a87-03f8-476c-8e2c-de9734d02438
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_manager_link
+    - node.type.publication
+id: node.publication.field_content_manager_link
+field_name: field_content_manager_link
+entity_type: node
+bundle: publication
+label: 'Content manager link URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
