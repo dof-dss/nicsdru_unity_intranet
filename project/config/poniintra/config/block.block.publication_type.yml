@@ -12,7 +12,7 @@ dependencies:
 id: publication_type
 theme: poniintra_theme
 region: search_facets
-weight: 2
+weight: -3
 provider: null
 plugin: 'facet_block:publication_type'
 settings:

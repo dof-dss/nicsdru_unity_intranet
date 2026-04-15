@@ -1,0 +1,26 @@
+uuid: 21744bf4-4709-4a81-a967-1ac56117f16f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: quicklinks
+label: Quicklinks
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      link: link
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 6
+  act_as_queue: true
+  reverse: false

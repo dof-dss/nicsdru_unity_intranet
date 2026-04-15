@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.niao_staff_member.field_profile_image
     - node.type.niao_staff_member
   module:
-    - image
     - user
 id: node.niao_staff_member.default
 targetEntityType: node
@@ -19,7 +18,7 @@ mode: default
 content:
   field_email:
     type: email_mailto
-    label: hidden
+    label: above
     settings: {  }
     third_party_settings: {  }
     weight: 4
@@ -50,13 +49,11 @@ content:
     weight: 1
     region: content
   field_profile_image:
-    type: image
-    label: hidden
+    type: entity_reference_entity_view
+    label: above
     settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
+      view_mode: default
+      link: false
     third_party_settings: {  }
     weight: 3
     region: content

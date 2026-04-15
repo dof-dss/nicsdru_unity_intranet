@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.node.publication.body
     - field.field.node.publication.field_attachment
+    - field.field.node.publication.field_content_manager_link
+    - field.field.node.publication.field_content_manager_link_text
     - field.field.node.publication.field_external_publication
     - field.field.node.publication.field_meta_tags
     - field.field.node.publication.field_publication_type
@@ -25,6 +27,7 @@ third_party_settings:
   field_group:
     group_publications:
       children:
+        - group_content_manager
         - field_external_publication
         - field_attachment
       label: Publications
@@ -37,7 +40,23 @@ third_party_settings:
         show_empty_fields: false
         id: ''
         label_as_html: false
-        description: 'You must provide an attachment or external link'
+        description: 'You must provide a content manager link, attachment or external link'
+        required_fields: true
+    group_content_manager:
+      children:
+        - field_content_manager_link
+        - field_content_manager_link_text
+      label: 'Content manager'
+      region: content
+      parent_name: group_publications
+      weight: 15
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
         required_fields: true
 id: node.publication.default
 targetEntityType: node
@@ -62,7 +81,7 @@ content:
     third_party_settings: {  }
   field_attachment:
     type: media_library_widget
-    weight: 15
+    weight: 17
     region: content
     settings:
       media_types: {  }
@@ -70,9 +89,25 @@ content:
       media_library_edit:
         show_edit: true
         edit_form_mode: default
+  field_content_manager_link:
+    type: string_textfield
+    weight: 16
+    region: content
+    settings:
+      size: 150
+      placeholder: ''
+    third_party_settings: {  }
+  field_content_manager_link_text:
+    type: string_textfield
+    weight: 17
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_external_publication:
     type: link_default
-    weight: 14
+    weight: 16
     region: content
     settings:
       placeholder_url: ''

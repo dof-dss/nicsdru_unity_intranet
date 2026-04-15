@@ -11,4 +11,8 @@ function poniintra_theme_preprocess_field(&$variables) {
       $item['content']['#url']->setOption('attributes', ['class' => $classes]);
     }
   }
+
+  if ($node = \Drupal::request()->attributes->get('node')) {
+    $variables['nid'] = $node->id();
+  }
 }

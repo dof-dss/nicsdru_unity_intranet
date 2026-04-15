@@ -1,0 +1,25 @@
+uuid: 44d6608a-7ceb-4017-892d-446ba66f398b
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.staff_index
+    - views.view.staff_search
+  module:
+    - search_api
+id: staff_summary
+name: 'Staff summary'
+facet_source_id: 'search_api:views_page__staff_search__staff_search_page'
+processor_configs:
+  hide_when_not_rendered:
+    processor_id: hide_when_not_rendered
+    weights:
+      build: '45'
+    settings: {  }
+facets:
+  team:
+    checked: true
+    label: Team
+    separator: ', '
+    show_count: false
+    weight: 0

@@ -1,0 +1,29 @@
+uuid: 992018ea-4189-4373-bcd0-f6f7cc29b6cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.team
+  module:
+    - facets
+    - system
+  theme:
+    - poniintra_theme
+id: team
+theme: poniintra_theme
+region: search_facets
+weight: 0
+provider: null
+plugin: 'facet_block:team'
+settings:
+  id: 'facet_block:team'
+  label: Team
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: team
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/staff-profiles\r\n/staff-profiles/team/*"

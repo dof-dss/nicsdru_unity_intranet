@@ -1,0 +1,24 @@
+uuid: e7768052-4072-4ec3-a0f8-9102abb28db4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.quick_links
+  module:
+    - views
+  theme:
+    - poniintra_theme
+id: views_block__quick_links_quick_links
+theme: poniintra_theme
+region: bottom_widget_1
+weight: 0
+provider: null
+plugin: 'views_block:quick_links-quick_links'
+settings:
+  id: 'views_block:quick_links-quick_links'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

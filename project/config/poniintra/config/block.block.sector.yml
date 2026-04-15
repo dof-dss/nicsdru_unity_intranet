@@ -12,7 +12,7 @@ dependencies:
 id: sector
 theme: poniintra_theme
 region: search_facets
-weight: -2
+weight: -7
 provider: null
 plugin: 'facet_block:sector'
 settings:
