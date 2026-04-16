@@ -201,9 +201,17 @@ div.event-info {
 
     .home-latest-news {
       margin-bottom: 0;
+      max-height: 35rem;
+
       @include breakpoint($tab) {
         display: flex;
         flex-direction: row-reverse;
+
+        .article-left {
+          .media-image {
+            margin: 0;
+          }
+        }
 
         .article-left,
         .article-right {
@@ -213,7 +221,7 @@ div.event-info {
 
       .article-right {
         background: $brand-primary;
-        padding: 3.2rem 3.2rem 6rem;
+        padding: 3.2rem 3.2rem 2rem;
       }
 
       a {
