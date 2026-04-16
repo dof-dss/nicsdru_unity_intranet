@@ -14,6 +14,7 @@ dependencies:
     - node.type.news
     - node.type.page
     - node.type.publication
+    - node.type.staff_member
     - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
@@ -46,6 +47,7 @@ permissions:
   - 'create page content'
   - 'create publication content'
   - 'create remote_video media'
+  - 'create staff_member content'
   - 'create url aliases'
   - 'delete own audio media'
   - 'delete own document media'
@@ -57,11 +59,13 @@ permissions:
   - 'delete own page content'
   - 'delete own publication content'
   - 'delete own remote_video media'
+  - 'delete own staff_member content'
   - 'edit any events content'
   - 'edit any link content'
   - 'edit any news content'
   - 'edit any page content'
   - 'edit any publication content'
+  - 'edit any staff_member content'
   - 'edit own audio media'
   - 'edit own document media'
   - 'edit own events content'
@@ -72,6 +76,7 @@ permissions:
   - 'edit own page content'
   - 'edit own publication content'
   - 'edit own remote_video media'
+  - 'edit own staff_member content'
   - 'revert events revisions'
   - 'revert news revisions'
   - 'revert page revisions'
@@ -91,4 +96,5 @@ permissions:
   - 'view own unpublished media'
   - 'view page revisions'
   - 'view publication revisions'
+  - 'view staff_member revisions'
   - 'view the administration theme'
