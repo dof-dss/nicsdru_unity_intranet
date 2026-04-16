@@ -66,19 +66,42 @@
  * @see template_preprocess_node()
  */
 #}
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    'clearfix',
+  ]
+%}
 
-<article class="home-latest-news">
-  <div class="article-left">
-    {{ content }}
+{% if not page %}
+<article{{ attributes.addClass(classes).setAttribute('id', 'node-' ~ node.id).removeAttribute('role') }}>
+  <header>
+{% endif %}
+    {{ title_prefix }}
+      {% if label and not page %}
+      <h2{{ title_attributes.addClass('title') }}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+    {% endif %}
+    {{ title_suffix }}
+    {% if display_submitted %}
+      <div class="node__meta">
+        <span{{ author_attributes.addClass('submitted') }}>
+          {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+        </span>
+      </div>
+    {% endif %}
+  {% if not page %}
+  </header>
+  {% endif %}
+  <div{{ content_attributes.addClass('content page-content') }}>
+    {{ content|without('field_content_manager_link') }}
   </div>
-  <div class="article-right">
-  <a href="/news">
-    <h2>{{ 'Latest News '|t }}</h2>
-  </a>
-  <a href="{{ url }}">
-    <h2>
-      {{ node.label }}
-    </h2>
-  </a>
-  </div>
+{% if not page %}
 </article>
+{% endif %}
