@@ -174,27 +174,20 @@ div.event-info {
   }
 }
 
-//.region-front-welcome {
-//  margin: 0 auto;
-//
-//  @media screen and (max-width: $tab) {
-//    margin: 0;
-//    padding: 0;
-//  }
-//
-//  @include breakpoint($tab) {
-//    background: #b3b7b3 resolve('poni-banner.png');
-//  }
-//
-//  position: relative;
-//  height: 38rem;
-//
-//  .block h2 {
-//    text-align: left;
-//    margin-bottom: 4rem;
-//    @include adjust-font-size-to(24px);
-//  }
-//}
+.region-front-welcome {
+  margin: 0 auto;
+
+  @media screen and (max-width: $tab) {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .block h2 {
+    text-align: left;
+    margin-bottom: 4rem;
+    @include adjust-font-size-to(24px);
+  }
+}
 
 #content #block-views-block-news-latest-news-home a {
   border: none;
@@ -205,15 +198,23 @@ div.event-info {
 
 #block-views-block-news-latest-news-home {
   .content {
-    @include breakpoint($tab) {
-      width: 40rem;
-    }
 
-    article {
+    .home-latest-news {
       margin-bottom: 0;
-      background: $brand-primary;
-      min-height: 38rem;
-      padding: 3.2rem 3.2rem 6rem;
+      @include breakpoint($tab) {
+        display: flex;
+        flex-direction: row-reverse;
+
+        .article-left,
+        .article-right {
+          flex: 1;
+        }
+      }
+
+      .article-right {
+        background: $brand-primary;
+        padding: 3.2rem 3.2rem 6rem;
+      }
 
       a {
         &:hover,
@@ -327,31 +328,7 @@ article.block-link {
   }
 }
 
-.region-front-welcome {
-  margin: 0 auto;
-
-  .feature-card {
-    margin-bottom: -7px;
-  }
-
-  article.block-link {
-    margin-bottom: 0;
-
-    @include breakpoint($mob) {
-      a {
-        display: flex;
-
-        .block-link__body,
-        .block-link__image {
-          flex: 1;
-        }
-      }
-    }
-  }
-}
-
-#top-area h2,
-.region-front-welcome h2 {
+#top-area h2 {
   color: $link;
   @include adjust-font-size-to(21px);
   padding: 0;
