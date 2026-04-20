@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - entityqueue.entity_queue.homepage_feature
+    - entityqueue.entity_queue.homepage_main_feature
     - entityqueue.entity_queue.homepage_menu
+    - entityqueue.entity_queue.quicklinks
     - filter.format.basic_html
     - media.type.audio
     - media.type.document
@@ -13,9 +15,11 @@ dependencies:
     - media.type.remote_video
     - node.type.events
     - node.type.feature
+    - node.type.link
     - node.type.news
     - node.type.page
     - node.type.publication
+    - node.type.staff_member
     - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
@@ -49,9 +53,11 @@ permissions:
   - 'access toolbar'
   - 'add scheduled transitions node events'
   - 'add scheduled transitions node feature'
+  - 'add scheduled transitions node link'
   - 'add scheduled transitions node news'
   - 'add scheduled transitions node page'
   - 'add scheduled transitions node publication'
+  - 'add scheduled transitions node staff_member'
   - 'administer main menu items'
   - 'administer redirects'
   - 'audit content'
@@ -61,10 +67,12 @@ permissions:
   - 'create feature content'
   - 'create file media'
   - 'create image media'
+  - 'create link content'
   - 'create news content'
   - 'create page content'
   - 'create publication content'
   - 'create remote_video media'
+  - 'create staff_member content'
   - 'create url aliases'
   - 'delete all revisions'
   - 'delete any audio media'
@@ -74,12 +82,15 @@ permissions:
   - 'delete any file'
   - 'delete any file media'
   - 'delete any image media'
+  - 'delete any link content'
   - 'delete any news content'
   - 'delete any page content'
   - 'delete any publication content'
   - 'delete any remote_video media'
+  - 'delete any staff_member content'
   - 'delete events revisions'
   - 'delete feature revisions'
+  - 'delete link revisions'
   - 'delete news revisions'
   - 'delete own audio media'
   - 'delete own document media'
@@ -87,22 +98,27 @@ permissions:
   - 'delete own feature content'
   - 'delete own file media'
   - 'delete own image media'
+  - 'delete own link content'
   - 'delete own news content'
   - 'delete own page content'
   - 'delete own publication content'
   - 'delete own remote_video media'
+  - 'delete own staff_member content'
   - 'delete page revisions'
   - 'delete publication revisions'
+  - 'delete staff_member revisions'
   - 'edit any audio media'
   - 'edit any document media'
   - 'edit any events content'
   - 'edit any feature content'
   - 'edit any file media'
   - 'edit any image media'
+  - 'edit any link content'
   - 'edit any news content'
   - 'edit any page content'
   - 'edit any publication content'
   - 'edit any remote_video media'
+  - 'edit any staff_member content'
   - 'edit basic meta tags'
   - 'edit own audio media'
   - 'edit own document media'
@@ -110,24 +126,32 @@ permissions:
   - 'edit own feature content'
   - 'edit own file media'
   - 'edit own image media'
+  - 'edit own link content'
   - 'edit own news content'
   - 'edit own page content'
   - 'edit own publication content'
   - 'edit own remote_video media'
+  - 'edit own staff_member content'
   - 'manipulate entityqueues'
   - 'reschedule scheduled transitions node events'
   - 'reschedule scheduled transitions node feature'
+  - 'reschedule scheduled transitions node link'
   - 'reschedule scheduled transitions node news'
   - 'reschedule scheduled transitions node page'
   - 'reschedule scheduled transitions node publication'
+  - 'reschedule scheduled transitions node staff_member'
   - 'revert all revisions'
   - 'revert events revisions'
   - 'revert feature revisions'
+  - 'revert link revisions'
   - 'revert news revisions'
   - 'revert page revisions'
   - 'revert publication revisions'
+  - 'revert staff_member revisions'
   - 'update homepage_feature entityqueue'
+  - 'update homepage_main_feature entityqueue'
   - 'update homepage_menu entityqueue'
+  - 'update quicklinks entityqueue'
   - 'use moderation sidebar'
   - 'use nics_editorial_workflow transition archive'
   - 'use nics_editorial_workflow transition create_new_draft'
@@ -145,13 +169,17 @@ permissions:
   - 'view events revisions'
   - 'view feature revisions'
   - 'view latest version'
+  - 'view link revisions'
   - 'view news revisions'
   - 'view own unpublished media'
   - 'view page revisions'
   - 'view publication revisions'
   - 'view scheduled transitions node events'
   - 'view scheduled transitions node feature'
+  - 'view scheduled transitions node link'
   - 'view scheduled transitions node news'
   - 'view scheduled transitions node page'
   - 'view scheduled transitions node publication'
+  - 'view scheduled transitions node staff_member'
+  - 'view staff_member revisions'
   - 'view the administration theme'

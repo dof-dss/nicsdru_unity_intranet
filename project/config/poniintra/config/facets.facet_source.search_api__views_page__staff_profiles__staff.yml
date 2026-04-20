@@ -1,0 +1,12 @@
+uuid: 5fcc1e5b-ce95-4526-9f7d-12828801fb8a
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__staff_profiles__staff
+name: 'search_api:views_page__staff_profiles__staff'
+filter_key: ''
+url_processor: facets_pretty_paths
+breadcrumb:
+  active: true
+  before: false
+  group: false
