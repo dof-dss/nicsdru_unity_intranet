@@ -67,7 +67,11 @@
  */
 #}
 
-<article>
+<article class="home-latest-news">
+  <div class="article-left">
+    {{ content }}
+  </div>
+  <div class="article-right">
   <a href="/news">
     <h2>{{ 'Latest News '|t }}</h2>
   </a>
@@ -76,4 +80,5 @@
       {{ node.label }}
     </h2>
   </a>
+  </div>
 </article>

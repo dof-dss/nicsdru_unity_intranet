@@ -1,0 +1,22 @@
+uuid: 81d0a509-1e9d-47cc-83b6-4f65fb9cd8c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: staff_member_pattern
+label: 'Staff member pattern'
+type: 'canonical_entities:node'
+pattern: 'staff-member/[node:title]'
+selection_criteria:
+  11897d91-f257-4f88-a8e5-1c614323454e:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 11897d91-f257-4f88-a8e5-1c614323454e
+    context_mapping:
+      node: node
+    bundles:
+      staff_member: staff_member
+selection_logic: and
+weight: -5
+relationships: {  }

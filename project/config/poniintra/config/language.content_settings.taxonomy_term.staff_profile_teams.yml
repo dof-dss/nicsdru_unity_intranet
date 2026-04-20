@@ -1,0 +1,11 @@
+uuid: 21dff78d-13a8-4edb-a83f-0136f178d8b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.staff_profile_teams
+id: taxonomy_term.staff_profile_teams
+target_entity_type_id: taxonomy_term
+target_bundle: staff_profile_teams
+default_langcode: site_default
+language_alterable: false
