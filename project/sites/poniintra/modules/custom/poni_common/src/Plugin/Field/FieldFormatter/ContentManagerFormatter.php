@@ -23,14 +23,17 @@ class ContentManagerFormatter extends FormatterBase {
     $element = [];
 
     foreach ($items as $delta => $item) {
+      if (empty($item->url)) { continue; }
       $url = $item->url;
       $url_text = $item->title;
 
       $element[$delta] = [
         '#type' => 'link',
         '#title' => $url_text,
-        'url' => $url,
-        'link_text' => $url_text,
+        '#url' => [
+          'url' => $url,
+          'link_text' => $url_text,
+          ]
       ];
     }
 
