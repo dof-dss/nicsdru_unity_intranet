@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - entityqueue.entity_queue.homepage_feature
-    - entityqueue.entity_queue.homepage_main_feature
     - entityqueue.entity_queue.homepage_menu
     - entityqueue.entity_queue.quicklinks
     - filter.format.basic_html
@@ -149,7 +148,6 @@ permissions:
   - 'revert publication revisions'
   - 'revert staff_member revisions'
   - 'update homepage_feature entityqueue'
-  - 'update homepage_main_feature entityqueue'
   - 'update homepage_menu entityqueue'
   - 'update quicklinks entityqueue'
   - 'use moderation sidebar'
