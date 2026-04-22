@@ -1,0 +1,26 @@
+uuid: 8401c69f-7ac2-4b6e-bba7-14b7d09d45ca
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+id: homepage_main_feature
+label: 'Homepage main feature'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      feature: feature
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 1
+  act_as_queue: true
+  reverse: false

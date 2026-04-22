@@ -12,7 +12,6 @@ dependencies:
     - node.type.news
   module:
     - datetime
-    - image
     - user
 id: node.news.teaser
 targetEntityType: node
@@ -20,13 +19,11 @@ bundle: news
 mode: teaser
 content:
   field_photo:
-    type: image
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
+      view_mode: unity_3_col_images
+      link: false
     third_party_settings: {  }
     weight: 0
     region: content

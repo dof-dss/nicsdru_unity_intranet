@@ -5,9 +5,11 @@ dependencies:
   config:
     - node.type.events
     - node.type.feature
+    - node.type.link
     - node.type.news
     - node.type.page
     - node.type.publication
+    - node.type.staff_member
   module:
     - content_moderation
 _core:
@@ -96,7 +98,9 @@ type_settings:
     node:
       - events
       - feature
+      - link
       - news
       - page
       - publication
+      - staff_member
   default_moderation_state: draft

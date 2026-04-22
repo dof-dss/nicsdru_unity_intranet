@@ -1,0 +1,11 @@
+uuid: 378fff74-6839-42f7-a684-b20a723ed8b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.staff_directory_profile
+id: staff_directory_profile
+label: 'Staff directory profile'
+image_style_mappings: {  }
+breakpoint_group: responsive_image
+fallback_image_style: staff_directory_profile

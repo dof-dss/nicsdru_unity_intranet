@@ -1,0 +1,11 @@
+uuid: 64b01be5-a369-494e-9c70-1c447342243e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.staff_directory_profile
+label: 'Staff directory profile'
+description: ''
+targetEntityType: media
+cache: true

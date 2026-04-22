@@ -1,4 +1,4 @@
-uuid: 41f647d0-b692-49f1-86e3-942805d8fc8c
+uuid: cecf71f2-0fb4-403d-814f-71ea39542496
 langcode: en
 status: false
 dependencies:
@@ -371,7 +371,7 @@ display:
           admin_label: author
           plugin_id: standard
           required: false
-      use_ajax: true
+      use_ajax: false
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -461,7 +461,10 @@ display:
       query:
         type: views_query
         options: {  }
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
       path: glossary
       menu:
         type: normal

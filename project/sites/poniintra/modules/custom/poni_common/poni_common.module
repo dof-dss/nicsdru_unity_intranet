@@ -37,9 +37,11 @@ function poni_common_validate_attachment(&$form, FormStateInterface $form_state)
   $values = $form_state->getValues();
 
   // Validate file attachments and external links.
-  if (empty($values['field_attachment']["selection"][0]) && empty($values['field_external_publication'][0]['uri'])) {
-    $form_state->setErrorByName('field_attachment', t('You must provide an attachment or external link'));
-    $form_state->setErrorByName('field_external_publication', t('You must provide an attachment or external link'));
+  if (empty($values['field_attachment']["selection"][0]) && empty($values['field_external_publication'][0]['uri']) && $values['field_content_manager_link'][0]['url'] === '') {
+    $message = t('You must provide an attachment or external link or a content manager link');
+    $form_state->setErrorByName('field_content_manager_link', $message);
+    $form_state->setErrorByName('field_attachment', $message);
+    $form_state->setErrorByName('field_external_publication', $message);
   }
 }
 

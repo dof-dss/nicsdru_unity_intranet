@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.publication.body
     - field.field.node.publication.field_attachment
+    - field.field.node.publication.field_content_manager_link
     - field.field.node.publication.field_external_publication
     - field.field.node.publication.field_meta_tags
     - field.field.node.publication.field_publication_type
@@ -20,11 +21,13 @@ dependencies:
     - media_library_edit
     - metatag
     - path
+    - poni_common
     - text
 third_party_settings:
   field_group:
     group_publications:
       children:
+        - field_content_manager_link
         - field_external_publication
         - field_attachment
       label: Publications
@@ -37,7 +40,7 @@ third_party_settings:
         show_empty_fields: false
         id: ''
         label_as_html: false
-        description: 'You must provide an attachment or external link'
+        description: 'You must provide a content manager link, attachment or external link'
         required_fields: true
 id: node.publication.default
 targetEntityType: node
@@ -62,7 +65,7 @@ content:
     third_party_settings: {  }
   field_attachment:
     type: media_library_widget
-    weight: 15
+    weight: 28
     region: content
     settings:
       media_types: {  }
@@ -70,9 +73,15 @@ content:
       media_library_edit:
         show_edit: true
         edit_form_mode: default
+  field_content_manager_link:
+    type: content_manager_widget
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_external_publication:
     type: link_default
-    weight: 14
+    weight: 27
     region: content
     settings:
       placeholder_url: ''

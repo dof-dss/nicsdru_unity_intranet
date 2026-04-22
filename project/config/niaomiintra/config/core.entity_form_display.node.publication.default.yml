@@ -14,8 +14,8 @@ dependencies:
   module:
     - content_moderation
     - datetime
-    - entity_browser
     - media_library
+    - media_library_edit
     - metatag
     - path
     - text
@@ -49,7 +49,7 @@ content:
     third_party_settings: {  }
   field_meta_tags:
     type: metatag_firehose
-    weight: 13
+    weight: 12
     region: content
     settings:
       sidebar: true
@@ -62,19 +62,15 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_publication_image:
-    type: entity_browser_file
-    weight: 10
+    type: media_library_widget
+    weight: 13
     region: content
     settings:
-      entity_browser: null
-      field_widget_edit: true
-      field_widget_remove: true
-      field_widget_replace: false
-      open: false
-      selection_mode: selection_append
-      view_mode: default
-      preview_image_style: thumbnail
-    third_party_settings: {  }
+      media_types: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: true
+        edit_form_mode: default
   field_publication_type:
     type: options_select
     weight: 5
@@ -109,7 +105,7 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 11
+    weight: 10
     region: content
     settings:
       display_label: true
@@ -140,7 +136,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 12
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }

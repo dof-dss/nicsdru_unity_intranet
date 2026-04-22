@@ -179,15 +179,8 @@ div.event-info {
 
   @media screen and (max-width: $tab) {
     margin: 0;
-    padding: 0;
+    padding: 1rem;
   }
-
-  @include breakpoint($tab) {
-    background: #b3b7b3 resolve('poni-banner.png');
-  }
-
-  position: relative;
-  height: 38rem;
 
   .block h2 {
     text-align: left;
@@ -205,15 +198,31 @@ div.event-info {
 
 #block-views-block-news-latest-news-home {
   .content {
-    @include breakpoint($tab) {
-      width: 40rem;
-    }
 
-    article {
+    .home-latest-news {
       margin-bottom: 0;
-      background: $brand-primary;
-      min-height: 38rem;
-      padding: 3.2rem 3.2rem 6rem;
+      max-height: 35rem;
+
+      @include breakpoint($tab) {
+        display: flex;
+        flex-direction: row-reverse;
+
+        .article-left {
+          .media-image {
+            margin: 0;
+          }
+        }
+
+        .article-left,
+        .article-right {
+          flex: 1;
+        }
+      }
+
+      .article-right {
+        background: $brand-primary;
+        padding: 3.2rem 3.2rem 2rem;
+      }
 
       a {
         &:hover,
@@ -278,10 +287,15 @@ article.block-link {
 }
 
 #content #top-area .column article.block-link a,
+#content .region-front-welcome #block-views-block-homepage-feature-homepage-main-feature article.block-link a,
 #content #top-area .column #block-views-block-poni-menu-poni-menu .content li a {
   border: none;
   margin: 0;
   padding: 0;
+}
+
+#content #top-area .column article.block-link a,
+#content #top-area .column #block-views-block-poni-menu-poni-menu .content li a {
   display: block;
 }
 
@@ -302,7 +316,8 @@ article.block-link {
   }
 }
 
-#content #top-area .column article.block-link a {
+#content #top-area .column article.block-link a,
+#content .region-front-welcome #block-views-block-homepage-feature-homepage-main-feature article.block-link a{
   &:hover,
   &:focus {
     background: #e4f0fa;
@@ -321,16 +336,15 @@ article.block-link {
   }
 }
 
+#top-area h2 {
+  color: $link;
+  @include adjust-font-size-to(21px);
+  padding: 0;
+}
 
 #top-area {
   text-align: left;
   margin-top: 0;
-
-  h2 {
-    color: $link;
-    @include adjust-font-size-to(21px);
-    padding: 0;
-  }
 
   .column {
     width: 100%;
@@ -460,6 +474,42 @@ article.block-link {
           line-height: 1.8rem;
         }
       }
+    }
+  }
+}
+
+.staff-profiles {
+  padding: 3.4rem 0 0;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  display: flex;
+  align-items: flex-start;
+
+
+  .staff-profile-image {
+    flex-shrink: 0;
+    width: 150px;
+    margin-right: 2rem;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .staff-profile-info {
+    flex: 1;
+
+    h3 {
+      margin-top: .5rem;
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
   }
 }
