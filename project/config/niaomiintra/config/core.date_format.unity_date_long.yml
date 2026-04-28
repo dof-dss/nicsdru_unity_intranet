@@ -1,0 +1,8 @@
+uuid: 1643d83b-e722-4017-806e-d400f181d218
+langcode: en
+status: true
+dependencies: {  }
+id: unity_date_long
+label: 'Unity date long'
+locked: false
+pattern: 'd F Y - H:i a'
