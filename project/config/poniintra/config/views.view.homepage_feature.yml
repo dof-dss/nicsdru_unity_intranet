@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - entityqueue.entity_queue.homepage_feature
-    - entityqueue.entity_queue.homepage_main_feature
     - node.type.feature
   module:
     - entityqueue
@@ -111,7 +110,7 @@ display:
       cache:
         type: custom_tag
         options:
-          custom_tag: "node:list:feature\r\nentity_subqueue:homepage_3_features"
+          custom_tag: "node:list:feature\r\nentity_subqueue:homepage_feature"
       empty: {  }
       sorts:
         entityqueue_relationship:
@@ -234,7 +233,7 @@ display:
         - 'config:entityqueue.entity_queue.homepage_feature'
   homepage_feature:
     id: homepage_feature
-    display_title: 'Homepage 3 features'
+    display_title: 'Homepage feature'
     display_plugin: block
     position: 1
     display_options:
