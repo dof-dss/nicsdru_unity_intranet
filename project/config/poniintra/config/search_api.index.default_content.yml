@@ -8,7 +8,6 @@ dependencies:
     - field.storage.node.field_event_teaser
     - field.storage.node.field_organisation_name
     - field.storage.node.field_published_date
-    - field.storage.node.field_teaser
     - search_api.server.solr_default
   module:
     - node
@@ -115,14 +114,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_published_date
-  field_teaser:
-    label: Teaser
-    datasource_id: 'entity:node'
-    property_path: field_teaser
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.field_teaser
   name:
     label: 'Authored by » User » Name'
     datasource_id: 'entity:node'
@@ -212,7 +203,6 @@ processor_settings:
       - field_event_location
       - field_event_teaser
       - field_organisation_name
-      - field_teaser
       - title
     title: false
     alt: true
