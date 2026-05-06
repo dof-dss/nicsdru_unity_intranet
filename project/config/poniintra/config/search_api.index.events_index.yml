@@ -8,8 +8,6 @@ dependencies:
     - field.storage.node.field_event_location
     - field.storage.node.field_event_type
     - field.storage.node.field_organisation_name
-    - field.storage.node.field_organisation_sector
-    - field.storage.node.field_target_audience
     - search_api.server.solr_default
   module:
     - node
@@ -67,16 +65,6 @@ name: 'Events index'
 description: ''
 read_only: false
 field_settings:
-  audience_name:
-    label: 'Target audience » Taxonomy term » Name'
-    datasource_id: 'entity:node'
-    property_path: 'field_target_audience:entity:name'
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_target_audience
-      module:
-        - taxonomy
   body:
     label: 'Event description'
     datasource_id: 'entity:node'
@@ -129,22 +117,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_organisation_name
-  field_organisation_sector:
-    label: 'Organisation sector'
-    datasource_id: 'entity:node'
-    property_path: field_organisation_sector
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_organisation_sector
-  field_target_audience:
-    label: 'Target audience'
-    datasource_id: 'entity:node'
-    property_path: field_target_audience
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_target_audience
   langcode:
     label: Language
     datasource_id: 'entity:node'
@@ -153,16 +125,6 @@ field_settings:
     dependencies:
       module:
         - node
-  organisation_name:
-    label: 'Organisation sector » Taxonomy term » Name'
-    datasource_id: 'entity:node'
-    property_path: 'field_organisation_sector:entity:name'
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_organisation_sector
-      module:
-        - taxonomy
   spelling:
     label: Spelling
     property_path: aggregated_field
@@ -223,7 +185,6 @@ processor_settings:
       preprocess_query: -15
     all_fields: false
     fields:
-      - audience_name
       - body
       - field_event_location
       - field_organisation_name
