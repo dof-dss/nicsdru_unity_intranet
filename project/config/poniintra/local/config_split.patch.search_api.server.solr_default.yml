@@ -12,6 +12,8 @@ adding:
       context: solr
       username: solr
       password: SolrRocks
+    index_empty_text_fields: false
+    suppress_missing_languages: false
 removing:
   backend_config:
     connector_config:
