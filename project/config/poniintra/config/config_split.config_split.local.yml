@@ -12,6 +12,8 @@ storage: folder
 folder: ../project/config/poniintra/local
 module:
   clone_nodes: 0
+  dblog: 0
+  devel: 0
   easy_install: 0
   migrate: 0
   migrate_drupal: 0
@@ -19,8 +21,8 @@ module:
   migrate_tools: 0
   migrate_upgrade: 0
   views_ui: 0
-  devel: 0
   stage_file_proxy: 0
 theme: {  }
 complete_list: {  }
-partial_list: {  }
+partial_list:
+  - search_api.server.solr_default
