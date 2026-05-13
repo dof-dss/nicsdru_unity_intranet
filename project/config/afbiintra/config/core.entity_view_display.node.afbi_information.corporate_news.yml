@@ -15,10 +15,11 @@ bundle: afbi_information
 mode: corporate_news
 content:
   field_photo:
-    type: entity_reference_label
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
+      view_mode: article_full
+      link: false
     third_party_settings: {  }
     weight: 0
     region: content

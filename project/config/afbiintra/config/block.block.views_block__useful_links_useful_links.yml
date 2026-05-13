@@ -11,7 +11,7 @@ dependencies:
     - afbi_theme
 id: views_block__useful_links_useful_links
 theme: afbi_theme
-region: top_second
+region: top_third
 weight: -10
 provider: null
 plugin: 'views_block:useful_links-useful_links'

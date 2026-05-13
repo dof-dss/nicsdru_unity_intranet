@@ -14,8 +14,6 @@ dependencies:
     - media.type.remote_video
     - node.type.afbi_information
     - node.type.feature
-    - node.type.feed
-    - node.type.feed_item
     - node.type.gallery
     - node.type.link
     - node.type.news
@@ -71,8 +69,6 @@ permissions:
   - 'create audio media'
   - 'create document media'
   - 'create feature content'
-  - 'create feed content'
-  - 'create feed_item content'
   - 'create file media'
   - 'create gallery content'
   - 'create image media'
@@ -88,8 +84,6 @@ permissions:
   - 'delete any audio media'
   - 'delete any document media'
   - 'delete any feature content'
-  - 'delete any feed content'
-  - 'delete any feed_item content'
   - 'delete any file'
   - 'delete any file media'
   - 'delete any gallery content'
@@ -100,8 +94,6 @@ permissions:
   - 'delete any publication content'
   - 'delete any remote_video media'
   - 'delete feature revisions'
-  - 'delete feed revisions'
-  - 'delete feed_item revisions'
   - 'delete gallery revisions'
   - 'delete link revisions'
   - 'delete news revisions'
@@ -109,8 +101,6 @@ permissions:
   - 'delete own audio media'
   - 'delete own document media'
   - 'delete own feature content'
-  - 'delete own feed content'
-  - 'delete own feed_item content'
   - 'delete own file media'
   - 'delete own gallery content'
   - 'delete own image media'
@@ -125,8 +115,6 @@ permissions:
   - 'edit any audio media'
   - 'edit any document media'
   - 'edit any feature content'
-  - 'edit any feed content'
-  - 'edit any feed_item content'
   - 'edit any file media'
   - 'edit any gallery content'
   - 'edit any image media'
@@ -140,8 +128,6 @@ permissions:
   - 'edit own audio media'
   - 'edit own document media'
   - 'edit own feature content'
-  - 'edit own feed content'
-  - 'edit own feed_item content'
   - 'edit own file media'
   - 'edit own gallery content'
   - 'edit own image media'
@@ -163,8 +149,6 @@ permissions:
   - 'revert afbi_information revisions'
   - 'revert all revisions'
   - 'revert feature revisions'
-  - 'revert feed revisions'
-  - 'revert feed_item revisions'
   - 'revert gallery revisions'
   - 'revert link revisions'
   - 'revert news revisions'
@@ -189,8 +173,6 @@ permissions:
   - 'view any unpublished content'
   - 'view content references'
   - 'view feature revisions'
-  - 'view feed revisions'
-  - 'view feed_item revisions'
   - 'view gallery revisions'
   - 'view latest version'
   - 'view link revisions'
