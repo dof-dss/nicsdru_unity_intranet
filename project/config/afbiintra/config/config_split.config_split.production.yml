@@ -13,5 +13,6 @@ folder: ../project/config/afbiintra/production
 module:
   fastly: 0
 theme: {  }
-complete_list: {  }
+complete_list:
+  - fastly.settings
 partial_list: {  }

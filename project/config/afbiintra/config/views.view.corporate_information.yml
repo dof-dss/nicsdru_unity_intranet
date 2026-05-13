@@ -240,7 +240,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<a href="/news">More corporate info ...</a>'
+            value: '<a href="/news/type/corporate-3/type/board-minutes-7/type/ceo-memo-4/type/emt-report-8/type/media-monitoring-6/type/staff-bulletin-5">More corporate info ...</a>'
             format: basic_html
           tokenize: false
       display_extenders: {  }

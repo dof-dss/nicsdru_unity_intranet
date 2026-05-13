@@ -16,7 +16,7 @@ plugin: site_search_block
 settings:
   id: site_search_block
   label: 'Site search block'
-  label_display: visible
+  label_display: '0'
   provider: unity_search_pages
 visibility:
   request_path:
