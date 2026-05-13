@@ -1,14 +1,16 @@
-uuid: 85e9edf4-1107-4aee-99af-e62176edcc60
+uuid: 72cf3f8e-ff3e-4d7b-ab1b-6bb0329e2f11
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
-    - field.field.media.file.field_media_file
+    - field.field.media.file.field_media_file_1
     - image.style.medium
     - media.type.file
   module:
     - image
+_core:
+  default_config_hash: exwCNOG8kj764gda6-RlWSRfVsXEndjkOC_YGAcf-Go
 id: media.file.media_library
 targetEntityType: media
 bundle: file
@@ -27,7 +29,8 @@ content:
     region: content
 hidden:
   created: true
-  field_media_file: true
+  field_media_file_1: true
   langcode: true
   name: true
+  search_api_excerpt: true
   uid: true
