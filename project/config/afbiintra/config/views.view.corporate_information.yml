@@ -62,14 +62,14 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: '0'
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -192,12 +192,17 @@ display:
         options:
           grouping: {  }
           row_class: ''
-          default_row_class: true
+          default_row_class: false
           type: ul
           wrapper_class: item-list
           class: ''
       row:
         type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
       query:
         type: views_query
         options:
@@ -235,7 +240,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<a href="/news" class="btn">More News</a>'
+            value: '<a href="/news">More corporate info ...</a>'
             format: basic_html
           tokenize: false
       display_extenders: {  }

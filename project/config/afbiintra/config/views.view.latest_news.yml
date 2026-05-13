@@ -314,7 +314,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h3
+          element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -408,18 +408,20 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 4
+          items_per_page: 3
       style:
-        type: default
+        type: html_list
         options:
           grouping: {  }
           row_class: ''
           default_row_class: false
-          uses_fields: false
+          type: ul
+          wrapper_class: item-list
+          class: ''
       row:
         type: fields
         options:
-          default_field_elements: true
+          default_field_elements: false
           inline: {  }
           separator: ''
           hide_empty: false
@@ -454,7 +456,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<a href="/news" class="btn">More News</a>'
+            value: '<a href="/news">More News ...</a>'
             format: basic_html
           tokenize: false
       display_extenders:
@@ -476,7 +478,13 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 4
       defaults:
+        pager: false
         use_more: false
         use_more_always: false
         use_more_text: false

@@ -29,17 +29,16 @@
  * @ingroup themeable
  */
 #}
-{% set attributes = attributes.removeClass('views-element-container').addClass(classes) %}
-{% set attributes = attributes.removeAttribute('id') %}
-<nav{{ attributes }}>
-
+<div class="item-list">
+<ul>
   {{ title_prefix }}
   {% if label %}
     <h2>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
-  {{ drupal_field('field_photo', 'node', 5, 'article_full') }}
+  {{ drupal_field('field_photo', 'node', 5, 'corporate_news') }}
   {% block content %}
     {{ content }}
   {% endblock %}
-</nav>
+</ul>
+</div>

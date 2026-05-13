@@ -1,18 +1,22 @@
-uuid: 168433bb-cda5-4510-bc05-f2e4bf75457e
+uuid: c1ea6aba-0876-45d8-898e-dd26b78f4ade
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:feed_block:05fe8b1d-db57-469a-8106-3d94855015c1'
+  module:
+    - block_content
   theme:
     - afbi_theme
 id: bbcnewsfeed
 theme: afbi_theme
 region: bottom_widget_1
-weight: -10
+weight: 0
 provider: null
-plugin: 'block_content:aef7656f-300c-431e-89da-973e99c75292'
+plugin: 'block_content:05fe8b1d-db57-469a-8106-3d94855015c1'
 settings:
-  id: 'block_content:aef7656f-300c-431e-89da-973e99c75292'
-  label: 'BBC News NI'
+  id: 'block_content:05fe8b1d-db57-469a-8106-3d94855015c1'
+  label: 'BBC news'
   label_display: visible
   provider: block_content
   status: true
