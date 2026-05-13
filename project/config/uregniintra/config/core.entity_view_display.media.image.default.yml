@@ -1,4 +1,4 @@
-uuid: 3ecd9000-4389-4dbe-9d20-94e3128e554a
+uuid: 624d3064-f7e7-4705-ae39-fe780b1796ca
 langcode: en
 status: true
 dependencies:
@@ -9,6 +9,8 @@ dependencies:
     - media.type.image
   module:
     - image
+_core:
+  default_config_hash: jbx_I5BcwaxoN3B_Q5uDUKFYPf-cNfy1XrsduhHyYhQ
 id: media.image.default
 targetEntityType: media
 bundle: image
@@ -30,5 +32,6 @@ hidden:
   field_caption: true
   langcode: true
   name: true
+  search_api_excerpt: true
   thumbnail: true
   uid: true

@@ -19,5 +19,10 @@ matchers:
       group_by_bundle: false
       substitution_type: canonical
       limit: 100
-      include_unpublished: false
+      include_unpublished: true
+    weight: 0
+  048570a2-ce1a-49fe-88e4-824abf8a9ac9:
+    id: email
+    uuid: 048570a2-ce1a-49fe-88e4-824abf8a9ac9
+    settings: {  }
     weight: 0
