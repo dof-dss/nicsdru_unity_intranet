@@ -1,22 +1,19 @@
-uuid: 60e89c38-0022-4b22-8f64-1af31dceeabe
+uuid: 9e9a93a0-bcbc-4c17-bfb9-4886ef90e703
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.diff
-    - field.field.node.page.body
-    - field.field.node.page.field_meta_tags
-    - node.type.page
+    - field.field.node.gallery.body
+    - field.field.node.gallery.field_gallery_images
+    - field.field.node.gallery.field_meta_tags
+    - node.type.gallery
   module:
     - field_group
-    - layout_builder
     - metatag
     - text
     - user
 third_party_settings:
-  layout_builder:
-    enabled: false
-    allow_custom: false
   field_group:
     group_additional_content_details:
       children:
@@ -24,7 +21,7 @@ third_party_settings:
       label: 'Additional content details'
       parent_name: ''
       region: content
-      weight: 1
+      weight: 2
       format_type: html_element
       format_settings:
         classes: field-collection
@@ -38,9 +35,9 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-id: node.page.diff
+id: node.gallery.diff
 targetEntityType: node
-bundle: page
+bundle: gallery
 mode: diff
 content:
   body:
@@ -50,12 +47,20 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_gallery_images:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
   field_meta_tags:
     type: metatag_empty_formatter
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
 hidden:
   content_moderation_control: true

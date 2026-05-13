@@ -13,7 +13,7 @@ entity_type: node
 bundle: link
 label: 'Link URL'
 description: 'Enter the URL for this link. Start the link with a / to link to content on this site, or use http:// or https:// to link to other sites / applications'
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
