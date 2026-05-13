@@ -1,4 +1,4 @@
-uuid: c843d1c8-a4d9-49c9-8a3b-644c2b9b45e6
+uuid: 69ee3746-3b07-4b8d-a565-2dc0db8a27f2
 langcode: en
 status: true
 dependencies:
@@ -10,6 +10,8 @@ dependencies:
     - media.type.image
   module:
     - image
+_core:
+  default_config_hash: waULC-ZSNIYIBpkrthVIb9AhYbIZ8vpo5J17YSRIi5Y
 id: media.image.media_library
 targetEntityType: media
 bundle: image
@@ -32,4 +34,5 @@ hidden:
   field_media_image: true
   langcode: true
   name: true
+  search_api_excerpt: true
   uid: true

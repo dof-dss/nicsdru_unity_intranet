@@ -1,0 +1,11 @@
+uuid: 1f9574f4-61a5-4cb0-aea7-b7bf18e808d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.featured_image
+label: 'Featured image'
+description: ''
+targetEntityType: node
+cache: true

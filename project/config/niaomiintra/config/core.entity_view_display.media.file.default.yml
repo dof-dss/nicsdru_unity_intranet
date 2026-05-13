@@ -1,18 +1,20 @@
-uuid: 08cfe3ca-b587-4b45-b74d-7d843f6e8cf2
+uuid: 66d48b94-3d68-4925-abcd-b147205842c4
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.file.field_media_file
+    - field.field.media.file.field_media_file_1
     - media.type.file
   module:
     - file
+_core:
+  default_config_hash: yMl4rXw5kgn_LGYWyx7Yhj7aKmGmYmcXV7lifLhoy3g
 id: media.file.default
 targetEntityType: media
 bundle: file
 mode: default
 content:
-  field_media_file:
+  field_media_file_1:
     type: file_default
     label: visually_hidden
     settings:
@@ -24,5 +26,6 @@ hidden:
   created: true
   langcode: true
   name: true
+  search_api_excerpt: true
   thumbnail: true
   uid: true

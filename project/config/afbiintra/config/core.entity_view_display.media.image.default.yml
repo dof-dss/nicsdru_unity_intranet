@@ -1,4 +1,4 @@
-uuid: af1168bd-8886-4d62-92b3-78a60a21451e
+uuid: 624d3064-f7e7-4705-ae39-fe780b1796ca
 langcode: en
 status: true
 dependencies:
@@ -16,14 +16,6 @@ targetEntityType: media
 bundle: image
 mode: default
 content:
-  field_caption:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 1
-    region: content
   field_media_image:
     type: image
     label: visually_hidden
@@ -37,6 +29,7 @@ content:
     region: content
 hidden:
   created: true
+  field_caption: true
   langcode: true
   name: true
   search_api_excerpt: true

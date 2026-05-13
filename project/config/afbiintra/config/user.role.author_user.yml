@@ -11,8 +11,6 @@ dependencies:
     - media.type.remote_video
     - node.type.afbi_information
     - node.type.feature
-    - node.type.feed
-    - node.type.feed_item
     - node.type.gallery
     - node.type.link
     - node.type.news
@@ -45,8 +43,6 @@ permissions:
   - 'create audio media'
   - 'create document media'
   - 'create feature content'
-  - 'create feed content'
-  - 'create feed_item content'
   - 'create file media'
   - 'create gallery content'
   - 'create image media'
@@ -58,8 +54,6 @@ permissions:
   - 'create url aliases'
   - 'delete afbi_information revisions'
   - 'delete feature revisions'
-  - 'delete feed revisions'
-  - 'delete feed_item revisions'
   - 'delete gallery revisions'
   - 'delete link revisions'
   - 'delete news revisions'
@@ -67,8 +61,6 @@ permissions:
   - 'delete own audio media'
   - 'delete own document media'
   - 'delete own feature content'
-  - 'delete own feed content'
-  - 'delete own feed_item content'
   - 'delete own file media'
   - 'delete own gallery content'
   - 'delete own image media'
@@ -81,8 +73,6 @@ permissions:
   - 'delete publication revisions'
   - 'edit any afbi_information content'
   - 'edit any feature content'
-  - 'edit any feed content'
-  - 'edit any feed_item content'
   - 'edit any gallery content'
   - 'edit any link content'
   - 'edit any news content'
@@ -92,8 +82,6 @@ permissions:
   - 'edit own audio media'
   - 'edit own document media'
   - 'edit own feature content'
-  - 'edit own feed content'
-  - 'edit own feed_item content'
   - 'edit own file media'
   - 'edit own gallery content'
   - 'edit own image media'
@@ -104,8 +92,6 @@ permissions:
   - 'edit own remote_video media'
   - 'revert afbi_information revisions'
   - 'revert feature revisions'
-  - 'revert feed revisions'
-  - 'revert feed_item revisions'
   - 'revert gallery revisions'
   - 'revert link revisions'
   - 'revert news revisions'
@@ -121,8 +107,6 @@ permissions:
   - 'view afbi_information revisions'
   - 'view any unpublished content'
   - 'view feature revisions'
-  - 'view feed revisions'
-  - 'view feed_item revisions'
   - 'view gallery revisions'
   - 'view latest version'
   - 'view link revisions'
