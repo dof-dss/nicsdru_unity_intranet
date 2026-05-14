@@ -91,7 +91,7 @@
         "drupal/core-composer-scaffold": "^10.5",
         "drupal/core-project-message": "^10.5",
         "drupal/core-recommended": "^10.5",
-        "drupal/csp": "^1.20",
+        "drupal/csp": "^2.2",
         "drupal/ctools": "^4.1",
         "drupal/date_facet_drilldown": "^12.0@dev",
         "drupal/draggableviews": "^2.1",
@@ -105,10 +105,10 @@
         "drupal/facets_pretty_paths": "^2.0",
         "drupal/fastly": "^4.0",
         "drupal/feed_block": "^3.0",
-        "drupal/field_group": "^3.4",
+        "drupal/field_group": "^4.0",
         "drupal/file_delete_ui": "^1.0@beta",
         "drupal/filelog": "^3.0.x-dev@dev",
-        "drupal/flag": "^4.0@beta",
+        "drupal/flag": "^5.0",
         "drupal/flood_control": "^2.3",
         "drupal/geocoder": "^4.9",
         "drupal/geolocation": "^3.12",
@@ -252,9 +252,6 @@
             },
             "drupal/media_browser_responsive_images": {
                 "Form alter applies for any media browser, not just image related ones": "https://www.drupal.org/files/issues/2019-12-17/media-browser-hook-checks-for-image-types.patch"
-            },
-            "drupal/redirect": {
-                "Add URL Redirects tab to taxonomy term edit form": "https://www.drupal.org/files/issues/2025-09-17/3205896-5.patch"
             },
             "drupal/search_api": {
                 "Declaration of Drupal\\search_api_solr\\Plugin\\search_api\\backend\\SearchApiSolrBackend::__sleep() must be compatible": "https://www.drupal.org/files/issues/2024-06-18/type_declaration.patch"
