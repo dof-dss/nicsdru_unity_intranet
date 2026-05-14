@@ -15,9 +15,17 @@
   margin-right: 10px;
 }
 
-#header {
+#inner_header_wrapper {
   background: $brand-primary;
-  margin-bottom: 0;
+  //margin-bottom: 0;
+}
+
+.region-primary-menu .menu_wrapper {
+  background: $menu-background;
+}
+
+#header {
+  margin: 0 auto;
 }
 
 #top-area,

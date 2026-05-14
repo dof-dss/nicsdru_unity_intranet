@@ -1,0 +1,14 @@
+uuid: cf5b51ff-8bcf-46cb-913b-a7c45e3a965c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.landing_page_supervisor
+  module:
+    - user
+id: user_remove_role_action.landing_page_supervisor
+label: 'Remove the Landing page supervisor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: landing_page_supervisor
