@@ -1,0 +1,53 @@
+uuid: 80b123a8-d475-4e82-ac44-777288b31146
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content_permissions
+id: landing_page_supervisor
+label: 'Landing page supervisor'
+weight: -4
+is_admin: null
+permissions:
+  - 'create accordion_menu block content'
+  - 'create banner_deep block content'
+  - 'create basic block content'
+  - 'create card_contact block content'
+  - 'create card_nested_standard block content'
+  - 'create card_nested_wide block content'
+  - 'create card_standard block content'
+  - 'create card_wide block content'
+  - 'create feed_block block content'
+  - 'create information_notice block content'
+  - 'create plain_cards block content'
+  - 'create text block content'
+  - 'create video block content'
+  - 'create video_and_caption block content'
+  - 'delete any accordion_menu block content'
+  - 'delete any banner_deep block content'
+  - 'delete any basic block content'
+  - 'delete any card_contact block content'
+  - 'delete any card_nested_standard block content'
+  - 'delete any card_nested_wide block content'
+  - 'delete any card_standard block content'
+  - 'delete any card_wide block content'
+  - 'delete any feed_block block content'
+  - 'delete any information_notice block content'
+  - 'delete any plain_cards block content'
+  - 'delete any text block content'
+  - 'delete any video block content'
+  - 'delete any video_and_caption block content'
+  - 'update any accordion_menu block content'
+  - 'update any banner_deep block content'
+  - 'update any basic block content'
+  - 'update any card_contact block content'
+  - 'update any card_nested_standard block content'
+  - 'update any card_nested_wide block content'
+  - 'update any card_standard block content'
+  - 'update any card_wide block content'
+  - 'update any feed_block block content'
+  - 'update any information_notice block content'
+  - 'update any plain_cards block content'
+  - 'update any text block content'
+  - 'update any video block content'
+  - 'update any video_and_caption block content'
