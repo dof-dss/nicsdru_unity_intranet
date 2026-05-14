@@ -2,8 +2,11 @@ uuid: 80b123a8-d475-4e82-ac44-777288b31146
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.landing_page
   module:
     - block_content_permissions
+    - node
 id: landing_page_supervisor
 label: 'Landing page supervisor'
 weight: -4
@@ -19,6 +22,7 @@ permissions:
   - 'create card_wide block content'
   - 'create feed_block block content'
   - 'create information_notice block content'
+  - 'create landing_page content'
   - 'create plain_cards block content'
   - 'create text block content'
   - 'create video block content'
@@ -33,10 +37,16 @@ permissions:
   - 'delete any card_wide block content'
   - 'delete any feed_block block content'
   - 'delete any information_notice block content'
+  - 'delete any landing_page content'
   - 'delete any plain_cards block content'
   - 'delete any text block content'
   - 'delete any video block content'
   - 'delete any video_and_caption block content'
+  - 'delete landing_page revisions'
+  - 'delete own landing_page content'
+  - 'edit any landing_page content'
+  - 'edit own landing_page content'
+  - 'revert landing_page revisions'
   - 'update any accordion_menu block content'
   - 'update any banner_deep block content'
   - 'update any basic block content'
@@ -51,3 +61,4 @@ permissions:
   - 'update any text block content'
   - 'update any video block content'
   - 'update any video_and_caption block content'
+  - 'view landing_page revisions'
