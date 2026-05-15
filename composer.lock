@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4989ef89fe1dd8ccacded69bb0ceeb65",
+    "content-hash": "e4b1db808fe90fe62f97071829763934",
     "packages": [
         {
             "name": "accessible360/accessible-slick",
@@ -1393,6 +1393,24 @@
                 "source": "https://github.com/dflydev/dflydev-dot-access-data/tree/v3.0.3"
             },
             "time": "2024-07-08T12:26:09+00:00"
+        },
+        {
+            "name": "dimsemenov/photoswipe",
+            "version": "5.4.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/dimsemenov/PhotoSwipe/archive/refs/tags/v5.4.4.zip"
+            },
+            "type": "drupal-library"
+        },
+        {
+            "name": "dimsemenov/photoswipe-dynamic-caption-plugin",
+            "version": "1.2.7",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/dimsemenov/photoswipe-dynamic-caption-plugin/archive/refs/heads/main.zip"
+            },
+            "type": "drupal-library"
         },
         {
             "name": "doctrine/collections",
