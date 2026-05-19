@@ -222,7 +222,6 @@ datasource_settings:
       selected:
         - afbi_information
         - feature
-        - landing_page
         - webform
     languages:
       default: true
