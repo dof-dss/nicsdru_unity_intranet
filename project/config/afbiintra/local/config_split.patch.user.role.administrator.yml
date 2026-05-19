@@ -1,0 +1,9 @@
+adding:
+  dependencies:
+    module:
+      - migrate
+      - migrate_tools
+  permissions:
+    - 'administer migrations'
+    - 'view migration messages'
+removing: {  }

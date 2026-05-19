@@ -15,7 +15,6 @@ dependencies:
     - node.type.afbi_information
     - node.type.feature
     - node.type.gallery
-    - node.type.landing_page
     - node.type.link
     - node.type.news
     - node.type.page
@@ -71,7 +70,6 @@ permissions:
   - 'create file media'
   - 'create gallery content'
   - 'create image media'
-  - 'create landing_page content'
   - 'create link content'
   - 'create news content'
   - 'create page content'
@@ -88,7 +86,6 @@ permissions:
   - 'delete any file media'
   - 'delete any gallery content'
   - 'delete any image media'
-  - 'delete any landing_page content'
   - 'delete any link content'
   - 'delete any news content'
   - 'delete any page content'
@@ -96,7 +93,6 @@ permissions:
   - 'delete any remote_video media'
   - 'delete feature revisions'
   - 'delete gallery revisions'
-  - 'delete landing_page revisions'
   - 'delete link revisions'
   - 'delete news revisions'
   - 'delete own afbi_information content'
@@ -106,7 +102,6 @@ permissions:
   - 'delete own file media'
   - 'delete own gallery content'
   - 'delete own image media'
-  - 'delete own landing_page content'
   - 'delete own link content'
   - 'delete own news content'
   - 'delete own page content'
@@ -121,7 +116,6 @@ permissions:
   - 'edit any file media'
   - 'edit any gallery content'
   - 'edit any image media'
-  - 'edit any landing_page content'
   - 'edit any link content'
   - 'edit any news content'
   - 'edit any page content'
@@ -135,7 +129,6 @@ permissions:
   - 'edit own file media'
   - 'edit own gallery content'
   - 'edit own image media'
-  - 'edit own landing_page content'
   - 'edit own link content'
   - 'edit own news content'
   - 'edit own page content'
@@ -153,7 +146,6 @@ permissions:
   - 'revert all revisions'
   - 'revert feature revisions'
   - 'revert gallery revisions'
-  - 'revert landing_page revisions'
   - 'revert link revisions'
   - 'revert news revisions'
   - 'revert page revisions'
@@ -178,7 +170,6 @@ permissions:
   - 'view content references'
   - 'view feature revisions'
   - 'view gallery revisions'
-  - 'view landing_page revisions'
   - 'view latest version'
   - 'view link revisions'
   - 'view news revisions'
