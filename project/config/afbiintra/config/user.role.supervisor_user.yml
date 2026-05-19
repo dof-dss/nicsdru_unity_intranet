@@ -26,7 +26,6 @@ dependencies:
     - entityqueue
     - file
     - filter
-    - layout_builder
     - media
     - menu_admin_per_menu
     - moderation_sidebar
@@ -63,7 +62,6 @@ permissions:
   - 'administer redirects'
   - 'audit content'
   - 'create afbi_information content'
-  - 'create and edit custom blocks'
   - 'create audio media'
   - 'create document media'
   - 'create feature content'

@@ -12,7 +12,6 @@ cache:
     mustrevalidate: false
     nocache: false
     nostore: false
-    5xx_max_age: 0
   surrogate:
     maxage: 86400
     nostore: false

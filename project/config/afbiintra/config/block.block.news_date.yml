@@ -1,27 +1,27 @@
-uuid: bce389ad-6f9a-42d9-90c7-f73997d8fccb
+uuid: a0c069f5-1606-42c2-9e86-114b9bbfde38
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.published_date
+    - facets.facet.news_date
   module:
     - facets
     - system
   theme:
     - afbi_theme
-id: published_date
+id: news_date
 theme: afbi_theme
 region: search_facets
 weight: 0
 provider: null
-plugin: 'facet_block:published_date'
+plugin: 'facet_block:news_date'
 settings:
-  id: 'facet_block:published_date'
+  id: 'facet_block:news_date'
   label: Date
   label_display: visible
   provider: facets
   context_mapping: {  }
-  block_id: published_date
+  block_id: news_date
 visibility:
   request_path:
     id: request_path
