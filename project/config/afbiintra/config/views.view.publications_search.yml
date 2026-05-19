@@ -256,9 +256,10 @@ display:
       path: publications
       menu:
         type: normal
-        title: Publications
+        title: Documents
         description: ''
         weight: -42
+        enabled: true
         expanded: false
         menu_name: main
         parent: ''
