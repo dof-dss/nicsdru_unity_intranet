@@ -161,6 +161,7 @@
         "drupal/oembed_providers": "^2.1",
         "drupal/paragraphs": "^1.20",
         "drupal/pathauto": "^1.14",
+        "drupal/photoswipe": "^5.0",
         "drupal/rdf": "^2.1",
         "drupal/read_only_mode": "^1.0@dev",
         "drupal/readonlymode": "^1.2",
@@ -278,6 +279,9 @@
             },
             "drupal/media_browser_responsive_images": {
                 "Form alter applies for any media browser, not just image related ones": "https://www.drupal.org/files/issues/2019-12-17/media-browser-hook-checks-for-image-types.patch"
+            },
+            "drupal/redirect": {
+                "Add URL Redirects tab to taxonomy term edit form": "https://www.drupal.org/files/issues/2025-11-18/redirect-unrouted-3342409-15.patch"
             },
             "drupal/search_api": {
                 "Declaration of Drupal\\search_api_solr\\Plugin\\search_api\\backend\\SearchApiSolrBackend::__sleep() must be compatible": "https://www.drupal.org/files/issues/2024-06-18/type_declaration.patch"
