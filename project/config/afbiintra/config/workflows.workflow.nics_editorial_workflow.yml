@@ -6,6 +6,7 @@ dependencies:
     - node.type.afbi_information
     - node.type.feature
     - node.type.gallery
+    - node.type.landing_page
     - node.type.link
     - node.type.news
     - node.type.page
@@ -106,6 +107,7 @@ type_settings:
       - afbi_information
       - feature
       - gallery
+      - landing_page
       - link
       - news
       - page

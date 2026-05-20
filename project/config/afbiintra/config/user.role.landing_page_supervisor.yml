@@ -3,16 +3,20 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.node.landing_page.default
     - node.type.landing_page
   module:
     - block_content_permissions
+    - layout_builder
     - node
 id: landing_page_supervisor
 label: 'Landing page supervisor'
 weight: -4
 is_admin: null
 permissions:
+  - 'configure editable landing_page node layout overrides'
   - 'create accordion_menu block content'
+  - 'create and edit custom blocks'
   - 'create banner_deep block content'
   - 'create basic block content'
   - 'create card_contact block content'

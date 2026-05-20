@@ -1,4 +1,4 @@
-uuid: a12313a2-0113-4940-9c9c-34c1210fb221
+uuid: de04f9f4-44c5-4442-a754-4285d2872a19
 langcode: en
 status: true
 dependencies:
@@ -11,8 +11,8 @@ dependencies:
 third_party_settings:
   facets_pretty_paths:
     coder: default_coder
-id: published_date
-name: published_date
+id: news_date
+name: Date
 weight: 0
 min_count: 1
 missing: false
@@ -33,8 +33,8 @@ enable_parent_when_child_gets_disabled: true
 widget:
   type: links
   config:
-    show_numbers: true
-    soft_limit: 20
+    show_numbers: false
+    soft_limit: 0
     show_reset_link: false
     reset_text: 'Show all'
     hide_reset_when_no_selection: false
@@ -50,18 +50,18 @@ processor_configs:
   active_widget_order:
     processor_id: active_widget_order
     weights:
-      sort: -10
+      sort: 20
     settings:
       sort: ASC
   date_facet_drilldown:
     processor_id: date_facet_drilldown
     weights:
-      build: 5
+      build: 1
     settings: {  }
   date_item:
     processor_id: date_item
     weights:
-      build: -10
+      build: 35
     settings:
       date_display: actual_date
       granularity: 6
@@ -70,7 +70,7 @@ processor_configs:
   hierarchy_processor:
     processor_id: hierarchy_processor
     weights:
-      build: -10
+      build: 100
     settings: {  }
   raw_value_widget_order:
     processor_id: raw_value_widget_order
@@ -82,5 +82,5 @@ processor_configs:
     processor_id: url_processor_handler
     weights:
       pre_query: 50
-      build: -10
+      build: 15
     settings: {  }

@@ -17,15 +17,15 @@ processor_configs:
       build: '45'
     settings: {  }
 facets:
-  published_date:
-    checked: true
-    label: 'Published date'
-    separator: ', '
-    show_count: false
-    weight: 0
   type:
     checked: true
     label: Type
+    separator: ', '
+    show_count: false
+    weight: -9
+  news_date:
+    checked: true
+    label: Date
     separator: ', '
     show_count: false
     weight: 0
