@@ -12,5 +12,5 @@ page:
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
-frontpage_title: Welcome
-frontpage_show_title: 0
+frontpage_title: 'Welcome AFBI Intranet'
+frontpage_show_title: false

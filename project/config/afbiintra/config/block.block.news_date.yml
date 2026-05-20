@@ -1,0 +1,29 @@
+uuid: a0c069f5-1606-42c2-9e86-114b9bbfde38
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.news_date
+  module:
+    - facets
+    - system
+  theme:
+    - afbi_theme
+id: news_date
+theme: afbi_theme
+region: search_facets
+weight: 0
+provider: null
+plugin: 'facet_block:news_date'
+settings:
+  id: 'facet_block:news_date'
+  label: Date
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: news_date
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/news\r\n/news/date/*\r\n/news/type/*"

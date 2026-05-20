@@ -29,4 +29,4 @@ enforce:
     object-src:
       base: none
   reporting:
-    plugin: sitelog
+    plugin: none

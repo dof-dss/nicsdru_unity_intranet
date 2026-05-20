@@ -29,7 +29,7 @@ $chroma: add-colors((
   hc-red:                 #d1431f, // 4.63:1 with white
   light-pink:             #ffdae0, // 4.53:1 with dark-red
 
-  brand-primary: #057f8c, //#0f3d0f,
+  brand-primary: #0a9ca6, //#0f3d0f,
 
   brand-secondary:        #606,
 
@@ -55,8 +55,8 @@ $chroma: add-colors('functional', (
   error:                  'dark-red',
   error-bg:               'light-pink',
 
-  menu-background:        'brand-primary',
-  menu-item-hover:        'brand-secondary',
+  menu-background:        #30373b,
+  menu-item-hover:        'brand-primary',
   menu-separator:         #fff,
   menu-sub-item-background: lighten(#606, 10),
   menu-sub-item-hover:    'brand-primary',
@@ -74,7 +74,7 @@ $chroma: add-colors('functional', (
   footer-text:            'text',
   footer-headings:        'text',
 
-  search-submit: #0e6bb3,
+  search-submit: #e29e58,
 ));
 
 $chroma-active-scheme: 'functional';

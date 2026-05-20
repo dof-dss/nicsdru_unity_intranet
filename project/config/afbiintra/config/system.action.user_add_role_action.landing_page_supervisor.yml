@@ -1,0 +1,14 @@
+uuid: da1e97b3-ed5b-48d7-921a-3704007fcb47
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.landing_page_supervisor
+  module:
+    - user
+id: user_add_role_action.landing_page_supervisor
+label: 'Add the Landing page supervisor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: landing_page_supervisor

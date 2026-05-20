@@ -27,19 +27,19 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_read_more:
+    type: link_default
     weight: 27
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_rss_feed:
+    type: rss_feed_widget
     weight: 26
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: rss_feed_widget
-    region: content
   info:
     type: string_textfield
     weight: 0

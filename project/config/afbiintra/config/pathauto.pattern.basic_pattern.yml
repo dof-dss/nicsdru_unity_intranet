@@ -1,0 +1,31 @@
+uuid: 293ab192-76ee-4eb1-81da-3bef6e935c4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.afbi_information
+    - node.type.feature
+    - node.type.gallery
+    - node.type.link
+    - node.type.page
+  module:
+    - node
+id: basic_pattern
+label: 'Basic pattern'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  66cec902-576e-495f-841c-4966f8b93723:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      afbi_information: afbi_information
+      feature: feature
+      gallery: gallery
+      link: link
+      page: page
+selection_logic: and
+weight: -5
+relationships: {  }

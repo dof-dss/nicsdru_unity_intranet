@@ -138,7 +138,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -293,12 +293,17 @@ display:
         options:
           grouping: {  }
           row_class: ''
-          default_row_class: true
+          default_row_class: false
           type: ul
           wrapper_class: item-list
           class: ''
       row:
         type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
       query:
         type: views_query
         options:
@@ -336,7 +341,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<a href="/applications" class="btn">More Applications</a>'
+            value: '<a href="/applications">More Applications ...</a>'
             format: basic_html
           tokenize: false
       display_extenders: {  }

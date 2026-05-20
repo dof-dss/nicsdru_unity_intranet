@@ -8,11 +8,13 @@ description: "Local development split. \r\nEnables debugging and development mod
 weight: 0
 stackable: false
 no_patching: false
-storage: null
+storage: folder
 folder: ../project/config/afbiintra/local
 module:
+  afbi_migrations: 0
   clone_nodes: 0
   dblog: 0
+  devel: 0
   easy_install: 0
   migrate: 0
   migrate_absolute_links: 0
@@ -24,4 +26,5 @@ module:
   views_ui: 0
 theme: {  }
 complete_list: {  }
-partial_list: {  }
+partial_list:
+  - search_api.server.solr_default

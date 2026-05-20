@@ -11,8 +11,8 @@ dependencies:
     - afbi_theme
 id: views_block__corporate_information_corporate_information
 theme: afbi_theme
-region: top_third
-weight: 0
+region: top_second
+weight: -10
 provider: null
 plugin: 'views_block:corporate_information-corporate_information'
 settings:
