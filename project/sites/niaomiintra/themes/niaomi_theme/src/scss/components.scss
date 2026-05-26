@@ -25,11 +25,14 @@
 }
 
 #top-area {
-  padding-bottom: 4rem;
-  border-bottom: 1px solid black;
   text-align: left;
   margin-top: 3rem;
   display: flex;
+
+  h2 {
+    color: $headings;
+    @include adjust-font-size-to(24px);
+  }
 
   .column:first-child {
     background: $grey-lightest;
@@ -103,7 +106,7 @@
         margin-right: 0;
       }
 
-      div:nth-child(3), div:nth-child(4)  {
+      div:nth-child(3), div:nth-child(4) {
         margin: 1.2rem 0 0;
       }
 
@@ -254,3 +257,74 @@ a.btn.btn-staff-page {
   }
 }
 
+#bottom-area {
+  text-align: left;
+  margin: 2rem auto;
+
+  @include breakpoint($tab) {
+    display: flex;
+  }
+
+  .column {
+    width: 33%;
+    padding: 2rem 2rem 5rem;
+    position: relative;
+
+    header {
+      margin-bottom: .8rem;
+    }
+
+    footer {
+      margin-top: 4rem;
+    }
+
+    .content {
+      padding-top: 0;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+
+    .media-image {
+      margin: 0 0 2rem;
+    }
+
+    .item-list {
+      li > span {
+        display: block;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    color: $headings;
+    padding: 1rem 0;
+    margin: 0;
+  }
+
+  h3 {
+    @include adjust-font-size-to(18px);
+    margin: 0;
+    font-weight: normal;
+  }
+}
+
+
+.feed-block {
+  .read-more {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+.logged-in {
+  .feed-block {
+    .read-more {
+      position: relative;
+    }
+  }
+}
