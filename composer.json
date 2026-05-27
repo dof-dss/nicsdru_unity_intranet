@@ -256,7 +256,8 @@
                 "DateList and date range inline form errors are repeated": "https://www.drupal.org/files/issues/2020-01-30/2827034-35.patch",
                 "The link on the Image tag is redirecting to an undefined page from the node preview screen #3308432": "https://www.drupal.org/files/issues/2025-06-09/3308432-42.patch",
                 "Undefined title": "https://www.drupal.org/files/issues/2026-01-08/undefined_title_3566415.patch",
-                "deprecated function dirname()": "https://www.drupal.org/files/issues/2025-04-15/3268634-dirname-null-deprecated-47.patch"
+                "deprecated function dirname()": "https://www.drupal.org/files/issues/2025-04-15/3268634-dirname-null-deprecated-47.patch",
+                "Media Library field widget not enforcing image limits": "https://www.drupal.org/files/issues/2024-07-31/3226629-20.patch"
             },
             "drupal/easy_install": {
                 "Handle missing core version": "https://www.drupal.org/files/issues/2019-12-19/easy_install_core_version-3101883-0.patch",
@@ -279,9 +280,6 @@
             },
             "drupal/media_browser_responsive_images": {
                 "Form alter applies for any media browser, not just image related ones": "https://www.drupal.org/files/issues/2019-12-17/media-browser-hook-checks-for-image-types.patch"
-            },
-            "drupal/redirect": {
-                "Add URL Redirects tab to taxonomy term edit form": "https://www.drupal.org/files/issues/2025-11-18/redirect-unrouted-3342409-15.patch"
             },
             "drupal/search_api": {
                 "Declaration of Drupal\\search_api_solr\\Plugin\\search_api\\backend\\SearchApiSolrBackend::__sleep() must be compatible": "https://www.drupal.org/files/issues/2024-06-18/type_declaration.patch"

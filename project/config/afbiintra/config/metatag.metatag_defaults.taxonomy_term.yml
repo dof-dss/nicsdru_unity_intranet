@@ -1,12 +1,16 @@
-uuid: abdf72a7-33e5-460a-8903-dde7de6429ac
+uuid: e96dac2b-fd01-4e14-90a2-99b63fe4ff23
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 92bXZdyYJ5xqukdfmGRr_CYcwm1vfuS8b8aJ7X_G7E0
+  default_config_hash: ow9Z3leGzkqMq2B3uHTF-Au_PiRdd-ONejLdL5_YU8Y
 id: taxonomy_term
 label: 'Taxonomy term'
 tags:
   canonical_url: '[term:url]'
   description: '[term:description]'
-  title: '[term:name] | [site:name]'
+  title: '[term:name] | [current-page:page-number][site:name]'
+  og_description: '[term:description]'
+  og_title: '[term:name]'
+  twitter_cards_description: '[term:description]'
+  twitter_cards_title: '[term:name]'
