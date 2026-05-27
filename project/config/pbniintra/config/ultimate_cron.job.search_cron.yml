@@ -8,7 +8,7 @@ _core:
   default_config_hash: 7Xe5sxpGFVnXul69vjsuqDhRBQbEIVNIkwI_jwEYaRc
 title: 'Updates indexable active search pages'
 id: search_cron
-weight: 7
+weight: 6
 module: search
 callback: 'search#cron'
 scheduler:
