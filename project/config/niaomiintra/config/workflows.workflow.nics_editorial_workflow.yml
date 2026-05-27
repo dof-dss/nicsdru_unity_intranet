@@ -6,11 +6,9 @@ dependencies:
     - node.type.basic_page
     - node.type.feature
     - node.type.featured_links
-    - node.type.feed
-    - node.type.feed_item
     - node.type.news
-    - node.type.niao_staff_member
     - node.type.publication
+    - node.type.staff_member
   module:
     - content_moderation
 _core:
@@ -106,9 +104,7 @@ type_settings:
       - basic_page
       - feature
       - featured_links
-      - feed
-      - feed_item
       - news
-      - niao_staff_member
       - publication
+      - staff_member
   default_moderation_state: draft

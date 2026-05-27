@@ -1,19 +1,19 @@
-uuid: 3de65434-1d21-41fd-9cff-f47b5a11930c
+uuid: 239f0de7-0d3f-4fa6-af86-d8641580b969
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.niao_staff_member.field_email
-    - field.field.node.niao_staff_member.field_extension
-    - field.field.node.niao_staff_member.field_first_name
-    - field.field.node.niao_staff_member.field_job_title
-    - field.field.node.niao_staff_member.field_profile_image
-    - node.type.niao_staff_member
+    - field.field.node.staff_member.field_email
+    - field.field.node.staff_member.field_extension
+    - field.field.node.staff_member.field_first_name
+    - field.field.node.staff_member.field_job_title
+    - field.field.node.staff_member.field_profile_image
+    - node.type.staff_member
   module:
     - user
-id: node.niao_staff_member.default
+id: node.staff_member.default
 targetEntityType: node
-bundle: niao_staff_member
+bundle: staff_member
 mode: default
 content:
   field_email:

@@ -1,0 +1,29 @@
+uuid: 7baaa5e2-d8ae-45ab-a803-03d702a3f0e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.staff_member.field_email
+    - field.field.node.staff_member.field_extension
+    - field.field.node.staff_member.field_first_name
+    - field.field.node.staff_member.field_job_title
+    - field.field.node.staff_member.field_profile_image
+    - node.type.staff_member
+  module:
+    - user
+id: node.staff_member.teaser
+targetEntityType: node
+bundle: staff_member
+mode: teaser
+content: {  }
+hidden:
+  content_moderation_control: true
+  field_email: true
+  field_extension: true
+  field_first_name: true
+  field_job_title: true
+  field_profile_image: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

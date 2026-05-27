@@ -1,13 +1,13 @@
-uuid: 911d668f-fb13-458f-817a-aa1a5b3198ae
+uuid: b4503d9a-3714-496c-96de-1cc372453782
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.niao_staff_member
-id: node.niao_staff_member.title
+    - node.type.staff_member
+id: node.staff_member.title
 field_name: title
 entity_type: node
-bundle: niao_staff_member
+bundle: staff_member
 label: Surname
 description: ''
 required: true

@@ -1,15 +1,15 @@
-uuid: 39721b4a-576e-4c3d-b15d-858a9295a5c3
+uuid: bf7e7875-ec57-4fa5-b69d-c8d8fdb339b5
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_email
-    - node.type.niao_staff_member
-id: node.niao_staff_member.field_email
+    - node.type.staff_member
+id: node.staff_member.field_email
 field_name: field_email
 entity_type: node
-bundle: niao_staff_member
-label: 'Email Address'
+bundle: staff_member
+label: 'Email address'
 description: 'Please add the email address for the staff member.'
 required: false
 translatable: false
