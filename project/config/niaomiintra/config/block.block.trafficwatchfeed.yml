@@ -1,0 +1,25 @@
+uuid: 5ecc5f80-ad51-431d-ba19-3760dd141bd7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feed_block:f1a8132d-4168-463d-87ee-5a613af9b830'
+  module:
+    - block_content
+  theme:
+    - niaomi_theme
+id: trafficwatchfeed
+theme: niaomi_theme
+region: bottom_widget_2
+weight: 0
+provider: null
+plugin: 'block_content:f1a8132d-4168-463d-87ee-5a613af9b830'
+settings:
+  id: 'block_content:f1a8132d-4168-463d-87ee-5a613af9b830'
+  label: 'Trafficwatch feed'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

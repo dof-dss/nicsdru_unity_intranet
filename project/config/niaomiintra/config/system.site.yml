@@ -8,9 +8,9 @@ slogan: ''
 page:
   403: ''
   404: ''
-  front: /node/1
+  front: /node
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
-frontpage_title: 'Welcome to Drupal site'
-frontpage_show_title: 0
+frontpage_title: 'Welcome to Niaomi Intranet'
+frontpage_show_title: false

@@ -32,6 +32,7 @@ content:
     weight: 1
     region: content
 hidden:
+  content_moderation_control: true
   field_link_url: true
   langcode: true
   links: true
