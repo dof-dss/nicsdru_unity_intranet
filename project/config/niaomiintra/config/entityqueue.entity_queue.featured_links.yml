@@ -1,11 +1,11 @@
-uuid: a058ce9e-cfa0-4952-a8b7-d03d574458d7
+uuid: d7632c9d-af51-4ade-92df-7dc4888e157c
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: slideshow
-label: Slideshow
+id: featured_links
+label: 'Featured links'
 handler: simple
 handler_configuration: {  }
 entity_settings:
@@ -13,7 +13,7 @@ entity_settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      feature: feature
+      featured_links: featured_links
     sort:
       field: _none
       direction: ASC
