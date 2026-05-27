@@ -7,7 +7,7 @@ dependencies:
 id: content_feature
 label: 'Content - Feature'
 type: 'canonical_entities:node'
-pattern: 'feature/[node:title]'
+pattern: '/feature/[node:title]'
 selection_criteria:
   a0a7b285-58cc-499a-a39b-8d6fd4631a1c:
     id: 'entity_bundle:node'

@@ -9,7 +9,7 @@ dependencies:
     - field.storage.node.field_job_title
     - field.storage.node.field_profile_image
     - image.style.staff_directory_profile
-    - node.type.niao_staff_member
+    - node.type.staff_member
     - responsive_image.styles.member_small_image
     - system.menu.main
   module:
@@ -512,7 +512,7 @@ display:
           entity_field: type
           plugin_id: bundle
           value:
-            niao_staff_member: niao_staff_member
+            staff_member: staff_member
       style:
         type: default
         options:
@@ -994,7 +994,7 @@ display:
       cache:
         type: custom_tag
         options:
-          custom_tag: 'handy_cache_tags:node:niao_staff_member'
+          custom_tag: 'handy_cache_tags:node:staff_member'
       arguments:
         title:
           id: title

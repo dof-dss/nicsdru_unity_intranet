@@ -1,15 +1,15 @@
-uuid: e79f8577-5cbb-41ba-b209-68279f1a1f76
+uuid: 8ac478a6-7d40-4912-9d1d-bc2778f2a873
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_profile_image
     - media.type.image
-    - node.type.niao_staff_member
-id: node.niao_staff_member.field_profile_image
+    - node.type.staff_member
+id: node.staff_member.field_profile_image
 field_name: field_profile_image
 entity_type: node
-bundle: niao_staff_member
+bundle: staff_member
 label: 'Profile image'
 description: 'Please add a profile image of the staff member.'
 required: false

@@ -1,14 +1,14 @@
-uuid: 677b282b-3b7a-4f85-8dbc-bbdbc178e1af
+uuid: 9254aa11-6a27-4104-a968-f665761e349c
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_extension
-    - node.type.niao_staff_member
-id: node.niao_staff_member.field_extension
+    - node.type.staff_member
+id: node.staff_member.field_extension
 field_name: field_extension
 entity_type: node
-bundle: niao_staff_member
+bundle: staff_member
 label: Extension
 description: 'Please add the extension number of the staff member.'
 required: false
