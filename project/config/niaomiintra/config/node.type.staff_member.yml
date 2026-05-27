@@ -1,4 +1,4 @@
-uuid: b6221b86-139f-45da-9b89-877f82f4a612
+uuid: edc5acfe-eb61-4dfe-8c18-fc8400902618
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ third_party_settings:
       - main
     parent: 'main:'
 name: 'Staff member'
-type: niao_staff_member
+type: staff_member
 description: null
 help: null
 new_revision: true

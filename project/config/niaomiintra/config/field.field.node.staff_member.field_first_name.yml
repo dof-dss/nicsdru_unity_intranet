@@ -1,14 +1,14 @@
-uuid: 108f7f30-7df6-4836-93ec-6caf10ab0afa
+uuid: 461f722a-4cd6-4a06-92c6-57236456d28a
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_first_name
-    - node.type.niao_staff_member
-id: node.niao_staff_member.field_first_name
+    - node.type.staff_member
+id: node.staff_member.field_first_name
 field_name: field_first_name
 entity_type: node
-bundle: niao_staff_member
+bundle: staff_member
 label: 'First name'
 description: 'Please add the first name of the staff member.'
 required: true
