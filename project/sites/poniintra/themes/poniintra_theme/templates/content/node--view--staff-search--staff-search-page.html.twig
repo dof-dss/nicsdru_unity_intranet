@@ -103,9 +103,9 @@
         </p>
       {% endif %}
 
-      {% if content.field_email %}
+      {% if content.field_email.0 %}
         <p>
-          <a href="mailto:{{ content.field_email.0 }}">{{ content.field_email }}</a>
+         <a href="mailto:{{ content.field_email.0 }}">{{ content.field_email }}</a>
         </p>
       {% endif %}
     </div>
