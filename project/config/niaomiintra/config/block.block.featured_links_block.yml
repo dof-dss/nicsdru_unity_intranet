@@ -1,0 +1,24 @@
+uuid: 56e2f00f-4f9e-4344-9717-98bf34fe3834
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.featured_links
+  module:
+    - views
+  theme:
+    - niaomi_theme
+id: featured_links_block
+theme: niaomi_theme
+region: top_third
+weight: 0
+provider: null
+plugin: 'views_block:featured_links-block_1'
+settings:
+  id: 'views_block:featured_links-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

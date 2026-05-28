@@ -1,0 +1,8 @@
+uuid: 9c3f8c81-70d3-4d14-a7bb-be75c2765447
+langcode: en
+status: true
+dependencies: {  }
+id: unity_feeds_format
+label: 'Unity Feeds format'
+locked: false
+pattern: 'd F Y - H:i a'
