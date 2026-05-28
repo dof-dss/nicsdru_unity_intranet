@@ -8,7 +8,7 @@ _core:
   default_config_hash: ciWDxj8CltbgV6f_8xppSLNkxcdMR04FsbBf6iFs_U0
 title: 'Default cron handler'
 id: webform_cron
-weight: -2
+weight: -4
 module: webform
 callback: 'webform#cron'
 scheduler:
