@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.resources.body
     - field.field.node.resources.field_attachment
+    - field.field.node.resources.field_content_manager_link
     - field.field.node.resources.field_external_url
     - field.field.node.resources.field_meta_tags
     - field.field.node.resources.field_published_date
@@ -12,9 +13,35 @@ dependencies:
     - node.type.resources
   module:
     - datetime
+    - field_group
     - link
+    - pbni_common
     - text
     - user
+third_party_settings:
+  field_group:
+    group_documents:
+      children:
+        - field_content_manager_link
+        - field_external_url
+        - field_attachment
+      label: Documents
+      parent_name: ''
+      region: content
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: list--no-bullet
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: ul
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 id: node.resources.default
 targetEntityType: node
 bundle: resources
@@ -29,16 +56,23 @@ content:
     region: content
   field_attachment:
     type: entity_reference_entity_view
-    label: hidden
+    label: inline
     settings:
       view_mode: embed
       link: false
     third_party_settings: {  }
-    weight: 2
+    weight: 7
+    region: content
+  field_content_manager_link:
+    type: content_manager_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
     region: content
   field_external_url:
     type: link
-    label: hidden
+    label: inline
     settings:
       trim_length: null
       url_only: false
@@ -46,7 +80,7 @@ content:
       rel: '0'
       target: '0'
     third_party_settings: {  }
-    weight: 3
+    weight: 6
     region: content
   field_published_date:
     type: datetime_default

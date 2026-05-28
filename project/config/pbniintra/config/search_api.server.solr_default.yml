@@ -1,4 +1,4 @@
-uuid: c5aba1e3-2df1-4ba3-9b66-c78d9a3ba0f5
+uuid: 1ef3f4c4-31df-4bec-b2f6-e32a5a05dd90
 langcode: en
 status: true
 dependencies:
@@ -15,7 +15,6 @@ dependencies:
     - search_api_solr.solr_field_type.text_ngramstring_und_6_0_0
     - search_api_solr.solr_field_type.text_phonetic_en_7_0_0
     - search_api_solr.solr_field_type.text_phonetic_und_7_0_0
-    - search_api_solr.solr_field_type.text_string_und_6_0_0
     - search_api_solr.solr_field_type.text_und_7_0_0
     - search_api_solr.solr_request_dispatcher.request_dispatcher_httpcachingnever_default_7_0_0
     - search_api_solr.solr_request_handler.request_handler_autocomplete_default_7_0_0
@@ -54,7 +53,6 @@ backend_config:
     http_method: AUTO
     commit_within: 1000
     jmx: false
-    jts: false
     solr_install_dir: ''
   optimize: false
   fallback_multiple: false
@@ -68,5 +66,3 @@ backend_config:
     - request_dispatcher_httpcaching_default_7_0_0
   rows: 10
   index_single_documents_fallback_count: 10
-  index_empty_text_fields: false
-  suppress_missing_languages: false
