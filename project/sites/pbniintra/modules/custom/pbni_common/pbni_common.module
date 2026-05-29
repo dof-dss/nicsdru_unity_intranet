@@ -23,15 +23,17 @@ function pbni_common_validate_resources(&$form, FormStateInterface $form_state) 
   $values = $form_state->getValues();
 
   // Validate file attachments and external links.
-  if (empty($values['field_attachment']["selection"][0]) && empty($values['field_external_url'][0]['uri'])) {
-    $form_state->setErrorByName('field_attachment', t('You must provide an attachment or external link'));
-    $form_state->setErrorByName('field_external_url', t('You must provide an attachment or external link'));
+  if (empty($values['field_attachment']["selection"][0]) && empty($values['field_external_url'][0]['uri']) && $values['field_content_manager_link'][0]['url'] === '') {
+    $message = t('You must provide an attachment or external link or a content manager link');
+    $form_state->setErrorByName('field_content_manager_link', $message);
+    $form_state->setErrorByName('field_attachment', $message);
+    $form_state->setErrorByName('field_external_url', $message);
   }
 
   // Remove the last add more array from the list of external publications as this is just the add another item button.
   $remove_last_element = array_pop($values['field_external_url']);
 
-  // If the parsed URL host has any reference to the current Judiciary site then add an error message.
+  // If the parsed URL host has any reference to the current PBNI site then add an error message.
   foreach ($values['field_external_url'] as $value) {
     if (!empty($value['uri'])) {
       $ext_url = parse_url($value['uri']);
