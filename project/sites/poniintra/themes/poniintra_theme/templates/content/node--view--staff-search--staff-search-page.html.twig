@@ -67,48 +67,49 @@
  */
 #}
 <article class="staff-profiles">
-    {% if content.field_photo %}
-      <div class="staff-profile-image">
-        {{ content.field_photo }}
-      </div>
-    {% else %}
-      <div class="staff-profile-image">
-        <img
-          src="sites/poniintra/themes/poniintra_theme/images/no-image-placeholder.png"
-          alt="">
-      </div>
+  {% if content.field_photo %}
+    <div class="staff-profile-image">
+      {{ content.field_photo }}
+    </div>
+  {% else %}
+    <div class="staff-profile-image">
+      <img
+        src="sites/poniintra/themes/poniintra_theme/images/no-image-placeholder.png"
+        alt="">
+    </div>
+  {% endif %}
+
+  <div class="staff-profile-info">
+    <h3>{{ label }}</h3>
+
+    <p>
+      {{ content.field_team }}
+    </p>
+    {% if content.field_job_title %}
+      <p>
+        {{ content.field_job_title }}
+      </p>
     {% endif %}
 
-    <div class="staff-profile-info">
-      <h3>{{ label }}</h3>
+    {% if content.field_extension %}
+      <p>
+        {{ content.field_extension }}
+      </p>
+    {% endif %}
 
-        <p>
-          {{ content.field_team }}
-        </p>
-      {% if content.field_job_title %}
-        <p>
-          {{ content.field_job_title }}
-        </p>
-      {% endif %}
+    {% if content.field_work_mobile %}
+      <p>
+        {{ content.field_work_mobile }}
+      </p>
+    {% endif %}
 
-      {% if content.field_extension %}
-        <p>
-          {{ content.field_extension }}
-        </p>
-      {% endif %}
-
-      {% if content.field_work_mobile %}
-        <p>
-          {{ content.field_work_mobile }}
-        </p>
-      {% endif %}
-
-      {% if content.field_email %}
-        <p>
-          <a href="mailto:{{ content.field_email.0 }}">{{ content.field_email }}</a>
-        </p>
-      {% endif %}
-    </div>
+    {% if content.field_email.0 %}
+      <p>
+        <a
+          href="mailto:{{ content.field_email.0 }}">{{ content.field_email }}</a>
+      </p>
+    {% endif %}
+  </div>
 </article>
 
 
