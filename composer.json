@@ -165,7 +165,7 @@
         "drupal/rdf": "^2.1",
         "drupal/read_only_mode": "^1.0@dev",
         "drupal/readonlymode": "^1.2",
-        "drupal/redirect": "^1.12",
+        "drupal/redirect": "1.12",
         "drupal/redis": "^1.7",
         "drupal/scheduled_transitions": "^2.7",
         "drupal/scheduler": "^2.0",
