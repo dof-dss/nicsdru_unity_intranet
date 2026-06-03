@@ -6,8 +6,10 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_publication_date
     - field.storage.node.field_publication_type
+    - search_api.server.solr_default
   module:
     - node
+    - search_api
     - search_api_solr
 third_party_settings:
   search_api_solr:
@@ -106,6 +108,7 @@ field_settings:
 
 
 
+
       fields:
         - 'entity:node/title'
   title:
@@ -124,6 +127,7 @@ field_settings:
     configuration:
       type: union
       separator: |+
+
 
 
 

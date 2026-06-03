@@ -1,8 +1,9 @@
-uuid: 239f0de7-0d3f-4fa6-af86-d8641580b969
+uuid: 7b401aaa-e399-4fcb-a310-c274dd72c707
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.diff
     - field.field.node.staff_member.field_email
     - field.field.node.staff_member.field_extension
     - field.field.node.staff_member.field_first_name
@@ -11,25 +12,49 @@ dependencies:
     - field.field.node.staff_member.field_profile_image
     - node.type.staff_member
   module:
+    - field_group
+    - metatag
     - user
-id: node.staff_member.default
+third_party_settings:
+  field_group:
+    group_additional_content_details:
+      children:
+        - field_meta_tags
+      label: 'Additional content details'
+      parent_name: ''
+      region: content
+      weight: 5
+      format_type: html_element
+      format_settings:
+        classes: field-collection
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.staff_member.diff
 targetEntityType: node
 bundle: staff_member
-mode: default
+mode: diff
 content:
   field_email:
-    type: email_mailto
-    label: above
+    type: basic_string
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 1
     region: content
   field_extension:
     type: number_integer
-    label: hidden
+    label: inline
     settings:
       thousand_separator: ''
-      prefix_suffix: false
+      prefix_suffix: true
     third_party_settings: {  }
     weight: 2
     region: content
@@ -43,24 +68,29 @@ content:
     region: content
   field_job_title:
     type: string
-    label: hidden
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 1
+    weight: 3
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
     region: content
   field_profile_image:
-    type: entity_reference_entity_view
-    label: above
+    type: entity_reference_label
+    label: hidden
     settings:
-      view_mode: default
-      link: false
+      link: true
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
 hidden:
   content_moderation_control: true
-  field_meta_tags: true
   langcode: true
   links: true
   search_api_excerpt: true
