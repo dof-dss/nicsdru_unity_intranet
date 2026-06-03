@@ -21,3 +21,8 @@ matchers:
       limit: 100
       include_unpublished: false
     weight: 0
+  ca1e3fff-a76f-4600-b2e7-5393e3e2bfaf:
+    id: email
+    uuid: ca1e3fff-a76f-4600-b2e7-5393e3e2bfaf
+    settings: {  }
+    weight: 0

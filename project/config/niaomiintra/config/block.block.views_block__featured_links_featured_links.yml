@@ -1,4 +1,4 @@
-uuid: 56e2f00f-4f9e-4344-9717-98bf34fe3834
+uuid: ee19a360-1862-4c74-893e-d03f683b7857
 langcode: en
 status: true
 dependencies:
@@ -8,14 +8,14 @@ dependencies:
     - views
   theme:
     - niaomi_theme
-id: featured_links_block
+id: views_block__featured_links_featured_links
 theme: niaomi_theme
 region: top_third
 weight: 0
 provider: null
-plugin: 'views_block:featured_links-block_1'
+plugin: 'views_block:featured_links-featured_links'
 settings:
-  id: 'views_block:featured_links-block_1'
+  id: 'views_block:featured_links-featured_links'
   label: ''
   label_display: visible
   provider: views

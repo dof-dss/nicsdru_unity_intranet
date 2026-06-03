@@ -35,7 +35,6 @@ dependencies:
     - content_lock
     - content_moderation
     - contextual
-    - cookie_content_blocker
     - csp
     - embed
     - entity_browser
