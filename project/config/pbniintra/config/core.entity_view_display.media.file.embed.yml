@@ -1,18 +1,24 @@
-uuid: 009345c3-bc04-4abb-87d9-472696d0bedb
+uuid: 09fdd946-6a8a-4074-93be-d46613f4fbaa
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.embed
     - field.field.media.file.field_media_file_1
     - media.type.file
   module:
     - file
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
 _core:
   default_config_hash: yMl4rXw5kgn_LGYWyx7Yhj7aKmGmYmcXV7lifLhoy3g
-id: media.file.default
+id: media.file.embed
 targetEntityType: media
 bundle: file
-mode: default
+mode: embed
 content:
   field_media_file_1:
     type: file_default
