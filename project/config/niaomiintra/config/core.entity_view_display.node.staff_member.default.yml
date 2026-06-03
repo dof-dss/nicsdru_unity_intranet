@@ -35,7 +35,7 @@ content:
     region: content
   field_first_name:
     type: string
-    label: hidden
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -43,7 +43,7 @@ content:
     region: content
   field_job_title:
     type: string
-    label: hidden
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }

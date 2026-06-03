@@ -31,10 +31,6 @@
         {% if content.field_first_name['#items'] is not empty %}
           <h1 class="staff-name">{{ content.field_first_name }}</h1>
         {% endif %}
-
-        {% if node.title.value is not empty %}
-          <h1 class="staff-surname">{{ node.title.value }}</h1>
-        {% endif %}
       </div>
 
       {% if content.field_job_title['#items'] is not empty %}

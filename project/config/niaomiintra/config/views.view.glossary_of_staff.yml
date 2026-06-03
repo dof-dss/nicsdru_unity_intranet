@@ -11,7 +11,6 @@ dependencies:
     - image.style.staff_directory_profile
     - node.type.staff_member
     - responsive_image.styles.member_small_image
-    - system.menu.main
   module:
     - blazy
     - node
@@ -31,7 +30,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Glossary of staff'
+      title: People
       fields:
         field_profile_image:
           id: field_profile_image
@@ -436,15 +435,13 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        title:
-          id: title
-          table: node_field_data
-          field: title
+        field_first_name_value:
+          id: field_first_name_value
+          table: node__field_first_name
+          field: field_first_name_value
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: title
           plugin_id: standard
           order: ASC
           expose:
@@ -1313,7 +1310,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<a href="/staff_member/{{ title }}">{{ field_first_name }} {{ title }}</a>'
+            text: '<a>{{ field_first_name }} {{ title }}</a>'
             make_link: false
             path: ''
             absolute: false
@@ -1622,11 +1619,10 @@ display:
           tokenize: false
       path: staff-profiles
       menu:
-        type: normal
+        type: none
         title: 'Staff Directory'
         description: ''
         weight: -46
-        enabled: true
         expanded: false
         menu_name: main
         parent: ''
