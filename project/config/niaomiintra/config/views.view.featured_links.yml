@@ -11,6 +11,7 @@ dependencies:
     - link
     - node
     - user
+    - views_custom_cache_tag
 id: featured_links
 label: 'Featured links'
 module: views
@@ -114,8 +115,11 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
-        options: {  }
+        type: custom_tag
+        options:
+          custom_tag: "node_list:featured_links\r\nentity_subqueue:featured_links"
+          custom_tag_output_lifespan: '-1'
+          custom_tag_output_lifespan_expression: ''
       empty: {  }
       sorts:
         entityqueue_relationship:
@@ -198,7 +202,7 @@ display:
         options:
           grouping: {  }
           row_class: ''
-          default_row_class: true
+          default_row_class: false
           type: ul
           wrapper_class: ''
           class: styled-list
@@ -245,8 +249,8 @@ display:
       tags:
         - 'config:entityqueue.entity_queue.featured_links'
         - 'config:field.storage.node.field_featured_link'
-  block_1:
-    id: block_1
+  featured_links:
+    id: featured_links
     display_title: Block
     display_plugin: block
     position: 1

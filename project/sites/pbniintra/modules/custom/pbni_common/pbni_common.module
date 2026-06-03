@@ -1,6 +1,7 @@
 <?php
 
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\Entity\Node;
 
 /**
  * Implements hook_form_alter().
@@ -14,6 +15,11 @@ function pbni_common_form_node_form_alter(&$form, FormStateInterface $form_state
   if ($node->bundle() === 'resources') {
     $form['#validate'][] = 'pbni_common_validate_resources';
   }
+
+//  $node = Node::load('3454');
+//  $y = $node->get('field_external_url')->getValue()[0]['uri'];
+//  $z = $node->get('field_external_url')->getValue()[0]['title'];
+//  $x = 1;
 }
 
 /**
