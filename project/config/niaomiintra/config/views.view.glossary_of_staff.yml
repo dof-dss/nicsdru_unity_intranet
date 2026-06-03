@@ -1310,7 +1310,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<a>{{ field_first_name }} {{ title }}</a>'
+            text: '{{ field_first_name }} {{ title }}'
             make_link: false
             path: ''
             absolute: false
