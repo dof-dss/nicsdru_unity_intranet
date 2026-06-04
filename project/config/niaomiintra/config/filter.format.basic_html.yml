@@ -14,6 +14,7 @@ dependencies:
     - linkit
     - media
     - noreferrer
+    - origins_common
     - slick
 name: 'Basic HTML'
 format: basic_html
@@ -88,6 +89,13 @@ filters:
     status: true
     weight: 10
     settings: {  }
+  origins_media_cookie_content_blocker_embed_filter:
+    id: origins_media_cookie_content_blocker_embed_filter
+    provider: origins_common
+    status: false
+    weight: 0
+    settings:
+      replacement_text: 'Click here to view the video content'
   slick_filter:
     id: slick_filter
     provider: slick
@@ -99,7 +107,7 @@ filters:
         title: '0'
       optionset: default
       layout: ''
-      admin_uri: '/admin/config/content/formats/manage/basic_html?destination=/admin/config/content/formats&ajax_form=1&_wrapper_format=drupal_ajax&_wrapper_format=drupal_ajax'
+      admin_uri: '/admin/config/content/formats/manage/basic_html?destination=/admin/config/content/formats&ajax_form=1&_wrapper_format=drupal_ajax'
       background: false
       box_caption: ''
       box_caption_custom: ''
