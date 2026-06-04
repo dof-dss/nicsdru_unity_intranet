@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.uregni_information.field_jennys_blog_image
+    - field.field.node.uregni_information.field_meta_tags
     - field.field.node.uregni_information.field_ur_people_news_image
     - node.type.uregni_information
   module:
@@ -38,6 +39,7 @@ content:
     region: content
 hidden:
   content_moderation_control: true
+  field_meta_tags: true
   langcode: true
   links: true
   search_api_excerpt: true

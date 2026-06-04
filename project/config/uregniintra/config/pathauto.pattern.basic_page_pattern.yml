@@ -7,7 +7,7 @@ dependencies:
 id: basic_page_pattern
 label: 'Basic page pattern'
 type: 'canonical_entities:node'
-pattern: '[node:title]'
+pattern: '/[node:title]'
 selection_criteria:
   669b6f4a-4b06-489b-885a-78c54af90494:
     id: 'entity_bundle:node'
