@@ -15,11 +15,6 @@ function pbni_common_form_node_form_alter(&$form, FormStateInterface $form_state
   if ($node->bundle() === 'resources') {
     $form['#validate'][] = 'pbni_common_validate_resources';
   }
-
-//  $node = Node::load('3454');
-//  $y = $node->get('field_external_url')->getValue()[0]['uri'];
-//  $z = $node->get('field_external_url')->getValue()[0]['title'];
-//  $x = 1;
 }
 
 /**
@@ -51,5 +46,15 @@ function pbni_common_validate_resources(&$form, FormStateInterface $form_state) 
         $form_state->setErrorByName($error_name, t('URL must not be to the PBNI website, use the attachment field for documents on the PBNI website.'));
       }
     }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for fieldset.
+ */
+function pbni_common_preprocess_fieldset(&$variables) {
+  $element = &$variables['element'];
+  if ($element['#id'] == 'group-publications') {
+    $variables['legend_span']['attributes']['class'][] = 'js-form-required form-required';
   }
 }
