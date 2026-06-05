@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.jennys_blog
     - field.field.node.uregni_information.field_jennys_blog_image
+    - field.field.node.uregni_information.field_meta_tags
     - field.field.node.uregni_information.field_ur_people_news_image
     - node.type.uregni_information
   module:
@@ -15,6 +16,11 @@ targetEntityType: node
 bundle: uregni_information
 mode: jennys_blog
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   field_jennys_blog_image:
     type: image
     label: hidden
@@ -32,5 +38,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_meta_tags: true
   field_ur_people_news_image: true
   langcode: true
+  search_api_excerpt: true

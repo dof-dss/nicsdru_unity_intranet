@@ -68,12 +68,12 @@
 #}
 
 <article class="block-link">
-  <a href="{{ url }}">
+  <a href="{{ content.field_link[0]['#title'] }}">
       <div class="block-link__image">
         {{ content.field_photo }}
       </div>
       <div class="block-link__body">
-        <h2>
+        <h2 class="card__title">
           {{ node.label }}
         </h2>
       </div>

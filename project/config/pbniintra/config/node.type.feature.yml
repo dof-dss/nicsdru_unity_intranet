@@ -6,7 +6,8 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
 name: Feature
 type: feature
 description: null

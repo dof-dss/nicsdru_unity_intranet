@@ -11,13 +11,11 @@ dependencies:
     - blazy
     - ckeditor5_allowed_html
     - ckeditor5_premium_features
-    - cookie_content_blocker
     - editor
     - entity_embed
     - linkit
     - media
     - noreferrer
-    - origins_common
     - slick
     - token_filter
 _core:
@@ -46,12 +44,6 @@ filters:
     provider: ckeditor5_premium_features
     status: false
     weight: -50
-    settings: {  }
-  cookie_content_blocker_filter:
-    id: cookie_content_blocker_filter
-    provider: cookie_content_blocker
-    status: false
-    weight: -45
     settings: {  }
   editor_file_reference:
     id: editor_file_reference
@@ -162,13 +154,6 @@ filters:
     status: true
     weight: -47
     settings: {  }
-  origins_media_cookie_content_blocker_embed_filter:
-    id: origins_media_cookie_content_blocker_embed_filter
-    provider: origins_common
-    status: false
-    weight: -38
-    settings:
-      replacement_text: 'Click here to view the video content'
   slick_filter:
     id: slick_filter
     provider: slick

@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.staff_member.field_extension
     - field.field.node.staff_member.field_first_name
     - field.field.node.staff_member.field_job_title
+    - field.field.node.staff_member.field_meta_tags
     - field.field.node.staff_member.field_profile_image
     - node.type.staff_member
   module:
@@ -34,7 +35,7 @@ content:
     region: content
   field_first_name:
     type: string
-    label: hidden
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -42,7 +43,7 @@ content:
     region: content
   field_job_title:
     type: string
-    label: hidden
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -59,6 +60,7 @@ content:
     region: content
 hidden:
   content_moderation_control: true
+  field_meta_tags: true
   langcode: true
   links: true
   search_api_excerpt: true

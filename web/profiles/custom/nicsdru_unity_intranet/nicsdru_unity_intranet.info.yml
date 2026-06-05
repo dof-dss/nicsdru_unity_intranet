@@ -93,6 +93,7 @@ install:
   - options
   - origins_ckeditor_enhancements
   - origins_common
+  - origins_forms
   - origins_media
   - origins_metatag
   - origins_qa

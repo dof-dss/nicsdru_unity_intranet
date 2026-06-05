@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.staff_member.field_extension
     - field.field.node.staff_member.field_first_name
     - field.field.node.staff_member.field_job_title
+    - field.field.node.staff_member.field_meta_tags
     - field.field.node.staff_member.field_profile_image
     - node.type.staff_member
   module:
@@ -23,6 +24,7 @@ hidden:
   field_extension: true
   field_first_name: true
   field_job_title: true
+  field_meta_tags: true
   field_profile_image: true
   langcode: true
   links: true
