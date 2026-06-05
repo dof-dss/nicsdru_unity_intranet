@@ -16,8 +16,13 @@ matchers:
     settings:
       metadata: '[node:content-type:name] #[node:nid] | [node:created:medium] by [node:author]'
       bundles: {  }
-      group_by_bundle: false
-      include_unpublished: false
+      group_by_bundle: true
       substitution_type: canonical
       limit: 100
+      include_unpublished: true
+    weight: 0
+  260b96c4-2754-465c-b5f1-c8ecd9ecde14:
+    id: email
+    uuid: 260b96c4-2754-465c-b5f1-c8ecd9ecde14
+    settings: {  }
     weight: 0

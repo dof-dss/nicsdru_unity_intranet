@@ -132,14 +132,14 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: p
+          element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: false
+          element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -148,6 +148,7 @@ display:
           use_highlighting: true
           multi_type: separator
           multi_separator: ', '
+          filter_type: xss
         field_published_date:
           id: field_published_date
           table: search_api_index_default_content
@@ -159,8 +160,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: "<span>Published date: </span>\r\n<span>{{ field_published_date }}</span>"
             make_link: false
             path: ''
             absolute: false
@@ -185,12 +186,12 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: p
+          element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
+          element_wrapper_type: p
           element_wrapper_class: ''
           element_default_classes: false
           empty: ''
@@ -358,7 +359,7 @@ display:
       row:
         type: fields
         options:
-          default_field_elements: true
+          default_field_elements: false
           inline: {  }
           separator: ''
           hide_empty: false
