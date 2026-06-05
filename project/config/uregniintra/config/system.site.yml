@@ -3,7 +3,7 @@ _core:
 langcode: en
 uuid: 744ca88a-4d90-45af-8c60-ee844b67db60
 name: 'Utility Regulator Intranet'
-mail: test@test.com
+mail: noreply@email.uregni.gov.uk
 slogan: ''
 page:
   403: ''
@@ -12,5 +12,5 @@ page:
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
-frontpage_title: 'Welcome to Drupal site'
-frontpage_show_title: 0
+frontpage_title: 'Welcome to Utility Regulator Intranet'
+frontpage_show_title: false

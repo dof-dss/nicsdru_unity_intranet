@@ -7,7 +7,7 @@ dependencies:
 id: staff_member_pattern
 label: 'Staff member pattern'
 type: 'canonical_entities:node'
-pattern: 'people/[node:title]'
+pattern: '/people/[node:title]'
 selection_criteria:
   e38accd1-9bb1-4f72-b616-cd451d0f536d:
     id: 'entity_bundle:node'

@@ -1,0 +1,21 @@
+uuid: 60813e74-9527-4a34-ade5-3db8b6d2ae43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.uregni_information
+  module:
+    - metatag
+id: node.uregni_information.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: uregni_information
+label: 'Meta tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

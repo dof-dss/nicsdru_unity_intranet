@@ -87,6 +87,44 @@
   }
 }
 
+.staff-profile-card {
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+
+    .profile-info {
+      flex: 1;
+    }
+
+    .profile-image {
+      flex-shrink: 0;
+      width: 250px;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .name-title {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+
+        .staff-name,
+        .staff-surname {
+          margin: 0;
+          font-size: 3rem;
+          line-height: 1.1;
+        }
+      }
+    }
+  }
+}
+
+
 
 a.btn.top-right-btn {
   position: absolute;

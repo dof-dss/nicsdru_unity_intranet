@@ -1,25 +1,23 @@
-uuid: 87160d00-cf23-404f-8706-5913a406eb71
+uuid: 35edaff5-2cf5-4359-9970-d65904c82869
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.basic_page
-    - node.type.webform
+    - node.type.uregni_information
   module:
     - node
-id: basic_page_pattern
-label: 'Basic page pattern'
+id: uregni_info_pattern
+label: 'Uregni Info Pattern'
 type: 'canonical_entities:node'
-pattern: '/[node:title]'
+pattern: '/uregni-information/[node:title]'
 selection_criteria:
-  669b6f4a-4b06-489b-885a-78c54af90494:
+  ceda1275-0cf5-4c86-82ed-1e25b0a46c17:
     id: 'entity_bundle:node'
     negate: false
     context_mapping:
       node: node
     bundles:
-      basic_page: basic_page
-      webform: webform
+      uregni_information: uregni_information
 selection_logic: and
 weight: -5
 relationships: {  }
