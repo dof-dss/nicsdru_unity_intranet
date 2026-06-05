@@ -2,14 +2,23 @@ uuid: 535515bd-66f9-427a-b49c-1b536badebdb
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.noticeboard
   module:
     - node
 id: node_noticeboard
 label: 'Content - Noticeboard'
 type: 'canonical_entities:node'
-pattern: 'noticeboard/[node:field-type:tid]/[node:title]'
+pattern: '/noticeboard/[node:title]'
 selection_criteria:
-  -
+  0:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      noticeboard: noticeboard
+  b3148556-34d8-4b82-a9cd-198ae1ccac8a:
     id: 'entity_bundle:node'
     negate: false
     context_mapping:

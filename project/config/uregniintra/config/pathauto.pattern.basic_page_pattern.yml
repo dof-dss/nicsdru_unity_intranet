@@ -2,6 +2,9 @@ uuid: 87160d00-cf23-404f-8706-5913a406eb71
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.basic_page
+    - node.type.webform
   module:
     - node
 id: basic_page_pattern
@@ -12,7 +15,6 @@ selection_criteria:
   669b6f4a-4b06-489b-885a-78c54af90494:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 669b6f4a-4b06-489b-885a-78c54af90494
     context_mapping:
       node: node
     bundles:
