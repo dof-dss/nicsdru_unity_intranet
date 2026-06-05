@@ -44,7 +44,7 @@ backend_config:
     host: uregniintra_solr.internal
     port: 8080
     path: /
-    core: uregni_index
+    core: uregniintra_index
     timeout: 5
     index_timeout: 5
     optimize_timeout: 10
