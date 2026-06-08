@@ -19,7 +19,7 @@ mode: default
 content:
   field_email:
     type: email_mailto
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 4
