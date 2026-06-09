@@ -11,7 +11,7 @@ dependencies:
 id: investorslogo
 theme: uregni_theme
 region: footer_first
-weight: 0
+weight: -13
 provider: null
 plugin: 'block_content:380ae700-3db6-4423-959b-6e155028b957'
 settings:

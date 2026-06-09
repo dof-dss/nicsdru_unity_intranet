@@ -1,0 +1,25 @@
+uuid: 51c1427d-ac4a-4674-a52c-43a84319db3a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feed_block:1037e965-0b72-4419-90f8-e33c27d962ab'
+  module:
+    - block_content
+  theme:
+    - uregni_theme
+id: uregninews
+theme: uregni_theme
+region: bottom_widget_6
+weight: 0
+provider: null
+plugin: 'block_content:1037e965-0b72-4419-90f8-e33c27d962ab'
+settings:
+  id: 'block_content:1037e965-0b72-4419-90f8-e33c27d962ab'
+  label: 'UREGNI News'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
