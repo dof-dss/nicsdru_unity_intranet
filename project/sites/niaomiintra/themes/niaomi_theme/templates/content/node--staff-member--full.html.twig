@@ -22,34 +22,34 @@
 ]
 %}
 
-<a href="/staff-profiles" class="btn btn-primary btn-staff-page">Back to People</a>
-
 <div class="staff-profile-card">
   <div class="profile-header">
     <div class="profile-info">
       <div class="name-title">
         {% if content.field_first_name['#items'] is not empty %}
-          <h1 class="staff-name">{{ content.field_first_name }}</h1>
+          <h2>First name</h2>
+          <div class="staff-name">{{ content.field_first_name }}</div>
         {% endif %}
       </div>
 
       {% if content.field_job_title['#items'] is not empty %}
         <div class="field-job-title">
-          <h2 class="staff-job-title">{{ content.field_job_title }}</h2>
+          <h2>Job title:</h2>
+          <div class="staff-job-title">{{ content.field_job_title }}</div>
         </div>
       {% endif %}
 
       <div class="profile-details">
         {% if content.field_email['#items'] is not empty %}
           <div class="field-email">
-            <strong>Email:</strong>
+            <h2>Email:</h2>
             <div class="field-content">{{ content.field_email }}</div>
           </div>
         {% endif %}
 
         {% if content.field_extension['#items'] is not empty %}
           <div class="field-extension">
-            <strong>Extension:</strong>
+            <h2>Extension:</h2>
             <div class="field-content">{{ content.field_extension }}</div>
           </div>
         {% endif %}
@@ -57,6 +57,7 @@
     </div>
 
     {% if content.field_profile_image['#items'] is not empty %}
+      <h2>Profile image</h2>
       <div class="profile-image">
         {{ content.field_profile_image }}
       </div>
