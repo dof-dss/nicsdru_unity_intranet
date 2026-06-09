@@ -1,0 +1,25 @@
+uuid: b92ab708-5b8b-42cf-9932-06bd66905655
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feed_block:b88fe719-d2cc-4c43-b7c6-1ac932ecdc0e'
+  module:
+    - block_content
+  theme:
+    - uregni_theme
+id: trafficwatchfeed
+theme: uregni_theme
+region: bottom_widget_4
+weight: -13
+provider: null
+plugin: 'block_content:b88fe719-d2cc-4c43-b7c6-1ac932ecdc0e'
+settings:
+  id: 'block_content:b88fe719-d2cc-4c43-b7c6-1ac932ecdc0e'
+  label: 'Trafficwatch feed'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
