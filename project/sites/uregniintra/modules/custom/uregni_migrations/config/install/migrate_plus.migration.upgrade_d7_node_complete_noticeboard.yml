@@ -18,7 +18,7 @@ process:
   nid:
     -
       plugin: get
-      source: tnid
+      source: nid
   vid:
     -
       plugin: get
