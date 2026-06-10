@@ -34,9 +34,11 @@
   }
 }
 
-#bottom-area {
+#bottom-area-row-1,
+#bottom-area-row-2 {
   text-align: left;
   margin: 2rem auto;
+
   @media screen and (max-width: $tab) {
     float: none !important;
     width: auto !important;
@@ -50,6 +52,7 @@
     background: $grey-light;
     padding: 2rem;
     width: 50%;
+
     @media screen and (max-width: $tab) {
       width: auto;
     }
