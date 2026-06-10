@@ -7,7 +7,7 @@ dependencies:
 id: document_pattern
 label: 'Document pattern'
 type: 'canonical_entities:node'
-pattern: 'documents/[node:title]'
+pattern: '/documents/[node:title]'
 selection_criteria:
   4b1ecf1d-d71b-433e-aa42-ffe57642a263:
     id: 'entity_bundle:node'
