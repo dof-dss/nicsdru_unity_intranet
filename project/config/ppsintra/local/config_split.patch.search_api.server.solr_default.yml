@@ -2,7 +2,6 @@ adding:
   backend_config:
     connector_config:
       host: solr
-      port: 8983
       core: ppsintra
       skip_schema_check: true
       solr_install_dir: /opt/solr
@@ -12,13 +11,10 @@ adding:
       context: solr
       username: solr
       password: SolrRocks
-    index_empty_text_fields: false
-    suppress_missing_languages: false
 removing:
   backend_config:
     connector_config:
       host: ppsintra_solr.internal
-      port: 8080
       core: ppsintra_index
       skip_schema_check: false
       solr_install_dir: ''
