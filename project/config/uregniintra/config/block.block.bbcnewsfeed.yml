@@ -1,0 +1,25 @@
+uuid: 449d4a4b-6539-481a-8250-99c015e3efe4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feed_block:43c92e12-84c9-4060-8b90-ca9f832540f2'
+  module:
+    - block_content
+  theme:
+    - uregni_theme
+id: bbcnewsfeed
+theme: uregni_theme
+region: bottom_widget_5
+weight: -13
+provider: null
+plugin: 'block_content:43c92e12-84c9-4060-8b90-ca9f832540f2'
+settings:
+  id: 'block_content:43c92e12-84c9-4060-8b90-ca9f832540f2'
+  label: 'BBC news feed'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,7 +1,4 @@
 adding:
-  dependencies:
-    config:
-      - search_api_solr.solr_field_type.text_string_und_6_0_0
   backend_config:
     connector_config:
       host: solr
@@ -15,8 +12,6 @@ adding:
       context: solr
       username: solr
       password: SolrRocks
-    index_empty_text_fields: false
-    suppress_missing_languages: false
 removing:
   backend_config:
     connector_config:
