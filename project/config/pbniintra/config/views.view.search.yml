@@ -155,7 +155,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: search_api_field
-          label: ''
+          label: 'Date published'
           exclude: false
           alter:
             alter_text: false
@@ -184,12 +184,12 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: p
+          element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
+          element_label_colon: true
+          element_wrapper_type: p
           element_wrapper_class: ''
           element_default_classes: false
           empty: ''
