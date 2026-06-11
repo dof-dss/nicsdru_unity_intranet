@@ -93,6 +93,10 @@ process:
       to_ref: files/niaomi
     -
       plugin: site_files_filter
+      from_ref: sites/niao-intranet/files
+      to_ref: files/niaomi
+    -
+      plugin: site_files_filter
       from_ref: sites/drupal-niaomi.intranet.nigov.net/files
       to_ref: files/niaomi
     -
