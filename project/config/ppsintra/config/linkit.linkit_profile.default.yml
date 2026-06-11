@@ -21,3 +21,8 @@ matchers:
       limit: 100
       include_unpublished: false
     weight: 0
+  bd257330-ef87-427a-abc8-782c4d845d39:
+    id: email
+    uuid: bd257330-ef87-427a-abc8-782c4d845d39
+    settings: {  }
+    weight: 0
