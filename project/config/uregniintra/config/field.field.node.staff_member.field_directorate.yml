@@ -1,14 +1,14 @@
-uuid: b4abcd37-1eb3-4eaa-8b11-a4db6b1ec77e
+uuid: da65ee3a-276b-4afe-8ba6-bd7545807fd3
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_directorate
-    - node.type.uregni_staff_member
-id: node.uregni_staff_member.field_directorate
+    - node.type.staff_member
+id: node.staff_member.field_directorate
 field_name: field_directorate
 entity_type: node
-bundle: uregni_staff_member
+bundle: staff_member
 label: Directorate
 description: 'Please add the directorate of the staff member.'
 required: false
