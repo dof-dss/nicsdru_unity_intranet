@@ -7,7 +7,7 @@ dependencies:
 id: landing_pattern
 label: 'Landing pattern'
 type: 'canonical_entities:node'
-pattern: 'landing-pages/[node:title]'
+pattern: '/landing-pages/[node:title]'
 selection_criteria:
   eb14237b-6ec9-464b-aca8-bbf41bd8341a:
     id: 'entity_bundle:node'

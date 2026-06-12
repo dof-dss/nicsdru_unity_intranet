@@ -15,52 +15,43 @@
  * @see template_preprocess_views_view_unformatted()
  */
 #}
-{%
-  set row_classes = [
+{% set row_classes = [
   'views-row',
   'board-card'
-]
-%}
-<a href="/staff-profiles" class="btn btn-primary btn-staff-page">Back to People</a>
+] %}
+<a href="/staff-profiles" class="btn btn-primary btn-staff-page">Back to
+  People</a>
 <div class="staff-profile-card">
-  <div class="profile-header">
 
     <div class="profile-info">
+      <h2 class="staff-name">{{ content.field_first_name }} {{ node.title.value }}</h2>
+      <h3>{{ content.field_title }}
+        {% if content.field_directorate %}
+        {{ '- '|t }}{{ content.field_directorate }}
+      {% endif %}
+      </h3>
 
-      <div class="name-title">
-        {% if content.field_first_name %}
-          <h2 class="staff-name">{{ content.field_first_name }}</h2>
+
+
+        {% if content.field_extension %}
+            {{ content.field_extension }}
         {% endif %}
 
-        {% if node.title.value %}
-          <h2 class="staff-surname">{{ node.title.value }}</h2>
+        {% if content.field_mobile %}
+            {{ content.field_mobile }}
         {% endif %}
-      </div>
-
-      {% if content.field_title %}
-        <div class="field-job-title">
-          <h3>{{ content.field_title }}<h3>
-        </div>
-      {% endif %}
-
-      {% if content.field_extension %}
-        <div class="field-extension">
-          {{ content.field_extension }}
-        </div>
-      {% endif %}
-
-      {% if content.field_mobile %}
-        <div class="field-mobile">
-          {{ content.field_mobile }}
-        </div>
-      {% endif %}
-
     </div>
 
+
     {% if content.field_profile_image %}
-      <div class="profile-image">
+      <div class="staff-profile-image">
         {{ content.field_profile_image }}
       </div>
+    {% else %}
+      <div class="staff-profile-image">
+        <img
+          src="sites/uregniintra/themes/poniintra_theme/images/no-image-placeholder.png"
+          alt="">
+      </div>
     {% endif %}
-  </div>
 </div>

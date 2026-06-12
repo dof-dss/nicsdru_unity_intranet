@@ -96,7 +96,7 @@ process:
     -
       plugin: get
       source: field_first_name
-  field_profile_image:
+  field_photo:
     -
       plugin: sub_process
       source: field_profile_image
@@ -125,7 +125,7 @@ process:
 destination:
   plugin: 'entity_complete:node'
   translations: true
-  default_bundle: uregni_staff_member
+  default_bundle: staff_member
 migration_dependencies:
   required:
     - upgrade_d7_user

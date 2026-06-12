@@ -8,7 +8,7 @@ _core:
   default_config_hash: BEwxpaTLGk0wysHTjm6SKJFxd3K9CEF-x94D8H79j1Y
 title: 'Deletes temporary files'
 id: file_cron
-weight: -1
+weight: -3
 module: file
 callback: 'file#cron'
 scheduler:

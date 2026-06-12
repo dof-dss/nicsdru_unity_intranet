@@ -5,11 +5,11 @@ dependencies:
   config:
     - field.storage.node.field_extension
     - field.storage.node.field_first_name
-    - field.storage.node.field_profile_image
+    - field.storage.node.field_photo
     - field.storage.node.field_title
     - image.style.member_small_image_x1
     - image.style.member_small_image_x2
-    - node.type.uregni_staff_member
+    - node.type.staff_member
   module:
     - image
     - node
@@ -30,10 +30,10 @@ display:
     display_options:
       title: 'Glossary of staff'
       fields:
-        field_profile_image:
-          id: field_profile_image
-          table: node__field_profile_image
-          field: field_profile_image
+        field_photo:
+          id: field_photo
+          table: node__field_photo
+          field: field_photo
           relationship: none
           group_type: group
           admin_label: ''
@@ -450,7 +450,7 @@ display:
           entity_field: type
           plugin_id: bundle
           value:
-            uregni_staff_member: uregni_staff_member
+            staff_member: staff_member
       style:
         type: default
       row:
@@ -500,7 +500,7 @@ display:
       tags:
         - 'config:field.storage.node.field_extension'
         - 'config:field.storage.node.field_first_name'
-        - 'config:field.storage.node.field_profile_image'
+        - 'config:field.storage.node.field_photo'
         - 'config:field.storage.node.field_title'
   glossary_attachment:
     id: glossary_attachment
@@ -702,10 +702,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_profile_image:
-          id: field_profile_image
-          table: node__field_profile_image
-          field: field_profile_image
+        field_photo:
+          id: field_photo
+          table: node__field_photo
+          field: field_photo
           relationship: none
           group_type: group
           admin_label: ''
@@ -851,7 +851,7 @@ display:
       tags:
         - 'config:field.storage.node.field_extension'
         - 'config:field.storage.node.field_first_name'
-        - 'config:field.storage.node.field_profile_image'
+        - 'config:field.storage.node.field_photo'
   glossary_page:
     id: glossary_page
     display_title: Page
@@ -915,5 +915,5 @@ display:
       tags:
         - 'config:field.storage.node.field_extension'
         - 'config:field.storage.node.field_first_name'
-        - 'config:field.storage.node.field_profile_image'
+        - 'config:field.storage.node.field_photo'
         - 'config:field.storage.node.field_title'

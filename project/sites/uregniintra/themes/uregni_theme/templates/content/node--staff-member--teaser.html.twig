@@ -1,0 +1,42 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+<article class="staff-profile">
+
+    <div class="profile-info">
+      <h2 class="staff-name">{{ content.field_first_name }} {{ node.title.value }}</h2>
+      <h3>{{ content.field_title }}</h3>
+
+      {% if content.field_extension %}
+        {{ content.field_extension }}
+      {% endif %}
+
+    </div>
+
+
+    {% if content.field_photo %}
+      <div class="staff-profile-image">
+        {{ content.field_photo }}
+      </div>
+    {% else %}
+      <div class="staff-profile-image">
+        <img
+          src="sites/uregniintra/themes/poniintra_theme/images/no-image-placeholder.png"
+          alt="">
+      </div>
+    {% endif %}
+</article>

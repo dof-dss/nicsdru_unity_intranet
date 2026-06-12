@@ -7,7 +7,7 @@ dependencies:
 id: legal_guidance_pattern
 label: 'Legal guidance pattern'
 type: 'canonical_entities:node'
-pattern: 'legal-guidance/[node:title]'
+pattern: '/legal-guidance/[node:title]'
 selection_criteria:
   7cad1a1c-0b09-4b41-90fb-f83e2991875e:
     id: 'entity_bundle:node'

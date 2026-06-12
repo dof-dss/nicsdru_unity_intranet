@@ -91,11 +91,11 @@ process:
     -
       plugin: site_files_filter
       from_ref: sites/nipb-intranet/files
-      to_ref: files/nipb
+      to_ref: files/nipbintra
     -
       plugin: site_files_filter
       from_ref: sites/nipb.intranet.nigov.net/files
-      to_ref: files/nipb
+      to_ref: files/nipbintra
   body/0/format:
     -
       plugin: static_map
