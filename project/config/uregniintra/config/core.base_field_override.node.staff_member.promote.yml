@@ -1,13 +1,13 @@
-uuid: a6cede70-7514-42d6-8c3e-ffa76993ca72
+uuid: 8ade53e0-6a93-43ca-8884-d0828f3d7d62
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.uregni_staff_member
-id: node.uregni_staff_member.promote
+    - node.type.staff_member
+id: node.staff_member.promote
 field_name: promote
 entity_type: node
-bundle: uregni_staff_member
+bundle: staff_member
 label: 'Promoted to front page'
 description: ''
 required: false

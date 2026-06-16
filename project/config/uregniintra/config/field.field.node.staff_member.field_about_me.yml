@@ -1,14 +1,14 @@
-uuid: a7cca480-d59a-4a15-8332-9c022205bd26
+uuid: 52321dd6-06a0-40ea-bc95-2a330d5a81b6
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_about_me
-    - node.type.uregni_staff_member
-id: node.uregni_staff_member.field_about_me
+    - node.type.staff_member
+id: node.staff_member.field_about_me
 field_name: field_about_me
 entity_type: node
-bundle: uregni_staff_member
+bundle: staff_member
 label: 'A bit about me'
 description: 'Please add a bit about the staff member.'
 required: false

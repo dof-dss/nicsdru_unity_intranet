@@ -1,13 +1,13 @@
-uuid: 9bdebbaf-68a8-41b9-ad2b-9020620a4f05
+uuid: ed475fcd-011b-4509-af23-ea864494a087
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.uregni_staff_member
-id: node.uregni_staff_member.status
+    - node.type.staff_member
+id: node.staff_member.status
 field_name: status
 entity_type: node
-bundle: uregni_staff_member
+bundle: staff_member
 label: Published
 description: ''
 required: false
