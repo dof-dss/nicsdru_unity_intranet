@@ -1,14 +1,14 @@
-uuid: 251e3e6d-ec81-46fe-8c61-91da9043db51
+uuid: bf6f9585-b862-487a-a91e-61c85f1b05d8
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_title
-    - node.type.uregni_staff_member
-id: node.uregni_staff_member.field_title
+    - node.type.staff_member
+id: node.staff_member.field_title
 field_name: field_title
 entity_type: node
-bundle: uregni_staff_member
+bundle: staff_member
 label: Title
 description: 'Please add the staff member title.'
 required: true

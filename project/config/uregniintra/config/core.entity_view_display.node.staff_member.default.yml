@@ -1,26 +1,25 @@
-uuid: 46d22276-e5e4-4ce7-9d83-6f278edecb04
+uuid: 08a76839-3623-4892-bff8-f1b3f4bc9e45
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.uregni_staff_member.field_about_me
-    - field.field.node.uregni_staff_member.field_directorate
-    - field.field.node.uregni_staff_member.field_extension
-    - field.field.node.uregni_staff_member.field_find_me
-    - field.field.node.uregni_staff_member.field_first_name
-    - field.field.node.uregni_staff_member.field_meta_tags
-    - field.field.node.uregni_staff_member.field_mobile
-    - field.field.node.uregni_staff_member.field_profile_image
-    - field.field.node.uregni_staff_member.field_title
-    - field.field.node.uregni_staff_member.field_work_pattern
-    - image.style.large
-    - node.type.uregni_staff_member
+    - field.field.node.staff_member.field_about_me
+    - field.field.node.staff_member.field_directorate
+    - field.field.node.staff_member.field_extension
+    - field.field.node.staff_member.field_find_me
+    - field.field.node.staff_member.field_first_name
+    - field.field.node.staff_member.field_meta_tags
+    - field.field.node.staff_member.field_mobile
+    - field.field.node.staff_member.field_photo
+    - field.field.node.staff_member.field_title
+    - field.field.node.staff_member.field_work_pattern
+    - node.type.staff_member
   module:
-    - image
+    - metatag
     - user
-id: node.uregni_staff_member.default
+id: node.staff_member.default
 targetEntityType: node
-bundle: uregni_staff_member
+bundle: staff_member
 mode: default
 content:
   field_about_me:
@@ -63,6 +62,13 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
   field_mobile:
     type: string
     label: hidden
@@ -71,16 +77,14 @@ content:
     third_party_settings: {  }
     weight: 5
     region: content
-  field_profile_image:
-    type: image
-    label: hidden
+  field_photo:
+    type: entity_reference_entity_view
+    label: above
     settings:
-      image_link: ''
-      image_style: large
-      image_loading:
-        attribute: lazy
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    weight: 8
+    weight: 102
     region: content
   field_title:
     type: string
@@ -98,9 +102,11 @@ content:
     third_party_settings: {  }
     weight: 6
     region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
 hidden:
-  content_moderation_control: true
-  field_meta_tags: true
   langcode: true
-  links: true
   search_api_excerpt: true

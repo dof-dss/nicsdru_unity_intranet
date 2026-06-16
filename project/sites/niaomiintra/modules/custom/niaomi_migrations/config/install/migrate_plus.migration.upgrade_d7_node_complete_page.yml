@@ -94,11 +94,11 @@ process:
     -
       plugin: site_files_filter
       from_ref: sites/niao-intranet/files
-      to_ref: files/niaomi
+      to_ref: files/niaomiintra
     -
       plugin: site_files_filter
       from_ref: sites/drupal-niaomi.intranet.nigov.net/files
-      to_ref: files/niaomi
+      to_ref: files/niaomiintra
     -
       plugin: str_replace
       regex: true

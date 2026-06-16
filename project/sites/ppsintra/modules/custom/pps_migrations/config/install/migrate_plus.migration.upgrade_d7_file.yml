@@ -35,7 +35,7 @@ process:
     -
       plugin: str_replace
       search: /sites/default/files
-      replace: /
+      replace: ""
     -
       plugin: urlencode
   uri:

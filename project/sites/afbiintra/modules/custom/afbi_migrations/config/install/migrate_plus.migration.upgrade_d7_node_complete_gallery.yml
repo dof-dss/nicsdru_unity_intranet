@@ -91,11 +91,16 @@ process:
     -
       plugin: site_files_filter
       from_ref: sites/afbi/files
-      to_ref: files/afbi
+      to_ref: files/afbiintra
+
+    -
+      plugin: site_files_filter
+      from_ref: sites/afbi-intranet/files
+      to_ref: files/afbiintra
     -
       plugin: site_files_filter
       from_ref: sites/afbi.intranet.nigov.net/files
-      to_ref: files/afbi
+      to_ref: files/afbiintra
   body/0/format:
     -
       plugin: static_map

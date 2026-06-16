@@ -181,7 +181,9 @@ display:
       cache:
         type: custom_tag
         options:
-          custom_tag: 'handy_cache_tags:node:link'
+          custom_tag: "handy_cache_tags:node:link\r\nentity_subqueue:quick_links_queue"
+          custom_tag_output_lifespan: '-1'
+          custom_tag_output_lifespan_expression: ''
       empty: {  }
       sorts:
         entityqueue_relationship:
@@ -305,8 +307,6 @@ display:
       tags:
         - 'config:entityqueue.entity_queue.quick_links_queue'
         - 'config:field.storage.node.field_url'
-        - entity_field_info
-        - views_data
   featured_links:
     id: featured_links
     display_title: 'Featured Links'
@@ -418,8 +418,6 @@ display:
       tags:
         - 'config:entityqueue.entity_queue.featured_links_queue'
         - 'config:field.storage.node.field_url'
-        - entity_field_info
-        - views_data
   quick_links:
     id: quick_links
     display_title: 'Quick Links'
@@ -441,5 +439,3 @@ display:
       tags:
         - 'config:entityqueue.entity_queue.quick_links_queue'
         - 'config:field.storage.node.field_url'
-        - entity_field_info
-        - views_data
