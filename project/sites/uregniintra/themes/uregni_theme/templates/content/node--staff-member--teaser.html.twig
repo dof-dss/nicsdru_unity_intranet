@@ -16,35 +16,27 @@
  */
 #}
 <a href="/staff-profiles/{{ node.title.value }}">
-<article class="staff-profile-card">
+<article>
+  {% if content.field_photo['#items'] %}
+    {{ content.field_photo }}
+  {% else %}
+    <img
+      src="sites/uregniintra/themes/uregni_theme/images/no-image-placeholder.png"
+      alt="" height="198">
+  {% endif %}
 
-  <div class="profile-info">
     <h3 class="staff-name">{{ content.field_first_name }} {{ node.title.value }}</h3>
     <p>{{ content.field_title }}
-      {% if content.field_directorate %}
+      {% if content.field_directorate['#items'] %}
         {{ '- '|t }}{{ content.field_directorate }}
       {% endif %}
     </p>
 
-    {% if content.field_extension %}
+    {% if content.field_extension['#items'] %}
       <p>
         <span>{{ 'Extension: '|t }}</span>
         <span>{{ content.field_extension }}</span>
       </p>
     {% endif %}
-  </div>
-
-
-  {% if content.field_photo %}
-    <div class="staff-profile-image">
-      {{ content.field_photo }}
-    </div>
-  {% else %}
-    <div class="staff-profile-image">
-      <img
-        src="sites/uregniintra/themes/poniintra_theme/images/no-image-placeholder.png"
-        alt="">
-    </div>
-  {% endif %}
 </article>
 </a>
