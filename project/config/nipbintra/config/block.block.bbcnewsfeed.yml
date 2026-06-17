@@ -1,0 +1,25 @@
+uuid: 7257ed54-5984-4b9a-8d08-91c927969b3c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feed_block:b86ba2cb-06ef-44ec-9f39-b0aba365edb6'
+  module:
+    - block_content
+  theme:
+    - nipb_theme
+id: bbcnewsfeed
+theme: nipb_theme
+region: bottom_widget_2
+weight: 0
+provider: null
+plugin: 'block_content:b86ba2cb-06ef-44ec-9f39-b0aba365edb6'
+settings:
+  id: 'block_content:b86ba2cb-06ef-44ec-9f39-b0aba365edb6'
+  label: 'BBC news feed'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

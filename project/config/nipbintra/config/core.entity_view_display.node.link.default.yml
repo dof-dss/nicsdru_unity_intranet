@@ -15,21 +15,13 @@ targetEntityType: node
 bundle: link
 mode: default
 content:
-  field_link_language:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: false
-    third_party_settings: {  }
-    weight: 1
-    region: content
   field_link_type:
     type: entity_reference_label
     label: above
     settings:
       link: false
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_link_url:
     type: link
@@ -45,6 +37,7 @@ content:
     region: content
 hidden:
   content_moderation_control: true
+  field_link_language: true
   langcode: true
   links: true
   search_api_excerpt: true
