@@ -15,7 +15,6 @@ dependencies:
     - field.field.node.staff_member.field_work_pattern
     - node.type.staff_member
   module:
-    - metatag
     - user
 id: node.staff_member.default
 targetEntityType: node
@@ -62,13 +61,6 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_meta_tags:
-    type: metatag_empty_formatter
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 101
-    region: content
   field_mobile:
     type: string
     label: hidden
@@ -81,10 +73,10 @@ content:
     type: entity_reference_entity_view
     label: above
     settings:
-      view_mode: default
+      view_mode: member_image_small
       link: false
     third_party_settings: {  }
-    weight: 102
+    weight: 8
     region: content
   field_title:
     type: string
@@ -102,11 +94,9 @@ content:
     third_party_settings: {  }
     weight: 6
     region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
-    region: content
 hidden:
+  content_moderation_control: true
+  field_meta_tags: true
   langcode: true
+  links: true
   search_api_excerpt: true
