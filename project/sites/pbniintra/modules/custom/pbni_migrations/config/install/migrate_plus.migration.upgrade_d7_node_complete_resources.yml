@@ -72,7 +72,7 @@ process:
         https://pbni.intranet.nigov.net
     - plugin: site_files_filter
       from_ref: sites/pbni-intranet/files
-      to_ref: files/pbni
+      to_ref: files/pbniintra
   body/0/format:
     - plugin: static_map
       bypass: true

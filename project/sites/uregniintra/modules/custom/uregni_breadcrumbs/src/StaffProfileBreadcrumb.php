@@ -90,7 +90,7 @@ class StaffProfileBreadcrumb implements BreadcrumbBuilderInterface {
         $this->node = $this->entityTypeManager->getStorage('node')->load($this->node);
       }
       if (!empty($this->node)) {
-        if ($this->node->bundle() == 'uregni_staff_member') {
+        if ($this->node->bundle() == 'staff_member') {
           $match = TRUE;
         }
       }

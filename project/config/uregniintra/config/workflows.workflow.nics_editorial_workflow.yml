@@ -11,8 +11,8 @@ dependencies:
     - node.type.news
     - node.type.noticeboard
     - node.type.publication
+    - node.type.staff_member
     - node.type.uregni_information
-    - node.type.uregni_staff_member
   module:
     - content_moderation
 _core:
@@ -113,6 +113,6 @@ type_settings:
       - news
       - noticeboard
       - publication
+      - staff_member
       - uregni_information
-      - uregni_staff_member
   default_moderation_state: draft

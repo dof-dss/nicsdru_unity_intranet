@@ -1,16 +1,16 @@
-uuid: 179d91c8-08a7-4bed-b066-38bcd2a75bd1
+uuid: 46cbfd89-3d51-4688-9dbe-1f60b1487e46
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_meta_tags
-    - node.type.uregni_staff_member
+    - node.type.staff_member
   module:
     - metatag
-id: node.uregni_staff_member.field_meta_tags
+id: node.staff_member.field_meta_tags
 field_name: field_meta_tags
 entity_type: node
-bundle: uregni_staff_member
+bundle: staff_member
 label: 'Meta tags'
 description: ''
 required: false

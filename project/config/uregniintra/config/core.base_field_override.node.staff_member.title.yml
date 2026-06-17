@@ -1,13 +1,13 @@
-uuid: 6de5f733-8544-4541-ae68-b75e00e98b61
+uuid: 85984b15-d92b-492a-a57a-4df102e77ab3
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.uregni_staff_member
-id: node.uregni_staff_member.title
+    - node.type.staff_member
+id: node.staff_member.title
 field_name: title
 entity_type: node
-bundle: uregni_staff_member
+bundle: staff_member
 label: Surname
 description: ''
 required: true
