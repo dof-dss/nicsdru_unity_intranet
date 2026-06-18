@@ -7,6 +7,7 @@ dependencies:
     - node.type.events
   module:
     - node
+    - smart_date
     - user
     - views_custom_cache_tag
 id: upcoming_events
@@ -112,7 +113,21 @@ display:
         options:
           custom_tag: 'node_list:events'
       empty: {  }
-      sorts: {  }
+      sorts:
+        field_event_date_value:
+          id: field_event_date_value
+          table: node__field_event_date
+          field: field_event_date_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: date
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
       arguments: {  }
       filters:
         status:
@@ -135,6 +150,52 @@ display:
           plugin_id: bundle
           value:
             events: events
+        field_event_date_end_value:
+          id: field_event_date_end_value
+          table: node__field_event_date
+          field: field_event_date_end_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: date
+          operator: '>'
+          value:
+            min: ''
+            max: ''
+            value: '+1 day'
+            type: offset
+            granularity: second
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
         type: default
         options:
