@@ -14,7 +14,7 @@
   .column:last-child {
     border: 1px solid #0084cb;
     border-top: 5rem solid #0084cb;
-    }
+  }
 
   h3 {
     @include adjust-font-size-to(18px);
@@ -50,8 +50,7 @@
 
     .staff-member {
       margin: 0 5% 5% 0;
-      flex-basis: 47%;
-      padding: 2.5rem 2rem 2rem 2.5rem;
+      width: 31rem;
       border: 1px solid #0c5e22;
       border-bottom-width: 1rem;
       min-height: 22rem;
@@ -60,70 +59,56 @@
         margin-right: 0;
       }
 
-      div:nth-child(3), div:nth-child(4)  {
+      div:nth-child(3), div:nth-child(4) {
         margin: 1.2rem 0 0;
       }
 
       h3 {
-        margin: 0;
+        margin: 1rem 0 0;
         padding-bottom: 1rem;
-      }
-
-      p {
-        display: inline-block;
-      }
-
-      p[data-once="emptyTags"] {
-        display: inline;
-        margin-bottom: 0;
+        color: $link;
       }
     }
 
     .staff-member img {
-      float: right;
       border: 1px solid $black;
-      margin: 2%;
+      width: 15rem;
+      min-height: 20rem;
+
     }
   }
 }
 
 .staff-profile-card {
-  .profile-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
 
-    .profile-info {
-      flex: 1;
+  .profile-info {
+    flex: 1;
+
+    h2 {
+      margin-top: 0;
     }
 
-    .profile-image {
-      flex-shrink: 0;
-      width: 250px;
+    h3 {
+      margin-top: 1rem;
+    }
+  }
 
-      img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
+  .staff-profile-image {
+    flex: 1;
+    flex-shrink: 0;
+    width: 250px;
 
-      .name-title {
-        display: flex;
-        align-items: flex-start;
-        gap: 0.5rem;
-
-        .staff-name,
-        .staff-surname {
-          margin: 0;
-          font-size: 3rem;
-          line-height: 1.1;
-        }
-      }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
   }
 }
-
 
 
 a.btn.top-right-btn {
@@ -147,6 +132,32 @@ a.btn.top-right-btn {
     }
   }
 }
+
+.node-type-staff-member {
+  .staff-profile-card {
+    padding: 2rem;
+    border: 1px solid $black;
+  }
+}
+
+#content #block-mainpagecontent .staff-members .view-content .staff-member a {
+  border: none;
+  margin: 0;
+  padding: 2.5rem 2rem 2rem 2.5rem;
+  display: block;
+  height: 100%;
+
+  &:hover,
+  &:focus {
+    background: #e4f0fa
+  }
+
+  &:focus {
+    outline: 2px solid $black;
+    outline-offset: 2px;
+  }
+}
+
 
 a.btn.btn-staff-page {
   margin-bottom: 1rem;
@@ -243,6 +254,7 @@ a.btn.btn-staff-page {
     border: 1px solid #834a90;
     border-top: 5rem solid #834a90;
   }
+
   h3 {
     @include adjust-font-size-to(18px);
     margin: 1.6rem 0 1.2rem;
