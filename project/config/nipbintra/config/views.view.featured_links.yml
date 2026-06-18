@@ -3,12 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entityqueue.entity_queue.featured_links
     - field.storage.node.field_link_url
     - node.type.link
   module:
+    - entityqueue
     - link
     - node
     - user
+    - views_custom_cache_tag
 id: featured_links
 label: 'Featured Links'
 module: views
@@ -23,7 +26,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Featured Links'
+      title: 'Featured links'
       fields:
         field_link_url:
           id: field_link_url
@@ -38,14 +41,14 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: '{{ field_link_url__uri }}'
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
+            alt: '{{ title }}'
             rel: ''
             link_class: ''
             prefix: ''
@@ -74,14 +77,14 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: uri
+          click_sort_column: title
           type: link
           settings:
             trim_length: 80
             url_only: false
             url_plain: false
             rel: '0'
-            target: '0'
+            target: _blank
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -114,7 +117,7 @@ display:
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
+            alt: '{{ title }}'
             rel: ''
             link_class: ''
             prefix: ''
@@ -122,8 +125,8 @@ display:
             target: ''
             nl2br: false
             max_length: 0
-            word_boundary: false
-            ellipsis: false
+            word_boundary: true
+            ellipsis: true
             more_link: false
             more_link_text: ''
             more_link_path: ''
@@ -131,7 +134,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h3
+          element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -177,26 +180,27 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
-        options: {  }
+        type: custom_tag
+        options:
+          custom_tag: "node_list:featured_links\r\nentity_subqueue:featured_links"
+          custom_tag_output_lifespan: '-1'
+          custom_tag_output_lifespan_expression: ''
       empty: {  }
       sorts:
-        created:
-          id: created
+        entityqueue_relationship:
+          id: entityqueue_relationship
           table: node_field_data
-          field: created
+          field: entityqueue_relationship
           relationship: none
           group_type: group
           admin_label: ''
           entity_type: node
-          entity_field: created
-          plugin_id: date
+          plugin_id: entity_queue_position
           order: ASC
           expose:
             label: ''
             field_identifier: ''
           exposed: false
-          granularity: second
       arguments: {  }
       filters:
         status:
@@ -214,17 +218,57 @@ display:
           id: type
           table: node_field_data
           field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          operator: in
           value:
             link: link
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
-        type: default
+        type: html_list
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+          type: ul
+          wrapper_class: ''
+          class: styled-list
       row:
         type: fields
         options:
-          default_field_elements: true
+          default_field_elements: false
           inline: {  }
           separator: ''
           hide_empty: false
@@ -236,7 +280,18 @@ display:
           distinct: false
           replica: false
           query_tags: {  }
-      relationships: {  }
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          entity_type: node
+          plugin_id: entity_queue
+          required: true
+          limit_queue: featured_links
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -248,9 +303,10 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:entityqueue.entity_queue.featured_links'
         - 'config:field.storage.node.field_link_url'
-  home_featured_links:
-    id: home_featured_links
+  featured_links:
+    id: featured_links
     display_title: Block
     display_plugin: block
     position: 1
@@ -267,4 +323,5 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:entityqueue.entity_queue.featured_links'
         - 'config:field.storage.node.field_link_url'

@@ -1,0 +1,11 @@
+uuid: fa161d08-e55c-4589-9600-1692ec3200e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.member_image_small
+label: 'Member image small'
+description: ''
+targetEntityType: media
+cache: true

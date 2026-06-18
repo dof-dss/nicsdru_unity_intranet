@@ -43,7 +43,7 @@ content:
       time_format: 'g:ia'
       time_hour_format: 'g:ia'
       allday_label: ''
-      date_first: '0'
+      date_first: '1'
       ampm_reduce: '1'
       site_time_toggle: 0
     third_party_settings: {  }
