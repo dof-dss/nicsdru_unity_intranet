@@ -1,0 +1,21 @@
+uuid: 710364f3-53f9-492b-9e96-0a84f6fe9294
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - feed_block
+_core:
+  default_config_hash: ClJGlhLc6vjB9LX3x8ResRINuaTB2Bt3Vla8eSUjj4Y
+id: block_content.field_rss_feed
+field_name: field_rss_feed
+entity_type: block_content
+type: rss_feed_field
+settings: {  }
+module: feed_block
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

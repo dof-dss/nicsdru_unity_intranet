@@ -1,25 +1,19 @@
-uuid: 689d39be-51a9-44bb-9432-443d555ab47c
-langcode: und
+uuid: 3371ed06-b443-4b60-9d9a-c781f6bbf6f9
+langcode: en
 status: true
 dependencies:
   module:
-    - file
-    - image
+    - media
     - node
 id: node.field_gallery_images
 field_name: field_gallery_images
 entity_type: node
-type: image
+type: entity_reference
 settings:
-  target_type: file
-  display_field: false
-  display_default: true
-  uri_scheme: public
-  default_image:
-    uuid: ''
-module: image
+  target_type: media
+module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false
