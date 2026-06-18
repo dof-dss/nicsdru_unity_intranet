@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_publication_date
-    - search_api.server.solr_default
   module:
     - node
     - search_api_solr
@@ -169,4 +168,4 @@ options:
   delete_on_fail: true
   index_directly: true
   track_changes_in_references: true
-server: solr_default
+server: null

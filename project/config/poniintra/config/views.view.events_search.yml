@@ -212,6 +212,51 @@ display:
           parse_mode: fuzzy_terms
           min_length: null
           fields: {  }
+        end_value:
+          id: end_value
+          table: search_api_index_events_index
+          field: end_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_date
+          operator: '>'
+          value:
+            min: ''
+            max: ''
+            value: '-1 day'
+            type: offset
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
         type: default
         options:
@@ -239,7 +284,6 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - url.query_args
@@ -254,7 +298,8 @@ display:
     position: 1
     display_options:
       cache:
-        type: search_api_none
+        type: search_api_tag
+        options: {  }
       defaults:
         cache: false
       exposed_block: true
@@ -264,13 +309,14 @@ display:
           tokenize: false
       path: events
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - url.query_args
         - 'user.node_grants:view'
       tags:
+        - 'config:facets.facet.event_date'
+        - 'config:facets.facet.event_type'
         - 'config:search_api.index.events_index'
         - 'search_api_list:events_index'

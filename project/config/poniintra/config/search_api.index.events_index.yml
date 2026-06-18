@@ -73,6 +73,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.body
+  end_value:
+    label: 'Event date(s) » End timestamp value'
+    datasource_id: 'entity:node'
+    property_path: 'field_event_date:end_value'
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_event_date
   event_name:
     label: 'Event type » Taxonomy term » Name'
     datasource_id: 'entity:node'
