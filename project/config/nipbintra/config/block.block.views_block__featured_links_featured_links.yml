@@ -1,0 +1,24 @@
+uuid: addbc5bf-ce04-42a3-acbf-78f2b823336f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.featured_links
+  module:
+    - views
+  theme:
+    - nipb_theme
+id: views_block__featured_links_featured_links
+theme: nipb_theme
+region: bottom_widget_1
+weight: 0
+provider: null
+plugin: 'views_block:featured_links-featured_links'
+settings:
+  id: 'views_block:featured_links-featured_links'
+  label: 'Featured links'
+  label_display: visible
+  provider: views
+  views_label: 'Featured links'
+  items_per_page: none
+visibility: {  }
