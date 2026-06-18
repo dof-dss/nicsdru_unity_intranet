@@ -21,7 +21,7 @@
 ] %}
 <a href="/staff-profiles" class="btn btn-primary btn-staff-page">Back to
   People</a>
-<div class="staff-profile-card">
+<article class="staff-profile-card">
 
     <div class="profile-info">
       <h2 class="staff-name">{{ content.field_first_name }} {{ node.title.value }}</h2>
@@ -31,21 +31,46 @@
       {% endif %}
       </h3>
 
-
-
-        {% if content.field_extension %}
-            {{ content.field_extension }}
+      {% if content.field_extension %}
+            <p>
+              <span>{{ 'Extension: '|t }}</span>
+              <span>{{ content.field_extension }}</span>
+            </p>
         {% endif %}
 
         {% if content.field_mobile %}
-            {{ content.field_mobile }}
+          <p>
+            <span>{{ 'Mobile: '|t }}</span>
+            <span>{{ content.field_mobile }}</span>
+          </p>
         {% endif %}
+
+      {% if content.field_find_me %}
+        <p>
+          <span>{{ 'Find me: '|t }}</span>
+          <span>{{ content.field_find_me }}</span>
+        </p>
+      {% endif %}
+
+      {% if content.field_work_pattern %}
+        <p>
+          <span>{{ 'Work pattern: '|t }}</span>
+          <span>{{ content.field_work_pattern }}</span>
+        </p>
+      {% endif %}
+
+      {% if content.field_about_me %}
+        <p>
+          <span>{{ 'About me: '|t }}</span>
+          <span>{{ content.field_about_me }}</span>
+        </p>
+      {% endif %}
     </div>
 
 
-    {% if content.field_profile_image %}
+    {% if content.field_photo %}
       <div class="staff-profile-image">
-        {{ content.field_profile_image }}
+        {{ content.field_photo }}
       </div>
     {% else %}
       <div class="staff-profile-image">
@@ -54,4 +79,4 @@
           alt="">
       </div>
     {% endif %}
-</div>
+</article>

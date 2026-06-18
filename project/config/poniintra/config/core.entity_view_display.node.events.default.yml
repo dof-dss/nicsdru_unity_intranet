@@ -52,7 +52,7 @@ content:
       allday_label: ''
       date_first: '1'
       ampm_reduce: '1'
-      site_time_toggle: 0
+      site_time_toggle: '1'
     third_party_settings: {  }
     weight: 2
     region: content

@@ -5,8 +5,6 @@ dependencies:
   config:
     - node.type.basic_page
     - node.type.blog
-    - node.type.feed
-    - node.type.feed_item
     - node.type.landing_page
     - node.type.news
     - node.type.noticeboard
@@ -97,18 +95,10 @@ type_settings:
         - draft
       to: needs_review
       weight: -2
-    unpublish:
-      label: Unpublish
-      from:
-        - published
-      to: needs_review
-      weight: 2
   entity_types:
     node:
       - basic_page
       - blog
-      - feed
-      - feed_item
       - landing_page
       - news
       - noticeboard

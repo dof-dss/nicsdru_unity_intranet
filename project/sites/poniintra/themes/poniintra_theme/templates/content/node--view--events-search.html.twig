@@ -75,7 +75,7 @@
   <p>
     {% apply spaceless %}
       <span>{{ content.field_event_date.0.start.date.value }}
-        {% if content.field_event_date.0.start.date.value < content.field_event_date.0.end.date.value %}
+        {% if content.field_event_date.0.start.date.value['#markup'] < content.field_event_date.0.end.date.value['#markup'] %}
         {{ ' - '|t }}{{ content.field_event_date.0.end.date.value }}
       {% endif %}
       </span>
