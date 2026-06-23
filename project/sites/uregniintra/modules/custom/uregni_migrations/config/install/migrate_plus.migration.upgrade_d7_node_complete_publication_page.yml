@@ -124,8 +124,10 @@ process:
       default_value: null
       map:
         boardmins: 3
+        ceo: 20
         covid19: 4
         doctempslogo: 5
+        estates: 21
         financeform: 6
         gdpr: 7
         goodtoknow: 8
@@ -134,13 +136,17 @@ process:
         hrpolicy: 11
         infomanagement: 12
         internalcomms: 13
+        lessonslearned: 22
+        logo: 23
         nipsa: 14
+        officemove: 24
+        organisational: 25
         procurement: 15
+        project: 26
         publicaffairs: 16
         smtminutes: 17
         training: 18
         urpeople: 19
-        ceo: 20
   field_attachment:
     -
       plugin: sub_process
