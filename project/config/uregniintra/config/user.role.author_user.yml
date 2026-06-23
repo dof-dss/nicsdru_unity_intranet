@@ -15,7 +15,6 @@ dependencies:
     - node.type.noticeboard
     - node.type.publication
     - node.type.staff_member
-    - node.type.uregni_information
     - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
@@ -49,7 +48,6 @@ permissions:
   - 'create publication content'
   - 'create remote_video media'
   - 'create staff_member content'
-  - 'create uregni_information content'
   - 'create url aliases'
   - 'delete own audio media'
   - 'delete own basic_page content'
@@ -63,14 +61,12 @@ permissions:
   - 'delete own publication content'
   - 'delete own remote_video media'
   - 'delete own staff_member content'
-  - 'delete own uregni_information content'
   - 'edit any basic_page content'
   - 'edit any blog content'
   - 'edit any news content'
   - 'edit any noticeboard content'
   - 'edit any publication content'
   - 'edit any staff_member content'
-  - 'edit any uregni_information content'
   - 'edit own audio media'
   - 'edit own basic_page content'
   - 'edit own blog content'
@@ -83,14 +79,12 @@ permissions:
   - 'edit own publication content'
   - 'edit own remote_video media'
   - 'edit own staff_member content'
-  - 'edit own uregni_information content'
   - 'revert basic_page revisions'
   - 'revert blog revisions'
   - 'revert news revisions'
   - 'revert noticeboard revisions'
   - 'revert publication revisions'
   - 'revert staff_member revisions'
-  - 'revert uregni_information revisions'
   - 'use moderation sidebar'
   - 'use nics_editorial_workflow transition create_new_draft'
   - 'use nics_editorial_workflow transition draft_of_published'
@@ -108,4 +102,3 @@ permissions:
   - 'view publication revisions'
   - 'view staff_member revisions'
   - 'view the administration theme'
-  - 'view uregni_information revisions'

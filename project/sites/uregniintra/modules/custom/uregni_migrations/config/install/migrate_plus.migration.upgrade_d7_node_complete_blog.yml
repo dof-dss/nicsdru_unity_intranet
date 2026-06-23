@@ -111,7 +111,7 @@ process:
     -
       plugin: get
       source: field_ureni_teaser
-  field_date_published:
+  field_publication_date:
     -
       plugin: sub_process
       source: field_date_published
