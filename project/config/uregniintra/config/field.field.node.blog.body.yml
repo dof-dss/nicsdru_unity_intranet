@@ -4,9 +4,9 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
+    - filter.format.basic_html
     - node.type.blog
   module:
-    - allowed_formats
     - text
 id: node.blog.body
 field_name: body
@@ -21,5 +21,6 @@ default_value_callback: ''
 settings:
   display_summary: false
   required_summary: false
-  allowed_formats: {  }
+  allowed_formats:
+    - basic_html
 field_type: text_with_summary

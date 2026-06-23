@@ -1,18 +1,18 @@
-uuid: 022d572d-4d31-4993-a6ad-b2a415a33c11
+uuid: 7ed7cc79-9d24-4caa-aac1-d9565bbcdda3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_date_published
+    - field.storage.node.field_published_date
     - node.type.noticeboard
   module:
     - datetime
-id: node.noticeboard.field_date_published
-field_name: field_date_published
+id: node.noticeboard.field_published_date
+field_name: field_published_date
 entity_type: node
 bundle: noticeboard
-label: 'Date published'
-description: 'Please choose the publication date of the noticeboard listing from the pop up calender.'
+label: 'Published date'
+description: ''
 required: true
 translatable: false
 default_value:
