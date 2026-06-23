@@ -278,7 +278,7 @@ display:
           tokenize: false
       path: noticeboard
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -286,6 +286,8 @@ display:
         - url.query_args
         - 'user.node_grants:view'
       tags:
+        - 'config:facets.facet.published_date_notice'
+        - 'config:facets.facet.type'
         - 'config:field.storage.node.body'
         - 'config:search_api.index.noticeboard'
         - 'search_api_list:noticeboard'

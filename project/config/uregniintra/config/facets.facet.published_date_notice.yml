@@ -1,21 +1,25 @@
-uuid: ff324457-a656-45da-8203-b5943cb299b1
+uuid: 8ae97cf2-16c0-4239-807d-d9547e9cb20a
 langcode: en
 status: true
 dependencies:
   config:
-    - search_api.index.blog
-    - views.view.blog_search
+    - search_api.index.noticeboard
+    - views.view.noticeboard_search
   module:
+    - facets_pretty_paths
     - search_api
-id: date_published
-name: 'Date published'
+third_party_settings:
+  facets_pretty_paths:
+    coder: default_coder
+id: published_date_notice
+name: 'Published date'
 weight: 0
 min_count: 1
 missing: false
 missing_label: others
 url_alias: date
-facet_source_id: 'search_api:views_page__blog_search__blog_search_page'
-field_identifier: field_date_published
+facet_source_id: 'search_api:views_page__noticeboard_search__noticeboard_search_page'
+field_identifier: field_published_date
 query_operator: and
 hard_limit: 0
 exclude: false
@@ -36,7 +40,7 @@ widget:
     hide_reset_when_no_selection: false
     soft_limit_settings:
       show_less_label: 'Show less'
-      show_more_label: 'Show fewer'
+      show_more_label: 'Show more'
 empty_behavior:
   behavior: none
 only_visible_when_facet_source_is_visible: true
