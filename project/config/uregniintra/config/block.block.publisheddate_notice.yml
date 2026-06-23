@@ -1,0 +1,29 @@
+uuid: 9a496a15-76da-4f02-8231-da0f47f1708f
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.published_date_notice
+  module:
+    - facets
+    - system
+  theme:
+    - uregni_theme
+id: publisheddate_notice
+theme: uregni_theme
+region: search_facets
+weight: 0
+provider: null
+plugin: 'facet_block:published_date_notice'
+settings:
+  id: 'facet_block:published_date_notice'
+  label: Date
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: publisheddate_notice
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/noticeboard\r\n/noticeboard/type/*\r\n/noticeboard/date/*"
