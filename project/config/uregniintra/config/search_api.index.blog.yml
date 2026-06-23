@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
-    - field.storage.node.field_date_published
     - field.storage.node.field_teaser
+    - search_api.server.solr_default
   module:
     - node
     - search_api_solr
@@ -69,14 +69,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.body
-  field_date_published:
-    label: 'Date published'
-    datasource_id: 'entity:node'
-    property_path: field_date_published
-    type: date
-    dependencies:
-      config:
-        - field.storage.node.field_date_published
   field_teaser:
     label: Teaser
     datasource_id: 'entity:node'

@@ -15,7 +15,6 @@ dependencies:
     - node.type.noticeboard
     - node.type.publication
     - node.type.staff_member
-    - node.type.uregni_information
     - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
@@ -49,8 +48,6 @@ permissions:
   - 'access toolbar'
   - 'add scheduled transitions node basic_page'
   - 'add scheduled transitions node blog'
-  - 'add scheduled transitions node feed'
-  - 'add scheduled transitions node feed_item'
   - 'add scheduled transitions node landing_page'
   - 'add scheduled transitions node news'
   - 'add scheduled transitions node noticeboard'
@@ -73,7 +70,6 @@ permissions:
   - 'create publication content'
   - 'create remote_video media'
   - 'create staff_member content'
-  - 'create uregni_information content'
   - 'create url aliases'
   - 'delete all revisions'
   - 'delete any audio media'
@@ -89,7 +85,6 @@ permissions:
   - 'delete any publication content'
   - 'delete any remote_video media'
   - 'delete any staff_member content'
-  - 'delete any uregni_information content'
   - 'delete basic_page revisions'
   - 'delete blog revisions'
   - 'delete landing_page revisions'
@@ -107,10 +102,8 @@ permissions:
   - 'delete own publication content'
   - 'delete own remote_video media'
   - 'delete own staff_member content'
-  - 'delete own uregni_information content'
   - 'delete publication revisions'
   - 'delete staff_member revisions'
-  - 'delete uregni_information revisions'
   - 'edit any audio media'
   - 'edit any basic_page content'
   - 'edit any blog content'
@@ -123,7 +116,6 @@ permissions:
   - 'edit any publication content'
   - 'edit any remote_video media'
   - 'edit any staff_member content'
-  - 'edit any uregni_information content'
   - 'edit basic meta tags'
   - 'edit own audio media'
   - 'edit own basic_page content'
@@ -137,11 +129,8 @@ permissions:
   - 'edit own publication content'
   - 'edit own remote_video media'
   - 'edit own staff_member content'
-  - 'edit own uregni_information content'
   - 'reschedule scheduled transitions node basic_page'
   - 'reschedule scheduled transitions node blog'
-  - 'reschedule scheduled transitions node feed'
-  - 'reschedule scheduled transitions node feed_item'
   - 'reschedule scheduled transitions node landing_page'
   - 'reschedule scheduled transitions node news'
   - 'reschedule scheduled transitions node noticeboard'
@@ -156,7 +145,6 @@ permissions:
   - 'revert noticeboard revisions'
   - 'revert publication revisions'
   - 'revert staff_member revisions'
-  - 'revert uregni_information revisions'
   - 'use moderation sidebar'
   - 'use nics_editorial_workflow transition archive'
   - 'use nics_editorial_workflow transition create_new_draft'
@@ -180,8 +168,6 @@ permissions:
   - 'view publication revisions'
   - 'view scheduled transitions node basic_page'
   - 'view scheduled transitions node blog'
-  - 'view scheduled transitions node feed'
-  - 'view scheduled transitions node feed_item'
   - 'view scheduled transitions node landing_page'
   - 'view scheduled transitions node news'
   - 'view scheduled transitions node noticeboard'
@@ -190,4 +176,3 @@ permissions:
   - 'view scheduled transitions node uregni_information'
   - 'view staff_member revisions'
   - 'view the administration theme'
-  - 'view uregni_information revisions'
