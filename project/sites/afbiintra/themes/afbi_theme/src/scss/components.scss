@@ -129,3 +129,12 @@ button.pswp__button {
 button.pswp__button--arrow--next {
   position: absolute !important;
 }
+
+.file--ico.file--ico__cm {
+  background: resolve('content-manager.png') no-repeat;
+  background-size: 3.8rem;
+
+  &::before {
+    background: none;
+  }
+}

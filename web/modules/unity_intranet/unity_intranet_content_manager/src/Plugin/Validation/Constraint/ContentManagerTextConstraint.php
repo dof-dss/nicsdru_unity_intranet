@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\poni_common\Plugin\Validation\Constraint;
+namespace Drupal\unity_intranet_content_manager\Plugin\Validation\Constraint;
 
 use Drupal\Core\StringTranslation\TranslatableMarkup;
 use Drupal\Core\Validation\Attribute\Constraint;
@@ -10,16 +10,16 @@ use Symfony\Component\Validator\Constraint as SymfonyConstraint;
  * Validation constraint for links receiving data allowed by its settings.
  */
 #[Constraint(
-  id: 'ContentManagerURL',
+  id: 'ContentManagerText',
   label: new TranslatableMarkup('Content manager data valid for content manager type.', [], ['context' => 'Validation'])
 )]
-class ContentManagerURLConstraint extends SymfonyConstraint {
+class ContentManagerTextConstraint extends SymfonyConstraint {
 
   /**
    * The default violation message.
    *
    * @var string
    */
-  public $message = "The path '@url' is invalid. This link must begin with contentmanager://";
+  public $message = "You must provide link text with the content manager URL";
 
 }

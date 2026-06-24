@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\poni_common\Plugin\Validation\Constraint;
+namespace Drupal\unity_intranet_content_manager\Plugin\Validation\Constraint;
 
 use Drupal\Core\StringTranslation\TranslatableMarkup;
 use Drupal\Core\Validation\Attribute\Constraint;

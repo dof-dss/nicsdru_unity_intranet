@@ -1,8 +1,7 @@
 <?php
 
-namespace Drupal\poni_common\Plugin\Validation\Constraint;
+namespace Drupal\unity_intranet_content_manager\Plugin\Validation\Constraint;
 
-use Drupal\Component\Utility\UrlHelper;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;
 
@@ -25,6 +24,7 @@ class ContentManagerTextConstraintValidator extends ConstraintValidator {
 
       // Ensure link text is filled out if a Content manager link is present.
       if ($url && empty($link_text)) {
+        // @phpstan-ignore-next-line
         $this->context->addViolation($constraint->message, ['@title' => $link_text]);
       }
     }
