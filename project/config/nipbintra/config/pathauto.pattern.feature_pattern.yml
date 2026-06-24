@@ -1,0 +1,23 @@
+uuid: f63036de-3cc5-4cfc-a43c-fb8806464ddf
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.feature
+  module:
+    - node
+id: feature_pattern
+label: 'Feature pattern'
+type: 'canonical_entities:node'
+pattern: '/feature/[node:title]'
+selection_criteria:
+  43de5eca-eaf2-4f0b-9723-d790270e5a22:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      feature: feature
+selection_logic: and
+weight: -5
+relationships: {  }

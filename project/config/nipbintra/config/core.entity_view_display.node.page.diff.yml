@@ -1,19 +1,17 @@
-uuid: dcd57d4b-8d86-4763-80df-642db68607d1
+uuid: 7d56ec42-e4fc-4a8d-9140-54611fc13592
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.diff
-    - field.field.node.link.field_link_language
-    - field.field.node.link.field_link_type
-    - field.field.node.link.field_link_url
-    - field.field.node.link.field_meta_tags
-    - node.type.link
+    - field.field.node.page.body
+    - field.field.node.page.field_meta_tags
+    - node.type.page
   module:
     - field_group
     - layout_builder
-    - link
     - metatag
+    - text
     - user
 third_party_settings:
   layout_builder:
@@ -40,20 +38,15 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-id: node.link.diff
+id: node.page.diff
 targetEntityType: node
-bundle: link
+bundle: page
 mode: diff
 content:
-  field_link_url:
-    type: link
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
     weight: 0
     region: content
@@ -62,12 +55,10 @@ content:
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
 hidden:
   content_moderation_control: true
-  field_link_language: true
-  field_link_type: true
   langcode: true
   links: true
   search_api_excerpt: true
