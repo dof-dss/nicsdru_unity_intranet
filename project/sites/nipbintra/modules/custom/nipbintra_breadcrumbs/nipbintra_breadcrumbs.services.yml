@@ -1,0 +1,16 @@
+services:
+  nipbintra_breadcrumbs.breadcrumb.staffprofile:
+    class: Drupal\nipbintra_breadcrumbs\GalleryBreadcrumb
+    arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
+    tags:
+      - { name: breadcrumb_builder, priority: 105 }
+  nipbintra_breadcrumbs.breadcrumb.link:
+    class: Drupal\nipbintra_breadcrumbs\LinkBreadcrumb
+    arguments: [ '@entity_type.manager', '@title_resolver', '@request_stack' ]
+    tags:
+      - { name: breadcrumb_builder, priority: 105 }
+  nipbintra_breadcrumbs.breadcrumb.feature:
+    class: Drupal\nipbintra_breadcrumbs\FeatureBreadcrumb
+    arguments: [ '@entity_type.manager', '@title_resolver', '@request_stack' ]
+    tags:
+      - { name: breadcrumb_builder, priority: 105 }
