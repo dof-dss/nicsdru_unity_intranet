@@ -84,6 +84,11 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 2rem;
+  flex-flow: column;
+
+  @include breakpoint($tab) {
+    flex-flow: row;
+  }
 
   .profile-info {
     flex: 1;
