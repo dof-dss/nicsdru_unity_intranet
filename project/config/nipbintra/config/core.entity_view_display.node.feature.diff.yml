@@ -5,18 +5,21 @@ dependencies:
   config:
     - core.entity_view_mode.node.diff
     - field.field.node.feature.field_link_url
+    - field.field.node.feature.field_meta_tags
     - field.field.node.feature.field_photo
     - field.field.node.feature.field_teaser
     - node.type.feature
   module:
     - field_group
     - link
+    - metatag
     - user
 third_party_settings:
   field_group:
     group_additional_content_details:
       children:
         - langcode
+        - field_meta_tags
       label: 'Additional content details'
       parent_name: ''
       region: content
@@ -50,6 +53,13 @@ content:
       target: '0'
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
     region: content
   field_photo:
     type: entity_reference_entity_view

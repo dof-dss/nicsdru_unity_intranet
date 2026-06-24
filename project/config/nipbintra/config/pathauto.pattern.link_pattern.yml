@@ -1,0 +1,23 @@
+uuid: c6a8d751-3eb9-4134-be1b-00edd479cdde
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.link
+  module:
+    - node
+id: link_pattern
+label: 'Link pattern'
+type: 'canonical_entities:node'
+pattern: '/link/[node:title]'
+selection_criteria:
+  f94f5d5d-c46e-494c-8b75-a2263e56b977:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      link: link
+selection_logic: and
+weight: -5
+relationships: {  }
