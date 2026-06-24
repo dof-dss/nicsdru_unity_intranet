@@ -1,0 +1,25 @@
+uuid: 41c1423e-d7f4-4472-a48e-a9bd5577a4d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.page
+    - node.type.webform
+  module:
+    - node
+id: basic_page_pattern
+label: 'Basic page pattern'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  cd11e8ca-0cd6-479b-bb7c-c8d600d8af6c:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      page: page
+      webform: webform
+selection_logic: and
+weight: -5
+relationships: {  }

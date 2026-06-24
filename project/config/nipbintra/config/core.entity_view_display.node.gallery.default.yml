@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.gallery.body
     - field.field.node.gallery.field_gallery_images
+    - field.field.node.gallery.field_meta_tags
     - image.style.nigov_landscape_xxl_1920x1280_x2
     - node.type.gallery
     - responsive_image.styles.article_full
@@ -44,6 +45,7 @@ content:
     region: content
 hidden:
   content_moderation_control: true
+  field_meta_tags: true
   langcode: true
   links: true
   search_api_excerpt: true

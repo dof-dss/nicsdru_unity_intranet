@@ -1,0 +1,19 @@
+uuid: 8b732d13-a4fa-4832-b088-de7f57470455
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - unity_intranet_content_manager
+id: node.field_content_manager_link
+field_name: field_content_manager_link
+entity_type: node
+type: content_manager
+settings: {  }
+module: unity_intranet_content_manager
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

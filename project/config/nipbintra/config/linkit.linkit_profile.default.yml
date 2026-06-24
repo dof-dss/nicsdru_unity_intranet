@@ -14,10 +14,15 @@ matchers:
     id: 'entity:node'
     uuid: 556010a3-e317-48b3-b4ed-854c10f4b950
     settings:
-      metadata: '[node:content-type:name] #[node:nid] | [node:created:medium] by [node:author]'
+      metadata: ''
       bundles: {  }
-      group_by_bundle: false
+      group_by_bundle: true
       substitution_type: canonical
       limit: 100
-      include_unpublished: false
+      include_unpublished: true
+    weight: 0
+  1947a00d-69c2-4342-938c-f95ed789a102:
+    id: email
+    uuid: 1947a00d-69c2-4342-938c-f95ed789a102
+    settings: {  }
     weight: 0
