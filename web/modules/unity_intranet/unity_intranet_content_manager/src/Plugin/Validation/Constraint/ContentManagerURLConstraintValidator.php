@@ -1,15 +1,14 @@
 <?php
 
-namespace Drupal\poni_common\Plugin\Validation\Constraint;
+namespace Drupal\unity_intranet_content_manager\Plugin\Validation\Constraint;
 
-use Drupal\Component\Utility\UrlHelper;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;
 
 /**
  * Validates the LinkExternalProtocols constraint.
  */
-class ContentManagerTextConstraintValidator extends ConstraintValidator {
+class ContentManagerURLConstraintValidator extends ConstraintValidator {
 
   /**
    * {@inheritdoc}
@@ -21,11 +20,11 @@ class ContentManagerTextConstraintValidator extends ConstraintValidator {
   public function validate($value, Constraint $constraint) {
     if (isset($value)) {
       $url = $value->url;
-      $link_text = $value->title;
 
-      // Ensure link text is filled out if a Content manager link is present.
-      if ($url && empty($link_text)) {
-        $this->context->addViolation($constraint->message, ['@title' => $link_text]);
+      // Disallow non content manager links.
+      if ($url && !preg_match('/^contentmanager:\/\/.*/', $url)) {
+        // @phpstan-ignore-next-line
+        $this->context->addViolation($constraint->message, ['@url' => $url]);
       }
     }
   }

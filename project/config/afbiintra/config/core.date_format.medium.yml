@@ -8,4 +8,3 @@ id: medium
 label: 'Default medium date'
 locked: false
 pattern: 'D, d/m/Y - H:i'
-
