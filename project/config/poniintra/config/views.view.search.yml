@@ -170,6 +170,7 @@ display:
               news: search_index
               page: teaser
               publication: search_index
+              staff_member: search_index
       query:
         type: search_api_query
         options:
