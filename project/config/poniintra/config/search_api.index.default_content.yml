@@ -171,6 +171,8 @@ datasource_settings:
     bundles:
       default: true
       selected:
+        - feature
+        - link
         - webform
     languages:
       default: true
