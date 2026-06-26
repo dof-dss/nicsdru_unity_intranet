@@ -1,9 +1,9 @@
-uuid: 377e59d3-66c2-4f2e-9c2e-195a8781da5b
+uuid: b13ecbaa-6451-4533-beec-b0ef33db44d8
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.search_index
     - field.field.node.staff_member.field_email
     - field.field.node.staff_member.field_extension
     - field.field.node.staff_member.field_job_title
@@ -13,11 +13,16 @@ dependencies:
     - field.field.node.staff_member.field_work_mobile
     - node.type.staff_member
   module:
+    - layout_builder
     - user
-id: node.staff_member.teaser
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.staff_member.search_index
 targetEntityType: node
 bundle: staff_member
-mode: teaser
+mode: search_index
 content: {  }
 hidden:
   content_moderation_control: true
