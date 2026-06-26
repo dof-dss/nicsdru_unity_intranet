@@ -161,6 +161,9 @@ process:
         faq: 17
         reports: 18
         training: 19
+  field_external_url:
+    - plugin: field_link
+      source: field_link
   field_metatag:
     -
       plugin: d7_metatag_entities
