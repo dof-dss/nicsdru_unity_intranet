@@ -14,7 +14,7 @@ adding:
       distrib: true
       context: solr
       username: solr
-      password: SolrRocks
+      password: solr
     index_empty_text_fields: false
     suppress_missing_languages: false
 removing:
