@@ -9,3 +9,8 @@ services:
     arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
     tags:
       - { name: breadcrumb_builder, priority: 105 }
+  pps_breadcrumbs.breadcrumb.link:
+    class: Drupal\pps_breadcrumbs\LinkBreadcrumb
+    arguments: [ '@entity_type.manager', '@title_resolver', '@request_stack' ]
+    tags:
+      - { name: breadcrumb_builder, priority: 105 }
