@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "449c77e82ea5909d4d5ca592450af1dd",
+    "content-hash": "ae39073c27e12bf89271777847c3213c",
     "packages": [
         {
             "name": "accessible360/accessible-slick",
