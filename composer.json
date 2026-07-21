@@ -258,7 +258,8 @@
                 "Undefined title": "https://www.drupal.org/files/issues/2026-01-08/undefined_title_3566415.patch",
                 "deprecated function dirname()": "https://www.drupal.org/files/issues/2025-04-15/3268634-dirname-null-deprecated-47.patch",
                 "Media Library field widget not enforcing image limits": "https://www.drupal.org/files/issues/2024-07-31/3226629-20.patch",
-                "Extra allowed protocols for external links": "https://www.drupal.org/files/issues/2025-04-03/2031149-support-other-link-protocols.diff"
+                "Extra allowed protocols for external links": "https://www.drupal.org/files/issues/2025-04-03/2031149-support-other-link-protocols.diff",
+                "Unsupported operands": "https://www.drupal.org/files/issues/2023-09-22/unsupported-operand0-types-3174350-22.patch"
             },
             "drupal/easy_install": {
                 "Handle missing core version": "https://www.drupal.org/files/issues/2019-12-19/easy_install_core_version-3101883-0.patch",
