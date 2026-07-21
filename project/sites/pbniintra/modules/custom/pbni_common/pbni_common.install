@@ -14,7 +14,7 @@ use Drupal\node\NodeInterface;
  * Implementations of hook_update_N().
  */
 function pbni_common_update_10503(&$sandbox) {
-  pbni_common_copy_field_values($sandbox, 'publication', 'field_content_manager_link', 'field_external_url');
+  pbni_common_copy_field_values($sandbox, 'resources', 'field_content_manager_link', 'field_external_url');
 }
 
 
