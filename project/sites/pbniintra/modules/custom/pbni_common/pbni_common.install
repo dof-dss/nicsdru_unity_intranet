@@ -1,5 +1,5 @@
 <?php
-
+//
 //use Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException;
 //use Drupal\Component\Plugin\Exception\PluginNotFoundException;
 //use Drupal\Core\Entity\EntityStorageException;
@@ -13,8 +13,8 @@
 ///**
 // * Implementations of hook_update_N().
 // */
-//function pbni_common_update_10502(&$sandbox) {
-//  pbni_common_copy_field_values($sandbox, 'resources', 'field_external_url', 'field_content_manager_link');
+//function pbni_common_update_10503(&$sandbox) {
+//  pbni_common_copy_field_values($sandbox, 'resources', 'field_content_manager_link', 'field_external_url');
 //}
 //
 //
@@ -37,46 +37,45 @@
 // */
 //function pbni_common_copy_field_values(array &$sandbox, string $bundle, string $source_field, string $dest_field, int $nodes_per_batch = 20): void
 //{
-//    $storage = \Drupal::entityTypeManager()->getStorage('node');
-//    // Initialize some variables during the first pass through.
-//    if (!isset($sandbox['total'])) {
-//      $query = $storage->getQuery()
-//        ->condition('type', $bundle)
-//        ->accessCheck(FALSE)
-//        ->exists($source_field)
-//        ->accessCheck(FALSE);
+//  $storage = \Drupal::entityTypeManager()->getStorage('node');
+//  // Initialize some variables during the first pass through.
+//  if (!isset($sandbox['total'])) {
+//    $query = $storage->getQuery()
+//      ->condition('type', $bundle)
+//      ->accessCheck(FALSE)
+//      ->accessCheck(FALSE);
 //
-//      $nids = $query->execute();
+//    $nids = $query->execute();
 //
-//      $sandbox['total'] = count($nids);
-//      $sandbox['ids'] = array_chunk($nids, $nodes_per_batch);
-//      $sandbox['current'] = 0;
+//    $sandbox['total'] = count($nids);
+//    $sandbox['ids'] = array_chunk($nids, $nodes_per_batch);
+//    $sandbox['current'] = 0;
+//  }
+//
+//  if ($sandbox['total'] == 0) {
+//    $sandbox['#finished'] = 1;
+//    return;
+//  }
+//
+//  $nids = array_shift($sandbox['ids']);
+//  $nodes = $storage->loadMultiple($nids);
+//
+//  /* @var $node NodeInterface $node */
+//  foreach ($nodes as $node) {
+//    // Get the times from the old start time field. These are a timestamp.
+//    $external_url = $node->get('field_content_manager_link')->getValue()[0]['url'];
+//    if (!empty($node->get('field_content_manager_link')->getValue()[0]) && preg_match('/^contentmanager:\/\/.*/', $external_url)) {
+//      $external_title = $node->get('field_content_manager_link')
+//        ->getValue()[0]['title'];
+//
+//      $node->$dest_field->uri = $external_url;
+//      $node->$dest_field->title = $external_title;
+//      $node->$source_field->url = '';
+//      $node->$source_field->title = '';
+//      $node->save();
+//      $sandbox['current']++;
 //    }
-//
-//    if ($sandbox['total'] == 0) {
-//      $sandbox['#finished'] = 1;
-//      return;
-//    }
-//
-//    $nids = array_shift($sandbox['ids']);
-//    $nodes = $storage->loadMultiple($nids);
-//
-//    /* @var $node NodeInterface $node */
-//    foreach ($nodes as $node) {
-//      // Get the times from the old start time field. These are a timestamp.
-//      $external_uri = $node->get('field_external_url')->getValue()[0]['uri'];
-//      if (!empty($node->get('field_external_url')->getValue()[0]) && preg_match('/^contentmanager:\/\/.*/', $external_uri)) {
-//        $external_title = $node->get('field_external_url')
-//          ->getValue()[0]['title'];
-//
-//        $node->$dest_field->url = $external_uri;
-//        $node->$dest_field->title = $external_title;
-//        $node->$source_field->uri = '';
-//        $node->$source_field->title = '';
-//        $node->save();
-//        $sandbox['current']++;
-//      }
-//    }
+//  }
 //
 //  $sandbox['#finished'] = min(($sandbox['current'] / $sandbox['total']), 1);
 //}

@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entityqueue.entity_queue.featured_links
+    - entityqueue.entity_queue.slideshow
     - media.type.audio
     - media.type.document
     - media.type.file
@@ -16,6 +18,7 @@ dependencies:
   module:
     - content_moderation
     - contextual
+    - entityqueue
     - file
     - layout_builder
     - media
@@ -43,7 +46,6 @@ permissions:
   - 'access media overview'
   - 'access toolbar'
   - 'add scheduled transitions node feature'
-  - 'add scheduled transitions node feed_item'
   - 'add scheduled transitions node gallery'
   - 'add scheduled transitions node link'
   - 'add scheduled transitions node page'
@@ -103,8 +105,8 @@ permissions:
   - 'edit own link content'
   - 'edit own page content'
   - 'edit own remote_video media'
+  - 'manipulate entityqueues'
   - 'reschedule scheduled transitions node feature'
-  - 'reschedule scheduled transitions node feed_item'
   - 'reschedule scheduled transitions node gallery'
   - 'reschedule scheduled transitions node link'
   - 'reschedule scheduled transitions node page'
@@ -113,6 +115,8 @@ permissions:
   - 'revert gallery revisions'
   - 'revert link revisions'
   - 'revert page revisions'
+  - 'update featured_links entityqueue'
+  - 'update slideshow entityqueue'
   - 'use moderation sidebar'
   - 'use nics_editorial_workflow transition archive'
   - 'use nics_editorial_workflow transition create_new_draft'
@@ -133,7 +137,6 @@ permissions:
   - 'view own unpublished media'
   - 'view page revisions'
   - 'view scheduled transitions node feature'
-  - 'view scheduled transitions node feed_item'
   - 'view scheduled transitions node gallery'
   - 'view scheduled transitions node link'
   - 'view scheduled transitions node page'

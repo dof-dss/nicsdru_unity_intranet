@@ -1,4 +1,4 @@
-uuid: 52c274bf-7b84-4457-b8a2-d91ee66765c2
+uuid: 97c0bd45-d266-42b1-bf1d-f803cc29fd88
 langcode: en
 status: true
 dependencies:
@@ -17,15 +17,15 @@ processor_configs:
       build: '45'
     settings: {  }
 facets:
-  document_type:
+  document_date:
     checked: true
-    label: Type
+    label: Date
     separator: ', '
     show_count: false
     weight: 0
-  doument_date:
+  document_type:
     checked: true
-    label: Date
+    label: Type
     separator: ', '
     show_count: false
     weight: 0
