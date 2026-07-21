@@ -1,4 +1,4 @@
-uuid: ab3e46f4-773c-46c4-860d-2169c7169c95
+uuid: be64ba7a-1cf3-465a-ad8d-b828d7cc5d07
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - views
   theme:
     - pps_theme
-id: pps_theme_exposedformdocuments_searchdocuments_search_page
+id: exposedformdocuments_searchdocuments_search_page
 theme: pps_theme
 region: search_facets
 weight: -9
