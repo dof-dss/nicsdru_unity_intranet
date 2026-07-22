@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.resources.body
     - field.field.node.resources.field_attachment
-    - field.field.node.resources.field_content_manager_link
     - field.field.node.resources.field_external_url
     - field.field.node.resources.field_meta_tags
     - field.field.node.resources.field_published_date
@@ -15,7 +14,6 @@ dependencies:
     - datetime
     - field_group
     - link
-    - pbni_common
     - text
     - user
 third_party_settings:
@@ -62,13 +60,6 @@ content:
       link: false
     third_party_settings: {  }
     weight: 7
-    region: content
-  field_content_manager_link:
-    type: content_manager_formatter
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    weight: 5
     region: content
   field_external_url:
     type: link
