@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.publication.body
     - field.field.node.publication.field_attachment
-    - field.field.node.publication.field_content_manager_link
     - field.field.node.publication.field_meta_tags
     - field.field.node.publication.field_publication_type
     - field.field.node.publication.field_published_date
@@ -14,7 +13,6 @@ dependencies:
     - datetime
     - field_group
     - text
-    - unity_intranet_content_manager
     - user
 third_party_settings:
   field_group:
@@ -59,13 +57,6 @@ content:
       link: false
     third_party_settings: {  }
     weight: 5
-    region: content
-  field_content_manager_link:
-    type: content_manager_formatter
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 4
     region: content
   field_published_date:
     type: datetime_default
