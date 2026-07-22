@@ -1,0 +1,25 @@
+uuid: a1157b35-3d4e-4a4a-8335-6716ed5e1b1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_external_url
+    - node.type.publication
+  module:
+    - link
+id: node.publication.field_external_url
+field_name: field_external_url
+entity_type: node
+bundle: publication
+label: 'External URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+  allowed_protocols:
+    - contentmanager
+field_type: link
