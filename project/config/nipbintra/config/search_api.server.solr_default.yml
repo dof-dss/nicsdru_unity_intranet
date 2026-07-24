@@ -41,21 +41,27 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: nipbintra_solr.internal
-    port: 8080
+    host: solr
+    port: 8983
     path: /
-    core: nipbintra_index
+    core: nipbintra
     timeout: 5
     index_timeout: 5
     optimize_timeout: 10
     finalize_timeout: 30
-    skip_schema_check: false
+    skip_schema_check: true
     solr_version: ''
     http_method: AUTO
     commit_within: 1000
     jmx: false
     jts: false
-    solr_install_dir: ''
+    solr_install_dir: /opt/solr
+    checkpoints_collection: ''
+    stats_cache: org.apache.solr.search.stats.LRUStatsCache
+    distrib: true
+    context: solr
+    username: solr
+    password: solr
   optimize: false
   fallback_multiple: false
   disabled_field_types: {  }
