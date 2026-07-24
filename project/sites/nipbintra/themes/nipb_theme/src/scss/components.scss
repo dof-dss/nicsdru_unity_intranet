@@ -34,3 +34,16 @@
     margin: 0;
   }
 }
+
+#bottom-area {
+  .block > h2 {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  #block-bbcnewsfeed {
+    h3 {
+      @include adjust-font-size-to(18px);
+    }
+  }
+}

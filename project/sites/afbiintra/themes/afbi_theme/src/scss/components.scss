@@ -130,6 +130,15 @@ button.pswp__button--arrow--next {
   position: absolute !important;
 }
 
+.file--ico.file--ico__ext {
+  background: resolve('external-link.png') no-repeat;
+  background-size: 3.6rem;
+
+  &::before {
+    background: none;
+  }
+}
+
 .file--ico.file--ico__cm {
   background: resolve('content-manager.png') no-repeat;
   background-size: 3.8rem;
@@ -138,3 +147,4 @@ button.pswp__button--arrow--next {
     background: none;
   }
 }
+
