@@ -106,6 +106,10 @@ process:
       regex: true
       search: /(<ul>)?(<li>)?(<div[^>]*>)?<a href="(\S+?files\/\S+)".*?>\s*[^<]*(\([^<]*\))?<\/a>(<\/div>)?(<\/li>)?(<\/ul>)?/
       replace: ''
+    - plugin: str_replace
+      regex: true
+      search: /<a href="(contentmanager:\/\/.*?)">(.*?)<\/a>/
+      replace: ''
   body/0/format:
     -
       plugin: static_map
@@ -162,8 +166,13 @@ process:
         reports: 18
         training: 19
   field_external_url:
-    - plugin: field_link
-      source: field_link
+    - plugin: callback
+      callable:
+        - '\Drupal\unity_file_migrations\ContentManagerLinkProcessor'
+        - contentmanagerLinks
+      source:
+        - nid
+        - body
   field_metatag:
     -
       plugin: d7_metatag_entities
