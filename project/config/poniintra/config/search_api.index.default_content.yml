@@ -192,7 +192,9 @@ processor_settings:
     excerpt: true
     excerpt_always: false
     excerpt_length: 256
-    exclude_fields: {  }
+    exclude_fields:
+      - spelling
+      - title_fulltext
     highlight: always
     highlight_partial: false
   html_filter:
