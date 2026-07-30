@@ -25,7 +25,6 @@ third_party_settings:
   field_group:
     group_publications:
       children:
-        - field_content_manager_link
         - field_external_publication
         - field_attachment
       label: Publications
