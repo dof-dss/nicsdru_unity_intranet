@@ -1,0 +1,13 @@
+uuid: c3ca01d3-e7d1-4906-ba49-972750f00dd7
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: TS_16GbWqqnoBSKCRGPiGFilV1EheSW58lKUjiT6Uis
+id: media.article_float
+label: 'Article float'
+description: ''
+targetEntityType: media
+cache: true
