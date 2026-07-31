@@ -73,7 +73,7 @@ sites:
         cron_cmd: 'cd web/sites/poniintra ; drush core-cron'
         database: poniintra
         status: development
-        default: false
+        default: true
     nipsintra:
         name: 'Northern Ireland Prison Service'
         url: nips.intranet.nipublicsector.net
