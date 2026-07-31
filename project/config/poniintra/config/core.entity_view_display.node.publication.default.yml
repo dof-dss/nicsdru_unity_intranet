@@ -20,7 +20,6 @@ third_party_settings:
   field_group:
     group_documents:
       children:
-        - field_content_manager_link
         - field_external_publication
         - field_attachment
       label: Documents

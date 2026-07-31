@@ -7,6 +7,7 @@
 
 use Drupal\block_content\BlockContentInterface;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements hook_ENTITY_TYPE_view_alter().
@@ -16,5 +17,33 @@ function afbiintra_common_block_content_view_alter(array &$build, BlockContentIn
     // Default to 1 hour feed cache if not specified and add 'max age' to bubble up expiration via custom event subscriber.
     $build['#cache']['max-age'] = \Drupal::config('feed_block')
       ->get('cache_expiration') ?: 3600;
+  }
+}
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function afbiintra_common_form_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  /** @var \Drupal\Core\Entity\EntityFormInterface $form_object */
+  $form_object = $form_state->getFormObject();
+  /** @var \Drupal\node\NodeInterface $node */
+  $node = $form_object->getEntity();
+
+  if ($node->bundle() === 'publication') {
+    $form['#validate'][] = 'afbiintra_common_validate_attachment';
+  }
+}
+
+/**
+ * Form validation callback.
+ */
+function afbiintra_common_validate_attachment(&$form, FormStateInterface $form_state) {
+  $values = $form_state->getValues();
+
+  // Validate file attachments and external links.
+  if (empty($values['field_attachment']["selection"][0]) && $values['field_external_url'][0]['uri'] === '') {
+    $message = t('You must provide an attachment or a content manager link');
+    $form_state->setErrorByName('field_external_url', $message);
+    $form_state->setErrorByName('field_attachment', $message);
   }
 }

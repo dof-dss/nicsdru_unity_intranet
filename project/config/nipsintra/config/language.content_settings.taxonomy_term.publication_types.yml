@@ -1,0 +1,13 @@
+uuid: 0a41432e-23ce-4313-a580-a16ec1c80faa
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.publication_types
+_core:
+  default_config_hash: SXz9as1YgQ62D-XOgNR4usB_N8lbc6pAzBlM4Xf-24A
+id: taxonomy_term.publication_types
+target_entity_type_id: taxonomy_term
+target_bundle: publication_types
+default_langcode: site_default
+language_alterable: false
