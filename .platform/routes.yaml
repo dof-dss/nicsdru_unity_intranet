@@ -5,42 +5,42 @@
 # original repository.Any changes here will be overwritten when the project #
 # is built.                                                                 #
 #############################################################################
-'https://pps.intranet.nigov.net/':
+'https://pps.intranet.nipublicsector.net/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
-'https://uregni.intranet.nigov.net/':
+'https://uregni.intranet.nipublicsector.net/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
-'https://pbni.intranet.nigov.net/':
+'https://pbni.intranet.nipublicsector.net/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
-'https://niaomi.intranet.nigov.net/':
+'https://niaomi.intranet.nipublicsector.net/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
-'https://nipb.intranet.nigov.net/':
+'https://nipb.intranet.nipublicsector.net/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
-'https://afbi.intranet.nigov.net/':
+'https://afbi.intranet.nipublicsector.net/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
-'https://poni.intranet.nigov.net/':
+'https://poni.intranet.nipublicsector.net/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
-'https://nips.intranet.nigov.net/':
+'https://nips.intranet.nipublicsector.net/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:
