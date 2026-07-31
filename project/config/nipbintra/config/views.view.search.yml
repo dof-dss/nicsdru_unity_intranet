@@ -136,7 +136,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -145,6 +145,7 @@ display:
           use_highlighting: true
           multi_type: separator
           multi_separator: ', '
+          filter_type: xss
       pager:
         type: full
         options:
@@ -240,15 +241,15 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              administrator: '0'
               author_user: '0'
-              qa: '0'
               supervisor_user: '0'
-              editor_user: '0'
-              admin_user: '0'
+              qa: '0'
             expose_fields: false
             placeholder: 'Search site'
             searched_fields_id: search_api_fulltext_searched_fields
             value_maxlength: 128
+            value_max_words: null
           is_grouped: false
           group_info:
             label: ''
@@ -263,11 +264,22 @@ display:
             group_items: {  }
           parse_mode: fuzzy_terms
           min_length: null
-          fields: {  }
+          fields:
+            - body
+            - title
       style:
         type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
       row:
         type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
       query:
         type: search_api_query
         options:
