@@ -157,21 +157,13 @@ web:
 relationships:
     redis: 'redis:redis'
     ppsintra: 'db:ppsintra'
-    ppsintra_intranet_solr: 'solr_8_11:ppsintra'
     uregniintra: 'db:uregniintra'
-    uregniintra_intranet_solr: 'solr_8_11:uregniintra'
     pbniintra: 'db:pbniintra'
-    pbniintra_intranet_solr: 'solr_8_11:pbniintra'
     niaomiintra: 'db:niaomiintra'
-    niaomiintra_intranet_solr: 'solr_8_11:niaomiintra'
     nipbintra: 'db:nipbintra'
-    nipbintra_intranet_solr: 'solr_8_11:nipbintra'
     afbiintra: 'db:afbiintra'
-    afbiintra_intranet_solr: 'solr_8_11:afbiintra'
     poniintra: 'db:poniintra'
-    poniintra_intranet_solr: 'solr_8_11:poniintra'
     nipsintra: 'db:nipsintra'
-    nipsintra_intranet_solr: 'solr_8_11:nipsintra'
 crons:
     ppsintra:
         spec: '10 * * * *'
