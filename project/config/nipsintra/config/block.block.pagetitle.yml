@@ -1,0 +1,18 @@
+uuid: cbb9dc5a-8331-4c9c-8497-6bb48c54c389
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nipsintra_theme
+id: pagetitle
+theme: nipsintra_theme
+region: content
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

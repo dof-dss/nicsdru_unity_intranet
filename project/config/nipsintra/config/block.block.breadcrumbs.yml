@@ -1,0 +1,20 @@
+uuid: acc4921a-be69-4ddf-9213-98e55a0d3283
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nipsintra_theme
+id: breadcrumbs
+theme: nipsintra_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: visible
+  provider: system
+visibility: {  }
