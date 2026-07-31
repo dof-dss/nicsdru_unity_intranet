@@ -1,0 +1,16 @@
+uuid: 1bced3ea-fb0b-4f44-87ab-31f99dad74bd
+langcode: en
+status: true
+dependencies: {  }
+id: hosted
+label: hosted
+description: "Use for any that are 'hosted' and not running locally, apart from production (which has its own split)."
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/nipsintra/hosted
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }
