@@ -1,0 +1,26 @@
+uuid: 227d179c-2c56-486c-bc97-64ac566971f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.publication
+  module:
+    - text
+_core:
+  default_config_hash: PKTb9GNbQwe2_tG-HQqtmwZSg-Fsx45xuno5YcgcTHw
+id: node.publication.body
+field_name: body
+entity_type: node
+bundle: publication
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

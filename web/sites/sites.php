@@ -86,35 +86,29 @@ if (!empty(getenv('PLATFORM_BRANCH'))) {
       //  - www.fiscalcommissionni.org
       //  - hatecrimereviewni.org.uk.master-7rqtwti-6tlkpwbr6tndk.uk-1.platformsh.site
       $newhost = str_replace('www.', '', $host);
-      if (str_contains($newhost, 'info.library.nics.gov.uk')) {
-        $sites[$host] = 'infolibrarynics';
-      }
-      elseif (str_contains($newhost, 'pressclippings.nics.gov.uk')) {
-        $sites[$host] = 'pressclippingsnics';
-      }
-      elseif (str_contains($newhost, 'independentpanel.truthrecoveryni.co.uk')) {
-        $sites[$host] = 'independentpaneltruthrecoveryni';
-      }
-      elseif (str_contains($newhost, 'uregni.intranet.nigov.net')) {
+      if (str_contains($newhost, 'uregni.intranet.nipublicsector.net')) {
         $sites[$host] = 'uregniintra';
       }
-      elseif (str_contains($newhost, 'pps.intranet.nigov.net')) {
+      elseif (str_contains($newhost, 'pps.intranet.nipublicsector.net')) {
         $sites[$host] = 'ppsintra';
       }
-      elseif (str_contains($newhost, 'niaomi.intranet.nigov.net')) {
+      elseif (str_contains($newhost, 'niaomi.intranet.nipublicsector.net')) {
         $sites[$host] = 'niaomiintra';
       }
-      elseif (str_contains($newhost, 'afbi.intranet.nigov.net')) {
+      elseif (str_contains($newhost, 'afbi.intranet.nipublicsector.net')) {
         $sites[$host] = 'afbiintra';
       }
-      elseif (str_contains($newhost, 'pbni.intranet.nigov.net')) {
+      elseif (str_contains($newhost, 'pbni.intranet.nipublicsector.net')) {
         $sites[$host] = 'pbniintra';
       }
-      elseif (str_contains($newhost, 'nipb.intranet.nigov.net')) {
+      elseif (str_contains($newhost, 'nipb.intranet.nipublicsector.net')) {
         $sites[$host] = 'nipbintra';
       }
-      elseif (str_contains($newhost, 'poni.intranet.nigov.net')) {
+      elseif (str_contains($newhost, 'poni.intranet.nipublicsector.net')) {
         $sites[$host] = 'poniintra';
+      }
+      elseif (str_contains($newhost, 'nips.intranet.nipublicsector.net')) {
+        $sites[$host] = 'nipsintra';
       }
       else {
         $subdomain = substr($newhost, 0, strpos($newhost, '.'));
@@ -125,30 +119,6 @@ if (!empty(getenv('PLATFORM_BRANCH'))) {
         $subdomain = str_replace('-', '', $subdomain);
         $sites[$host] = $subdomain;
       }
-    }
-  }
-}
-
-// Running in Lando locally, include appropriate sites file.
-if (getenv('LANDO')) {
-  $project = Yaml::parseFile('/app/project/project.yml');
-
-  foreach ($project['sites'] as $site_id => $site) {
-    if ($site_id == 'mentalhealthchampionni') {
-      // Special case for URL that contains a '-'
-      $sites['mentalhealthchampion-ni.org.uk.lndo.site'] = $site_id;
-    }
-    elseif ($site_id == 'infolibrarynics') {
-      $sites['info.library.nics.gov.uk.lndo.site'] = $site_id;
-    }
-    elseif ($site_id == 'pressclippingsnics') {
-      $sites['pressclippings.nics.gov.uk.lndo.site'] = $site_id;
-    }
-    elseif ($site_id == 'independentpaneltruthrecoveryni') {
-      $sites['independentpanel.truthrecoveryni.co.uk.lndo.site'] = $site_id;
-    }
-    else {
-      $sites[$site['url'] . '.lndo.site'] = $site_id;
     }
   }
 }

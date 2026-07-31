@@ -1,0 +1,16 @@
+uuid: f6946dc7-11e8-4fa9-8abc-30ae06e4a619
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: Production
+description: 'Used for the production site only.'
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/nipsintra/production
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }

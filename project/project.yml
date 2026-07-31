@@ -5,8 +5,8 @@ project_disk_size: 36864
 db_disk_size: 12288
 sites:
     ppsintra:
-        name: PPS
-        url: pps.intranet.nigov.net
+        name: 'Public Prosecution Service Northern Ireland'
+        url: pps.intranet.nipublicsector.net
         solr: ppsintra
         www: false
         cron_spec: '10 * * * *'
@@ -15,8 +15,8 @@ sites:
         status: development
         default: false
     uregniintra:
-        name: Uregni
-        url: uregni.intranet.nigov.net
+        name: 'Utility Regulator Northern Ireland'
+        url: uregni.intranet.nipublicsector.net
         solr: uregniintra
         www: false
         cron_spec: '10 * * * *'
@@ -25,8 +25,8 @@ sites:
         status: development
         default: false
     pbniintra:
-        name: PBNI
-        url: pbni.intranet.nigov.net
+        name: 'Probation Board Northern Ireland'
+        url: pbni.intranet.nipublicsector.net
         solr: pbniintra
         www: false
         cron_spec: '10 * * * *'
@@ -35,8 +35,8 @@ sites:
         status: development
         default: false
     niaomiintra:
-        name: NIAO
-        url: niaomi.intranet.nigov.net
+        name: 'Northern Ireland Audit Office'
+        url: niaomi.intranet.nipublicsector.net
         solr: niaomiintra
         www: false
         cron_spec: '10 * * * *'
@@ -45,8 +45,8 @@ sites:
         status: development
         default: false
     nipbintra:
-        name: 'NI Policing Board Intranet'
-        url: nipb.intranet.nigov.net
+        name: 'Northern Ireland Policing Board Intranet'
+        url: nipb.intranet.nipublicsector.net
         solr: nipbintra
         www: false
         cron_spec: '10 * * * *'
@@ -55,8 +55,8 @@ sites:
         status: development
         default: false
     afbiintra:
-        name: AFBI
-        url: afbi.intranet.nigov.net
+        name: 'Agri-Foods & Biosciences Institute'
+        url: afbi.intranet.nipublicsector.net
         solr: afbiintra
         www: false
         cron_spec: '10 * * * *'
@@ -66,11 +66,21 @@ sites:
         default: false
     poniintra:
         name: 'Northern Ireland Police Ombudsman'
-        url: poni.intranet.nigov.net
+        url: poni.intranet.nipublicsector.net
         solr: poniintra
         www: false
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/poniintra ; drush core-cron'
         database: poniintra
+        status: development
+        default: false
+    nipsintra:
+        name: 'Northern Ireland Prison Service'
+        url: nips.intranet.nipublicsector.net
+        solr: nipsintra
+        www: false
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/nipsintra ; drush core-cron'
+        database: nipsintra
         status: development
         default: false

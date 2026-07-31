@@ -1,0 +1,13 @@
+uuid: 4c54bc09-831a-49fb-ac5b-69b43deff00b
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.audio
+_core:
+  default_config_hash: O_ZDwU1L9CM3IqHjWvgSqhB5zXbS8D0K9kZG4nRgpXY
+id: media.audio
+target_entity_type_id: media
+target_bundle: audio
+default_langcode: site_default
+language_alterable: false
