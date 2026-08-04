@@ -1,0 +1,20 @@
+uuid: cecdb5d8-ee90-4079-b28d-2bc226d042d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nipsintra_theme
+id: messages
+theme: nipsintra_theme
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: a5c946e3-308d-4667-aa06-5746ce0de702
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__documents_search__publication_search_page
+name: 'search_api:views_page__documents_search__publication_search_page'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

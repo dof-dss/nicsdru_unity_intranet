@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.node.publication.body
     - field.field.node.publication.field_attachment
-    - field.field.node.publication.field_content_manager_link
+    - field.field.node.publication.field_external_url
     - field.field.node.publication.field_meta_tags
     - field.field.node.publication.field_publication_type
     - field.field.node.publication.field_published_date
@@ -15,16 +15,16 @@ dependencies:
     - content_moderation
     - datetime
     - field_group
+    - link
     - media_library
     - metatag
     - path
     - text
-    - unity_intranet_content_manager
 third_party_settings:
   field_group:
     group_publications:
       children:
-        - field_content_manager_link
+        - field_external_url
         - field_attachment
       label: Publications
       region: content
@@ -36,7 +36,7 @@ third_party_settings:
         show_empty_fields: false
         id: ''
         label_as_html: false
-        description: 'You must provide a content manager link or attachment.'
+        description: 'You must provide an external link or attachment.'
         required_fields: true
 id: node.publication.default
 targetEntityType: node
@@ -61,16 +61,18 @@ content:
     third_party_settings: {  }
   field_attachment:
     type: media_library_widget
-    weight: 17
+    weight: 27
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-  field_content_manager_link:
-    type: content_manager_widget
-    weight: 16
+  field_external_url:
+    type: link_default
+    weight: 26
     region: content
-    settings: {  }
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   field_meta_tags:
     type: metatag_firehose

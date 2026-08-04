@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.resources.body
     - field.field.node.resources.field_attachment
-    - field.field.node.resources.field_content_manager_link
     - field.field.node.resources.field_external_url
     - field.field.node.resources.field_meta_tags
     - field.field.node.resources.field_published_date
@@ -21,13 +20,11 @@ dependencies:
     - media_library_edit
     - metatag
     - path
-    - pbni_common
     - text
 third_party_settings:
   field_group:
     group_publications:
       children:
-        - field_content_manager_link
         - field_attachment
         - field_external_url
       label: Publications
@@ -73,12 +70,6 @@ content:
       media_library_edit:
         show_edit: true
         edit_form_mode: default
-  field_content_manager_link:
-    type: content_manager_widget
-    weight: 15
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_external_url:
     type: link_default
     weight: 17

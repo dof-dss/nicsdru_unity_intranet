@@ -1,0 +1,14 @@
+uuid: e37ea293-6cf9-4809-b90c-4f053476a768
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ocfPPSgeVIOpf14DD_Wfso-dU0Diy9BXddaAz0aiEiw
+id: '403'
+label: '403 access denied'
+tags:
+  canonical_url: '[site:url]'
+  shortlink: '[site:url]'
+  og_title: '[site:name]'
+  og_type: Website
+  og_url: '[site:url]'

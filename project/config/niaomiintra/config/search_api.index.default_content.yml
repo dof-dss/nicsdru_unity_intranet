@@ -10,7 +10,6 @@ dependencies:
     - search_api.server.solr_default
   module:
     - node
-    - search_api
     - search_api_solr
     - taxonomy
     - user
@@ -141,6 +140,7 @@ field_settings:
 
 
 
+
       fields:
         - 'entity:node/title'
   status:
@@ -168,6 +168,7 @@ field_settings:
     configuration:
       type: union
       separator: |+
+
 
 
 
@@ -212,7 +213,9 @@ processor_settings:
     excerpt: true
     excerpt_always: false
     excerpt_length: 256
-    exclude_fields: {  }
+    exclude_fields:
+      - spelling
+      - title_fulltext
     highlight: always
     highlight_partial: false
   html_filter:
@@ -248,6 +251,7 @@ tracker_settings:
     indexing_order: fifo
 options:
   cron_limit: 50
+  delete_on_fail: true
   index_directly: true
   track_changes_in_references: false
 server: solr_default

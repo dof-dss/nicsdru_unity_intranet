@@ -10,6 +10,8 @@ adding:
       stats_cache: org.apache.solr.search.stats.LRUStatsCache
       distrib: true
       context: solr
+    index_empty_text_fields: false
+    suppress_missing_languages: false
 removing:
   backend_config:
     connector_config:

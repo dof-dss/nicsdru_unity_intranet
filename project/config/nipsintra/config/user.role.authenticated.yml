@@ -1,0 +1,22 @@
+uuid: 01a0f507-8f3e-4630-9dae-e540da58a0a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.webform_default
+  module:
+    - filter
+    - media
+    - system
+_core:
+  default_config_hash: CYZMnR6fUBvTK3RFjNZqY7cIL5Sp0wg2W9cOJXV6Z00
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use text format basic_html'
+  - 'use text format webform_default'
+  - 'view media'

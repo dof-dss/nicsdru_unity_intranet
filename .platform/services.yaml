@@ -17,6 +17,7 @@ db:
             - nipbintradb
             - afbiintradb
             - poniintradb
+            - nipsintradb
         endpoints:
             ppsintra:
                 default_schema: ppsintradb
@@ -46,6 +47,10 @@ db:
                 default_schema: poniintradb
                 privileges:
                     poniintradb: admin
+            nipsintra:
+                default_schema: nipsintradb
+                privileges:
+                    nipsintradb: admin
 solr_9_9:
     type: 'solr:9.9'
     disk: 1024
@@ -70,6 +75,8 @@ solr_9_9:
                 conf_dir: !archive solr_configsets/afbiintra/conf/
             poniintra_index:
                 conf_dir: !archive solr_configsets/poniintra/conf/
+            nipsintra_index:
+                conf_dir: !archive solr_configsets/nipsintra/conf/
         endpoints:
             ppsintra:
                 core: ppsintra_index
@@ -85,5 +92,7 @@ solr_9_9:
                 core: afbiintra_index
             poniintra:
                 core: poniintra_index
+            nipsintra:
+                core: nipsintra_index
 redis:
     type: 'redis:6.0'

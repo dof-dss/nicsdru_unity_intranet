@@ -20,4 +20,6 @@ default_value_callback: ''
 settings:
   title: 1
   link_type: 17
+  allowed_protocols:
+    - contentmanager
 field_type: link

@@ -7,6 +7,7 @@
 
 use Drupal\block_content\BlockContentInterface;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements hook_ENTITY_TYPE_view_alter().
@@ -18,17 +19,6 @@ function afbiintra_common_block_content_view_alter(array &$build, BlockContentIn
       ->get('cache_expiration') ?: 3600;
   }
 }
-
-use Drupal\Core\Breadcrumb\Breadcrumb;
-use Drupal\Core\Entity\EntityStorageInterface;
-use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Link;
-use Drupal\Core\Routing\RouteMatchInterface;
-use Drupal\Core\StreamWrapper\StreamWrapperManager;
-use Drupal\Core\Url;
-use Drupal\node\Entity\Node;
-use Drupal\views\Plugin\views\cache\CachePluginBase;
-use Drupal\views\ViewExecutable;
 
 /**
  * Implements hook_form_BASE_FORM_ID_alter().
@@ -51,9 +41,9 @@ function afbiintra_common_validate_attachment(&$form, FormStateInterface $form_s
   $values = $form_state->getValues();
 
   // Validate file attachments and external links.
-  if (empty($values['field_attachment']["selection"][0]) && $values['field_content_manager_link'][0]['url'] === '') {
+  if (empty($values['field_attachment']["selection"][0]) && $values['field_external_url'][0]['uri'] === '') {
     $message = t('You must provide an attachment or a content manager link');
-    $form_state->setErrorByName('field_content_manager_link', $message);
+    $form_state->setErrorByName('field_external_url', $message);
     $form_state->setErrorByName('field_attachment', $message);
   }
 }

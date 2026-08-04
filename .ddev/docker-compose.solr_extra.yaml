@@ -8,7 +8,7 @@
 services:
     solr:
         environment:
-            SOLR_SITES: 'ppsintra uregniintra pbniintra niaomiintra nipbintra afbiintra poniintra'
+            SOLR_SITES: 'ppsintra uregniintra pbniintra niaomiintra nipbintra afbiintra poniintra nipsintra'
         volumes:
             - '${DDEV_APPROOT}/.platform/solr_configsets:/solr-configsets:ro'
         entrypoint:
