@@ -35,6 +35,7 @@ db_import_command:
         gzip -dc .ddev/.downloads/db_nipbintra.sql.gz | ddev import-db --database=nipbintra --skip-hooks 
         gzip -dc .ddev/.downloads/db_afbiintra.sql.gz | ddev import-db --database=afbiintra --skip-hooks 
         gzip -dc .ddev/.downloads/db_poniintra.sql.gz | ddev import-db --database=poniintra --skip-hooks 
+        scripts/solr/configure-local-connectors --all
     service: host
 files_pull_command:
     command: |
