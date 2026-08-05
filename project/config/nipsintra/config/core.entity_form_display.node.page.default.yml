@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_enable_toc
     - field.field.node.page.field_meta_tags
     - field.field.node.page.field_next_audit_due
     - node.type.page
@@ -37,13 +36,6 @@ content:
     weight: 10
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_enable_toc:
-    type: boolean_checkbox
-    weight: 2
-    region: content
-    settings:
-      display_label: true
     third_party_settings: {  }
   field_meta_tags:
     type: metatag_firehose

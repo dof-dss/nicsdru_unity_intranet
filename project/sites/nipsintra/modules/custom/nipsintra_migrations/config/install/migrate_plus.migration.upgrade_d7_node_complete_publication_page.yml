@@ -76,7 +76,7 @@ process:
     -
       plugin: get
       source: comment
-  field_publication_attachment:
+  field_attachment:
     -
       plugin: sub_process
       source: field_publication_attachment
@@ -123,7 +123,7 @@ process:
           from_format: 'Y-m-d H:i:s'
           to_format: Y-m-d
           source: value
-  field_publication_type:
+  field_type:
     - plugin: static_map
       source: field_publication_type
       default_value: null
