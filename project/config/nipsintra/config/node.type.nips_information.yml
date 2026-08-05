@@ -1,0 +1,16 @@
+uuid: 27a96b97-f520-4505-99ad-552468627c94
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main:'
+name: 'NIPS information'
+type: nips_information
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

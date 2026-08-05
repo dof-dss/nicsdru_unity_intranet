@@ -1,0 +1,26 @@
+uuid: b353a906-b343-4b5b-922a-0254ae7fb22f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.nips_information.field_featured_link_image
+    - field.field.node.nips_information.field_locations_image
+    - node.type.nips_information
+  module:
+    - user
+id: node.nips_information.teaser
+targetEntityType: node
+bundle: nips_information
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_featured_link_image: true
+  field_locations_image: true
+  langcode: true
+  search_api_excerpt: true

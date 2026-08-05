@@ -1,0 +1,27 @@
+uuid: 78bd7879-86c5-4f07-8dfc-7667e9ef5643
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gallery
+    - node.type.nips_information
+    - node.type.page
+  module:
+    - node
+id: basic_pattern
+label: 'Basic pattern'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  6a011907-e801-41ca-85ce-ba2cf3874a02:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      gallery: gallery
+      nips_information: nips_information
+      page: page
+selection_logic: and
+weight: -5
+relationships: {  }
