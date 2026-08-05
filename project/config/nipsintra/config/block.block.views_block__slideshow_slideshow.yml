@@ -1,0 +1,24 @@
+uuid: 08395c2c-1183-46d0-8fcc-77e8ff41f393
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slideshow
+  module:
+    - views
+  theme:
+    - nipsintra_theme
+id: views_block__slideshow_slideshow
+theme: nipsintra_theme
+region: slideshow
+weight: 0
+provider: null
+plugin: 'views_block:slideshow-slideshow'
+settings:
+  id: 'views_block:slideshow-slideshow'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

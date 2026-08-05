@@ -20,7 +20,7 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 101
+    weight: 0
     region: content
   field_locations_image:
     type: entity_reference_entity_view
@@ -29,13 +29,10 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 102
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
+  content_moderation_control: true
   langcode: true
+  links: true
   search_api_excerpt: true

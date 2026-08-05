@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.link.field_link_type
     - field.field.node.link.field_link_url
+    - field.field.node.link.field_meta_tags
     - node.type.link
   module:
     - link
@@ -16,15 +17,15 @@ mode: default
 content:
   field_link_type:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    weight: 102
+    weight: 1
     region: content
   field_link_url:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -32,13 +33,11 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 101
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
+  content_moderation_control: true
+  field_meta_tags: true
   langcode: true
+  links: true
   search_api_excerpt: true

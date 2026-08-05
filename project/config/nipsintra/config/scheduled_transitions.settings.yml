@@ -9,6 +9,9 @@ automation:
 bundles:
   -
     entity_type: node
+    bundle: feature
+  -
+    entity_type: node
     bundle: gallery
   -
     entity_type: node

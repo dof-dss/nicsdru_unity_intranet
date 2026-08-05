@@ -1,0 +1,29 @@
+uuid: 91d51a43-e836-423d-ba24-fb6715e61de4
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - slick
+_core:
+  default_config_hash: jHmfPBU2oNraKWjKwqYODaPOKQQM2sczj5TlDlN8Om8
+id: nips
+name: nips
+weight: -10
+label: Nips
+group: ''
+skin: default
+breakpoints: 0
+optimized: true
+options:
+  options__active_tab: edit-options-settings
+  settings:
+    autoplay: true
+    dots: true
+    draggable: false
+    lazyLoad: ondemand
+    respondTo: slider
+    rows: 0
+    slidesToShow: 1.0
+    swipe: false
+    touchMove: false

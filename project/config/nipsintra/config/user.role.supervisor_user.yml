@@ -8,6 +8,7 @@ dependencies:
     - media.type.file
     - media.type.image
     - media.type.remote_video
+    - node.type.feature
     - node.type.gallery
     - node.type.link
     - node.type.news
@@ -17,6 +18,7 @@ dependencies:
     - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
+    - entityqueue
     - file
     - media
     - menu_admin_per_menu
@@ -50,6 +52,7 @@ permissions:
   - 'administer redirects'
   - 'create audio media'
   - 'create document media'
+  - 'create feature content'
   - 'create file media'
   - 'create gallery content'
   - 'create image media'
@@ -63,6 +66,7 @@ permissions:
   - 'delete all revisions'
   - 'delete any audio media'
   - 'delete any document media'
+  - 'delete any feature content'
   - 'delete any file'
   - 'delete any file media'
   - 'delete any gallery content'
@@ -73,12 +77,14 @@ permissions:
   - 'delete any page content'
   - 'delete any publication content'
   - 'delete any remote_video media'
+  - 'delete feature revisions'
   - 'delete gallery revisions'
   - 'delete link revisions'
   - 'delete news revisions'
   - 'delete nips_information revisions'
   - 'delete own audio media'
   - 'delete own document media'
+  - 'delete own feature content'
   - 'delete own file media'
   - 'delete own gallery content'
   - 'delete own image media'
@@ -92,6 +98,7 @@ permissions:
   - 'delete publication revisions'
   - 'edit any audio media'
   - 'edit any document media'
+  - 'edit any feature content'
   - 'edit any file media'
   - 'edit any gallery content'
   - 'edit any image media'
@@ -104,6 +111,7 @@ permissions:
   - 'edit basic meta tags'
   - 'edit own audio media'
   - 'edit own document media'
+  - 'edit own feature content'
   - 'edit own file media'
   - 'edit own gallery content'
   - 'edit own image media'
@@ -113,6 +121,7 @@ permissions:
   - 'edit own page content'
   - 'edit own publication content'
   - 'edit own remote_video media'
+  - 'manipulate entityqueues'
   - 'reschedule scheduled transitions node gallery'
   - 'reschedule scheduled transitions node link'
   - 'reschedule scheduled transitions node news'
@@ -120,6 +129,7 @@ permissions:
   - 'reschedule scheduled transitions node page'
   - 'reschedule scheduled transitions node publication'
   - 'revert all revisions'
+  - 'revert feature revisions'
   - 'revert gallery revisions'
   - 'revert link revisions'
   - 'revert news revisions'
@@ -139,6 +149,7 @@ permissions:
   - 'view all scheduled transitions'
   - 'view any unpublished content'
   - 'view content references'
+  - 'view feature revisions'
   - 'view gallery revisions'
   - 'view latest version'
   - 'view link revisions'

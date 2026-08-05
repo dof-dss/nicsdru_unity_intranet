@@ -20,4 +20,5 @@ default_value_callback: ''
 settings:
   title: 0
   link_type: 1
+  allowed_protocols: {  }
 field_type: link

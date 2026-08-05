@@ -14,13 +14,18 @@ targetEntityType: node
 bundle: nips_information
 mode: featured_news_viewmode
 content:
-  links:
-    settings: {  }
+  field_featured_link_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
-  field_featured_link_image: true
+  content_moderation_control: true
   field_locations_image: true
   langcode: true
+  links: true
   search_api_excerpt: true

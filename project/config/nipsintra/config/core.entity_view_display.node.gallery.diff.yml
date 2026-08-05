@@ -1,18 +1,14 @@
-uuid: 7f8ac202-c78a-4a28-8f9b-89179fd8678a
+uuid: 997639b3-d1a4-4cbf-8383-7d6cd27b5912
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.diff
-    - field.field.node.news.body
-    - field.field.node.news.field_location
-    - field.field.node.news.field_meta_tags
-    - field.field.node.news.field_photo
-    - field.field.node.news.field_published_date
-    - field.field.node.news.field_teaser
-    - node.type.news
+    - field.field.node.gallery.body
+    - field.field.node.gallery.field_gallery_images
+    - field.field.node.gallery.field_meta_tags
+    - node.type.gallery
   module:
-    - datetime
     - field_group
     - metatag
     - text
@@ -21,13 +17,11 @@ third_party_settings:
   field_group:
     group_additional_content_details:
       children:
-        - field_teaser
-        - field_location
         - field_meta_tags
       label: 'Additional content details'
       parent_name: ''
       region: content
-      weight: 3
+      weight: 2
       format_type: html_element
       format_settings:
         classes: field-collection
@@ -41,11 +35,9 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-_core:
-  default_config_hash: vJ9psnhWFA6IlrpCfG4tztcBlGg035esDJEw2URgZ50
-id: node.news.diff
+id: node.gallery.diff
 targetEntityType: node
-bundle: news
+bundle: gallery
 mode: diff
 content:
   body:
@@ -53,46 +45,21 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 0
     region: content
-  field_location:
-    type: entity_reference_label
+  field_gallery_images:
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: false
+      view_mode: default
+      link: true
     third_party_settings: {  }
-    weight: 5
+    weight: 1
     region: content
   field_meta_tags:
     type: metatag_empty_formatter
     label: inline
     settings: {  }
-    third_party_settings: {  }
-    weight: 6
-    region: content
-  field_photo:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: article_float
-      link: false
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_published_date:
-    type: datetime_default
-    label: inline
-    settings:
-      timezone_override: ''
-      format_type: unity_date
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  field_teaser:
-    type: string
-    label: inline
-    settings:
-      link_to_entity: false
     third_party_settings: {  }
     weight: 4
     region: content

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - node.type.feature
     - node.type.gallery
     - node.type.link
     - node.type.news
@@ -95,6 +96,7 @@ type_settings:
       weight: -2
   entity_types:
     node:
+      - feature
       - gallery
       - link
       - news
