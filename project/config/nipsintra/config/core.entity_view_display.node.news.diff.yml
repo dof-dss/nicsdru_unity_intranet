@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.diff
     - field.field.node.news.body
+    - field.field.node.news.field_location
     - field.field.node.news.field_meta_tags
     - field.field.node.news.field_photo
     - field.field.node.news.field_published_date
@@ -88,6 +89,7 @@ content:
     region: content
 hidden:
   content_moderation_control: true
+  field_location: true
   langcode: true
   links: true
   search_api_excerpt: true

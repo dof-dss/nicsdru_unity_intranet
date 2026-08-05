@@ -1,0 +1,26 @@
+uuid: e4435a27-613b-4bdf-b454-ddc674fa90f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.locations_image_viewmode
+    - field.field.node.nips_information.field_featured_link_image
+    - field.field.node.nips_information.field_locations_image
+    - node.type.nips_information
+  module:
+    - user
+id: node.nips_information.locations_image_viewmode
+targetEntityType: node
+bundle: nips_information
+mode: locations_image_viewmode
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_featured_link_image: true
+  field_locations_image: true
+  langcode: true
+  search_api_excerpt: true

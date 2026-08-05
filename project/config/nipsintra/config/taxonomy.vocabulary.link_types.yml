@@ -1,0 +1,9 @@
+uuid: 61ea4cdb-a5e3-475d-ab9c-5f77553a3ed5
+langcode: en
+status: true
+dependencies: {  }
+name: 'Link types'
+vid: link_types
+description: null
+weight: 0
+new_revision: false

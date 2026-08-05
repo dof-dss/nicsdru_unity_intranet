@@ -1,0 +1,44 @@
+uuid: 4757ae53-2a24-4c7b-9741-02d89c83e734
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+    - filter.format.filtered_html_with_no_images
+    - filter.format.filtered_html_with_tokens
+    - node.type.gallery
+    - node.type.news
+    - node.type.nips_information
+    - node.type.page
+  module:
+    - filter
+    - flag
+    - node
+    - redirect
+    - system
+id: editor_user
+label: 'editor user'
+weight: 5
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'administer nodes'
+  - 'administer redirects'
+  - 'create gallery content'
+  - 'create nips_information content'
+  - 'delete any gallery content'
+  - 'delete any news content'
+  - 'delete any nips_information content'
+  - 'delete any page content'
+  - 'delete own gallery content'
+  - 'delete own nips_information content'
+  - 'edit any gallery content'
+  - 'edit any nips_information content'
+  - 'edit own gallery content'
+  - 'edit own nips_information content'
+  - 'flag content_audit'
+  - 'unflag content_audit'
+  - 'use text format filtered_html'
+  - 'use text format filtered_html_with_no_images'
+  - 'use text format filtered_html_with_tokens'
+  - 'view the administration theme'
