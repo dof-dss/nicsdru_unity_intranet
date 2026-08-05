@@ -9,7 +9,16 @@ automation:
 bundles:
   -
     entity_type: node
+    bundle: gallery
+  -
+    entity_type: node
+    bundle: link
+  -
+    entity_type: node
     bundle: news
+  -
+    entity_type: node
+    bundle: nips_information
   -
     entity_type: node
     bundle: page

@@ -3,7 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - node.type.gallery
+    - node.type.link
     - node.type.news
+    - node.type.nips_information
     - node.type.page
     - node.type.publication
   module:
@@ -92,7 +95,10 @@ type_settings:
       weight: -2
   entity_types:
     node:
+      - gallery
+      - link
       - news
+      - nips_information
       - page
       - publication
   default_moderation_state: draft
