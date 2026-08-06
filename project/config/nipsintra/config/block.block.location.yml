@@ -1,0 +1,29 @@
+uuid: 4cd9c4cd-5bda-4f3a-a577-265922d6232f
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.location
+  module:
+    - facets
+    - system
+  theme:
+    - nipsintra_theme
+id: location
+theme: nipsintra_theme
+region: search_facets
+weight: -4
+provider: null
+plugin: 'facet_block:location'
+settings:
+  id: 'facet_block:location'
+  label: Location
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: location
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/news\r\n/news/location/*\r\n/news/date/*"

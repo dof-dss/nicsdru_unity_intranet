@@ -1,0 +1,11 @@
+uuid: 0beaa64a-9863-4703-abdb-f27f6cf965a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.featured_news_viewmode
+label: featured_news_viewmode
+description: ''
+targetEntityType: node
+cache: true

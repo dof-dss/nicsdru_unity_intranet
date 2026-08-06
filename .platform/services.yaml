@@ -51,27 +51,32 @@ db:
                 default_schema: nipsintradb
                 privileges:
                     nipsintradb: admin
-solr_8_11:
-    type: 'solr:8.11'
+solr_9_9:
+    type: 'solr:9.9'
     disk: 1024
     configuration:
+        modules:
+            - extraction
+            - analysis-extras
+            - langid
+            - ltr
         cores:
             ppsintra_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/ppsintra/conf/
             uregniintra_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/uregniintra/conf/
             pbniintra_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/pbniintra/conf/
             niaomiintra_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/niaomiintra/conf/
             nipbintra_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/nipbintra/conf/
             afbiintra_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/afbiintra/conf/
             poniintra_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/poniintra/conf/
             nipsintra_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/nipsintra/conf/
         endpoints:
             ppsintra:
                 core: ppsintra_index

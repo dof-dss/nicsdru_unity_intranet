@@ -1,0 +1,44 @@
+uuid: e82add6d-04ef-4ad6-a58d-37898cb91906
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_audit
+label: 'Content audit'
+bundles:
+  - article
+  - contact
+  - page
+  - profile
+entity_type: node
+global: true
+flag_short: 'Flag content for audit'
+flag_long: 'This flag is set by a rule'
+flag_message: ''
+unflag_short: 'Audit this published content'
+unflag_long: 'Click this link to indicate you have checked this content for accuracy and relevance'
+unflag_message: ''
+unflag_denied_text: ''
+weight: 0
+flag_type: 'entity:node'
+link_type: reload
+flagTypeConfig:
+  show_in_links:
+    full: full
+    teaser: '0'
+    rss: '0'
+    search_index: '0'
+    search_result: '0'
+    print: '0'
+    diff_standard: '0'
+    token: '0'
+    contact_us: '0'
+    social_media: '0'
+    teaser_large: '0'
+    revision: '0'
+  show_as_field: false
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions: {  }
+linkTypeConfig: {  }

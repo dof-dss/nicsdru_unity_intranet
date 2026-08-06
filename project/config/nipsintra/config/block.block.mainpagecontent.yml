@@ -1,4 +1,4 @@
-uuid: c6bb699c-fc7a-411d-aad7-b8b32dcc1341
+uuid: a9ce9497-e54c-4b05-a8be-c52b42a21580
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
 id: mainpagecontent
 theme: nipsintra_theme
 region: content
-weight: -1
+weight: 0
 provider: null
 plugin: system_main_block
 settings:

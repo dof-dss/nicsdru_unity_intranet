@@ -1,0 +1,11 @@
+uuid: 1c161382-921f-4f45-840e-64987ccc6821
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.locations_image_viewmode
+label: locations_image_viewmode
+description: ''
+targetEntityType: node
+cache: true

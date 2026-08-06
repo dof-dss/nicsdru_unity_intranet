@@ -1,0 +1,15 @@
+uuid: 41b8b7aa-219a-4fa0-8fd4-131a62206d8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.content_audit
+  module:
+    - flag
+id: flag_action.content_audit_unflag
+label: 'Audit this published content'
+type: node
+plugin: 'flag_action:content_audit_unflag'
+configuration:
+  flag_id: content_audit
+  flag_action: unflag

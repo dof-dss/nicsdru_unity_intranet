@@ -1,0 +1,22 @@
+uuid: 3e87261f-943e-49e3-bfbd-af4b94bffd41
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.nips_information
+id: node.nips_information.status
+field_name: status
+entity_type: node
+bundle: nips_information
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
