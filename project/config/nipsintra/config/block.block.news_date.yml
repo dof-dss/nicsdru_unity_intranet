@@ -1,0 +1,29 @@
+uuid: 92fdf38c-c415-4205-99ab-ef945f8ec59f
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.news_date
+  module:
+    - facets
+    - system
+  theme:
+    - nipsintra_theme
+id: news_date
+theme: nipsintra_theme
+region: search_facets
+weight: -5
+provider: null
+plugin: 'facet_block:news_date'
+settings:
+  id: 'facet_block:news_date'
+  label: Date
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: news_date
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/news\r\n/news/location/*\r\n/news/date/*"

@@ -2,6 +2,8 @@ uuid: cbb9dc5a-8331-4c9c-8497-6bb48c54c389
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - nipsintra_theme
 id: pagetitle
@@ -15,4 +17,8 @@ settings:
   label: 'Page title'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/publications\r\n/publications/date/*\r\n/news\r\n/news/date/*\r\n/news/location/*"
