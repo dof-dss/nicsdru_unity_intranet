@@ -1,0 +1,24 @@
+uuid: 630831b9-3353-4e0b-9fb4-b2beb7f75bcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.prison_locations
+  module:
+    - views
+  theme:
+    - nipsintra_theme
+id: views_block__prison_locations_prison_locations
+theme: nipsintra_theme
+region: top_second
+weight: 0
+provider: null
+plugin: 'views_block:prison_locations-prison_locations'
+settings:
+  id: 'views_block:prison_locations-prison_locations'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }
