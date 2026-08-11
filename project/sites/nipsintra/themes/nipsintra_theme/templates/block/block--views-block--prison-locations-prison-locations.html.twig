@@ -32,7 +32,9 @@
 {% if label %}
   <h2>{{ label }}</h2>
 {% endif %}
-{{ drupal_field('field_featured_link_image', 'node', 43, 'featured_news_viewmode') }}
+
+{{ drupal_field('field_locations_image', 'node', 43, 'locations_image_viewmode') }}
 {% block content %}
   {{ content }}
 {% endblock %}
+

@@ -1,0 +1,25 @@
+uuid: 65114463-c4ba-4197-8706-bc9140d93c90
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c6c46b61-0da1-4c8e-bdef-a65f868b8b61'
+  module:
+    - block_content
+  theme:
+    - nipsintra_theme
+id: frontbannertext
+theme: nipsintra_theme
+region: front_welcome
+weight: 0
+provider: null
+plugin: 'block_content:c6c46b61-0da1-4c8e-bdef-a65f868b8b61'
+settings:
+  id: 'block_content:c6c46b61-0da1-4c8e-bdef-a65f868b8b61'
+  label: 'Front banner text'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

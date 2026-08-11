@@ -1,0 +1,25 @@
+uuid: d8392cda-2e11-4060-a6c5-0c1275273ce8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-footer-menu
+  module:
+    - system
+  theme:
+    - nipsintra_theme
+id: footerlinks
+theme: nipsintra_theme
+region: footer_first
+weight: -9
+provider: null
+plugin: 'system_menu_block:menu-footer-menu'
+settings:
+  id: 'system_menu_block:menu-footer-menu'
+  label: 'Footer menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
