@@ -19,7 +19,6 @@ install:
   - ckeditor5_allowed_html
   - ckeditor5_premium_features
   - ckeditor5_premium_features_fullscreen
-  - ckeditor5_premium_features_import_word
   - clientside_validation
   - clientside_validation_jquery
   - clone_nodes
