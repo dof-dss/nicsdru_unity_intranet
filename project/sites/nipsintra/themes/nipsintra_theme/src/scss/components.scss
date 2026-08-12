@@ -4,3 +4,187 @@
  */
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+.node-type-gallery {
+  .field--name-field-gallery-images {
+    display: grid;
+    grid-gap: 24px;
+    grid-template-rows: auto;
+    word-wrap: break-word;
+    word-break: break-word;
+
+    &.layout--triptych {
+      @include breakpoint($mob) {
+        grid-template-columns: 1fr 1fr;
+        //grid-gap: 24px;
+      }
+
+      @include breakpoint($phab) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    .media-image {
+      margin: 0;
+    }
+
+    a.photoswipe {
+      display: block;
+      background-color: $grey-lightest;
+      padding: .5em;
+      min-height: 170px;
+      height: 100%;
+
+      &:focus {
+        figcaption {
+          color: $link;
+        }
+      }
+    }
+  }
+}
+
+#content #block-mainpagecontent .content .photoswipe-gallery a.photoswipe {
+  border: none;
+  padding: 1rem;
+  margin: 0;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  outline: 0;
+  outline-offset: 0;
+
+  &:hover {
+    text-decoration-thickness: 2px;
+  }
+
+  &:focus {
+    background: $grey-lightest;
+    display: block;
+    border: 1px solid $black;
+  }
+}
+
+button.pswp__button {
+  background-image: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  //position: absolute !important;
+  border: none !important;
+  font-weight: normal !important;
+  padding: 0;
+}
+
+button.pswp__button--arrow--next {
+  position: absolute !important;
+}
+
+.sidebar-second-layout {
+  .rel-menu--latest-news {
+    margin-bottom: 2rem;
+
+    ul {
+      margin-bottom: 1rem;
+
+      li {
+        padding: 0 0 .6rem 1rem;
+        list-style: none;
+        margin: 0 0 .2rem;
+        position: relative;
+
+        &::before {
+          content: "-";
+          left: 0;
+          position: absolute;
+          top: 0;
+        }
+
+        .date-published {
+          display: block;
+          font-size: 1.4rem;
+          line-height: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+.region-front-welcome {
+  background: $brand-secondary;
+  max-width: 100%;
+  text-align: left;
+
+  @include breakpoint($lap) {
+    background: $brand-secondary resolve('nips-bkgd.png') no-repeat 100%;
+  }
+
+  #block-frontbannertext {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    .content {
+      padding: 3.5rem 1rem;
+
+      @include breakpoint($lap) {
+        padding: 3.5rem 24rem 3.5rem 0;
+      }
+
+      p {
+        @include adjust-font-size-to(24px);
+        text-transform: uppercase;
+        color: $white;
+      }
+    }
+  }
+}
+
+#top-area {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .column {
+    width: 30rem;
+
+    .content {
+      padding-top: 0;
+      float: none;
+    }
+
+    .item-list {
+      margin: 2rem 0 1.8rem 2.4rem;
+    }
+  }
+
+  h2 {
+    color: $headings;
+  }
+
+  p {
+    margin-bottom: .4rem;
+  }
+}
+
+#footer {
+  margin-top: 4rem;
+
+  .column {
+    &:first-child {
+      width: 50%
+    }
+
+    &:last-child {
+      width: 30%;
+      float: right;
+    }
+    .menu li {
+      display: inline-block;
+      border: none;
+    }
+  }
+}
+
+#footer_wrapper {
+  margin-bottom: 0;
+}

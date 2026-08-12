@@ -1,0 +1,15 @@
+uuid: a7555050-9c16-4f0c-bfde-63fa16431686
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.content_audit
+  module:
+    - flag
+id: flag_action.content_audit_flag
+label: 'Flag content for audit'
+type: node
+plugin: 'flag_action:content_audit_flag'
+configuration:
+  flag_id: content_audit
+  flag_action: flag

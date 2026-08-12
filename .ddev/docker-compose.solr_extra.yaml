@@ -7,13 +7,10 @@
 #############################################################################
 services:
     solr:
+        environment:
+            SOLR_SITES: 'ppsintra uregniintra pbniintra niaomiintra nipbintra afbiintra poniintra nipsintra'
         volumes:
-            - './solr-cores/ppsintra:/solr-ppsintra-conf'
-            - './solr-cores/uregniintra:/solr-uregniintra-conf'
-            - './solr-cores/pbniintra:/solr-pbniintra-conf'
-            - './solr-cores/niaomiintra:/solr-niaomiintra-conf'
-            - './solr-cores/nipbintra:/solr-nipbintra-conf'
-            - './solr-cores/afbiintra:/solr-afbiintra-conf'
-            - './solr-cores/poniintra:/solr-poniintra-conf'
-            - './solr-cores/nipsintra:/solr-nipsintra-conf'
-        entrypoint: 'bash -c "VERBOSE=yes docker-entrypoint.sh precreate-core ppsintra /solr-ppsintra-conf; precreate-core uregniintra /solr-uregniintra-conf; precreate-core pbniintra /solr-pbniintra-conf; precreate-core niaomiintra /solr-niaomiintra-conf; precreate-core nipbintra /solr-nipbintra-conf; precreate-core afbiintra /solr-afbiintra-conf; precreate-core poniintra /solr-poniintra-conf; precreate-core nipsintra /solr-nipsintra-conf; exec solr -f"'
+            - '${DDEV_APPROOT}/.platform/solr_configsets:/solr-configsets:ro'
+        entrypoint:
+            - bash
+            - /mnt/ddev_config/solr/create-or-refresh-cores.sh

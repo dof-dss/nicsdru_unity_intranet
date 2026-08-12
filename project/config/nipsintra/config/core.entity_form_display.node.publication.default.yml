@@ -9,9 +9,12 @@ dependencies:
     - field.field.node.publication.field_published_date
     - field.field.node.publication.field_type
     - node.type.publication
+    - workflows.workflow.nics_editorial_workflow
   module:
+    - content_moderation
     - datetime
     - media_library
+    - media_library_edit
     - metatag
     - path
     - text
@@ -24,7 +27,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 14
+    weight: 13
     region: content
     settings:
       rows: 9
@@ -40,11 +43,14 @@ content:
     third_party_settings: {  }
   field_attachment:
     type: media_library_widget
-    weight: 13
+    weight: 14
     region: content
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: true
+        edit_form_mode: default
   field_meta_tags:
     type: metatag_firehose
     weight: 5
@@ -60,14 +66,10 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_type:
-    type: entity_reference_autocomplete
+    type: options_select
     weight: 12
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   langcode:
     type: language_select

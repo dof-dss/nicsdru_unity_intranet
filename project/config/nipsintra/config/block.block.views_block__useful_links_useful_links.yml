@@ -1,0 +1,24 @@
+uuid: 58a36248-9982-49ee-853d-0c1254dd43f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.useful_links
+  module:
+    - views
+  theme:
+    - nipsintra_theme
+id: views_block__useful_links_useful_links
+theme: nipsintra_theme
+region: top_third
+weight: 0
+provider: null
+plugin: 'views_block:useful_links-useful_links'
+settings:
+  id: 'views_block:useful_links-useful_links'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

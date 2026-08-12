@@ -1,0 +1,11 @@
+uuid: 66ae4550-4b91-4c59-b290-90adde2d9a25
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.home_teaser
+label: home_teaser
+description: ''
+targetEntityType: node
+cache: true

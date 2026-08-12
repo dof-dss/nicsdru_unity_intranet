@@ -1,0 +1,11 @@
+uuid: 74980707-f43c-41ed-afe8-498d88cc4543
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.nips_information
+id: node.nips_information
+target_entity_type_id: node
+target_bundle: nips_information
+default_langcode: site_default
+language_alterable: false

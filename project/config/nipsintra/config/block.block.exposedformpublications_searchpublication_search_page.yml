@@ -1,0 +1,28 @@
+uuid: 3aa30263-1c04-4c57-9c36-dbf8f03d9920
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.publications_search
+  module:
+    - system
+    - views
+  theme:
+    - nipsintra_theme
+id: exposedformpublications_searchpublication_search_page
+theme: nipsintra_theme
+region: search_facets
+weight: -3
+provider: null
+plugin: 'views_exposed_filter_block:publications_search-publication_search_page'
+settings:
+  id: 'views_exposed_filter_block:publications_search-publication_search_page'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/publications\r\n/publications/date/*"

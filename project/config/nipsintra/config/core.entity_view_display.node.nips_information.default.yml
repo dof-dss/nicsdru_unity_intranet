@@ -1,0 +1,38 @@
+uuid: 6b9b8a32-ab9d-4eff-a12f-01936e5189d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.nips_information.field_featured_link_image
+    - field.field.node.nips_information.field_locations_image
+    - node.type.nips_information
+  module:
+    - user
+id: node.nips_information.default
+targetEntityType: node
+bundle: nips_information
+mode: default
+content:
+  field_featured_link_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_locations_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  content_moderation_control: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,22 @@
+uuid: 2670416d-675b-44e7-ad35-20a9375e47b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gallery
+id: node.gallery.status
+field_name: status
+entity_type: node
+bundle: gallery
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

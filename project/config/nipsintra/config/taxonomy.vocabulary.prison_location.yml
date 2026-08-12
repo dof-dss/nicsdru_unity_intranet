@@ -1,0 +1,9 @@
+uuid: 85af9668-7207-4dc8-812a-fe7f70f96b72
+langcode: en
+status: true
+dependencies: {  }
+name: 'Prison Location'
+vid: prison_location
+description: 'Taxonomy for the prison locations'
+weight: 0
+new_revision: false

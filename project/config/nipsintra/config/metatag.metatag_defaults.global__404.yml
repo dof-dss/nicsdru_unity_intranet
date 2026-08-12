@@ -1,0 +1,15 @@
+uuid: d91d2aec-036a-4f35-9388-69b22f9f7c71
+langcode: en
+status: true
+dependencies: {  }
+id: global__404
+label: 'Global: 404'
+tags:
+  canonical_url: '[site:url]'
+  og_title: '[site:name]'
+  og_type: website
+  og_url: '[site:url]'
+  shortlink: '[site:url]'
+  title: 'Page not found | [site:name]'
+  twitter_cards_page_url: '[site:url]'
+  twitter_cards_title: '[site:name]'

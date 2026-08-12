@@ -4,19 +4,25 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
-    - filter.format.webform_default
   module:
+    - file
     - filter
     - media
+    - node
+    - search
     - system
 _core:
   default_config_hash: CYZMnR6fUBvTK3RFjNZqY7cIL5Sp0wg2W9cOJXV6Z00
 id: authenticated
-label: 'Authenticated user'
-weight: 1
+label: 'authenticated user'
+weight: -8
 is_admin: false
 permissions:
+  - 'access administration pages'
   - 'access content'
+  - 'delete own files'
+  - 'search content'
   - 'use text format basic_html'
-  - 'use text format webform_default'
   - 'view media'
+  - 'view own unpublished content'
+  - 'view the administration theme'

@@ -1,0 +1,25 @@
+uuid: 1d492df7-56cb-410e-8ae2-8acbed9bbacf
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bf9efb06-4475-4b74-bd86-ff37ff3a9144'
+  module:
+    - block_content
+  theme:
+    - nipsintra_theme
+id: footerlogo
+theme: nipsintra_theme
+region: footer_second
+weight: -9
+provider: null
+plugin: 'block_content:bf9efb06-4475-4b74-bd86-ff37ff3a9144'
+settings:
+  id: 'block_content:bf9efb06-4475-4b74-bd86-ff37ff3a9144'
+  label: 'Footer logo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

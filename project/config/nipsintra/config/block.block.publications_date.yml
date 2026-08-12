@@ -1,0 +1,29 @@
+uuid: e1be69e4-e834-4928-bf02-fee66777d448
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.published_date_publications
+  module:
+    - facets
+    - system
+  theme:
+    - nipsintra_theme
+id: publications_date
+theme: nipsintra_theme
+region: search_facets
+weight: -2
+provider: null
+plugin: 'facet_block:published_date_publications'
+settings:
+  id: 'facet_block:published_date_publications'
+  label: Date
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: publications_date
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/publications\r\n/publications/date/*"

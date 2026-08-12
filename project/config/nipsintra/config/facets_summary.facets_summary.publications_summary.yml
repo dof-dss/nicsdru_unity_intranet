@@ -1,0 +1,25 @@
+uuid: 2adcfeea-26bc-45c9-b9ad-56997272c889
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.publications
+    - views.view.publications_search
+  module:
+    - search_api
+id: publications_summary
+name: 'Publications summary'
+facet_source_id: 'search_api:views_page__publications_search__publication_search_page'
+processor_configs:
+  hide_when_not_rendered:
+    processor_id: hide_when_not_rendered
+    weights:
+      build: '45'
+    settings: {  }
+facets:
+  published_date_publications:
+    checked: true
+    label: Date
+    separator: ', '
+    show_count: false
+    weight: 0

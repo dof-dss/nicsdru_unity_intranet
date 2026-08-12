@@ -3,7 +3,7 @@ _core:
 langcode: en
 uuid: 0ab81b45-f023-481c-8525-068e559b0224
 name: 'Northern Ireland Prison Service'
-mail: webdev@finance-ni.gov.uk
+mail: test@test.com
 slogan: ''
 page:
   403: ''

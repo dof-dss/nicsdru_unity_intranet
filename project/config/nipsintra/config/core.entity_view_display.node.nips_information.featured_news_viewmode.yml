@@ -1,0 +1,31 @@
+uuid: e9e57847-5a3d-419e-8a2c-7925d814e6c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.featured_news_viewmode
+    - field.field.node.nips_information.field_featured_link_image
+    - field.field.node.nips_information.field_locations_image
+    - node.type.nips_information
+  module:
+    - user
+id: node.nips_information.featured_news_viewmode
+targetEntityType: node
+bundle: nips_information
+mode: featured_news_viewmode
+content:
+  field_featured_link_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: unity_3_col_images
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  content_moderation_control: true
+  field_locations_image: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
