@@ -5,51 +5,8 @@
 # original repository.Any changes here will be overwritten when the project #
 # is built.                                                                 #
 #############################################################################
-'https://pps.intranet.nipublicsector.net/':
-    type: upstream
-    upstream: 'unity_intranet:http'
-    cache:
-        enabled: 'false'
-'https://uregni.intranet.nipublicsector.net/':
-    type: upstream
-    upstream: 'unity_intranet:http'
-    cache:
-        enabled: 'false'
-'https://pbni.intranet.nipublicsector.net/':
-    type: upstream
-    upstream: 'unity_intranet:http'
-    cache:
-        enabled: 'false'
-'https://niaomi.intranet.nipublicsector.net/':
-    type: upstream
-    upstream: 'unity_intranet:http'
-    cache:
-        enabled: 'false'
-'https://nipb.intranet.nipublicsector.net/':
-    type: upstream
-    upstream: 'unity_intranet:http'
-    cache:
-        enabled: 'false'
-'https://afbi.intranet.nipublicsector.net/':
-    type: upstream
-    upstream: 'unity_intranet:http'
-    cache:
-        enabled: 'false'
-'https://poni.intranet.nipublicsector.net/':
-    type: upstream
-    upstream: 'unity_intranet:http'
-    cache:
-        enabled: 'false'
-'https://nips.intranet.nipublicsector.net/':
-    type: upstream
-    upstream: 'unity_intranet:http'
-    cache:
-        enabled: 'false'
-'https://www.{all}/':
-    type: upstream
-    upstream: 'unity_intranet:http'
-    cache:
-        enabled: 'false'
 'https://{all}/':
-    type: redirect
-    to: 'https://www.{all}/'
+    type: upstream
+    upstream: 'unity_intranet:http'
+    cache:
+        enabled: 'false'
