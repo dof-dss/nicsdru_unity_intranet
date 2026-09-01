@@ -38,6 +38,12 @@ process:
   field_media_oembed_video:
     - source: uri
       plugin: video_url
+    - plugin: str_replace
+      search: http://www.
+      replace: https://
+    - plugin: str_replace
+      search: https://www.
+      replace: https://
   # Title field.
   field_title: field_title
   # Transcript field.

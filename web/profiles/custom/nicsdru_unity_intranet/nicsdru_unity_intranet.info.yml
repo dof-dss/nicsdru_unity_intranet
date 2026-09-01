@@ -89,6 +89,7 @@ install:
   - node
   - node_edit_protection
   - noreferrer
+  - oembed_providers
   - options
   - origins_ckeditor_enhancements
   - origins_common
