@@ -17,7 +17,7 @@ adding:
 removing:
   backend_config:
     connector_config:
-      host: afbiintra_solr.internal
+      host: nipbintra_solr.internal
       port: 8080
       skip_schema_check: false
       solr_install_dir: ''
