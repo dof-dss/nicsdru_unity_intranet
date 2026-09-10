@@ -1,9 +1,11 @@
 adding:
+  dependencies:
+    config:
+      - search_api_solr.solr_field_type.text_string_und_6_0_0
   backend_config:
     connector_config:
       host: ddev-unity.intranet-solr
       port: 8983
-      core: uregniintra_index
       skip_schema_check: true
       solr_install_dir: /opt/solr
       checkpoints_collection: ''
@@ -17,6 +19,5 @@ removing:
     connector_config:
       host: uregniintra_solr.internal
       port: 8080
-      core: uregniintra_index
       skip_schema_check: false
       solr_install_dir: ''

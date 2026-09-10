@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entityqueue.entity_queue.slideshow
+    - entityqueue.entity_queue.useful_links
     - media.type.audio
     - media.type.document
     - media.type.file
@@ -136,6 +138,8 @@ permissions:
   - 'revert nips_information revisions'
   - 'revert page revisions'
   - 'revert publication revisions'
+  - 'update slideshow entityqueue'
+  - 'update useful_links entityqueue'
   - 'use moderation sidebar'
   - 'use nics_editorial_workflow transition archive'
   - 'use nics_editorial_workflow transition create_new_draft'

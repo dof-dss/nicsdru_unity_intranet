@@ -11,7 +11,7 @@ field_name: field_location
 entity_type: node
 bundle: news
 label: Location
-description: 'Choose one or more prison locations for the list below.'
+description: 'Choose one or more prison locations from the list below.'
 required: true
 translatable: false
 default_value: {  }
