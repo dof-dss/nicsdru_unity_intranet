@@ -1,7 +1,7 @@
 _core:
   default_config_hash: C9_7ISEphRfV6e2q4N7kp5I8GYyxNCP8hKeU2JZxowM
 enabled: true
-location: /app/log/nipsinta
+location: /app/log/nipsintra
 rotation:
   schedule: daily
   delete: true
@@ -11,3 +11,4 @@ format: "[[log:created:custom:'D, d/m/Y - H:i:s.000']] [[log:level]] [[log:chann
 level: 7
 channels_type: exclude
 channels: {  }
+
