@@ -12,7 +12,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/ppsintra ; drush core-cron'
         database: ppsintra
-        status: development
+        status: production
         default: false
     uregniintra:
         name: 'Utility Regulator Northern Ireland'
@@ -22,7 +22,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/uregniintra ; drush core-cron'
         database: uregniintra
-        status: development
+        status: production
         default: false
     pbniintra:
         name: 'Probation Board Northern Ireland'
@@ -32,7 +32,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/pbniintra ; drush core-cron'
         database: pbniintra
-        status: development
+        status: production
         default: false
     niaomiintra:
         name: 'Northern Ireland Audit Office'
@@ -42,7 +42,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/niaomiintra ; drush core-cron'
         database: niaomiintra
-        status: development
+        status: production
         default: false
     nipbintra:
         name: 'Northern Ireland Policing Board Intranet'
@@ -52,7 +52,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/nipbintra ; drush core-cron'
         database: nipbintra
-        status: development
+        status: production
         default: false
     afbiintra:
         name: 'Agri-Foods & Biosciences Institute'
@@ -62,7 +62,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/afbiintra ; drush core-cron'
         database: afbiintra
-        status: development
+        status: production
         default: true
     poniintra:
         name: 'Northern Ireland Police Ombudsman'
@@ -72,7 +72,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/poniintra ; drush core-cron'
         database: poniintra
-        status: development
+        status: production
         default: false
     nipsintra:
         name: 'Northern Ireland Prison Service'
@@ -82,5 +82,5 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/nipsintra ; drush core-cron'
         database: nipsintra
-        status: development
+        status: production
         default: false
