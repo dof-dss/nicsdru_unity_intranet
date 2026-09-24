@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c6273b13b59918955b3fa1a9c7013367",
+    "content-hash": "3b6425bbfcefb31d929a21ebfd1b1fdb",
     "packages": [
         {
             "name": "accessible360/accessible-slick",
@@ -4542,26 +4542,26 @@
         },
         {
             "name": "drupal/feed_block",
-            "version": "3.0.0",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/feed_block.git",
-                "reference": "3.0.0"
+                "reference": "3.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/feed_block-3.0.0.zip",
-                "reference": "3.0.0",
-                "shasum": "45989779703246ccc550f288c4756460d84c5f52"
+                "url": "https://ftp.drupal.org/files/projects/feed_block-3.0.2.zip",
+                "reference": "3.0.2",
+                "shasum": "747d9b8b075ba3b1339e661089a98a511c1d3f9e"
             },
             "require": {
-                "drupal/core": "^10 || ^11"
+                "drupal/core": "^10.1 || ^11 || ^12"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0",
-                    "datestamp": "1717177740",
+                    "version": "3.0.2",
+                    "datestamp": "1788974165",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9176,17 +9176,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "6.2.10",
+            "version": "6.2.12",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "6.2.10"
+                "reference": "6.2.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-6.2.10.zip",
-                "reference": "6.2.10",
-                "shasum": "82594fde5a3041867903a93f69f447b29bf3115f"
+                "url": "https://ftp.drupal.org/files/projects/webform-6.2.12.zip",
+                "reference": "6.2.12",
+                "shasum": "ec49eefc3d3c1fe34e6290f46fb810595a8edf95"
             },
             "require": {
                 "drupal/core": "^10.2",
@@ -9205,6 +9205,7 @@
                 "drupal/entity_print": "2.x-dev",
                 "drupal/group": "1.x-dev",
                 "drupal/hal": "1 - 2",
+                "drupal/honeypot": "^2.0",
                 "drupal/jquery_ui": "1.x-dev",
                 "drupal/jquery_ui_button": "2.x-dev",
                 "drupal/jquery_ui_checkboxradio": "2.x-dev",
@@ -9236,8 +9237,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "6.2.10",
-                    "datestamp": "1773926566",
+                    "version": "6.2.12",
+                    "datestamp": "1790179457",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
