@@ -77,32 +77,30 @@ process:
       plugin: get
       source: comment
   body:
-    -
-      plugin: get
+    - plugin: get
       source: body
-    -
-      plugin: media_wysiwyg_filter
-    -
-      plugin: filter_absolute_links
+    - plugin: media_wysiwyg_filter
+    - plugin: filter_absolute_links
       replace_urls:
-        niaomi.intranet.nigov.net
+        http://niaomi.intranet.nigov.net
+        https://niaomi.intranet.nigov.net
         http://test-niaomi.intranet.nigov.net
-    -
-      plugin: site_files_filter
+    - plugin: site_files_filter
       from_ref: sites/niao-intranet/files
       to_ref: files/niaomiintra
-    -
-      plugin: site_files_filter
+
+    - plugin: site_files_filter
+      from_ref: sites/niao/files
+      to_ref: files/niaomiintra
+    - plugin: site_files_filter
       from_ref: sites/drupal-niaomi.intranet.nigov.net/files
       to_ref: files/niaomiintra
-    -
-      plugin: str_replace
+    - plugin: str_replace
       regex: true
       search: /(<ul>)?(<li>)?(<div[^>]*>)?<a href="(\S+?files\/\S+)".*?>\s*[^<]*(\([^<]*\))?<\/a>(<\/div>)?(<\/li>)?(<\/ul>)?/
       replace: ''
   body/0/format:
-    -
-      plugin: static_map
+    - plugin: static_map
       bypass: true
       source: body/0/format
       map:

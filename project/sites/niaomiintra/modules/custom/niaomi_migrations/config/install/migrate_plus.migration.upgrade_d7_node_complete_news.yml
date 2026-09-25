@@ -1,7 +1,7 @@
 uuid: bcee40f6-726b-4dd7-871d-26ad52a01144
 langcode: en
 status: true
-dependencies: {  }
+dependencies: { }
 id: upgrade_d7_node_complete_news
 class: Drupal\node\Plugin\migrate\D7NodeTranslation
 field_plugin_method: null
@@ -16,93 +16,76 @@ source:
   node_type: news
 process:
   nid:
-    -
-      plugin: get
+    - plugin: get
       source: tnid
   vid:
-    -
-      plugin: get
+    - plugin: get
       source: vid
   langcode:
-    -
-      plugin: default_value
+    - plugin: default_value
       source: language
       default_value: und
   title:
-    -
-      plugin: get
+    - plugin: get
       source: title
   uid:
-    -
-      plugin: get
+    - plugin: get
       source: node_uid
   status:
-    -
-      plugin: get
+    - plugin: get
       source: status
   created:
-    -
-      plugin: get
+    - plugin: get
       source: created
   changed:
-    -
-      plugin: get
+    - plugin: get
       source: timestamp
   promote:
-    -
-      plugin: get
+    - plugin: get
       source: promote
   sticky:
-    -
-      plugin: get
+    - plugin: get
       source: sticky
   revision_uid:
-    -
-      plugin: get
+    - plugin: get
       source: revision_uid
   revision_log:
-    -
-      plugin: get
+    - plugin: get
       source: log
   revision_timestamp:
-    -
-      plugin: get
+    - plugin: get
       source: timestamp
   content_translation_source:
-    -
-      plugin: get
+    - plugin: get
       source: source_langcode
   comment_node_news/0/status:
-    -
-      plugin: get
+    - plugin: get
       source: comment
   body:
-    -
-      plugin: get
+    - plugin: get
       source: body
-    -
-      plugin: media_wysiwyg_filter
-    -
-      plugin: filter_absolute_links
+    - plugin: media_wysiwyg_filter
+    - plugin: filter_absolute_links
       replace_urls:
-        niaomi.intranet.nigov.net
+        http://niaomi.intranet.nigov.net
+        https://niaomi.intranet.nigov.net
         http://test-niaomi.intranet.nigov.net
-    -
-      plugin: site_files_filter
+    - plugin: site_files_filter
       from_ref: sites/niao-intranet/files
       to_ref: files/niaomiintra
-    -
-      plugin: site_files_filter
+
+    - plugin: site_files_filter
+      from_ref: sites/niao/files
+      to_ref: files/niaomiintra
+    - plugin: site_files_filter
       from_ref: sites/drupal-niaomi.intranet.nigov.net/files
       to_ref: files/niaomiintra
-    -
-      plugin: str_replace
+    - plugin: str_replace
       regex: true
       search: /(<ul>)?(<li>)?(<div[^>]*>)?<a href="(\S+?files\/\S+)".*?>\s*[^<]*(\([^<]*\))?<\/a>(<\/div>)?(<\/li>)?(<\/ul>)?/
       replace: ''
   body/0/format:
-    -
-      plugin: static_map
+    - plugin: static_map
       bypass: true
       source: body/0/format
       map:
@@ -112,8 +95,7 @@ process:
         restricted_html: basic_html
         plain_text: plain_text
   field_photo:
-    -
-      plugin: sub_process
+    - plugin: sub_process
       source: field_photo
       process:
         target_id: fid
@@ -122,8 +104,7 @@ process:
         width: width
         height: height
   field_published_date:
-    -
-      plugin: sub_process
+    - plugin: sub_process
       source: field_published_date
       process:
         value:
@@ -132,8 +113,7 @@ process:
           to_format: Y-m-d
           source: value
   field_teaser:
-    -
-      plugin: get
+    - plugin: get
       source: field_teaser
   field_news_type:
     - plugin: static_map
@@ -152,8 +132,7 @@ process:
         Time Recording: 23
         Training: 18
   field_metatag:
-    -
-      plugin: d7_metatag_entities
+    - plugin: d7_metatag_entities
       source: pseudo_metatag_entities
 destination:
   plugin: 'entity_complete:node'
