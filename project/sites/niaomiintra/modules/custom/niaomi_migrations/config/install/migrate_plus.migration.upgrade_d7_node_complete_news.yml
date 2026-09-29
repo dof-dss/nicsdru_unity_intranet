@@ -85,7 +85,8 @@ process:
     -
       plugin: filter_absolute_links
       replace_urls:
-        niaomi.intranet.nigov.net
+        http://niaomi.intranet.nigov.net
+        https://niaomi.intranet.nigov.net
         http://test-niaomi.intranet.nigov.net
     -
       plugin: site_files_filter
