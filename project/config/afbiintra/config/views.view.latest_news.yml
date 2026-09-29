@@ -456,7 +456,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<a href="/news">More News ...</a>'
+            value: '<a href="/news/type/news-release-1/type/press-release-2">More News ...</a>'
             format: basic_html
           tokenize: false
       display_extenders:

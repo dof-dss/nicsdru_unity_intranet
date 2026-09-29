@@ -10,6 +10,7 @@ dependencies:
     - search_api.server.solr_default
   module:
     - node
+    - search_api
     - search_api_solr
     - taxonomy
     - user
@@ -141,6 +142,7 @@ field_settings:
 
 
 
+
       fields:
         - 'entity:node/title'
   status:
@@ -168,6 +170,7 @@ field_settings:
     configuration:
       type: union
       separator: |+
+
 
 
 

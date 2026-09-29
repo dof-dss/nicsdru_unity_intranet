@@ -6,7 +6,6 @@ adding:
     connector_config:
       host: ddev-unity.intranet-solr
       port: 8983
-      core: afbiintra_index
       skip_schema_check: true
       solr_install_dir: /opt/solr
       checkpoints_collection: ''
@@ -20,6 +19,5 @@ removing:
     connector_config:
       host: afbiintra_solr.internal
       port: 8080
-      core: afbiintra_index
       skip_schema_check: false
       solr_install_dir: ''
