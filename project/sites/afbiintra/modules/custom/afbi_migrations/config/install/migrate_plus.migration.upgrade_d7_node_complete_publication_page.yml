@@ -108,7 +108,7 @@ process:
       replace: ''
     - plugin: str_replace
       regex: true
-      search: /<a href="(contentmanager:\/\/.*?)">(.*?)<\/a>/
+      search: /(<ul>)?(<li>)?(<div[^>]*>)?<a href="(contentmanager:\/\/.*?)">(.*?)<\/a>(<\/div>)?(<\/li>)?(<\/ul>)?/
       replace: ''
   body/0/format:
     -
