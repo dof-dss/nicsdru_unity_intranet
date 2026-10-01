@@ -7,6 +7,7 @@ dependencies:
     - node.type.gallery
     - node.type.link
     - node.type.page
+    - node.type.publication
   module:
     - content_moderation
 _core:
@@ -103,4 +104,5 @@ type_settings:
       - gallery
       - link
       - page
+      - publication
   default_moderation_state: draft
