@@ -1,0 +1,42 @@
+uuid: 6c2b0a3b-77fb-4ebc-b464-c7827196d48f
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: GTM-MC8JVSV.6abf545ea5bba0.74555562
+label: GTM-MC8JVSV
+weight: 0
+tag_container_ids:
+  - GTM-MC8JVSV
+advanced_settings:
+  consent_mode: false
+  gtm:
+    GTM-MC8JVSV:
+      data_layer: dataLayer
+      include_classes: false
+      allowlist_classes: ''
+      blocklist_classes: ''
+      include_environment: false
+      environment_id: ''
+      environment_token: ''
+dimensions_metrics: {  }
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+events:
+  search: {  }
+  generate_lead:
+    value: ''
+    currency: ''
+  login:
+    method: CMS
+  webform_purchase: {  }
+  custom: {  }
+  sign_up:
+    method: CMS
