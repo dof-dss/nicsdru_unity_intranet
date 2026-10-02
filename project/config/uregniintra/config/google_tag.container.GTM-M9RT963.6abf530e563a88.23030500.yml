@@ -1,0 +1,42 @@
+uuid: 895b2747-e522-430f-81e4-25c95c7659db
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: GTM-M9RT963.6abf530e563a88.23030500
+label: GTM-M9RT963
+weight: 0
+tag_container_ids:
+  - GTM-M9RT963
+advanced_settings:
+  consent_mode: false
+  gtm:
+    GTM-M9RT963:
+      data_layer: dataLayer
+      include_classes: false
+      allowlist_classes: ''
+      blocklist_classes: ''
+      include_environment: false
+      environment_id: ''
+      environment_token: ''
+dimensions_metrics: {  }
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+events:
+  search: {  }
+  generate_lead:
+    value: ''
+    currency: ''
+  login:
+    method: CMS
+  webform_purchase: {  }
+  custom: {  }
+  sign_up:
+    method: CMS
