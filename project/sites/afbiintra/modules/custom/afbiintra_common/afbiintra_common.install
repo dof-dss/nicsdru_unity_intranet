@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Replace text in field_my_text.
+ * Replace ;amp in field_external_url uri.
  */
 function afbiintra_common_update_10001(&$sandbox) {
   $storage = \Drupal::entityTypeManager()->getStorage('node');
