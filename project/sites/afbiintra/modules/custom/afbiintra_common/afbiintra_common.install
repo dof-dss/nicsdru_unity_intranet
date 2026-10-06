@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * Replace text in field_my_text.
+ */
+function afbiintra_common_update_10001(&$sandbox) {
+  $storage = \Drupal::entityTypeManager()->getStorage('node');
+
+  if (!isset($sandbox['progress'])) {
+    $sandbox['progress'] = 0;
+    $sandbox['current_nid'] = 0;
+    $sandbox['max'] = $storage->getQuery()
+      ->accessCheck(FALSE)
+      ->condition('type', 'publication')
+      ->count()
+      ->execute();
+  }
+
+  $nids = $storage->getQuery()
+    ->accessCheck(FALSE)
+    ->condition('type', 'publication')
+    ->condition('nid', $sandbox['current_nid'], '>')
+    ->sort('nid')
+    ->range(0, 50)
+    ->execute();
+
+  foreach ($storage->loadMultiple($nids) as $node) {
+    $sandbox['current_nid'] = $node->id();
+
+    if (!$node->get('field_external_url')->isEmpty()) {
+      $links = $node->get('field_external_url');
+
+      foreach ($links as $link) {
+        $uri = $link->uri;
+
+        $new_uri = str_replace(
+          'amp;',
+          '',
+          $uri
+        );
+
+        if ($uri !== $new_uri) {
+          $link->uri = $new_uri;
+          $node->save();
+        }
+      }
+    }
+
+    $sandbox['progress']++;
+  }
+
+  $sandbox['#finished'] = $sandbox['max']
+    ? min(1, $sandbox['progress'] / $sandbox['max'])
+    : 1;
+}
