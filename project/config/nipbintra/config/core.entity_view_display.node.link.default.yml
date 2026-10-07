@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.link.field_link_language
     - field.field.node.link.field_link_type
     - field.field.node.link.field_link_url
     - field.field.node.link.field_meta_tags
@@ -38,7 +37,6 @@ content:
     region: content
 hidden:
   content_moderation_control: true
-  field_link_language: true
   field_meta_tags: true
   langcode: true
   links: true
