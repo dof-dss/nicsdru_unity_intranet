@@ -1,4 +1,4 @@
-uuid: f0f0a658-836e-402d-8e3d-98727f2dface
+uuid: 93f4263a-353d-42b9-a408-aef3eeade03e
 langcode: en
 status: true
 dependencies: {  }
@@ -6,5 +6,5 @@ _core:
   default_config_hash: 1w4AXdoSfMY8T7aSeD3dYz7zieA3Co5DVzZTwXmikuQ
 id: plain_cards
 label: 'Plain cards'
-revision: true
+revision: 1
 description: ''

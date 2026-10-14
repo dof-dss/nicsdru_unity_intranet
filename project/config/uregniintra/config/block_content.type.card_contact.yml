@@ -1,4 +1,4 @@
-uuid: 57044e19-2954-467c-a019-a1af711e1297
+uuid: e12bc81b-f88e-426f-bce6-06b546dcd255
 langcode: en
 status: true
 dependencies: {  }
@@ -6,5 +6,5 @@ _core:
   default_config_hash: 7_rtzb1BUL0AAVVu1fNUavcR7DaSkSKvAvfyap_f7RM
 id: card_contact
 label: 'Card - contact'
-revision: true
+revision: 1
 description: ''
