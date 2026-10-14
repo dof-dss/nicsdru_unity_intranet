@@ -45,11 +45,8 @@
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
-'https://www.{all}/':
+'https://{all}/':
     type: upstream
     upstream: 'unity_intranet:http'
     cache:
         enabled: 'false'
-'https://{all}/':
-    type: redirect
-    to: 'https://www.{all}/'
