@@ -1,4 +1,4 @@
-uuid: 606c79d4-ab18-48ec-8259-ef9fda45ccf1
+uuid: 997c1e78-33f7-4f8e-99b7-caa1780e212e
 langcode: en
 status: true
 dependencies: {  }
@@ -6,5 +6,5 @@ _core:
   default_config_hash: YsHjzgGms0cW21s7D42IbKNJLgl7K-mdIf_auEH8OCE
 id: video_and_caption
 label: 'Video and caption'
-revision: true
+revision: 1
 description: ''

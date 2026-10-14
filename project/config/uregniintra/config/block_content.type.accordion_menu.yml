@@ -1,4 +1,4 @@
-uuid: 35d84ae0-5381-49bd-bbcd-c1d7b68f74b3
+uuid: 98909537-8487-4b1d-8c93-9ba3c1fb8f24
 langcode: en
 status: true
 dependencies: {  }
@@ -6,5 +6,5 @@ _core:
   default_config_hash: mjvmWwRLRBL0zD9dVXuj1gUfx8QAz-W5aSGFw0KTY0A
 id: accordion_menu
 label: 'Accordion menu'
-revision: true
+revision: 1
 description: ''
