@@ -1,4 +1,4 @@
-uuid: 1245e24b-6043-4231-993b-a258906e25db
+uuid: 213fa1b4-6135-4266-b074-a11031abee48
 langcode: en
 status: true
 dependencies: {  }
@@ -6,5 +6,5 @@ _core:
   default_config_hash: zNAjb33WmBBmXORLBXjPtLz4iSq78FLtanXMom-Kh3w
 id: information_notice
 label: 'Information notice'
-revision: true
+revision: 1
 description: ''
