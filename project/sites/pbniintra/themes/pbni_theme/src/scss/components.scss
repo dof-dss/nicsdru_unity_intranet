@@ -417,3 +417,7 @@ footer .content li:nth-child(odd) {
     background: none;
   }
 }
+
+.main-content #block-mainpagecontent table {
+  overflow-wrap: break-word;
+}
