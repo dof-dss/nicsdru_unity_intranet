@@ -421,3 +421,7 @@ footer .content li:nth-child(odd) {
 .main-content #block-mainpagecontent table {
   overflow-wrap: break-word;
 }
+
+.node-type-landing-page .card-deck:not(.card-deck--plain) .card {
+  border-top-color: $brand-secondary;
+}
