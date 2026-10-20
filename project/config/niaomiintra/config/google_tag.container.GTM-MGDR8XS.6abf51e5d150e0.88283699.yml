@@ -1,0 +1,42 @@
+uuid: 7cb47b82-2d28-4f48-8f53-074ebe56ea86
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: GTM-MGDR8XS.6abf51e5d150e0.88283699
+label: GTM-MGDR8XS
+weight: 0
+tag_container_ids:
+  - GTM-MGDR8XS
+advanced_settings:
+  consent_mode: false
+  gtm:
+    GTM-MGDR8XS:
+      data_layer: dataLayer
+      include_classes: false
+      allowlist_classes: ''
+      blocklist_classes: ''
+      include_environment: false
+      environment_id: ''
+      environment_token: ''
+dimensions_metrics: {  }
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+events:
+  search: {  }
+  generate_lead:
+    value: ''
+    currency: ''
+  login:
+    method: CMS
+  webform_purchase: {  }
+  custom: {  }
+  sign_up:
+    method: CMS

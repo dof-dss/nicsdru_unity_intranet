@@ -170,10 +170,11 @@ a.btn.btn-staff-page {
 
 
 .homepage--pull-quote {
-  background: resolve('uregni-welcome.png') no-repeat 100%;
+  background: #f6f6f6 resolve('uregni-welcome.png') no-repeat 100% 61%;
   height: 20rem;
-  background-size: 37rem;
-  background-color: #f6f6f6;
+  background-size: 40rem;
+  padding-left: 4rem;
+  
   @media screen and (max-width: $tab) {
     background: #f6f6f6;
   }
@@ -189,17 +190,7 @@ a.btn.btn-staff-page {
     }
   }
 
-  blockquote {
-
-    font-weight: bold;
-    margin-left: 2rem;
-    text-align: left;
-    max-width: 55%;
-    @media screen and (max-width: $tab) {
-      max-width: 100%;
-    }
-
-    p {
+  p {
       color: $black;
       @include adjust-font-size-to(24px);
       @media screen and (max-width: $tab) {
@@ -209,18 +200,12 @@ a.btn.btn-staff-page {
 
     h2 {
       color: $brand-primary;
+      margin-top: 0;
       @include adjust-font-size-to(40px);
       @media screen and (max-width: $tab) {
         @include adjust-font-size-to(38px);
       }
     }
-
-    &::before,
-    &::after {
-      background: none;
-      padding: 0;
-    }
-  }
 }
 
 #bottom-area-row-1 {
@@ -364,4 +349,9 @@ a.btn.btn-staff-page {
       }
     }
   }
+}
+
+.region-front-welcome {
+  margin: 0 auto;
+  text-align: left;
 }

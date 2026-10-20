@@ -1,4 +1,4 @@
-uuid: 90ae1b51-f49e-4b11-9368-d62fef472c2f
+uuid: 5c9df094-0229-47f5-b550-e91d249020cc
 langcode: en
 status: true
 dependencies:
@@ -22,4 +22,5 @@ default_value_callback: ''
 settings:
   title: 1
   link_type: 17
+  allowed_protocols: {  }
 field_type: link

@@ -1,4 +1,4 @@
-uuid: 35465d45-d036-4f64-8e26-ad9de58f54eb
+uuid: 2e6b6bd1-d257-4d17-a68d-d626ed82c29f
 langcode: en
 status: true
 dependencies: {  }
@@ -6,5 +6,5 @@ _core:
   default_config_hash: uLbE2Xc_HQ8lNj5llh6ZGxw6Jwx3ObYFX7DMs__dQBI
 id: card_wide
 label: 'Card - wide'
-revision: true
+revision: 1
 description: ''

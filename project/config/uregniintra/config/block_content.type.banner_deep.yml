@@ -1,4 +1,4 @@
-uuid: dbf2d338-d0a9-498a-95e9-755bbbc95482
+uuid: fdcf968d-78ef-4bdf-9cd2-b23a6970c3fc
 langcode: en
 status: true
 dependencies: {  }
@@ -6,5 +6,5 @@ _core:
   default_config_hash: v4IEZJ76rhwX9JAkZZ4I1yWX52520XGcXZ3hdT8ZnGk
 id: banner_deep
 label: 'Banner deep'
-revision: true
+revision: 1
 description: 'Block for displaying a deep banner image on landing page layouts.  Optionally add a strap line below the banner.'

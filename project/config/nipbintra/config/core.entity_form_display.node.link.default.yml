@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.link.field_link_language
     - field.field.node.link.field_link_type
     - field.field.node.link.field_link_url
     - field.field.node.link.field_meta_tags
@@ -22,12 +21,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 6
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_link_language:
-    type: options_select
-    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }

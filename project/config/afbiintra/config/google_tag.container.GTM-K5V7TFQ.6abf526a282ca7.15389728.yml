@@ -1,0 +1,42 @@
+uuid: 1f98e79b-9ab8-4a15-b837-e6036f0ae633
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: GTM-K5V7TFQ.6abf526a282ca7.15389728
+label: GTM-K5V7TFQ
+weight: 0
+tag_container_ids:
+  - GTM-K5V7TFQ
+advanced_settings:
+  consent_mode: false
+  gtm:
+    GTM-K5V7TFQ:
+      data_layer: dataLayer
+      include_classes: false
+      allowlist_classes: ''
+      blocklist_classes: ''
+      include_environment: false
+      environment_id: ''
+      environment_token: ''
+dimensions_metrics: {  }
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+events:
+  search: {  }
+  generate_lead:
+    value: ''
+    currency: ''
+  login:
+    method: CMS
+  webform_purchase: {  }
+  custom: {  }
+  sign_up:
+    method: CMS
