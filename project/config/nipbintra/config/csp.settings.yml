@@ -22,11 +22,11 @@ report-only:
   reporting:
     plugin: none
 enforce:
-  enable: true
+  enable: false
   directives:
     frame-ancestors:
       base: self
     object-src:
       base: none
   reporting:
-    plugin: sitelog
+    plugin: none
