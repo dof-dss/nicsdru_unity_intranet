@@ -16,7 +16,7 @@ provider: null
 plugin: 'block_content:1037e965-0b72-4419-90f8-e33c27d962ab'
 settings:
   id: 'block_content:1037e965-0b72-4419-90f8-e33c27d962ab'
-  label: 'UREGNI Latest News'
+  label: 'UREGNI latest news'
   label_display: visible
   provider: block_content
   status: true
