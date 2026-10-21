@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - node.type.noticeboard
   module:
     - file
     - filter
@@ -19,6 +20,7 @@ weight: -9
 is_admin: false
 permissions:
   - 'access content'
+  - 'create noticeboard content'
   - 'delete own files'
   - 'readonlymode access messages'
   - 'use text format basic_html'
