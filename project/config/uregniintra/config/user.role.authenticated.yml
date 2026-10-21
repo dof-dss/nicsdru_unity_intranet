@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - filter.format.noticeboard
     - node.type.noticeboard
   module:
     - file
@@ -24,5 +25,6 @@ permissions:
   - 'delete own files'
   - 'readonlymode access messages'
   - 'use text format basic_html'
+  - 'use text format noticeboard'
   - 'view media'
   - 'view own unpublished content'
