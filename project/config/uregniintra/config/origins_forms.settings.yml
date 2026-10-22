@@ -1,5 +1,15 @@
+excluded_bundles:
+  staff_member: staff_member
+  basic_page: '0'
+  blog: '0'
+  landing_page: '0'
+  news: '0'
+  noticeboard: '0'
+  publication: '0'
+  webform: '0'
 enable_form_descriptions: 1
 enable_revisions_warning: 0
 revisions_warning_caution_limit: ''
 revisions_warning_lockdown_limit: ''
 revisions_warning_excluded: ''
+exclude_ids_list: ''
