@@ -23,3 +23,9 @@ facets:
     separator: ', '
     show_count: false
     weight: 0
+  publication_type:
+    checked: true
+    label: Type
+    separator: ', '
+    show_count: false
+    weight: 0
