@@ -17,10 +17,10 @@ provider: null
 plugin: 'views_block:latest_blog-home_latest_blog'
 settings:
   id: 'views_block:latest_blog-home_latest_blog'
-  label: 'Our Blog'
+  label: 'Our blogs'
   label_display: visible
   provider: views
-  views_label: 'Our Blog'
+  views_label: 'Our blogs'
   items_per_page: none
 visibility:
   request_path:

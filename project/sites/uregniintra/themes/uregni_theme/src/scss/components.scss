@@ -7,8 +7,8 @@
 
 #top-area {
   .column:first-child {
-    border: 1px solid #7aa221;
-    border-top: 5rem solid #7aa221;
+    border: 1px solid $brand-secondary;
+    border-top: 5rem solid $brand-secondary;
   }
 
   .column:last-child {
@@ -244,8 +244,8 @@ a.btn.btn-staff-page {
   }
 
   .column:last-child {
-    border: 1px solid #834a90;
-    border-top: 5rem solid #834a90;
+    border: 1px solid $brand-primary;
+    border-top: 5rem solid $brand-primary;
   }
 
   h3 {

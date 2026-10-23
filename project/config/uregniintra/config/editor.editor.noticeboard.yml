@@ -1,0 +1,36 @@
+uuid: 4c978fa2-fe98-4763-855d-28896a9ec643
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.noticeboard
+  module:
+    - ckeditor5
+format: noticeboard
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - heading
+      - bold
+      - italic
+      - bulletedList
+      - link
+      - drupalMedia
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_list:
+      properties:
+        reversed: false
+        startIndex: false
+      multiBlock: false
+    media_media:
+      allow_view_mode_override: true
+image_upload:
+  status: false

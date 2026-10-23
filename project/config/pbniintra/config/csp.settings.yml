@@ -1,5 +1,3 @@
-_core:
-  default_config_hash: yOPH6uEZYRHbg2OFP-bze0jGr06fI-Gr_66W-vA8Faw
 report-only:
   enable: true
   directives:
@@ -81,25 +79,60 @@ report-only:
       base: self
       flags:
         - unsafe-inline
+      sources:
+        - cdn.jsdelivr.net
+        - cdnjs.cloudflare.com
+        - fonts.googleapis.com
+        - unpkg.com
     block-all-mixed-content: true
   reporting:
     plugin: none
 enforce:
   enable: false
   directives:
+    default-src:
+      base: self
+    font-src:
+      base: self
+      sources:
+        - 'https://themes.googleusercontent.com'
+        - 'https://fonts.gstatic.com'
+        - 'https://use.fontawesome.com'
+        - 'https://cdn.jsdelivr.net'
+        - 'data:'
+    frame-src:
+      base: self
+      sources:
+        - 'https://www.youtube.com'
+    img-src:
+      base: self
+      sources:
+        - 'https://cdn.jsdelivr.net'
+        - 'https://i.ytimg.com'
+        - 'https://maps.gstatic.com'
+        - 'https://maps.googleapis.com'
+        - 'data:'
     script-src:
       base: self
-    script-src-attr:
-      base: self
+      sources:
+        - 'https://www.googletagmanager.com'
+        - 'https://www.google-analytics.com'
     script-src-elem:
       base: self
+      sources:
+        - 'https://www.googletagmanager.com'
+        - 'https://www.google-analytics.com'
     style-src:
       base: self
     style-src-attr:
       base: self
+      flags:
+        - unsafe-inline
     style-src-elem:
       base: self
-    frame-ancestors:
-      base: self
+      sources:
+        - 'https://www.googletagmanager.com'
+        - 'https://www.google-analytics.com'
+    block-all-mixed-content: true
   reporting:
-    plugin: none
+    plugin: sitelog

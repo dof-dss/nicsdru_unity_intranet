@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - core.entity_view_display.node.landing_page.default
+    - entityqueue.entity_queue.featured_links_queue
+    - entityqueue.entity_queue.news
+    - entityqueue.entity_queue.quick_links_queue
     - media.type.audio
     - media.type.document
     - media.type.file
@@ -20,6 +23,7 @@ dependencies:
     - block_content_permissions
     - content_moderation
     - contextual
+    - entityqueue
     - file
     - layout_builder
     - media
@@ -146,6 +150,8 @@ permissions:
   - 'edit own news content'
   - 'edit own publication content'
   - 'edit own remote_video media'
+  - 'manipulate all entityqueues'
+  - 'manipulate entityqueues'
   - 'reschedule scheduled transitions node basic_page'
   - 'reschedule scheduled transitions node landing_page'
   - 'reschedule scheduled transitions node legal_guidance'
@@ -171,6 +177,9 @@ permissions:
   - 'update any text block content'
   - 'update any video block content'
   - 'update any video_and_caption block content'
+  - 'update featured_links_queue entityqueue'
+  - 'update news entityqueue'
+  - 'update quick_links_queue entityqueue'
   - 'use moderation sidebar'
   - 'use nics_editorial_workflow transition archive'
   - 'use nics_editorial_workflow transition create_new_draft'

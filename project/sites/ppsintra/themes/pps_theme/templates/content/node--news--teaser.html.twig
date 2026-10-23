@@ -71,19 +71,19 @@
  */
 #}
 <article class="news-card">
-<a href="{{ url }}">
-  <div class="news__image" role="presentation">
-    {{ content.field_photo }}
-  </div>
-  <div class="news__body">
-    <h3 class="news-title">{{ node.label }}</h3>
-    <p>
-    {{ content.field_published_date }}
-    {% if content.field_news_type|field_value[0]['#plain_text'] == 'NICS' %}
-      {{ content.field_news_type }}
-    {% endif %}
-    </p>
-    {{ content.field_teaser }}
-  </div>
-</a>
+  <a href="{{ url }}">
+    <div class="news__image" role="presentation">
+      {{ content.field_photo }}
+    </div>
+    <div class="news__body">
+      <h3 class="news-title">{{ node.label }}</h3>
+      <p>
+        {{ content.field_published_date }}
+        {% if content.field_news_type|field_value[0]['#plain_text'] == 'NICS' %}
+          {{ content.field_news_type }}
+        {% endif %}
+      </p>
+      {{ content.field_teaser }}
+    </div>
+  </a>
 </article>
