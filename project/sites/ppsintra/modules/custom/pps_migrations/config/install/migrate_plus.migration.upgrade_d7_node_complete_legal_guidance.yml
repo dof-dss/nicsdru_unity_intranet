@@ -73,10 +73,6 @@ process:
     - plugin: site_files_filter
       from_ref: sites/pps-intranet/files
       to_ref: files/ppsintra
-    - plugin: str_replace
-      regex: true
-      search: /(<ul>)?(<li>)?(<div[^>]*>)?<a href="(\S+?files\/\S+)".*?>\s*[^<]*(\([^<]*\))?<\/a>(<\/div>)?(<\/li>)?(<\/ul>)?/
-      replace: ''
   body/0/format:
     - plugin: static_map
       bypass: true
@@ -106,13 +102,6 @@ process:
         target_id: fid
         display: display
         description: description
-    - plugin: callback
-      callable:
-        - '\Drupal\unity_file_migrations\PublicationLinkProcessor'
-        - publicationLinks
-      source:
-        - nid
-        - body
   field_metatag:
     - plugin: d7_metatag_entities
       source: pseudo_metatag_entities

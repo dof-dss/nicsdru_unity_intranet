@@ -25,13 +25,20 @@ content:
       timezone_override: ''
       format_type: intranet_date
     third_party_settings: {  }
+    weight: 1
+    region: content
+  field_teaser:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   body: true
   content_moderation_control: true
   field_meta_tags: true
-  field_teaser: true
   field_type: true
   langcode: true
   links: true

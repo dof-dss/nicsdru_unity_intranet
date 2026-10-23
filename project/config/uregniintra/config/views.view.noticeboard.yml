@@ -248,7 +248,7 @@ display:
       tags: {  }
   noticeboard_staff:
     id: noticeboard_staff
-    display_title: 'Noticeboard (staff)'
+    display_title: 'Staff noticeboard'
     display_plugin: block
     position: 2
     display_options:
@@ -358,7 +358,7 @@ display:
       tags: {  }
   noticeboard_work:
     id: noticeboard_work
-    display_title: 'Noticeboard (work)'
+    display_title: 'Work noticeboard'
     display_plugin: block
     position: 1
     display_options:

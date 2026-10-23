@@ -7,8 +7,8 @@
 
 #top-area {
   .column:first-child {
-    border: 1px solid #7aa221;
-    border-top: 5rem solid #7aa221;
+    border: 1px solid $brand-secondary;
+    border-top: 5rem solid $brand-secondary;
   }
 
   .column:last-child {
@@ -33,6 +33,8 @@
     .view-content {
       display: flex;
       flex-flow: row wrap;
+      justify-content: normal;
+      grid-gap: 0;
 
       span {
         padding: 1rem;
@@ -47,10 +49,11 @@
   .view-content {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
+    grid-gap: 2rem;
 
     .staff-member {
-      margin: 0 5% 5% 0;
-      width: 31rem;
+      width: 20rem;
       border: 1px solid #0c5e22;
       border-bottom-width: 1rem;
       min-height: 22rem;
@@ -174,7 +177,7 @@ a.btn.btn-staff-page {
   height: 20rem;
   background-size: 40rem;
   padding-left: 4rem;
-  
+
   @media screen and (max-width: $tab) {
     background: #f6f6f6;
   }
@@ -241,8 +244,8 @@ a.btn.btn-staff-page {
   }
 
   .column:last-child {
-    border: 1px solid #834a90;
-    border-top: 5rem solid #834a90;
+    border: 1px solid $brand-primary;
+    border-top: 5rem solid $brand-primary;
   }
 
   h3 {

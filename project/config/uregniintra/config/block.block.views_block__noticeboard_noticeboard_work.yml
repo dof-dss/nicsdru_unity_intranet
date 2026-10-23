@@ -17,10 +17,10 @@ provider: null
 plugin: 'views_block:noticeboard-noticeboard_work'
 settings:
   id: 'views_block:noticeboard-noticeboard_work'
-  label: 'Noticeboard (Work)'
+  label: 'Work noticeboard'
   label_display: visible
   provider: views
-  views_label: 'Noticeboard (Work)'
+  views_label: 'Work noticeboard'
   items_per_page: none
 visibility:
   request_path:
