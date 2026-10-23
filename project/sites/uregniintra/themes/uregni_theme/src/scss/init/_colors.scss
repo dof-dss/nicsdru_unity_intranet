@@ -31,7 +31,7 @@ $chroma: add-colors((
 
   brand-primary: #1d2e53, //#0f3d0f,
 
-  brand-secondary:        #606,
+  brand-secondary:        #2fac66,
 
   brand-tertiary:         #002e62,
 ));
@@ -56,7 +56,7 @@ $chroma: add-colors('functional', (
   error-bg:               'light-pink',
 
   menu-background:        'brand-primary',
-  menu-item-hover:        'brand-secondary',
+  menu-item-hover:        #606,
   menu-separator:         #fff,
   menu-sub-item-background: lighten(#606, 10),
   menu-sub-item-hover:    'brand-primary',
