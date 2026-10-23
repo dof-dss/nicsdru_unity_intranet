@@ -11,4 +11,3 @@ format: "[[log:created:custom:'D, d/m/Y - H:i:s.000']] [[log:level]] [[log:chann
 level: 7
 channels_type: exclude
 channels: {  }
-

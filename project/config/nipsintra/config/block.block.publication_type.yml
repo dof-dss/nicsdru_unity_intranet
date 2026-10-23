@@ -1,0 +1,29 @@
+uuid: 71a75ce9-563d-40d8-bd42-03421a35e92b
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.publication_type
+  module:
+    - facets
+    - system
+  theme:
+    - nipsintra_theme
+id: publication_type
+theme: nipsintra_theme
+region: search_facets
+weight: -5
+provider: null
+plugin: 'facet_block:publication_type'
+settings:
+  id: 'facet_block:publication_type'
+  label: Type
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: publication_type
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/publications\r\n/publications/date/*\r\n/publications/type/*"
