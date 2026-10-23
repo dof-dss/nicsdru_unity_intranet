@@ -36,10 +36,9 @@
  * @see template_preprocess_field()
  */
 #}
-<p>
-  <span>{{ 'Date published: '|t }} </span>
+{% set attributes = attributes.addClass('published-date') %}
+<p{{ attributes }}>
   {% for item in items %}
-    <span>{{ item.content }}</span>
+    {{ item.content }}
   {% endfor %}
 </p>
-
