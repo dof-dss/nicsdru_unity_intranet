@@ -1,0 +1,26 @@
+uuid: afb0c08f-79db-4489-a710-65e23ec6d5d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: news
+label: News
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      news: news
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 5
+  act_as_queue: true
+  reverse: false

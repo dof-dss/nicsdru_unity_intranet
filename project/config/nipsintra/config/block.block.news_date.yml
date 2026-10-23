@@ -12,7 +12,7 @@ dependencies:
 id: news_date
 theme: nipsintra_theme
 region: search_facets
-weight: -5
+weight: -9
 provider: null
 plugin: 'facet_block:news_date'
 settings:

@@ -438,15 +438,13 @@ display:
           custom_tag_output_lifespan_expression: ''
       empty: {  }
       sorts:
-        title:
-          id: title
-          table: node_field_data
-          field: title
+        field_first_name_value:
+          id: field_first_name_value
+          table: node__field_first_name
+          field: field_first_name_value
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: title
           plugin_id: standard
           order: ASC
           expose:
