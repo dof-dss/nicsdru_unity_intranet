@@ -1,4 +1,4 @@
-uuid: d34c99e0-aaf0-4d34-905c-888421d38ae9
+uuid: 08395c2c-1183-46d0-8fcc-77e8ff41f393
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
     - views
   theme:
     - nipsintra_theme
-id: nipsintra_theme_views_block__slideshow_slideshow
+id: views_block__slideshow_slideshow
 theme: nipsintra_theme
 region: slideshow
 weight: 0
