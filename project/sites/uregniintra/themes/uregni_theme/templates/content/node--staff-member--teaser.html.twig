@@ -15,7 +15,7 @@
  * @see template_preprocess_views_view_unformatted()
  */
 #}
-<a href="/staff-profiles/{{ node.title.value }}">
+<a href="/staff-profiles/{{ content.field_first_name['#items'].value|lower }}-{{ node.title.value|lower|replace({'\'': '', ' ': '-'}) }}">
 <article>
   {% if content.field_photo['#items'] %}
     {{ content.field_photo }}
