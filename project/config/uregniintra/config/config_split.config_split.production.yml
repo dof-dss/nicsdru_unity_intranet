@@ -8,11 +8,11 @@ description: 'Used for the production site only.'
 weight: 0
 stackable: false
 no_patching: false
-storage: null
+storage: folder
 folder: ../project/config/uregniintra/production
 module:
   fastly: 0
 theme: {  }
 complete_list:
-  - search_api.server.solr_default
+  - fastly.settings
 partial_list: {  }
