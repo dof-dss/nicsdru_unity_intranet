@@ -8,7 +8,7 @@ description: "Use for any sites that are 'hosted' and not running locally, wheth
 weight: 0
 stackable: false
 no_patching: false
-storage: null
+storage: folder
 folder: ../project/config/niaomiintra/hosted
 module: {  }
 theme: {  }
