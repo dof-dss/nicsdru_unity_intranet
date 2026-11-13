@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.body
     - search_api.index.publications
-    - system.menu.main
   module:
     - search_api
     - text
@@ -255,11 +254,10 @@ display:
           tokenize: false
       path: publications
       menu:
-        type: normal
+        type: none
         title: Documents
         description: ''
         weight: -42
-        enabled: true
         expanded: false
         menu_name: main
         parent: ''
