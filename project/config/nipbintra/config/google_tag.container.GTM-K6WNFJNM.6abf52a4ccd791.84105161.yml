@@ -8,11 +8,11 @@ id: GTM-K6WNFJNM.6abf52a4ccd791.84105161
 label: GTM-K6WNFJNM
 weight: 0
 tag_container_ids:
-  - GTM-K6WNFJNM
+  - GTM-5PT4K5B
 advanced_settings:
   consent_mode: false
   gtm:
-    GTM-K6WNFJNM:
+    GTM-5PT4K5B:
       data_layer: dataLayer
       include_classes: false
       allowlist_classes: ''
