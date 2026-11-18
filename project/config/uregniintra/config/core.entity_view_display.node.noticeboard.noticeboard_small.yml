@@ -11,27 +11,28 @@ dependencies:
     - field.field.node.noticeboard.field_type
     - node.type.noticeboard
   module:
+    - datetime
     - user
 id: node.noticeboard.noticeboard_small
 targetEntityType: node
 bundle: noticeboard
 mode: noticeboard_small
 content:
-  content_moderation_control:
-    settings: {  }
+  field_published_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: intranet_date
     third_party_settings: {  }
-    weight: -20
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
   body: true
+  content_moderation_control: true
   field_meta_tags: true
-  field_published_date: true
   field_teaser: true
   field_type: true
   langcode: true
+  links: true
   search_api_excerpt: true
