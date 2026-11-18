@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.news_small
     - core.entity_view_mode.node.teaser
     - node.type.blog
   module:
@@ -75,8 +76,8 @@ display:
       pager:
         type: some
         options:
-          offset: 0
-          items_per_page: 4
+          offset: 1
+          items_per_page: 3
       exposed_form:
         type: basic
         options:
@@ -178,12 +179,57 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+  blog_attachment:
+    id: blog_attachment
+    display_title: Attachment
+    display_plugin: attachment
+    position: 2
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 1
+      defaults:
+        footer: false
+      footer: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+      displays:
+        home_latest_blog: home_latest_blog
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
   home_latest_blog:
     id: home_latest_blog
     display_title: 'Latest Blog'
     display_plugin: block
     position: 1
     display_options:
+      style:
+        type: html_list
+        options:
+          row_class: item
+          default_row_class: false
+          uses_fields: false
+          type: ul
+          wrapper_class: item-list
+          class: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: news_small
+      defaults:
+        style: false
+        row: false
       display_description: ''
       display_extenders:
         metatag_display_extender:
