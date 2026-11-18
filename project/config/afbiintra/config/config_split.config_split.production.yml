@@ -8,7 +8,7 @@ description: 'Used for production site.'
 weight: 0
 stackable: false
 no_patching: false
-storage: null
+storage: folder
 folder: ../project/config/afbiintra/production
 module:
   fastly: 0
