@@ -160,7 +160,6 @@ permissions:
   - 'use nics_editorial_workflow transition restore'
   - 'use nics_editorial_workflow transition restore_to_draft'
   - 'use nics_editorial_workflow transition submit_for_review'
-  - 'use nics_editorial_workflow transition unpublish'
   - 'use text format full_html'
   - 'view afbi_information revisions'
   - 'view all scheduled transitions'
