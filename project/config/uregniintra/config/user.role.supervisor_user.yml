@@ -3,6 +3,20 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.accordion_menu
+    - block_content.type.banner_deep
+    - block_content.type.basic_block
+    - block_content.type.card_contact
+    - block_content.type.card_nested_standard
+    - block_content.type.card_nested_wide
+    - block_content.type.card_standard
+    - block_content.type.card_wide
+    - block_content.type.feed_block
+    - block_content.type.information_notice
+    - block_content.type.plain_cards
+    - block_content.type.text
+    - block_content.type.video
+    - block_content.type.video_and_caption
     - media.type.audio
     - media.type.document
     - media.type.file
@@ -17,6 +31,7 @@ dependencies:
     - node.type.staff_member
     - workflows.workflow.nics_editorial_workflow
   module:
+    - block_content
     - content_moderation
     - contextual
     - file
@@ -41,6 +56,7 @@ weight: -6
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access block library'
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
@@ -56,20 +72,34 @@ permissions:
   - 'administer main menu items'
   - 'administer redirects'
   - 'audit content'
+  - 'create accordion_menu block content'
   - 'create and edit custom blocks'
   - 'create audio media'
+  - 'create banner_deep block content'
+  - 'create basic_block block content'
   - 'create basic_page content'
   - 'create blog content'
+  - 'create card_contact block content'
+  - 'create card_nested_standard block content'
+  - 'create card_nested_wide block content'
+  - 'create card_standard block content'
+  - 'create card_wide block content'
   - 'create document media'
+  - 'create feed_block block content'
   - 'create file media'
   - 'create image media'
+  - 'create information_notice block content'
   - 'create landing_page content'
   - 'create news content'
   - 'create noticeboard content'
+  - 'create plain_cards block content'
   - 'create publication content'
   - 'create remote_video media'
   - 'create staff_member content'
+  - 'create text block content'
   - 'create url aliases'
+  - 'create video block content'
+  - 'create video_and_caption block content'
   - 'delete all revisions'
   - 'delete any audio media'
   - 'delete any basic_page content'
@@ -103,18 +133,32 @@ permissions:
   - 'delete own staff_member content'
   - 'delete publication revisions'
   - 'delete staff_member revisions'
+  - 'edit any accordion_menu block content'
   - 'edit any audio media'
+  - 'edit any banner_deep block content'
+  - 'edit any basic_block block content'
   - 'edit any basic_page content'
   - 'edit any blog content'
+  - 'edit any card_contact block content'
+  - 'edit any card_nested_standard block content'
+  - 'edit any card_nested_wide block content'
+  - 'edit any card_standard block content'
+  - 'edit any card_wide block content'
   - 'edit any document media'
+  - 'edit any feed_block block content'
   - 'edit any file media'
   - 'edit any image media'
+  - 'edit any information_notice block content'
   - 'edit any landing_page content'
   - 'edit any news content'
   - 'edit any noticeboard content'
+  - 'edit any plain_cards block content'
   - 'edit any publication content'
   - 'edit any remote_video media'
   - 'edit any staff_member content'
+  - 'edit any text block content'
+  - 'edit any video block content'
+  - 'edit any video_and_caption block content'
   - 'edit basic meta tags'
   - 'edit own audio media'
   - 'edit own basic_page content'
