@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "611d0512861f82f49501f98c4cac223e",
+    "content-hash": "de2d20e232860efc604b0ec6da2d5b81",
     "packages": [
         {
             "name": "accessible360/accessible-slick",
@@ -1665,21 +1665,22 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
-            "version": "10.2.1",
+            "version": "dev-10.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_modules.git",
-                "reference": "65695f86d4f10c05c451df511032011751742dfb"
+                "reference": "06aa58bdf764bfa32fbeed93901b8d4aef5fae63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/65695f86d4f10c05c451df511032011751742dfb",
-                "reference": "65695f86d4f10c05c451df511032011751742dfb",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/06aa58bdf764bfa32fbeed93901b8d4aef5fae63",
+                "reference": "06aa58bdf764bfa32fbeed93901b8d4aef5fae63",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "^2.0"
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1688,9 +1689,10 @@
             "description": "Custom modules available to all Unity sites.",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/10.2.1"
+                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/10.x-dev"
             },
-            "time": "2026-05-14T08:23:36+00:00"
+            "time": "2026-11-23T10:15:21+00:00",
+            "published-time": "2026-11-23T10:15:26+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_profile",
@@ -4745,59 +4747,6 @@
             "homepage": "https://www.drupal.org/project/file_delete_ui",
             "support": {
                 "source": "https://git.drupalcode.org/project/file_delete_ui"
-            }
-        },
-        {
-            "name": "drupal/filelog",
-            "version": "dev-3.0.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/filelog.git",
-                "reference": "0e7cc3b6525562b537ce5b7671e83349e1eb474d"
-            },
-            "require": {
-                "drupal/core": "^9 || ^10",
-                "ext-zlib": "*",
-                "php": "^8"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-3.0.x": "3.0.x-dev"
-                },
-                "drupal": {
-                    "version": "3.0.0+2-dev",
-                    "datestamp": "1724417155",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Christoph Burschka",
-                    "homepage": "https://github.com/cburschka",
-                    "email": "christoph@burschka.de",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "cburschka",
-                    "homepage": "https://www.drupal.org/user/28680"
-                }
-            ],
-            "description": "Logs system events to a file.",
-            "homepage": "https://www.drupal.org/project/filelog",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "https://cgit.drupalcode.org/filelog",
-                "issues": "https://www.drupal.org/project/issues/filelog"
             }
         },
         {
@@ -23508,6 +23457,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "dof-dss/nicsdru_unity_modules": 20,
         "drupal/block_field": 5,
         "drupal/ckeditor5_allowed_html": 20,
         "drupal/clone_nodes": 20,
@@ -23516,7 +23466,6 @@
         "drupal/date_facet_drilldown": 20,
         "drupal/easy_install_d10": 20,
         "drupal/file_delete_ui": 10,
-        "drupal/filelog": 20,
         "drupal/inline_entity_form": 5,
         "drupal/media_entity_browser": 15,
         "drupal/migrate_absolute_links": 20,
