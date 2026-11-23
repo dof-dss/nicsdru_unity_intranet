@@ -2,6 +2,7 @@ adding:
   backend_config:
     connector_config:
       host: ddev-unity.intranet-solr
+      port: 8983
       skip_schema_check: true
       solr_install_dir: /opt/solr
       checkpoints_collection: ''
@@ -12,5 +13,6 @@ removing:
   backend_config:
     connector_config:
       host: ppsintra_solr.internal
+      port: 8080
       skip_schema_check: false
       solr_install_dir: ''
