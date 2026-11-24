@@ -17,7 +17,6 @@ dependencies:
     - node.type.resources
     - workflows.workflow.nics_editorial_workflow
   module:
-    - block_content_permissions
     - content_moderation
     - contextual
     - file
