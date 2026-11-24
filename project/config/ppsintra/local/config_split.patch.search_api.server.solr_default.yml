@@ -1,7 +1,4 @@
 adding:
-  dependencies:
-    config:
-      - search_api_solr.solr_field_type.text_string_und_6_0_0
   backend_config:
     connector_config:
       host: ddev-unity.intranet-solr
@@ -12,8 +9,6 @@ adding:
       stats_cache: org.apache.solr.search.stats.LRUStatsCache
       distrib: true
       context: solr
-    index_empty_text_fields: false
-    suppress_missing_languages: false
 removing:
   backend_config:
     connector_config:

@@ -102,7 +102,6 @@ permissions:
   - 'use nics_editorial_workflow transition draft_of_published'
   - 'use nics_editorial_workflow transition reject'
   - 'use nics_editorial_workflow transition submit_for_review'
-  - 'use nics_editorial_workflow transition unpublish'
   - 'use text format full_html'
   - 'view afbi_information revisions'
   - 'view any unpublished content'
