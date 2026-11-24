@@ -25,7 +25,6 @@ install:
   - config
   - config_filter
   - content_lock
-  - content_lock_timeout
   - content_moderation
   - contextual
   - csp
