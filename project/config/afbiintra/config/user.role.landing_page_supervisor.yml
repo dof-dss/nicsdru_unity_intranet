@@ -3,10 +3,24 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.accordion_menu
+    - block_content.type.banner_deep
+    - block_content.type.basic
+    - block_content.type.card_contact
+    - block_content.type.card_nested_standard
+    - block_content.type.card_nested_wide
+    - block_content.type.card_standard
+    - block_content.type.card_wide
+    - block_content.type.feed_block
+    - block_content.type.information_notice
+    - block_content.type.plain_cards
+    - block_content.type.text
+    - block_content.type.video
+    - block_content.type.video_and_caption
     - core.entity_view_display.node.landing_page.default
     - node.type.landing_page
   module:
-    - block_content_permissions
+    - block_content
     - layout_builder
     - node
 id: landing_page_supervisor
@@ -14,11 +28,11 @@ label: 'Landing page supervisor'
 weight: -4
 is_admin: null
 permissions:
+  - 'access block library'
   - 'configure editable landing_page node layout overrides'
   - 'create accordion_menu block content'
   - 'create and edit custom blocks'
   - 'create banner_deep block content'
-  - 'create basic block content'
   - 'create card_contact block content'
   - 'create card_nested_standard block content'
   - 'create card_nested_wide block content'
@@ -48,21 +62,21 @@ permissions:
   - 'delete any video_and_caption block content'
   - 'delete landing_page revisions'
   - 'delete own landing_page content'
+  - 'edit any accordion_menu block content'
+  - 'edit any banner_deep block content'
+  - 'edit any basic block content'
+  - 'edit any card_contact block content'
+  - 'edit any card_nested_standard block content'
+  - 'edit any card_nested_wide block content'
+  - 'edit any card_standard block content'
+  - 'edit any card_wide block content'
+  - 'edit any feed_block block content'
+  - 'edit any information_notice block content'
   - 'edit any landing_page content'
+  - 'edit any plain_cards block content'
+  - 'edit any text block content'
+  - 'edit any video block content'
+  - 'edit any video_and_caption block content'
   - 'edit own landing_page content'
   - 'revert landing_page revisions'
-  - 'update any accordion_menu block content'
-  - 'update any banner_deep block content'
-  - 'update any basic block content'
-  - 'update any card_contact block content'
-  - 'update any card_nested_standard block content'
-  - 'update any card_nested_wide block content'
-  - 'update any card_standard block content'
-  - 'update any card_wide block content'
-  - 'update any feed_block block content'
-  - 'update any information_notice block content'
-  - 'update any plain_cards block content'
-  - 'update any text block content'
-  - 'update any video block content'
-  - 'update any video_and_caption block content'
   - 'view landing_page revisions'
