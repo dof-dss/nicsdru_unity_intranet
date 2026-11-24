@@ -232,7 +232,8 @@ display:
           entity_type: node
           plugin_id: entity_queue
           required: true
-          limit_queue: featured_links
+          limit_queue:
+            - featured_links
       header: {  }
       footer: {  }
       display_extenders:

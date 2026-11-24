@@ -1,0 +1,29 @@
+uuid: 6bdd9732-0c24-4b3e-86f5-75bbbeff3a3b
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+title: 'Default cron handler'
+id: flag_cron
+weight: 0
+module: flag
+callback: 'flag#cron'
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '*/15+@ * * * *'
+launcher:
+  id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
+logger:
+  id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

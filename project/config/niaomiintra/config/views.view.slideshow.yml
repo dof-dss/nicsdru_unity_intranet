@@ -321,7 +321,6 @@ display:
             title: '0'
           optionset: niaomi
           class: ''
-          id: ''
           image: ''
           link: ''
           overlay: ''
@@ -329,11 +328,12 @@ display:
           vanilla: true
           layout: ''
           cache: 0
-          skin: default
-          style: ''
           grid: ''
           grid_medium: ''
           grid_small: ''
+          style: ''
+          id: ''
+          skin: default
           overridables:
             arrows: '0'
             autoplay: '0'
@@ -378,7 +378,8 @@ display:
           entity_type: node
           plugin_id: entity_queue
           required: true
-          limit_queue: slideshow
+          limit_queue:
+            - slideshow
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -394,8 +395,6 @@ display:
         - 'config:field.storage.node.field_feature_photo'
         - 'config:field.storage.node.field_link_url'
         - 'config:field.storage.node.field_teaser'
-        - entity_field_info
-        - views_data
   slideshow:
     id: slideshow
     display_title: Block
@@ -418,5 +417,3 @@ display:
         - 'config:field.storage.node.field_feature_photo'
         - 'config:field.storage.node.field_link_url'
         - 'config:field.storage.node.field_teaser'
-        - entity_field_info
-        - views_data

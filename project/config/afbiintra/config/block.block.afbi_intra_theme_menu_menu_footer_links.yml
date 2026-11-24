@@ -2,6 +2,10 @@ uuid: 82e791f6-b714-44d9-9189-a9b341750386
 langcode: en
 status: true
 dependencies:
+  config:
+    - system.menu.menu-footer-links
+  module:
+    - system
   theme:
     - olivero
 id: afbi_intra_theme_menu_menu_footer_links
@@ -15,4 +19,7 @@ settings:
   label: '<none>'
   label_display: '0'
   provider: core
+  level: 1
+  depth: null
+  expand_all_items: false
 visibility: {  }

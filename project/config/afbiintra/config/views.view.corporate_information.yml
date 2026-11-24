@@ -222,7 +222,8 @@ display:
           entity_type: node
           plugin_id: entity_queue
           required: true
-          limit_queue: corporate_information
+          limit_queue:
+            - corporate_information
       use_more: false
       use_more_always: true
       use_more_text: 'More News'

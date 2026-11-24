@@ -29,6 +29,7 @@ settings:
       properties:
         reversed: false
         startIndex: false
+        styles: false
       multiBlock: false
     media_media:
       allow_view_mode_override: true

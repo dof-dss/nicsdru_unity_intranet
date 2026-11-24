@@ -1,0 +1,22 @@
+uuid: eb62634f-599d-426f-8d32-478e9ba11b57
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.legal_guidance
+id: node.legal_guidance.promote
+field_name: promote
+entity_type: node
+bundle: legal_guidance
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
