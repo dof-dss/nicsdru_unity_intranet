@@ -250,7 +250,8 @@
                 "Fix to $form.ajaxSubmit is not a function": "https://git.drupalcode.org/project/drupal/-/merge_requests/6052.diff",
                 "DateList and date range inline form errors are repeated": "https://www.drupal.org/files/issues/2020-01-30/2827034-35.patch",
                 "Undefined title": "https://www.drupal.org/files/issues/2026-01-08/undefined_title_3566415.patch",
-                "Media Library field widget not enforcing image limits": "https://www.drupal.org/files/issues/2024-07-31/3226629-20.patch"
+                "Media Library field widget not enforcing image limits": "https://www.drupal.org/files/issues/2024-07-31/3226629-20.patch",
+                "Add support for additional protocols in Link field definition": "https://www.drupal.org/files/issues/2026-11-24/2031149-support-other-link-protocols-11.x.diff"
             },
             "drupal/entityqueue": {
                 "Allow unique records only": "https://www.drupal.org/files/issues/2026-09-10/entityqueue-disallow-duplicates-3197148-11.patch"
