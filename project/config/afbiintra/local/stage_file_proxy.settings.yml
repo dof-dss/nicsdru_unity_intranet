@@ -1,0 +1,8 @@
+hotlink: false
+origin: https://afbi.intranet.nipublicsector.net
+origin_dir: files/afbiintra
+proxy_headers: ''
+use_imagecache_root: true
+verify: true
+excluded_extensions: ''
+

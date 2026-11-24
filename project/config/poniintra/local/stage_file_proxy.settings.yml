@@ -1,1 +1,7 @@
-origin_dir: null
+hotlink: false
+origin: https://poni.intranet.nipublicsector.net
+origin_dir: files/poniintra
+proxy_headers: ''
+use_imagecache_root: true
+verify: true
+excluded_extensions: ''

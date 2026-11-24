@@ -1,0 +1,7 @@
+hotlink: false
+origin: https://nipb.intranet.nipublicsector.net
+origin_dir: files/nipbintra
+proxy_headers: ''
+use_imagecache_root: true
+verify: true
+excluded_extensions: ''

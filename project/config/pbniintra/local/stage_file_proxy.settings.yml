@@ -1,0 +1,7 @@
+hotlink: false
+origin: https://pbni.intranet.nipublicsector.net
+origin_dir: files/pbniintra
+proxy_headers: ''
+use_imagecache_root: true
+verify: true
+excluded_extensions: ''
