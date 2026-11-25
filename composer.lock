@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c626927fa791f59678e0dad7c5e76d3",
+    "content-hash": "54dd6218e82e400bfea04b7ad53d4df5",
     "packages": [
         {
             "name": "accessible360/accessible-slick",
@@ -1716,16 +1716,16 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_profile",
-            "version": "10.1.10",
+            "version": "11.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_profile.git",
-                "reference": "c896568ce58c92db5180e680826406525467bca3"
+                "reference": "e2a8e97c1aae1dd69c417e5e32ab9b60a93ad7ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/c896568ce58c92db5180e680826406525467bca3",
-                "reference": "c896568ce58c92db5180e680826406525467bca3",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/e2a8e97c1aae1dd69c417e5e32ab9b60a93ad7ba",
+                "reference": "e2a8e97c1aae1dd69c417e5e32ab9b60a93ad7ba",
                 "shasum": ""
             },
             "require": {
@@ -1739,10 +1739,10 @@
             "description": "Custom install profile used by all Unity sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_profile/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/10.1.10"
+                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/11.0.1"
             },
-            "time": "2026-09-17T09:01:00+00:00",
-            "published-time": "2026-09-17T10:11:10+00:00"
+            "time": "2026-11-04T13:35:31+00:00",
+            "published-time": "2026-11-04T13:36:21+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_theme",
@@ -16758,16 +16758,16 @@
         },
         {
             "name": "twig/html-extra",
-            "version": "v3.31.0",
+            "version": "v3.31.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/html-extra.git",
-                "reference": "92d388bd1685a1ef772c44d5f21f867e9550700a"
+                "reference": "e25770102c1447ba769fedb76552864a7c82d900"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/html-extra/zipball/92d388bd1685a1ef772c44d5f21f867e9550700a",
-                "reference": "92d388bd1685a1ef772c44d5f21f867e9550700a",
+                "url": "https://api.github.com/repos/twigphp/html-extra/zipball/e25770102c1447ba769fedb76552864a7c82d900",
+                "reference": "e25770102c1447ba769fedb76552864a7c82d900",
                 "shasum": ""
             },
             "require": {
@@ -16810,7 +16810,7 @@
                 "twig"
             ],
             "support": {
-                "source": "https://github.com/twigphp/html-extra/tree/v3.31.0"
+                "source": "https://github.com/twigphp/html-extra/tree/v3.31.1"
             },
             "funding": [
                 {
@@ -16822,21 +16822,21 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-23T16:19:15+00:00",
-            "published-time": "2026-11-23T16:31:48+00:00"
+            "time": "2026-11-24T11:48:58+00:00",
+            "published-time": "2026-11-24T12:48:56+00:00"
         },
         {
             "name": "twig/twig",
-            "version": "v3.31.0",
+            "version": "v3.31.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "fdcda27cbcd5880ddc2c4c2dc5858fb9ea8a0cda"
+                "reference": "6f6ec372231b53d1d564567a78beb8844cafa132"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/fdcda27cbcd5880ddc2c4c2dc5858fb9ea8a0cda",
-                "reference": "fdcda27cbcd5880ddc2c4c2dc5858fb9ea8a0cda",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/6f6ec372231b53d1d564567a78beb8844cafa132",
+                "reference": "6f6ec372231b53d1d564567a78beb8844cafa132",
                 "shasum": ""
             },
             "require": {
@@ -16891,7 +16891,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.31.0"
+                "source": "https://github.com/twigphp/Twig/tree/v3.31.1"
             },
             "funding": [
                 {
@@ -16903,8 +16903,8 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-23T16:31:30+00:00",
-            "published-time": "2026-11-23T16:31:44+00:00"
+            "time": "2026-11-24T12:48:40+00:00",
+            "published-time": "2026-11-24T12:48:53+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
