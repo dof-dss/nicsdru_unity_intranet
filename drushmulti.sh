@@ -1,28 +1,25 @@
 #!/usr/bin/env bash
 
-# Custom command that is designed to run a drush command on all sites in Unity.
-# For example to run a cache clear across all sites:
-#   ./drushmulti.sh cr  (you must be in the 'app' directory to do this)
+# Run a Drush command across all Unity sites, for example ./drushmulti.sh cr.
+set -euo pipefail
 
-# Check that a drush command has been supplied
-if [ $# -eq 0 ]
-  then
-    echo "No drush command supplied, please supply a drush command to run on all sites e.g. './drushmulti.sh cr'"
-    exit 0
+if [ "$#" -eq 0 ]; then
+  echo "Supply a Drush command, e.g. './drushmulti.sh cr'"
+  exit 1
 fi
 
-# Detect whether we are running locally or on Platform.sh
-if [ -z "${PLATFORM_ENVIRONMENT}" ]; then
-  PREFIX="lando"
+cd "$(dirname "$0")"
+
+# Use DDEV on the host and the installed Drush inside application containers.
+if [ -n "${PLATFORM_ENVIRONMENT:-}" ] || [ -n "${IS_DDEV_PROJECT:-}" ]; then
+  command_prefix=(vendor/bin/drush)
 else
-  PREFIX=""
+  command_prefix=(ddev drush)
 fi
 
-# Run command across all sites
-for site in `ls -l project/sites | grep ^d | awk '!/default/{print $9}'`
-do
+for site_directory in project/sites/*/; do
+  site=$(basename "$site_directory")
+  [ "$site" = default ] && continue
   echo "** $site **"
-  ${PREFIX} drush -l $site $1 $2 $3 $4 $5
+  "${command_prefix[@]}" --uri="$site" "$@"
 done
-
-

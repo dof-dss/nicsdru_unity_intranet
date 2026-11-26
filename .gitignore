@@ -21,7 +21,6 @@ node_modules/
 
 # Ignore sensitive information
 /project/sites/*/settings.local.php
-/setup-lando.sh
 
 # Ignore Drupal's file directory
 /project/sites/*/files/
@@ -42,16 +41,13 @@ node_modules/
 *.sql
 *.sql.gz
 
-# Ignore local Lando files
-.lando/private
-
 # Misc tooling files to ingore.
 .swp
 .vscode
 .DS_Store
 .talismanrc
 
-# Any local tooling/Lando things we want to ignore.
+# Ignore local tooling files.
 web/sites/default/redis.services.yml
 
 # Ignore local logs
