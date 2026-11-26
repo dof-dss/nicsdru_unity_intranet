@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# Finalise local databases before commands rebuild routes or import config.
+set -euo pipefail
+cd "$(dirname "$0")/../.."
+
+if [[ "${IS_DDEV_PROJECT:-}" != "true" ]]; then
+  echo "Run this command inside DDEV." >&2
+  exit 1
+fi
+
+if [[ "${1:-}" == "--all" ]]; then
+  for directory in project/sites/*/; do
+    site=$(basename "$directory")
+    [[ "$site" == "default" ]] && continue
+    "$0" "$site"
+  done
+  exit
+fi
+
+site="${1:-}"
+if [[ -z "$site" || "$site" == "db" || ! -d "project/sites/$site" ]]; then
+  echo "Supply the imported subsite name: scripts/ddev/finalise-import <site|--all>." >&2
+  exit 1
+fi
+
+vendor/bin/drush --uri="$site" upgrade-preflight
+vendor/bin/drush --uri="$site" updatedb -y
+vendor/bin/drush --uri="$site" config:import -y
+vendor/bin/drush --uri="$site" cache:rebuild

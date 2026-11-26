@@ -11,8 +11,7 @@ database:
 fail_on_hook_fail: true
 hooks:
     post-import-db:
-        - exec: drush cr
-        - exec: drush cim -y
+        - exec: scripts/ddev/finalise-import --all
     post-start:
         - composer: install
         - exec: .ddev/homeadditions/appserver_build.sh
@@ -24,7 +23,7 @@ use_dns_when_possible: true
 timezone: Europe/Dublin
 composer_version: "2"
 web_environment: []
-nodejs_version: "14"
+nodejs_version: "24.22.1"
 corepack_enable: false
 
 # Key features of DDEV's config.yaml:
