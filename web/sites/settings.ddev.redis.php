@@ -5,9 +5,11 @@
  * Configures isolated Redis caches for each DDEV subsite.
  */
 
+use Drupal\Core\Installer\InstallerKernel;
+
 // Enable Redis caching.
 // Set redis configuration.
-if (!\Drupal\Core\Installer\InstallerKernel::installationAttempted() && extension_loaded('redis') && is_dir($app_root . '/modules/contrib/redis')) {
+if (!InstallerKernel::installationAttempted() && extension_loaded('redis') && is_dir($app_root . '/modules/contrib/redis')) {
 
   $settings['redis.connection']['interface'] = 'PhpRedis';
 
@@ -23,14 +25,13 @@ if (!\Drupal\Core\Installer\InstallerKernel::installationAttempted() && extensio
   // as the cache tag checksum. Alternatively, copy the contents of that file
   // to your project-specific services.yml file, modify as appropriate, and
   // remove this line.
-  //$settings['container_yamls'][] = 'modules/contrib/redis/example.services.yml';
   $settings['container_yamls'][] = 'sites/redis.services.yml';
 
   // Allow the services to work before the Redis module itself is enabled.
   $settings['container_yamls'][] = 'modules/contrib/redis/redis.services.yml';
 
-  // Manually add the classloader path, this is required for the container cache bin definition below
-  // and allows to use it without the redis module being enabled.
+  // Add the classloader path for the container cache definition below, allowing
+  // it to work before the Redis module is enabled.
   $class_loader->addPsr4('Drupal\\redis\\', 'modules/contrib/redis/src');
 
   // Use redis for container cache.
