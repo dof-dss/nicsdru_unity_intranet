@@ -41,7 +41,7 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: ddev-unity.intranet-solr
+    host: nipbintra_solr.internal
     port: 8983
     path: /
     core: nipbintra_index
