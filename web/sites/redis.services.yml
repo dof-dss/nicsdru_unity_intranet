@@ -27,9 +27,7 @@ services:
     factory: ['@redis.lock.factory', get]
     arguments: [true]
 
-  # Replaces the default flood backend with a redis implementation.
-  # (Commented out so that admins may regain control of the flood table by
-  # using the flood_control module.)
-  #flood:
-  #  class: Drupal\Core\Flood\FloodInterface
-  #  factory: ['@redis.flood.factory', get]
+  # Flood Control manages flood records in the database.
+  flood:
+    class: Drupal\Core\Flood\DatabaseBackend
+    arguments: ['@database', '@request_stack', '@datetime.time']
