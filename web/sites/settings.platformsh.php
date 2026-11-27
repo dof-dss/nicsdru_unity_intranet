@@ -128,6 +128,7 @@ $settings['deployment_identifier'] = $settings['deployment_identifier'] ?? $plat
 // Set redis configuration.
 if ($platformsh->hasRelationship('redis') && !\Drupal\Core\Installer\InstallerKernel::installationAttempted() && extension_loaded('redis')) {
   $redis = $platformsh->credentials('redis');
+  $settings['redis.connection']['interface'] = 'PhpRedis';
 
   // Set Redis as the default backend for any cache bin not otherwise specified.
   $settings['cache']['default'] = 'cache.backend.redis';

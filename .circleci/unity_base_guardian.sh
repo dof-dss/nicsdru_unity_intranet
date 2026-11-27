@@ -6,10 +6,3 @@ then
     echo "Project directory found."
     exit 1
 fi
-
-if [ -e ".lando.yml" ]
-then
-    echo "Lando config file found."
-    exit 1
-fi
-

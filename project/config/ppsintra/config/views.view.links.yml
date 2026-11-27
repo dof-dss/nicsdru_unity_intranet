@@ -293,7 +293,8 @@ display:
           entity_type: node
           plugin_id: entity_queue
           required: true
-          limit_queue: quick_links_queue
+          limit_queue:
+            - quick_links_queue
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -402,7 +403,8 @@ display:
           entity_type: node
           plugin_id: entity_queue
           required: true
-          limit_queue: featured_links_queue
+          limit_queue:
+            - featured_links_queue
       display_description: ''
       display_extenders:
         metatag_display_extender:

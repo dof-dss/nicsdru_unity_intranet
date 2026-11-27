@@ -218,7 +218,8 @@ display:
           entity_type: node
           plugin_id: entity_queue
           required: true
-          limit_queue: homepage_menu
+          limit_queue:
+            - homepage_menu
       header: {  }
       footer: {  }
       display_extenders: {  }

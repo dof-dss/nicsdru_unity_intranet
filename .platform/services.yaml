@@ -95,6 +95,6 @@ solr_9_9:
             nipsintra:
                 core: nipsintra_index
 redis:
-    type: 'redis:8.0'
+    type: 'redis:8.8'
     configuration:
         maxmemory_policy: allkeys-lfu

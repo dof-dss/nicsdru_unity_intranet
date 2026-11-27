@@ -1,0 +1,7 @@
+hotlink: false
+origin: https://pps.intranet.nipublicsector.net
+origin_dir: files/ppsintra
+proxy_headers: ''
+use_imagecache_root: true
+verify: true
+excluded_extensions: ''

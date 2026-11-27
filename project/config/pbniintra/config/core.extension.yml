@@ -9,7 +9,6 @@ module:
   blazy: 0
   block: 0
   block_content: 0
-  block_content_permissions: 0
   block_field: 0
   breakpoint: 0
   ckeditor5: 0
@@ -22,7 +21,6 @@ module:
   config_ignore: 0
   config_split: 0
   content_lock: 0
-  content_lock_timeout: 0
   content_moderation: 0
   contextual: 0
   csp: 0
@@ -108,6 +106,8 @@ module:
   responsive_image: 0
   scheduled_transitions: 0
   search: 0
+  search_help: 0
+  search_node: 0
   search_api: 0
   search_api_location: 0
   search_api_location_views: 0
@@ -129,7 +129,6 @@ module:
   unity_common: 0
   unity_frontpage: 0
   unity_image_styles: 0
-  unity_intranet_content_manager: 0
   unity_landing_pages: 0
   unity_search_pages: 0
   user: 0

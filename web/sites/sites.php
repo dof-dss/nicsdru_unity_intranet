@@ -57,8 +57,7 @@
  * @see https://www.drupal.org/documentation/install/multi-site
  */
 
-// Different sites setup depending on whether we are running on
-// Platform.sh or local Lando
+// Configure multisite hostnames for hosted and local environments.
 use Symfony\Component\Yaml\Yaml;
 
 $sites = [];

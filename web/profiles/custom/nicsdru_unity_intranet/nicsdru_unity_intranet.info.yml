@@ -110,6 +110,8 @@ install:
   - responsive_image
   - scheduled_transitions
   - search
+  - search_help
+  - search_node
   - search_api
   - search_api_solr
   - simplei

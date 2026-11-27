@@ -2,6 +2,7 @@
 
 parameters:
   fileExtensions:
+    - php
     - module
     - theme
     - inc

@@ -62,3 +62,6 @@ $config['symfony_mailer.mailer_transport.sendmail']['configuration']['port'] = '
 // Enable verbose logging for errors.
 // https://www.drupal.org/forum/support/post-installation/2018-07-18/enable-drupal-8-backend-errorlogdebugging-mode
 $config['system.logging']['error_level'] = 'verbose';
+
+// Configure Redis for every multisite entry.
+require $app_root . '/sites/settings.ddev.redis.php';
