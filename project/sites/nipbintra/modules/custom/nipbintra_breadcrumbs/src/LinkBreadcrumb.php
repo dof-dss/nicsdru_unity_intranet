@@ -59,7 +59,7 @@ class LinkBreadcrumb implements BreadcrumbBuilderInterface {
   /**
    * Class constructor.
    */
-  public function __construct(EntityTypeManagerInterface $entity_type_manager, TitleResolverInterface $title_resolver, RequestStack $request) {
+  final public function __construct(EntityTypeManagerInterface $entity_type_manager, TitleResolverInterface $title_resolver, RequestStack $request) {
     $this->entityTypeManager = $entity_type_manager;
     $this->titleResolver = $title_resolver;
     $this->request = $request;
